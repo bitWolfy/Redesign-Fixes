@@ -1,4 +1,13 @@
-/* e621 Redesign Fixes v. 1.46.1 */
+/* ==UserStyle==
+@name         e621 Redesign Fixes
+@description  Restore e621.net back to its classic look
+@namespace    bitwolfy.com
+@version      1.47.0
+@author       bitWolfy
+@homepageURL  https://e621.net/forum_topics/25811
+@license      CC-BY-SA-4.0
+==/UserStyle== */
+
 /* Common Changes */
 body { font-size: 82%; }
 header { font-size: 0.85rem; margin: 0; }                       /* Header is offset on mobile without this */
@@ -84,6 +93,8 @@ article.post-preview.captioned { vertical-align: inherit; }     /* Align the thu
 
 #mode-box { margin-right: 30px; }                               /* Make the mode box match size with the search bar */
 #mode-box-mode { width: 100%; box-shadow: none; }
+
+div.post-score { font-size: 0.8rem; }                           /* Increase the font size on post preview details */
 
 @media only screen and (min-width: 801px) {
     article.post-preview { margin: 10px; }                      /* Space out the thumbnails a bit more */
@@ -335,6 +346,12 @@ table.striped tbody tr.forum-topic-row {                        /* Stripes are o
 tr.forum-topic-row td {
     padding: 15px 5px;
 }
+div.list-of-forum-posts article:nth-child(2n) {                 /* Get rid of the striping on the forum posts as well */
+    background-color: hsla(0,0%,100%,.05);
+}
+div.list-of-forum-posts article[data-is-deleted="true"] {       /* Restore the highlight on the deleted posts */
+    background-color: rgba(130,40,40,.50);
+}
 textarea#forum_post_body { max-width: unset !important; }       /* No reason to limit this */
 
 
@@ -393,7 +410,7 @@ body.resp form.simple_form div.input textarea {                 /* Keep the inpu
 
 div#c-users div#a-edit div.input { margin-bottom: 1em; }        /* Settings: less padding, color consistency like the other pages */
 div#c-users div#a-edit h1 { margin: unset; }
-div#c-users div#a-edit h2 { margin-botton: .5em; }
+div#c-users div#a-edit h2 { margin-bottom: .5em; }
 
 #user_custom_style { height: 800px !important; }                /* Makes editing CSS more convenient */
 
