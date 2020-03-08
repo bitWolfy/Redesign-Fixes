@@ -2,7 +2,7 @@
 @name         e621 Redesign Fixes
 @description  Restore e621.net back to its classic look
 @namespace    bitwolfy.com
-@version      1.47.0
+@version      1.48.0
 @author       bitWolfy
 @homepageURL  https://e621.net/forum_topics/25811
 @license      CC-BY-SA-4.0
@@ -47,6 +47,15 @@ header#top menu.main li.current a {
 
 /* Advertisements */
 div#ad-leaderboard { text-align: center; }                      /* Center the ads, because why not? */
+
+/* Comment / Post Features */
+div blockquote,                                                 /* Re-style the quotes and collapsable blocks */
+.styled-dtext div.expandable {
+    box-shadow: none;
+    border: none;
+    border-left: 4px solid #ffffff60;
+    background: #ffffff20;
+}
 
 
 /* === SIDEBAR === */
@@ -283,8 +292,7 @@ div#image-download-link a {                                     /* Recolor the d
 }
 
 /* Description */
-.expandable-header { padding:unset }                            /* Make the description box a bit more compact, thanks to nonono2 */
-#artist-commentary { box-shadow: none; }                        /* Get rid of the ridiculous box shadow on the description */
+div#c-posts div#a-show #artist-commentary { padding: unset }    /* Get rid of extra padding on the description collapsable box */
 
 /* Comments Style */
 #comments { padding: 0; background: none; box-shadow: none; }   /* Cleaner, sleaker comment section */
@@ -294,13 +302,6 @@ div.comments-for-post div.list-of-comments article.comment {    /* Get rid of th
 }
 #new_comment .text label { display: none; }                     /* No need to label the comment textbox */
 #comment_body_for_ { width: 100%; box-shadow: none; }           /* Streamline the comment textbox */
-
-div blockquote {
-    box-shadow: none;
-    border: none;
-    border-left: 4px solid #ffffff60;
-    background: #ffffff20;
-}
 
 @media screen and (max-width: 800px) {                          /* Improved comments on mobile, credit goes to Peegus */
     div.comments-for-post div.list-of-comments article.comment {
@@ -323,6 +324,32 @@ div blockquote {
         margin-top: 10px;
     }
 }
+
+/* Editing Form */
+section#edit {                                                  /* Strip shadows and padding from the editing form */
+    margin: unset;
+    padding: 0.5rem;
+    box-shadow: unset;
+}
+section#edit form.simple_form {
+    margin: unset;
+    padding: unset;
+}
+section#edit input, section#edit textarea {
+    box-shadow: unset;
+}
+section#edit div.input:last-child {                             /* Make the "Save Changes" button scroll with the page */
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0;
+    
+    background: #284a81;
+    border-radius: 4px 4px 0 0;
+    width: min-content;
+    padding: 15px;
+    margin: 0;
+}
+
 
 /* === FORUMS === */
 .c-forum-topics div#page > div {                                /* Forum minimum width fix, courtesy of ratismal */
@@ -374,6 +401,62 @@ body.c-users.a-home div#page h2 {
     padding: 0 0 10px;
 }
 
+
+/* === PROFILE PAGE === */
+/* Shadow below user-name in profile's page, because why not */
+body.c-users.a-show div.profile-stats > h1 {
+    margin: 0.25em 0.5em;
+}
+body.c-users.a-show div.profile-stats > h1 > a {
+    background: #152f56;
+    padding: 3px 20px;
+    border-radius: 20px;
+}
+/* Padding for top part (table) of profile's page */
+body.c-users.a-show div#c-users div#a-show div.profile-container {
+    padding: 0 0 1em;
+}
+/* Profile statistics - get rid of striping, add background for clarity */
+div.profile-stats {
+    background: #284a81;
+    padding: 10px;
+    border-radius: 4px;
+}
+table.user-statistics tr:nth-child(2n) { background-color: unset; }
+table.user-statistics tbody tr { border-bottom: 0; }
+table.user-statistics tbody tr:hover { background-color: unset; }
+
+/* User rating in profile's page (and everywhere) with bold fonts like before */ 
+.user-feedback-positive,
+.user-feedback-neutral,
+.user-feedback-negative {
+    font-weight: 700;
+}
+
+/* Title of 'Favorites' and 'Uploads' boxes with a 'button' like format + alignments */
+body.c-users.a-show div#c-users div#a-show div.box h2, div#c-users div#a-show div.box h3 {
+    border-bottom: 4px solid #ffffff60;
+    padding: 0 0 2px;
+    margin: 0 0 5px;
+    text-align: center;
+    background: #294a81aa;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+/* Removes bottom spaces and adds some between aforementioned boxes */
+body.c-users.a-show div#c-users div#a-show div.box {
+    margin-bottom: unset;
+    margin: 0 5px;
+}
+
+div.profile-container div.about-section { margin-left: 1em; }
+div#c-users div#a-show .about-section .about-piece {
+    margin: unset;
+    box-shadow: unset;
+    padding: 0.5rem;
+}
+
+
 /* My Profile > Comments : removes your avatar, align posts and extends comment boxes */
 body.c-comments.a-index div#c-comments div#a-index div.post, div#c-comments div#a-show div.post {
     margin-bottom: 1em;
@@ -391,6 +474,10 @@ body.c-comments.a-index div.comments-for-post div.list-of-comments article.comme
 body.c-comments.a-index div#c-comments div#a-index div.post, div#c-comments div#a-show div.post {
     box-shadow: unset;
 }
+
+
+/* === WIKI === */
+.wiki-other-name { background-color: unset; }                   /* Make "other name" links a bit more readable */
 
 
 /* === SETTINGS === */
@@ -412,7 +499,8 @@ div#c-users div#a-edit div.input { margin-bottom: 1em; }        /* Settings: les
 div#c-users div#a-edit h1 { margin: unset; }
 div#c-users div#a-edit h2 { margin-bottom: .5em; }
 
-#user_custom_style { height: 800px !important; }                /* Makes editing CSS more convenient */
+#user_custom_style { height: 800px; }                           /* Makes editing CSS more convenient */
+#user_blacklisted_tags { height: 300px; }                       /* Same with the blacklist */
 
 .simple_form {                                                  /* This sets the color for all other setting pages (eg: Change Password, Delete account, API etc)*/
     padding: 0.5em;
