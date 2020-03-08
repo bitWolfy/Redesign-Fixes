@@ -402,6 +402,62 @@ body.c-users.a-home div#page h2 {
     padding: 0 0 10px;
 }
 
+
+/* === PROFILE PAGE === */
+/* Shadow below user-name in profile's page, because why not */
+body.c-users.a-show div.profile-stats > h1 {
+    margin: 0.25em 0.5em;
+}
+body.c-users.a-show div.profile-stats > h1 > a {
+    background: #152f56;
+    padding: 3px 20px;
+    border-radius: 20px;
+}
+/* Padding for top part (table) of profile's page */
+body.c-users.a-show div#c-users div#a-show div.profile-container {
+    padding: 0 0 1em;
+}
+/* Profile statistics - get rid of striping, add background for clarity */
+div.profile-stats {
+    background: #284a81;
+    padding: 10px;
+    border-radius: 4px;
+}
+table.user-statistics tr:nth-child(2n) { background-color: unset; }
+table.user-statistics tbody tr { border-bottom: 0; }
+table.user-statistics tbody tr:hover { background-color: unset; }
+
+/* User rating in profile's page (and everywhere) with bold fonts like before */ 
+.user-feedback-positive,
+.user-feedback-neutral,
+.user-feedback-negative {
+    font-weight: 700;
+}
+
+/* Title of 'Favorites' and 'Uploads' boxes with a 'button' like format + alignments */
+body.c-users.a-show div#c-users div#a-show div.box h2, div#c-users div#a-show div.box h3 {
+    border-bottom: 4px solid #ffffff60;
+    padding: 0 0 2px;
+    margin: 0 0 5px;
+    text-align: center;
+    background: #294a81aa;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+/* Removes bottom spaces and adds some between aforementioned boxes */
+body.c-users.a-show div#c-users div#a-show div.box {
+    margin-bottom: unset;
+    margin: 0 5px;
+}
+
+div.profile-container div.about-section { margin-left: 1em; }
+div#c-users div#a-show .about-section .about-piece {
+    margin: unset;
+    box-shadow: unset;
+    padding: 0.5rem;
+}
+
+
 /* My Profile > Comments : removes your avatar, align posts and extends comment boxes */
 body.c-comments.a-index div#c-comments div#a-index div.post, div#c-comments div#a-show div.post {
     margin-bottom: 1em;
