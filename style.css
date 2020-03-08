@@ -282,10 +282,12 @@ section#post-options ul li:nth-child(1),                        /* Best way to a
 section#post-options ul li:nth-child(2) {                       /* Yes, really. */
     margin: 5px 0;
 }
-a#remove-from-favorites { background-color: maroon; }
-a#remove-from-favorites:before { content: "- "; }
 a#add-to-favorites { background-color: darkgreen; }
+a#add-to-favorites:hover { background-color: #015201; }
 a#add-to-favorites:before { content: "+ "; }
+a#remove-from-favorites { background-color: maroon; }
+a#remove-from-favorites:hover { background-color: #630202; }
+a#remove-from-favorites:before { content: "- "; }
 
 /* +Favorites Button */
 div#c-posts .fav-buttons button.ui-button {                     /* Replace the weird white +FAV button with an old style one */
@@ -296,8 +298,10 @@ div#c-posts .fav-buttons button.ui-button {                     /* Replace the w
     font-size: 0em;
 }
 #add-fav-button { background: darkgreen; }
+#add-fav-button:hover { background: #015201; }
 #add-fav-button:after { content: "+ Favorite"; font-size: 0.9rem; }
 #remove-fav-button { background: maroon; }
+#remove-fav-button:hover { background: #630202; }
 #remove-fav-button:after { content: "- Unfavorite"; font-size: 0.9rem; }
 
 /* Download Button */
@@ -308,6 +312,7 @@ div#image-download-link a {                                     /* Recolor the d
     border: 0;
     border-radius: 3px;
 }
+div#image-download-link a:hover { background: #844325; }
 
 /* Description */
 div#c-posts div#a-show #artist-commentary { padding: unset }    /* Get rid of extra padding on the description collapsable box */
