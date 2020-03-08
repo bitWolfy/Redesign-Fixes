@@ -48,6 +48,15 @@ header#top menu.main li.current a {
 /* Advertisements */
 div#ad-leaderboard { text-align: center; }                      /* Center the ads, because why not? */
 
+/* Comment / Post Features */
+div blockquote,                                                 /* Re-style the quotes and collapsable blocks */
+.styled-dtext div.expandable {
+    box-shadow: none;
+    border: none;
+    border-left: 4px solid #ffffff60;
+    background: #ffffff20;
+}
+
 
 /* === SIDEBAR === */
 span.search-help a { font-size: 0; }                            /* Make the help links (quite) a bit smaller */
@@ -294,13 +303,6 @@ div.comments-for-post div.list-of-comments article.comment {    /* Get rid of th
 }
 #new_comment .text label { display: none; }                     /* No need to label the comment textbox */
 #comment_body_for_ { width: 100%; box-shadow: none; }           /* Streamline the comment textbox */
-
-div blockquote {
-    box-shadow: none;
-    border: none;
-    border-left: 4px solid #ffffff60;
-    background: #ffffff20;
-}
 
 @media screen and (max-width: 800px) {                          /* Improved comments on mobile, credit goes to Peegus */
     div.comments-for-post div.list-of-comments article.comment {
