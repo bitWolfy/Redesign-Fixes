@@ -292,8 +292,7 @@ div#image-download-link a {                                     /* Recolor the d
 }
 
 /* Description */
-.expandable-header { padding:unset }                            /* Make the description box a bit more compact, thanks to nonono2 */
-#artist-commentary { box-shadow: none; }                        /* Get rid of the ridiculous box shadow on the description */
+div#c-posts div#a-show #artist-commentary { padding: unset }    /* Get rid of extra padding on the description collapsable box */
 
 /* Comments Style */
 #comments { padding: 0; background: none; box-shadow: none; }   /* Cleaner, sleaker comment section */
