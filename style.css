@@ -497,6 +497,12 @@ body.c-comments.a-index div#c-comments div#a-index div.post, div#c-comments div#
 
 
 /* === SETTINGS === */
+div#c-maintenance-user-passwords div#a-edit,                    /* Set the minimum width on the settings, to match the forum */
+div#c-users div#a-edit {
+    max-width: 1200px;
+    margin: 15px auto;
+}
+
 div#c-users div#a-edit h2#edit-options .active {                /* Give contrast to the active tabs */
     color: #ffe380;
 }
