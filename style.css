@@ -45,6 +45,8 @@ header#top menu.main li.current a {
     font-weight: 700;
 }
 
+button, input, select, textarea { box-shadow: unset; }          /* Get rid of shadows on inputs */
+
 /* User Page Links, with Group Styles */
 a.user-member.with-style { color: #b4c7d9; }
 a.user-member.with-style:hover { color: #2e76b4 }
@@ -350,9 +352,6 @@ section#edit {                                                  /* Strip shadows
 section#edit form.simple_form {
     margin: unset;
     padding: unset;
-}
-section#edit input, section#edit textarea {
-    box-shadow: unset;
 }
 section#edit div.input:last-child {                             /* Make the "Save Changes" button scroll with the page */
     position: -webkit-sticky;
