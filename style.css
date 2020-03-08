@@ -393,7 +393,7 @@ body.resp form.simple_form div.input textarea {                 /* Keep the inpu
 
 div#c-users div#a-edit div.input { margin-bottom: 1em; }        /* Settings: less padding, color consistency like the other pages */
 div#c-users div#a-edit h1 { margin: unset; }
-div#c-users div#a-edit h2 { margin-botton: .5em; }
+div#c-users div#a-edit h2 { margin-bottom: .5em; }
 
 #user_custom_style { height: 800px !important; }                /* Makes editing CSS more convenient */
 
