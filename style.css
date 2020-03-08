@@ -338,6 +338,9 @@ tr.forum-topic-row td {
 div.list-of-forum-posts article:nth-child(2n) {                 /* Get rid of the striping on the forum posts as well */
     background-color: hsla(0,0%,100%,.05);
 }
+div.list-of-forum-posts article[data-is-deleted="true"] {       /* Restore the highlight on the deleted posts */
+    background-color: rgba(130,40,40,.50);
+}
 textarea#forum_post_body { max-width: unset !important; }       /* No reason to limit this */
 
 
