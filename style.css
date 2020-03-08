@@ -335,6 +335,9 @@ table.striped tbody tr.forum-topic-row {                        /* Stripes are o
 tr.forum-topic-row td {
     padding: 15px 5px;
 }
+div.list-of-forum-posts article:nth-child(2n) {                 /* Get rid of the striping on the forum posts as well */
+    background-color: hsla(0,0%,100%,.05);
+}
 textarea#forum_post_body { max-width: unset !important; }       /* No reason to limit this */
 
 
