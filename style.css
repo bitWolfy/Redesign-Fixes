@@ -94,6 +94,8 @@ article.post-preview.captioned { vertical-align: inherit; }     /* Align the thu
 #mode-box { margin-right: 30px; }                               /* Make the mode box match size with the search bar */
 #mode-box-mode { width: 100%; box-shadow: none; }
 
+div.post-score { font-size: 0.8rem; }                           /* Increase the font size on post preview details */
+
 @media only screen and (min-width: 801px) {
     article.post-preview { margin: 10px; }                      /* Space out the thumbnails a bit more */
 }
