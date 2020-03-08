@@ -2,7 +2,7 @@
 @name         e621 Redesign Fixes
 @description  Restore e621.net back to its classic look
 @namespace    bitwolfy.com
-@version      1.48.0
+@version      1.48.1
 @author       bitWolfy
 @homepageURL  https://e621.net/forum_topics/25811
 @license      CC-BY-SA-4.0
@@ -44,6 +44,22 @@ header#top menu.main li.current a {
 .post-score-rating {
     font-weight: 700;
 }
+
+/* User Page Links, with Group Styles */
+a.user-member.with-style { color: #b4c7d9; }
+a.user-member.with-style:hover { color: #2e76b4 }
+a.user-privileged.with-style { color: #b4c7d9; }
+a.user-privileged.with-style:hover { color: #2e76b4 }
+a.user-contributor.with-style { color: #b4c7d9; }
+a.user-contributor.with-style:hover { color: #2e76b4 }
+
+a.user-blocked.with-style { color: #b4c7d9; text-decoration: line-through; }
+a.user-blocked.with-style:hover { color: #2e76b4 }
+
+a.user-janitor.with-style { color: #d82828; }
+a.user-janitor.with-style:hover { color: #cc5151; }
+a.user-admin.with-style { color: #e69500; }
+a.user-admin.with-style:hover { color: #9d6703 }
 
 /* Advertisements */
 div#ad-leaderboard { text-align: center; }                      /* Center the ads, because why not? */
