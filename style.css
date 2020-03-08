@@ -324,6 +324,32 @@ div blockquote {
     }
 }
 
+/* Editing Form */
+section#edit {                                                  /* Strip shadows and padding from the editing form */
+    margin: unset;
+    padding: 0.5rem;
+    box-shadow: unset;
+}
+section#edit form.simple_form {
+    margin: unset;
+    padding: unset;
+}
+section#edit input, section#edit textarea {
+    box-shadow: unset;
+}
+section#edit div.input:last-child {                             /* Make the "Save Changes" button scroll with the page */
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0;
+    
+    background: #284a81;
+    border-radius: 4px 4px 0 0;
+    width: min-content;
+    padding: 15px;
+    margin: 0;
+}
+
+
 /* === FORUMS === */
 .c-forum-topics div#page > div {                                /* Forum minimum width fix, courtesy of ratismal */
     max-width: 1200px;
