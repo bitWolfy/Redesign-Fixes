@@ -394,7 +394,7 @@ div.list-of-forum-posts article:nth-child(2n) {                 /* Get rid of th
 div.list-of-forum-posts article[data-is-deleted="true"] {       /* Restore the highlight on the deleted posts */
     background-color: rgba(130,40,40,.50);
 }
-textarea#forum_post_body { max-width: unset !important; }       /* No reason to limit this */
+textarea#forum_post_body { max-width: unset; }                  /* No reason to limit this */
 
 
 /* === COMMENTS INDEX === */
