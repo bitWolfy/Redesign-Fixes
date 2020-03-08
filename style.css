@@ -477,6 +477,10 @@ body.c-comments.a-index div#c-comments div#a-index div.post, div#c-comments div#
 }
 
 
+/* === WIKI === */
+.wiki-other-name { background-color: unset; }                   /* Make "other name" links a bit more readable */
+
+
 /* === SETTINGS === */
 div#c-users div#a-edit h2#edit-options .active {                /* Give contrast to the active tabs */
     color: #ffe380;
