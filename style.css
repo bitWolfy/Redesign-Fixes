@@ -32,10 +32,10 @@
     --color-user-admin:             #e69500;
     --color-user-admin-alt:         #9d6703;
     
-    /* Comment Styles */
-    --color-comment-background:     #ffffff20;
-    --color-comment-quote:          #a8b8d0;
-    --color-comment-expandable:     #ffe380;
+    /* DText Element Styles */
+    --color-dtext-highlight:        #ffffff20;                /* Highlight color, background on quotes and expandables. */
+    --color-dtext-quote:            #a8b8d0;                  /* Left border on the blockquote segment */
+    --color-dtext-expandable:       #ffe380;                  /* Left border on the expandable segment */
 }
 
 
@@ -119,11 +119,11 @@ div blockquote,                                                 /* Re-style the 
 div#c-posts div#a-show #artist-commentary {
     box-shadow: none;
     border: none;
-    border-left: 4px solid var(--color-comment-quote);
-    background: var(--color-comment-background);
+    border-left: 4px solid var(--color-dtext-quote);
+    background: var(--color-dtext-highlight);
 }
 .styled-dtext div.expandable {
-    border-color: var(--color-comment-expandable);
+    border-color: var(--color-dtext-expandable);
 }
 
 
