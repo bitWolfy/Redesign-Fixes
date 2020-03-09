@@ -47,7 +47,7 @@
     --color-user-member:            #b4c7d9;
     --color-user-member-alt:        #2e76b4;
     --color-user-privileged:        #b4c7d9;
-    --color-user-privileged-alt:    #2e76b4
+    --color-user-privileged-alt:    #2e76b4;
     --color-user-contributor:       #b4c7d9;
     --color-user-contributor-alt:   #2e76b4;
     
@@ -184,7 +184,7 @@ a.user-member.with-style:hover          { color: var(--color-user-member-alt) }
 a.user-privileged.with-style            { color: var(--color-user-privileged); }
 a.user-privileged.with-style:hover      { color: var(--color-user-privileged-alt); }
 a.user-contributor.with-style           { color: var(--color-user-contributor); }
-a.user-contributor.with-style:hover     { color: var(--color-user-alt); }
+a.user-contributor.with-style:hover     { color: var(--color-user-contributor-alt); }
 
 a.user-blocked.with-style               { color: var(--color-user-blocked); text-decoration: line-through; }
 a.user-blocked.with-style:hover         { color: var(--color-user-alt); }
