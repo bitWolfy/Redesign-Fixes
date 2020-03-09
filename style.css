@@ -113,8 +113,6 @@ div#page {
     background-image: var(--image-background);
     background-position: left top;
     background-repeat: repeat-x;
-    
-    margin: 0 0.5rem;
     border-radius: 6px;
 }
 
