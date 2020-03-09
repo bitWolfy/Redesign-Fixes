@@ -78,7 +78,7 @@
     --color-tag-pool-alt:           #d0b27a;
     
     /* DText Element Styles */
-    --color-dtext-highlight:        #ffffff20;                /* Highlight color, background on quotes and expandables. */
+    --color-highlight:              #3e5985;
 }
 
 
@@ -208,13 +208,13 @@ div#c-posts div#a-show #artist-commentary {
     border: none;
     border-radius: 3px;
     border-left: 4px solid var(--color-danger);
-    background: var(--color-dtext-highlight);
+    background: var(--color-highlight);
 }
 .styled-dtext blockquote        { border-color: var(--color-primary); }
 .styled-dtext div.expandable    { border-color: var(--color-secondary); }
 .styled-dtext pre               { border-color: var(--color-tertiary); }
 div#c-posts div#a-show #artist-commentary {
-    border-color: var(--color-dtext-blockquote);
+    border-color: var(--color-primary);
     padding: unset;
 }
 
