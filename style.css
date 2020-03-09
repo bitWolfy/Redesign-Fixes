@@ -408,6 +408,26 @@ textarea#forum_post_body { max-width: unset; }                  /* No reason to 
 
 
 /* === COMMENTS INDEX === */
+div#c-comments div#a-index div.post,
+div#c-comments div#a-show div.post {                            /* Straighten out and align comments in the list */
+    margin-bottom: 1em;
+}
+div#c-comments div#a-index div.preview,
+div#c-comments div#a-show div.preview {
+    text-align: center;
+    width: 200px;
+    display: table;
+    margin-right: unset;
+}
+div#c-comments div#a-index div.comments-for-post { width: 100%; }
+div#c-comments div#a-index div.comments-for-post div.list-of-comments article.comment {
+    width: 100%;
+}
+div#c-comments div#a-index div.post,
+div#c-comments div#a-show div.post {
+    box-shadow: unset;
+}
+
 @media screen and (max-width: 801px) {                          /* Fixes for mobile, by JAKXXX3 */
     div#c-comments div#a-index div#p-index-by-post div.post-preview {
         flex-flow: row wrap;
@@ -479,25 +499,6 @@ div#c-users div#a-show .about-section .about-piece {
     margin: unset;
     box-shadow: unset;
     padding: 0.5rem;
-}
-
-
-/* My Profile > Comments : removes your avatar, align posts and extends comment boxes */
-body.c-comments.a-index div#c-comments div#a-index div.post, div#c-comments div#a-show div.post {
-    margin-bottom: 1em;
-}
-body.c-comments.a-index div#c-comments div#a-index div.preview, div#c-comments div#a-show div.preview {
-    text-align: center;
-    width: 200px;
-    display: table;
-    margin-right: unset;
-}
-body.c-comments.a-index div.comments-for-post div.list-of-comments article.comment {
-    width: 100%;
-}
-
-body.c-comments.a-index div#c-comments div#a-index div.post, div#c-comments div#a-show div.post {
-    box-shadow: unset;
 }
 
 
