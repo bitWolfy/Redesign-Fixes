@@ -75,6 +75,9 @@ div#c-posts div#a-show #artist-commentary {
     border-left: 4px solid #ffffff60;
     background: #ffffff20;
 }
+.styled-dtext div.expandable {
+    border-color: #ffe380;
+}
 
 
 /* === SIDEBAR === */
