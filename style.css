@@ -29,6 +29,9 @@
     --color-warning:                sienna;
     --color-warning-alt:            #844325;
     
+    --color-muted:                  #aaa;
+    --color-muted-alt:              #888;
+    
     /* User Groups */
     --color-user-member:            #b4c7d9;
     --color-user-member-alt:        #2e76b4;
@@ -228,11 +231,17 @@ span.search-help a:after {
 }
 
 /* Tag List */
-h2.tag-list-header { font-family: verdana, sans-serif; }        /* Tags list - smootherer and bolder fonts  */
-.post-count { color: #aaa; font-size: 85%; font-weight: 500; }  /* De-emphasize the post count, courtesy of Zermelane */
+div#c-posts aside#sidebar #tag-list h2 {                        /* Tags list - smootherer and bolder fonts  */
+    font-family: verdana, sans-serif;
+}
+.post-count {                                                   /* De-emphasize the post count, courtesy of Zermelane */
+    color: var(--color-muted);
+    font-size: 85%;
+    font-weight: 500;
+}
 
 /* Mobile Searchbox */
-.mobile-search { margin: 10px; }                                /* Streamline the mobile search form */
+.mobile-search { margin: 10px 10px 30px ; }                     /* Streamline the mobile search form */
 .mobile-search .search-button { display: none; }
 .mobile-search a { float: right; }
 
@@ -242,7 +251,7 @@ div#c-posts div#a-index menu#post-sections { display: none; }   /* Hide "posts" 
 
 article picture img { border-radius: 4px 4px 0 0; }             /* Give the thumbnails their rounded corners back */
 article.post-preview.captioned { vertical-align: inherit; }     /* Align the thumbnails propely! Thanks to Peegus */
-#tag-box h1:first-child  { margin-bottom: 5px; }                /* Minor padding fix for the tag and blacklist */
+div#page aside#sidebar h1 { margin-bottom: 5px; }                /* Minor padding fix for the tag and blacklist */
 #blacklist-box h1:first-child { margin-bottom: 5px; }
 
 #mode-box { margin-right: 30px; }                               /* Make the mode box match size with the search bar */
