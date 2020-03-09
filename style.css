@@ -144,6 +144,10 @@ a#disable-all-blacklists:after { content: "Disable all filters"; background: mar
 a#re-enable-all-blacklists:after { content: "Enable all filters"; background: darkgreen; }
 a.blacklist-toggle-link:before { content: "» "; }
 
+#blacklist-box.sidebar-blacklist ul li {                        /* Bugfix: remove extraneous list dots (favorites page only) */
+    list-style-type: none;
+}
+
 span.blacklist-help a { font-size: 0; }                         /* Replace the giant blacklist help link with a small (?) one */
 span.blacklist-help a:after {
     content: "(?)";
