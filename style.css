@@ -85,7 +85,7 @@
 /* === COMMON STYLES === */
 body {
     background: var(--image-base) var(--color-base);            /* Give the body and header the hex grid back */
-    font-size: 82%;                                             /* Smaller font across the site, to match the old theme */
+    font-size: 85%;                                             /* Smaller font across the site, to match the old theme */
 }
 
 /* --- Header --- */
