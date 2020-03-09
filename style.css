@@ -2,7 +2,7 @@
 @name         e621 Redesign Fixes
 @description  Restore e621.net back to its classic look
 @namespace    bitwolfy.com
-@version      1.50.1
+@version      1.50.2
 @author       bitWolfy
 @homepageURL  https://e621.net/forum_topics/25811
 @license      CC-BY-SA-4.0
@@ -113,8 +113,6 @@ div#page {
     background-image: var(--image-background);
     background-position: left top;
     background-repeat: repeat-x;
-    
-    margin: 0 0.5rem;
     border-radius: 6px;
 }
 
@@ -277,6 +275,7 @@ div.post-score { font-size: 0.8rem; }                           /* Increase the 
 div#posts div#posts-container {
     display: flex;
     flex-flow: wrap;
+    align-items: flex-end;
     max-width: var(--conf-posts-list-width);
 }
 
@@ -284,11 +283,7 @@ div#posts div#posts-container {
     article.post-preview {                                      /* Space out the thumbnails a bit more */
         flex: 1 1 auto;
         margin: 10px;
-    }
-    article.post-preview.captioned {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
+        
     }
     article.post-preview div.desc {
         width: inherit;
@@ -335,7 +330,7 @@ article.post-preview[data-tags~="flash"]::before,
 article.post-preview[data-tags~="webm"]::before {
     position: absolute;
     left: -2px;
-    bottom: 30px;
+    top: 10px;
     z-index: 10;
     
     background-color: var(--color-foreground);
@@ -344,7 +339,7 @@ article.post-preview[data-tags~="webm"]::before {
     padding: 1px 5px 1px 5px;
     border-radius: 5px;
     border: 1px solid var(--color-white);
-    font-size: 0.7em;
+    font-size: 0.6em;
     font-weight: 700;
 }
 
@@ -545,6 +540,30 @@ section#edit div.input:last-child {                             /* Make the "Sav
     width: min-content;
     padding: 15px;
     margin: 0;
+}
+
+
+/* === POPULAR PAGE === */
+div#c-explore-posts div#a-popular {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+div#c-explore-posts div#a-popular h1,
+div#c-explore-posts div#a-popular #popular-nav-links,
+div#c-explore-posts div#a-popular section#blacklist-box {
+    flex-basis: 100%;
+}
+
+
+/* === POOL PAGE === */
+div#c-pools div#a-show section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+div#c-pools div#a-show section div.paginator {
+    flex-basis: 100%;
 }
 
 
