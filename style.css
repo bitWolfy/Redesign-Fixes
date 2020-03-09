@@ -11,7 +11,8 @@
 :root {
     /* Settings */
     --conf-font-size:               85%;
-    --conf-posts-list-width:        none;
+    --conf-page-body-width:         none;
+    --conf-page-inner-width:        1200px;
     
     /* Common Colors */
     --color-base:                   #031131;                  /* Site background (large hexagons) */
@@ -91,6 +92,9 @@
 body {
     background: var(--image-base) var(--color-base);            /* Give the body and header the hex grid back */
     font-size: var(--conf-font-size);                           /* Smaller font across the site, to match the old theme */
+    
+    margin: 0 auto;
+    max-width: var(--conf-page-body-width);
 }
 
 /* --- Header --- */
@@ -573,8 +577,8 @@ div#c-pools div#a-show section#blacklist-box ul {
 
 /* === FORUMS === */
 .c-forum-topics div#page > div {                                /* Forum minimum width fix, courtesy of ratismal */
-    max-width: 1200px;
-    margin: 15px auto;
+    max-width: var(--conf-page-inner-width);
+    margin: 0px auto;
 }
 .c-forum-topics .forum-post { padding: 15px; }
 .c-forum-topics #a-show { margin-top: 15px; }
