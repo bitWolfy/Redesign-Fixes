@@ -127,8 +127,16 @@ article.post-preview.captioned { vertical-align: inherit; }     /* Align the thu
 
 div.post-score { font-size: 0.8rem; }                           /* Increase the font size on post preview details */
 
+div#posts div#posts-container {
+    display: flex;
+    flex-flow: wrap;
+}
+
 @media only screen and (min-width: 801px) {
-    article.post-preview { margin: 10px; }                      /* Space out the thumbnails a bit more */
+    article.post-preview {                                      /* Space out the thumbnails a bit more */
+        flex: 1 1 auto;
+        margin: 10px;
+    }
 }
 
 /* Blacklist */
