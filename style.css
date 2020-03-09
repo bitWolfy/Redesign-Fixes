@@ -2,13 +2,17 @@
 @name         e621 Redesign Fixes
 @description  Restore e621.net back to its classic look
 @namespace    bitwolfy.com
-@version      1.50.0
+@version      1.50.1
 @author       bitWolfy
 @homepageURL  https://e621.net/forum_topics/25811
 @license      CC-BY-SA-4.0
 ==/UserStyle== */
 
 :root {
+    /* Settings */
+    --conf-font-size:               85%;
+    --conf-posts-list-width:        none;
+    
     /* Common Colors */
     --color-base:                   #031131;                  /* Site background (large hexagons) */
     --color-background:             #152f56;                  /* Generic backdrop (small hexagons) */
@@ -85,7 +89,7 @@
 /* === COMMON STYLES === */
 body {
     background: var(--image-base) var(--color-base);            /* Give the body and header the hex grid back */
-    font-size: 85%;                                             /* Smaller font across the site, to match the old theme */
+    font-size: var(--conf-font-size);                           /* Smaller font across the site, to match the old theme */
 }
 
 /* --- Header --- */
@@ -273,6 +277,7 @@ div.post-score { font-size: 0.8rem; }                           /* Increase the 
 div#posts div#posts-container {
     display: flex;
     flex-flow: wrap;
+    max-width: var(--conf-posts-list-width);
 }
 
 @media only screen and (min-width: 801px) {
