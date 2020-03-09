@@ -34,8 +34,9 @@
     
     /* DText Element Styles */
     --color-dtext-highlight:        #ffffff20;                /* Highlight color, background on quotes and expandables. */
-    --color-dtext-quote:            #a8b8d0;                  /* Left border on the blockquote segment */
+    --color-dtext-blockquote:       #a8b8d0;                  /* Left border on the blockquote segment */
     --color-dtext-expandable:       #ffe380;                  /* Left border on the expandable segment */
+    --color-dtext-pre:              #e1a65d;                  /* Left border on the pre-formatted segment */
 }
 
 
@@ -114,16 +115,22 @@ a.user-admin.with-style:hover           { color: var(--color-user-admin-alt); }
 div#ad-leaderboard { text-align: center; }                      /* Center the ads, because why not? */
 
 /* --- Comment / Post Features --- */
-div blockquote,                                                 /* Re-style the quotes and collapsable blocks */
+.styled-dtext blockquote,                                       /* Re-style the quotes and collapsable blocks */
 .styled-dtext div.expandable,
+.styled-dtext pre,
 div#c-posts div#a-show #artist-commentary {
     box-shadow: none;
     border: none;
-    border-left: 4px solid var(--color-dtext-quote);
+    border-radius: 3px;
+    border-left: 4px solid red;
     background: var(--color-dtext-highlight);
 }
-.styled-dtext div.expandable {
-    border-color: var(--color-dtext-expandable);
+.styled-dtext blockquote        { border-color: var(--color-dtext-blockquote); }
+.styled-dtext div.expandable    { border-color: var(--color-dtext-expandable); }
+.styled-dtext pre               { border-color: var(--color-dtext-pre); }
+div#c-posts div#a-show #artist-commentary {
+    border-color: var(--color-dtext-blockquote);
+    padding: unset;
 }
 
 
@@ -377,9 +384,6 @@ div#image-download-link a {                                     /* Recolor the d
     border-radius: 3px;
 }
 div#image-download-link a:hover { background: #844325; }
-
-/* Description */
-div#c-posts div#a-show #artist-commentary { padding: unset }    /* Get rid of extra padding on the description collapsable box */
 
 /* Comments Style */
 #comments { padding: 0; background: none; box-shadow: none; }   /* Cleaner, sleaker comment section */
