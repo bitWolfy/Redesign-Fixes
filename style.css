@@ -18,6 +18,7 @@
     --color-background:             #152f56;                  /* Generic backdrop (small hexagons) */
     --color-background-muted:       #152f56aa;
     --color-foreground:             #294a81aa;                /* Foreground elements - boxes, sections, etc. */
+    --color-foreground-muted:       #294a81ee;
     --color-foreground-alt:         #2a58a4aa;
     
     /* Generic */
@@ -535,7 +536,7 @@ section#edit div.input:last-child {                             /* Make the "Sav
     position: sticky;
     bottom: 0;
     
-    background: var(--color-foreground);
+    background: var(--color-foreground-muted);
     border-radius: 4px 4px 0 0;
     width: min-content;
     padding: 15px;
@@ -749,7 +750,7 @@ div#c-users div#a-edit h2 { margin-bottom: .5em; }
 
 /* === NOTICES === */
 div#notice:not(.ui-state-error) {
-    background-color: var(--color-foreground);
+    background-color: var(--color-foreground-muted);
     border: 1px solid rgba(0, 0, 0, 0.5);
     padding: 4px !important;
     box-shadow: 0 0 27px rgba(0, 0, 0, 0.2);
