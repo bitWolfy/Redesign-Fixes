@@ -543,6 +543,30 @@ section#edit div.input:last-child {                             /* Make the "Sav
 }
 
 
+/* === POPULAR PAGE === */
+div#c-explore-posts div#a-popular {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+div#c-explore-posts div#a-popular h1,
+div#c-explore-posts div#a-popular #popular-nav-links,
+div#c-explore-posts div#a-popular section#blacklist-box {
+    flex-basis: 100%;
+}
+
+
+/* === POOL PAGE === */
+div#c-pools div#a-show section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+div#c-pools div#a-show section div.paginator {
+    flex-basis: 100%;
+}
+
+
 /* === FORUMS === */
 .c-forum-topics div#page > div {                                /* Forum minimum width fix, courtesy of ratismal */
     max-width: 1200px;
