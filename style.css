@@ -262,7 +262,6 @@ div#c-posts aside#sidebar #tag-list h2 {                        /* Tags list - s
 div#c-posts div#a-index menu#post-sections { display: none; }   /* Hide "posts" header in search page (useless?) */
 
 article picture img { border-radius: 4px 4px 0 0; }             /* Give the thumbnails their rounded corners back */
-article.post-preview.captioned { vertical-align: inherit; }     /* Align the thumbnails propely! Thanks to Peegus */
 div#page aside#sidebar h1 { margin-bottom: 5px; }                /* Minor padding fix for the tag and blacklist */
 #blacklist-box h1:first-child { margin-bottom: 5px; }
 
@@ -280,6 +279,15 @@ div#posts div#posts-container {
     article.post-preview {                                      /* Space out the thumbnails a bit more */
         flex: 1 1 auto;
         margin: 10px;
+    }
+    article.post-preview.captioned {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    article.post-preview div.desc {
+        width: inherit;
+        margin: 0 auto;
     }
 }
 
@@ -322,7 +330,8 @@ article.post-preview[data-tags~="flash"]::before,
 article.post-preview[data-tags~="webm"]::before {
     position: absolute;
     left: -2px;
-    top: 10px;
+    bottom: 30px;
+    z-index: 10;
     
     background-color: var(--color-foreground);
     width: unset;
