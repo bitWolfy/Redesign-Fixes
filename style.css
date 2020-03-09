@@ -348,6 +348,7 @@ article.post-preview[data-tags~="webm"]::before {
     font-weight: 700;
 }
 
+
 /* === UPLOAD PAGE === */
 .box-section { box-shadow: unset; }                             /* Clear the shadows on the column sections */
 .toggle-button[data-v-deb50420] { margin-bottom: 5px; }         /* Fix the spacing on the uploads page */
