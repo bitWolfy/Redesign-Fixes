@@ -218,6 +218,9 @@ div#c-posts div#a-show #artist-commentary {
     padding: unset;
 }
 
+.styled-dtext div.expandable div.expandable-header { margin: 0 1rem; }
+.styled-dtext div.expandable div.expandable-content { margin: 0 1rem; padding: 0 0 1rem; }
+
 
 /* === SIDEBAR === */
 span.search-help a { font-size: 0; }                            /* Make the help links (quite) a bit smaller */
