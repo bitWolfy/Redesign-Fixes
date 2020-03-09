@@ -12,7 +12,9 @@
     /* Common Colors */
     --color-base:                   #031131;                  /* Site background (large hexagons) */
     --color-background:             #152f56;                  /* Generic backdrop (small hexagons) */
+    --color-background-muted:       #152f56aa;
     --color-foreground:             #294a81aa;                /* Foreground elements - boxes, sections, etc. */
+    --color-foreground-alt:         #2a58a4aa;
     
     /* Generic */
     --color-primary:                #b4c7d9;
@@ -26,9 +28,12 @@
     --color-success-alt:            #015201;
     --color-danger:                 maroon;
     --color-danger-alt:             #630202;
+    --color-danger-muted:           #80000099;
     --color-warning:                sienna;
     --color-warning-alt:            #844325;
     
+    --color-white:                  #fff;
+    --color-white-alt:              #eee;
     --color-muted:                  #aaa;
     --color-muted-alt:              #888;
     
@@ -159,8 +164,12 @@ button, input, select, textarea { box-shadow: unset; }          /* Get rid of sh
 
 .pool-category-series a,        /* Pool */
 .pool-category-series a:link,
-.pool-category-series a:visited { color: var(--color-tag-pool); }
-.pool-category-series a:hover   { color: var(--color-tag-pool-alt); }
+.pool-category-series a:visited,
+.pool-category-collection a ,
+.pool-category-collection a:link,
+.pool-category-collection a:visited { color: var(--color-tag-pool); }
+.pool-category-collection a:hover,
+.pool-category-series a:hover       { color: var(--color-tag-pool-alt); }
 
 /* --- User Page Links, with Group Styles --- */
 a.user-member.with-style                { color: var(--color-user-member); }
@@ -275,17 +284,17 @@ div#posts div#posts-container {
 #blacklist-list { margin-bottom: 10px; }                        /* Beautify the blacklist filters on the search page */
 a#disable-all-blacklists,
 a#re-enable-all-blacklists { font-size:0; }
-a#disable-all-blacklists:after,
-a#re-enable-all-blacklists:after {
+a#disable-all-blacklists::after,
+a#re-enable-all-blacklists::after {
     border: 0;
-    color: white;
+    color: var(--color-white);
     box-shadow: none;
     padding: 3px 10px;
     font-size: 0.8rem;
     border-radius: 4px;
 }
-a#disable-all-blacklists:after { content: "Disable all filters"; background: maroon; }
-a#re-enable-all-blacklists:after { content: "Enable all filters"; background: darkgreen; }
+a#disable-all-blacklists::after { content: "Disable all filters"; background: var(--color-danger); }
+a#re-enable-all-blacklists::after { content: "Enable all filters"; background: var(--color-success); }
 a.blacklist-toggle-link:before { content: "» "; }
 
 #blacklist-box.sidebar-blacklist ul li {                        /* Bugfix: remove extraneous list dots (favorites page only) */
@@ -312,12 +321,12 @@ article.post-preview[data-tags~="webm"]::before {
     left: -2px;
     top: 10px;
     
-    background-color: #284a81;
+    background-color: var(--color-foreground);
     width: unset;
     height: unset;
     padding: 1px 5px 1px 5px;
     border-radius: 5px;
-    border: 1px solid #fff;
+    border: 1px solid var(--color-white);
     font-size: 0.7em;
     font-weight: 700;
 }
@@ -328,7 +337,7 @@ article.post-preview[data-tags~="webm"]::before {
 .tag-textarea[data-v-deb50420],                                 /* Credit goes to Peegus for this one */
 .flex-wrap[data-v-deb50420] { margin: 10px 0 5px; }
 .toggle-button.active[data-v-deb50420] {                        /* Make selected buttons stand out more */
-    background-color: #ffe380;
+    background-color: var(--color-secondary);
 }
 
 
@@ -352,7 +361,7 @@ div#nav-links div#search-seq-nav {
     margin: 0;
 }
 #search-seq-nav ul li {
-    background: #284a81;
+    background: var(--color-foreground);
     padding: 5px;
 }
 div#nav-links div#search-seq-nav .prev,
@@ -370,15 +379,14 @@ div#c-posts div#nav-links { background: transparent; }
     table-layout: fixed;
     width: -webkit-fill-available;
     width: -moz-available;
-    width: fill-available;
 }
 
 div#c-posts div#a-show #pool-nav li.pool-category-series {
     height: 40px;
     font-weight: 500;
-    background: #284a81;
+    background: var(--color-foreground);
     padding: 5px 0;
-    border-bottom: 5px solid #152f56;
+    border-bottom: 5px solid var(--color-background);
 }
 li.pool-category-series:last-child {
     border-bottom: 0;
@@ -388,7 +396,7 @@ li.pool-category-series:last-child {
     li.pool-category-series {
         display: table-cell;
         border-bottom: 0;
-        border-right: 10px solid #152f56;
+        border-right: 10px solid var(--color-background);
     }
     li.pool-category-series:last-child {
         border-right: 0;
@@ -400,7 +408,7 @@ li.pool-category-series:last-child {
     width: 50%;
     margin-top: 25px;
     line-height: 1.25em;
-    color: white;
+    color: var(--color-white);
     font-weight: 700;
 }
 div#c-posts div#a-show #pool-nav li .prev { left: 0; font-size: 0; }
@@ -408,10 +416,10 @@ div#c-posts div#a-show #pool-nav li .next { right: 0; font-size: 0; }
 #pool-nav .prev:after { content: "« Prev"; font-size: 1rem; }
 #pool-nav .next:after { content: "Next »"; font-size: 1rem; }
 #pool-nav a.prev:hover,
-#pool-nav a.next:hover { color: wheat; }
+#pool-nav a.next:hover { color: var(--color-tag-pool); }
 
 #pool-nav span.prev,
-#pool-nav span.next { color: #888888; }
+#pool-nav span.next { color: var(--color-muted); }
 
 span.pool-name { font-weight: 700; }
 
@@ -423,7 +431,7 @@ span.pool-name { font-weight: 700; }
 /* Sidebar Favorites Button */
 a#add-to-favorites,                                             /* Recolor the sidebar favorites button to what it was before */
 a#remove-from-favorites {
-    color: white;
+    color: var(--color-white);
     padding: 2px 4px;
     border-radius: 3px;
 }
@@ -431,12 +439,17 @@ section#post-options ul li:nth-child(1),                        /* Best way to a
 section#post-options ul li:nth-child(2) {                       /* Yes, really. */
     margin: 5px 0;
 }
-a#add-to-favorites { background-color: darkgreen; }
-a#add-to-favorites:hover { background-color: #015201; }
-a#add-to-favorites:before { content: "+ "; }
-a#remove-from-favorites { background-color: maroon; }
-a#remove-from-favorites:hover { background-color: #630202; }
-a#remove-from-favorites:before { content: "- "; }
+#post-options a#add-to-favorites,
+#post-options a#add-to-favorites:link,
+#post-options a#add-to-favorites:visited        { background: var(--color-success); }
+#post-options a#add-to-favorites:hover          { background: var(--color-success-alt); }
+#post-options a#add-to-favorites:before         { content: "+ "; }
+
+#post-options a#remove-from-favorites,
+#post-options a#remove-from-favorites:link,
+#post-options a#remove-from-favorites:visited   { background: var(--color-danger); }
+#post-options a#remove-from-favorites:hover     { background: var(--color-danger-alt); }
+#post-options a#remove-from-favorites:before    { content: "- "; }
 
 /* +Favorites Button */
 div#c-posts .fav-buttons button.ui-button {                     /* Replace the weird white +FAV button with an old style one */
@@ -446,22 +459,23 @@ div#c-posts .fav-buttons button.ui-button {                     /* Replace the w
     padding: 3px 10px;
     font-size: 0em;
 }
-#add-fav-button { background: darkgreen; }
-#add-fav-button:hover { background: #015201; }
-#add-fav-button:after { content: "+ Favorite"; font-size: 0.9rem; }
-#remove-fav-button { background: maroon; }
-#remove-fav-button:hover { background: #630202; }
-#remove-fav-button:after { content: "- Unfavorite"; font-size: 0.9rem; }
+div.fav-buttons button#add-fav-button           { background: var(--color-success); }
+div.fav-buttons button#add-fav-button:hover     { background: var(--color-success-alt); }
+div.fav-buttons button#add-fav-button:after     { content: "+ Favorite"; font-size: 0.9rem; }
+
+div.fav-buttons button#remove-fav-button        { background: var(--color-danger); }
+div.fav-buttons button#remove-fav-button:hover  { background: var(--color-danger-alt); }
+div.fav-buttons button#remove-fav-button:after  { content: "- Unfavorite"; font-size: 0.9rem; }
 
 /* Download Button */
 div#image-download-link a {                                     /* Recolor the download button to match the Favorite one */
-    background: sienna;
-    color: white;
+    background: var(--color-warning);
+    color: var(--color-white);
     padding: 3px 10px;
     border: 0;
     border-radius: 3px;
 }
-div#image-download-link a:hover { background: #844325; }
+div#image-download-link a:hover { background: var(--color-warning-alt); }
 
 /* Comments Style */
 #comments { padding: 0; background: none; box-shadow: none; }   /* Cleaner, sleaker comment section */
@@ -509,7 +523,7 @@ section#edit div.input:last-child {                             /* Make the "Sav
     position: sticky;
     bottom: 0;
     
-    background: #284a81;
+    background: var(--color-foreground);
     border-radius: 4px 4px 0 0;
     width: min-content;
     padding: 15px;
@@ -526,27 +540,27 @@ section#edit div.input:last-child {                             /* Make the "Sav
 .c-forum-topics #a-show { margin-top: 15px; }
 
 div.list-of-forum-posts article {                               /* Re-color the forum posts to look like normal comments */
-    background: hsla(0,0%,100%,.05);
+    background: var(--color-foreground);
     box-shadow: none;
 }
 #topic-response .text label { display: none; }                  /* No need to label the forum post textbox */
 #forum_post_body { width: 100%; box-shadow: none; }             /* Streamline the textbox */
 
 table.striped tbody tr.forum-topic-row {                        /* Stripes are out, padding is in! */
-    background-color: #ffffff10;
-    border-bottom: 1px solid #132144;
+    background-color: var(--color-foreground);
+    border-bottom: 1px solid var(--color-background);
 }
 table.striped tbody tr.forum-topic-row:hover {
-    background-color: #254473;
+    background-color: var(--color-foreground-alt);
 }
 tr.forum-topic-row td {
     padding: 15px 5px;
 }
 div.list-of-forum-posts article:nth-child(2n) {                 /* Get rid of the striping on the forum posts as well */
-    background-color: hsla(0,0%,100%,.05);
+    background-color: var(--color-foreground);
 }
 div.list-of-forum-posts article[data-is-deleted="true"] {       /* Restore the highlight on the deleted posts */
-    background-color: rgba(130,40,40,.50);
+    background-color: var(--color-danger-muted);
 }
 textarea#forum_post_body { max-width: unset; }                  /* No reason to limit this */
 
@@ -555,7 +569,7 @@ textarea#forum_post_body { max-width: unset; }                  /* No reason to 
 div#c-comments div#a-index div.post,
 div#c-comments div#a-show div.post {                            /* Straighten out and align comments in the list */
     margin-bottom: 1em;
-    background-color: #294a81aa;
+    background-color: var(--color-foreground);
 }
 div#c-comments div#a-index div.preview,
 div#c-comments div#a-show div.preview {
@@ -602,7 +616,7 @@ body.c-users.a-show div.profile-stats > h1 {
     margin: 0.25em 0.5em;
 }
 body.c-users.a-show div.profile-stats > h1 > a {
-    background: #152f56;
+    background: var(--color-background-muted);
     padding: 3px 20px;
     border-radius: 20px;
 }
@@ -612,7 +626,7 @@ body.c-users.a-show div#c-users div#a-show div.profile-container {
 }
 /* Profile statistics - get rid of striping, add background for clarity */
 div.profile-stats {
-    background: #294a81aa;
+    background: var(--color-foreground);
     padding: 10px;
     border-radius: 4px;
 }
@@ -632,11 +646,11 @@ div#c-users div#a-show table.user-statistics td { width: auto; }
 
 /* Title of 'Favorites' and 'Uploads' boxes with a 'button' like format + alignments */
 body.c-users.a-show div#c-users div#a-show div.box h2, div#c-users div#a-show div.box h3 {
-    border-bottom: 4px solid #ffffff60;
+    border-bottom: 4px solid var(--color-primary);
     padding: 0 0 2px;
     margin: 0 0 5px;
     text-align: center;
-    background: #294a81aa;
+    background: var(--color-foreground);
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
 }
@@ -649,7 +663,7 @@ body.c-users.a-show div#c-users div#a-show div.box {
 /* Adjust the "About user" and "Artist Information" boxes */
 div#c-users div#a-show .about-section .about-piece {
     margin: unset;
-    background-color: #294a81aa;
+    background-color: var(--color-foreground);
     margin-left: 1em;
     box-shadow: unset;
     padding: 0.5rem;
@@ -668,7 +682,7 @@ div#c-users div#a-edit {
 }
 
 div#c-users div#a-edit h2#edit-options .active {                /* Give contrast to the active tabs */
-    color: #ffe380;
+    color: var(--color-secondary);
 }
 fieldset{ min-width: 0 ;}                                       /* Keep the inputs from extending off the screen*/
 form select, form input{ font-size: inherit; }                  /* Dont bump font on mobile*/
@@ -690,13 +704,13 @@ div#c-users div#a-edit h2 { margin-bottom: .5em; }
 
 .simple_form {                                                  /* This sets the color for all other setting pages (eg: Change Password, Delete account, API etc)*/
     padding: 0.5em;
-    background-color: #294a81aa;
+    background-color: var(--color-foreground);
 }
 
 
 /* === NOTICES === */
 div#notice:not(.ui-state-error) {
-    background-color: #284a81;
+    background-color: var(--color-foreground);
     border: 1px solid rgba(0, 0, 0, 0.5);
     padding: 4px !important;
     box-shadow: 0 0 27px rgba(0, 0, 0, 0.2);
