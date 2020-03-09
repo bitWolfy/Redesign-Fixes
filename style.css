@@ -32,6 +32,28 @@
     --color-user-admin:             #e69500;
     --color-user-admin-alt:         #9d6703;
     
+    /* Tag Categories */
+    --color-tag-general:            #b4c7d9;
+    --color-tag-general-alt:        #2e76b4;
+    
+    --color-tag-artist:             #f2ac08;
+    --color-tag-artist-alt:         #fbd67f;
+    
+    --color-tag-copyright:          #d0d;
+    --color-tag-copyright-alt:      #ff5eff;
+    
+    --color-tag-character:          #0a0;
+    --color-tag-character-alt:      #2bff2b;
+    
+    --color-tag-species:            #ed5d1f;
+    --color-tag-species-alt:        #f6b295;
+
+    --color-tag-lore:               #282;
+    --color-tag-lore-alt:           #5fdb5f;
+    
+    --color-tag-pool:               wheat;
+    --color-tag-pool-alt:           #d0b27a;
+    
     /* DText Element Styles */
     --color-dtext-highlight:        #ffffff20;                /* Highlight color, background on quotes and expandables. */
     --color-dtext-blockquote:       #a8b8d0;                  /* Left border on the blockquote segment */
@@ -85,6 +107,45 @@ div#page {
 }
 
 button, input, select, textarea { box-shadow: unset; }          /* Get rid of shadows on inputs */
+
+/* --- Tag Categories --- */
+[class^="category-"]    { font-weight: 700; }
+.category-0 a           { font-weight: 500; }
+
+.category-0 a,                  /* General */
+.category-0 a:link,
+.category-0 a:visited   { color: var(--color-tag-general); }
+.category-0 a:hover     { color: var(--color-tag-general-alt); }
+
+.category-1 a,                  /* Artist */
+.category-1 a:link,
+.category-1 a:visited   { color: var(--color-tag-artist); }
+.category-1 a:hover     { color: var(--color-tag-artist-alt); }
+
+.category-3 a,                  /* Copyright */
+.category-3 a:link,
+.category-3 a:visited   { color: var(--color-tag-copyright); }
+.category-3 a:hover     { color: var(--color-tag-copyright-alt); }
+
+.category-4 a,                  /* Character */
+.category-4 a:link,
+.category-4 a:visited   { color: var(--color-tag-character); }
+.category-4 a:hover     { color: var(--color-tag-character-alt); }
+
+.category-5 a,                  /* Species */
+.category-5 a:link,
+.category-5 a:visited   { color: var(--color-tag-species); }
+.category-5 a:hover     { color: var(--color-tag-species-alt); }
+
+.category-8 a,                  /* Lore */
+.category-8 a:link,
+.category-8 a:visited   { color: var(--color-tag-lore); }
+.category-8 a:hover     { color: var(--color-tag-lore-alt); }
+
+.pool-category-series a,        /* Pool */
+.pool-category-series a:link,
+.pool-category-series a:visited { color: var(--color-tag-pool); }
+.pool-category-series a:hover   { color: var(--color-tag-pool-alt); }
 
 /* --- User Page Links, with Group Styles --- */
 a.user-member.with-style                { color: var(--color-user-member); }
@@ -147,8 +208,6 @@ span.search-help a:after {
 #search-box { margin-right: 30px; }
 #search-box button[type="submit"] { display: none; }            /* Terrible way of getting rid of the search bar submit button */
 #search-box input[type="text"] { width: 100%; }                 /* Terrible way of making the search bar longer */
-.pool-category-series a { color: wheat; }                       /* Changed the awful pool link color to a less awful one */
-.pool-category-series a:hover { color: #d0b27a; }
 
 /* Desktop - Mobile Searchbox Switching */
 #search-box { display: none; }
@@ -158,8 +217,6 @@ span.search-help a:after {
 
 /* Tag List */
 h2.tag-list-header { font-family: verdana, sans-serif; }        /* Tags list - smootherer and bolder fonts  */
-[class^="category-"] { font-weight: 700; }                      /* Tweak courtesy of nonono2 */
-.category-0 a, category-0 { font-weight: 500; }
 .post-count { color: #aaa; font-size: 85%; font-weight: 500; }  /* De-emphasize the post count, courtesy of Zermelane */
 
 /* Mobile Searchbox */
