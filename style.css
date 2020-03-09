@@ -483,6 +483,9 @@ table.user-statistics tr:nth-child(2n) { background-color: unset; }
 table.user-statistics tbody tr { border-bottom: 0; }
 table.user-statistics tbody tr:hover { background-color: unset; }
 
+div#c-users div#a-show table.user-statistics th { width: 1%; white-space: nowrap; }
+div#c-users div#a-show table.user-statistics td { width: auto; }
+
 /* User rating in profile's page (and everywhere) with bold fonts like before */ 
 .user-feedback-positive,
 .user-feedback-neutral,
