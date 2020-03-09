@@ -506,10 +506,11 @@ body.c-users.a-show div#c-users div#a-show div.box {
     margin: 0 5px;
 }
 
-div.profile-container div.about-section { margin-left: 1em; }
+/* Adjust the "About user" and "Artist Information" boxes */
 div#c-users div#a-show .about-section .about-piece {
     margin: unset;
     background-color: #294a81aa;
+    margin-left: 1em;
     box-shadow: unset;
     padding: 0.5rem;
 }
