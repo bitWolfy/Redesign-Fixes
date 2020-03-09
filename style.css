@@ -275,6 +275,7 @@ div.post-score { font-size: 0.8rem; }                           /* Increase the 
 div#posts div#posts-container {
     display: flex;
     flex-flow: wrap;
+    align-items: flex-end;
     max-width: var(--conf-posts-list-width);
 }
 
@@ -282,11 +283,7 @@ div#posts div#posts-container {
     article.post-preview {                                      /* Space out the thumbnails a bit more */
         flex: 1 1 auto;
         margin: 10px;
-    }
-    article.post-preview:not(blacklisted-active) {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
+        
     }
     article.post-preview div.desc {
         width: inherit;
@@ -333,7 +330,7 @@ article.post-preview[data-tags~="flash"]::before,
 article.post-preview[data-tags~="webm"]::before {
     position: absolute;
     left: -2px;
-    bottom: 30px;
+    top: 10px;
     z-index: 10;
     
     background-color: var(--color-foreground);
@@ -342,7 +339,7 @@ article.post-preview[data-tags~="webm"]::before {
     padding: 1px 5px 1px 5px;
     border-radius: 5px;
     border: 1px solid var(--color-white);
-    font-size: 0.7em;
+    font-size: 0.6em;
     font-weight: 700;
 }
 
