@@ -396,8 +396,11 @@ div.list-of-forum-posts article {                               /* Re-color the 
 #forum_post_body { width: 100%; box-shadow: none; }             /* Streamline the textbox */
 
 table.striped tbody tr.forum-topic-row {                        /* Stripes are out, padding is in! */
-    background-color: #204274;
+    background-color: #ffffff10;
     border-bottom: 1px solid #132144;
+}
+table.striped tbody tr.forum-topic-row:hover {
+    background-color: #254473;
 }
 tr.forum-topic-row td {
     padding: 15px 5px;
@@ -415,6 +418,7 @@ textarea#forum_post_body { max-width: unset; }                  /* No reason to 
 div#c-comments div#a-index div.post,
 div#c-comments div#a-show div.post {                            /* Straighten out and align comments in the list */
     margin-bottom: 1em;
+    background-color: #294a81aa;
 }
 div#c-comments div#a-index div.preview,
 div#c-comments div#a-show div.preview {
@@ -471,7 +475,7 @@ body.c-users.a-show div#c-users div#a-show div.profile-container {
 }
 /* Profile statistics - get rid of striping, add background for clarity */
 div.profile-stats {
-    background: #284a81;
+    background: #294a81aa;
     padding: 10px;
     border-radius: 4px;
 }
@@ -505,6 +509,7 @@ body.c-users.a-show div#c-users div#a-show div.box {
 div.profile-container div.about-section { margin-left: 1em; }
 div#c-users div#a-show .about-section .about-piece {
     margin: unset;
+    background-color: #294a81aa;
     box-shadow: unset;
     padding: 0.5rem;
 }
