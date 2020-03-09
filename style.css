@@ -338,7 +338,7 @@ article.post-preview[data-tags~="webm"]::before {
     top: 10px;
     z-index: 10;
     
-    background-color: var(--color-foreground);
+    background-color: var(--color-foreground-muted);
     width: unset;
     height: unset;
     padding: 1px 5px 1px 5px;
