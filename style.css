@@ -285,7 +285,7 @@ div#posts div#posts-container {
         flex: 1 1 auto;
         margin: 10px;
     }
-    article.post-preview.captioned {
+    article.post-preview:not(blacklisted-active) {
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
