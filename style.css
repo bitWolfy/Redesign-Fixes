@@ -2,7 +2,7 @@
 @name         e621 Redesign Fixes
 @description  Restore e621.net back to its classic look
 @namespace    bitwolfy.com
-@version      1.48.1
+@version      1.49.0
 @author       bitWolfy
 @homepageURL  https://e621.net/forum_topics/25811
 @license      CC-BY-SA-4.0
@@ -45,6 +45,8 @@ header#top menu.main li.current a {
     font-weight: 700;
 }
 
+button, input, select, textarea { box-shadow: unset; }          /* Get rid of shadows on inputs */
+
 /* User Page Links, with Group Styles */
 a.user-member.with-style { color: #b4c7d9; }
 a.user-member.with-style:hover { color: #2e76b4 }
@@ -66,11 +68,15 @@ div#ad-leaderboard { text-align: center; }                      /* Center the ad
 
 /* Comment / Post Features */
 div blockquote,                                                 /* Re-style the quotes and collapsable blocks */
-.styled-dtext div.expandable {
+.styled-dtext div.expandable,
+div#c-posts div#a-show #artist-commentary {
     box-shadow: none;
     border: none;
     border-left: 4px solid #ffffff60;
     background: #ffffff20;
+}
+.styled-dtext div.expandable {
+    border-color: #ffe380;
 }
 
 
@@ -121,8 +127,16 @@ article.post-preview.captioned { vertical-align: inherit; }     /* Align the thu
 
 div.post-score { font-size: 0.8rem; }                           /* Increase the font size on post preview details */
 
+div#posts div#posts-container {
+    display: flex;
+    flex-flow: wrap;
+}
+
 @media only screen and (min-width: 801px) {
-    article.post-preview { margin: 10px; }                      /* Space out the thumbnails a bit more */
+    article.post-preview {                                      /* Space out the thumbnails a bit more */
+        flex: 1 1 auto;
+        margin: 10px;
+    }
 }
 
 /* Blacklist */
@@ -141,6 +155,10 @@ a#re-enable-all-blacklists:after {
 a#disable-all-blacklists:after { content: "Disable all filters"; background: maroon; }
 a#re-enable-all-blacklists:after { content: "Enable all filters"; background: darkgreen; }
 a.blacklist-toggle-link:before { content: "» "; }
+
+#blacklist-box.sidebar-blacklist ul li {                        /* Bugfix: remove extraneous list dots (favorites page only) */
+    list-style-type: none;
+}
 
 span.blacklist-help a { font-size: 0; }                         /* Replace the giant blacklist help link with a small (?) one */
 span.blacklist-help a:after {
@@ -173,6 +191,7 @@ article.post-preview[data-tags~="webm"]::before {
 }
 
 /* === UPLOAD PAGE === */
+.box-section { box-shadow: unset; }                             /* Clear the shadows on the column sections */
 .toggle-button[data-v-deb50420] { margin-bottom: 5px; }         /* Fix the spacing on the uploads page */
 .tag-textarea[data-v-deb50420],                                 /* Credit goes to Peegus for this one */
 .flex-wrap[data-v-deb50420] { margin: 10px 0 5px; }
@@ -280,10 +299,12 @@ section#post-options ul li:nth-child(1),                        /* Best way to a
 section#post-options ul li:nth-child(2) {                       /* Yes, really. */
     margin: 5px 0;
 }
-a#remove-from-favorites { background-color: maroon; }
-a#remove-from-favorites:before { content: "- "; }
 a#add-to-favorites { background-color: darkgreen; }
+a#add-to-favorites:hover { background-color: #015201; }
 a#add-to-favorites:before { content: "+ "; }
+a#remove-from-favorites { background-color: maroon; }
+a#remove-from-favorites:hover { background-color: #630202; }
+a#remove-from-favorites:before { content: "- "; }
 
 /* +Favorites Button */
 div#c-posts .fav-buttons button.ui-button {                     /* Replace the weird white +FAV button with an old style one */
@@ -294,8 +315,10 @@ div#c-posts .fav-buttons button.ui-button {                     /* Replace the w
     font-size: 0em;
 }
 #add-fav-button { background: darkgreen; }
+#add-fav-button:hover { background: #015201; }
 #add-fav-button:after { content: "+ Favorite"; font-size: 0.9rem; }
 #remove-fav-button { background: maroon; }
+#remove-fav-button:hover { background: #630202; }
 #remove-fav-button:after { content: "- Unfavorite"; font-size: 0.9rem; }
 
 /* Download Button */
@@ -306,6 +329,7 @@ div#image-download-link a {                                     /* Recolor the d
     border: 0;
     border-radius: 3px;
 }
+div#image-download-link a:hover { background: #844325; }
 
 /* Description */
 div#c-posts div#a-show #artist-commentary { padding: unset }    /* Get rid of extra padding on the description collapsable box */
@@ -351,9 +375,6 @@ section#edit form.simple_form {
     margin: unset;
     padding: unset;
 }
-section#edit input, section#edit textarea {
-    box-shadow: unset;
-}
 section#edit div.input:last-child {                             /* Make the "Save Changes" button scroll with the page */
     position: -webkit-sticky;
     position: sticky;
@@ -383,8 +404,11 @@ div.list-of-forum-posts article {                               /* Re-color the 
 #forum_post_body { width: 100%; box-shadow: none; }             /* Streamline the textbox */
 
 table.striped tbody tr.forum-topic-row {                        /* Stripes are out, padding is in! */
-    background-color: #204274;
+    background-color: #ffffff10;
     border-bottom: 1px solid #132144;
+}
+table.striped tbody tr.forum-topic-row:hover {
+    background-color: #254473;
 }
 tr.forum-topic-row td {
     padding: 15px 5px;
@@ -395,10 +419,35 @@ div.list-of-forum-posts article:nth-child(2n) {                 /* Get rid of th
 div.list-of-forum-posts article[data-is-deleted="true"] {       /* Restore the highlight on the deleted posts */
     background-color: rgba(130,40,40,.50);
 }
-textarea#forum_post_body { max-width: unset !important; }       /* No reason to limit this */
+textarea#forum_post_body { max-width: unset; }                  /* No reason to limit this */
 
 
 /* === COMMENTS INDEX === */
+div#c-comments div#a-index div.post,
+div#c-comments div#a-show div.post {                            /* Straighten out and align comments in the list */
+    margin-bottom: 1em;
+    background-color: #294a81aa;
+}
+div#c-comments div#a-index div.preview,
+div#c-comments div#a-show div.preview {
+    text-align: center;
+    width: 200px;
+    display: table;
+    margin-right: unset;
+}
+div#c-comments div#a-index div.comments-for-post { width: 100%; }
+div#c-comments div#a-index div.comments-for-post div.list-of-comments article.comment {
+    width: 100%;
+}
+div#c-comments div#a-index div.post,
+div#c-comments div#a-show div.post {
+    box-shadow: unset;
+}
+
+div#c-comments div#a-index div.post article.comment img {       /* Bugfix: user avatars shouldn't recieve the parent post's status borders */
+    border: 0px;
+}
+
 @media screen and (max-width: 801px) {                          /* Fixes for mobile, by JAKXXX3 */
     div#c-comments div#a-index div#p-index-by-post div.post-preview {
         flex-flow: row wrap;
@@ -434,13 +483,16 @@ body.c-users.a-show div#c-users div#a-show div.profile-container {
 }
 /* Profile statistics - get rid of striping, add background for clarity */
 div.profile-stats {
-    background: #284a81;
+    background: #294a81aa;
     padding: 10px;
     border-radius: 4px;
 }
 table.user-statistics tr:nth-child(2n) { background-color: unset; }
 table.user-statistics tbody tr { border-bottom: 0; }
 table.user-statistics tbody tr:hover { background-color: unset; }
+
+div#c-users div#a-show table.user-statistics th { width: 1%; white-space: nowrap; }
+div#c-users div#a-show table.user-statistics td { width: auto; }
 
 /* User rating in profile's page (and everywhere) with bold fonts like before */ 
 .user-feedback-positive,
@@ -465,30 +517,13 @@ body.c-users.a-show div#c-users div#a-show div.box {
     margin: 0 5px;
 }
 
-div.profile-container div.about-section { margin-left: 1em; }
+/* Adjust the "About user" and "Artist Information" boxes */
 div#c-users div#a-show .about-section .about-piece {
     margin: unset;
+    background-color: #294a81aa;
+    margin-left: 1em;
     box-shadow: unset;
     padding: 0.5rem;
-}
-
-
-/* My Profile > Comments : removes your avatar, align posts and extends comment boxes */
-body.c-comments.a-index div#c-comments div#a-index div.post, div#c-comments div#a-show div.post {
-    margin-bottom: 1em;
-}
-body.c-comments.a-index div#c-comments div#a-index div.preview, div#c-comments div#a-show div.preview {
-    text-align: center;
-    width: 200px;
-    display: table;
-    margin-right: unset;
-}
-body.c-comments.a-index div.comments-for-post div.list-of-comments article.comment {
-    width: 100%;
-}
-
-body.c-comments.a-index div#c-comments div#a-index div.post, div#c-comments div#a-show div.post {
-    box-shadow: unset;
 }
 
 
@@ -497,6 +532,12 @@ body.c-comments.a-index div#c-comments div#a-index div.post, div#c-comments div#
 
 
 /* === SETTINGS === */
+div#c-maintenance-user-passwords div#a-edit,                    /* Set the minimum width on the settings, to match the forum */
+div#c-users div#a-edit {
+    max-width: 1200px;
+    margin: 15px auto;
+}
+
 div#c-users div#a-edit h2#edit-options .active {                /* Give contrast to the active tabs */
     color: #ffe380;
 }
