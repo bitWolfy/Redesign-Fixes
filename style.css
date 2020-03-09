@@ -68,7 +68,8 @@ div#ad-leaderboard { text-align: center; }                      /* Center the ad
 
 /* Comment / Post Features */
 div blockquote,                                                 /* Re-style the quotes and collapsable blocks */
-.styled-dtext div.expandable {
+.styled-dtext div.expandable,
+div#c-posts div#a-show #artist-commentary {
     box-shadow: none;
     border: none;
     border-left: 4px solid #ffffff60;
