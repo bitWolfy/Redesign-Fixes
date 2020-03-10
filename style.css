@@ -266,7 +266,7 @@ div#c-posts aside#sidebar #tag-list h2 {                        /* Tags list - s
 }
 
 /* Mobile Searchbox */
-.mobile-search { margin: 10px 10px 30px ; }                     /* Streamline the mobile search form */
+.mobile-search { margin: 10px 10px 25px ; }                     /* Streamline the mobile search form */
 .mobile-search a:first-child {                                  /* Screw you, I'll re-style the mobile searchform too */
     float: right;                                               /* Multi-device styling! https://i.imgur.com/Ong1enY.png */
     margin-bottom: 10px;
