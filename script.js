@@ -7,9 +7,6 @@
 // @homepage     https://github.com/bitWolfy/e621-Redesign-Fixes
 // @match        https://e621.net/*
 // @match        https://e926.net/*
-// @exclude      *.json
-// @grant GM_setValue
-// @grant GM_getValue
 // ==/UserScript==
 
 $(function() {
