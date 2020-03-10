@@ -641,6 +641,9 @@ div.list-of-forum-posts article:nth-child(2n) {                 /* Get rid of th
 div.list-of-forum-posts article[data-is-deleted="true"] {       /* Restore the highlight on the deleted posts */
     background-color: var(--color-danger-muted);
 }
+div.list-of-forum-posts article div.content {                   /* Get rid of unnecessary padding on the forum posts */
+    padding: unset;
+}
 textarea#forum_post_body { max-width: unset; }                  /* No reason to limit this */
 
 
