@@ -441,6 +441,11 @@ span.pool-name { font-weight: 700; }
     margin-top: 10px;
 }
 
+/* Information Section */
+div#c-posts .source-link:hover a {
+    background: var(--color-base);
+}
+
 /* Sidebar Favorites Button */
 a#add-to-favorites,                                             /* Recolor the sidebar favorites button to what it was before */
 a#remove-from-favorites {
