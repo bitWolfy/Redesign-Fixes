@@ -288,7 +288,7 @@ div#posts div#posts-container {
     article.post-preview {                                      /* Space out the thumbnails a bit more */
         flex: 1 1 auto;
         margin: 10px;
-        
+        max-width: fit-content;
     }
     article.post-preview div.desc {
         width: inherit;
