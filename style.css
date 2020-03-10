@@ -2,7 +2,7 @@
 @name         e621 Redesign Fixes
 @description  Restore e621.net back to its classic look
 @namespace    bitwolfy.com
-@version      1.51.1
+@version      1.51.2
 @author       bitWolfy
 @homepageURL  https://e621.net/forum_topics/25811
 @license      CC-BY-SA-4.0
@@ -236,7 +236,7 @@ span.search-help a:after {
 
 /* Desktop Searchbox */
 div#page aside#sidebar input[type=text] {                       /* Re-style the search bar */
-    width: 13em;                                                /* Git gud, Xch3l, I did it in like 5 minutes */
+    width: 13em;                                                /* Spite-filled redesigning initiated */
     padding: 2px 0px;
     border-radius: 4px 0 0 4px;
     border-right: 0;
