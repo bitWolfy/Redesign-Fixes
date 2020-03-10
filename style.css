@@ -760,7 +760,7 @@ div#c-users div#a-show .about-section .about-piece {
 div#c-maintenance-user-passwords div#a-edit,                    /* Set the minimum width on the settings, to match the forum */
 div#c-users div#a-edit {
     max-width: 1200px;
-    margin: 15px auto;
+    margin: 0px auto;
 }
 
 div#c-users div#a-edit h2#edit-options .active {                /* Give contrast to the active tabs */
