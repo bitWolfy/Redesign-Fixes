@@ -270,7 +270,6 @@ div#c-posts div#a-index menu#post-sections { display: none; }   /* Hide "posts" 
 
 article picture img { border-radius: 4px 4px 0 0; }             /* Give the thumbnails their rounded corners back */
 div#page aside#sidebar h1 { margin-bottom: 5px; }                /* Minor padding fix for the tag and blacklist */
-#blacklist-box h1:first-child { margin-bottom: 5px; }
 
 #mode-box { margin-right: 30px; }                               /* Make the mode box match size with the search bar */
 #mode-box-mode { width: 100%; box-shadow: none; }
