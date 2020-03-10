@@ -235,9 +235,18 @@ span.search-help a:after {
 }
 
 /* Desktop Searchbox */
-#search-box { margin-right: 30px; }
-#search-box button[type="submit"] { display: none; }            /* Terrible way of getting rid of the search bar submit button */
-#search-box input[type="text"] { width: 100%; }                 /* Terrible way of making the search bar longer */
+div#page aside#sidebar input[type=text] {                       /* Re-style the search bar */
+    width: 13em;                                                /* Git gud, Xch3l, I did it in like 5 minutes */
+    padding: 2px 0px;
+    border-radius: 4px 0 0 4px;
+    border-right: 0;
+}
+div#page aside#sidebar #search-box button[type=submit] {
+    width: 2em;
+    padding: 2px 6px;
+    border-radius: 0 4px 4px 0;
+    border-left: 1px solid #ccc;
+}
 
 /* Desktop - Mobile Searchbox Switching */
 #search-box { display: none; }
@@ -257,18 +266,29 @@ div#c-posts aside#sidebar #tag-list h2 {                        /* Tags list - s
 
 /* Mobile Searchbox */
 .mobile-search { margin: 10px 10px 30px ; }                     /* Streamline the mobile search form */
-.mobile-search .search-button { display: none; }
-.mobile-search a { float: right; }
+.mobile-search a:first-child {                                  /* Screw you, I'll re-style the mobile searchform too */
+    float: right;                                               /* Multi-device styling! https://i.imgur.com/Ong1enY.png */
+    margin-bottom: 10px;
+}
+body.resp .mobile-search>.search-form>form .search-input input {
+    border-radius: 4px 0 0 4px;
+}
+body.resp .mobile-search>.search-form>form .search-button>button {
+    border-radius: 0 4px 4px 0;
+}
 
 
 /* === SEARCH PAGE === */
 div#c-posts div#a-index menu#post-sections { display: none; }   /* Hide "posts" header in search page (useless?) */
 
 article picture img { border-radius: 4px 4px 0 0; }             /* Give the thumbnails their rounded corners back */
-div#page aside#sidebar h1 { margin-bottom: 5px; }                /* Minor padding fix for the tag and blacklist */
+div#page aside#sidebar h1 { margin-bottom: 5px; }               /* Minor padding fix for the tag and blacklist */
 
-#mode-box { margin-right: 30px; }                               /* Make the mode box match size with the search bar */
-#mode-box-mode { width: 100%; box-shadow: none; }
+#mode-box-mode {                                                /* Make the mode box match size with the search bar */
+    width: 15em;
+    border-radius: 4px;
+    box-shadow: none;
+}
 
 div.post-score { font-size: 0.8rem; }                           /* Increase the font size on post preview details */
 
