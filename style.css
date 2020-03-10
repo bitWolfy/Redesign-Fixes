@@ -2,7 +2,7 @@
 @name         e621 Redesign Fixes
 @description  Restore e621.net back to its classic look
 @namespace    bitwolfy.com
-@version      1.51.1
+@version      1.51.2
 @author       bitWolfy
 @homepageURL  https://e621.net/forum_topics/25811
 @license      CC-BY-SA-4.0
@@ -236,10 +236,11 @@ span.search-help a:after {
 
 /* Desktop Searchbox */
 div#page aside#sidebar input[type=text] {                       /* Re-style the search bar */
-    width: 13em;                                                /* Git gud, Xch3l, I did it in like 5 minutes */
-    padding: 2px 0px;
+    width: 13em;                                                /* Spite-filled redesigning initiated */
+    padding: 2px 3px;
     border-radius: 4px 0 0 4px;
     border-right: 0;
+    box-sizing: border-box;
 }
 div#page aside#sidebar #search-box button[type=submit] {
     width: 2em;
@@ -265,16 +266,20 @@ div#c-posts aside#sidebar #tag-list h2 {                        /* Tags list - s
 }
 
 /* Mobile Searchbox */
-.mobile-search { margin: 10px 10px 30px ; }                     /* Streamline the mobile search form */
+.mobile-search { margin: 10px 10px 25px ; }                     /* Streamline the mobile search form */
 .mobile-search a:first-child {                                  /* Screw you, I'll re-style the mobile searchform too */
     float: right;                                               /* Multi-device styling! https://i.imgur.com/Ong1enY.png */
     margin-bottom: 10px;
 }
 body.resp .mobile-search>.search-form>form .search-input input {
     border-radius: 4px 0 0 4px;
+    padding: 1px 3px;
+    box-sizing: border-box;
 }
 body.resp .mobile-search>.search-form>form .search-button>button {
     border-radius: 0 4px 4px 0;
+    padding: 2px 6px;
+    border-left: 1px solid #ccc;
 }
 
 
