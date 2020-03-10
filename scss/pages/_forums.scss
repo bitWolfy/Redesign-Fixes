@@ -1,0 +1,35 @@
+/* === FORUMS === */
+.c-forum-topics div#page > div {                                /* Forum minimum width fix, courtesy of ratismal */
+    max-width: var(--conf-page-inner-width);
+    margin: 0px auto;
+}
+.c-forum-topics .forum-post { padding: 15px; }
+.c-forum-topics #a-show { margin-top: 15px; }
+
+div.list-of-forum-posts article {                               /* Re-color the forum posts to look like normal comments */
+    background: var(--color-foreground);
+    box-shadow: none;
+}
+#topic-response .text label { display: none; }                  /* No need to label the forum post textbox */
+#forum_post_body { width: 100%; box-shadow: none; }             /* Streamline the textbox */
+
+table.striped tbody tr.forum-topic-row {                        /* Stripes are out, padding is in! */
+    background-color: var(--color-foreground);
+    border-bottom: 1px solid var(--color-background);
+}
+table.striped tbody tr.forum-topic-row:hover {
+    background-color: var(--color-foreground-alt);
+}
+tr.forum-topic-row td {
+    padding: 15px 5px;
+}
+div.list-of-forum-posts article:nth-child(2n) {                 /* Get rid of the striping on the forum posts as well */
+    background-color: var(--color-foreground);
+}
+div.list-of-forum-posts article[data-is-deleted="true"] {       /* Restore the highlight on the deleted posts */
+    background-color: var(--color-danger-muted);
+}
+div.list-of-forum-posts article div.content {                   /* Get rid of unnecessary padding on the forum posts */
+    padding: unset;
+}
+textarea#forum_post_body { max-width: unset; }                  /* No reason to limit this */

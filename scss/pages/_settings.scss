@@ -1,0 +1,32 @@
+/* === SETTINGS === */
+div#c-maintenance-user-passwords div#a-edit,                    /* Set the minimum width on the settings, to match the forum */
+div#c-users div#a-edit {
+    max-width: 1200px;
+    margin: 0px auto;
+}
+
+div#c-users div#a-edit h2#edit-options .active {                /* Give contrast to the active tabs */
+    color: var(--color-secondary);
+}
+fieldset{ min-width: 0 ;}                                       /* Keep the inputs from extending off the screen*/
+form select, form input{ font-size: inherit; }                  /* Dont bump font on mobile*/
+
+body.resp form.simple_form div.input input[type="email"], 
+body.resp form.simple_form div.input input[type="number"], 
+body.resp form.simple_form div.input input[type="password"], 
+body.resp form.simple_form div.input input[type="text"], 
+body.resp form.simple_form div.input textarea {                 /* Keep the inputs from extending off the screen*/
+    width: calc(100% - 5px);
+}
+
+div#c-users div#a-edit div.input { margin-bottom: 1em; }        /* Settings: less padding, color consistency like the other pages */
+div#c-users div#a-edit h1 { margin: unset; }
+div#c-users div#a-edit h2 { margin-bottom: .5em; }
+
+#user_custom_style { height: 800px; }                           /* Makes editing CSS more convenient */
+#user_blacklisted_tags { height: 300px; }                       /* Same with the blacklist */
+
+.simple_form {                                                  /* This sets the color for all other setting pages (eg: Change Password, Delete account, API etc)*/
+    padding: 0.5em;
+    background-color: var(--color-foreground);
+}

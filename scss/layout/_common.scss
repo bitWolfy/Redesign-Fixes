@@ -1,0 +1,40 @@
+/* === Common Styles === */
+
+/* --- Layout --- */
+body {
+    margin: 0 auto;
+    background: $theme-image-background $theme-color-background;
+    font-size: 85%;
+}
+
+@include media-breakpoint(tablet)       { body { max-width: $media-breakpoint-tablet; } }
+@include media-breakpoint(laptop)       { body { max-width: $media-breakpoint-laptop; } }
+@include media-breakpoint(desktop)      { body { max-width: $media-breakpoint-desktop; } }
+@include media-breakpoint(desktop-lg)   { body { max-width: $media-breakpoint-desktop-lg; } }
+
+div#page {
+    background-image: $theme-image-foreground;
+    background-position: left top;
+    background-repeat: repeat-x;
+    border-radius: 6px;
+}
+
+button, input, select, textarea { box-shadow: unset; }          /* Get rid of shadows on inputs */
+
+/* --- Common Elements --- */
+.score-negative,                                                /* Scores and rating are bold everywhere now */
+.score-neutral,                                                 /* Except if they don't have the class associated (like 'rating' in posts and comments pages) */
+.score-positive,
+.post-score-rating {
+    font-weight: 700;
+}
+
+div#ad-leaderboard { text-align: center; }                      /* Center the ads, because why not? */
+
+/* === NOTICES === */
+div#notice:not(.ui-state-error) {
+    background-color: var(--color-foreground-muted);
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    padding: 4px !important;
+    box-shadow: 0 0 27px rgba(0, 0, 0, 0.2);
+}

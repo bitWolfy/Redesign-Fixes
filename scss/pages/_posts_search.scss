@@ -1,0 +1,84 @@
+/* === SEARCH PAGE === */
+div#c-posts div#a-index menu#post-sections { display: none; }   /* Hide "posts" header in search page (useless?) */
+
+article picture img { border-radius: 4px 4px 0 0; }             /* Give the thumbnails their rounded corners back */
+div#page aside#sidebar h1 { margin-bottom: 5px; }               /* Minor padding fix for the tag and blacklist */
+
+#mode-box-mode {                                                /* Make the mode box match size with the search bar */
+    width: 15em;
+    border-radius: 4px;
+    box-shadow: none;
+}
+
+div.post-score { font-size: 0.8rem; }                           /* Increase the font size on post preview details */
+
+div#posts div#posts-container {
+    display: flex;
+    flex-flow: wrap;
+    align-items: flex-end;
+    max-width: var(--conf-posts-list-width);
+}
+
+@media only screen and (min-width: 801px) {
+    article.post-preview {                                      /* Space out the thumbnails a bit more */
+        flex: 1 1 auto;
+        margin: 10px;
+        max-width: max-content;
+    }
+    article.post-preview div.desc {
+        width: inherit;
+        margin: 0 auto;
+    }
+}
+
+/* Blacklist */
+#blacklist-list { margin-bottom: 10px; }                        /* Beautify the blacklist filters on the search page */
+a#disable-all-blacklists,
+a#re-enable-all-blacklists { font-size:0; }
+a#disable-all-blacklists::after,
+a#re-enable-all-blacklists::after {
+    border: 0;
+    color: var(--color-white);
+    box-shadow: none;
+    padding: 3px 10px;
+    font-size: 0.8rem;
+    border-radius: 4px;
+}
+a#disable-all-blacklists::after { content: "Disable all filters"; background: var(--color-danger); }
+a#re-enable-all-blacklists::after { content: "Enable all filters"; background: var(--color-success); }
+a.blacklist-toggle-link:before { content: "» "; }
+
+#blacklist-box.sidebar-blacklist ul li {                        /* Bugfix: remove extraneous list dots (favorites page only) */
+    list-style-type: none;
+}
+
+span.blacklist-help a { font-size: 0; }                         /* Replace the giant blacklist help link with a small (?) one */
+span.blacklist-help a:after {
+    content: "(?)";
+    font-size: 0.8rem;
+}
+
+/* Animation Type Badges */
+article.post-preview[data-tags~="animated"]::before { content: "anim"; }
+article.post-preview[data-tags~="mp4"]::before { content: "mp4"; }
+article.post-preview[data-tags~="flash"]::before { content: "swf"; }
+article.post-preview[data-tags~="webm"]::before { content: "webm"; }
+
+article.post-preview[data-tags~="animated"]::before,            /* This is a horrible, hacky way of doing it. */
+article.post-preview[data-tags~="mp4"]::before,
+article.post-preview[data-tags~="flash"]::before,
+article.post-preview[data-tags~="webm"]::before {
+    position: absolute;
+    left: -2px;
+    top: 10px;
+    z-index: 10;
+    
+    background-color: var(--color-foreground-muted);
+    width: unset;
+    height: unset;
+    padding: 1px 5px 1px 5px;
+    border-radius: 5px;
+    border: 1px solid var(--color-white);
+    font-size: 0.6em;
+    font-weight: 700;
+}
