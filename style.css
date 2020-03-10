@@ -561,6 +561,20 @@ div#c-explore-posts div#a-popular section#blacklist-box {
     flex-basis: 100%;
 }
 
+@media screen and (max-width: 800px) {
+    body.resp div#page div#c-explore-posts div#a-popular {
+        flex-flow: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    body.resp div#page div#c-explore-posts div#a-popular article.post-preview img {
+        height: auto;
+        max-height: none;
+        max-width: none;
+        width: 32vw;
+    }
+}
+
 
 /* === POOL PAGE === */
 div#c-pools div#a-show section:not(#blacklist-box) {
