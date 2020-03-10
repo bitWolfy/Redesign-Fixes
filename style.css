@@ -2,7 +2,7 @@
 @name         e621 Redesign Fixes
 @description  Restore e621.net back to its classic look
 @namespace    bitwolfy.com
-@version      1.50.3
+@version      1.50.4
 @author       bitWolfy
 @homepageURL  https://e621.net/forum_topics/25811
 @license      CC-BY-SA-4.0
@@ -270,7 +270,6 @@ div#c-posts div#a-index menu#post-sections { display: none; }   /* Hide "posts" 
 
 article picture img { border-radius: 4px 4px 0 0; }             /* Give the thumbnails their rounded corners back */
 div#page aside#sidebar h1 { margin-bottom: 5px; }                /* Minor padding fix for the tag and blacklist */
-#blacklist-box h1:first-child { margin-bottom: 5px; }
 
 #mode-box { margin-right: 30px; }                               /* Make the mode box match size with the search bar */
 #mode-box-mode { width: 100%; box-shadow: none; }
@@ -288,7 +287,7 @@ div#posts div#posts-container {
     article.post-preview {                                      /* Space out the thumbnails a bit more */
         flex: 1 1 auto;
         margin: 10px;
-        
+        max-width: fit-content;
     }
     article.post-preview div.desc {
         width: inherit;
