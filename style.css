@@ -402,6 +402,9 @@ div#nav-links div#search-seq-nav {
     background: var(--color-foreground);
     padding: 5px;
 }
+div#nav-links div#search-seq-nav span.search-name {
+    padding: 0 15px;
+}
 div#nav-links div#search-seq-nav .prev,
 div#nav-links div#search-seq-nav .next {
     top: unset;
@@ -459,7 +462,10 @@ div#c-posts div#a-show #pool-nav li .next { right: 0; font-size: 0; }
 #pool-nav span.prev,
 #pool-nav span.next { color: var(--color-muted); }
 
-span.pool-name { font-weight: 700; }
+span.pool-name {
+    font-weight: 700;
+    padding: 0 15px;
+}
 
 /* Image controls - FAV, Download, Resize */
 #image-extra-controls {
