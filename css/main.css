@@ -2138,7 +2138,7 @@ div#c-users div#a-show div.box.user-uploads {
   min-width: 30px;
   border: 1px solid #152f56;
   background: #1f3c67;
-  margin: 1em 0;
+  margin-bottom: 1em;
   border-radius: 4px;
 }
 

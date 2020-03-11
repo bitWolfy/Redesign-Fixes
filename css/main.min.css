@@ -876,7 +876,7 @@ div#c-users div#a-show table.user-statistics td { width: auto; padding: 3px; }
 .user-feedback-positive, .user-feedback-neutral, .user-feedback-negative { font-weight: 700; }
 
 /* Re-position the favorites section */
-div#c-users div#a-show div.box.user-favorites, div#c-users div#a-show div.box.user-uploads { display: inline-block; position: relative; -webkit-box-flex: 0; -ms-flex: 0 0 100%; flex: 0 0 100%; height: 200px; min-width: 30px; border: 1px solid #152f56; background: #1f3c67; margin: 1em 0; border-radius: 4px; }
+div#c-users div#a-show div.box.user-favorites, div#c-users div#a-show div.box.user-uploads { display: inline-block; position: relative; -webkit-box-flex: 0; -ms-flex: 0 0 100%; flex: 0 0 100%; height: 200px; min-width: 30px; border: 1px solid #152f56; background: #1f3c67; margin-bottom: 1em; border-radius: 4px; }
 
 .theme-hexagon div#c-users div#a-show div.box.user-favorites, .theme-hexagon div#c-users div#a-show div.box.user-uploads { border: 1px solid #152f56; background: #1f3c67; }
 
