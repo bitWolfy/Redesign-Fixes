@@ -727,7 +727,7 @@ div#page aside#sidebar h1 { margin-bottom: 5px; }
 div.post-score { font-size: 0.8rem; }
 
 /* Increase the font size on post preview details */
-div#posts div#posts-container { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-flow: wrap; flex-flow: wrap; -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; max-width: var(--conf-posts-list-width); }
+div#posts div#posts-container { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-flow: wrap; flex-flow: wrap; -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
 
 article.post-preview div.desc { background-color: #1f3c67; }
 

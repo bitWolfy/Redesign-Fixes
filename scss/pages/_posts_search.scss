@@ -16,7 +16,7 @@ div#posts div#posts-container {
     display: flex;
     flex-flow: wrap;
     align-items: flex-end;
-    max-width: var(--conf-posts-list-width);
+    justify-content: space-between;
 }
 
 article.post-preview div.desc {

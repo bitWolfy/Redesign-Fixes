@@ -1775,7 +1775,9 @@ div#posts div#posts-container {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  max-width: var(--conf-posts-list-width);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 article.post-preview div.desc {
