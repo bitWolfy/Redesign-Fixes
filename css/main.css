@@ -47,9 +47,15 @@ body.theme-hotdog {
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1200px) {
   body {
-    max-width: 1440px;
+    max-width: 1200px;
+  }
+}
+
+@media (min-width: 1400px) {
+  body {
+    max-width: 1400px;
   }
 }
 
@@ -65,15 +71,15 @@ body.theme-hotdog {
   }
 }
 
-@media (min-width: 2560px) {
+@media (min-width: 2100px) {
   body {
-    max-width: 2560px;
+    max-width: 2100px;
   }
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 2560px) {
   body {
-    max-width: 1600px;
+    max-width: 2560px;
   }
 }
 
@@ -95,6 +101,26 @@ div#page {
 }
 
 .theme-hotdog div#page {
+  background-color: #FF0000;
+}
+
+footer#page-footer {
+  background-color: #152f56;
+  margin: 1em;
+  margin-bottom: 0;
+  width: unset;
+  border-radius: 6px 6px 0 0;
+}
+
+.theme-hexagon footer#page-footer {
+  background-color: #152f56;
+}
+
+.theme-bloodlust footer#page-footer {
+  background-color: #222222;
+}
+
+.theme-hotdog footer#page-footer {
   background-color: #FF0000;
 }
 
@@ -171,6 +197,111 @@ a:hover {
 
 div#ad-leaderboard {
   text-align: center;
+}
+
+/* --- Tables --- */
+table.striped {
+  width: 100%;
+}
+
+table.striped thead tr {
+  background-color: #193153;
+  border-bottom: 1px solid #152f56;
+}
+
+.theme-hexagon table.striped thead tr {
+  background-color: #193153;
+  border-bottom: 1px solid #152f56;
+}
+
+.theme-bloodlust table.striped thead tr {
+  background-color: #262626;
+  border-bottom: 1px solid #222222;
+}
+
+.theme-hotdog table.striped thead tr {
+  background-color: #b13632;
+  border-bottom: 1px solid #FF0000;
+}
+
+table.striped tbody tr {
+  background-color: #1f3c67;
+  border-bottom: 1px solid #152f56;
+}
+
+.theme-hexagon table.striped tbody tr {
+  background-color: #1f3c67;
+  border-bottom: 1px solid #152f56;
+}
+
+.theme-bloodlust table.striped tbody tr {
+  background-color: #333333;
+  border-bottom: 1px solid #222222;
+}
+
+.theme-hotdog table.striped tbody tr {
+  background-color: #c53c38;
+  border-bottom: 1px solid #FF0000;
+}
+
+table.striped tbody tr:hover {
+  background-color: #2b538e;
+}
+
+.theme-hexagon table.striped tbody tr:hover {
+  background-color: #2b538e;
+}
+
+.theme-bloodlust table.striped tbody tr:hover {
+  background-color: #4d4d4d;
+}
+
+.theme-hotdog table.striped tbody tr:hover {
+  background-color: #d1625f;
+}
+
+table.striped tbody tr td {
+  padding: 15px 5px;
+}
+
+td a.last-page,
+td a.last-page:link,
+td a.last-page:visited {
+  color: #999999;
+}
+
+.theme-hexagon td a.last-page, .theme-hexagon
+td a.last-page:link, .theme-hexagon
+td a.last-page:visited {
+  color: #999999;
+}
+
+.theme-bloodlust td a.last-page, .theme-bloodlust
+td a.last-page:link, .theme-bloodlust
+td a.last-page:visited {
+  color: #999999;
+}
+
+.theme-hotdog td a.last-page, .theme-hotdog
+td a.last-page:link, .theme-hotdog
+td a.last-page:visited {
+  color: #999999;
+}
+
+td a.last-page:hover {
+  color: #e9f2fa;
+}
+
+.theme-hexagon td a.last-page:hover {
+  color: #e9f2fa;
+}
+
+.theme-bloodlust td a.last-page:hover {
+  color: #f68b00;
+}
+
+.theme-hotdog td a.last-page:hover {
+  color: #666666;
 }
 
 /* === NOTICES === */
@@ -855,6 +986,18 @@ div#c-posts div#a-show #artist-commentary {
   background: rgba(209, 98, 95, 0.7);
 }
 
+.styled-dtext blockquote::after,
+.styled-dtext div.expandable::after,
+.styled-dtext pre::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
 .styled-dtext blockquote {
   border-left-color: #b4c7d9;
 }
@@ -988,106 +1131,6 @@ div.list-of-forum-posts article {
   width: 100%;
   -webkit-box-shadow: none;
           box-shadow: none;
-}
-
-table.striped thead tr {
-  background-color: #193153;
-  border-bottom: 1px solid #152f56;
-}
-
-.theme-hexagon table.striped thead tr {
-  background-color: #193153;
-  border-bottom: 1px solid #152f56;
-}
-
-.theme-bloodlust table.striped thead tr {
-  background-color: #262626;
-  border-bottom: 1px solid #222222;
-}
-
-.theme-hotdog table.striped thead tr {
-  background-color: #b13632;
-  border-bottom: 1px solid #FF0000;
-}
-
-table.striped tbody tr.forum-topic-row {
-  background-color: #1f3c67;
-  border-bottom: 1px solid #152f56;
-}
-
-.theme-hexagon table.striped tbody tr.forum-topic-row {
-  background-color: #1f3c67;
-  border-bottom: 1px solid #152f56;
-}
-
-.theme-bloodlust table.striped tbody tr.forum-topic-row {
-  background-color: #333333;
-  border-bottom: 1px solid #222222;
-}
-
-.theme-hotdog table.striped tbody tr.forum-topic-row {
-  background-color: #c53c38;
-  border-bottom: 1px solid #FF0000;
-}
-
-table.striped tbody tr.forum-topic-row:hover {
-  background-color: #2b538e;
-}
-
-.theme-hexagon table.striped tbody tr.forum-topic-row:hover {
-  background-color: #2b538e;
-}
-
-.theme-bloodlust table.striped tbody tr.forum-topic-row:hover {
-  background-color: #4d4d4d;
-}
-
-.theme-hotdog table.striped tbody tr.forum-topic-row:hover {
-  background-color: #d1625f;
-}
-
-tr.forum-topic-row td {
-  padding: 15px 5px;
-}
-
-td a.last-page,
-td a.last-page:link,
-td a.last-page:visited {
-  color: #999999;
-}
-
-.theme-hexagon td a.last-page, .theme-hexagon
-td a.last-page:link, .theme-hexagon
-td a.last-page:visited {
-  color: #999999;
-}
-
-.theme-bloodlust td a.last-page, .theme-bloodlust
-td a.last-page:link, .theme-bloodlust
-td a.last-page:visited {
-  color: #999999;
-}
-
-.theme-hotdog td a.last-page, .theme-hotdog
-td a.last-page:link, .theme-hotdog
-td a.last-page:visited {
-  color: #999999;
-}
-
-td a.last-page:hover {
-  color: #e9f2fa;
-}
-
-.theme-hexagon td a.last-page:hover {
-  color: #e9f2fa;
-}
-
-.theme-bloodlust td a.last-page:hover {
-  color: #f68b00;
-}
-
-.theme-hotdog td a.last-page:hover {
-  color: #666666;
 }
 
 div.list-of-forum-posts article:nth-child(2n) {
@@ -1789,19 +1832,19 @@ div.post-score {
 
 /* Increase the font size on post preview details */
 article.post-preview div.desc {
-  background-color: #1f3c67;
+  background-color: #25477b;
 }
 
 .theme-hexagon article.post-preview div.desc {
-  background-color: #1f3c67;
+  background-color: #25477b;
 }
 
 .theme-bloodlust article.post-preview div.desc {
-  background-color: #333333;
+  background-color: #404040;
 }
 
 .theme-hotdog article.post-preview div.desc {
-  background-color: #c53c38;
+  background-color: #cc4e4b;
 }
 
 @media (min-width: 800px) {
@@ -2005,31 +2048,36 @@ article.post-preview[data-tags~="webm"]::before {
 
 /* === PROFILE PAGE === */
 /* Shadow below user-name in profile's page, because why not */
-body.c-users.a-show div.profile-stats > h1 {
+div.profile-stats > h1 {
   margin: 0.25em 0.5em;
 }
 
-body.c-users.a-show div.profile-stats > h1 > a {
+div.profile-stats > h1 > a {
   background: #152f56;
   padding: 3px 20px;
   border-radius: 20px;
 }
 
-.theme-hexagon body.c-users.a-show div.profile-stats > h1 > a {
+.theme-hexagon div.profile-stats > h1 > a {
   background: #152f56;
 }
 
-.theme-bloodlust body.c-users.a-show div.profile-stats > h1 > a {
+.theme-bloodlust div.profile-stats > h1 > a {
   background: #222222;
 }
 
-.theme-hotdog body.c-users.a-show div.profile-stats > h1 > a {
+.theme-hotdog div.profile-stats > h1 > a {
   background: #FF0000;
 }
 
 /* Padding for top part (table) of profile's page */
-body.c-users.a-show div#c-users div#a-show div.profile-container {
+div#c-users div#a-show div.profile-container {
   padding: 0 0 1em;
+}
+
+div#c-users div#a-show > div.profile-container:last-child {
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
 }
 
 /* Profile statistics - get rid of striping, add background for clarity */
@@ -2079,36 +2127,91 @@ div#c-users div#a-show table.user-statistics td {
   font-weight: 700;
 }
 
-/* Title of 'Favorites' and 'Uploads' boxes with a 'button' like format + alignments */
-body.c-users.a-show div#c-users div#a-show div.box h2, div#c-users div#a-show div.box h3 {
-  border-bottom: 4px solid var("color-link");
+/* Re-position the favorites section */
+div#c-users div#a-show div.box.user-favorites,
+div#c-users div#a-show div.box.user-uploads {
+  display: inline-block;
+  position: relative;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  height: 200px;
+  min-width: 30px;
+  border: 1px solid #152f56;
   background: #1f3c67;
-  padding: 0 0 2px;
-  margin: 0 0 5px;
-  text-align: center;
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
+  margin: 1em 0;
+  border-radius: 4px;
 }
 
-.theme-hexagon body.c-users.a-show div#c-users div#a-show div.box h2, .theme-hexagon div#c-users div#a-show div.box h3 {
-  border-bottom: 4px solid var("color-link");
+.theme-hexagon div#c-users div#a-show div.box.user-favorites, .theme-hexagon
+div#c-users div#a-show div.box.user-uploads {
+  border: 1px solid #152f56;
   background: #1f3c67;
 }
 
-.theme-bloodlust body.c-users.a-show div#c-users div#a-show div.box h2, .theme-bloodlust div#c-users div#a-show div.box h3 {
-  border-bottom: 4px solid var("color-link");
+.theme-bloodlust div#c-users div#a-show div.box.user-favorites, .theme-bloodlust
+div#c-users div#a-show div.box.user-uploads {
+  border: 1px solid #222222;
   background: #333333;
 }
 
-.theme-hotdog body.c-users.a-show div#c-users div#a-show div.box h2, .theme-hotdog div#c-users div#a-show div.box h3 {
-  border-bottom: 4px solid var("color-link");
+.theme-hotdog div#c-users div#a-show div.box.user-favorites, .theme-hotdog
+div#c-users div#a-show div.box.user-uploads {
+  border: 1px solid #FF0000;
   background: #c53c38;
 }
 
-/* Removes bottom spaces and adds some between aforementioned boxes */
-body.c-users.a-show div#c-users div#a-show div.box {
-  margin-bottom: unset;
-  margin: 0 5px;
+div#c-users div#a-show div.box.user-favorites h2,
+div#c-users div#a-show div.box.user-uploads h2 {
+  border-bottom: 4px solid #152f56;
+  background: #1f3c67;
+  position: absolute;
+  bottom: -39px;
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+  width: 200px;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 0 5px;
+  text-align: center;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.theme-hexagon div#c-users div#a-show div.box.user-favorites h2, .theme-hexagon
+div#c-users div#a-show div.box.user-uploads h2 {
+  border-bottom: 4px solid #152f56;
+  background: #1f3c67;
+}
+
+.theme-bloodlust div#c-users div#a-show div.box.user-favorites h2, .theme-bloodlust
+div#c-users div#a-show div.box.user-uploads h2 {
+  border-bottom: 4px solid #222222;
+  background: #333333;
+}
+
+.theme-hotdog div#c-users div#a-show div.box.user-favorites h2, .theme-hotdog
+div#c-users div#a-show div.box.user-uploads h2 {
+  border-bottom: 4px solid #FF0000;
+  background: #c53c38;
+}
+
+div#c-users div#a-show div.box.user-favorites div.vertical-section,
+div#c-users div#a-show div.box.user-uploads div.vertical-section {
+  height: 200px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 0 20px 0 40px;
 }
 
 /* Adjust the "About user" and "Artist Information" boxes */
@@ -2131,6 +2234,10 @@ div#c-users div#a-show .about-section .about-piece {
 
 .theme-hotdog div#c-users div#a-show .about-section .about-piece {
   background: #c53c38;
+}
+
+div#c-users div#a-show .about-section .about-piece:first-child {
+  margin-left: unset;
 }
 
 /* === SETTINGS === */

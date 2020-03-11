@@ -1,16 +1,19 @@
 /* === PROFILE PAGE === */
 /* Shadow below user-name in profile's page, because why not */
-body.c-users.a-show div.profile-stats > h1 {
+div.profile-stats > h1 {
     margin: 0.25em 0.5em;
 }
-body.c-users.a-show div.profile-stats > h1 > a {
+div.profile-stats > h1 > a {
     @include themable { background: themed("color-foreground"); }
     padding: 3px 20px;
     border-radius: 20px;
 }
 /* Padding for top part (table) of profile's page */
-body.c-users.a-show div#c-users div#a-show div.profile-container {
+div#c-users div#a-show div.profile-container {
     padding: 0 0 1em;
+}
+div#c-users div#a-show > div.profile-container:last-child {
+    flex-flow: wrap;
 }
 /* Profile statistics - get rid of striping, add background for clarity */
 div.profile-stats {
@@ -32,22 +35,47 @@ div#c-users div#a-show table.user-statistics td { width: auto; }
     font-weight: 700;
 }
 
-/* Title of 'Favorites' and 'Uploads' boxes with a 'button' like format + alignments */
-body.c-users.a-show div#c-users div#a-show div.box h2, div#c-users div#a-show div.box h3 {
+/* Re-position the favorites section */
+div#c-users div#a-show div.box.user-favorites,
+div#c-users div#a-show div.box.user-uploads {
+    display: inline-block;
+    position: relative;
+    flex: 0 0 100%;
+    height: 200px;
+    min-width: 30px;
     @include themable {
-        border-bottom: 4px solid var("color-link");
+        border: 1px solid themed("color-foreground");
         background: themed("color-section");
     }
-    padding: 0 0 2px;
-    margin: 0 0 5px;
-    text-align: center;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
+    margin: 1em 0;
+    border-radius: 4px;
 }
-/* Removes bottom spaces and adds some between aforementioned boxes */
-body.c-users.a-show div#c-users div#a-show div.box {
-    margin-bottom: unset;
-    margin: 0 5px;
+div#c-users div#a-show div.box.user-favorites h2,
+div#c-users div#a-show div.box.user-uploads h2 {
+    @include themable {
+        border-bottom: 4px solid themed("color-foreground");
+        background: themed("color-section");
+    }
+
+    position: absolute;
+    bottom: -39px;
+    transform: rotate(270deg);
+    transform-origin: top left;
+    width: 200px;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 0 5px;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 4px;
+}
+div#c-users div#a-show div.box.user-favorites div.vertical-section,
+div#c-users div#a-show div.box.user-uploads div.vertical-section {
+    height: 200px;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    margin: 0 20px 0 40px;
 }
 
 /* Adjust the "About user" and "Artist Information" boxes */
@@ -57,4 +85,7 @@ div#c-users div#a-show .about-section .about-piece {
     margin-left: 1em;
     box-shadow: unset;
     padding: 0.5rem;
+}
+div#c-users div#a-show .about-section .about-piece:first-child {
+    margin-left: unset;
 }

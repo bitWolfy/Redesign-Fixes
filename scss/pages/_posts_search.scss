@@ -14,7 +14,7 @@ div.post-score { font-size: 0.8rem; }                           /* Increase the 
 
 article.post-preview div.desc {
     @include themable {
-        background-color: themed("color-section");
+        background-color: lighten( themed("color-section"), 5%);
     }
 }
 
