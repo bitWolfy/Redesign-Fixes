@@ -676,6 +676,10 @@ div#nav-links div#search-seq-nav {
   background: #1f3c67;
 }
 
+div#nav-links div#search-seq-nav span.search-name {
+  padding: 0 15px;
+}
+
 div#nav-links div#search-seq-nav .prev,
 div#nav-links div#search-seq-nav .next {
   top: unset;
@@ -784,6 +788,7 @@ div#c-posts div#a-show #pool-nav li .next {
 
 span.pool-name {
   font-weight: 700;
+  padding: 0 15px;
 }
 
 /* Image controls - FAV, Download, Resize */

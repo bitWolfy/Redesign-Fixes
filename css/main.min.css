@@ -287,6 +287,8 @@ div#nav-links div#search-seq-nav { margin: 0; }
 
 .theme-hex #search-seq-nav ul li { background: #1f3c67; }
 
+div#nav-links div#search-seq-nav span.search-name { padding: 0 15px; }
+
 div#nav-links div#search-seq-nav .prev, div#nav-links div#search-seq-nav .next { top: unset; }
 
 /* Pool Navigation */
@@ -327,7 +329,7 @@ div#c-posts div#a-show #pool-nav li .next { right: 0; font-size: 0; }
 
 .theme-hex #pool-nav span.prev, .theme-hex #pool-nav span.next { color: #999999; }
 
-span.pool-name { font-weight: 700; }
+span.pool-name { font-weight: 700; padding: 0 15px; }
 
 /* Image controls - FAV, Download, Resize */
 #image-extra-controls { margin-top: 10px; }
