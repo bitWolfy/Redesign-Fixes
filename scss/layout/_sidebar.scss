@@ -33,7 +33,7 @@ div#c-posts aside#sidebar #tag-list h2 {                        /* Tags list - s
     font-family: verdana, sans-serif;
 }
 .post-count {                                                   /* De-emphasize the post count, courtesy of Zermelane */
-    color: var(--color-muted);
+    @include themable { color: themed("color-text-muted"); }
     font-size: 85%;
     font-weight: 500;
 }

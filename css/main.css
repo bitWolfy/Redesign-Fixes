@@ -91,11 +91,11 @@ a:active {
 }
 
 a:hover {
-  color: #2e76b4;
+  color: #e9f2fa;
 }
 
 .theme-hex a:hover {
-  color: #2e76b4;
+  color: #e9f2fa;
 }
 
 /* --- Common Elements --- */
@@ -217,9 +217,13 @@ div#c-posts aside#sidebar #tag-list h2 {
 
 .post-count {
   /* De-emphasize the post count, courtesy of Zermelane */
-  color: var(--color-muted);
+  color: #999999;
   font-size: 85%;
   font-weight: 500;
+}
+
+.theme-hex .post-count {
+  color: #999999;
 }
 
 /* Mobile Searchbox */
@@ -407,7 +411,12 @@ div#c-comments div#a-index div.post,
 div#c-comments div#a-show div.post {
   /* Straighten out and align comments in the list */
   margin-bottom: 1em;
-  background-color: var(--color-foreground);
+  background-color: rgba(31, 60, 103, 0.7);
+}
+
+.theme-hex div#c-comments div#a-index div.post, .theme-hex
+div#c-comments div#a-show div.post {
+  background-color: rgba(31, 60, 103, 0.7);
 }
 
 div#c-comments div#a-index div.preview,
@@ -418,11 +427,9 @@ div#c-comments div#a-show div.preview {
   margin-right: unset;
 }
 
-div#c-comments div#a-index div.comments-for-post {
-  width: 100%;
-}
-
-div#c-comments div#a-index div.comments-for-post div.list-of-comments article.comment {
+div#c-comments div#a-index div.comments-for-post,
+div#c-comments div#a-index div.comments-for-post div.list-of-comments article.comment,
+div.comments-for-post div.list-of-comments article.comment div.content {
   width: 100%;
 }
 
@@ -451,13 +458,70 @@ div#c-comments div#a-index div.post article.comment img {
   }
 }
 
-/* === FORUMS === */
-.c-forum-topics div#page > div {
-  /* Forum minimum width fix, courtesy of ratismal */
-  max-width: var(--conf-page-inner-width);
-  margin: 0px auto;
+/* --- Comment / Post Features --- */
+.styled-dtext blockquote,
+.styled-dtext div.expandable,
+.styled-dtext pre,
+div#c-posts div#a-show #artist-commentary {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+  border-radius: 3px;
+  border-left: 4px solid maroon;
+  background: rgba(37, 71, 123, 0.7);
 }
 
+.theme-hex .styled-dtext blockquote, .theme-hex
+.styled-dtext div.expandable, .theme-hex
+.styled-dtext pre, .theme-hex
+div#c-posts div#a-show #artist-commentary {
+  border-left: 4px solid maroon;
+  background: rgba(37, 71, 123, 0.7);
+}
+
+.styled-dtext blockquote {
+  border-color: #b4c7d9;
+}
+
+.theme-hex .styled-dtext blockquote {
+  border-color: #b4c7d9;
+}
+
+.styled-dtext div.expandable {
+  border-color: #ffe380;
+}
+
+.theme-hex .styled-dtext div.expandable {
+  border-color: #ffe380;
+}
+
+.styled-dtext pre {
+  border-color: #17a2b8;
+}
+
+.theme-hex .styled-dtext pre {
+  border-color: #17a2b8;
+}
+
+div#c-posts div#a-show #artist-commentary {
+  border-color: #b4c7d9;
+  padding: unset;
+}
+
+.theme-hex div#c-posts div#a-show #artist-commentary {
+  border-color: #b4c7d9;
+}
+
+.styled-dtext div.expandable div.expandable-header {
+  margin: 0 1rem;
+}
+
+.styled-dtext div.expandable div.expandable-content {
+  margin: 0 1rem;
+  padding: 0 0 1rem;
+}
+
+/* === FORUMS === */
 .c-forum-topics .forum-post {
   padding: 15px;
 }
@@ -468,9 +532,13 @@ div#c-comments div#a-index div.post article.comment img {
 
 div.list-of-forum-posts article {
   /* Re-color the forum posts to look like normal comments */
-  background: var(--color-foreground);
+  background: #1f3c67;
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+
+.theme-hex div.list-of-forum-posts article {
+  background: #1f3c67;
 }
 
 #topic-response .text label {
@@ -487,26 +555,63 @@ div.list-of-forum-posts article {
 /* Streamline the textbox */
 table.striped tbody tr.forum-topic-row {
   /* Stripes are out, padding is in! */
-  background-color: var(--color-foreground);
-  border-bottom: 1px solid var(--color-background);
+  background-color: #1f3c67;
+  border-bottom: 1px solid #152f56;
+}
+
+.theme-hex table.striped tbody tr.forum-topic-row {
+  background-color: #1f3c67;
+  border-bottom: 1px solid #152f56;
 }
 
 table.striped tbody tr.forum-topic-row:hover {
-  background-color: var(--color-foreground-alt);
+  background-color: #2b538e;
+}
+
+.theme-hex table.striped tbody tr.forum-topic-row:hover {
+  background-color: #2b538e;
 }
 
 tr.forum-topic-row td {
   padding: 15px 5px;
 }
 
+td a.last-page,
+td a.last-page:link,
+td a.last-page:visited {
+  color: #999999;
+}
+
+.theme-hex td a.last-page, .theme-hex
+td a.last-page:link, .theme-hex
+td a.last-page:visited {
+  color: #999999;
+}
+
+td a.last-page:hover {
+  color: #e9f2fa;
+}
+
+.theme-hex td a.last-page:hover {
+  color: #e9f2fa;
+}
+
 div.list-of-forum-posts article:nth-child(2n) {
   /* Get rid of the striping on the forum posts as well */
-  background-color: var(--color-foreground);
+  background-color: #1f3c67;
+}
+
+.theme-hex div.list-of-forum-posts article:nth-child(2n) {
+  background-color: #1f3c67;
 }
 
 div.list-of-forum-posts article[data-is-deleted="true"] {
   /* Restore the highlight on the deleted posts */
-  background-color: var(--color-danger-muted);
+  background-color: maroon;
+}
+
+.theme-hex div.list-of-forum-posts article[data-is-deleted="true"] {
+  background-color: maroon;
 }
 
 div.list-of-forum-posts article div.content {
@@ -563,8 +668,12 @@ div#nav-links div#search-seq-nav {
 }
 
 #search-seq-nav ul li {
-  background: var(--color-foreground);
+  background: #1f3c67;
   padding: 5px;
+}
+
+.theme-hex #search-seq-nav ul li {
+  background: #1f3c67;
 }
 
 div#nav-links div#search-seq-nav .prev,
@@ -597,20 +706,28 @@ div#c-posts div#nav-links {
 div#c-posts div#a-show #pool-nav li.pool-category-series {
   height: 40px;
   font-weight: 500;
-  background: var(--color-foreground);
   padding: 5px 0;
-  border-bottom: 5px solid var(--color-background);
+  border-bottom: 5px solid #152f56;
+  background: #1f3c67;
+}
+
+.theme-hex div#c-posts div#a-show #pool-nav li.pool-category-series {
+  border-bottom: 5px solid #152f56;
+  background: #1f3c67;
 }
 
 li.pool-category-series:last-child {
   border-bottom: 0;
 }
 
-@media only screen and (min-width: 801px) {
+@media (min-width: 1000px) {
   li.pool-category-series {
     display: table-cell;
     border-bottom: 0;
-    border-right: 10px solid var(--color-background);
+    border-right: 10px solid #152f56;
+  }
+  .theme-hex li.pool-category-series {
+    border-right: 10px solid #152f56;
   }
   li.pool-category-series:last-child {
     border-right: 0;
@@ -622,8 +739,12 @@ li.pool-category-series:last-child {
   width: 50%;
   margin-top: 25px;
   line-height: 1.25em;
-  color: var(--color-white);
   font-weight: 700;
+  color: #b4c7d9;
+}
+
+.theme-hex #pool-nav .prev, .theme-hex #pool-nav .next {
+  color: #b4c7d9;
 }
 
 div#c-posts div#a-show #pool-nav li .prev {
@@ -648,12 +769,17 @@ div#c-posts div#a-show #pool-nav li .next {
 
 #pool-nav a.prev:hover,
 #pool-nav a.next:hover {
-  color: var(--color-tag-pool);
+  color: wheat;
 }
 
 #pool-nav span.prev,
 #pool-nav span.next {
-  color: var(--color-muted);
+  color: #999999;
+}
+
+.theme-hex #pool-nav span.prev, .theme-hex
+#pool-nav span.next {
+  color: #999999;
 }
 
 span.pool-name {
@@ -667,15 +793,24 @@ span.pool-name {
 
 /* Information Section */
 div#c-posts .source-link:hover a {
-  background: var(--color-base);
+  background: #020F23;
+}
+
+.theme-hex div#c-posts .source-link:hover a {
+  background: #020F23;
 }
 
 /* Sidebar Favorites Button */
 a#add-to-favorites,
 a#remove-from-favorites {
-  color: var(--color-white);
   padding: 2px 4px;
   border-radius: 3px;
+  color: #ffffff;
+}
+
+.theme-hex a#add-to-favorites, .theme-hex
+a#remove-from-favorites {
+  color: #ffffff;
 }
 
 section#post-options ul li:nth-child(1),
@@ -687,11 +822,21 @@ section#post-options ul li:nth-child(2) {
 #post-options a#add-to-favorites,
 #post-options a#add-to-favorites:link,
 #post-options a#add-to-favorites:visited {
-  background: var(--color-success);
+  background: darkgreen;
+}
+
+.theme-hex #post-options a#add-to-favorites, .theme-hex
+#post-options a#add-to-favorites:link, .theme-hex
+#post-options a#add-to-favorites:visited {
+  background: darkgreen;
 }
 
 #post-options a#add-to-favorites:hover {
-  background: var(--color-success-alt);
+  background: #004b00;
+}
+
+.theme-hex #post-options a#add-to-favorites:hover {
+  background: #004b00;
 }
 
 #post-options a#add-to-favorites:before {
@@ -701,11 +846,21 @@ section#post-options ul li:nth-child(2) {
 #post-options a#remove-from-favorites,
 #post-options a#remove-from-favorites:link,
 #post-options a#remove-from-favorites:visited {
-  background: var(--color-danger);
+  background: maroon;
+}
+
+.theme-hex #post-options a#remove-from-favorites, .theme-hex
+#post-options a#remove-from-favorites:link, .theme-hex
+#post-options a#remove-from-favorites:visited {
+  background: maroon;
 }
 
 #post-options a#remove-from-favorites:hover {
-  background: var(--color-danger-alt);
+  background: #670000;
+}
+
+.theme-hex #post-options a#remove-from-favorites:hover {
+  background: #670000;
 }
 
 #post-options a#remove-from-favorites:before {
@@ -716,19 +871,31 @@ section#post-options ul li:nth-child(2) {
 div#c-posts .fav-buttons button.ui-button {
   /* Replace the weird white +FAV button with an old style one */
   border: 0;
-  color: white;
+  color: #ffffff;
   -webkit-box-shadow: none;
           box-shadow: none;
   padding: 3px 10px;
   font-size: 0em;
 }
 
+.theme-hex div#c-posts .fav-buttons button.ui-button {
+  color: #ffffff;
+}
+
 div.fav-buttons button#add-fav-button {
-  background: var(--color-success);
+  background: darkgreen;
+}
+
+.theme-hex div.fav-buttons button#add-fav-button {
+  background: darkgreen;
 }
 
 div.fav-buttons button#add-fav-button:hover {
-  background: var(--color-success-alt);
+  background: #004b00;
+}
+
+.theme-hex div.fav-buttons button#add-fav-button:hover {
+  background: #004b00;
 }
 
 div.fav-buttons button#add-fav-button:after {
@@ -737,11 +904,19 @@ div.fav-buttons button#add-fav-button:after {
 }
 
 div.fav-buttons button#remove-fav-button {
-  background: var(--color-danger);
+  background: maroon;
+}
+
+.theme-hex div.fav-buttons button#remove-fav-button {
+  background: maroon;
 }
 
 div.fav-buttons button#remove-fav-button:hover {
-  background: var(--color-danger-alt);
+  background: #670000;
+}
+
+.theme-hex div.fav-buttons button#remove-fav-button:hover {
+  background: #670000;
 }
 
 div.fav-buttons button#remove-fav-button:after {
@@ -752,26 +927,35 @@ div.fav-buttons button#remove-fav-button:after {
 /* Download Button */
 div#image-download-link a {
   /* Recolor the download button to match the Favorite one */
-  background: var(--color-warning);
-  color: var(--color-white);
+  background: sienna;
+  color: #ffffff;
   padding: 3px 10px;
   border: 0;
   border-radius: 3px;
 }
 
+.theme-hex div#image-download-link a {
+  background: sienna;
+  color: #ffffff;
+}
+
 div#image-download-link a:hover {
-  background: var(--color-warning-alt);
+  background: #8c4827;
+}
+
+.theme-hex div#image-download-link a:hover {
+  background: #8c4827;
 }
 
 /* Comments Style */
 #comments {
+  /* Cleaner, sleaker comment section */
   padding: 0;
   background: none;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 
-/* Cleaner, sleaker comment section */
 #comments h2:first-of-type {
   display: none;
 }
@@ -844,13 +1028,17 @@ section#edit div.input:last-child {
   position: -webkit-sticky;
   position: sticky;
   bottom: 0;
-  background: var(--color-foreground-muted);
+  background: #1f3c67;
   border-radius: 4px 4px 0 0;
   width: -webkit-min-content;
   width: -moz-min-content;
   width: min-content;
   padding: 15px;
   margin: 0;
+}
+
+.theme-hex section#edit div.input:last-child {
+  background: #1f3c67;
 }
 
 /* === POPULAR PAGE === */
@@ -963,7 +1151,7 @@ a#re-enable-all-blacklists {
 a#disable-all-blacklists::after,
 a#re-enable-all-blacklists::after {
   border: 0;
-  color: var(--color-white);
+  color: #ffffff;
   -webkit-box-shadow: none;
           box-shadow: none;
   padding: 3px 10px;
@@ -971,14 +1159,27 @@ a#re-enable-all-blacklists::after {
   border-radius: 4px;
 }
 
+.theme-hex a#disable-all-blacklists::after, .theme-hex
+a#re-enable-all-blacklists::after {
+  color: #ffffff;
+}
+
 a#disable-all-blacklists::after {
   content: "Disable all filters";
-  background: var(--color-danger);
+  background: maroon;
+}
+
+.theme-hex a#disable-all-blacklists::after {
+  background: maroon;
 }
 
 a#re-enable-all-blacklists::after {
   content: "Enable all filters";
-  background: var(--color-success);
+  background: darkgreen;
+}
+
+.theme-hex a#re-enable-all-blacklists::after {
+  background: darkgreen;
 }
 
 a.blacklist-toggle-link:before {
@@ -1025,14 +1226,20 @@ article.post-preview[data-tags~="webm"]::before {
   left: -2px;
   top: 10px;
   z-index: 10;
-  background-color: var(--color-foreground-muted);
+  border: 1px solid #ffffff;
   width: unset;
   height: unset;
   padding: 1px 5px 1px 5px;
   border-radius: 5px;
-  border: 1px solid var(--color-white);
   font-size: 0.6em;
   font-weight: 700;
+}
+
+.theme-hex article.post-preview[data-tags~="animated"]::before, .theme-hex
+article.post-preview[data-tags~="mp4"]::before, .theme-hex
+article.post-preview[data-tags~="flash"]::before, .theme-hex
+article.post-preview[data-tags~="webm"]::before {
+  border: 1px solid #ffffff;
 }
 
 /* === UPLOAD PAGE === */
@@ -1054,7 +1261,11 @@ article.post-preview[data-tags~="webm"]::before {
 
 .toggle-button.active[data-v-deb50420] {
   /* Make selected buttons stand out more */
-  background-color: var(--color-secondary);
+  background-color: #e8c446;
+}
+
+.theme-hex .toggle-button.active[data-v-deb50420] {
+  background-color: #e8c446;
 }
 
 /* === PROFILE PAGE === */
@@ -1064,9 +1275,13 @@ body.c-users.a-show div.profile-stats > h1 {
 }
 
 body.c-users.a-show div.profile-stats > h1 > a {
-  background: var(--color-background-muted);
+  background: #152f56;
   padding: 3px 20px;
   border-radius: 20px;
+}
+
+.theme-hex body.c-users.a-show div.profile-stats > h1 > a {
+  background: #152f56;
 }
 
 /* Padding for top part (table) of profile's page */
@@ -1076,9 +1291,13 @@ body.c-users.a-show div#c-users div#a-show div.profile-container {
 
 /* Profile statistics - get rid of striping, add background for clarity */
 div.profile-stats {
-  background: var(--color-foreground);
+  background: #1f3c67;
   padding: 10px;
   border-radius: 4px;
+}
+
+.theme-hex div.profile-stats {
+  background: #1f3c67;
 }
 
 table.user-statistics tr:nth-child(2n) {
@@ -1111,13 +1330,18 @@ div#c-users div#a-show table.user-statistics td {
 
 /* Title of 'Favorites' and 'Uploads' boxes with a 'button' like format + alignments */
 body.c-users.a-show div#c-users div#a-show div.box h2, div#c-users div#a-show div.box h3 {
-  border-bottom: 4px solid var(--color-primary);
+  border-bottom: 4px solid var("color-link");
+  background: #1f3c67;
   padding: 0 0 2px;
   margin: 0 0 5px;
   text-align: center;
-  background: var(--color-foreground);
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
+}
+
+.theme-hex body.c-users.a-show div#c-users div#a-show div.box h2, .theme-hex div#c-users div#a-show div.box h3 {
+  border-bottom: 4px solid var("color-link");
+  background: #1f3c67;
 }
 
 /* Removes bottom spaces and adds some between aforementioned boxes */
@@ -1128,18 +1352,26 @@ body.c-users.a-show div#c-users div#a-show div.box {
 
 /* Adjust the "About user" and "Artist Information" boxes */
 div#c-users div#a-show .about-section .about-piece {
+  background: #1f3c67;
   margin: unset;
-  background-color: var(--color-foreground);
   margin-left: 1em;
   -webkit-box-shadow: unset;
           box-shadow: unset;
   padding: 0.5rem;
 }
 
+.theme-hex div#c-users div#a-show .about-section .about-piece {
+  background: #1f3c67;
+}
+
 /* === SETTINGS === */
 div#c-users div#a-edit h2#edit-options .active {
   /* Give contrast to the active tabs */
-  color: var(--color-secondary);
+  color: #e8c446;
+}
+
+.theme-hex div#c-users div#a-edit h2#edit-options .active {
+  color: #e8c446;
 }
 
 fieldset {
@@ -1187,7 +1419,11 @@ div#c-users div#a-edit h2 {
 .simple_form {
   /* This sets the color for all other setting pages (eg: Change Password, Delete account, API etc)*/
   padding: 0.5em;
-  background-color: var(--color-foreground);
+  background: #1f3c67;
+}
+
+.theme-hex .simple_form {
+  background: #1f3c67;
 }
 
 /* === WIKI === */

@@ -18,7 +18,9 @@ div#nav-links div#search-seq-nav {
     margin: 0;
 }
 #search-seq-nav ul li {
-    background: var(--color-foreground);
+    @include themable {
+        background: themed("color-section");
+    }
     padding: 5px;
 }
 div#nav-links div#search-seq-nav .prev,
@@ -40,19 +42,23 @@ div#c-posts div#nav-links { background: transparent; }
 div#c-posts div#a-show #pool-nav li.pool-category-series {
     height: 40px;
     font-weight: 500;
-    background: var(--color-foreground);
     padding: 5px 0;
-    border-bottom: 5px solid var(--color-background);
+    @include themable {
+        border-bottom: 5px solid themed("color-foreground");
+        background: themed("color-section");
+    }
 }
 li.pool-category-series:last-child {
     border-bottom: 0;
 }
 
-@media only screen and (min-width: 801px) {
+@include media-breakpoint(laptop) {
     li.pool-category-series {
         display: table-cell;
         border-bottom: 0;
-        border-right: 10px solid var(--color-background);
+        @include themable {
+            border-right: 10px solid themed("color-foreground");
+        }
     }
     li.pool-category-series:last-child {
         border-right: 0;
@@ -64,18 +70,24 @@ li.pool-category-series:last-child {
     width: 50%;
     margin-top: 25px;
     line-height: 1.25em;
-    color: var(--color-white);
     font-weight: 700;
+    @include themable {
+        color: themed("color-link");
+    }
 }
 div#c-posts div#a-show #pool-nav li .prev { left: 0; font-size: 0; }
 div#c-posts div#a-show #pool-nav li .next { right: 0; font-size: 0; }
 #pool-nav .prev:after { content: "« Prev"; font-size: 1rem; }
 #pool-nav .next:after { content: "Next »"; font-size: 1rem; }
 #pool-nav a.prev:hover,
-#pool-nav a.next:hover { color: var(--color-tag-pool); }
+#pool-nav a.next:hover { color: $color-tag-pool; }
 
 #pool-nav span.prev,
-#pool-nav span.next { color: var(--color-muted); }
+#pool-nav span.next {
+    @include themable {
+        color: themed("color-text-muted");
+    }
+}
 
 span.pool-name { font-weight: 700; }
 
@@ -86,15 +98,19 @@ span.pool-name { font-weight: 700; }
 
 /* Information Section */
 div#c-posts .source-link:hover a {
-    background: var(--color-base);
+    @include themable {
+        background: themed("color-background");
+    }
 }
 
 /* Sidebar Favorites Button */
 a#add-to-favorites,                                             /* Recolor the sidebar favorites button to what it was before */
 a#remove-from-favorites {
-    color: var(--color-white);
     padding: 2px 4px;
     border-radius: 3px;
+    @include themable {
+        color: themed("color-text-white");
+    }
 }
 section#post-options ul li:nth-child(1),                        /* Best way to add margins to the fav/unfav buttons in the sidebar */
 section#post-options ul li:nth-child(2) {                       /* Yes, really. */
@@ -102,44 +118,54 @@ section#post-options ul li:nth-child(2) {                       /* Yes, really. 
 }
 #post-options a#add-to-favorites,
 #post-options a#add-to-favorites:link,
-#post-options a#add-to-favorites:visited        { background: var(--color-success); }
-#post-options a#add-to-favorites:hover          { background: var(--color-success-alt); }
+#post-options a#add-to-favorites:visited        { @include themable { background: themed("color-success"); } }
+#post-options a#add-to-favorites:hover          { @include themable { background: darken( themed("color-success"), 5%); } }
 #post-options a#add-to-favorites:before         { content: "+ "; }
 
 #post-options a#remove-from-favorites,
 #post-options a#remove-from-favorites:link,
-#post-options a#remove-from-favorites:visited   { background: var(--color-danger); }
-#post-options a#remove-from-favorites:hover     { background: var(--color-danger-alt); }
+#post-options a#remove-from-favorites:visited   { @include themable { background: themed("color-danger"); } }
+#post-options a#remove-from-favorites:hover     { @include themable { background: darken( themed("color-danger"), 5%); } }
 #post-options a#remove-from-favorites:before    { content: "- "; }
 
 /* +Favorites Button */
 div#c-posts .fav-buttons button.ui-button {                     /* Replace the weird white +FAV button with an old style one */
     border: 0;
-    color: white;
+    @include themable {
+        color: themed("color-text-white");
+    }
     box-shadow: none;
     padding: 3px 10px;
     font-size: 0em;
 }
-div.fav-buttons button#add-fav-button           { background: var(--color-success); }
-div.fav-buttons button#add-fav-button:hover     { background: var(--color-success-alt); }
+div.fav-buttons button#add-fav-button           { @include themable { background: themed("color-success"); } }
+div.fav-buttons button#add-fav-button:hover     { @include themable { background: darken( themed("color-success"), 5%); } }
 div.fav-buttons button#add-fav-button:after     { content: "+ Favorite"; font-size: 0.9rem; }
 
-div.fav-buttons button#remove-fav-button        { background: var(--color-danger); }
-div.fav-buttons button#remove-fav-button:hover  { background: var(--color-danger-alt); }
+div.fav-buttons button#remove-fav-button        { @include themable { background: themed("color-danger"); } }
+div.fav-buttons button#remove-fav-button:hover  { @include themable { background: darken( themed("color-danger"), 5%); } }
 div.fav-buttons button#remove-fav-button:after  { content: "- Unfavorite"; font-size: 0.9rem; }
 
 /* Download Button */
 div#image-download-link a {                                     /* Recolor the download button to match the Favorite one */
-    background: var(--color-warning);
-    color: var(--color-white);
+    @include themable {
+        background: themed("color-warning");
+        color: themed("color-text-white");
+    }
     padding: 3px 10px;
     border: 0;
     border-radius: 3px;
 }
-div#image-download-link a:hover { background: var(--color-warning-alt); }
+div#image-download-link a:hover {
+    @include themable { background: darken( themed("color-warning"), 5%); }
+}
 
 /* Comments Style */
-#comments { padding: 0; background: none; box-shadow: none; }   /* Cleaner, sleaker comment section */
+#comments {                                                     /* Cleaner, sleaker comment section */
+    padding: 0;
+    background: none;
+    box-shadow: none;
+}
 #comments h2:first-of-type { display: none; }                   /* Get rid of the intrusive rule reminder */
 div.comments-for-post div.list-of-comments article.comment {    /* Get rid of the box shadows. It's not the 90s anymore. */
     box-shadow: none;
@@ -184,7 +210,9 @@ section#edit div.input:last-child {                             /* Make the "Sav
     position: sticky;
     bottom: 0;
     
-    background: var(--color-foreground-muted);
+    @include themable {
+        background: themed("color-section");
+    }
     border-radius: 4px 4px 0 0;
     width: min-content;
     padding: 15px;

@@ -2,7 +2,9 @@
 div#c-comments div#a-index div.post,
 div#c-comments div#a-show div.post {                            /* Straighten out and align comments in the list */
     margin-bottom: 1em;
-    background-color: var(--color-foreground);
+    @include themable {
+        background-color: rgba( themed("color-section"), 0.7);
+    }
 }
 div#c-comments div#a-index div.preview,
 div#c-comments div#a-show div.preview {
@@ -11,8 +13,9 @@ div#c-comments div#a-show div.preview {
     display: table;
     margin-right: unset;
 }
-div#c-comments div#a-index div.comments-for-post { width: 100%; }
-div#c-comments div#a-index div.comments-for-post div.list-of-comments article.comment {
+div#c-comments div#a-index div.comments-for-post,
+div#c-comments div#a-index div.comments-for-post div.list-of-comments article.comment,
+div.comments-for-post div.list-of-comments article.comment div.content {
     width: 100%;
 }
 div#c-comments div#a-index div.post,
@@ -34,3 +37,41 @@ div#c-comments div#a-index div.post article.comment img {       /* Bugfix: user 
         width: auto;
     }
 }
+
+/* --- Comment / Post Features --- */
+.styled-dtext blockquote,                                       // Re-style the quotes and collapsable blocks
+.styled-dtext div.expandable,
+.styled-dtext pre,
+div#c-posts div#a-show #artist-commentary {
+    box-shadow: none;
+    border: none;
+    border-radius: 3px;
+    @include themable {
+        border-left: 4px solid themed("color-danger");
+        background: rgba( lighten( themed("color-section"), 5%), 0.7);
+    }
+}
+.styled-dtext blockquote {
+    @include themable {
+        border-color: themed("color-detail-quote");
+    }
+}
+.styled-dtext div.expandable {
+    @include themable {
+        border-color: themed("color-detail-expandable");
+    }
+}
+.styled-dtext pre {
+    @include themable {
+        border-color: themed("color-detail-code");
+    }
+}
+div#c-posts div#a-show #artist-commentary {
+    @include themable {
+        border-color: themed("color-detail-quote");
+    }
+    padding: unset;
+}
+
+.styled-dtext div.expandable div.expandable-header { margin: 0 1rem; }
+.styled-dtext div.expandable div.expandable-content { margin: 0 1rem; padding: 0 0 1rem; }

@@ -4,7 +4,7 @@ body.c-users.a-show div.profile-stats > h1 {
     margin: 0.25em 0.5em;
 }
 body.c-users.a-show div.profile-stats > h1 > a {
-    background: var(--color-background-muted);
+    @include themable { background: themed("color-foreground"); }
     padding: 3px 20px;
     border-radius: 20px;
 }
@@ -14,7 +14,7 @@ body.c-users.a-show div#c-users div#a-show div.profile-container {
 }
 /* Profile statistics - get rid of striping, add background for clarity */
 div.profile-stats {
-    background: var(--color-foreground);
+    @include themable { background: themed("color-section"); }
     padding: 10px;
     border-radius: 4px;
 }
@@ -34,11 +34,13 @@ div#c-users div#a-show table.user-statistics td { width: auto; }
 
 /* Title of 'Favorites' and 'Uploads' boxes with a 'button' like format + alignments */
 body.c-users.a-show div#c-users div#a-show div.box h2, div#c-users div#a-show div.box h3 {
-    border-bottom: 4px solid var(--color-primary);
+    @include themable {
+        border-bottom: 4px solid var("color-link");
+        background: themed("color-section");
+    }
     padding: 0 0 2px;
     margin: 0 0 5px;
     text-align: center;
-    background: var(--color-foreground);
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
 }
@@ -50,8 +52,8 @@ body.c-users.a-show div#c-users div#a-show div.box {
 
 /* Adjust the "About user" and "Artist Information" boxes */
 div#c-users div#a-show .about-section .about-piece {
+    @include themable { background: themed("color-section"); }
     margin: unset;
-    background-color: var(--color-foreground);
     margin-left: 1em;
     box-shadow: unset;
     padding: 0.5rem;

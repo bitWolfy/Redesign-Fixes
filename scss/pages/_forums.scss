@@ -1,33 +1,50 @@
 /* === FORUMS === */
-.c-forum-topics div#page > div {                                /* Forum minimum width fix, courtesy of ratismal */
-    max-width: var(--conf-page-inner-width);
-    margin: 0px auto;
-}
 .c-forum-topics .forum-post { padding: 15px; }
 .c-forum-topics #a-show { margin-top: 15px; }
 
 div.list-of-forum-posts article {                               /* Re-color the forum posts to look like normal comments */
-    background: var(--color-foreground);
+    @include themable {
+        background: themed("color-section");
+    }
     box-shadow: none;
 }
 #topic-response .text label { display: none; }                  /* No need to label the forum post textbox */
 #forum_post_body { width: 100%; box-shadow: none; }             /* Streamline the textbox */
 
 table.striped tbody tr.forum-topic-row {                        /* Stripes are out, padding is in! */
-    background-color: var(--color-foreground);
-    border-bottom: 1px solid var(--color-background);
+    @include themable {
+        background-color: themed("color-section");
+        border-bottom: 1px solid themed("color-foreground");
+    }
 }
 table.striped tbody tr.forum-topic-row:hover {
-    background-color: var(--color-foreground-alt);
+    @include themable {
+        background-color: lighten( themed("color-section"), 10%);
+    }
 }
 tr.forum-topic-row td {
     padding: 15px 5px;
 }
+
+td a.last-page,
+td a.last-page:link,
+td a.last-page:visited {
+    @include themable { color: themed("color-text-muted"); }
+}
+td a.last-page:hover {
+    @include themable { color: themed("color-link-hover"); }
+}
+
+
 div.list-of-forum-posts article:nth-child(2n) {                 /* Get rid of the striping on the forum posts as well */
-    background-color: var(--color-foreground);
+    @include themable {
+        background-color: themed("color-section");
+    }
 }
 div.list-of-forum-posts article[data-is-deleted="true"] {       /* Restore the highlight on the deleted posts */
-    background-color: var(--color-danger-muted);
+    @include themable {
+        background-color: themed("color-danger");
+    }
 }
 div.list-of-forum-posts article div.content {                   /* Get rid of unnecessary padding on the forum posts */
     padding: unset;

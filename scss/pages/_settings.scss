@@ -1,6 +1,6 @@
 /* === SETTINGS === */
 div#c-users div#a-edit h2#edit-options .active {                /* Give contrast to the active tabs */
-    color: var(--color-secondary);
+    @include themable { color: themed("color-link-active"); }
 }
 fieldset{ min-width: 0 ;}                                       /* Keep the inputs from extending off the screen*/
 form select, form input{ font-size: inherit; }                  /* Dont bump font on mobile*/
@@ -22,5 +22,5 @@ div#c-users div#a-edit h2 { margin-bottom: .5em; }
 
 .simple_form {                                                  /* This sets the color for all other setting pages (eg: Change Password, Delete account, API etc)*/
     padding: 0.5em;
-    background-color: var(--color-foreground);
+    @include themable { background: themed("color-section"); }
 }
