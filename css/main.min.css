@@ -22,11 +22,15 @@ body.theme-hotdog { background-color: #FFFF00; color: #000000; }
 
 @media (min-width: 1045px) { body { max-width: 1045px; } }
 
-@media (min-width: 1440px) { body { max-width: 1440px; } }
+@media (min-width: 1200px) { body { max-width: 1200px; } }
+
+@media (min-width: 1400px) { body { max-width: 1400px; } }
 
 @media (min-width: 1600px) { body { max-width: 1600px; } }
 
 @media (min-width: 1900px) { body { max-width: 1900px; } }
+
+@media (min-width: 2100px) { body { max-width: 2100px; } }
 
 @media (min-width: 2560px) { body { max-width: 2560px; } }
 

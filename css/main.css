@@ -47,9 +47,15 @@ body.theme-hotdog {
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1200px) {
   body {
-    max-width: 1440px;
+    max-width: 1200px;
+  }
+}
+
+@media (min-width: 1400px) {
+  body {
+    max-width: 1400px;
   }
 }
 
@@ -62,6 +68,12 @@ body.theme-hotdog {
 @media (min-width: 1900px) {
   body {
     max-width: 1900px;
+  }
+}
+
+@media (min-width: 2100px) {
+  body {
+    max-width: 2100px;
   }
 }
 
