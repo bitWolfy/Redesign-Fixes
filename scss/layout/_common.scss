@@ -27,6 +27,16 @@ div#page {
     border-radius: 6px;
 }
 
+footer#page-footer {
+    @include themable {
+        background-color: themed("color-foreground");
+    }
+    margin: 1em;
+    margin-bottom: 0;
+    width: unset;
+    border-radius: 6px 6px 0 0;
+}
+
 button, input, select, textarea { box-shadow: unset; }          // Get rid of shadows on inputs
 
 /* --- Links --- */

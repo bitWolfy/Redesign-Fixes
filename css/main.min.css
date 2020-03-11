@@ -42,6 +42,14 @@ div#page { background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAA
 
 .theme-hotdog div#page { background-color: #FF0000; }
 
+footer#page-footer { background-color: #152f56; margin: 1em; margin-bottom: 0; width: unset; border-radius: 6px 6px 0 0; }
+
+.theme-hexagon footer#page-footer { background-color: #152f56; }
+
+.theme-bloodlust footer#page-footer { background-color: #222222; }
+
+.theme-hotdog footer#page-footer { background-color: #FF0000; }
+
 button, input, select, textarea { -webkit-box-shadow: unset; box-shadow: unset; }
 
 /* --- Links --- */
