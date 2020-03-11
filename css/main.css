@@ -3,7 +3,7 @@
 @name         e621 Redesign Fixes
 @description  Restore e621.net back to its classic look
 @namespace    bitwolfy.com
-@version      2.0.2
+@version      2.0.3
 @author       bitWolfy
 @homepageURL  https://e621.net/forum_topics/25811
 @license      CC-BY-SA-4.0
@@ -2099,25 +2099,24 @@ div.profile-stats {
   background: #c53c38;
 }
 
-table.user-statistics tr:nth-child(2n) {
-  background-color: unset;
-}
-
-table.user-statistics tbody tr {
+div#c-users div#a-show table.user-statistics tbody tr {
   border-bottom: 0;
+  height: unset;
 }
 
-table.user-statistics tbody tr:hover {
+div#c-users div#a-show table.user-statistics tbody tr:hover {
   background-color: unset;
 }
 
-div#c-users div#a-show table.user-statistics th {
+div#c-users div#a-show table.user-statistics tbody th {
+  vertical-align: middle;
   width: 1%;
   white-space: nowrap;
 }
 
 div#c-users div#a-show table.user-statistics td {
   width: auto;
+  padding: 3px;
 }
 
 /* User rating in profile's page (and everywhere) with bold fonts like before */

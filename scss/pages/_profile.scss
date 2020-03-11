@@ -21,12 +21,22 @@ div.profile-stats {
     padding: 10px;
     border-radius: 4px;
 }
-table.user-statistics tr:nth-child(2n) { background-color: unset; }
-table.user-statistics tbody tr { border-bottom: 0; }
-table.user-statistics tbody tr:hover { background-color: unset; }
-
-div#c-users div#a-show table.user-statistics th { width: 1%; white-space: nowrap; }
-div#c-users div#a-show table.user-statistics td { width: auto; }
+div#c-users div#a-show table.user-statistics tbody tr {
+    border-bottom: 0;
+    height: unset;
+}
+div#c-users div#a-show table.user-statistics tbody tr:hover {
+    background-color: unset;
+}
+div#c-users div#a-show table.user-statistics tbody th {
+    vertical-align: middle;
+    width: 1%;
+    white-space: nowrap;
+}
+div#c-users div#a-show table.user-statistics td {
+    width: auto;
+    padding: 3px;
+}
 
 /* User rating in profile's page (and everywhere) with bold fonts like before */ 
 .user-feedback-positive,
