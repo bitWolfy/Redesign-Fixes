@@ -2043,34 +2043,34 @@ article.post-preview[data-tags~="webm"]::before {
 
 /* === PROFILE PAGE === */
 /* Shadow below user-name in profile's page, because why not */
-body.c-users.a-show div.profile-stats > h1 {
+div.profile-stats > h1 {
   margin: 0.25em 0.5em;
 }
 
-body.c-users.a-show div.profile-stats > h1 > a {
+div.profile-stats > h1 > a {
   background: #152f56;
   padding: 3px 20px;
   border-radius: 20px;
 }
 
-.theme-hexagon body.c-users.a-show div.profile-stats > h1 > a {
+.theme-hexagon div.profile-stats > h1 > a {
   background: #152f56;
 }
 
-.theme-bloodlust body.c-users.a-show div.profile-stats > h1 > a {
+.theme-bloodlust div.profile-stats > h1 > a {
   background: #222222;
 }
 
-.theme-hotdog body.c-users.a-show div.profile-stats > h1 > a {
+.theme-hotdog div.profile-stats > h1 > a {
   background: #FF0000;
 }
 
 /* Padding for top part (table) of profile's page */
-body.c-users.a-show div#c-users div#a-show div.profile-container {
+div#c-users div#a-show div.profile-container {
   padding: 0 0 1em;
 }
 
-body.c-users.a-show div#c-users div#a-show > div.profile-container:last-child {
+div#c-users div#a-show > div.profile-container:last-child {
   -ms-flex-flow: wrap;
       flex-flow: wrap;
 }
@@ -2123,8 +2123,8 @@ div#c-users div#a-show table.user-statistics td {
 }
 
 /* Re-position the favorites section */
-body.c-users.a-show div#c-users div#a-show div.box.user-favorites,
-body.c-users.a-show div#c-users div#a-show div.box.user-uploads {
+div#c-users div#a-show div.box.user-favorites,
+div#c-users div#a-show div.box.user-uploads {
   display: inline-block;
   position: relative;
   -webkit-box-flex: 0;
@@ -2138,26 +2138,26 @@ body.c-users.a-show div#c-users div#a-show div.box.user-uploads {
   border-radius: 4px;
 }
 
-.theme-hexagon body.c-users.a-show div#c-users div#a-show div.box.user-favorites, .theme-hexagon
-body.c-users.a-show div#c-users div#a-show div.box.user-uploads {
+.theme-hexagon div#c-users div#a-show div.box.user-favorites, .theme-hexagon
+div#c-users div#a-show div.box.user-uploads {
   border: 1px solid #152f56;
   background: #1f3c67;
 }
 
-.theme-bloodlust body.c-users.a-show div#c-users div#a-show div.box.user-favorites, .theme-bloodlust
-body.c-users.a-show div#c-users div#a-show div.box.user-uploads {
+.theme-bloodlust div#c-users div#a-show div.box.user-favorites, .theme-bloodlust
+div#c-users div#a-show div.box.user-uploads {
   border: 1px solid #222222;
   background: #333333;
 }
 
-.theme-hotdog body.c-users.a-show div#c-users div#a-show div.box.user-favorites, .theme-hotdog
-body.c-users.a-show div#c-users div#a-show div.box.user-uploads {
+.theme-hotdog div#c-users div#a-show div.box.user-favorites, .theme-hotdog
+div#c-users div#a-show div.box.user-uploads {
   border: 1px solid #FF0000;
   background: #c53c38;
 }
 
-body.c-users.a-show div#c-users div#a-show div.box.user-favorites h2,
-body.c-users.a-show div#c-users div#a-show div.box.user-uploads h2 {
+div#c-users div#a-show div.box.user-favorites h2,
+div#c-users div#a-show div.box.user-uploads h2 {
   border-bottom: 4px solid #152f56;
   background: #1f3c67;
   position: absolute;
@@ -2175,26 +2175,26 @@ body.c-users.a-show div#c-users div#a-show div.box.user-uploads h2 {
   border-radius: 4px;
 }
 
-.theme-hexagon body.c-users.a-show div#c-users div#a-show div.box.user-favorites h2, .theme-hexagon
-body.c-users.a-show div#c-users div#a-show div.box.user-uploads h2 {
+.theme-hexagon div#c-users div#a-show div.box.user-favorites h2, .theme-hexagon
+div#c-users div#a-show div.box.user-uploads h2 {
   border-bottom: 4px solid #152f56;
   background: #1f3c67;
 }
 
-.theme-bloodlust body.c-users.a-show div#c-users div#a-show div.box.user-favorites h2, .theme-bloodlust
-body.c-users.a-show div#c-users div#a-show div.box.user-uploads h2 {
+.theme-bloodlust div#c-users div#a-show div.box.user-favorites h2, .theme-bloodlust
+div#c-users div#a-show div.box.user-uploads h2 {
   border-bottom: 4px solid #222222;
   background: #333333;
 }
 
-.theme-hotdog body.c-users.a-show div#c-users div#a-show div.box.user-favorites h2, .theme-hotdog
-body.c-users.a-show div#c-users div#a-show div.box.user-uploads h2 {
+.theme-hotdog div#c-users div#a-show div.box.user-favorites h2, .theme-hotdog
+div#c-users div#a-show div.box.user-uploads h2 {
   border-bottom: 4px solid #FF0000;
   background: #c53c38;
 }
 
-body.c-users.a-show div#c-users div#a-show div.box.user-favorites div.vertical-section,
-body.c-users.a-show div#c-users div#a-show div.box.user-uploads div.vertical-section {
+div#c-users div#a-show div.box.user-favorites div.vertical-section,
+div#c-users div#a-show div.box.user-uploads div.vertical-section {
   height: 200px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;

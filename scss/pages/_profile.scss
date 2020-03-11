@@ -1,18 +1,18 @@
 /* === PROFILE PAGE === */
 /* Shadow below user-name in profile's page, because why not */
-body.c-users.a-show div.profile-stats > h1 {
+div.profile-stats > h1 {
     margin: 0.25em 0.5em;
 }
-body.c-users.a-show div.profile-stats > h1 > a {
+div.profile-stats > h1 > a {
     @include themable { background: themed("color-foreground"); }
     padding: 3px 20px;
     border-radius: 20px;
 }
 /* Padding for top part (table) of profile's page */
-body.c-users.a-show div#c-users div#a-show div.profile-container {
+div#c-users div#a-show div.profile-container {
     padding: 0 0 1em;
 }
-body.c-users.a-show div#c-users div#a-show > div.profile-container:last-child {
+div#c-users div#a-show > div.profile-container:last-child {
     flex-flow: wrap;
 }
 /* Profile statistics - get rid of striping, add background for clarity */
@@ -36,8 +36,8 @@ div#c-users div#a-show table.user-statistics td { width: auto; }
 }
 
 /* Re-position the favorites section */
-body.c-users.a-show div#c-users div#a-show div.box.user-favorites,
-body.c-users.a-show div#c-users div#a-show div.box.user-uploads {
+div#c-users div#a-show div.box.user-favorites,
+div#c-users div#a-show div.box.user-uploads {
     display: inline-block;
     position: relative;
     flex: 0 0 100%;
@@ -50,8 +50,8 @@ body.c-users.a-show div#c-users div#a-show div.box.user-uploads {
     margin: 1em 0;
     border-radius: 4px;
 }
-body.c-users.a-show div#c-users div#a-show div.box.user-favorites h2,
-body.c-users.a-show div#c-users div#a-show div.box.user-uploads h2 {
+div#c-users div#a-show div.box.user-favorites h2,
+div#c-users div#a-show div.box.user-uploads h2 {
     @include themable {
         border-bottom: 4px solid themed("color-foreground");
         background: themed("color-section");
@@ -69,8 +69,8 @@ body.c-users.a-show div#c-users div#a-show div.box.user-uploads h2 {
     overflow: hidden;
     border-radius: 4px;
 }
-body.c-users.a-show div#c-users div#a-show div.box.user-favorites div.vertical-section,
-body.c-users.a-show div#c-users div#a-show div.box.user-uploads div.vertical-section {
+div#c-users div#a-show div.box.user-favorites div.vertical-section,
+div#c-users div#a-show div.box.user-uploads div.vertical-section {
     height: 200px;
     flex-direction: row;
     align-items: flex-end;
