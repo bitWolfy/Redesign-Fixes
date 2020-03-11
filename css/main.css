@@ -1778,7 +1778,23 @@ div#posts div#posts-container {
   max-width: var(--conf-posts-list-width);
 }
 
-@media only screen and (min-width: 801px) {
+article.post-preview div.desc {
+  background-color: #1f3c67;
+}
+
+.theme-hexagon article.post-preview div.desc {
+  background-color: #1f3c67;
+}
+
+.theme-bloodlust article.post-preview div.desc {
+  background-color: #333333;
+}
+
+.theme-hotdog article.post-preview div.desc {
+  background-color: #c53c38;
+}
+
+@media (min-width: 800px) {
   article.post-preview {
     /* Space out the thumbnails a bit more */
     -webkit-box-flex: 1;

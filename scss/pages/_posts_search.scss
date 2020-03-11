@@ -19,7 +19,13 @@ div#posts div#posts-container {
     max-width: var(--conf-posts-list-width);
 }
 
-@media only screen and (min-width: 801px) {
+article.post-preview div.desc {
+    @include themable {
+        background-color: themed("color-section");
+    }
+}
+
+@include media-breakpoint(tablet) {
     article.post-preview {                                      /* Space out the thumbnails a bit more */
         flex: 1 1 auto;
         margin: 10px;
