@@ -83,7 +83,7 @@ div#c-posts div#a-show #pool-nav li .next { right: 0; font-size: 0; }
 #pool-nav .prev:after { content: "« Prev"; font-size: 1rem; }
 #pool-nav .next:after { content: "Next »"; font-size: 1rem; }
 #pool-nav a.prev:hover,
-#pool-nav a.next:hover { color: $color-tag-pool; }
+#pool-nav a.next:hover { @include themable { color: themed("color-tag-pool"); } }
 
 #pool-nav span.prev,
 #pool-nav span.next {
