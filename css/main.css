@@ -776,8 +776,7 @@ div#c-comments div#a-index div.post article.comment img {
 /* --- Comment / Post Features --- */
 .styled-dtext blockquote,
 .styled-dtext div.expandable,
-.styled-dtext pre,
-div#c-posts div#a-show #artist-commentary {
+.styled-dtext pre {
   position: relative;
   z-index: 10;
   -webkit-box-shadow: none;
@@ -790,8 +789,7 @@ div#c-posts div#a-show #artist-commentary {
 
 .theme-hexagon .styled-dtext blockquote, .theme-hexagon
 .styled-dtext div.expandable, .theme-hexagon
-.styled-dtext pre, .theme-hexagon
-div#c-posts div#a-show #artist-commentary {
+.styled-dtext pre {
   border: 1px solid #1f3c67;
   border-left: 4px solid maroon;
   background: rgba(43, 83, 142, 0.7);
@@ -799,8 +797,7 @@ div#c-posts div#a-show #artist-commentary {
 
 .theme-bloodlust .styled-dtext blockquote, .theme-bloodlust
 .styled-dtext div.expandable, .theme-bloodlust
-.styled-dtext pre, .theme-bloodlust
-div#c-posts div#a-show #artist-commentary {
+.styled-dtext pre {
   border: 1px solid #333333;
   border-left: 4px solid maroon;
   background: rgba(77, 77, 77, 0.7);
@@ -808,9 +805,34 @@ div#c-posts div#a-show #artist-commentary {
 
 .theme-hotdog .styled-dtext blockquote, .theme-hotdog
 .styled-dtext div.expandable, .theme-hotdog
-.styled-dtext pre, .theme-hotdog
-div#c-posts div#a-show #artist-commentary {
+.styled-dtext pre {
   border: 1px solid #c53c38;
+  border-left: 4px solid maroon;
+  background: rgba(209, 98, 95, 0.7);
+}
+
+div#c-posts div#a-show #artist-commentary {
+  position: relative;
+  z-index: 10;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+  border-radius: 3px;
+  border-left: 4px solid maroon;
+  background: rgba(43, 83, 142, 0.7);
+}
+
+.theme-hexagon div#c-posts div#a-show #artist-commentary {
+  border-left: 4px solid maroon;
+  background: rgba(43, 83, 142, 0.7);
+}
+
+.theme-bloodlust div#c-posts div#a-show #artist-commentary {
+  border-left: 4px solid maroon;
+  background: rgba(77, 77, 77, 0.7);
+}
+
+.theme-hotdog div#c-posts div#a-show #artist-commentary {
   border-left: 4px solid maroon;
   background: rgba(209, 98, 95, 0.7);
 }

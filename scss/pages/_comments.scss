@@ -41,14 +41,25 @@ div#c-comments div#a-index div.post article.comment img {       // Bugfix: user 
 /* --- Comment / Post Features --- */
 .styled-dtext blockquote,                                       // Re-style the quotes and collapsable blocks
 .styled-dtext div.expandable,
-.styled-dtext pre,
-div#c-posts div#a-show #artist-commentary {
+.styled-dtext pre {
     position: relative;
     z-index: 10;
     box-shadow: none;
     border-radius: 3px;
     @include themable {
         border: 1px solid themed("color-section");
+        border-left: 4px solid themed("color-danger");
+        background: rgba( lighten( themed("color-section"), 10%), 0.7);
+    }
+}
+
+div#c-posts div#a-show #artist-commentary {
+    position: relative;
+    z-index: 10;
+    box-shadow: none;
+    border: none;
+    border-radius: 3px;
+    @include themable {
         border-left: 4px solid themed("color-danger");
         background: rgba( lighten( themed("color-section"), 10%), 0.7);
     }
