@@ -305,24 +305,24 @@ td a.last-page:hover {
 }
 
 /* === NOTICES === */
-div#notice:not(.ui-state-error) {
-  background-color: #152f56;
+div#page div.site-notice {
+  background-color: #1f3c67;
   border: 1px solid rgba(0, 0, 0, 0.5);
   padding: 4px !important;
   -webkit-box-shadow: 0 0 27px rgba(0, 0, 0, 0.2);
           box-shadow: 0 0 27px rgba(0, 0, 0, 0.2);
 }
 
-.theme-hexagon div#notice:not(.ui-state-error) {
-  background-color: #152f56;
+.theme-hexagon div#page div.site-notice {
+  background-color: #1f3c67;
 }
 
-.theme-bloodlust div#notice:not(.ui-state-error) {
-  background-color: #222222;
+.theme-bloodlust div#page div.site-notice {
+  background-color: #333333;
 }
 
-.theme-hotdog div#notice:not(.ui-state-error) {
-  background-color: #FF0000;
+.theme-hotdog div#page div.site-notice {
+  background-color: #c53c38;
 }
 
 /* --- Header --- */

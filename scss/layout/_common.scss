@@ -104,9 +104,9 @@ td a.last-page:hover {
 }
 
 /* === NOTICES === */
-div#notice:not(.ui-state-error) {
+div#page div.site-notice {
     @include themable {
-        background-color: themed("color-foreground");
+        background-color: themed("color-section");
     }
     border: 1px solid rgba(0, 0, 0, 0.5);
     padding: 4px !important;
