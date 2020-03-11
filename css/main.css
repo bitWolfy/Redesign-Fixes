@@ -1807,19 +1807,19 @@ div.post-score {
 
 /* Increase the font size on post preview details */
 article.post-preview div.desc {
-  background-color: #1f3c67;
+  background-color: #25477b;
 }
 
 .theme-hexagon article.post-preview div.desc {
-  background-color: #1f3c67;
+  background-color: #25477b;
 }
 
 .theme-bloodlust article.post-preview div.desc {
-  background-color: #333333;
+  background-color: #404040;
 }
 
 .theme-hotdog article.post-preview div.desc {
-  background-color: #c53c38;
+  background-color: #cc4e4b;
 }
 
 @media (min-width: 800px) {
@@ -2050,6 +2050,11 @@ body.c-users.a-show div#c-users div#a-show div.profile-container {
   padding: 0 0 1em;
 }
 
+body.c-users.a-show div#c-users div#a-show > div.profile-container:last-child {
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+}
+
 /* Profile statistics - get rid of striping, add background for clarity */
 div.profile-stats {
   background: #1f3c67;
@@ -2097,36 +2102,91 @@ div#c-users div#a-show table.user-statistics td {
   font-weight: 700;
 }
 
-/* Title of 'Favorites' and 'Uploads' boxes with a 'button' like format + alignments */
-body.c-users.a-show div#c-users div#a-show div.box h2, div#c-users div#a-show div.box h3 {
-  border-bottom: 4px solid #b4c7d9;
+/* Re-position the favorites section */
+body.c-users.a-show div#c-users div#a-show div.box.user-favorites,
+body.c-users.a-show div#c-users div#a-show div.box.user-uploads {
+  display: inline-block;
+  position: relative;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  height: 200px;
+  min-width: 30px;
+  border: 1px solid #152f56;
   background: #1f3c67;
-  padding: 0 0 2px;
-  margin: 0 0 5px;
-  text-align: center;
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
+  margin: 1em 0;
+  border-radius: 4px;
 }
 
-.theme-hexagon body.c-users.a-show div#c-users div#a-show div.box h2, .theme-hexagon div#c-users div#a-show div.box h3 {
-  border-bottom: 4px solid #b4c7d9;
+.theme-hexagon body.c-users.a-show div#c-users div#a-show div.box.user-favorites, .theme-hexagon
+body.c-users.a-show div#c-users div#a-show div.box.user-uploads {
+  border: 1px solid #152f56;
   background: #1f3c67;
 }
 
-.theme-bloodlust body.c-users.a-show div#c-users div#a-show div.box h2, .theme-bloodlust div#c-users div#a-show div.box h3 {
-  border-bottom: 4px solid #ffee95;
+.theme-bloodlust body.c-users.a-show div#c-users div#a-show div.box.user-favorites, .theme-bloodlust
+body.c-users.a-show div#c-users div#a-show div.box.user-uploads {
+  border: 1px solid #222222;
   background: #333333;
 }
 
-.theme-hotdog body.c-users.a-show div#c-users div#a-show div.box h2, .theme-hotdog div#c-users div#a-show div.box h3 {
-  border-bottom: 4px solid #000000;
+.theme-hotdog body.c-users.a-show div#c-users div#a-show div.box.user-favorites, .theme-hotdog
+body.c-users.a-show div#c-users div#a-show div.box.user-uploads {
+  border: 1px solid #FF0000;
   background: #c53c38;
 }
 
-/* Removes bottom spaces and adds some between aforementioned boxes */
-body.c-users.a-show div#c-users div#a-show div.box {
-  margin-bottom: unset;
-  margin: 0 5px;
+body.c-users.a-show div#c-users div#a-show div.box.user-favorites h2,
+body.c-users.a-show div#c-users div#a-show div.box.user-uploads h2 {
+  border-bottom: 4px solid #152f56;
+  background: #1f3c67;
+  position: absolute;
+  bottom: -39px;
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+  width: 200px;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 0 5px;
+  text-align: center;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.theme-hexagon body.c-users.a-show div#c-users div#a-show div.box.user-favorites h2, .theme-hexagon
+body.c-users.a-show div#c-users div#a-show div.box.user-uploads h2 {
+  border-bottom: 4px solid #152f56;
+  background: #1f3c67;
+}
+
+.theme-bloodlust body.c-users.a-show div#c-users div#a-show div.box.user-favorites h2, .theme-bloodlust
+body.c-users.a-show div#c-users div#a-show div.box.user-uploads h2 {
+  border-bottom: 4px solid #222222;
+  background: #333333;
+}
+
+.theme-hotdog body.c-users.a-show div#c-users div#a-show div.box.user-favorites h2, .theme-hotdog
+body.c-users.a-show div#c-users div#a-show div.box.user-uploads h2 {
+  border-bottom: 4px solid #FF0000;
+  background: #c53c38;
+}
+
+body.c-users.a-show div#c-users div#a-show div.box.user-favorites div.vertical-section,
+body.c-users.a-show div#c-users div#a-show div.box.user-uploads div.vertical-section {
+  height: 200px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 0 20px 0 40px;
 }
 
 /* Adjust the "About user" and "Artist Information" boxes */
@@ -2149,6 +2209,10 @@ div#c-users div#a-show .about-section .about-piece {
 
 .theme-hotdog div#c-users div#a-show .about-section .about-piece {
   background: #c53c38;
+}
+
+div#c-users div#a-show .about-section .about-piece:first-child {
+  margin-left: unset;
 }
 
 /* === SETTINGS === */
