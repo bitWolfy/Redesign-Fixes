@@ -1,6 +1,6 @@
 /* === COMMENTS INDEX === */
 div#c-comments div#a-index div.post,
-div#c-comments div#a-show div.post {                            /* Straighten out and align comments in the list */
+div#c-comments div#a-show div.post {                            // Straighten out and align comments in the list
     margin-bottom: 1em;
     @include themable {
         background-color: rgba( themed("color-section"), 0.7);
@@ -23,11 +23,11 @@ div#c-comments div#a-show div.post {
     box-shadow: unset;
 }
 
-div#c-comments div#a-index div.post article.comment img {       /* Bugfix: user avatars shouldn't recieve the parent post's status borders */
+div#c-comments div#a-index div.post article.comment img {       // Bugfix: user avatars shouldn't recieve the parent post's status borders
     border: 0px;
 }
 
-@media screen and (max-width: 801px) {                          /* Fixes for mobile, by JAKXXX3 */
+@media screen and (max-width: 801px) {                          // Fixes for mobile, by JAKXXX3
     div#c-comments div#a-index div#p-index-by-post div.post-preview {
         flex-flow: row wrap;
     }

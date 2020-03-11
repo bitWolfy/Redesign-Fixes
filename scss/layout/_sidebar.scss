@@ -1,5 +1,5 @@
 /* === SIDEBAR === */
-span.search-help a { font-size: 0; }                            /* Make the help links (quite) a bit smaller */
+span.search-help a { font-size: 0; }                            // Make the help links (quite) a bit smaller
 span.search-help a:after {
     content: "search help";
     font-size: 0.7rem;
@@ -8,8 +8,8 @@ span.search-help a:after {
 }
 
 /* Desktop Searchbox */
-div#page aside#sidebar input[type=text] {                       /* Re-style the search bar */
-    width: 13em;                                                /* Spite-filled redesigning initiated */
+div#page aside#sidebar input[type=text] {                       // Re-style the search bar
+    width: 13em;                                                // Spite-filled redesigning initiated
     padding: 2px 3px;
     border-radius: 4px 0 0 4px;
     border-right: 0;
@@ -29,19 +29,19 @@ div#page aside#sidebar #search-box button[type=submit] {
 }
 
 /* Tag List */
-div#c-posts aside#sidebar #tag-list h2 {                        /* Tags list - smootherer and bolder fonts  */
+div#c-posts aside#sidebar #tag-list h2 {                        // Tags list - smootherer and bolder fonts
     font-family: verdana, sans-serif;
 }
-.post-count {                                                   /* De-emphasize the post count, courtesy of Zermelane */
+.post-count {                                                   // De-emphasize the post count, courtesy of Zermelane
     @include themable { color: themed("color-text-muted"); }
     font-size: 85%;
     font-weight: 500;
 }
 
 /* Mobile Searchbox */
-.mobile-search { margin: 10px 10px 25px ; }                     /* Streamline the mobile search form */
-.mobile-search a:first-child {                                  /* Screw you, I'll re-style the mobile searchform too */
-    float: right;                                               /* Multi-device styling! https://i.imgur.com/Ong1enY.png */
+.mobile-search { margin: 10px 10px 25px ; }                     // Streamline the mobile search form
+.mobile-search a:first-child {                                  // Screw you, I'll re-style the mobile searchform too
+    float: right;                                               // Multi-device styling! https://i.imgur.com/Ong1enY.png
     margin-bottom: 10px;
 }
 body.resp .mobile-search>.search-form>form .search-input input {

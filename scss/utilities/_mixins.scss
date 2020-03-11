@@ -1,4 +1,4 @@
-/* Responsive Breakpoints */
+// Responsive Breakpoints
 @mixin media-breakpoint($size) {
     @if $size == "desktop-lg" {
         @media (min-width: $media-breakpoint-desktop-lg)    { @content; }

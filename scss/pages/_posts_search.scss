@@ -60,7 +60,7 @@ a.blacklist-toggle-link:before { content: "» "; }
     list-style-type: none;
 }
 
-span.blacklist-help a { font-size: 0; }                         /* Replace the giant blacklist help link with a small (?) one */
+span.blacklist-help a { font-size: 0; }                         // Replace the giant blacklist help link with a small (?) one
 span.blacklist-help a:after {
     content: "(?)";
     font-size: 0.8rem;
@@ -72,7 +72,7 @@ article.post-preview[data-tags~="mp4"]::before { content: "mp4"; }
 article.post-preview[data-tags~="flash"]::before { content: "swf"; }
 article.post-preview[data-tags~="webm"]::before { content: "webm"; }
 
-article.post-preview[data-tags~="animated"]::before,            /* This is a horrible, hacky way of doing it. */
+article.post-preview[data-tags~="animated"]::before,            // This is a horrible, hacky way of doing it.
 article.post-preview[data-tags~="mp4"]::before,
 article.post-preview[data-tags~="flash"]::before,
 article.post-preview[data-tags~="webm"]::before {

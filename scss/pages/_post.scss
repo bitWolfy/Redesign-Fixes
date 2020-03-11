@@ -1,14 +1,13 @@
 /* === IMAGE PAGE === */
 /* Image Page Navigation Hack */
-div#nav-links { display: table-row-group; }                     /* Re-order the elements on the image page */
+div#nav-links { display: table-row-group; }                     // Re-order the elements on the image page
 div#nav-links div { margin: 5px; }                                
-section#image-container { display: table-header-group; }        /* Order is as follows: */
-/*div#image-resize-notice { display: table-row-group; }         /* - image */
-div#pending-approval-notice { display: table-row-group; }       /* - pool/search navigation */
-div#ad-leaderboard { display: table-footer-group; }             /* - notifications */
-div#ad-leaderboard-content { margin: 15px auto; }               /* - advertisemen */
+section#image-container { display: table-header-group; }        // Order is as follows:
+div#pending-approval-notice { display: table-row-group; }       // - pool/search navigation
+div#ad-leaderboard { display: table-footer-group; }             // - notifications
+div#ad-leaderboard-content { margin: 15px auto; }               // - advertisemen
 
-div#c-posts div.notice.notice-pending {                         /* Tweak the notices so that they don't interfere with the controls */
+div#c-posts div.notice.notice-pending {                         // Tweak the notices so that they don't interfere with the controls
     text-align: center;
     background: transparent;
 }
@@ -32,7 +31,7 @@ div#nav-links div#search-seq-nav .next {
 }
 
 /* Pool Navigation */
-#pool-nav .first, #pool-nav .last { display: none; }            /* These are straight up unnecessary */
+#pool-nav .first, #pool-nav .last { display: none; }            // These are straight up unnecessary
 div#c-posts div#a-show #pool-nav { margin: 5px 0; }
 div#c-posts div#nav-links { background: transparent; }
 
@@ -110,7 +109,7 @@ div#c-posts .source-link:hover a {
 }
 
 /* Sidebar Favorites Button */
-a#add-to-favorites,                                             /* Recolor the sidebar favorites button to what it was before */
+a#add-to-favorites,                                             // Recolor the sidebar favorites button to what it was before
 a#remove-from-favorites {
     padding: 2px 4px;
     border-radius: 3px;
@@ -118,8 +117,8 @@ a#remove-from-favorites {
         color: themed("color-text-white");
     }
 }
-section#post-options ul li:nth-child(1),                        /* Best way to add margins to the fav/unfav buttons in the sidebar */
-section#post-options ul li:nth-child(2) {                       /* Yes, really. */
+section#post-options ul li:nth-child(1),                        // Best way to add margins to the fav/unfav buttons in the sidebar
+section#post-options ul li:nth-child(2) {                       // Yes, really.
     margin: 5px 0;
 }
 #post-options a#add-to-favorites,
@@ -135,7 +134,7 @@ section#post-options ul li:nth-child(2) {                       /* Yes, really. 
 #post-options a#remove-from-favorites:before    { content: "- "; }
 
 /* +Favorites Button */
-div#c-posts .fav-buttons button.ui-button {                     /* Replace the weird white +FAV button with an old style one */
+div#c-posts .fav-buttons button.ui-button {                     // Replace the weird white +FAV button with an old style one
     border: 0;
     @include themable {
         color: themed("color-text-white");
@@ -153,7 +152,7 @@ div.fav-buttons button#remove-fav-button:hover  { @include themable { background
 div.fav-buttons button#remove-fav-button:after  { content: "- Unfavorite"; font-size: 0.9rem; }
 
 /* Download Button */
-div#image-download-link a {                                     /* Recolor the download button to match the Favorite one */
+div#image-download-link a {                                     // Recolor the download button to match the Favorite one
     @include themable {
         background: themed("color-warning");
         color: themed("color-text-white");
@@ -167,19 +166,19 @@ div#image-download-link a:hover {
 }
 
 /* Comments Style */
-#comments {                                                     /* Cleaner, sleaker comment section */
+#comments {                                                     // Cleaner, sleaker comment section
     padding: 0;
     background: none;
     box-shadow: none;
 }
-#comments h2:first-of-type { display: none; }                   /* Get rid of the intrusive rule reminder */
-div.comments-for-post div.list-of-comments article.comment {    /* Get rid of the box shadows. It's not the 90s anymore. */
+#comments h2:first-of-type { display: none; }                   // Get rid of the intrusive rule reminder
+div.comments-for-post div.list-of-comments article.comment {    // Get rid of the box shadows. It's not the 90s anymore.
     box-shadow: none;
 }
-#new_comment .text label { display: none; }                     /* No need to label the comment textbox */
-#comment_body_for_ { width: 100%; box-shadow: none; }           /* Streamline the comment textbox */
+#new_comment .text label { display: none; }                     // No need to label the comment textbox
+#comment_body_for_ { width: 100%; box-shadow: none; }           // Streamline the comment textbox
 
-@media screen and (max-width: 800px) {                          /* Improved comments on mobile, credit goes to Peegus */
+@media screen and (max-width: 800px) {                          // Improved comments on mobile, credit goes to Peegus
     div.comments-for-post div.list-of-comments article.comment {
         flex-flow: row wrap;
     }
@@ -202,7 +201,7 @@ div.comments-for-post div.list-of-comments article.comment {    /* Get rid of th
 }
 
 /* Editing Form */
-section#edit {                                                  /* Strip shadows and padding from the editing form */
+section#edit {                                                  // Strip shadows and padding from the editing form
     margin: unset;
     padding: 0.5rem;
     box-shadow: unset;
@@ -211,7 +210,7 @@ section#edit form.simple_form {
     margin: unset;
     padding: unset;
 }
-section#edit div.input:last-child {                             /* Make the "Save Changes" button scroll with the page */
+section#edit div.input:last-child {                             // Make the "Save Changes" button scroll with the page
     position: -webkit-sticky;
     position: sticky;
     bottom: 0;
