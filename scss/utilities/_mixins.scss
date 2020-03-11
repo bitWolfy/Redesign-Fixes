@@ -1,0 +1,16 @@
+// Responsive Breakpoints
+@mixin media-breakpoint($size) {
+    @if $size == "desktop-lg" {
+        @media (min-width: $media-breakpoint-desktop-lg)    { @content; }
+    } @else if $size == "desktop" {
+        @media (min-width: $media-breakpoint-desktop)       { @content; }
+    } @else if $size == "laptop"  {
+        @media (min-width: $media-breakpoint-laptop)        { @content; }
+    } @else if $size == "tablet"  {
+        @media (min-width: $media-breakpoint-tablet)        { @content; }
+    } @else if $size == "mobile"  {
+        @media (min-width: $media-breakpoint-mobile)        { @content; }
+    } @else {
+        @media (max-width: ($media-breakpoint-mobile - 1))  { @content; }
+    }
+}

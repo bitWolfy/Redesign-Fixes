@@ -1,0 +1,10 @@
+/* === UPLOAD PAGE === */
+.box-section { box-shadow: unset; }                             // Clear the shadows on the column sections
+.toggle-button[data-v-deb50420] { margin-bottom: 5px; }         // Fix the spacing on the uploads page
+.tag-textarea[data-v-deb50420],                                 // Credit goes to Peegus for this one
+.flex-wrap[data-v-deb50420] { margin: 10px 0 5px; }
+.toggle-button.active[data-v-deb50420] {                        // Make selected buttons stand out more
+    @include themable {
+        background-color: themed("color-link-active");
+    }
+}

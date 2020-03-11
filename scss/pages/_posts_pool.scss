@@ -1,0 +1,12 @@
+/* === POOL PAGE === */
+div#c-pools div#a-show section:not(#blacklist-box) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+div#c-pools div#a-show section div.paginator {
+    flex-basis: 100%;
+}
+div#c-pools div#a-show section#blacklist-box ul {
+    display: inline;
+}

@@ -1,0 +1,72 @@
+/* === FORUMS === */
+.c-forum-topics .forum-post { padding: 15px; }
+.c-forum-topics #a-show { margin-top: 15px; }
+
+div.list-of-forum-posts article {                               // Re-color the forum posts to look like normal comments
+    @include themable {
+        background: themed("color-section");
+    }
+    box-shadow: none;
+}
+#topic-response .text label { display: none; }                  // No need to label the forum post textbox
+#forum_post_body { width: 100%; box-shadow: none; }             // Streamline the textbox
+
+table.striped thead tr {
+    @include themable {
+        background-color: darken( themed("color-section"), 5%);
+        border-bottom: 1px solid themed("color-foreground");
+    }
+}
+table.striped tbody tr.forum-topic-row {                        // Stripes are out, padding is in!
+    @include themable {
+        background-color: themed("color-section");
+        border-bottom: 1px solid themed("color-foreground");
+    }
+}
+table.striped tbody tr.forum-topic-row:hover {
+    @include themable {
+        background-color: lighten( themed("color-section"), 10%);
+    }
+}
+tr.forum-topic-row td {
+    padding: 15px 5px;
+}
+
+td a.last-page,
+td a.last-page:link,
+td a.last-page:visited {
+    @include themable { color: themed("color-text-muted"); }
+}
+td a.last-page:hover {
+    @include themable { color: themed("color-link-hover"); }
+}
+
+
+div.list-of-forum-posts article:nth-child(2n) {                 // Get rid of the striping on the forum posts as well
+    @include themable {
+        background-color: themed("color-section");
+    }
+}
+div.list-of-forum-posts article[data-is-deleted="true"] {       // Restore the highlight on the deleted posts
+    position: relative;
+    z-index: 5;
+}
+div.list-of-forum-posts article[data-is-deleted="true"] > div {       // Restore the highlight on the deleted posts
+    position: relative;
+    z-index: 10;
+}
+div.list-of-forum-posts article[data-is-deleted="true"]::after {       // Restore the highlight on the deleted posts
+    content: "";
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    z-index: 1;
+
+    @include themable {
+        background: rgba( themed("color-danger"), 0.2);
+    }
+}
+
+div.list-of-forum-posts article div.content {                   // Get rid of unnecessary padding on the forum posts
+    padding: unset;
+}
+textarea#forum_post_body { max-width: unset; }                  // No reason to limit this

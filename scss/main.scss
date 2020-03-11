@@ -1,0 +1,37 @@
+/* ==UserStyle==
+@name         e621 Redesign Fixes
+@description  Restore e621.net back to its classic look
+@namespace    bitwolfy.com
+@version      1.51.2
+@author       bitWolfy
+@homepageURL  https://e621.net/forum_topics/25811
+@license      CC-BY-SA-4.0
+==/UserStyle== */
+
+@import 'utilities/functions';
+@import 'utilities/mixins';
+@import 'utilities/variables';
+@import 'utilities/colors';
+
+@import 'components/themable';
+
+@import 'themes/theme_bloodlust';
+@import 'themes/theme_hexagon';
+@import 'themes/index';
+
+@import 'layout/common';
+@import 'layout/header';
+@import 'layout/sidebar';
+@import 'layout/tags';
+@import 'layout/users';
+
+@import 'pages/account';
+@import 'pages/comments';
+@import 'pages/forums';
+@import 'pages/post';
+@import 'pages/posts_popular';
+@import 'pages/posts_search';
+@import 'pages/posts_upload';
+@import 'pages/profile';
+@import 'pages/settings';
+@import 'pages/wiki';

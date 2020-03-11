@@ -1,0 +1,42 @@
+/* --- Header --- */
+header#top {
+    @include themable {
+        background-image: themed("image-background");
+        background-color: themed("color-background");               // Give the header the same hex grid as the main body
+    }
+    font-size: 1.05em;                                              // Slightly bigger font, for better readability
+    margin: 0 1em 0.8rem;                                           // Slightly bigger margin, to match the old theme
+}
+
+body.resp #maintoggle {
+    top: 1vw;                                                       // Move the hamburger menu to the left
+    left: 3vw;
+    right: unset;
+}
+
+@include media-breakpoint(tablet) {
+    header#top h1 {
+        display: inline-block;                                      // Preparing to move the logo down to where it belongs
+        margin: 0 0 0 28px;
+        font-size: 1.2em;                                           // Re-style the logo to match the old theme
+        font-weight: 400;
+        font-family: Verdana, sans-serif;
+    }
+    header#top nav#nav { display: inline; }                         // Move the navbars out of the way to fit the logo
+    header#top menu.main { display: inline-block; }
+}
+
+/* Top Menus */
+header#top menu {
+    @include themable {
+        background-color: themed("color-foreground");
+    }
+    border-radius: 6px;
+}
+header#top menu.main { background-color: unset; }
+
+header#top menu.main li.current a {
+    @include themable {
+        background-color: themed("color-foreground");
+    }
+}
