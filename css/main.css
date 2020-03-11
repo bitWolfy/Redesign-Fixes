@@ -1190,6 +1190,8 @@ textarea#forum_post_body {
   max-width: unset;
 }
 
+/* Simplify the structure, we don't to repeat the label header with every entry */
+/* Just put in the same labels on the very top and slap display: sticky on it */
 div#c-post-versions div#a-index .post-version {
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -1300,6 +1302,233 @@ div#c-post-versions div#a-index .pv-sources {
 .theme-hotdog div#c-post-versions div#a-index .pv-tags, .theme-hotdog
 div#c-post-versions div#a-index .pv-sources {
   border-top: 1px solid #FF0000;
+}
+
+/* Theme Up the Colors */
+.diff-list ins,
+.diff-list ins a,
+.diff-list ins a:link,
+.diff-list ins a:visited {
+  color: #009700;
+}
+
+.theme-hexagon .diff-list ins, .theme-hexagon
+.diff-list ins a, .theme-hexagon
+.diff-list ins a:link, .theme-hexagon
+.diff-list ins a:visited {
+  color: #009700;
+}
+
+.theme-bloodlust .diff-list ins, .theme-bloodlust
+.diff-list ins a, .theme-bloodlust
+.diff-list ins a:link, .theme-bloodlust
+.diff-list ins a:visited {
+  color: #009700;
+}
+
+.theme-hotdog .diff-list ins, .theme-hotdog
+.diff-list ins a, .theme-hotdog
+.diff-list ins a:link, .theme-hotdog
+.diff-list ins a:visited {
+  color: #009700;
+}
+
+.diff-list ins a:hover {
+  color: #00b100;
+}
+
+.theme-hexagon .diff-list ins a:hover {
+  color: #00b100;
+}
+
+.theme-bloodlust .diff-list ins a:hover {
+  color: #00b100;
+}
+
+.theme-hotdog .diff-list ins a:hover {
+  color: #00b100;
+}
+
+.diff-list del,
+.diff-list del a,
+.diff-list del a:link,
+.diff-list del a:visited {
+  color: #9a0000;
+}
+
+.theme-hexagon .diff-list del, .theme-hexagon
+.diff-list del a, .theme-hexagon
+.diff-list del a:link, .theme-hexagon
+.diff-list del a:visited {
+  color: #9a0000;
+}
+
+.theme-bloodlust .diff-list del, .theme-bloodlust
+.diff-list del a, .theme-bloodlust
+.diff-list del a:link, .theme-bloodlust
+.diff-list del a:visited {
+  color: #9a0000;
+}
+
+.theme-hotdog .diff-list del, .theme-hotdog
+.diff-list del a, .theme-hotdog
+.diff-list del a:link, .theme-hotdog
+.diff-list del a:visited {
+  color: #9a0000;
+}
+
+.diff-list del a:hover {
+  color: #cd0000;
+}
+
+.theme-hexagon .diff-list del a:hover {
+  color: #cd0000;
+}
+
+.theme-bloodlust .diff-list del a:hover {
+  color: #cd0000;
+}
+
+.theme-hotdog .diff-list del a:hover {
+  color: #cd0000;
+}
+
+/* Mobile Support */
+div#c-post-versions div#a-index .pv-check {
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 8;
+  -ms-grid-column: 1;
+  grid-column: 1;
+}
+
+div#c-post-versions div#a-index .pv-post {
+  -ms-grid-row: 2;
+  grid-row: 2;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+div#c-post-versions div#a-index .pv-date {
+  -ms-grid-row: 2;
+  grid-row: 2;
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+  grid-column-end: 14;
+}
+
+div#c-post-versions div#a-index .pv-reason {
+  -ms-grid-row: 3;
+  grid-row: 3;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 14;
+}
+
+div#c-post-versions div#a-index .pv-description {
+  -ms-grid-row: 4;
+  grid-row: 4;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 9;
+}
+
+div#c-post-versions div#a-index .pv-tags-locked {
+  -ms-grid-row: 5;
+  grid-row: 5;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 14;
+}
+
+div#c-post-versions div#a-index .pv-actions {
+  -ms-grid-row: 4;
+  grid-row: 4;
+  -ms-grid-column: 9;
+      grid-column-start: 9;
+  grid-column-end: 14;
+}
+
+div#c-post-versions div#a-index .pv-tags {
+  -ms-grid-row: 6;
+  grid-row: 6;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 14;
+}
+
+div#c-post-versions div#a-index .pv-sources {
+  -ms-grid-row: 7;
+  grid-row: 7;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 14;
+}
+
+@media (min-width: 800px) {
+  div#c-post-versions div#a-index .pv-check {
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    grid-row-end: 5;
+    -ms-grid-column: 1;
+    grid-column: 1;
+  }
+  div#c-post-versions div#a-index .pv-post {
+    -ms-grid-row: 2;
+    grid-row: 2;
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    grid-column-end: 3;
+  }
+  div#c-post-versions div#a-index .pv-date {
+    -ms-grid-row: 2;
+    grid-row: 2;
+    -ms-grid-column: 3;
+        grid-column-start: 3;
+    grid-column-end: 5;
+  }
+  div#c-post-versions div#a-index .pv-reason {
+    -ms-grid-row: 2;
+    grid-row: 2;
+    -ms-grid-column: 5;
+        grid-column-start: 5;
+    grid-column-end: 7;
+  }
+  div#c-post-versions div#a-index .pv-description {
+    -ms-grid-row: 2;
+    grid-row: 2;
+    -ms-grid-column: 7;
+        grid-column-start: 7;
+    grid-column-end: 9;
+  }
+  div#c-post-versions div#a-index .pv-tags-locked {
+    -ms-grid-row: 2;
+    grid-row: 2;
+    -ms-grid-column: 9;
+        grid-column-start: 9;
+    grid-column-end: 13;
+  }
+  div#c-post-versions div#a-index .pv-actions {
+    -ms-grid-row: 2;
+    grid-row: 2;
+    -ms-grid-column: 13;
+    grid-column: 13;
+  }
+  div#c-post-versions div#a-index .pv-tags {
+    -ms-grid-row: 4;
+    grid-row: 4;
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    grid-column-end: 10;
+  }
+  div#c-post-versions div#a-index .pv-sources {
+    -ms-grid-row: 4;
+    grid-row: 4;
+    -ms-grid-column: 10;
+        grid-column-start: 10;
+    grid-column-end: 14;
+  }
 }
 
 /* === IMAGE PAGE === */
