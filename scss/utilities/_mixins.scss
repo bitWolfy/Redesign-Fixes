@@ -1,6 +1,8 @@
 // Responsive Breakpoints
 @mixin media-breakpoint($size) {
-    @if $size == "desktop-lg" {
+    @if $size == "desktop-xl" {
+        @media (min-width: $media-breakpoint-desktop-xl)    { @content; }
+    } @else if $size == "desktop-lg" {
         @media (min-width: $media-breakpoint-desktop-lg)    { @content; }
     } @else if $size == "desktop" {
         @media (min-width: $media-breakpoint-desktop)       { @content; }

@@ -19,6 +19,7 @@ body {
 @include media-breakpoint(laptop)       { body { max-width: $media-breakpoint-laptop; } }
 @include media-breakpoint(desktop)      { body { max-width: $media-breakpoint-desktop; } }
 @include media-breakpoint(desktop-lg)   { body { max-width: $media-breakpoint-desktop-lg; } }
+@include media-breakpoint(desktop-xl)   { body { max-width: $media-breakpoint-desktop-xl; } }
 
 div#page {
     @include themable {
