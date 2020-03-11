@@ -451,13 +451,17 @@ div.list-of-forum-posts article:nth-child(2n) { background-color: #1f3c67; }
 
 .theme-hotdog div.list-of-forum-posts article:nth-child(2n) { background-color: #c53c38; }
 
-div.list-of-forum-posts article[data-is-deleted="true"] { background-color: maroon; }
+div.list-of-forum-posts article[data-is-deleted="true"] { position: relative; z-index: 5; }
 
-.theme-hexagon div.list-of-forum-posts article[data-is-deleted="true"] { background-color: maroon; }
+div.list-of-forum-posts article[data-is-deleted="true"] > div { position: relative; z-index: 10; }
 
-.theme-bloodlust div.list-of-forum-posts article[data-is-deleted="true"] { background-color: maroon; }
+div.list-of-forum-posts article[data-is-deleted="true"]::after { content: ""; position: absolute; top: 0; left: 0; bottom: 0; right: 0; z-index: 1; background: rgba(128, 0, 0, 0.2); }
 
-.theme-hotdog div.list-of-forum-posts article[data-is-deleted="true"] { background-color: maroon; }
+.theme-hexagon div.list-of-forum-posts article[data-is-deleted="true"]::after { background: rgba(128, 0, 0, 0.2); }
+
+.theme-bloodlust div.list-of-forum-posts article[data-is-deleted="true"]::after { background: rgba(128, 0, 0, 0.2); }
+
+.theme-hotdog div.list-of-forum-posts article[data-is-deleted="true"]::after { background: rgba(128, 0, 0, 0.2); }
 
 div.list-of-forum-posts article div.content { padding: unset; }
 

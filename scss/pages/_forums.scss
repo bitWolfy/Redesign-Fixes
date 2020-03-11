@@ -48,10 +48,24 @@ div.list-of-forum-posts article:nth-child(2n) {                 // Get rid of th
     }
 }
 div.list-of-forum-posts article[data-is-deleted="true"] {       // Restore the highlight on the deleted posts
+    position: relative;
+    z-index: 5;
+}
+div.list-of-forum-posts article[data-is-deleted="true"] > div {       // Restore the highlight on the deleted posts
+    position: relative;
+    z-index: 10;
+}
+div.list-of-forum-posts article[data-is-deleted="true"]::after {       // Restore the highlight on the deleted posts
+    content: "";
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    z-index: 1;
+
     @include themable {
-        background-color: themed("color-danger");
+        background: rgba( themed("color-danger"), 0.2);
     }
 }
+
 div.list-of-forum-posts article div.content {                   // Get rid of unnecessary padding on the forum posts
     padding: unset;
 }
