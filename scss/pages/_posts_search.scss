@@ -52,11 +52,11 @@ a#re-enable-all-blacklists::after {
     border-radius: 4px;
 }
 a#disable-all-blacklists::after {
-    content: "Disable all filters";
+    content: "Disable all filters";                             // TODO HACK replace the original instead
     @include themable { background: themed("color-danger"); }
 }
 a#re-enable-all-blacklists::after {
-    content: "Enable all filters";
+    content: "Enable all filters";                              // TODO HACK replace the original instead
     @include themable { background: themed("color-success"); }
 }
 a.blacklist-toggle-link:before { content: "» "; }
@@ -66,7 +66,7 @@ a.blacklist-toggle-link:before { content: "» "; }
 }
 
 span.blacklist-help a { font-size: 0; }                         // Replace the giant blacklist help link with a small (?) one
-span.blacklist-help a:after {
+span.blacklist-help a::after {                                  // TODO HACK replace the original instead
     content: "(?)";
     font-size: 0.8rem;
 }

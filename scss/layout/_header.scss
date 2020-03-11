@@ -9,16 +9,16 @@ header#top {
 }
 
 body.resp #maintoggle {
-    top: 1vw;                                                       // Move the hamburger menu to the left
+    top: 1vw;                                                       // Move the hamburger menu to the left. Necessary? Who knows.
     left: 3vw;
     right: unset;
 }
 
-@include media-breakpoint(tablet) {
-    header#top h1 {
-        display: inline-block;                                      // Preparing to move the logo down to where it belongs
+@include media-breakpoint(tablet) {                                 // TODO HACK On one hand, this is a terrible hack.
+    header#top h1 {                                                 // On the other hand, the mobile breaks without the giant logo.
+        display: inline-block;
         margin: 0 0 0 28px;
-        font-size: 1.2em;                                           // Re-style the logo to match the old theme
+        font-size: 1.2em;
         font-weight: 400;
         font-family: Verdana, sans-serif;
     }

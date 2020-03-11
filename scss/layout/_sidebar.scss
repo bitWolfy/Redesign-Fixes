@@ -1,6 +1,6 @@
 /* === SIDEBAR === */
 span.search-help a { font-size: 0; }                            // Make the help links (quite) a bit smaller
-span.search-help a:after {
+span.search-help a::after {                                     // TODO HACK replace the original instead
     content: "search help";
     font-size: 0.7rem;
     float: right;

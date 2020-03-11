@@ -46,8 +46,8 @@ div#c-users div#a-show table.user-statistics td {
 }
 
 /* Re-position the favorites section */
-div#c-users div#a-show div.box.user-favorites,
-div#c-users div#a-show div.box.user-uploads {
+div#c-users div#a-show div.box.user-favorites,                      // TODO HACK The following section is kinda terrible
+div#c-users div#a-show div.box.user-uploads {                       // Would be easier to re-make it with HTML instead of this nonsense
     display: inline-block;
     position: relative;
     flex: 0 0 100%;
@@ -57,7 +57,7 @@ div#c-users div#a-show div.box.user-uploads {
         border: 1px solid themed("color-foreground");
         background: themed("color-section");
     }
-    margin: 1em 0;
+    margin-bottom: 1em;
     border-radius: 4px;
 }
 div#c-users div#a-show div.box.user-favorites h2,
