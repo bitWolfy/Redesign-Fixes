@@ -1,0 +1,9 @@
+// Theme Index
+// Add themes to the following map to generate appropriate classes
+
+@import 'theme_hex';
+
+$themes_default: $theme_hex;
+$themes: (
+    "hex": $theme_hex
+);

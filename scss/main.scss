@@ -13,17 +13,16 @@
 @import 'utilities/variables';
 @import 'utilities/colors';
 
-@import 'base/typography';
+@import 'components/themable';
 
-@import 'themes/theme_default';
+@import 'themes/theme_hex';
+@import 'themes/index';
 
 @import 'layout/common';
 @import 'layout/header';
 @import 'layout/sidebar';
 @import 'layout/tags';
 @import 'layout/users';
-
-@import 'components/comments';
 
 @import 'pages/account';
 @import 'pages/comments';

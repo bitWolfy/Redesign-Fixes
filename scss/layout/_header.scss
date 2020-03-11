@@ -1,6 +1,9 @@
 /* --- Header --- */
 header#top {
-    background: $theme-image-background $theme-color-background;    /* Give the header the same hex grid as the main body */
+    @include themable {
+        background-image: themed("image-background");
+        background-color: themed("color-background");                   /* Give the header the same hex grid as the main body */
+    }
     font-size: 1.05em;                                              /* Slightly bigger font, for better readability */
     margin: 0 0 0.8rem;                                             /* Slightly bigger margin, to match the old theme */
 }
