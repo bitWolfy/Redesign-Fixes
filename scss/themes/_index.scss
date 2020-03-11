@@ -1,9 +1,9 @@
 // Theme Index
 // Add themes to the following map to generate appropriate classes
 
-@import 'theme_hex';
+@import 'theme_hexagon';
 
-$themes_default: $theme_hex;
+$themes_default: $theme_hexagon;
 $themes: (
-    "hex": $theme_hex
+    "hexagon": $theme_hexagon
 );
