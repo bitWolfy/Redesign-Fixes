@@ -1,5 +1,5 @@
 /* === IMAGE PAGE === */
-/* Image Page Navigation Hack */
+/* Image Page Navigation Hack */                                // TODO HACK This is just horrible.
 div#nav-links { display: table-row-group; }                     // Re-order the elements on the image page
 div#nav-links div { margin: 5px; }                                
 section#image-container { display: table-header-group; }        // Order is as follows:

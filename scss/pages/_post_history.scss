@@ -1,0 +1,45 @@
+div#c-post-versions div#a-index .post-version {
+    box-shadow: none;
+    @include themable {
+        border: 1px solid themed("color-foreground");
+        background: themed("color-section");
+    }
+}
+
+div#c-post-versions div#a-index .pv-check {
+    box-shadow: none;
+    border-bottom: 0;
+    @include themable {
+        border-color: themed("color-foreground");
+        background: lighten( themed("color-section"), 5%);
+    }
+}
+
+div#c-post-versions div#a-index .pv-post-label,
+div#c-post-versions div#a-index .pv-date-label,
+div#c-post-versions div#a-index .pv-reason-label,
+div#c-post-versions div#a-index .pv-description-label,
+div#c-post-versions div#a-index .pv-tags-locked-label,
+div#c-post-versions div#a-index .pv-spacer,
+div#c-post-versions div#a-index .pv-tags-label,
+div#c-post-versions div#a-index .pv-sources-label {
+    display: none;
+}
+
+div#c-post-versions div#a-index .pv-post,
+div#c-post-versions div#a-index .pv-date,
+div#c-post-versions div#a-index .pv-reason,
+div#c-post-versions div#a-index .pv-description,
+div#c-post-versions div#a-index .pv-tags-locked,
+div#c-post-versions div#a-index .pv-actions {
+    @include themable {
+        background: lighten( themed("color-section"), 5%);
+    }
+}
+
+div#c-post-versions div#a-index .pv-tags,
+div#c-post-versions div#a-index .pv-sources {
+    @include themable {
+        border-top: 1px solid themed("color-foreground");
+    }
+}

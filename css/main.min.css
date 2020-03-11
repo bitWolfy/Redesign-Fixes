@@ -496,6 +496,40 @@ div.list-of-forum-posts article div.content { padding: unset; }
 
 textarea#forum_post_body { max-width: unset; }
 
+div#c-post-versions div#a-index .post-version { -webkit-box-shadow: none; box-shadow: none; border: 1px solid #152f56; background: #1f3c67; }
+
+.theme-hexagon div#c-post-versions div#a-index .post-version { border: 1px solid #152f56; background: #1f3c67; }
+
+.theme-bloodlust div#c-post-versions div#a-index .post-version { border: 1px solid #222222; background: #333333; }
+
+.theme-hotdog div#c-post-versions div#a-index .post-version { border: 1px solid #FF0000; background: #c53c38; }
+
+div#c-post-versions div#a-index .pv-check { -webkit-box-shadow: none; box-shadow: none; border-bottom: 0; border-color: #152f56; background: #25477b; }
+
+.theme-hexagon div#c-post-versions div#a-index .pv-check { border-color: #152f56; background: #25477b; }
+
+.theme-bloodlust div#c-post-versions div#a-index .pv-check { border-color: #222222; background: #404040; }
+
+.theme-hotdog div#c-post-versions div#a-index .pv-check { border-color: #FF0000; background: #cc4e4b; }
+
+div#c-post-versions div#a-index .pv-post-label, div#c-post-versions div#a-index .pv-date-label, div#c-post-versions div#a-index .pv-reason-label, div#c-post-versions div#a-index .pv-description-label, div#c-post-versions div#a-index .pv-tags-locked-label, div#c-post-versions div#a-index .pv-spacer, div#c-post-versions div#a-index .pv-tags-label, div#c-post-versions div#a-index .pv-sources-label { display: none; }
+
+div#c-post-versions div#a-index .pv-post, div#c-post-versions div#a-index .pv-date, div#c-post-versions div#a-index .pv-reason, div#c-post-versions div#a-index .pv-description, div#c-post-versions div#a-index .pv-tags-locked, div#c-post-versions div#a-index .pv-actions { background: #25477b; }
+
+.theme-hexagon div#c-post-versions div#a-index .pv-post, .theme-hexagon div#c-post-versions div#a-index .pv-date, .theme-hexagon div#c-post-versions div#a-index .pv-reason, .theme-hexagon div#c-post-versions div#a-index .pv-description, .theme-hexagon div#c-post-versions div#a-index .pv-tags-locked, .theme-hexagon div#c-post-versions div#a-index .pv-actions { background: #25477b; }
+
+.theme-bloodlust div#c-post-versions div#a-index .pv-post, .theme-bloodlust div#c-post-versions div#a-index .pv-date, .theme-bloodlust div#c-post-versions div#a-index .pv-reason, .theme-bloodlust div#c-post-versions div#a-index .pv-description, .theme-bloodlust div#c-post-versions div#a-index .pv-tags-locked, .theme-bloodlust div#c-post-versions div#a-index .pv-actions { background: #404040; }
+
+.theme-hotdog div#c-post-versions div#a-index .pv-post, .theme-hotdog div#c-post-versions div#a-index .pv-date, .theme-hotdog div#c-post-versions div#a-index .pv-reason, .theme-hotdog div#c-post-versions div#a-index .pv-description, .theme-hotdog div#c-post-versions div#a-index .pv-tags-locked, .theme-hotdog div#c-post-versions div#a-index .pv-actions { background: #cc4e4b; }
+
+div#c-post-versions div#a-index .pv-tags, div#c-post-versions div#a-index .pv-sources { border-top: 1px solid #152f56; }
+
+.theme-hexagon div#c-post-versions div#a-index .pv-tags, .theme-hexagon div#c-post-versions div#a-index .pv-sources { border-top: 1px solid #152f56; }
+
+.theme-bloodlust div#c-post-versions div#a-index .pv-tags, .theme-bloodlust div#c-post-versions div#a-index .pv-sources { border-top: 1px solid #222222; }
+
+.theme-hotdog div#c-post-versions div#a-index .pv-tags, .theme-hotdog div#c-post-versions div#a-index .pv-sources { border-top: 1px solid #FF0000; }
+
 /* === IMAGE PAGE === */
 /* Image Page Navigation Hack */
 div#nav-links { display: table-row-group; }
