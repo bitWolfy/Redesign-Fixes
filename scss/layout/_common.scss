@@ -69,6 +69,40 @@ a:hover {
 
 div#ad-leaderboard { text-align: center; }                      // Center the ads, because why not?
 
+/* --- Tables --- */
+table.striped {
+    width: 100%;
+}
+table.striped thead tr {
+    @include themable {
+        background-color: darken( themed("color-section"), 5%);
+        border-bottom: 1px solid themed("color-foreground");
+    }
+}
+table.striped tbody tr {                        // Stripes are out, padding is in!
+    @include themable {
+        background-color: themed("color-section");
+        border-bottom: 1px solid themed("color-foreground");
+    }
+}
+table.striped tbody tr:hover {
+    @include themable {
+        background-color: lighten( themed("color-section"), 10%);
+    }
+}
+table.striped tbody tr td {
+    padding: 15px 5px;
+}
+
+td a.last-page,
+td a.last-page:link,
+td a.last-page:visited {
+    @include themable { color: themed("color-text-muted"); }
+}
+td a.last-page:hover {
+    @include themable { color: themed("color-link-hover"); }
+}
+
 /* === NOTICES === */
 div#notice:not(.ui-state-error) {
     @include themable {

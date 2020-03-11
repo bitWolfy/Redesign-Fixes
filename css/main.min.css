@@ -82,6 +82,51 @@ a:hover { color: #e9f2fa; }
 
 div#ad-leaderboard { text-align: center; }
 
+/* --- Tables --- */
+table.striped { width: 100%; }
+
+table.striped thead tr { background-color: #193153; border-bottom: 1px solid #152f56; }
+
+.theme-hexagon table.striped thead tr { background-color: #193153; border-bottom: 1px solid #152f56; }
+
+.theme-bloodlust table.striped thead tr { background-color: #262626; border-bottom: 1px solid #222222; }
+
+.theme-hotdog table.striped thead tr { background-color: #b13632; border-bottom: 1px solid #FF0000; }
+
+table.striped tbody tr { background-color: #1f3c67; border-bottom: 1px solid #152f56; }
+
+.theme-hexagon table.striped tbody tr { background-color: #1f3c67; border-bottom: 1px solid #152f56; }
+
+.theme-bloodlust table.striped tbody tr { background-color: #333333; border-bottom: 1px solid #222222; }
+
+.theme-hotdog table.striped tbody tr { background-color: #c53c38; border-bottom: 1px solid #FF0000; }
+
+table.striped tbody tr:hover { background-color: #2b538e; }
+
+.theme-hexagon table.striped tbody tr:hover { background-color: #2b538e; }
+
+.theme-bloodlust table.striped tbody tr:hover { background-color: #4d4d4d; }
+
+.theme-hotdog table.striped tbody tr:hover { background-color: #d1625f; }
+
+table.striped tbody tr td { padding: 15px 5px; }
+
+td a.last-page, td a.last-page:link, td a.last-page:visited { color: #999999; }
+
+.theme-hexagon td a.last-page, .theme-hexagon td a.last-page:link, .theme-hexagon td a.last-page:visited { color: #999999; }
+
+.theme-bloodlust td a.last-page, .theme-bloodlust td a.last-page:link, .theme-bloodlust td a.last-page:visited { color: #999999; }
+
+.theme-hotdog td a.last-page, .theme-hotdog td a.last-page:link, .theme-hotdog td a.last-page:visited { color: #999999; }
+
+td a.last-page:hover { color: #e9f2fa; }
+
+.theme-hexagon td a.last-page:hover { color: #e9f2fa; }
+
+.theme-bloodlust td a.last-page:hover { color: #f68b00; }
+
+.theme-hotdog td a.last-page:hover { color: #666666; }
+
 /* === NOTICES === */
 div#notice:not(.ui-state-error) { background-color: #152f56; border: 1px solid rgba(0, 0, 0, 0.5); padding: 4px !important; -webkit-box-shadow: 0 0 27px rgba(0, 0, 0, 0.2); box-shadow: 0 0 27px rgba(0, 0, 0, 0.2); }
 
@@ -426,48 +471,6 @@ div.list-of-forum-posts article { background: #1f3c67; -webkit-box-shadow: none;
 #topic-response .text label { display: none; }
 
 #forum_post_body { width: 100%; -webkit-box-shadow: none; box-shadow: none; }
-
-table.striped thead tr { background-color: #193153; border-bottom: 1px solid #152f56; }
-
-.theme-hexagon table.striped thead tr { background-color: #193153; border-bottom: 1px solid #152f56; }
-
-.theme-bloodlust table.striped thead tr { background-color: #262626; border-bottom: 1px solid #222222; }
-
-.theme-hotdog table.striped thead tr { background-color: #b13632; border-bottom: 1px solid #FF0000; }
-
-table.striped tbody tr.forum-topic-row { background-color: #1f3c67; border-bottom: 1px solid #152f56; }
-
-.theme-hexagon table.striped tbody tr.forum-topic-row { background-color: #1f3c67; border-bottom: 1px solid #152f56; }
-
-.theme-bloodlust table.striped tbody tr.forum-topic-row { background-color: #333333; border-bottom: 1px solid #222222; }
-
-.theme-hotdog table.striped tbody tr.forum-topic-row { background-color: #c53c38; border-bottom: 1px solid #FF0000; }
-
-table.striped tbody tr.forum-topic-row:hover { background-color: #2b538e; }
-
-.theme-hexagon table.striped tbody tr.forum-topic-row:hover { background-color: #2b538e; }
-
-.theme-bloodlust table.striped tbody tr.forum-topic-row:hover { background-color: #4d4d4d; }
-
-.theme-hotdog table.striped tbody tr.forum-topic-row:hover { background-color: #d1625f; }
-
-tr.forum-topic-row td { padding: 15px 5px; }
-
-td a.last-page, td a.last-page:link, td a.last-page:visited { color: #999999; }
-
-.theme-hexagon td a.last-page, .theme-hexagon td a.last-page:link, .theme-hexagon td a.last-page:visited { color: #999999; }
-
-.theme-bloodlust td a.last-page, .theme-bloodlust td a.last-page:link, .theme-bloodlust td a.last-page:visited { color: #999999; }
-
-.theme-hotdog td a.last-page, .theme-hotdog td a.last-page:link, .theme-hotdog td a.last-page:visited { color: #999999; }
-
-td a.last-page:hover { color: #e9f2fa; }
-
-.theme-hexagon td a.last-page:hover { color: #e9f2fa; }
-
-.theme-bloodlust td a.last-page:hover { color: #f68b00; }
-
-.theme-hotdog td a.last-page:hover { color: #666666; }
 
 div.list-of-forum-posts article:nth-child(2n) { background-color: #1f3c67; }
 
