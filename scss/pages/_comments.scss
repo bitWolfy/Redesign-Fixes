@@ -46,17 +46,17 @@ div#c-posts div#a-show #artist-commentary {
     position: relative;
     z-index: 10;
     box-shadow: none;
-    border: none;
     border-radius: 3px;
     @include themable {
+        border: 1px solid themed("color-section");
         border-left: 4px solid themed("color-danger");
-        background: rgba( lighten( themed("color-section"), 5%), 0.7);
+        background: rgba( lighten( themed("color-section"), 10%), 0.7);
     }
 }
 
 .styled-dtext blockquote {
     @include themable {
-        border-color: themed("color-detail-quote");
+        border-left-color: themed("color-detail-quote");
     }
 }
 .styled-dtext blockquote::after {
@@ -73,7 +73,7 @@ div#c-posts div#a-show #artist-commentary {
 }
 .styled-dtext div.expandable {
     @include themable {
-        border-color: themed("color-detail-expandable");
+        border-left-color: themed("color-detail-expandable");
     }
 }
 .styled-dtext div.expandable::after {
@@ -90,7 +90,7 @@ div#c-posts div#a-show #artist-commentary {
 }
 .styled-dtext pre {
     @include themable {
-        border-color: themed("color-detail-code");
+        border-left-color: themed("color-detail-code");
     }
 }
 .styled-dtext pre::after {
