@@ -12,13 +12,6 @@ div#page aside#sidebar h1 { margin-bottom: 5px; }               /* Minor padding
 
 div.post-score { font-size: 0.8rem; }                           /* Increase the font size on post preview details */
 
-div#posts div#posts-container {
-    display: flex;
-    flex-flow: wrap;
-    align-items: flex-end;
-    justify-content: space-between;
-}
-
 article.post-preview div.desc {
     @include themable {
         background-color: themed("color-section");
@@ -26,8 +19,14 @@ article.post-preview div.desc {
 }
 
 @include media-breakpoint(tablet) {
+    div#posts div#posts-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(154px, 1fr));
+        grid-column-gap: 1.5%;
+        align-items: self-end;
+    }
+
     article.post-preview {                                      /* Space out the thumbnails a bit more */
-        flex: 1 1 auto;
         margin: 10px;
         max-width: max-content;
     }
