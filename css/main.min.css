@@ -173,7 +173,7 @@ header#top menu.main li.current a { background-color: #152f56; }
 /* === SIDEBAR === */
 span.search-help a { font-size: 0; }
 
-span.search-help a:after { content: "search help"; font-size: 0.7rem; float: right; margin-top: 10px; }
+span.search-help a::after { content: "search help"; font-size: 0.7rem; float: right; margin-top: 10px; }
 
 /* Desktop Searchbox */
 div#page aside#sidebar input[type=text] { width: 13em; padding: 2px 3px; border-radius: 4px 0 0 4px; border-right: 0; -webkit-box-sizing: border-box; box-sizing: border-box; }
@@ -662,9 +662,9 @@ div#c-posts div#a-show #pool-nav li .prev { left: 0; font-size: 0; }
 
 div#c-posts div#a-show #pool-nav li .next { right: 0; font-size: 0; }
 
-#pool-nav .prev:after { content: "« Prev"; font-size: 1rem; }
+#pool-nav .prev::after { content: "« Prev"; font-size: 1rem; }
 
-#pool-nav .next:after { content: "Next »"; font-size: 1rem; }
+#pool-nav .next::after { content: "Next »"; font-size: 1rem; }
 
 #pool-nav a.prev:hover, #pool-nav a.next:hover { color: wheat; }
 
@@ -764,7 +764,7 @@ div.fav-buttons button#add-fav-button:hover { background: #004b00; }
 
 .theme-hotdog div.fav-buttons button#add-fav-button:hover { background: #004b00; }
 
-div.fav-buttons button#add-fav-button:after { content: "+ Favorite"; font-size: 0.9rem; }
+div.fav-buttons button#add-fav-button::after { content: "+ Favorite"; font-size: 0.9rem; }
 
 div.fav-buttons button#remove-fav-button { background: maroon; }
 
@@ -782,7 +782,7 @@ div.fav-buttons button#remove-fav-button:hover { background: #670000; }
 
 .theme-hotdog div.fav-buttons button#remove-fav-button:hover { background: #670000; }
 
-div.fav-buttons button#remove-fav-button:after { content: "- Unfavorite"; font-size: 0.9rem; }
+div.fav-buttons button#remove-fav-button::after { content: "- Unfavorite"; font-size: 0.9rem; }
 
 /* Download Button */
 div#image-download-link a { background: sienna; color: #ffffff; padding: 3px 10px; border: 0; border-radius: 3px; }
@@ -902,7 +902,7 @@ a.blacklist-toggle-link:before { content: "» "; }
 
 span.blacklist-help a { font-size: 0; }
 
-span.blacklist-help a:after { content: "(?)"; font-size: 0.8rem; }
+span.blacklist-help a::after { content: "(?)"; font-size: 0.8rem; }
 
 /* Animation Type Badges */
 article.post-preview[data-tags~="animated"]::before { content: "anim"; }

@@ -411,7 +411,7 @@ span.search-help a {
   font-size: 0;
 }
 
-span.search-help a:after {
+span.search-help a::after {
   content: "search help";
   font-size: 0.7rem;
   float: right;
@@ -1692,12 +1692,12 @@ div#c-posts div#a-show #pool-nav li .next {
   font-size: 0;
 }
 
-#pool-nav .prev:after {
+#pool-nav .prev::after {
   content: "« Prev";
   font-size: 1rem;
 }
 
-#pool-nav .next:after {
+#pool-nav .next::after {
   content: "Next »";
   font-size: 1rem;
 }
@@ -1929,7 +1929,7 @@ div.fav-buttons button#add-fav-button:hover {
   background: #004b00;
 }
 
-div.fav-buttons button#add-fav-button:after {
+div.fav-buttons button#add-fav-button::after {
   content: "+ Favorite";
   font-size: 0.9rem;
 }
@@ -1966,7 +1966,7 @@ div.fav-buttons button#remove-fav-button:hover {
   background: #670000;
 }
 
-div.fav-buttons button#remove-fav-button:after {
+div.fav-buttons button#remove-fav-button::after {
   content: "- Unfavorite";
   font-size: 0.9rem;
 }
@@ -2296,7 +2296,7 @@ span.blacklist-help a {
   font-size: 0;
 }
 
-span.blacklist-help a:after {
+span.blacklist-help a::after {
   content: "(?)";
   font-size: 0.8rem;
 }

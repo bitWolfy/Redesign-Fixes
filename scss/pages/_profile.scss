@@ -46,8 +46,8 @@ div#c-users div#a-show table.user-statistics td {
 }
 
 /* Re-position the favorites section */
-div#c-users div#a-show div.box.user-favorites,
-div#c-users div#a-show div.box.user-uploads {
+div#c-users div#a-show div.box.user-favorites,                      // TODO HACK The following section is kinda terrible
+div#c-users div#a-show div.box.user-uploads {                       // Would be easier to re-make it with HTML instead of this nonsense
     display: inline-block;
     position: relative;
     flex: 0 0 100%;

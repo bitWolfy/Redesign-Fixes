@@ -1,7 +1,7 @@
 /* === POPULAR PAGE === */
-div#c-explore-posts div#a-popular {
-    display: flex;
-    flex-wrap: wrap;
+div#c-explore-posts div#a-popular {                                 // TODO HACK This whole section is horrible
+    display: flex;                                                  // Put the posts on the popular page inside div#posts-container
+    flex-wrap: wrap;                                                // Then the behavior should match the search page
     align-items: flex-end;
 }
 div#c-explore-posts div#a-popular h1,
@@ -16,7 +16,7 @@ div#c-explore-posts div#a-popular section#blacklist-box {
         align-items: center;
         justify-content: space-evenly;
     }
-    body.resp div#page div#c-explore-posts div#a-popular article.post-preview img {
+    body.resp div#page div#c-explore-posts div#a-popular article.post-preview img {     // TODO BUG Why doesn't the popular page load cropped thumbnails?
         height: auto;
         max-height: none;
         max-width: none;

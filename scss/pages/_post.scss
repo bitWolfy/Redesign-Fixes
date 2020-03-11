@@ -13,8 +13,8 @@ div#c-posts div.notice.notice-pending {                         // Tweak the not
 }
 
 /* Search Results Navigation */
-div#nav-links div#search-seq-nav {
-    margin: 0;
+div#nav-links div#search-seq-nav {                              // TODO BUG This section stretches fully accross the page on Firefox
+    margin: 0;                                                  // Works fine on Chrome, though.
 }
 #search-seq-nav ul li {
     @include themable {
@@ -31,9 +31,9 @@ div#nav-links div#search-seq-nav .next {
 }
 
 /* Pool Navigation */
-#pool-nav .first, #pool-nav .last { display: none; }            // These are straight up unnecessary
-div#c-posts div#a-show #pool-nav { margin: 5px 0; }
-div#c-posts div#nav-links { background: transparent; }
+#pool-nav .first, #pool-nav .last { display: none; }            // TODO HACK Not sure if the links to go to the first and last pages of the pool are even necessary
+div#c-posts div#a-show #pool-nav { margin: 5px 0; }             // But they sure make mobile navigation harder
+div#c-posts div#nav-links { background: transparent; }          // Honestly, I'm not really happy with my implementation of pool navigation altogether
 
 #pool-nav ul {
     display: table;
@@ -79,8 +79,8 @@ li.pool-category-series:last-child {
 }
 div#c-posts div#a-show #pool-nav li .prev { left: 0; font-size: 0; }
 div#c-posts div#a-show #pool-nav li .next { right: 0; font-size: 0; }
-#pool-nav .prev:after { content: "« Prev"; font-size: 1rem; }
-#pool-nav .next:after { content: "Next »"; font-size: 1rem; }
+#pool-nav .prev::after { content: "« Prev"; font-size: 1rem; }                          // TODO HACK replace the original instead
+#pool-nav .next::after { content: "Next »"; font-size: 1rem; }                          // TODO HACK replace the original instead
 #pool-nav a.prev:hover,
 #pool-nav a.next:hover { @include themable { color: themed("color-tag-pool"); } }
 
@@ -117,8 +117,8 @@ a#remove-from-favorites {
         color: themed("color-text-white");
     }
 }
-section#post-options ul li:nth-child(1),                        // Best way to add margins to the fav/unfav buttons in the sidebar
-section#post-options ul li:nth-child(2) {                       // Yes, really.
+section#post-options ul li:nth-child(1),                        // TODO HACK Best way to add margins to the fav/unfav buttons in the sidebar
+section#post-options ul li:nth-child(2) {                       // Just add classes / IDs to them. This is ridiculous.
     margin: 5px 0;
 }
 #post-options a#add-to-favorites,
@@ -145,11 +145,11 @@ div#c-posts .fav-buttons button.ui-button {                     // Replace the w
 }
 div.fav-buttons button#add-fav-button           { @include themable { background: themed("color-success"); } }
 div.fav-buttons button#add-fav-button:hover     { @include themable { background: darken( themed("color-success"), 5%); } }
-div.fav-buttons button#add-fav-button:after     { content: "+ Favorite"; font-size: 0.9rem; }
+div.fav-buttons button#add-fav-button::after    { content: "+ Favorite"; font-size: 0.9rem; }       // TODO HACK replace the original instead
 
 div.fav-buttons button#remove-fav-button        { @include themable { background: themed("color-danger"); } }
 div.fav-buttons button#remove-fav-button:hover  { @include themable { background: darken( themed("color-danger"), 5%); } }
-div.fav-buttons button#remove-fav-button:after  { content: "- Unfavorite"; font-size: 0.9rem; }
+div.fav-buttons button#remove-fav-button::after { content: "- Unfavorite"; font-size: 0.9rem; }     // TODO HACK replace the original instead
 
 /* Download Button */
 div#image-download-link a {                                     // Recolor the download button to match the Favorite one
@@ -210,8 +210,8 @@ section#edit form.simple_form {
     margin: unset;
     padding: unset;
 }
-section#edit div.input:last-child {                             // Make the "Save Changes" button scroll with the page
-    position: -webkit-sticky;
+section#edit div.input:last-child {                             // TODO HACK The button container needs a class / ID
+    position: -webkit-sticky;                                   // Make the "Save Changes" button scroll with the page
     position: sticky;
     bottom: 0;
     
