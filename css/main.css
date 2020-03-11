@@ -41,21 +41,33 @@ body.theme-hotdog {
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1045px) {
   body {
-    max-width: 1000px;
+    max-width: 1045px;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1440px) {
   body {
-    max-width: 1200px;
+    max-width: 1440px;
   }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1600px) {
   body {
-    max-width: 1400px;
+    max-width: 1600px;
+  }
+}
+
+@media (min-width: 1900px) {
+  body {
+    max-width: 1900px;
+  }
+}
+
+@media (min-width: 2560px) {
+  body {
+    max-width: 2560px;
   }
 }
 
@@ -1238,7 +1250,7 @@ li.pool-category-series:last-child {
   border-bottom: 0;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1045px) {
   li.pool-category-series {
     display: table-cell;
     border-bottom: 0;

@@ -1,6 +1,10 @@
 // Responsive Breakpoint Values
-$media-breakpoint-mobile:       485px;
-$media-breakpoint-tablet:       800px;
-$media-breakpoint-laptop:       1000px;
-$media-breakpoint-desktop:      1200px;
-$media-breakpoint-desktop-lg:   1400px;
+$resp-breakpoint: (
+    "mobile":       485px,
+    "tablet":       800px,
+    "laptop":       1045px,
+    "laptop-lg":    1440px,
+    "desktop":      1600px,
+    "desktop-lg":   1900px,
+    "dekstop-4k":   2560px,
+);

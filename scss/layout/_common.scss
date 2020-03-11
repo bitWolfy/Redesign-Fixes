@@ -15,10 +15,7 @@ body {
     margin: 0 auto;
 }
 
-@include media-breakpoint(tablet)       { body { max-width: $media-breakpoint-tablet; } }
-@include media-breakpoint(laptop)       { body { max-width: $media-breakpoint-laptop; } }
-@include media-breakpoint(desktop)      { body { max-width: $media-breakpoint-desktop; } }
-@include media-breakpoint(desktop-lg)   { body { max-width: $media-breakpoint-desktop-lg; } }
+@include resp-body-width;
 
 div#page {
     @include themable {
