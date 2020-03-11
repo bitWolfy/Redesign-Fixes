@@ -35,7 +35,7 @@ div#c-users div#a-show table.user-statistics td { width: auto; }
 /* Title of 'Favorites' and 'Uploads' boxes with a 'button' like format + alignments */
 body.c-users.a-show div#c-users div#a-show div.box h2, div#c-users div#a-show div.box h3 {
     @include themable {
-        border-bottom: 4px solid var("color-link");
+        border-bottom: 4px solid themed("color-link");
         background: themed("color-section");
     }
     padding: 0 0 2px;

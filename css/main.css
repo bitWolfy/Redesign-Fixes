@@ -2099,7 +2099,7 @@ div#c-users div#a-show table.user-statistics td {
 
 /* Title of 'Favorites' and 'Uploads' boxes with a 'button' like format + alignments */
 body.c-users.a-show div#c-users div#a-show div.box h2, div#c-users div#a-show div.box h3 {
-  border-bottom: 4px solid var("color-link");
+  border-bottom: 4px solid #b4c7d9;
   background: #1f3c67;
   padding: 0 0 2px;
   margin: 0 0 5px;
@@ -2109,17 +2109,17 @@ body.c-users.a-show div#c-users div#a-show div.box h2, div#c-users div#a-show di
 }
 
 .theme-hexagon body.c-users.a-show div#c-users div#a-show div.box h2, .theme-hexagon div#c-users div#a-show div.box h3 {
-  border-bottom: 4px solid var("color-link");
+  border-bottom: 4px solid #b4c7d9;
   background: #1f3c67;
 }
 
 .theme-bloodlust body.c-users.a-show div#c-users div#a-show div.box h2, .theme-bloodlust div#c-users div#a-show div.box h3 {
-  border-bottom: 4px solid var("color-link");
+  border-bottom: 4px solid #ffee95;
   background: #333333;
 }
 
 .theme-hotdog body.c-users.a-show div#c-users div#a-show div.box h2, .theme-hotdog div#c-users div#a-show div.box h3 {
-  border-bottom: 4px solid var("color-link");
+  border-bottom: 4px solid #000000;
   background: #c53c38;
 }
 
