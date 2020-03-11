@@ -1,9 +1,11 @@
 // Theme Index
 // Add themes to the following map to generate appropriate classes
 
+@import 'theme_bloodlust';
 @import 'theme_hexagon';
 
 $themes_default: $theme_hexagon;
 $themes: (
-    "hexagon": $theme_hexagon
+    "hexagon": $theme_hexagon,
+    "bloodlust": $theme_bloodlust
 );
