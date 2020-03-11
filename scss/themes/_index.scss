@@ -3,9 +3,11 @@
 
 @import 'theme_bloodlust';
 @import 'theme_hexagon';
+@import 'theme_hotdog';
 
 $themes_default: $theme_hexagon;
 $themes: (
     "hexagon": $theme_hexagon,
-    "bloodlust": $theme_bloodlust
+    "bloodlust": $theme_bloodlust,
+    "hotdog": $theme_hotdog
 );
