@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         e621 Redesign Scripts
 // @namespace    bitwolfy.com
-// @version      1.0.0
+// @version      2.0.4
 // @description  Scripting portion of the e621 Redesign Fixes project
 // @author       bitWolfy
 // @homepage     https://github.com/bitWolfy/e621-Redesign-Fixes
@@ -13,18 +13,37 @@
 
 $(function() {
 
-    // Theme Switcher
+    // === Theme Switcher and Customizer ===
     $("header#top").prepend(`
-        <div id="theme-switcher-container" style="float: right; position: relative; top: 3px; color: #999;">
-            Theme:
-            <select id="theme-switcher">
-                <option value="hexagon">Hexagon</option>
-                <option value="bloodlust">Bloodlust</option>
-                <option value="hotdog">Hotdog</option>
-            </select>
+        <div id="theme-switcher-container" style="float: right; position: relative; top: 3px; color: #999; margin: 3px 0;">
+            <a href="" id="theme-switcher-toggle">► Theme</a>
+            <div id="theme-switcher-box" style="display:none; position: absolute; right: 0; background: #25477b; padding: 10px; border: 1px solid #152f56; border-radius: 5px; color: white; width: 150px; margin-top: 4px; z-index: 15;">
+                Theme:
+                <select id="theme-switcher">
+                    <option value="hexagon">Hexagon</option>
+                    <option value="bloodlust">Bloodlust</option>
+                    <option value="hotdog">Hotdog</option>
+                </select>
+                <br style="margin-top:10px;" />
+                <input type="checkbox" id="theme-scaling" name="theme-scaling">
+                <label for="theme-scaling" style="font-weight: 400;">Disable scaling</label>
+            </div>
         </div>
     `);
 
+    // Toggle the theme box
+    $("#theme-switcher-toggle").click(function(e) {
+        e.preventDefault();
+        if($("#theme-switcher-box").css("display") == "none") {
+            $("#theme-switcher-box").css("display", "block");
+            $("#theme-switcher-toggle").text("▼ Theme");
+        } else {
+            $("#theme-switcher-box").css("display", "none");
+            $("#theme-switcher-toggle").text("► Theme");
+        }
+    });
+
+    // Handle the theme selector
     $("#theme-switcher").change(function(e) {
         $(this).children().each(function(index, option) {
             $("body").removeClass("theme-" + $(option).val());
@@ -40,8 +59,21 @@ $(function() {
         $("#theme-switcher").val(theme);
     })();
 
+    // Handle the scaling toggle
+    $("#theme-scaling").click(function(e) {
+        let disable_scaling = $(this).is(":checked");
+        GM_setValue("e621-scaling", disable_scaling);
+        if(disable_scaling) { $("body").css("max-width", "unset"); }
+        else { $("body").css("max-width", ""); }
+    });
+    (async () => {
+        let disable_scaling = await GM_getValue("e621-scaling", "false");
+        if(disable_scaling) { $("body").css("max-width", "unset"); }
+        $("#theme-scaling").prop("checked", disable_scaling);
+    })();
+
     // === Simple blacklist collapsable ===
-    $("#blacklist-box h1").html(`<a href="" onclick="" id="blacklist-toggle">► Blacklisted</a>`);
+    $("#blacklist-box h1").html(`<a href="" id="blacklist-toggle">► Blacklisted</a>`);
 
     $("#blacklist-box div").css("display", "none");
 
@@ -49,17 +81,17 @@ $(function() {
     if($("a#re-enable-all-blacklists").css("display") == "none") {
         $("#blacklist-list").css("display", "none");
     } else {
-        $("#blacklist-toggle").html("▼ Blacklisted");
+        $("#blacklist-toggle").text("▼ Blacklisted");
     }
 
     // Toggle the filter list when clicking the header
     $("a#blacklist-toggle").on("click", function(e) {
         e.preventDefault();
         if($("#blacklist-list").css("display") == "none") {
-            $("#blacklist-toggle").html("► Blacklisted");
+            $("#blacklist-toggle").html("▼ Blacklisted");
             $("#blacklist-list").css("display", "block");
         } else {
-            $("#blacklist-toggle").html("▼ Blacklisted");
+            $("#blacklist-toggle").html("► Blacklisted");
             $("#blacklist-list").css("display", "none");
         }
     });
