@@ -1,6 +1,7 @@
 @import 'theme_hexagon';
 @import 'theme_pony';
 @import 'theme_bloodlust';
+@import 'theme_serpent';
 @import 'theme_hotdog';
 
 @import 'extras_none';
@@ -19,8 +20,8 @@ $theme_index: (
         "hexagon":      $theme_hexagon,
         "pony":         $theme_pony,
         "bloodlust":    $theme_bloodlust,
-        // serpent
-        "hotdog":       $theme_hotdog
+        "serpent":      $theme_serpent,
+        "hotdog":       $theme_hotdog,
     )
 );
 
