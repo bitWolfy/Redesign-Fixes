@@ -276,7 +276,17 @@ a:hover { color: #e9f2fa; }
 
 [data-theme=hotdog] .score-negative a:hover { color: #4d0000; }
 
-div#ad-leaderboard { text-align: center; }
+.box-section { -webkit-box-shadow: unset; box-shadow: unset; background-color: #1f3c67; }
+
+[data-theme=hexagon] .box-section { background-color: #1f3c67; }
+
+[data-theme=pony] .box-section { background-color: #453269; }
+
+[data-theme=bloodlust] .box-section { background-color: #333333; }
+
+[data-theme=serpent] .box-section { background-color: #fff48b; }
+
+[data-theme=hotdog] .box-section { background-color: #c53c38; }
 
 /* --- Tables --- */
 table.striped { width: 100%; }
@@ -1289,8 +1299,6 @@ article.post-preview[data-tags~="animated"]::before, article.post-preview[data-t
 [data-theme=hotdog] article.post-preview[data-tags~="animated"]::before, [data-theme=hotdog] article.post-preview[data-tags~="mp4"]::before, [data-theme=hotdog] article.post-preview[data-tags~="flash"]::before, [data-theme=hotdog] article.post-preview[data-tags~="webm"]::before { border: 1px solid #ffffff; }
 
 /* === UPLOAD PAGE === */
-.box-section { -webkit-box-shadow: unset; box-shadow: unset; }
-
 .toggle-button[data-v-deb50420] { margin-bottom: 5px; }
 
 .tag-textarea[data-v-deb50420], .flex-wrap[data-v-deb50420] { margin: 10px 0 5px; }
@@ -1425,7 +1433,7 @@ div#c-users div#a-edit h2 { margin-bottom: .5em; }
 
 #user_blacklisted_tags { height: 300px; }
 
-.simple_form { padding: 0.5em; }
+.simple_form { padding: 0.5em; background: unset; }
 
 /* === WIKI === */
 .wiki-other-name { background-color: unset; }

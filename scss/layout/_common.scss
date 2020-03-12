@@ -83,7 +83,12 @@ a:hover {
 .score-negative a:visited   { @include themable { color: themed("color-danger"); } }
 .score-negative a:hover     { @include themable { color: darken( themed("color-danger"), 10%); } }
 
-div#ad-leaderboard { text-align: center; }                      // Center the ads, because why not?
+.box-section {
+    box-shadow: unset;
+    @include themable {
+        background-color: themed("color-section");
+    }
+}
 
 /* --- Tables --- */
 table.striped {
