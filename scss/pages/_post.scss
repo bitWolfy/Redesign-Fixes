@@ -1,19 +1,15 @@
 /* === IMAGE PAGE === */
-/* Image Page Navigation Hack */                                // TODO HACK This is just horrible.
-div#nav-links { display: table-row-group; }                     // Re-order the elements on the image page
-section#image-container { display: table-header-group; }        // Order is as follows:
-div#pending-approval-notice { display: table-row-group; }       // - pool/search navigation
-div#ad-leaderboard { display: table-footer-group; }             // - notifications
-div#ad-leaderboard-content { margin: 1rem auto; }               // - advertisement
-
-div#c-posts div.notice.notice-pending {                         // Tweak the notices so that they don't interfere with the controls
-    text-align: center;
-    background: transparent;
+/* Search / Pool / Set Navigation */
+#pool-nav .first, #pool-nav .last {                             // TODO HACK Not sure if the links to go to the first and last pages of the pool are even necessary
+    display: none;                                              // But they sure make mobile navigation harder
 }
 
-/* Search / Pool / Set Navigation */
-#pool-nav .first, #pool-nav .last { display: none; }            // TODO HACK Not sure if the links to go to the first and last pages of the pool are even necessary
-div#c-posts div#nav-links { background: transparent; }          // But they sure make mobile navigation harder
+div#c-posts div#nav-links {                                     // TODO HACK If the nav-links and the image were in the same container
+    background: transparent;                                    // It wold be possible to have the nav-links be the same size as the image
+    border: unset;                                              // The way it is now, doing so would also squish the comment section
+    padding: unset;
+    margin: unset;
+}
 
 div#c-posts div#a-show #pool-nav li,
 div#c-posts div#a-show #search-seq-nav li,
@@ -27,9 +23,13 @@ div#c-posts div#a-show #set-nav li {
     margin-bottom: 0.5rem;
 
     @include themable {
-    //    border-bottom: 5px solid themed("color-foreground");
         background: themed("color-section");
     }
+}
+div#c-posts div#a-show #pool-nav li:last-child,
+div#c-posts div#a-show #search-seq-nav li:last-child,
+div#c-posts div#a-show #set-nav li:last-child {
+    margin-bottom: unset;
 }
 
 div#c-posts div#a-show #pool-nav li .prev,

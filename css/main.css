@@ -1683,32 +1683,6 @@ div#c-post-versions div#a-index .pv-sources {
 }
 
 /* === IMAGE PAGE === */
-/* Image Page Navigation Hack */
-div#nav-links {
-  display: table-row-group;
-}
-
-section#image-container {
-  display: table-header-group;
-}
-
-div#pending-approval-notice {
-  display: table-row-group;
-}
-
-div#ad-leaderboard {
-  display: table-footer-group;
-}
-
-div#ad-leaderboard-content {
-  margin: 1rem auto;
-}
-
-div#c-posts div.notice.notice-pending {
-  text-align: center;
-  background: transparent;
-}
-
 /* Search / Pool / Set Navigation */
 #pool-nav .first, #pool-nav .last {
   display: none;
@@ -1716,6 +1690,9 @@ div#c-posts div.notice.notice-pending {
 
 div#c-posts div#nav-links {
   background: transparent;
+  border: unset;
+  padding: unset;
+  margin: unset;
 }
 
 div#c-posts div#a-show #pool-nav li,
@@ -1751,6 +1728,12 @@ div#c-posts div#a-show #set-nav li {
 div#c-posts div#a-show #search-seq-nav li, .theme-hotdog
 div#c-posts div#a-show #set-nav li {
   background: #c53c38;
+}
+
+div#c-posts div#a-show #pool-nav li:last-child,
+div#c-posts div#a-show #search-seq-nav li:last-child,
+div#c-posts div#a-show #set-nav li:last-child {
+  margin-bottom: unset;
 }
 
 div#c-posts div#a-show #pool-nav li .prev,
