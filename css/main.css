@@ -1368,6 +1368,10 @@ div#c-post-versions div#a-index .pv-sources-label {
   display: none;
 }
 
+div#c-post-versions div#a-index .pv-content:empty {
+  padding: 0;
+}
+
 div#c-post-versions div#a-index .pv-post,
 div#c-post-versions div#a-index .pv-date,
 div#c-post-versions div#a-index .pv-reason,
@@ -1516,7 +1520,8 @@ div#c-post-versions div#a-index .pv-sources {
 /* Mobile Support */
 div#c-post-versions div#a-index .pv-check {
   -ms-grid-row: 1;
-      grid-row-start: 1;
+  grid-row: 1;
+  grid-row-start: 1;
   grid-row-end: 8;
   -ms-grid-column: 1;
   grid-column: 1;
@@ -1526,7 +1531,8 @@ div#c-post-versions div#a-index .pv-post {
   -ms-grid-row: 2;
   grid-row: 2;
   -ms-grid-column: 2;
-      grid-column-start: 2;
+  grid-column: 2;
+  grid-column-start: 2;
   grid-column-end: 3;
 }
 
@@ -1534,7 +1540,8 @@ div#c-post-versions div#a-index .pv-date {
   -ms-grid-row: 2;
   grid-row: 2;
   -ms-grid-column: 3;
-      grid-column-start: 3;
+  grid-column: 3;
+  grid-column-start: 3;
   grid-column-end: 14;
 }
 
@@ -1542,7 +1549,8 @@ div#c-post-versions div#a-index .pv-reason {
   -ms-grid-row: 3;
   grid-row: 3;
   -ms-grid-column: 2;
-      grid-column-start: 2;
+  grid-column: 2;
+  grid-column-start: 2;
   grid-column-end: 14;
 }
 
@@ -1550,7 +1558,8 @@ div#c-post-versions div#a-index .pv-description {
   -ms-grid-row: 4;
   grid-row: 4;
   -ms-grid-column: 2;
-      grid-column-start: 2;
+  grid-column: 2;
+  grid-column-start: 2;
   grid-column-end: 9;
 }
 
@@ -1558,7 +1567,8 @@ div#c-post-versions div#a-index .pv-tags-locked {
   -ms-grid-row: 5;
   grid-row: 5;
   -ms-grid-column: 2;
-      grid-column-start: 2;
+  grid-column: 2;
+  grid-column-start: 2;
   grid-column-end: 14;
 }
 
@@ -1566,7 +1576,8 @@ div#c-post-versions div#a-index .pv-actions {
   -ms-grid-row: 4;
   grid-row: 4;
   -ms-grid-column: 9;
-      grid-column-start: 9;
+  grid-column: 9;
+  grid-column-start: 9;
   grid-column-end: 14;
 }
 
@@ -1574,7 +1585,8 @@ div#c-post-versions div#a-index .pv-tags {
   -ms-grid-row: 6;
   grid-row: 6;
   -ms-grid-column: 2;
-      grid-column-start: 2;
+  grid-column: 2;
+  grid-column-start: 2;
   grid-column-end: 14;
 }
 
@@ -1582,14 +1594,16 @@ div#c-post-versions div#a-index .pv-sources {
   -ms-grid-row: 7;
   grid-row: 7;
   -ms-grid-column: 2;
-      grid-column-start: 2;
+  grid-column: 2;
+  grid-column-start: 2;
   grid-column-end: 14;
 }
 
 @media (min-width: 800px) {
   div#c-post-versions div#a-index .pv-check {
     -ms-grid-row: 1;
-        grid-row-start: 1;
+    grid-row: 1;
+    grid-row-start: 1;
     grid-row-end: 5;
     -ms-grid-column: 1;
     grid-column: 1;
@@ -1598,35 +1612,40 @@ div#c-post-versions div#a-index .pv-sources {
     -ms-grid-row: 2;
     grid-row: 2;
     -ms-grid-column: 2;
-        grid-column-start: 2;
+    grid-column: 2;
+    grid-column-start: 2;
     grid-column-end: 3;
   }
   div#c-post-versions div#a-index .pv-date {
     -ms-grid-row: 2;
     grid-row: 2;
     -ms-grid-column: 3;
-        grid-column-start: 3;
+    grid-column: 3;
+    grid-column-start: 3;
     grid-column-end: 5;
   }
   div#c-post-versions div#a-index .pv-reason {
     -ms-grid-row: 2;
     grid-row: 2;
     -ms-grid-column: 5;
-        grid-column-start: 5;
+    grid-column: 5;
+    grid-column-start: 5;
     grid-column-end: 7;
   }
   div#c-post-versions div#a-index .pv-description {
     -ms-grid-row: 2;
     grid-row: 2;
     -ms-grid-column: 7;
-        grid-column-start: 7;
+    grid-column: 7;
+    grid-column-start: 7;
     grid-column-end: 9;
   }
   div#c-post-versions div#a-index .pv-tags-locked {
     -ms-grid-row: 2;
     grid-row: 2;
     -ms-grid-column: 9;
-        grid-column-start: 9;
+    grid-column: 9;
+    grid-column-start: 9;
     grid-column-end: 13;
   }
   div#c-post-versions div#a-index .pv-actions {
@@ -1639,14 +1658,16 @@ div#c-post-versions div#a-index .pv-sources {
     -ms-grid-row: 4;
     grid-row: 4;
     -ms-grid-column: 2;
-        grid-column-start: 2;
+    grid-column: 2;
+    grid-column-start: 2;
     grid-column-end: 10;
   }
   div#c-post-versions div#a-index .pv-sources {
     -ms-grid-row: 4;
     grid-row: 4;
     -ms-grid-column: 10;
-        grid-column-start: 10;
+    grid-column: 10;
+    grid-column-start: 10;
     grid-column-end: 14;
   }
 }
@@ -2672,6 +2693,11 @@ div#c-users div#a-show div.box.user-uploads div.vertical-section {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   margin: 0 20px 0 40px;
+}
+
+div#c-users div#a-show div.box.user-favorites h4,
+div#c-users div#a-show div.box.user-uploads h4 {
+  text-align: center;
 }
 
 /* Adjust the "About user" and "Artist Information" boxes */
