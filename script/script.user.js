@@ -50,7 +50,9 @@ $(function() {
                 <div class="customizer-controls">
                     <select id="theme-switcher">
                         <option value="hexagon">Hexagon</option>
+                        <option value="pony">Pony</option>
                         <option value="bloodlust">Bloodlust</option>
+                        <option value="serpent">Serpent</option>
                         <option value="hotdog">Hotdog</option>
                     </select>
                 </div>
