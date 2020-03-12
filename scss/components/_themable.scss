@@ -1,5 +1,4 @@
-@import '../themes/theme_!index';
-@import '../themes/extra_!index';
+@import '../themes/!index';
 
 @mixin themable($data_map: $theme_index, $base_style: false) {
     // Apply the default style to the original element

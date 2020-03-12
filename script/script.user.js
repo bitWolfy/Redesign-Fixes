@@ -13,7 +13,7 @@
 
 $(function() {
 
-    $("body").append(`
+    $("head").append(`
         <style type="text/css">
             #customizer-container {
                 float: right;
@@ -58,8 +58,13 @@ $(function() {
                 <div class="customizer-controls">
                     <select id="extras-switcher">
                         <option value="none">None</option>
-                        <option value="hexagons">Hexagons</option>
+                        <option value="autumn">Autumn</option>
+                        <option value="winter">Winter</option>
                         <option value="spring">Spring</option>
+                        <option value="aurora">Aurora</option>
+                        <option value="hexagons">Hexagons</option>
+                        <option value="space">Space</option>
+                        <option value="stars">Stars</option>
                     </select>
                 </div>
             </div>
