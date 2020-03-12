@@ -12,23 +12,23 @@
   background-color: #020F23;
 }
 
-body[data-theme=hexagon] .bg-background {
+[data-theme=hexagon] .bg-background {
   background-color: #020F23;
 }
 
-body[data-theme=pony] .bg-background {
+[data-theme=pony] .bg-background {
   background-color: #250D51;
 }
 
-body[data-theme=bloodlust] .bg-background {
+[data-theme=bloodlust] .bg-background {
   background-color: #000000;
 }
 
-body[data-theme=serpent] .bg-background {
+[data-theme=serpent] .bg-background {
   background-color: #44a544;
 }
 
-body[data-theme=hotdog] .bg-background {
+[data-theme=hotdog] .bg-background {
   background-color: #FFFF00;
 }
 
@@ -36,23 +36,23 @@ body[data-theme=hotdog] .bg-background {
   background-color: #152f56;
 }
 
-body[data-theme=hexagon] .bg-foreground {
+[data-theme=hexagon] .bg-foreground {
   background-color: #152f56;
 }
 
-body[data-theme=pony] .bg-foreground {
+[data-theme=pony] .bg-foreground {
   background-color: #2f175c;
 }
 
-body[data-theme=bloodlust] .bg-foreground {
+[data-theme=bloodlust] .bg-foreground {
   background-color: #222222;
 }
 
-body[data-theme=serpent] .bg-foreground {
+[data-theme=serpent] .bg-foreground {
   background-color: #dacf6b;
 }
 
-body[data-theme=hotdog] .bg-foreground {
+[data-theme=hotdog] .bg-foreground {
   background-color: #FF0000;
 }
 
@@ -60,23 +60,23 @@ body[data-theme=hotdog] .bg-foreground {
   background-color: #1f3c67;
 }
 
-body[data-theme=hexagon] .bg-section {
+[data-theme=hexagon] .bg-section {
   background-color: #1f3c67;
 }
 
-body[data-theme=pony] .bg-section {
+[data-theme=pony] .bg-section {
   background-color: #453269;
 }
 
-body[data-theme=bloodlust] .bg-section {
+[data-theme=bloodlust] .bg-section {
   background-color: #333333;
 }
 
-body[data-theme=serpent] .bg-section {
+[data-theme=serpent] .bg-section {
   background-color: #fff48b;
 }
 
-body[data-theme=hotdog] .bg-section {
+[data-theme=hotdog] .bg-section {
   background-color: #c53c38;
 }
 
@@ -84,23 +84,23 @@ body[data-theme=hotdog] .bg-section {
   border: 1px solid #020F23;
 }
 
-body[data-theme=hexagon] .border-background {
+[data-theme=hexagon] .border-background {
   border: 1px solid #020F23;
 }
 
-body[data-theme=pony] .border-background {
+[data-theme=pony] .border-background {
   border: 1px solid #250D51;
 }
 
-body[data-theme=bloodlust] .border-background {
+[data-theme=bloodlust] .border-background {
   border: 1px solid #000000;
 }
 
-body[data-theme=serpent] .border-background {
+[data-theme=serpent] .border-background {
   border: 1px solid #44a544;
 }
 
-body[data-theme=hotdog] .border-background {
+[data-theme=hotdog] .border-background {
   border: 1px solid #FFFF00;
 }
 
@@ -108,23 +108,23 @@ body[data-theme=hotdog] .border-background {
   border: 1px solid #152f56;
 }
 
-body[data-theme=hexagon] .border-foreground {
+[data-theme=hexagon] .border-foreground {
   border: 1px solid #152f56;
 }
 
-body[data-theme=pony] .border-foreground {
+[data-theme=pony] .border-foreground {
   border: 1px solid #2f175c;
 }
 
-body[data-theme=bloodlust] .border-foreground {
+[data-theme=bloodlust] .border-foreground {
   border: 1px solid #222222;
 }
 
-body[data-theme=serpent] .border-foreground {
+[data-theme=serpent] .border-foreground {
   border: 1px solid #dacf6b;
 }
 
-body[data-theme=hotdog] .border-foreground {
+[data-theme=hotdog] .border-foreground {
   border: 1px solid #FF0000;
 }
 
@@ -132,23 +132,23 @@ body[data-theme=hotdog] .border-foreground {
   border: 1px solid #1f3c67;
 }
 
-body[data-theme=hexagon] .border-section {
+[data-theme=hexagon] .border-section {
   border: 1px solid #1f3c67;
 }
 
-body[data-theme=pony] .border-section {
+[data-theme=pony] .border-section {
   border: 1px solid #453269;
 }
 
-body[data-theme=bloodlust] .border-section {
+[data-theme=bloodlust] .border-section {
   border: 1px solid #333333;
 }
 
-body[data-theme=serpent] .border-section {
+[data-theme=serpent] .border-section {
   border: 1px solid #fff48b;
 }
 
-body[data-theme=hotdog] .border-section {
+[data-theme=hotdog] .border-section {
   border: 1px solid #c53c38;
 }
 
@@ -156,23 +156,23 @@ body[data-theme=hotdog] .border-section {
   color: #ffffff;
 }
 
-body[data-theme=hexagon] .color-text {
+[data-theme=hexagon] .color-text {
   color: #ffffff;
 }
 
-body[data-theme=pony] .color-text {
+[data-theme=pony] .color-text {
   color: #ffffff;
 }
 
-body[data-theme=bloodlust] .color-text {
+[data-theme=bloodlust] .color-text {
   color: #ffffff;
 }
 
-body[data-theme=serpent] .color-text {
+[data-theme=serpent] .color-text {
   color: #000000;
 }
 
-body[data-theme=hotdog] .color-text {
+[data-theme=hotdog] .color-text {
   color: #000000;
 }
 
@@ -269,69 +269,69 @@ div#page {
   border-radius: 6px;
 }
 
-body[data-theme=hexagon] div#page {
+[data-theme=hexagon] div#page {
   background-color: #152f56;
 }
 
-body[data-theme=pony] div#page {
+[data-theme=pony] div#page {
   background-color: #2f175c;
 }
 
-body[data-theme=bloodlust] div#page {
+[data-theme=bloodlust] div#page {
   background-color: #222222;
 }
 
-body[data-theme=serpent] div#page {
+[data-theme=serpent] div#page {
   background-color: #dacf6b;
 }
 
-body[data-theme=hotdog] div#page {
+[data-theme=hotdog] div#page {
   background-color: #FF0000;
 }
 
-body[data-extras=none] div#page {
+[data-extras=none] div#page {
   background-image: none;
   background-position: unset;
   background-repeat: unset;
 }
 
-body[data-extras=autumn] div#page {
+[data-extras=autumn] div#page {
   background-image: url("https://bitwolfy.com/e621/extras/autumn/leaves_bottom.png");
   background-position: left bottom;
   background-repeat: repeat-x;
 }
 
-body[data-extras=winter] div#page {
+[data-extras=winter] div#page {
   background-image: url("https://bitwolfy.com/e621/extras/winter/snow_bottom.png"), url("https://bitwolfy.com/e621/extras/winter/snow_top.png");
   background-position: left bottom, left top;
   background-repeat: repeat-x;
 }
 
-body[data-extras=spring] div#page {
+[data-extras=spring] div#page {
   background-image: url("https://bitwolfy.com/e621/extras/spring/spring_bottom.png"), url("https://bitwolfy.com/e621/extras/spring/spring_bottom_fox.png"), url("https://bitwolfy.com/e621/extras/spring/spring_top.png"), url("https://bitwolfy.com/e621/extras/spring/spring_top_sky.png");
   background-position: left bottom, right bottom, right top, left top;
   background-repeat: repeat-x, no-repeat, no-repeat, repeat-x;
 }
 
-body[data-extras=aurora] div#page {
+[data-extras=aurora] div#page {
   background-image: url("https://bitwolfy.com/e621/extras/aurora/aurora.png");
   background-position: left top;
   background-repeat: repeat-x;
 }
 
-body[data-extras=hexagons] div#page {
+[data-extras=hexagons] div#page {
   background-image: url("https://bitwolfy.com/e621/extras/hexagons/hex.png");
   background-position: left top;
   background-repeat: repeat-x;
 }
 
-body[data-extras=space] div#page {
+[data-extras=space] div#page {
   background-image: url("https://bitwolfy.com/e621/extras/space/space.png");
   background-position: left top;
   background-repeat: repeat-x;
 }
 
-body[data-extras=stars] div#page {
+[data-extras=stars] div#page {
   background-image: url("https://bitwolfy.com/e621/extras/stars/stars.png");
   background-position: left top;
   background-repeat: repeat-x;
@@ -345,23 +345,23 @@ footer#page-footer {
   border-radius: 6px 6px 0 0;
 }
 
-body[data-theme=hexagon] footer#page-footer {
+[data-theme=hexagon] footer#page-footer {
   background-color: #152f56;
 }
 
-body[data-theme=pony] footer#page-footer {
+[data-theme=pony] footer#page-footer {
   background-color: #2f175c;
 }
 
-body[data-theme=bloodlust] footer#page-footer {
+[data-theme=bloodlust] footer#page-footer {
   background-color: #222222;
 }
 
-body[data-theme=serpent] footer#page-footer {
+[data-theme=serpent] footer#page-footer {
   background-color: #dacf6b;
 }
 
-body[data-theme=hotdog] footer#page-footer {
+[data-theme=hotdog] footer#page-footer {
   background-color: #FF0000;
 }
 
@@ -378,32 +378,32 @@ a:visited {
   text-decoration: none;
 }
 
-body[data-theme=hexagon] a, body[data-theme=hexagon]
-a:link, body[data-theme=hexagon]
+[data-theme=hexagon] a, [data-theme=hexagon]
+a:link, [data-theme=hexagon]
 a:visited {
   color: #b4c7d9;
 }
 
-body[data-theme=pony] a, body[data-theme=pony]
-a:link, body[data-theme=pony]
+[data-theme=pony] a, [data-theme=pony]
+a:link, [data-theme=pony]
 a:visited {
   color: #b4c7d9;
 }
 
-body[data-theme=bloodlust] a, body[data-theme=bloodlust]
-a:link, body[data-theme=bloodlust]
+[data-theme=bloodlust] a, [data-theme=bloodlust]
+a:link, [data-theme=bloodlust]
 a:visited {
   color: #ffee95;
 }
 
-body[data-theme=serpent] a, body[data-theme=serpent]
-a:link, body[data-theme=serpent]
+[data-theme=serpent] a, [data-theme=serpent]
+a:link, [data-theme=serpent]
 a:visited {
   color: #005500;
 }
 
-body[data-theme=hotdog] a, body[data-theme=hotdog]
-a:link, body[data-theme=hotdog]
+[data-theme=hotdog] a, [data-theme=hotdog]
+a:link, [data-theme=hotdog]
 a:visited {
   color: #000000;
 }
@@ -412,23 +412,23 @@ a:active {
   color: #e8c446;
 }
 
-body[data-theme=hexagon] a:active {
+[data-theme=hexagon] a:active {
   color: #e8c446;
 }
 
-body[data-theme=pony] a:active {
+[data-theme=pony] a:active {
   color: #e8c446;
 }
 
-body[data-theme=bloodlust] a:active {
+[data-theme=bloodlust] a:active {
   color: #ffffff;
 }
 
-body[data-theme=serpent] a:active {
+[data-theme=serpent] a:active {
   color: #e8c446;
 }
 
-body[data-theme=hotdog] a:active {
+[data-theme=hotdog] a:active {
   color: #ffe380;
 }
 
@@ -436,23 +436,23 @@ a:hover {
   color: #e9f2fa;
 }
 
-body[data-theme=hexagon] a:hover {
+[data-theme=hexagon] a:hover {
   color: #e9f2fa;
 }
 
-body[data-theme=pony] a:hover {
+[data-theme=pony] a:hover {
   color: #e9f2fa;
 }
 
-body[data-theme=bloodlust] a:hover {
+[data-theme=bloodlust] a:hover {
   color: #f68b00;
 }
 
-body[data-theme=serpent] a:hover {
+[data-theme=serpent] a:hover {
   color: #3A8F3A;
 }
 
-body[data-theme=hotdog] a:hover {
+[data-theme=hotdog] a:hover {
   color: #666666;
 }
 
@@ -470,32 +470,32 @@ body[data-theme=hotdog] a:hover {
   color: darkgreen;
 }
 
-body[data-theme=hexagon] .score-positive a, body[data-theme=hexagon]
-.score-positive a:link, body[data-theme=hexagon]
+[data-theme=hexagon] .score-positive a, [data-theme=hexagon]
+.score-positive a:link, [data-theme=hexagon]
 .score-positive a:visited {
   color: darkgreen;
 }
 
-body[data-theme=pony] .score-positive a, body[data-theme=pony]
-.score-positive a:link, body[data-theme=pony]
+[data-theme=pony] .score-positive a, [data-theme=pony]
+.score-positive a:link, [data-theme=pony]
 .score-positive a:visited {
   color: darkgreen;
 }
 
-body[data-theme=bloodlust] .score-positive a, body[data-theme=bloodlust]
-.score-positive a:link, body[data-theme=bloodlust]
+[data-theme=bloodlust] .score-positive a, [data-theme=bloodlust]
+.score-positive a:link, [data-theme=bloodlust]
 .score-positive a:visited {
   color: darkgreen;
 }
 
-body[data-theme=serpent] .score-positive a, body[data-theme=serpent]
-.score-positive a:link, body[data-theme=serpent]
+[data-theme=serpent] .score-positive a, [data-theme=serpent]
+.score-positive a:link, [data-theme=serpent]
 .score-positive a:visited {
   color: darkgreen;
 }
 
-body[data-theme=hotdog] .score-positive a, body[data-theme=hotdog]
-.score-positive a:link, body[data-theme=hotdog]
+[data-theme=hotdog] .score-positive a, [data-theme=hotdog]
+.score-positive a:link, [data-theme=hotdog]
 .score-positive a:visited {
   color: darkgreen;
 }
@@ -504,23 +504,23 @@ body[data-theme=hotdog] .score-positive a, body[data-theme=hotdog]
   color: #003100;
 }
 
-body[data-theme=hexagon] .score-positive a:hover {
+[data-theme=hexagon] .score-positive a:hover {
   color: #003100;
 }
 
-body[data-theme=pony] .score-positive a:hover {
+[data-theme=pony] .score-positive a:hover {
   color: #003100;
 }
 
-body[data-theme=bloodlust] .score-positive a:hover {
+[data-theme=bloodlust] .score-positive a:hover {
   color: #003100;
 }
 
-body[data-theme=serpent] .score-positive a:hover {
+[data-theme=serpent] .score-positive a:hover {
   color: #003100;
 }
 
-body[data-theme=hotdog] .score-positive a:hover {
+[data-theme=hotdog] .score-positive a:hover {
   color: #003100;
 }
 
@@ -530,32 +530,32 @@ body[data-theme=hotdog] .score-positive a:hover {
   color: #999999;
 }
 
-body[data-theme=hexagon] .score-neutral a, body[data-theme=hexagon]
-.score-neutral a:link, body[data-theme=hexagon]
+[data-theme=hexagon] .score-neutral a, [data-theme=hexagon]
+.score-neutral a:link, [data-theme=hexagon]
 .score-neutral a:visited {
   color: #999999;
 }
 
-body[data-theme=pony] .score-neutral a, body[data-theme=pony]
-.score-neutral a:link, body[data-theme=pony]
+[data-theme=pony] .score-neutral a, [data-theme=pony]
+.score-neutral a:link, [data-theme=pony]
 .score-neutral a:visited {
   color: #999999;
 }
 
-body[data-theme=bloodlust] .score-neutral a, body[data-theme=bloodlust]
-.score-neutral a:link, body[data-theme=bloodlust]
+[data-theme=bloodlust] .score-neutral a, [data-theme=bloodlust]
+.score-neutral a:link, [data-theme=bloodlust]
 .score-neutral a:visited {
   color: #999999;
 }
 
-body[data-theme=serpent] .score-neutral a, body[data-theme=serpent]
-.score-neutral a:link, body[data-theme=serpent]
+[data-theme=serpent] .score-neutral a, [data-theme=serpent]
+.score-neutral a:link, [data-theme=serpent]
 .score-neutral a:visited {
   color: #555555;
 }
 
-body[data-theme=hotdog] .score-neutral a, body[data-theme=hotdog]
-.score-neutral a:link, body[data-theme=hotdog]
+[data-theme=hotdog] .score-neutral a, [data-theme=hotdog]
+.score-neutral a:link, [data-theme=hotdog]
 .score-neutral a:visited {
   color: #999999;
 }
@@ -564,23 +564,23 @@ body[data-theme=hotdog] .score-neutral a, body[data-theme=hotdog]
   color: gray;
 }
 
-body[data-theme=hexagon] .score-neutral a:hover {
+[data-theme=hexagon] .score-neutral a:hover {
   color: gray;
 }
 
-body[data-theme=pony] .score-neutral a:hover {
+[data-theme=pony] .score-neutral a:hover {
   color: gray;
 }
 
-body[data-theme=bloodlust] .score-neutral a:hover {
+[data-theme=bloodlust] .score-neutral a:hover {
   color: gray;
 }
 
-body[data-theme=serpent] .score-neutral a:hover {
+[data-theme=serpent] .score-neutral a:hover {
   color: #3c3c3c;
 }
 
-body[data-theme=hotdog] .score-neutral a:hover {
+[data-theme=hotdog] .score-neutral a:hover {
   color: gray;
 }
 
@@ -590,32 +590,32 @@ body[data-theme=hotdog] .score-neutral a:hover {
   color: maroon;
 }
 
-body[data-theme=hexagon] .score-negative a, body[data-theme=hexagon]
-.score-negative a:link, body[data-theme=hexagon]
+[data-theme=hexagon] .score-negative a, [data-theme=hexagon]
+.score-negative a:link, [data-theme=hexagon]
 .score-negative a:visited {
   color: maroon;
 }
 
-body[data-theme=pony] .score-negative a, body[data-theme=pony]
-.score-negative a:link, body[data-theme=pony]
+[data-theme=pony] .score-negative a, [data-theme=pony]
+.score-negative a:link, [data-theme=pony]
 .score-negative a:visited {
   color: maroon;
 }
 
-body[data-theme=bloodlust] .score-negative a, body[data-theme=bloodlust]
-.score-negative a:link, body[data-theme=bloodlust]
+[data-theme=bloodlust] .score-negative a, [data-theme=bloodlust]
+.score-negative a:link, [data-theme=bloodlust]
 .score-negative a:visited {
   color: maroon;
 }
 
-body[data-theme=serpent] .score-negative a, body[data-theme=serpent]
-.score-negative a:link, body[data-theme=serpent]
+[data-theme=serpent] .score-negative a, [data-theme=serpent]
+.score-negative a:link, [data-theme=serpent]
 .score-negative a:visited {
   color: maroon;
 }
 
-body[data-theme=hotdog] .score-negative a, body[data-theme=hotdog]
-.score-negative a:link, body[data-theme=hotdog]
+[data-theme=hotdog] .score-negative a, [data-theme=hotdog]
+.score-negative a:link, [data-theme=hotdog]
 .score-negative a:visited {
   color: maroon;
 }
@@ -624,23 +624,23 @@ body[data-theme=hotdog] .score-negative a, body[data-theme=hotdog]
   color: #4d0000;
 }
 
-body[data-theme=hexagon] .score-negative a:hover {
+[data-theme=hexagon] .score-negative a:hover {
   color: #4d0000;
 }
 
-body[data-theme=pony] .score-negative a:hover {
+[data-theme=pony] .score-negative a:hover {
   color: #4d0000;
 }
 
-body[data-theme=bloodlust] .score-negative a:hover {
+[data-theme=bloodlust] .score-negative a:hover {
   color: #4d0000;
 }
 
-body[data-theme=serpent] .score-negative a:hover {
+[data-theme=serpent] .score-negative a:hover {
   color: #4d0000;
 }
 
-body[data-theme=hotdog] .score-negative a:hover {
+[data-theme=hotdog] .score-negative a:hover {
   color: #4d0000;
 }
 
@@ -658,27 +658,27 @@ table.striped thead tr {
   border-bottom: 1px solid #152f56;
 }
 
-body[data-theme=hexagon] table.striped thead tr {
+[data-theme=hexagon] table.striped thead tr {
   background-color: #193153;
   border-bottom: 1px solid #152f56;
 }
 
-body[data-theme=pony] table.striped thead tr {
+[data-theme=pony] table.striped thead tr {
   background-color: #3a2a58;
   border-bottom: 1px solid #2f175c;
 }
 
-body[data-theme=bloodlust] table.striped thead tr {
+[data-theme=bloodlust] table.striped thead tr {
   background-color: #262626;
   border-bottom: 1px solid #222222;
 }
 
-body[data-theme=serpent] table.striped thead tr {
+[data-theme=serpent] table.striped thead tr {
   background-color: #fff272;
   border-bottom: 1px solid #dacf6b;
 }
 
-body[data-theme=hotdog] table.striped thead tr {
+[data-theme=hotdog] table.striped thead tr {
   background-color: #b13632;
   border-bottom: 1px solid #FF0000;
 }
@@ -688,27 +688,27 @@ table.striped tbody tr {
   border-bottom: 1px solid #152f56;
 }
 
-body[data-theme=hexagon] table.striped tbody tr {
+[data-theme=hexagon] table.striped tbody tr {
   background-color: #1f3c67;
   border-bottom: 1px solid #152f56;
 }
 
-body[data-theme=pony] table.striped tbody tr {
+[data-theme=pony] table.striped tbody tr {
   background-color: #453269;
   border-bottom: 1px solid #2f175c;
 }
 
-body[data-theme=bloodlust] table.striped tbody tr {
+[data-theme=bloodlust] table.striped tbody tr {
   background-color: #333333;
   border-bottom: 1px solid #222222;
 }
 
-body[data-theme=serpent] table.striped tbody tr {
+[data-theme=serpent] table.striped tbody tr {
   background-color: #fff48b;
   border-bottom: 1px solid #dacf6b;
 }
 
-body[data-theme=hotdog] table.striped tbody tr {
+[data-theme=hotdog] table.striped tbody tr {
   background-color: #c53c38;
   border-bottom: 1px solid #FF0000;
 }
@@ -717,23 +717,23 @@ table.striped tbody tr:hover {
   background-color: #2b538e;
 }
 
-body[data-theme=hexagon] table.striped tbody tr:hover {
+[data-theme=hexagon] table.striped tbody tr:hover {
   background-color: #2b538e;
 }
 
-body[data-theme=pony] table.striped tbody tr:hover {
+[data-theme=pony] table.striped tbody tr:hover {
   background-color: #5c428c;
 }
 
-body[data-theme=bloodlust] table.striped tbody tr:hover {
+[data-theme=bloodlust] table.striped tbody tr:hover {
   background-color: #4d4d4d;
 }
 
-body[data-theme=serpent] table.striped tbody tr:hover {
+[data-theme=serpent] table.striped tbody tr:hover {
   background-color: #fff9be;
 }
 
-body[data-theme=hotdog] table.striped tbody tr:hover {
+[data-theme=hotdog] table.striped tbody tr:hover {
   background-color: #d1625f;
 }
 
@@ -747,32 +747,32 @@ td a.last-page:visited {
   color: #999999;
 }
 
-body[data-theme=hexagon] td a.last-page, body[data-theme=hexagon]
-td a.last-page:link, body[data-theme=hexagon]
+[data-theme=hexagon] td a.last-page, [data-theme=hexagon]
+td a.last-page:link, [data-theme=hexagon]
 td a.last-page:visited {
   color: #999999;
 }
 
-body[data-theme=pony] td a.last-page, body[data-theme=pony]
-td a.last-page:link, body[data-theme=pony]
+[data-theme=pony] td a.last-page, [data-theme=pony]
+td a.last-page:link, [data-theme=pony]
 td a.last-page:visited {
   color: #999999;
 }
 
-body[data-theme=bloodlust] td a.last-page, body[data-theme=bloodlust]
-td a.last-page:link, body[data-theme=bloodlust]
+[data-theme=bloodlust] td a.last-page, [data-theme=bloodlust]
+td a.last-page:link, [data-theme=bloodlust]
 td a.last-page:visited {
   color: #999999;
 }
 
-body[data-theme=serpent] td a.last-page, body[data-theme=serpent]
-td a.last-page:link, body[data-theme=serpent]
+[data-theme=serpent] td a.last-page, [data-theme=serpent]
+td a.last-page:link, [data-theme=serpent]
 td a.last-page:visited {
   color: #555555;
 }
 
-body[data-theme=hotdog] td a.last-page, body[data-theme=hotdog]
-td a.last-page:link, body[data-theme=hotdog]
+[data-theme=hotdog] td a.last-page, [data-theme=hotdog]
+td a.last-page:link, [data-theme=hotdog]
 td a.last-page:visited {
   color: #999999;
 }
@@ -781,23 +781,23 @@ td a.last-page:hover {
   color: #e9f2fa;
 }
 
-body[data-theme=hexagon] td a.last-page:hover {
+[data-theme=hexagon] td a.last-page:hover {
   color: #e9f2fa;
 }
 
-body[data-theme=pony] td a.last-page:hover {
+[data-theme=pony] td a.last-page:hover {
   color: #e9f2fa;
 }
 
-body[data-theme=bloodlust] td a.last-page:hover {
+[data-theme=bloodlust] td a.last-page:hover {
   color: #f68b00;
 }
 
-body[data-theme=serpent] td a.last-page:hover {
+[data-theme=serpent] td a.last-page:hover {
   color: #3A8F3A;
 }
 
-body[data-theme=hotdog] td a.last-page:hover {
+[data-theme=hotdog] td a.last-page:hover {
   color: #666666;
 }
 
@@ -810,23 +810,23 @@ div#page div.site-notice {
           box-shadow: 0 0 27px rgba(0, 0, 0, 0.2);
 }
 
-body[data-theme=hexagon] div#page div.site-notice {
+[data-theme=hexagon] div#page div.site-notice {
   background-color: #1f3c67;
 }
 
-body[data-theme=pony] div#page div.site-notice {
+[data-theme=pony] div#page div.site-notice {
   background-color: #453269;
 }
 
-body[data-theme=bloodlust] div#page div.site-notice {
+[data-theme=bloodlust] div#page div.site-notice {
   background-color: #333333;
 }
 
-body[data-theme=serpent] div#page div.site-notice {
+[data-theme=serpent] div#page div.site-notice {
   background-color: #fff48b;
 }
 
-body[data-theme=hotdog] div#page div.site-notice {
+[data-theme=hotdog] div#page div.site-notice {
   background-color: #c53c38;
 }
 
@@ -839,28 +839,28 @@ header#top {
   margin: 0 1em 0.8rem;
 }
 
-body[data-theme=hexagon] header#top {
+[data-theme=hexagon] header#top {
   color: #ffffff;
   background-color: #020F23;
   background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEoAAAAsCAYAAADCfS42AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAViSURBVHjazFs9SCtZFP5ufiYmE03Mj8+N49tdzfofiETYFSxGFMFC8AkWIlZioQgKggo2ClaWioWtZWwEK20UC3VRsVciy2YCFprnbnRX50XvNvPgPXfijM5PcuBWd7jnzLln7v3u990hlFLoaYQQEggE3GdnZ1mO4/QdXIUdHh6ST58+Wa6uru5VxqtqXIsBsdr7+vos+UgSALS2ttLW1lY7IcSmawHoWVGEEEtVVVVxIpF4RB5NEATS3Nxsu76+vqMKL6i2omw6x8hMTU09yXUsLCwwi4uLv2az2We9nNlstuejo6PfY7HYd2NyHEcHBgbIysqKHYBYUBVFCLHyPF+8u7v7INfv9/ur0um0CCADQA+nFgAejuOeksmkIPdAS0uL4/T0NEMpfdZaUaCUam4ASDAYdJ+cnLgopUUvW09PTwBAPQCXHv6++gRQDKBpfn6+RM7v6uqqG4BTYRxTE2Xv7e31ygVLKS1iWTYCIAjAoleiJL9WAD/4/f76XL55nvcCsOY9UQBIOBwuyRVoU1NTJYBqAA49k/SNfxeAuu7u7qCc/5OTE1cwGHR/XWbemyg94AHT3d0t27Gzs2M9Pz/3ArjRa1GVsQcA1/v7++VynbFY7JnneavmjUvjbFqi0WjOT47juDCAjwDsRlTTN3E4AFQ1NjZ+zBVLOBwukasqsyrKMTIykpXrmJ2ddQiC4ADwGUDWYOgkAkhfXFx4dnZ2rHIPSFXPmF5RAKw8z+esJp/P1wCg/LWFVOeqsgOo5Djul1wxxWIxz8sNxdBEKcGBrq6uMgC1SluzzokiANwAGiYnJ2UncH19nX0Zk9GJsvf393sU4EBAbzigEi6U+3y+BrVwwbBEKcGB+vr6HwFUGQUHVMTnBFDb0dHxQQ1cMHIxZ/r6+mQ9bGxs2BKJRInBcEDJHgFcHx0dlQmCQHSDC2+FA7FYLOcnV1FRUQOAMxoOqIQLP9fV1f2kBBeMqijHxMSE7FY/NjbmTKVSdgC3JsABVXDh8vKyeGNjQ7ZypK+C0b2iVMCBRgAfzIIDKuECV1FRUaMEF9Qmqkhr43m+HECNmXDgLXBheHjYp/UdCaW0SCubWF1dHRZFMQXg9jXux2wjhFgBBHw+X+Dm5iahlfzSZF1dXWWiKGYA3BVSkqSv5QnA3+l0+svs7KxDE5uqNRiXyyVKW/IXFKaJLMv+NT4+Lua1ojY3N2+9Xu8zCtesg4ODD1pVIc2J4jiODg0NPUu7TEGZpAo519bWNKtCNkJIA4BSNTMTCoX+TKVSf7zsWF5eFg8ODpyEkGyBrVM5VaGlpSX73NzcbypVoc+QklSmolUCiGoh8s0+IKuggcIS9lN691JTiXwzMZRaVcios54mIt9MVK5WFTLsUAwgwLJsJFcQ/f39nnweit+qChmy60kLdeb+/v6fSCQSlHsmHo8/hsNhJ1Etweq/gBuiCr3zDOVlGCayvb3Nys3a9PR0cT6Iu/eoQoZTwUpEfjQa9eaBCnaurq665eKZmZnxAGiUZHhimrjwHiK/AODA/1QhU+QqichvzDdc0KIKmaUUv0rkJ5NJpxlwQYsqZJqkDsDPsmwkmUw68wEXtKpCZt5mUU3kGyUkTE9PF8v5jcfjboZhIgA8Wm+z6EW5ehiGicTjcbeZcEEPVcj0i2QAuFAoVGsmXADgXF9fl8Vyo6OjpRIceHWNNDtRikT+1taWKxQKuUyEA6pUIdXclp6XXQH43W53MJPJJJBHa29v9+7t7ZUASFJK/1WI27Qbd98R+Xd3d2JbW5svX0kSBIEcHBwEAVxLXL4upvefCyKAm+PjY7+c7m+GdXZ2lhuhCv03AEYbR291lKTvAAAAAElFTkSuQmCC");
 }
 
-body[data-theme=pony] header#top {
+[data-theme=pony] header#top {
   color: #ffffff;
   background-color: #250D51;
 }
 
-body[data-theme=bloodlust] header#top {
+[data-theme=bloodlust] header#top {
   color: #ffffff;
   background-color: #000000;
 }
 
-body[data-theme=serpent] header#top {
+[data-theme=serpent] header#top {
   color: #000000;
   background-color: #44a544;
 }
 
-body[data-theme=hotdog] header#top {
+[data-theme=hotdog] header#top {
   color: #000000;
   background-color: #FFFF00;
 }
@@ -893,23 +893,23 @@ header#top menu:not(.main) {
   border-radius: 6px;
 }
 
-body[data-theme=hexagon] header#top menu:not(.main) {
+[data-theme=hexagon] header#top menu:not(.main) {
   background-color: #152f56;
 }
 
-body[data-theme=pony] header#top menu:not(.main) {
+[data-theme=pony] header#top menu:not(.main) {
   background-color: #2f175c;
 }
 
-body[data-theme=bloodlust] header#top menu:not(.main) {
+[data-theme=bloodlust] header#top menu:not(.main) {
   background-color: #222222;
 }
 
-body[data-theme=serpent] header#top menu:not(.main) {
+[data-theme=serpent] header#top menu:not(.main) {
   background-color: #dacf6b;
 }
 
-body[data-theme=hotdog] header#top menu:not(.main) {
+[data-theme=hotdog] header#top menu:not(.main) {
   background-color: #FF0000;
 }
 
@@ -921,23 +921,23 @@ header#top menu.main li.current a {
   background-color: #152f56;
 }
 
-body[data-theme=hexagon] header#top menu.main li.current a {
+[data-theme=hexagon] header#top menu.main li.current a {
   background-color: #152f56;
 }
 
-body[data-theme=pony] header#top menu.main li.current a {
+[data-theme=pony] header#top menu.main li.current a {
   background-color: #2f175c;
 }
 
-body[data-theme=bloodlust] header#top menu.main li.current a {
+[data-theme=bloodlust] header#top menu.main li.current a {
   background-color: #222222;
 }
 
-body[data-theme=serpent] header#top menu.main li.current a {
+[data-theme=serpent] header#top menu.main li.current a {
   background-color: #dacf6b;
 }
 
-body[data-theme=hotdog] header#top menu.main li.current a {
+[data-theme=hotdog] header#top menu.main li.current a {
   background-color: #FF0000;
 }
 
@@ -991,23 +991,23 @@ div#c-posts aside#sidebar #tag-list h2 {
   font-weight: 500;
 }
 
-body[data-theme=hexagon] .post-count {
+[data-theme=hexagon] .post-count {
   color: #999999;
 }
 
-body[data-theme=pony] .post-count {
+[data-theme=pony] .post-count {
   color: #999999;
 }
 
-body[data-theme=bloodlust] .post-count {
+[data-theme=bloodlust] .post-count {
   color: #999999;
 }
 
-body[data-theme=serpent] .post-count {
+[data-theme=serpent] .post-count {
   color: #555555;
 }
 
-body[data-theme=hotdog] .post-count {
+[data-theme=hotdog] .post-count {
   color: #999999;
 }
 
@@ -1045,427 +1045,187 @@ body.resp .mobile-search > .search-form > form .search-button > button {
 .category-0 a,
 .category-0 a:link,
 .category-0 a:visited {
-  color: #b4c7d9 !important;
+  color: #b4c7d9;
 }
 
-body[data-theme=hexagon] .category-0 a, body[data-theme=hexagon]
-.category-0 a:link, body[data-theme=hexagon]
+[data-theme=hexagon] .category-0 a, [data-theme=hexagon]
+.category-0 a:link, [data-theme=hexagon]
 .category-0 a:visited {
-  color: #b4c7d9 !important;
+  color: #b4c7d9;
 }
 
-body[data-theme=pony] .category-0 a, body[data-theme=pony]
-.category-0 a:link, body[data-theme=pony]
+[data-theme=pony] .category-0 a, [data-theme=pony]
+.category-0 a:link, [data-theme=pony]
 .category-0 a:visited {
-  color: #e5d6ff !important;
+  color: #e5d6ff;
 }
 
-body[data-theme=bloodlust] .category-0 a, body[data-theme=bloodlust]
-.category-0 a:link, body[data-theme=bloodlust]
+[data-theme=bloodlust] .category-0 a, [data-theme=bloodlust]
+.category-0 a:link, [data-theme=bloodlust]
 .category-0 a:visited {
-  color: #ffee95 !important;
+  color: #ffee95;
 }
 
-body[data-theme=serpent] .category-0 a, body[data-theme=serpent]
-.category-0 a:link, body[data-theme=serpent]
+[data-theme=serpent] .category-0 a, [data-theme=serpent]
+.category-0 a:link, [data-theme=serpent]
 .category-0 a:visited {
-  color: #005500 !important;
+  color: #005500;
 }
 
-body[data-theme=hotdog] .category-0 a, body[data-theme=hotdog]
-.category-0 a:link, body[data-theme=hotdog]
+[data-theme=hotdog] .category-0 a, [data-theme=hotdog]
+.category-0 a:link, [data-theme=hotdog]
 .category-0 a:visited {
-  color: #000000 !important;
+  color: #000000;
 }
 
 .category-0 a:hover {
-  color: #2e76b4 !important;
+  color: #2e76b4;
 }
 
-body[data-theme=hexagon] .category-0 a:hover {
-  color: #2e76b4 !important;
+[data-theme=hexagon] .category-0 a:hover {
+  color: #2e76b4;
 }
 
-body[data-theme=pony] .category-0 a:hover {
-  color: #2e76b4 !important;
+[data-theme=pony] .category-0 a:hover {
+  color: #2e76b4;
 }
 
-body[data-theme=bloodlust] .category-0 a:hover {
-  color: #f68b00 !important;
+[data-theme=bloodlust] .category-0 a:hover {
+  color: #f68b00;
 }
 
-body[data-theme=serpent] .category-0 a:hover {
-  color: #3A8F3A !important;
+[data-theme=serpent] .category-0 a:hover {
+  color: #3A8F3A;
 }
 
-body[data-theme=hotdog] .category-0 a:hover {
-  color: #999999 !important;
+[data-theme=hotdog] .category-0 a:hover {
+  color: #999999;
 }
 
 /* Artist */
 .category-1 a,
 .category-1 a:link,
 .category-1 a:visited {
-  color: #f2ac08 !important;
+  color: #f2ac08;
 }
 
-body[data-theme=hexagon] .category-1 a, body[data-theme=hexagon]
-.category-1 a:link, body[data-theme=hexagon]
+[data-theme=hexagon] .category-1 a, [data-theme=hexagon]
+.category-1 a:link, [data-theme=hexagon]
 .category-1 a:visited {
-  color: #f2ac08 !important;
-}
-
-body[data-theme=pony] .category-1 a, body[data-theme=pony]
-.category-1 a:link, body[data-theme=pony]
-.category-1 a:visited {
-  color: !important;
-}
-
-body[data-theme=bloodlust] .category-1 a, body[data-theme=bloodlust]
-.category-1 a:link, body[data-theme=bloodlust]
-.category-1 a:visited {
-  color: !important;
-}
-
-body[data-theme=serpent] .category-1 a, body[data-theme=serpent]
-.category-1 a:link, body[data-theme=serpent]
-.category-1 a:visited {
-  color: !important;
-}
-
-body[data-theme=hotdog] .category-1 a, body[data-theme=hotdog]
-.category-1 a:link, body[data-theme=hotdog]
-.category-1 a:visited {
-  color: !important;
+  color: #f2ac08;
 }
 
 .category-1 a:hover {
-  color: #fbd67f !important;
+  color: #fbd67f;
 }
 
-body[data-theme=hexagon] .category-1 a:hover {
-  color: #fbd67f !important;
-}
-
-body[data-theme=pony] .category-1 a:hover {
-  color: !important;
-}
-
-body[data-theme=bloodlust] .category-1 a:hover {
-  color: !important;
-}
-
-body[data-theme=serpent] .category-1 a:hover {
-  color: !important;
-}
-
-body[data-theme=hotdog] .category-1 a:hover {
-  color: !important;
+[data-theme=hexagon] .category-1 a:hover {
+  color: #fbd67f;
 }
 
 /* Copyright */
 .category-3 a,
 .category-3 a:link,
 .category-3 a:visited {
-  color: #d0d !important;
+  color: #d0d;
 }
 
-body[data-theme=hexagon] .category-3 a, body[data-theme=hexagon]
-.category-3 a:link, body[data-theme=hexagon]
+[data-theme=hexagon] .category-3 a, [data-theme=hexagon]
+.category-3 a:link, [data-theme=hexagon]
 .category-3 a:visited {
-  color: #d0d !important;
-}
-
-body[data-theme=pony] .category-3 a, body[data-theme=pony]
-.category-3 a:link, body[data-theme=pony]
-.category-3 a:visited {
-  color: !important;
-}
-
-body[data-theme=bloodlust] .category-3 a, body[data-theme=bloodlust]
-.category-3 a:link, body[data-theme=bloodlust]
-.category-3 a:visited {
-  color: !important;
-}
-
-body[data-theme=serpent] .category-3 a, body[data-theme=serpent]
-.category-3 a:link, body[data-theme=serpent]
-.category-3 a:visited {
-  color: !important;
-}
-
-body[data-theme=hotdog] .category-3 a, body[data-theme=hotdog]
-.category-3 a:link, body[data-theme=hotdog]
-.category-3 a:visited {
-  color: !important;
+  color: #d0d;
 }
 
 .category-3 a:hover {
-  color: #ff5eff !important;
+  color: #ff5eff;
 }
 
-body[data-theme=hexagon] .category-3 a:hover {
-  color: #ff5eff !important;
-}
-
-body[data-theme=pony] .category-3 a:hover {
-  color: !important;
-}
-
-body[data-theme=bloodlust] .category-3 a:hover {
-  color: !important;
-}
-
-body[data-theme=serpent] .category-3 a:hover {
-  color: !important;
-}
-
-body[data-theme=hotdog] .category-3 a:hover {
-  color: !important;
+[data-theme=hexagon] .category-3 a:hover {
+  color: #ff5eff;
 }
 
 /* Character */
 .category-4 a,
 .category-4 a:link,
 .category-4 a:visited {
-  color: #0a0 !important;
+  color: #0a0;
 }
 
-body[data-theme=hexagon] .category-4 a, body[data-theme=hexagon]
-.category-4 a:link, body[data-theme=hexagon]
+[data-theme=hexagon] .category-4 a, [data-theme=hexagon]
+.category-4 a:link, [data-theme=hexagon]
 .category-4 a:visited {
-  color: #0a0 !important;
-}
-
-body[data-theme=pony] .category-4 a, body[data-theme=pony]
-.category-4 a:link, body[data-theme=pony]
-.category-4 a:visited {
-  color: !important;
-}
-
-body[data-theme=bloodlust] .category-4 a, body[data-theme=bloodlust]
-.category-4 a:link, body[data-theme=bloodlust]
-.category-4 a:visited {
-  color: !important;
-}
-
-body[data-theme=serpent] .category-4 a, body[data-theme=serpent]
-.category-4 a:link, body[data-theme=serpent]
-.category-4 a:visited {
-  color: !important;
-}
-
-body[data-theme=hotdog] .category-4 a, body[data-theme=hotdog]
-.category-4 a:link, body[data-theme=hotdog]
-.category-4 a:visited {
-  color: !important;
+  color: #0a0;
 }
 
 .category-4 a:hover {
-  color: #2bff2b !important;
+  color: #2bff2b;
 }
 
-body[data-theme=hexagon] .category-4 a:hover {
-  color: #2bff2b !important;
-}
-
-body[data-theme=pony] .category-4 a:hover {
-  color: !important;
-}
-
-body[data-theme=bloodlust] .category-4 a:hover {
-  color: !important;
-}
-
-body[data-theme=serpent] .category-4 a:hover {
-  color: !important;
-}
-
-body[data-theme=hotdog] .category-4 a:hover {
-  color: !important;
+[data-theme=hexagon] .category-4 a:hover {
+  color: #2bff2b;
 }
 
 /* Species */
 .category-5 a,
 .category-5 a:link,
 .category-5 a:visited {
-  color: #ed5d1f !important;
+  color: #ed5d1f;
 }
 
-body[data-theme=hexagon] .category-5 a, body[data-theme=hexagon]
-.category-5 a:link, body[data-theme=hexagon]
+[data-theme=hexagon] .category-5 a, [data-theme=hexagon]
+.category-5 a:link, [data-theme=hexagon]
 .category-5 a:visited {
-  color: #ed5d1f !important;
-}
-
-body[data-theme=pony] .category-5 a, body[data-theme=pony]
-.category-5 a:link, body[data-theme=pony]
-.category-5 a:visited {
-  color: !important;
-}
-
-body[data-theme=bloodlust] .category-5 a, body[data-theme=bloodlust]
-.category-5 a:link, body[data-theme=bloodlust]
-.category-5 a:visited {
-  color: !important;
-}
-
-body[data-theme=serpent] .category-5 a, body[data-theme=serpent]
-.category-5 a:link, body[data-theme=serpent]
-.category-5 a:visited {
-  color: !important;
-}
-
-body[data-theme=hotdog] .category-5 a, body[data-theme=hotdog]
-.category-5 a:link, body[data-theme=hotdog]
-.category-5 a:visited {
-  color: !important;
+  color: #ed5d1f;
 }
 
 .category-5 a:hover {
-  color: #f6b295 !important;
+  color: #f6b295;
 }
 
-body[data-theme=hexagon] .category-5 a:hover {
-  color: #f6b295 !important;
-}
-
-body[data-theme=pony] .category-5 a:hover {
-  color: !important;
-}
-
-body[data-theme=bloodlust] .category-5 a:hover {
-  color: !important;
-}
-
-body[data-theme=serpent] .category-5 a:hover {
-  color: !important;
-}
-
-body[data-theme=hotdog] .category-5 a:hover {
-  color: !important;
+[data-theme=hexagon] .category-5 a:hover {
+  color: #f6b295;
 }
 
 /* Meta */
 .category-7 a,
 .category-7 a:link,
 .category-7 a:visited {
-  color: #eff89e !important;
+  color: #eff89e;
 }
 
-body[data-theme=hexagon] .category-7 a, body[data-theme=hexagon]
-.category-7 a:link, body[data-theme=hexagon]
+[data-theme=hexagon] .category-7 a, [data-theme=hexagon]
+.category-7 a:link, [data-theme=hexagon]
 .category-7 a:visited {
-  color: #eff89e !important;
-}
-
-body[data-theme=pony] .category-7 a, body[data-theme=pony]
-.category-7 a:link, body[data-theme=pony]
-.category-7 a:visited {
-  color: !important;
-}
-
-body[data-theme=bloodlust] .category-7 a, body[data-theme=bloodlust]
-.category-7 a:link, body[data-theme=bloodlust]
-.category-7 a:visited {
-  color: !important;
-}
-
-body[data-theme=serpent] .category-7 a, body[data-theme=serpent]
-.category-7 a:link, body[data-theme=serpent]
-.category-7 a:visited {
-  color: !important;
-}
-
-body[data-theme=hotdog] .category-7 a, body[data-theme=hotdog]
-.category-7 a:link, body[data-theme=hotdog]
-.category-7 a:visited {
-  color: !important;
+  color: #eff89e;
 }
 
 .category-7 a:hover {
-  color: #e2e5c2 !important;
+  color: #e2e5c2;
 }
 
-body[data-theme=hexagon] .category-7 a:hover {
-  color: #e2e5c2 !important;
-}
-
-body[data-theme=pony] .category-7 a:hover {
-  color: !important;
-}
-
-body[data-theme=bloodlust] .category-7 a:hover {
-  color: !important;
-}
-
-body[data-theme=serpent] .category-7 a:hover {
-  color: !important;
-}
-
-body[data-theme=hotdog] .category-7 a:hover {
-  color: !important;
+[data-theme=hexagon] .category-7 a:hover {
+  color: #e2e5c2;
 }
 
 /* Lore */
 .category-8 a,
 .category-8 a:link,
 .category-8 a:visited {
-  color: #282 !important;
+  color: #282;
 }
 
-body[data-theme=hexagon] .category-8 a, body[data-theme=hexagon]
-.category-8 a:link, body[data-theme=hexagon]
+[data-theme=hexagon] .category-8 a, [data-theme=hexagon]
+.category-8 a:link, [data-theme=hexagon]
 .category-8 a:visited {
-  color: #282 !important;
-}
-
-body[data-theme=pony] .category-8 a, body[data-theme=pony]
-.category-8 a:link, body[data-theme=pony]
-.category-8 a:visited {
-  color: !important;
-}
-
-body[data-theme=bloodlust] .category-8 a, body[data-theme=bloodlust]
-.category-8 a:link, body[data-theme=bloodlust]
-.category-8 a:visited {
-  color: !important;
-}
-
-body[data-theme=serpent] .category-8 a, body[data-theme=serpent]
-.category-8 a:link, body[data-theme=serpent]
-.category-8 a:visited {
-  color: !important;
-}
-
-body[data-theme=hotdog] .category-8 a, body[data-theme=hotdog]
-.category-8 a:link, body[data-theme=hotdog]
-.category-8 a:visited {
-  color: !important;
+  color: #282;
 }
 
 .category-8 a:hover {
-  color: #5fdb5f !important;
+  color: #5fdb5f;
 }
 
-body[data-theme=hexagon] .category-8 a:hover {
-  color: #5fdb5f !important;
-}
-
-body[data-theme=pony] .category-8 a:hover {
-  color: !important;
-}
-
-body[data-theme=bloodlust] .category-8 a:hover {
-  color: !important;
-}
-
-body[data-theme=serpent] .category-8 a:hover {
-  color: !important;
-}
-
-body[data-theme=hotdog] .category-8 a:hover {
-  color: !important;
+[data-theme=hexagon] .category-8 a:hover {
+  color: #5fdb5f;
 }
 
 /* Pool */
@@ -1475,425 +1235,273 @@ body[data-theme=hotdog] .category-8 a:hover {
 .pool-category-collection a,
 .pool-category-collection a:link,
 .pool-category-collection a:visited {
-  color: wheat !important;
+  color: wheat;
 }
 
-body[data-theme=hexagon] .pool-category-series a, body[data-theme=hexagon]
-.pool-category-series a:link, body[data-theme=hexagon]
-.pool-category-series a:visited, body[data-theme=hexagon]
-.pool-category-collection a, body[data-theme=hexagon]
-.pool-category-collection a:link, body[data-theme=hexagon]
+[data-theme=hexagon] .pool-category-series a, [data-theme=hexagon]
+.pool-category-series a:link, [data-theme=hexagon]
+.pool-category-series a:visited, [data-theme=hexagon]
+.pool-category-collection a, [data-theme=hexagon]
+.pool-category-collection a:link, [data-theme=hexagon]
 .pool-category-collection a:visited {
-  color: wheat !important;
-}
-
-body[data-theme=pony] .pool-category-series a, body[data-theme=pony]
-.pool-category-series a:link, body[data-theme=pony]
-.pool-category-series a:visited, body[data-theme=pony]
-.pool-category-collection a, body[data-theme=pony]
-.pool-category-collection a:link, body[data-theme=pony]
-.pool-category-collection a:visited {
-  color: !important;
-}
-
-body[data-theme=bloodlust] .pool-category-series a, body[data-theme=bloodlust]
-.pool-category-series a:link, body[data-theme=bloodlust]
-.pool-category-series a:visited, body[data-theme=bloodlust]
-.pool-category-collection a, body[data-theme=bloodlust]
-.pool-category-collection a:link, body[data-theme=bloodlust]
-.pool-category-collection a:visited {
-  color: !important;
-}
-
-body[data-theme=serpent] .pool-category-series a, body[data-theme=serpent]
-.pool-category-series a:link, body[data-theme=serpent]
-.pool-category-series a:visited, body[data-theme=serpent]
-.pool-category-collection a, body[data-theme=serpent]
-.pool-category-collection a:link, body[data-theme=serpent]
-.pool-category-collection a:visited {
-  color: !important;
-}
-
-body[data-theme=hotdog] .pool-category-series a, body[data-theme=hotdog]
-.pool-category-series a:link, body[data-theme=hotdog]
-.pool-category-series a:visited, body[data-theme=hotdog]
-.pool-category-collection a, body[data-theme=hotdog]
-.pool-category-collection a:link, body[data-theme=hotdog]
-.pool-category-collection a:visited {
-  color: !important;
+  color: wheat;
 }
 
 .pool-category-collection a:hover,
 .pool-category-series a:hover {
-  color: #d0b27a !important;
+  color: #d0b27a;
 }
 
-body[data-theme=hexagon] .pool-category-collection a:hover, body[data-theme=hexagon]
+[data-theme=hexagon] .pool-category-collection a:hover, [data-theme=hexagon]
 .pool-category-series a:hover {
-  color: #d0b27a !important;
-}
-
-body[data-theme=pony] .pool-category-collection a:hover, body[data-theme=pony]
-.pool-category-series a:hover {
-  color: !important;
-}
-
-body[data-theme=bloodlust] .pool-category-collection a:hover, body[data-theme=bloodlust]
-.pool-category-series a:hover {
-  color: !important;
-}
-
-body[data-theme=serpent] .pool-category-collection a:hover, body[data-theme=serpent]
-.pool-category-series a:hover {
-  color: !important;
-}
-
-body[data-theme=hotdog] .pool-category-collection a:hover, body[data-theme=hotdog]
-.pool-category-series a:hover {
-  color: !important;
+  color: #d0b27a;
 }
 
 /* --- User Page Links, with Group Styles --- */
 a.user-member.with-style {
-  color: #b4c7d9 !important;
+  color: #b4c7d9;
 }
 
-body[data-theme=hexagon] a.user-member.with-style {
-  color: #b4c7d9 !important;
+[data-theme=hexagon] a.user-member.with-style {
+  color: #b4c7d9;
 }
 
-body[data-theme=pony] a.user-member.with-style {
-  color: #e5d6ff !important;
+[data-theme=pony] a.user-member.with-style {
+  color: #e5d6ff;
 }
 
-body[data-theme=bloodlust] a.user-member.with-style {
-  color: #ffee95 !important;
+[data-theme=bloodlust] a.user-member.with-style {
+  color: #ffee95;
 }
 
-body[data-theme=serpent] a.user-member.with-style {
-  color: #005500 !important;
+[data-theme=serpent] a.user-member.with-style {
+  color: #005500;
 }
 
-body[data-theme=hotdog] a.user-member.with-style {
-  color: #000000 !important;
+[data-theme=hotdog] a.user-member.with-style {
+  color: #000000;
 }
 
 a.user-member.with-style:hover {
-  color: #2e76b4 !important;
+  color: #2e76b4;
 }
 
-body[data-theme=hexagon] a.user-member.with-style:hover {
-  color: #2e76b4 !important;
+[data-theme=hexagon] a.user-member.with-style:hover {
+  color: #2e76b4;
 }
 
-body[data-theme=pony] a.user-member.with-style:hover {
-  color: #2e76b4 !important;
+[data-theme=pony] a.user-member.with-style:hover {
+  color: #2e76b4;
 }
 
-body[data-theme=bloodlust] a.user-member.with-style:hover {
-  color: #f68b00 !important;
+[data-theme=bloodlust] a.user-member.with-style:hover {
+  color: #f68b00;
 }
 
-body[data-theme=serpent] a.user-member.with-style:hover {
-  color: #3A8F3A !important;
+[data-theme=serpent] a.user-member.with-style:hover {
+  color: #3A8F3A;
 }
 
-body[data-theme=hotdog] a.user-member.with-style:hover {
-  color: #999999 !important;
+[data-theme=hotdog] a.user-member.with-style:hover {
+  color: #999999;
 }
 
 a.user-privileged.with-style {
-  color: #b4c7d9 !important;
+  color: #b4c7d9;
 }
 
-body[data-theme=hexagon] a.user-privileged.with-style {
-  color: #b4c7d9 !important;
+[data-theme=hexagon] a.user-privileged.with-style {
+  color: #b4c7d9;
 }
 
-body[data-theme=pony] a.user-privileged.with-style {
-  color: #e5d6ff !important;
+[data-theme=pony] a.user-privileged.with-style {
+  color: #e5d6ff;
 }
 
-body[data-theme=bloodlust] a.user-privileged.with-style {
-  color: #ffee95 !important;
+[data-theme=bloodlust] a.user-privileged.with-style {
+  color: #ffee95;
 }
 
-body[data-theme=serpent] a.user-privileged.with-style {
-  color: #005500 !important;
+[data-theme=serpent] a.user-privileged.with-style {
+  color: #005500;
 }
 
-body[data-theme=hotdog] a.user-privileged.with-style {
-  color: #000000 !important;
+[data-theme=hotdog] a.user-privileged.with-style {
+  color: #000000;
 }
 
 a.user-privileged.with-style:hover {
-  color: #2e76b4 !important;
+  color: #2e76b4;
 }
 
-body[data-theme=hexagon] a.user-privileged.with-style:hover {
-  color: #2e76b4 !important;
+[data-theme=hexagon] a.user-privileged.with-style:hover {
+  color: #2e76b4;
 }
 
-body[data-theme=pony] a.user-privileged.with-style:hover {
-  color: #2e76b4 !important;
+[data-theme=pony] a.user-privileged.with-style:hover {
+  color: #2e76b4;
 }
 
-body[data-theme=bloodlust] a.user-privileged.with-style:hover {
-  color: #f68b00 !important;
+[data-theme=bloodlust] a.user-privileged.with-style:hover {
+  color: #f68b00;
 }
 
-body[data-theme=serpent] a.user-privileged.with-style:hover {
-  color: #3A8F3A !important;
+[data-theme=serpent] a.user-privileged.with-style:hover {
+  color: #3A8F3A;
 }
 
-body[data-theme=hotdog] a.user-privileged.with-style:hover {
-  color: #999999 !important;
+[data-theme=hotdog] a.user-privileged.with-style:hover {
+  color: #999999;
 }
 
 a.user-contributor.with-style {
-  color: #b4c7d9 !important;
+  color: #b4c7d9;
 }
 
-body[data-theme=hexagon] a.user-contributor.with-style {
-  color: #b4c7d9 !important;
+[data-theme=hexagon] a.user-contributor.with-style {
+  color: #b4c7d9;
 }
 
-body[data-theme=pony] a.user-contributor.with-style {
-  color: #e5d6ff !important;
+[data-theme=pony] a.user-contributor.with-style {
+  color: #e5d6ff;
 }
 
-body[data-theme=bloodlust] a.user-contributor.with-style {
-  color: #ffee95 !important;
+[data-theme=bloodlust] a.user-contributor.with-style {
+  color: #ffee95;
 }
 
-body[data-theme=serpent] a.user-contributor.with-style {
-  color: #005500 !important;
+[data-theme=serpent] a.user-contributor.with-style {
+  color: #005500;
 }
 
-body[data-theme=hotdog] a.user-contributor.with-style {
-  color: #000000 !important;
+[data-theme=hotdog] a.user-contributor.with-style {
+  color: #000000;
 }
 
 a.user-contributor.with-style:hover {
-  color: #2e76b4 !important;
+  color: #2e76b4;
 }
 
-body[data-theme=hexagon] a.user-contributor.with-style:hover {
-  color: #2e76b4 !important;
+[data-theme=hexagon] a.user-contributor.with-style:hover {
+  color: #2e76b4;
 }
 
-body[data-theme=pony] a.user-contributor.with-style:hover {
-  color: #2e76b4 !important;
+[data-theme=pony] a.user-contributor.with-style:hover {
+  color: #2e76b4;
 }
 
-body[data-theme=bloodlust] a.user-contributor.with-style:hover {
-  color: #f68b00 !important;
+[data-theme=bloodlust] a.user-contributor.with-style:hover {
+  color: #f68b00;
 }
 
-body[data-theme=serpent] a.user-contributor.with-style:hover {
-  color: #3A8F3A !important;
+[data-theme=serpent] a.user-contributor.with-style:hover {
+  color: #3A8F3A;
 }
 
-body[data-theme=hotdog] a.user-contributor.with-style:hover {
-  color: #999999 !important;
+[data-theme=hotdog] a.user-contributor.with-style:hover {
+  color: #999999;
 }
 
 a.user-blocked.with-style {
-  color: #b4c7d9 !important;
+  color: #b4c7d9;
   text-decoration: line-through;
 }
 
-body[data-theme=hexagon] a.user-blocked.with-style {
-  color: #b4c7d9 !important;
+[data-theme=hexagon] a.user-blocked.with-style {
+  color: #b4c7d9;
   text-decoration: line-through;
 }
 
-body[data-theme=pony] a.user-blocked.with-style {
-  color: #e5d6ff !important;
+[data-theme=pony] a.user-blocked.with-style {
+  color: #e5d6ff;
   text-decoration: line-through;
 }
 
-body[data-theme=bloodlust] a.user-blocked.with-style {
-  color: #ffee95 !important;
+[data-theme=bloodlust] a.user-blocked.with-style {
+  color: #ffee95;
   text-decoration: line-through;
 }
 
-body[data-theme=serpent] a.user-blocked.with-style {
-  color: #005500 !important;
+[data-theme=serpent] a.user-blocked.with-style {
+  color: #005500;
   text-decoration: line-through;
 }
 
-body[data-theme=hotdog] a.user-blocked.with-style {
-  color: #000000 !important;
+[data-theme=hotdog] a.user-blocked.with-style {
+  color: #000000;
   text-decoration: line-through;
 }
 
 a.user-blocked.with-style:hover {
-  color: #2e76b4 !important;
+  color: #2e76b4;
 }
 
-body[data-theme=hexagon] a.user-blocked.with-style:hover {
-  color: #2e76b4 !important;
+[data-theme=hexagon] a.user-blocked.with-style:hover {
+  color: #2e76b4;
 }
 
-body[data-theme=pony] a.user-blocked.with-style:hover {
-  color: #2e76b4 !important;
+[data-theme=pony] a.user-blocked.with-style:hover {
+  color: #2e76b4;
 }
 
-body[data-theme=bloodlust] a.user-blocked.with-style:hover {
-  color: #f68b00 !important;
+[data-theme=bloodlust] a.user-blocked.with-style:hover {
+  color: #f68b00;
 }
 
-body[data-theme=serpent] a.user-blocked.with-style:hover {
-  color: #3A8F3A !important;
+[data-theme=serpent] a.user-blocked.with-style:hover {
+  color: #3A8F3A;
 }
 
-body[data-theme=hotdog] a.user-blocked.with-style:hover {
-  color: #999999 !important;
+[data-theme=hotdog] a.user-blocked.with-style:hover {
+  color: #999999;
 }
 
 a.user-former.staff.with-style {
-  color: #78dca5 !important;
+  color: #78dca5;
 }
 
-body[data-theme=hexagon] a.user-former.staff.with-style {
-  color: #78dca5 !important;
-}
-
-body[data-theme=pony] a.user-former.staff.with-style {
-  color: !important;
-}
-
-body[data-theme=bloodlust] a.user-former.staff.with-style {
-  color: !important;
-}
-
-body[data-theme=serpent] a.user-former.staff.with-style {
-  color: !important;
-}
-
-body[data-theme=hotdog] a.user-former.staff.with-style {
-  color: !important;
+[data-theme=hexagon] a.user-former.staff.with-style {
+  color: #78dca5;
 }
 
 a.user-former.staff.with-style:hover {
-  color: #4da073 !important;
+  color: #4da073;
 }
 
-body[data-theme=hexagon] a.user-former.staff.with-style:hover {
-  color: #4da073 !important;
-}
-
-body[data-theme=pony] a.user-former.staff.with-style:hover {
-  color: !important;
-}
-
-body[data-theme=bloodlust] a.user-former.staff.with-style:hover {
-  color: !important;
-}
-
-body[data-theme=serpent] a.user-former.staff.with-style:hover {
-  color: !important;
-}
-
-body[data-theme=hotdog] a.user-former.staff.with-style:hover {
-  color: !important;
+[data-theme=hexagon] a.user-former.staff.with-style:hover {
+  color: #4da073;
 }
 
 a.user-janitor.with-style {
-  color: #d82828 !important;
+  color: #d82828;
 }
 
-body[data-theme=hexagon] a.user-janitor.with-style {
-  color: #d82828 !important;
-}
-
-body[data-theme=pony] a.user-janitor.with-style {
-  color: !important;
-}
-
-body[data-theme=bloodlust] a.user-janitor.with-style {
-  color: !important;
-}
-
-body[data-theme=serpent] a.user-janitor.with-style {
-  color: !important;
-}
-
-body[data-theme=hotdog] a.user-janitor.with-style {
-  color: !important;
+[data-theme=hexagon] a.user-janitor.with-style {
+  color: #d82828;
 }
 
 a.user-janitor.with-style:hover {
-  color: #cc5151 !important;
+  color: #cc5151;
 }
 
-body[data-theme=hexagon] a.user-janitor.with-style:hover {
-  color: #cc5151 !important;
-}
-
-body[data-theme=pony] a.user-janitor.with-style:hover {
-  color: !important;
-}
-
-body[data-theme=bloodlust] a.user-janitor.with-style:hover {
-  color: !important;
-}
-
-body[data-theme=serpent] a.user-janitor.with-style:hover {
-  color: !important;
-}
-
-body[data-theme=hotdog] a.user-janitor.with-style:hover {
-  color: !important;
+[data-theme=hexagon] a.user-janitor.with-style:hover {
+  color: #cc5151;
 }
 
 a.user-admin.with-style {
-  color: #e69500 !important;
+  color: #e69500;
 }
 
-body[data-theme=hexagon] a.user-admin.with-style {
-  color: #e69500 !important;
-}
-
-body[data-theme=pony] a.user-admin.with-style {
-  color: !important;
-}
-
-body[data-theme=bloodlust] a.user-admin.with-style {
-  color: !important;
-}
-
-body[data-theme=serpent] a.user-admin.with-style {
-  color: !important;
-}
-
-body[data-theme=hotdog] a.user-admin.with-style {
-  color: !important;
+[data-theme=hexagon] a.user-admin.with-style {
+  color: #e69500;
 }
 
 a.user-admin.with-style:hover {
-  color: #9d6703 !important;
+  color: #9d6703;
 }
 
-body[data-theme=hexagon] a.user-admin.with-style:hover {
-  color: #9d6703 !important;
-}
-
-body[data-theme=pony] a.user-admin.with-style:hover {
-  color: !important;
-}
-
-body[data-theme=bloodlust] a.user-admin.with-style:hover {
-  color: !important;
-}
-
-body[data-theme=serpent] a.user-admin.with-style:hover {
-  color: !important;
-}
-
-body[data-theme=hotdog] a.user-admin.with-style:hover {
-  color: !important;
+[data-theme=hexagon] a.user-admin.with-style:hover {
+  color: #9d6703;
 }
 
 /* === ACCOUNT PAGE === */
@@ -1909,27 +1517,27 @@ div#c-comments div#a-show div.post {
   background-color: rgba(31, 60, 103, 0.7);
 }
 
-body[data-theme=hexagon] div#c-comments div#a-index div.post, body[data-theme=hexagon]
+[data-theme=hexagon] div#c-comments div#a-index div.post, [data-theme=hexagon]
 div#c-comments div#a-show div.post {
   background-color: rgba(31, 60, 103, 0.7);
 }
 
-body[data-theme=pony] div#c-comments div#a-index div.post, body[data-theme=pony]
+[data-theme=pony] div#c-comments div#a-index div.post, [data-theme=pony]
 div#c-comments div#a-show div.post {
   background-color: rgba(69, 50, 105, 0.7);
 }
 
-body[data-theme=bloodlust] div#c-comments div#a-index div.post, body[data-theme=bloodlust]
+[data-theme=bloodlust] div#c-comments div#a-index div.post, [data-theme=bloodlust]
 div#c-comments div#a-show div.post {
   background-color: rgba(51, 51, 51, 0.7);
 }
 
-body[data-theme=serpent] div#c-comments div#a-index div.post, body[data-theme=serpent]
+[data-theme=serpent] div#c-comments div#a-index div.post, [data-theme=serpent]
 div#c-comments div#a-show div.post {
   background-color: rgba(255, 244, 139, 0.7);
 }
 
-body[data-theme=hotdog] div#c-comments div#a-index div.post, body[data-theme=hotdog]
+[data-theme=hotdog] div#c-comments div#a-index div.post, [data-theme=hotdog]
 div#c-comments div#a-show div.post {
   background-color: rgba(197, 60, 56, 0.7);
 }
@@ -2002,40 +1610,40 @@ div#c-comments div#a-index div.post article.comment img {
   background: rgba(43, 83, 142, 0.7);
 }
 
-body[data-theme=hexagon] .styled-dtext blockquote, body[data-theme=hexagon]
-.styled-dtext div.expandable, body[data-theme=hexagon]
+[data-theme=hexagon] .styled-dtext blockquote, [data-theme=hexagon]
+.styled-dtext div.expandable, [data-theme=hexagon]
 .styled-dtext pre {
   border: 1px solid #1f3c67;
   border-left: 4px solid maroon;
   background: rgba(43, 83, 142, 0.7);
 }
 
-body[data-theme=pony] .styled-dtext blockquote, body[data-theme=pony]
-.styled-dtext div.expandable, body[data-theme=pony]
+[data-theme=pony] .styled-dtext blockquote, [data-theme=pony]
+.styled-dtext div.expandable, [data-theme=pony]
 .styled-dtext pre {
   border: 1px solid #453269;
   border-left: 4px solid maroon;
   background: rgba(92, 66, 140, 0.7);
 }
 
-body[data-theme=bloodlust] .styled-dtext blockquote, body[data-theme=bloodlust]
-.styled-dtext div.expandable, body[data-theme=bloodlust]
+[data-theme=bloodlust] .styled-dtext blockquote, [data-theme=bloodlust]
+.styled-dtext div.expandable, [data-theme=bloodlust]
 .styled-dtext pre {
   border: 1px solid #333333;
   border-left: 4px solid maroon;
   background: rgba(77, 77, 77, 0.7);
 }
 
-body[data-theme=serpent] .styled-dtext blockquote, body[data-theme=serpent]
-.styled-dtext div.expandable, body[data-theme=serpent]
+[data-theme=serpent] .styled-dtext blockquote, [data-theme=serpent]
+.styled-dtext div.expandable, [data-theme=serpent]
 .styled-dtext pre {
   border: 1px solid #fff48b;
   border-left: 4px solid maroon;
   background: rgba(255, 249, 190, 0.7);
 }
 
-body[data-theme=hotdog] .styled-dtext blockquote, body[data-theme=hotdog]
-.styled-dtext div.expandable, body[data-theme=hotdog]
+[data-theme=hotdog] .styled-dtext blockquote, [data-theme=hotdog]
+.styled-dtext div.expandable, [data-theme=hotdog]
 .styled-dtext pre {
   border: 1px solid #c53c38;
   border-left: 4px solid maroon;
@@ -2053,27 +1661,27 @@ div#c-posts div#a-show #artist-commentary {
   background: rgba(43, 83, 142, 0.7);
 }
 
-body[data-theme=hexagon] div#c-posts div#a-show #artist-commentary {
+[data-theme=hexagon] div#c-posts div#a-show #artist-commentary {
   border-left: 4px solid maroon;
   background: rgba(43, 83, 142, 0.7);
 }
 
-body[data-theme=pony] div#c-posts div#a-show #artist-commentary {
+[data-theme=pony] div#c-posts div#a-show #artist-commentary {
   border-left: 4px solid maroon;
   background: rgba(92, 66, 140, 0.7);
 }
 
-body[data-theme=bloodlust] div#c-posts div#a-show #artist-commentary {
+[data-theme=bloodlust] div#c-posts div#a-show #artist-commentary {
   border-left: 4px solid maroon;
   background: rgba(77, 77, 77, 0.7);
 }
 
-body[data-theme=serpent] div#c-posts div#a-show #artist-commentary {
+[data-theme=serpent] div#c-posts div#a-show #artist-commentary {
   border-left: 4px solid maroon;
   background: rgba(255, 249, 190, 0.7);
 }
 
-body[data-theme=hotdog] div#c-posts div#a-show #artist-commentary {
+[data-theme=hotdog] div#c-posts div#a-show #artist-commentary {
   border-left: 4px solid maroon;
   background: rgba(209, 98, 95, 0.7);
 }
@@ -2094,23 +1702,23 @@ body[data-theme=hotdog] div#c-posts div#a-show #artist-commentary {
   border-left-color: #b4c7d9;
 }
 
-body[data-theme=hexagon] .styled-dtext blockquote {
+[data-theme=hexagon] .styled-dtext blockquote {
   border-left-color: #b4c7d9;
 }
 
-body[data-theme=pony] .styled-dtext blockquote {
+[data-theme=pony] .styled-dtext blockquote {
   border-left-color: #67717b;
 }
 
-body[data-theme=bloodlust] .styled-dtext blockquote {
+[data-theme=bloodlust] .styled-dtext blockquote {
   border-left-color: #67717b;
 }
 
-body[data-theme=serpent] .styled-dtext blockquote {
+[data-theme=serpent] .styled-dtext blockquote {
   border-left-color: #67717b;
 }
 
-body[data-theme=hotdog] .styled-dtext blockquote {
+[data-theme=hotdog] .styled-dtext blockquote {
   border-left-color: #67717b;
 }
 
@@ -2126,23 +1734,23 @@ body[data-theme=hotdog] .styled-dtext blockquote {
   border-left-color: #ffe380;
 }
 
-body[data-theme=hexagon] .styled-dtext div.expandable {
+[data-theme=hexagon] .styled-dtext div.expandable {
   border-left-color: #ffe380;
 }
 
-body[data-theme=pony] .styled-dtext div.expandable {
+[data-theme=pony] .styled-dtext div.expandable {
   border-left-color: #ffe380;
 }
 
-body[data-theme=bloodlust] .styled-dtext div.expandable {
+[data-theme=bloodlust] .styled-dtext div.expandable {
   border-left-color: #ffe380;
 }
 
-body[data-theme=serpent] .styled-dtext div.expandable {
+[data-theme=serpent] .styled-dtext div.expandable {
   border-left-color: #ffe380;
 }
 
-body[data-theme=hotdog] .styled-dtext div.expandable {
+[data-theme=hotdog] .styled-dtext div.expandable {
   border-left-color: #ffe380;
 }
 
@@ -2158,23 +1766,23 @@ body[data-theme=hotdog] .styled-dtext div.expandable {
   border-left-color: #17a2b8;
 }
 
-body[data-theme=hexagon] .styled-dtext pre {
+[data-theme=hexagon] .styled-dtext pre {
   border-left-color: #17a2b8;
 }
 
-body[data-theme=pony] .styled-dtext pre {
+[data-theme=pony] .styled-dtext pre {
   border-left-color: #427982;
 }
 
-body[data-theme=bloodlust] .styled-dtext pre {
+[data-theme=bloodlust] .styled-dtext pre {
   border-left-color: #427982;
 }
 
-body[data-theme=serpent] .styled-dtext pre {
+[data-theme=serpent] .styled-dtext pre {
   border-left-color: #427982;
 }
 
-body[data-theme=hotdog] .styled-dtext pre {
+[data-theme=hotdog] .styled-dtext pre {
   border-left-color: #427982;
 }
 
@@ -2191,23 +1799,23 @@ div#c-posts div#a-show #artist-commentary {
   padding: unset;
 }
 
-body[data-theme=hexagon] div#c-posts div#a-show #artist-commentary {
+[data-theme=hexagon] div#c-posts div#a-show #artist-commentary {
   border-color: #b4c7d9;
 }
 
-body[data-theme=pony] div#c-posts div#a-show #artist-commentary {
+[data-theme=pony] div#c-posts div#a-show #artist-commentary {
   border-color: #67717b;
 }
 
-body[data-theme=bloodlust] div#c-posts div#a-show #artist-commentary {
+[data-theme=bloodlust] div#c-posts div#a-show #artist-commentary {
   border-color: #67717b;
 }
 
-body[data-theme=serpent] div#c-posts div#a-show #artist-commentary {
+[data-theme=serpent] div#c-posts div#a-show #artist-commentary {
   border-color: #67717b;
 }
 
-body[data-theme=hotdog] div#c-posts div#a-show #artist-commentary {
+[data-theme=hotdog] div#c-posts div#a-show #artist-commentary {
   border-color: #67717b;
 }
 
@@ -2232,23 +1840,23 @@ div.list-of-forum-posts article {
           box-shadow: none;
 }
 
-body[data-theme=hexagon] div.list-of-forum-posts article {
+[data-theme=hexagon] div.list-of-forum-posts article {
   background: #1f3c67;
 }
 
-body[data-theme=pony] div.list-of-forum-posts article {
+[data-theme=pony] div.list-of-forum-posts article {
   background: #453269;
 }
 
-body[data-theme=bloodlust] div.list-of-forum-posts article {
+[data-theme=bloodlust] div.list-of-forum-posts article {
   background: #333333;
 }
 
-body[data-theme=serpent] div.list-of-forum-posts article {
+[data-theme=serpent] div.list-of-forum-posts article {
   background: #fff48b;
 }
 
-body[data-theme=hotdog] div.list-of-forum-posts article {
+[data-theme=hotdog] div.list-of-forum-posts article {
   background: #c53c38;
 }
 
@@ -2266,23 +1874,23 @@ div.list-of-forum-posts article:nth-child(2n) {
   background-color: #1f3c67;
 }
 
-body[data-theme=hexagon] div.list-of-forum-posts article:nth-child(2n) {
+[data-theme=hexagon] div.list-of-forum-posts article:nth-child(2n) {
   background-color: #1f3c67;
 }
 
-body[data-theme=pony] div.list-of-forum-posts article:nth-child(2n) {
+[data-theme=pony] div.list-of-forum-posts article:nth-child(2n) {
   background-color: #453269;
 }
 
-body[data-theme=bloodlust] div.list-of-forum-posts article:nth-child(2n) {
+[data-theme=bloodlust] div.list-of-forum-posts article:nth-child(2n) {
   background-color: #333333;
 }
 
-body[data-theme=serpent] div.list-of-forum-posts article:nth-child(2n) {
+[data-theme=serpent] div.list-of-forum-posts article:nth-child(2n) {
   background-color: #fff48b;
 }
 
-body[data-theme=hotdog] div.list-of-forum-posts article:nth-child(2n) {
+[data-theme=hotdog] div.list-of-forum-posts article:nth-child(2n) {
   background-color: #c53c38;
 }
 
@@ -2307,23 +1915,23 @@ div.list-of-forum-posts article[data-is-deleted="true"]::after {
   background: rgba(128, 0, 0, 0.2);
 }
 
-body[data-theme=hexagon] div.list-of-forum-posts article[data-is-deleted="true"]::after {
+[data-theme=hexagon] div.list-of-forum-posts article[data-is-deleted="true"]::after {
   background: rgba(128, 0, 0, 0.2);
 }
 
-body[data-theme=pony] div.list-of-forum-posts article[data-is-deleted="true"]::after {
+[data-theme=pony] div.list-of-forum-posts article[data-is-deleted="true"]::after {
   background: rgba(128, 0, 0, 0.2);
 }
 
-body[data-theme=bloodlust] div.list-of-forum-posts article[data-is-deleted="true"]::after {
+[data-theme=bloodlust] div.list-of-forum-posts article[data-is-deleted="true"]::after {
   background: rgba(128, 0, 0, 0.2);
 }
 
-body[data-theme=serpent] div.list-of-forum-posts article[data-is-deleted="true"]::after {
+[data-theme=serpent] div.list-of-forum-posts article[data-is-deleted="true"]::after {
   background: rgba(128, 0, 0, 0.2);
 }
 
-body[data-theme=hotdog] div.list-of-forum-posts article[data-is-deleted="true"]::after {
+[data-theme=hotdog] div.list-of-forum-posts article[data-is-deleted="true"]::after {
   background: rgba(128, 0, 0, 0.2);
 }
 
@@ -2344,27 +1952,27 @@ div#c-post-versions div#a-index .post-version {
   background: #1f3c67;
 }
 
-body[data-theme=hexagon] div#c-post-versions div#a-index .post-version {
+[data-theme=hexagon] div#c-post-versions div#a-index .post-version {
   border: 1px solid #152f56;
   background: #1f3c67;
 }
 
-body[data-theme=pony] div#c-post-versions div#a-index .post-version {
+[data-theme=pony] div#c-post-versions div#a-index .post-version {
   border: 1px solid #2f175c;
   background: #453269;
 }
 
-body[data-theme=bloodlust] div#c-post-versions div#a-index .post-version {
+[data-theme=bloodlust] div#c-post-versions div#a-index .post-version {
   border: 1px solid #222222;
   background: #333333;
 }
 
-body[data-theme=serpent] div#c-post-versions div#a-index .post-version {
+[data-theme=serpent] div#c-post-versions div#a-index .post-version {
   border: 1px solid #dacf6b;
   background: #fff48b;
 }
 
-body[data-theme=hotdog] div#c-post-versions div#a-index .post-version {
+[data-theme=hotdog] div#c-post-versions div#a-index .post-version {
   border: 1px solid #FF0000;
   background: #c53c38;
 }
@@ -2377,27 +1985,27 @@ div#c-post-versions div#a-index .pv-check {
   background: #25477b;
 }
 
-body[data-theme=hexagon] div#c-post-versions div#a-index .pv-check {
+[data-theme=hexagon] div#c-post-versions div#a-index .pv-check {
   border-color: #152f56;
   background: #25477b;
 }
 
-body[data-theme=pony] div#c-post-versions div#a-index .pv-check {
+[data-theme=pony] div#c-post-versions div#a-index .pv-check {
   border-color: #2f175c;
   background: #503a7a;
 }
 
-body[data-theme=bloodlust] div#c-post-versions div#a-index .pv-check {
+[data-theme=bloodlust] div#c-post-versions div#a-index .pv-check {
   border-color: #222222;
   background: #404040;
 }
 
-body[data-theme=serpent] div#c-post-versions div#a-index .pv-check {
+[data-theme=serpent] div#c-post-versions div#a-index .pv-check {
   border-color: #dacf6b;
   background: #fff6a5;
 }
 
-body[data-theme=hotdog] div#c-post-versions div#a-index .pv-check {
+[data-theme=hotdog] div#c-post-versions div#a-index .pv-check {
   border-color: #FF0000;
   background: #cc4e4b;
 }
@@ -2426,47 +2034,47 @@ div#c-post-versions div#a-index .pv-actions {
   background: #25477b;
 }
 
-body[data-theme=hexagon] div#c-post-versions div#a-index .pv-post, body[data-theme=hexagon]
-div#c-post-versions div#a-index .pv-date, body[data-theme=hexagon]
-div#c-post-versions div#a-index .pv-reason, body[data-theme=hexagon]
-div#c-post-versions div#a-index .pv-description, body[data-theme=hexagon]
-div#c-post-versions div#a-index .pv-tags-locked, body[data-theme=hexagon]
+[data-theme=hexagon] div#c-post-versions div#a-index .pv-post, [data-theme=hexagon]
+div#c-post-versions div#a-index .pv-date, [data-theme=hexagon]
+div#c-post-versions div#a-index .pv-reason, [data-theme=hexagon]
+div#c-post-versions div#a-index .pv-description, [data-theme=hexagon]
+div#c-post-versions div#a-index .pv-tags-locked, [data-theme=hexagon]
 div#c-post-versions div#a-index .pv-actions {
   background: #25477b;
 }
 
-body[data-theme=pony] div#c-post-versions div#a-index .pv-post, body[data-theme=pony]
-div#c-post-versions div#a-index .pv-date, body[data-theme=pony]
-div#c-post-versions div#a-index .pv-reason, body[data-theme=pony]
-div#c-post-versions div#a-index .pv-description, body[data-theme=pony]
-div#c-post-versions div#a-index .pv-tags-locked, body[data-theme=pony]
+[data-theme=pony] div#c-post-versions div#a-index .pv-post, [data-theme=pony]
+div#c-post-versions div#a-index .pv-date, [data-theme=pony]
+div#c-post-versions div#a-index .pv-reason, [data-theme=pony]
+div#c-post-versions div#a-index .pv-description, [data-theme=pony]
+div#c-post-versions div#a-index .pv-tags-locked, [data-theme=pony]
 div#c-post-versions div#a-index .pv-actions {
   background: #503a7a;
 }
 
-body[data-theme=bloodlust] div#c-post-versions div#a-index .pv-post, body[data-theme=bloodlust]
-div#c-post-versions div#a-index .pv-date, body[data-theme=bloodlust]
-div#c-post-versions div#a-index .pv-reason, body[data-theme=bloodlust]
-div#c-post-versions div#a-index .pv-description, body[data-theme=bloodlust]
-div#c-post-versions div#a-index .pv-tags-locked, body[data-theme=bloodlust]
+[data-theme=bloodlust] div#c-post-versions div#a-index .pv-post, [data-theme=bloodlust]
+div#c-post-versions div#a-index .pv-date, [data-theme=bloodlust]
+div#c-post-versions div#a-index .pv-reason, [data-theme=bloodlust]
+div#c-post-versions div#a-index .pv-description, [data-theme=bloodlust]
+div#c-post-versions div#a-index .pv-tags-locked, [data-theme=bloodlust]
 div#c-post-versions div#a-index .pv-actions {
   background: #404040;
 }
 
-body[data-theme=serpent] div#c-post-versions div#a-index .pv-post, body[data-theme=serpent]
-div#c-post-versions div#a-index .pv-date, body[data-theme=serpent]
-div#c-post-versions div#a-index .pv-reason, body[data-theme=serpent]
-div#c-post-versions div#a-index .pv-description, body[data-theme=serpent]
-div#c-post-versions div#a-index .pv-tags-locked, body[data-theme=serpent]
+[data-theme=serpent] div#c-post-versions div#a-index .pv-post, [data-theme=serpent]
+div#c-post-versions div#a-index .pv-date, [data-theme=serpent]
+div#c-post-versions div#a-index .pv-reason, [data-theme=serpent]
+div#c-post-versions div#a-index .pv-description, [data-theme=serpent]
+div#c-post-versions div#a-index .pv-tags-locked, [data-theme=serpent]
 div#c-post-versions div#a-index .pv-actions {
   background: #fff6a5;
 }
 
-body[data-theme=hotdog] div#c-post-versions div#a-index .pv-post, body[data-theme=hotdog]
-div#c-post-versions div#a-index .pv-date, body[data-theme=hotdog]
-div#c-post-versions div#a-index .pv-reason, body[data-theme=hotdog]
-div#c-post-versions div#a-index .pv-description, body[data-theme=hotdog]
-div#c-post-versions div#a-index .pv-tags-locked, body[data-theme=hotdog]
+[data-theme=hotdog] div#c-post-versions div#a-index .pv-post, [data-theme=hotdog]
+div#c-post-versions div#a-index .pv-date, [data-theme=hotdog]
+div#c-post-versions div#a-index .pv-reason, [data-theme=hotdog]
+div#c-post-versions div#a-index .pv-description, [data-theme=hotdog]
+div#c-post-versions div#a-index .pv-tags-locked, [data-theme=hotdog]
 div#c-post-versions div#a-index .pv-actions {
   background: #cc4e4b;
 }
@@ -2476,27 +2084,27 @@ div#c-post-versions div#a-index .pv-sources {
   border-top: 1px solid #152f56;
 }
 
-body[data-theme=hexagon] div#c-post-versions div#a-index .pv-tags, body[data-theme=hexagon]
+[data-theme=hexagon] div#c-post-versions div#a-index .pv-tags, [data-theme=hexagon]
 div#c-post-versions div#a-index .pv-sources {
   border-top: 1px solid #152f56;
 }
 
-body[data-theme=pony] div#c-post-versions div#a-index .pv-tags, body[data-theme=pony]
+[data-theme=pony] div#c-post-versions div#a-index .pv-tags, [data-theme=pony]
 div#c-post-versions div#a-index .pv-sources {
   border-top: 1px solid #2f175c;
 }
 
-body[data-theme=bloodlust] div#c-post-versions div#a-index .pv-tags, body[data-theme=bloodlust]
+[data-theme=bloodlust] div#c-post-versions div#a-index .pv-tags, [data-theme=bloodlust]
 div#c-post-versions div#a-index .pv-sources {
   border-top: 1px solid #222222;
 }
 
-body[data-theme=serpent] div#c-post-versions div#a-index .pv-tags, body[data-theme=serpent]
+[data-theme=serpent] div#c-post-versions div#a-index .pv-tags, [data-theme=serpent]
 div#c-post-versions div#a-index .pv-sources {
   border-top: 1px solid #dacf6b;
 }
 
-body[data-theme=hotdog] div#c-post-versions div#a-index .pv-tags, body[data-theme=hotdog]
+[data-theme=hotdog] div#c-post-versions div#a-index .pv-tags, [data-theme=hotdog]
 div#c-post-versions div#a-index .pv-sources {
   border-top: 1px solid #FF0000;
 }
@@ -2509,37 +2117,37 @@ div#c-post-versions div#a-index .pv-sources {
   color: #009700;
 }
 
-body[data-theme=hexagon] .diff-list ins, body[data-theme=hexagon]
-.diff-list ins a, body[data-theme=hexagon]
-.diff-list ins a:link, body[data-theme=hexagon]
+[data-theme=hexagon] .diff-list ins, [data-theme=hexagon]
+.diff-list ins a, [data-theme=hexagon]
+.diff-list ins a:link, [data-theme=hexagon]
 .diff-list ins a:visited {
   color: #009700;
 }
 
-body[data-theme=pony] .diff-list ins, body[data-theme=pony]
-.diff-list ins a, body[data-theme=pony]
-.diff-list ins a:link, body[data-theme=pony]
+[data-theme=pony] .diff-list ins, [data-theme=pony]
+.diff-list ins a, [data-theme=pony]
+.diff-list ins a:link, [data-theme=pony]
 .diff-list ins a:visited {
   color: #009700;
 }
 
-body[data-theme=bloodlust] .diff-list ins, body[data-theme=bloodlust]
-.diff-list ins a, body[data-theme=bloodlust]
-.diff-list ins a:link, body[data-theme=bloodlust]
+[data-theme=bloodlust] .diff-list ins, [data-theme=bloodlust]
+.diff-list ins a, [data-theme=bloodlust]
+.diff-list ins a:link, [data-theme=bloodlust]
 .diff-list ins a:visited {
   color: #009700;
 }
 
-body[data-theme=serpent] .diff-list ins, body[data-theme=serpent]
-.diff-list ins a, body[data-theme=serpent]
-.diff-list ins a:link, body[data-theme=serpent]
+[data-theme=serpent] .diff-list ins, [data-theme=serpent]
+.diff-list ins a, [data-theme=serpent]
+.diff-list ins a:link, [data-theme=serpent]
 .diff-list ins a:visited {
   color: #009700;
 }
 
-body[data-theme=hotdog] .diff-list ins, body[data-theme=hotdog]
-.diff-list ins a, body[data-theme=hotdog]
-.diff-list ins a:link, body[data-theme=hotdog]
+[data-theme=hotdog] .diff-list ins, [data-theme=hotdog]
+.diff-list ins a, [data-theme=hotdog]
+.diff-list ins a:link, [data-theme=hotdog]
 .diff-list ins a:visited {
   color: #009700;
 }
@@ -2548,23 +2156,23 @@ body[data-theme=hotdog] .diff-list ins, body[data-theme=hotdog]
   color: #00b100;
 }
 
-body[data-theme=hexagon] .diff-list ins a:hover {
+[data-theme=hexagon] .diff-list ins a:hover {
   color: #00b100;
 }
 
-body[data-theme=pony] .diff-list ins a:hover {
+[data-theme=pony] .diff-list ins a:hover {
   color: #00b100;
 }
 
-body[data-theme=bloodlust] .diff-list ins a:hover {
+[data-theme=bloodlust] .diff-list ins a:hover {
   color: #00b100;
 }
 
-body[data-theme=serpent] .diff-list ins a:hover {
+[data-theme=serpent] .diff-list ins a:hover {
   color: #00b100;
 }
 
-body[data-theme=hotdog] .diff-list ins a:hover {
+[data-theme=hotdog] .diff-list ins a:hover {
   color: #00b100;
 }
 
@@ -2575,37 +2183,37 @@ body[data-theme=hotdog] .diff-list ins a:hover {
   color: #9a0000;
 }
 
-body[data-theme=hexagon] .diff-list del, body[data-theme=hexagon]
-.diff-list del a, body[data-theme=hexagon]
-.diff-list del a:link, body[data-theme=hexagon]
+[data-theme=hexagon] .diff-list del, [data-theme=hexagon]
+.diff-list del a, [data-theme=hexagon]
+.diff-list del a:link, [data-theme=hexagon]
 .diff-list del a:visited {
   color: #9a0000;
 }
 
-body[data-theme=pony] .diff-list del, body[data-theme=pony]
-.diff-list del a, body[data-theme=pony]
-.diff-list del a:link, body[data-theme=pony]
+[data-theme=pony] .diff-list del, [data-theme=pony]
+.diff-list del a, [data-theme=pony]
+.diff-list del a:link, [data-theme=pony]
 .diff-list del a:visited {
   color: #9a0000;
 }
 
-body[data-theme=bloodlust] .diff-list del, body[data-theme=bloodlust]
-.diff-list del a, body[data-theme=bloodlust]
-.diff-list del a:link, body[data-theme=bloodlust]
+[data-theme=bloodlust] .diff-list del, [data-theme=bloodlust]
+.diff-list del a, [data-theme=bloodlust]
+.diff-list del a:link, [data-theme=bloodlust]
 .diff-list del a:visited {
   color: #9a0000;
 }
 
-body[data-theme=serpent] .diff-list del, body[data-theme=serpent]
-.diff-list del a, body[data-theme=serpent]
-.diff-list del a:link, body[data-theme=serpent]
+[data-theme=serpent] .diff-list del, [data-theme=serpent]
+.diff-list del a, [data-theme=serpent]
+.diff-list del a:link, [data-theme=serpent]
 .diff-list del a:visited {
   color: #9a0000;
 }
 
-body[data-theme=hotdog] .diff-list del, body[data-theme=hotdog]
-.diff-list del a, body[data-theme=hotdog]
-.diff-list del a:link, body[data-theme=hotdog]
+[data-theme=hotdog] .diff-list del, [data-theme=hotdog]
+.diff-list del a, [data-theme=hotdog]
+.diff-list del a:link, [data-theme=hotdog]
 .diff-list del a:visited {
   color: #9a0000;
 }
@@ -2614,23 +2222,23 @@ body[data-theme=hotdog] .diff-list del, body[data-theme=hotdog]
   color: #cd0000;
 }
 
-body[data-theme=hexagon] .diff-list del a:hover {
+[data-theme=hexagon] .diff-list del a:hover {
   color: #cd0000;
 }
 
-body[data-theme=pony] .diff-list del a:hover {
+[data-theme=pony] .diff-list del a:hover {
   color: #cd0000;
 }
 
-body[data-theme=bloodlust] .diff-list del a:hover {
+[data-theme=bloodlust] .diff-list del a:hover {
   color: #cd0000;
 }
 
-body[data-theme=serpent] .diff-list del a:hover {
+[data-theme=serpent] .diff-list del a:hover {
   color: #cd0000;
 }
 
-body[data-theme=hotdog] .diff-list del a:hover {
+[data-theme=hotdog] .diff-list del a:hover {
   color: #cd0000;
 }
 
@@ -2819,32 +2427,32 @@ div#c-posts div#a-show #set-nav li {
   background: #1f3c67;
 }
 
-body[data-theme=hexagon] div#c-posts div#a-show #pool-nav li, body[data-theme=hexagon]
-div#c-posts div#a-show #search-seq-nav li, body[data-theme=hexagon]
+[data-theme=hexagon] div#c-posts div#a-show #pool-nav li, [data-theme=hexagon]
+div#c-posts div#a-show #search-seq-nav li, [data-theme=hexagon]
 div#c-posts div#a-show #set-nav li {
   background: #1f3c67;
 }
 
-body[data-theme=pony] div#c-posts div#a-show #pool-nav li, body[data-theme=pony]
-div#c-posts div#a-show #search-seq-nav li, body[data-theme=pony]
+[data-theme=pony] div#c-posts div#a-show #pool-nav li, [data-theme=pony]
+div#c-posts div#a-show #search-seq-nav li, [data-theme=pony]
 div#c-posts div#a-show #set-nav li {
   background: #453269;
 }
 
-body[data-theme=bloodlust] div#c-posts div#a-show #pool-nav li, body[data-theme=bloodlust]
-div#c-posts div#a-show #search-seq-nav li, body[data-theme=bloodlust]
+[data-theme=bloodlust] div#c-posts div#a-show #pool-nav li, [data-theme=bloodlust]
+div#c-posts div#a-show #search-seq-nav li, [data-theme=bloodlust]
 div#c-posts div#a-show #set-nav li {
   background: #333333;
 }
 
-body[data-theme=serpent] div#c-posts div#a-show #pool-nav li, body[data-theme=serpent]
-div#c-posts div#a-show #search-seq-nav li, body[data-theme=serpent]
+[data-theme=serpent] div#c-posts div#a-show #pool-nav li, [data-theme=serpent]
+div#c-posts div#a-show #search-seq-nav li, [data-theme=serpent]
 div#c-posts div#a-show #set-nav li {
   background: #fff48b;
 }
 
-body[data-theme=hotdog] div#c-posts div#a-show #pool-nav li, body[data-theme=hotdog]
-div#c-posts div#a-show #search-seq-nav li, body[data-theme=hotdog]
+[data-theme=hotdog] div#c-posts div#a-show #pool-nav li, [data-theme=hotdog]
+div#c-posts div#a-show #search-seq-nav li, [data-theme=hotdog]
 div#c-posts div#a-show #set-nav li {
   background: #c53c38;
 }
@@ -2881,23 +2489,23 @@ div#c-posts .source-link:hover a {
   background: #020F23;
 }
 
-body[data-theme=hexagon] div#c-posts .source-link:hover a {
+[data-theme=hexagon] div#c-posts .source-link:hover a {
   background: #020F23;
 }
 
-body[data-theme=pony] div#c-posts .source-link:hover a {
+[data-theme=pony] div#c-posts .source-link:hover a {
   background: #250D51;
 }
 
-body[data-theme=bloodlust] div#c-posts .source-link:hover a {
+[data-theme=bloodlust] div#c-posts .source-link:hover a {
   background: #000000;
 }
 
-body[data-theme=serpent] div#c-posts .source-link:hover a {
+[data-theme=serpent] div#c-posts .source-link:hover a {
   background: #44a544;
 }
 
-body[data-theme=hotdog] div#c-posts .source-link:hover a {
+[data-theme=hotdog] div#c-posts .source-link:hover a {
   background: #FFFF00;
 }
 
@@ -2910,27 +2518,27 @@ a#remove-from-favorites {
   color: #ffffff;
 }
 
-body[data-theme=hexagon] a#add-to-favorites, body[data-theme=hexagon]
+[data-theme=hexagon] a#add-to-favorites, [data-theme=hexagon]
 a#remove-from-favorites {
   color: #ffffff;
 }
 
-body[data-theme=pony] a#add-to-favorites, body[data-theme=pony]
+[data-theme=pony] a#add-to-favorites, [data-theme=pony]
 a#remove-from-favorites {
   color: #ffffff;
 }
 
-body[data-theme=bloodlust] a#add-to-favorites, body[data-theme=bloodlust]
+[data-theme=bloodlust] a#add-to-favorites, [data-theme=bloodlust]
 a#remove-from-favorites {
   color: #ffffff;
 }
 
-body[data-theme=serpent] a#add-to-favorites, body[data-theme=serpent]
+[data-theme=serpent] a#add-to-favorites, [data-theme=serpent]
 a#remove-from-favorites {
   color: #ffffff;
 }
 
-body[data-theme=hotdog] a#add-to-favorites, body[data-theme=hotdog]
+[data-theme=hotdog] a#add-to-favorites, [data-theme=hotdog]
 a#remove-from-favorites {
   color: #ffffff;
 }
@@ -2946,32 +2554,32 @@ section#post-options ul li:nth-child(2) {
   background: darkgreen;
 }
 
-body[data-theme=hexagon] #post-options a#add-to-favorites, body[data-theme=hexagon]
-#post-options a#add-to-favorites:link, body[data-theme=hexagon]
+[data-theme=hexagon] #post-options a#add-to-favorites, [data-theme=hexagon]
+#post-options a#add-to-favorites:link, [data-theme=hexagon]
 #post-options a#add-to-favorites:visited {
   background: darkgreen;
 }
 
-body[data-theme=pony] #post-options a#add-to-favorites, body[data-theme=pony]
-#post-options a#add-to-favorites:link, body[data-theme=pony]
+[data-theme=pony] #post-options a#add-to-favorites, [data-theme=pony]
+#post-options a#add-to-favorites:link, [data-theme=pony]
 #post-options a#add-to-favorites:visited {
   background: darkgreen;
 }
 
-body[data-theme=bloodlust] #post-options a#add-to-favorites, body[data-theme=bloodlust]
-#post-options a#add-to-favorites:link, body[data-theme=bloodlust]
+[data-theme=bloodlust] #post-options a#add-to-favorites, [data-theme=bloodlust]
+#post-options a#add-to-favorites:link, [data-theme=bloodlust]
 #post-options a#add-to-favorites:visited {
   background: darkgreen;
 }
 
-body[data-theme=serpent] #post-options a#add-to-favorites, body[data-theme=serpent]
-#post-options a#add-to-favorites:link, body[data-theme=serpent]
+[data-theme=serpent] #post-options a#add-to-favorites, [data-theme=serpent]
+#post-options a#add-to-favorites:link, [data-theme=serpent]
 #post-options a#add-to-favorites:visited {
   background: darkgreen;
 }
 
-body[data-theme=hotdog] #post-options a#add-to-favorites, body[data-theme=hotdog]
-#post-options a#add-to-favorites:link, body[data-theme=hotdog]
+[data-theme=hotdog] #post-options a#add-to-favorites, [data-theme=hotdog]
+#post-options a#add-to-favorites:link, [data-theme=hotdog]
 #post-options a#add-to-favorites:visited {
   background: darkgreen;
 }
@@ -2980,23 +2588,23 @@ body[data-theme=hotdog] #post-options a#add-to-favorites, body[data-theme=hotdog
   background: #004b00;
 }
 
-body[data-theme=hexagon] #post-options a#add-to-favorites:hover {
+[data-theme=hexagon] #post-options a#add-to-favorites:hover {
   background: #004b00;
 }
 
-body[data-theme=pony] #post-options a#add-to-favorites:hover {
+[data-theme=pony] #post-options a#add-to-favorites:hover {
   background: #004b00;
 }
 
-body[data-theme=bloodlust] #post-options a#add-to-favorites:hover {
+[data-theme=bloodlust] #post-options a#add-to-favorites:hover {
   background: #004b00;
 }
 
-body[data-theme=serpent] #post-options a#add-to-favorites:hover {
+[data-theme=serpent] #post-options a#add-to-favorites:hover {
   background: #004b00;
 }
 
-body[data-theme=hotdog] #post-options a#add-to-favorites:hover {
+[data-theme=hotdog] #post-options a#add-to-favorites:hover {
   background: #004b00;
 }
 
@@ -3010,32 +2618,32 @@ body[data-theme=hotdog] #post-options a#add-to-favorites:hover {
   background: maroon;
 }
 
-body[data-theme=hexagon] #post-options a#remove-from-favorites, body[data-theme=hexagon]
-#post-options a#remove-from-favorites:link, body[data-theme=hexagon]
+[data-theme=hexagon] #post-options a#remove-from-favorites, [data-theme=hexagon]
+#post-options a#remove-from-favorites:link, [data-theme=hexagon]
 #post-options a#remove-from-favorites:visited {
   background: maroon;
 }
 
-body[data-theme=pony] #post-options a#remove-from-favorites, body[data-theme=pony]
-#post-options a#remove-from-favorites:link, body[data-theme=pony]
+[data-theme=pony] #post-options a#remove-from-favorites, [data-theme=pony]
+#post-options a#remove-from-favorites:link, [data-theme=pony]
 #post-options a#remove-from-favorites:visited {
   background: maroon;
 }
 
-body[data-theme=bloodlust] #post-options a#remove-from-favorites, body[data-theme=bloodlust]
-#post-options a#remove-from-favorites:link, body[data-theme=bloodlust]
+[data-theme=bloodlust] #post-options a#remove-from-favorites, [data-theme=bloodlust]
+#post-options a#remove-from-favorites:link, [data-theme=bloodlust]
 #post-options a#remove-from-favorites:visited {
   background: maroon;
 }
 
-body[data-theme=serpent] #post-options a#remove-from-favorites, body[data-theme=serpent]
-#post-options a#remove-from-favorites:link, body[data-theme=serpent]
+[data-theme=serpent] #post-options a#remove-from-favorites, [data-theme=serpent]
+#post-options a#remove-from-favorites:link, [data-theme=serpent]
 #post-options a#remove-from-favorites:visited {
   background: maroon;
 }
 
-body[data-theme=hotdog] #post-options a#remove-from-favorites, body[data-theme=hotdog]
-#post-options a#remove-from-favorites:link, body[data-theme=hotdog]
+[data-theme=hotdog] #post-options a#remove-from-favorites, [data-theme=hotdog]
+#post-options a#remove-from-favorites:link, [data-theme=hotdog]
 #post-options a#remove-from-favorites:visited {
   background: maroon;
 }
@@ -3044,23 +2652,23 @@ body[data-theme=hotdog] #post-options a#remove-from-favorites, body[data-theme=h
   background: #670000;
 }
 
-body[data-theme=hexagon] #post-options a#remove-from-favorites:hover {
+[data-theme=hexagon] #post-options a#remove-from-favorites:hover {
   background: #670000;
 }
 
-body[data-theme=pony] #post-options a#remove-from-favorites:hover {
+[data-theme=pony] #post-options a#remove-from-favorites:hover {
   background: #670000;
 }
 
-body[data-theme=bloodlust] #post-options a#remove-from-favorites:hover {
+[data-theme=bloodlust] #post-options a#remove-from-favorites:hover {
   background: #670000;
 }
 
-body[data-theme=serpent] #post-options a#remove-from-favorites:hover {
+[data-theme=serpent] #post-options a#remove-from-favorites:hover {
   background: #670000;
 }
 
-body[data-theme=hotdog] #post-options a#remove-from-favorites:hover {
+[data-theme=hotdog] #post-options a#remove-from-favorites:hover {
   background: #670000;
 }
 
@@ -3078,23 +2686,23 @@ div#c-posts .fav-buttons button.ui-button {
   font-size: 0em;
 }
 
-body[data-theme=hexagon] div#c-posts .fav-buttons button.ui-button {
+[data-theme=hexagon] div#c-posts .fav-buttons button.ui-button {
   color: #ffffff;
 }
 
-body[data-theme=pony] div#c-posts .fav-buttons button.ui-button {
+[data-theme=pony] div#c-posts .fav-buttons button.ui-button {
   color: #ffffff;
 }
 
-body[data-theme=bloodlust] div#c-posts .fav-buttons button.ui-button {
+[data-theme=bloodlust] div#c-posts .fav-buttons button.ui-button {
   color: #ffffff;
 }
 
-body[data-theme=serpent] div#c-posts .fav-buttons button.ui-button {
+[data-theme=serpent] div#c-posts .fav-buttons button.ui-button {
   color: #ffffff;
 }
 
-body[data-theme=hotdog] div#c-posts .fav-buttons button.ui-button {
+[data-theme=hotdog] div#c-posts .fav-buttons button.ui-button {
   color: #ffffff;
 }
 
@@ -3102,23 +2710,23 @@ div.fav-buttons button#add-fav-button {
   background: darkgreen;
 }
 
-body[data-theme=hexagon] div.fav-buttons button#add-fav-button {
+[data-theme=hexagon] div.fav-buttons button#add-fav-button {
   background: darkgreen;
 }
 
-body[data-theme=pony] div.fav-buttons button#add-fav-button {
+[data-theme=pony] div.fav-buttons button#add-fav-button {
   background: darkgreen;
 }
 
-body[data-theme=bloodlust] div.fav-buttons button#add-fav-button {
+[data-theme=bloodlust] div.fav-buttons button#add-fav-button {
   background: darkgreen;
 }
 
-body[data-theme=serpent] div.fav-buttons button#add-fav-button {
+[data-theme=serpent] div.fav-buttons button#add-fav-button {
   background: darkgreen;
 }
 
-body[data-theme=hotdog] div.fav-buttons button#add-fav-button {
+[data-theme=hotdog] div.fav-buttons button#add-fav-button {
   background: darkgreen;
 }
 
@@ -3126,23 +2734,23 @@ div.fav-buttons button#add-fav-button:hover {
   background: #004b00;
 }
 
-body[data-theme=hexagon] div.fav-buttons button#add-fav-button:hover {
+[data-theme=hexagon] div.fav-buttons button#add-fav-button:hover {
   background: #004b00;
 }
 
-body[data-theme=pony] div.fav-buttons button#add-fav-button:hover {
+[data-theme=pony] div.fav-buttons button#add-fav-button:hover {
   background: #004b00;
 }
 
-body[data-theme=bloodlust] div.fav-buttons button#add-fav-button:hover {
+[data-theme=bloodlust] div.fav-buttons button#add-fav-button:hover {
   background: #004b00;
 }
 
-body[data-theme=serpent] div.fav-buttons button#add-fav-button:hover {
+[data-theme=serpent] div.fav-buttons button#add-fav-button:hover {
   background: #004b00;
 }
 
-body[data-theme=hotdog] div.fav-buttons button#add-fav-button:hover {
+[data-theme=hotdog] div.fav-buttons button#add-fav-button:hover {
   background: #004b00;
 }
 
@@ -3155,23 +2763,23 @@ div.fav-buttons button#remove-fav-button {
   background: maroon;
 }
 
-body[data-theme=hexagon] div.fav-buttons button#remove-fav-button {
+[data-theme=hexagon] div.fav-buttons button#remove-fav-button {
   background: maroon;
 }
 
-body[data-theme=pony] div.fav-buttons button#remove-fav-button {
+[data-theme=pony] div.fav-buttons button#remove-fav-button {
   background: maroon;
 }
 
-body[data-theme=bloodlust] div.fav-buttons button#remove-fav-button {
+[data-theme=bloodlust] div.fav-buttons button#remove-fav-button {
   background: maroon;
 }
 
-body[data-theme=serpent] div.fav-buttons button#remove-fav-button {
+[data-theme=serpent] div.fav-buttons button#remove-fav-button {
   background: maroon;
 }
 
-body[data-theme=hotdog] div.fav-buttons button#remove-fav-button {
+[data-theme=hotdog] div.fav-buttons button#remove-fav-button {
   background: maroon;
 }
 
@@ -3179,23 +2787,23 @@ div.fav-buttons button#remove-fav-button:hover {
   background: #670000;
 }
 
-body[data-theme=hexagon] div.fav-buttons button#remove-fav-button:hover {
+[data-theme=hexagon] div.fav-buttons button#remove-fav-button:hover {
   background: #670000;
 }
 
-body[data-theme=pony] div.fav-buttons button#remove-fav-button:hover {
+[data-theme=pony] div.fav-buttons button#remove-fav-button:hover {
   background: #670000;
 }
 
-body[data-theme=bloodlust] div.fav-buttons button#remove-fav-button:hover {
+[data-theme=bloodlust] div.fav-buttons button#remove-fav-button:hover {
   background: #670000;
 }
 
-body[data-theme=serpent] div.fav-buttons button#remove-fav-button:hover {
+[data-theme=serpent] div.fav-buttons button#remove-fav-button:hover {
   background: #670000;
 }
 
-body[data-theme=hotdog] div.fav-buttons button#remove-fav-button:hover {
+[data-theme=hotdog] div.fav-buttons button#remove-fav-button:hover {
   background: #670000;
 }
 
@@ -3214,27 +2822,27 @@ div#image-download-link a {
   border-radius: 3px;
 }
 
-body[data-theme=hexagon] div#image-download-link a {
+[data-theme=hexagon] div#image-download-link a {
   background: sienna;
   color: #ffffff;
 }
 
-body[data-theme=pony] div#image-download-link a {
+[data-theme=pony] div#image-download-link a {
   background: sienna;
   color: #ffffff;
 }
 
-body[data-theme=bloodlust] div#image-download-link a {
+[data-theme=bloodlust] div#image-download-link a {
   background: sienna;
   color: #ffffff;
 }
 
-body[data-theme=serpent] div#image-download-link a {
+[data-theme=serpent] div#image-download-link a {
   background: sienna;
   color: #ffffff;
 }
 
-body[data-theme=hotdog] div#image-download-link a {
+[data-theme=hotdog] div#image-download-link a {
   background: sienna;
   color: #ffffff;
 }
@@ -3243,23 +2851,23 @@ div#image-download-link a:hover {
   background: #8c4827;
 }
 
-body[data-theme=hexagon] div#image-download-link a:hover {
+[data-theme=hexagon] div#image-download-link a:hover {
   background: #8c4827;
 }
 
-body[data-theme=pony] div#image-download-link a:hover {
+[data-theme=pony] div#image-download-link a:hover {
   background: #8c4827;
 }
 
-body[data-theme=bloodlust] div#image-download-link a:hover {
+[data-theme=bloodlust] div#image-download-link a:hover {
   background: #8c4827;
 }
 
-body[data-theme=serpent] div#image-download-link a:hover {
+[data-theme=serpent] div#image-download-link a:hover {
   background: #8c4827;
 }
 
-body[data-theme=hotdog] div#image-download-link a:hover {
+[data-theme=hotdog] div#image-download-link a:hover {
   background: #8c4827;
 }
 
@@ -3316,23 +2924,23 @@ section#edit div.input:last-child {
   margin: 0;
 }
 
-body[data-theme=hexagon] section#edit div.input:last-child {
+[data-theme=hexagon] section#edit div.input:last-child {
   background: #1f3c67;
 }
 
-body[data-theme=pony] section#edit div.input:last-child {
+[data-theme=pony] section#edit div.input:last-child {
   background: #453269;
 }
 
-body[data-theme=bloodlust] section#edit div.input:last-child {
+[data-theme=bloodlust] section#edit div.input:last-child {
   background: #333333;
 }
 
-body[data-theme=serpent] section#edit div.input:last-child {
+[data-theme=serpent] section#edit div.input:last-child {
   background: #fff48b;
 }
 
-body[data-theme=hotdog] section#edit div.input:last-child {
+[data-theme=hotdog] section#edit div.input:last-child {
   background: #c53c38;
 }
 
@@ -3407,23 +3015,23 @@ article.post-preview div.desc {
   background-color: #25477b;
 }
 
-body[data-theme=hexagon] article.post-preview div.desc {
+[data-theme=hexagon] article.post-preview div.desc {
   background-color: #25477b;
 }
 
-body[data-theme=pony] article.post-preview div.desc {
+[data-theme=pony] article.post-preview div.desc {
   background-color: #503a7a;
 }
 
-body[data-theme=bloodlust] article.post-preview div.desc {
+[data-theme=bloodlust] article.post-preview div.desc {
   background-color: #404040;
 }
 
-body[data-theme=serpent] article.post-preview div.desc {
+[data-theme=serpent] article.post-preview div.desc {
   background-color: #fff6a5;
 }
 
-body[data-theme=hotdog] article.post-preview div.desc {
+[data-theme=hotdog] article.post-preview div.desc {
   background-color: #cc4e4b;
 }
 
@@ -3473,27 +3081,27 @@ a#re-enable-all-blacklists::after {
   border-radius: 4px;
 }
 
-body[data-theme=hexagon] a#disable-all-blacklists::after, body[data-theme=hexagon]
+[data-theme=hexagon] a#disable-all-blacklists::after, [data-theme=hexagon]
 a#re-enable-all-blacklists::after {
   color: #ffffff;
 }
 
-body[data-theme=pony] a#disable-all-blacklists::after, body[data-theme=pony]
+[data-theme=pony] a#disable-all-blacklists::after, [data-theme=pony]
 a#re-enable-all-blacklists::after {
   color: #ffffff;
 }
 
-body[data-theme=bloodlust] a#disable-all-blacklists::after, body[data-theme=bloodlust]
+[data-theme=bloodlust] a#disable-all-blacklists::after, [data-theme=bloodlust]
 a#re-enable-all-blacklists::after {
   color: #ffffff;
 }
 
-body[data-theme=serpent] a#disable-all-blacklists::after, body[data-theme=serpent]
+[data-theme=serpent] a#disable-all-blacklists::after, [data-theme=serpent]
 a#re-enable-all-blacklists::after {
   color: #ffffff;
 }
 
-body[data-theme=hotdog] a#disable-all-blacklists::after, body[data-theme=hotdog]
+[data-theme=hotdog] a#disable-all-blacklists::after, [data-theme=hotdog]
 a#re-enable-all-blacklists::after {
   color: #ffffff;
 }
@@ -3503,23 +3111,23 @@ a#disable-all-blacklists::after {
   background: maroon;
 }
 
-body[data-theme=hexagon] a#disable-all-blacklists::after {
+[data-theme=hexagon] a#disable-all-blacklists::after {
   background: maroon;
 }
 
-body[data-theme=pony] a#disable-all-blacklists::after {
+[data-theme=pony] a#disable-all-blacklists::after {
   background: maroon;
 }
 
-body[data-theme=bloodlust] a#disable-all-blacklists::after {
+[data-theme=bloodlust] a#disable-all-blacklists::after {
   background: maroon;
 }
 
-body[data-theme=serpent] a#disable-all-blacklists::after {
+[data-theme=serpent] a#disable-all-blacklists::after {
   background: maroon;
 }
 
-body[data-theme=hotdog] a#disable-all-blacklists::after {
+[data-theme=hotdog] a#disable-all-blacklists::after {
   background: maroon;
 }
 
@@ -3528,23 +3136,23 @@ a#re-enable-all-blacklists::after {
   background: darkgreen;
 }
 
-body[data-theme=hexagon] a#re-enable-all-blacklists::after {
+[data-theme=hexagon] a#re-enable-all-blacklists::after {
   background: darkgreen;
 }
 
-body[data-theme=pony] a#re-enable-all-blacklists::after {
+[data-theme=pony] a#re-enable-all-blacklists::after {
   background: darkgreen;
 }
 
-body[data-theme=bloodlust] a#re-enable-all-blacklists::after {
+[data-theme=bloodlust] a#re-enable-all-blacklists::after {
   background: darkgreen;
 }
 
-body[data-theme=serpent] a#re-enable-all-blacklists::after {
+[data-theme=serpent] a#re-enable-all-blacklists::after {
   background: darkgreen;
 }
 
-body[data-theme=hotdog] a#re-enable-all-blacklists::after {
+[data-theme=hotdog] a#re-enable-all-blacklists::after {
   background: darkgreen;
 }
 
@@ -3600,37 +3208,37 @@ article.post-preview[data-tags~="webm"]::before {
   font-weight: 700;
 }
 
-body[data-theme=hexagon] article.post-preview[data-tags~="animated"]::before, body[data-theme=hexagon]
-article.post-preview[data-tags~="mp4"]::before, body[data-theme=hexagon]
-article.post-preview[data-tags~="flash"]::before, body[data-theme=hexagon]
+[data-theme=hexagon] article.post-preview[data-tags~="animated"]::before, [data-theme=hexagon]
+article.post-preview[data-tags~="mp4"]::before, [data-theme=hexagon]
+article.post-preview[data-tags~="flash"]::before, [data-theme=hexagon]
 article.post-preview[data-tags~="webm"]::before {
   border: 1px solid #ffffff;
 }
 
-body[data-theme=pony] article.post-preview[data-tags~="animated"]::before, body[data-theme=pony]
-article.post-preview[data-tags~="mp4"]::before, body[data-theme=pony]
-article.post-preview[data-tags~="flash"]::before, body[data-theme=pony]
+[data-theme=pony] article.post-preview[data-tags~="animated"]::before, [data-theme=pony]
+article.post-preview[data-tags~="mp4"]::before, [data-theme=pony]
+article.post-preview[data-tags~="flash"]::before, [data-theme=pony]
 article.post-preview[data-tags~="webm"]::before {
   border: 1px solid #ffffff;
 }
 
-body[data-theme=bloodlust] article.post-preview[data-tags~="animated"]::before, body[data-theme=bloodlust]
-article.post-preview[data-tags~="mp4"]::before, body[data-theme=bloodlust]
-article.post-preview[data-tags~="flash"]::before, body[data-theme=bloodlust]
+[data-theme=bloodlust] article.post-preview[data-tags~="animated"]::before, [data-theme=bloodlust]
+article.post-preview[data-tags~="mp4"]::before, [data-theme=bloodlust]
+article.post-preview[data-tags~="flash"]::before, [data-theme=bloodlust]
 article.post-preview[data-tags~="webm"]::before {
   border: 1px solid #ffffff;
 }
 
-body[data-theme=serpent] article.post-preview[data-tags~="animated"]::before, body[data-theme=serpent]
-article.post-preview[data-tags~="mp4"]::before, body[data-theme=serpent]
-article.post-preview[data-tags~="flash"]::before, body[data-theme=serpent]
+[data-theme=serpent] article.post-preview[data-tags~="animated"]::before, [data-theme=serpent]
+article.post-preview[data-tags~="mp4"]::before, [data-theme=serpent]
+article.post-preview[data-tags~="flash"]::before, [data-theme=serpent]
 article.post-preview[data-tags~="webm"]::before {
   border: 1px solid #ffffff;
 }
 
-body[data-theme=hotdog] article.post-preview[data-tags~="animated"]::before, body[data-theme=hotdog]
-article.post-preview[data-tags~="mp4"]::before, body[data-theme=hotdog]
-article.post-preview[data-tags~="flash"]::before, body[data-theme=hotdog]
+[data-theme=hotdog] article.post-preview[data-tags~="animated"]::before, [data-theme=hotdog]
+article.post-preview[data-tags~="mp4"]::before, [data-theme=hotdog]
+article.post-preview[data-tags~="flash"]::before, [data-theme=hotdog]
 article.post-preview[data-tags~="webm"]::before {
   border: 1px solid #ffffff;
 }
@@ -3654,23 +3262,23 @@ article.post-preview[data-tags~="webm"]::before {
   background-color: #e8c446;
 }
 
-body[data-theme=hexagon] .toggle-button.active[data-v-deb50420] {
+[data-theme=hexagon] .toggle-button.active[data-v-deb50420] {
   background-color: #e8c446;
 }
 
-body[data-theme=pony] .toggle-button.active[data-v-deb50420] {
+[data-theme=pony] .toggle-button.active[data-v-deb50420] {
   background-color: #e8c446;
 }
 
-body[data-theme=bloodlust] .toggle-button.active[data-v-deb50420] {
+[data-theme=bloodlust] .toggle-button.active[data-v-deb50420] {
   background-color: #ffffff;
 }
 
-body[data-theme=serpent] .toggle-button.active[data-v-deb50420] {
+[data-theme=serpent] .toggle-button.active[data-v-deb50420] {
   background-color: #e8c446;
 }
 
-body[data-theme=hotdog] .toggle-button.active[data-v-deb50420] {
+[data-theme=hotdog] .toggle-button.active[data-v-deb50420] {
   background-color: #ffe380;
 }
 
@@ -3686,23 +3294,23 @@ div.profile-stats > h1 > a {
   border-radius: 20px;
 }
 
-body[data-theme=hexagon] div.profile-stats > h1 > a {
+[data-theme=hexagon] div.profile-stats > h1 > a {
   background: #152f56;
 }
 
-body[data-theme=pony] div.profile-stats > h1 > a {
+[data-theme=pony] div.profile-stats > h1 > a {
   background: #2f175c;
 }
 
-body[data-theme=bloodlust] div.profile-stats > h1 > a {
+[data-theme=bloodlust] div.profile-stats > h1 > a {
   background: #222222;
 }
 
-body[data-theme=serpent] div.profile-stats > h1 > a {
+[data-theme=serpent] div.profile-stats > h1 > a {
   background: #dacf6b;
 }
 
-body[data-theme=hotdog] div.profile-stats > h1 > a {
+[data-theme=hotdog] div.profile-stats > h1 > a {
   background: #FF0000;
 }
 
@@ -3723,23 +3331,23 @@ div.profile-stats {
   border-radius: 4px;
 }
 
-body[data-theme=hexagon] div.profile-stats {
+[data-theme=hexagon] div.profile-stats {
   background: #1f3c67;
 }
 
-body[data-theme=pony] div.profile-stats {
+[data-theme=pony] div.profile-stats {
   background: #453269;
 }
 
-body[data-theme=bloodlust] div.profile-stats {
+[data-theme=bloodlust] div.profile-stats {
   background: #333333;
 }
 
-body[data-theme=serpent] div.profile-stats {
+[data-theme=serpent] div.profile-stats {
   background: #fff48b;
 }
 
-body[data-theme=hotdog] div.profile-stats {
+[data-theme=hotdog] div.profile-stats {
   background: #c53c38;
 }
 
@@ -3786,31 +3394,31 @@ div#c-users div#a-show div.box.user-uploads {
   border-radius: 4px;
 }
 
-body[data-theme=hexagon] div#c-users div#a-show div.box.user-favorites, body[data-theme=hexagon]
+[data-theme=hexagon] div#c-users div#a-show div.box.user-favorites, [data-theme=hexagon]
 div#c-users div#a-show div.box.user-uploads {
   border: 1px solid #152f56;
   background: #1f3c67;
 }
 
-body[data-theme=pony] div#c-users div#a-show div.box.user-favorites, body[data-theme=pony]
+[data-theme=pony] div#c-users div#a-show div.box.user-favorites, [data-theme=pony]
 div#c-users div#a-show div.box.user-uploads {
   border: 1px solid #2f175c;
   background: #453269;
 }
 
-body[data-theme=bloodlust] div#c-users div#a-show div.box.user-favorites, body[data-theme=bloodlust]
+[data-theme=bloodlust] div#c-users div#a-show div.box.user-favorites, [data-theme=bloodlust]
 div#c-users div#a-show div.box.user-uploads {
   border: 1px solid #222222;
   background: #333333;
 }
 
-body[data-theme=serpent] div#c-users div#a-show div.box.user-favorites, body[data-theme=serpent]
+[data-theme=serpent] div#c-users div#a-show div.box.user-favorites, [data-theme=serpent]
 div#c-users div#a-show div.box.user-uploads {
   border: 1px solid #dacf6b;
   background: #fff48b;
 }
 
-body[data-theme=hotdog] div#c-users div#a-show div.box.user-favorites, body[data-theme=hotdog]
+[data-theme=hotdog] div#c-users div#a-show div.box.user-favorites, [data-theme=hotdog]
 div#c-users div#a-show div.box.user-uploads {
   border: 1px solid #FF0000;
   background: #c53c38;
@@ -3835,31 +3443,31 @@ div#c-users div#a-show div.box.user-uploads h2 {
   border-radius: 4px;
 }
 
-body[data-theme=hexagon] div#c-users div#a-show div.box.user-favorites h2, body[data-theme=hexagon]
+[data-theme=hexagon] div#c-users div#a-show div.box.user-favorites h2, [data-theme=hexagon]
 div#c-users div#a-show div.box.user-uploads h2 {
   border-bottom: 4px solid #152f56;
   background: #1f3c67;
 }
 
-body[data-theme=pony] div#c-users div#a-show div.box.user-favorites h2, body[data-theme=pony]
+[data-theme=pony] div#c-users div#a-show div.box.user-favorites h2, [data-theme=pony]
 div#c-users div#a-show div.box.user-uploads h2 {
   border-bottom: 4px solid #2f175c;
   background: #453269;
 }
 
-body[data-theme=bloodlust] div#c-users div#a-show div.box.user-favorites h2, body[data-theme=bloodlust]
+[data-theme=bloodlust] div#c-users div#a-show div.box.user-favorites h2, [data-theme=bloodlust]
 div#c-users div#a-show div.box.user-uploads h2 {
   border-bottom: 4px solid #222222;
   background: #333333;
 }
 
-body[data-theme=serpent] div#c-users div#a-show div.box.user-favorites h2, body[data-theme=serpent]
+[data-theme=serpent] div#c-users div#a-show div.box.user-favorites h2, [data-theme=serpent]
 div#c-users div#a-show div.box.user-uploads h2 {
   border-bottom: 4px solid #dacf6b;
   background: #fff48b;
 }
 
-body[data-theme=hotdog] div#c-users div#a-show div.box.user-favorites h2, body[data-theme=hotdog]
+[data-theme=hotdog] div#c-users div#a-show div.box.user-favorites h2, [data-theme=hotdog]
 div#c-users div#a-show div.box.user-uploads h2 {
   border-bottom: 4px solid #FF0000;
   background: #c53c38;
@@ -3896,23 +3504,23 @@ div#c-users div#a-show .about-section .about-piece {
   padding: 0.5rem;
 }
 
-body[data-theme=hexagon] div#c-users div#a-show .about-section .about-piece {
+[data-theme=hexagon] div#c-users div#a-show .about-section .about-piece {
   background: #1f3c67;
 }
 
-body[data-theme=pony] div#c-users div#a-show .about-section .about-piece {
+[data-theme=pony] div#c-users div#a-show .about-section .about-piece {
   background: #453269;
 }
 
-body[data-theme=bloodlust] div#c-users div#a-show .about-section .about-piece {
+[data-theme=bloodlust] div#c-users div#a-show .about-section .about-piece {
   background: #333333;
 }
 
-body[data-theme=serpent] div#c-users div#a-show .about-section .about-piece {
+[data-theme=serpent] div#c-users div#a-show .about-section .about-piece {
   background: #fff48b;
 }
 
-body[data-theme=hotdog] div#c-users div#a-show .about-section .about-piece {
+[data-theme=hotdog] div#c-users div#a-show .about-section .about-piece {
   background: #c53c38;
 }
 
@@ -3925,23 +3533,23 @@ div#c-users div#a-edit h2#edit-options .active {
   color: #e8c446;
 }
 
-body[data-theme=hexagon] div#c-users div#a-edit h2#edit-options .active {
+[data-theme=hexagon] div#c-users div#a-edit h2#edit-options .active {
   color: #e8c446;
 }
 
-body[data-theme=pony] div#c-users div#a-edit h2#edit-options .active {
+[data-theme=pony] div#c-users div#a-edit h2#edit-options .active {
   color: #e8c446;
 }
 
-body[data-theme=bloodlust] div#c-users div#a-edit h2#edit-options .active {
+[data-theme=bloodlust] div#c-users div#a-edit h2#edit-options .active {
   color: #ffffff;
 }
 
-body[data-theme=serpent] div#c-users div#a-edit h2#edit-options .active {
+[data-theme=serpent] div#c-users div#a-edit h2#edit-options .active {
   color: #e8c446;
 }
 
-body[data-theme=hotdog] div#c-users div#a-edit h2#edit-options .active {
+[data-theme=hotdog] div#c-users div#a-edit h2#edit-options .active {
   color: #ffe380;
 }
 

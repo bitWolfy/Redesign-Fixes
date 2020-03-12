@@ -2,7 +2,7 @@
 
 /* --- Layout --- */
 body {
-    @include themable($base_style: true) {
+    @include themable($apply_to_self: true) {
         color: themed("color-text");
         background-color: themed("color-background");
         background-image: themed("image-background");
