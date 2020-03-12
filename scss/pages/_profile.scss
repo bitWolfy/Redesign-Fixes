@@ -60,7 +60,7 @@ div#c-users div#a-show div.box.user-uploads {                       // Would be 
     margin-bottom: 1em;
     border-radius: 4px;
 }
-div#c-users div#a-show div.box.user-favorites h2,
+div#c-users div#a-show div.box.user-favorites h2,                   // Links to Favorites and Uploads, to the side
 div#c-users div#a-show div.box.user-uploads h2 {
     @include themable {
         border-bottom: 4px solid themed("color-foreground");
@@ -86,6 +86,10 @@ div#c-users div#a-show div.box.user-uploads div.vertical-section {
     align-items: flex-end;
     justify-content: space-evenly;
     margin: 0 20px 0 40px;
+}
+div#c-users div#a-show div.box.user-favorites h4,                   // "Favorites hidden" text
+div#c-users div#a-show div.box.user-uploads h4 {
+    text-align: center;
 }
 
 /* Adjust the "About user" and "Artist Information" boxes */

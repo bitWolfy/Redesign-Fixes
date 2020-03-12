@@ -2678,6 +2678,11 @@ div#c-users div#a-show div.box.user-uploads div.vertical-section {
   margin: 0 20px 0 40px;
 }
 
+div#c-users div#a-show div.box.user-favorites h4,
+div#c-users div#a-show div.box.user-uploads h4 {
+  text-align: center;
+}
+
 /* Adjust the "About user" and "Artist Information" boxes */
 div#c-users div#a-show .about-section .about-piece {
   background: #1f3c67;

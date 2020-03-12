@@ -1042,6 +1042,8 @@ div#c-users div#a-show div.box.user-favorites h2, div#c-users div#a-show div.box
 
 div#c-users div#a-show div.box.user-favorites div.vertical-section, div#c-users div#a-show div.box.user-uploads div.vertical-section { height: 200px; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; -webkit-box-pack: space-evenly; -ms-flex-pack: space-evenly; justify-content: space-evenly; margin: 0 20px 0 40px; }
 
+div#c-users div#a-show div.box.user-favorites h4, div#c-users div#a-show div.box.user-uploads h4 { text-align: center; }
+
 /* Adjust the "About user" and "Artist Information" boxes */
 div#c-users div#a-show .about-section .about-piece { background: #1f3c67; margin: unset; margin-left: 1em; -webkit-box-shadow: unset; box-shadow: unset; padding: 0.5rem; }
 
