@@ -41,7 +41,7 @@ $(function() {
     })();
 
     // === Simple blacklist collapsable ===
-    $("#blacklist-box h1").html(`<a href="" onclick="" id="blacklist-toggle">► Blacklisted</a>`);
+    $("#blacklist-box h1").html(`<a href="" id="blacklist-toggle">► Blacklisted</a>`);
 
     $("#blacklist-box div").css("display", "none");
 
@@ -49,17 +49,17 @@ $(function() {
     if($("a#re-enable-all-blacklists").css("display") == "none") {
         $("#blacklist-list").css("display", "none");
     } else {
-        $("#blacklist-toggle").html("▼ Blacklisted");
+        $("#blacklist-toggle").text("▼ Blacklisted");
     }
 
     // Toggle the filter list when clicking the header
     $("a#blacklist-toggle").on("click", function(e) {
         e.preventDefault();
         if($("#blacklist-list").css("display") == "none") {
-            $("#blacklist-toggle").html("► Blacklisted");
+            $("#blacklist-toggle").html("▼ Blacklisted");
             $("#blacklist-list").css("display", "block");
         } else {
-            $("#blacklist-toggle").html("▼ Blacklisted");
+            $("#blacklist-toggle").html("► Blacklisted");
             $("#blacklist-list").css("display", "none");
         }
     });
