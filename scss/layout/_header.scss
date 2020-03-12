@@ -1,8 +1,9 @@
 /* --- Header --- */
 header#top {
-    @include themable {
+    @include themable() {
+        color: themed("color-text");
+        background-color: themed("color-background");
         background-image: themed("image-background");
-        background-color: themed("color-background");               // Give the header the same hex grid as the main body
     }
     font-size: 1.05em;                                              // Slightly bigger font, for better readability
     margin: 0 1em 0.8rem;                                           // Slightly bigger margin, to match the old theme
@@ -27,13 +28,15 @@ body.resp #maintoggle {
 }
 
 /* Top Menus */
-header#top menu {
+header#top menu:not(.main) {
     @include themable {
         background-color: themed("color-foreground");
     }
     border-radius: 6px;
 }
-header#top menu.main { background-color: unset; }
+header#top menu.main {
+    background-color: unset;
+}
 
 header#top menu.main li.current a {
     @include themable {

@@ -1,0 +1,15 @@
+// Extras Index
+
+@import 'extra_none';
+@import 'extra_hexagons';
+@import 'extra_spring';
+
+$extras_index: (
+    "data-attr":    "extras",
+    "default":      "hexagons",
+    "themes": (
+        "none":         $extra_none,
+        "hexagons":     $extra_hexagons,
+        "spring":       $extra_spring
+    )
+);

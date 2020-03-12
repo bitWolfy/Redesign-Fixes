@@ -2,11 +2,10 @@
 
 /* --- Layout --- */
 body {
-    @include themable($flipped: true) {
+    @include themable($base_style: true) {
+        color: themed("color-text");
         background-color: themed("color-background");
         background-image: themed("image-background");
-
-        color: themed("color-text");
     }
 
     font-family: Verdana, sans-serif;
@@ -18,12 +17,14 @@ body {
 @include resp-body-width;
 
 div#page {
-    @include themable {
-        background-image: themed("image-foreground");
+    @include themable() {
         background-color: themed("color-foreground");
     }
-    background-position: left top;
-    background-repeat: repeat-x;
+    @include themable($data_map: $extras_index) {
+        background-image: themed("image-foreground");
+        background-position: themed("image-foreground-position");
+        background-repeat: themed("image-foreground-repeat");
+    }
     border-radius: 6px;
 }
 

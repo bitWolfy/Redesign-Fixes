@@ -14,10 +14,10 @@
 @import 'utilities/colors';
 
 @import 'components/themable';
+@import 'utilities/themed';
 
-@import 'themes/theme_bloodlust';
-@import 'themes/theme_hexagon';
-@import 'themes/index';
+@import 'themes/theme_!index';
+@import 'themes/extra_!index';
 
 @import 'layout/common';
 @import 'layout/header';

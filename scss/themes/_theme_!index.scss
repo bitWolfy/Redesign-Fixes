@@ -1,0 +1,16 @@
+// Theme Index
+// Add themes to the following map to generate appropriate classes
+
+@import 'theme_bloodlust';
+@import 'theme_hexagon';
+@import 'theme_hotdog';
+
+$theme_index: (
+    "data-attr":    "theme",
+    "default":      "hexagon",
+    "themes": (
+        "hexagon":      $theme_hexagon,
+        "bloodlust":    $theme_bloodlust,
+        "hotdog":       $theme_hotdog
+    )
+);
