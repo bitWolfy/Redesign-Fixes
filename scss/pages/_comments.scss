@@ -26,14 +26,27 @@ div#c-comments div#a-index div.post article.comment img {       // Bugfix: user 
     border: 0px;
 }
 
-@media screen and (max-width: 801px) {                          // Fixes for mobile, by JAKXXX3
+@media screen and (max-width: 801px) {
+    div.comments-for-post div.list-of-comments article.comment,
     div#c-comments div#a-index div#p-index-by-post div.post-preview {
         flex-flow: row wrap;
     }
-
+    div.comments-for-post div.list-of-comments article.comment div.author {
+        flex-basis: 100%;
+        display: flex;
+        flex-shrink: inherit;
+        padding: 0;
+    }
+    div.comments-for-post div.list-of-comments article.comment .author .post-thumbnail a img,
     div#c-comments div#a-index div.preview a img {
         max-height: 5rem;
         width: auto;
+    }
+    div.comments-for-post div.list-of-comments article.comment .author .author-info {
+        padding-left: 1rem;
+    }
+    div.comments-for-post div.list-of-comments article.comment .author .author-info h1 {
+        margin-top: 1rem;
     }
 }
 

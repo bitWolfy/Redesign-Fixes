@@ -22,5 +22,4 @@ div#c-users div#a-edit h2 { margin-bottom: .5em; }
 
 .simple_form {                                                  // This sets the color for all other setting pages (eg: Change Password, Delete account, API etc)
     padding: 0.5em;
-    @include themable { background: themed("color-section"); }
 }
