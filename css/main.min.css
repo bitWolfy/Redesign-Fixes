@@ -564,6 +564,8 @@ div#c-post-versions div#a-index .pv-check { -webkit-box-shadow: none; box-shadow
 
 div#c-post-versions div#a-index .pv-post-label, div#c-post-versions div#a-index .pv-date-label, div#c-post-versions div#a-index .pv-reason-label, div#c-post-versions div#a-index .pv-description-label, div#c-post-versions div#a-index .pv-tags-locked-label, div#c-post-versions div#a-index .pv-spacer, div#c-post-versions div#a-index .pv-tags-label, div#c-post-versions div#a-index .pv-sources-label { display: none; }
 
+div#c-post-versions div#a-index .pv-content:empty { padding: 0; }
+
 div#c-post-versions div#a-index .pv-post, div#c-post-versions div#a-index .pv-date, div#c-post-versions div#a-index .pv-reason, div#c-post-versions div#a-index .pv-description, div#c-post-versions div#a-index .pv-tags-locked, div#c-post-versions div#a-index .pv-actions { background: #25477b; }
 
 .theme-hexagon div#c-post-versions div#a-index .pv-post, .theme-hexagon div#c-post-versions div#a-index .pv-date, .theme-hexagon div#c-post-versions div#a-index .pv-reason, .theme-hexagon div#c-post-versions div#a-index .pv-description, .theme-hexagon div#c-post-versions div#a-index .pv-tags-locked, .theme-hexagon div#c-post-versions div#a-index .pv-actions { background: #25477b; }

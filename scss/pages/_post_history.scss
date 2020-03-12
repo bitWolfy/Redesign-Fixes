@@ -28,6 +28,10 @@ div#c-post-versions div#a-index .pv-sources-label {
     display: none;
 }
 
+div#c-post-versions div#a-index .pv-content:empty {             // TODO BUG this _would_ work if the empty containers would actually be empty.
+    padding: 0;                                                 // Instead, they are filled with spaces.
+}
+
 div#c-post-versions div#a-index .pv-post,
 div#c-post-versions div#a-index .pv-date,
 div#c-post-versions div#a-index .pv-reason,
