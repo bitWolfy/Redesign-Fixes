@@ -381,7 +381,7 @@ table.striped tbody tr:hover {
 }
 
 table.striped tbody tr td {
-  padding: 15px 5px;
+  padding: 0.5rem 0.25rem;
 }
 
 td a.last-page,
@@ -428,7 +428,7 @@ td a.last-page:hover {
 div#page div.site-notice {
   background-color: #1f3c67;
   border: 1px solid rgba(0, 0, 0, 0.5);
-  padding: 4px !important;
+  padding: 0.25rem !important;
   -webkit-box-shadow: 0 0 27px rgba(0, 0, 0, 0.2);
           box-shadow: 0 0 27px rgba(0, 0, 0, 0.2);
 }

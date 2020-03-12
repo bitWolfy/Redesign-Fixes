@@ -157,7 +157,7 @@ table.striped tbody tr:hover { background-color: #2b538e; }
 
 .theme-hotdog table.striped tbody tr:hover { background-color: #d1625f; }
 
-table.striped tbody tr td { padding: 15px 5px; }
+table.striped tbody tr td { padding: 0.5rem 0.25rem; }
 
 td a.last-page, td a.last-page:link, td a.last-page:visited { color: #999999; }
 
@@ -176,7 +176,7 @@ td a.last-page:hover { color: #e9f2fa; }
 .theme-hotdog td a.last-page:hover { color: #666666; }
 
 /* === NOTICES === */
-div#page div.site-notice { background-color: #1f3c67; border: 1px solid rgba(0, 0, 0, 0.5); padding: 4px !important; -webkit-box-shadow: 0 0 27px rgba(0, 0, 0, 0.2); box-shadow: 0 0 27px rgba(0, 0, 0, 0.2); }
+div#page div.site-notice { background-color: #1f3c67; border: 1px solid rgba(0, 0, 0, 0.5); padding: 0.25rem !important; -webkit-box-shadow: 0 0 27px rgba(0, 0, 0, 0.2); box-shadow: 0 0 27px rgba(0, 0, 0, 0.2); }
 
 .theme-hexagon div#page div.site-notice { background-color: #1f3c67; }
 
