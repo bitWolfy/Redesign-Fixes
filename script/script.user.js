@@ -33,6 +33,7 @@ $(function() {
                 padding: 1rem;
 
                 border-radius: 5px;
+                box-shadow: 0 2px 10px -5px #000;
             }
             .customizer-controls select {
                 width: -webkit-fill-available;
@@ -84,6 +85,16 @@ $(function() {
             $("#customizer-toggle").text("► Theme");
         }
     });
+
+    $(document).click(function(e) {
+        var $target = $(e.target);
+        if($target.parents().is("#customizer-container") || $target.is("#customizer-container")) { return false; }
+        
+        if($("#customizer-popup-box").css("display") != "none") {
+            $("#customizer-popup-box").css("display", "none");
+            $("#customizer-toggle").text("► Theme");
+        }
+     });
 
     // Handle the theme selector
     $("#theme-switcher").change(function(e) {
