@@ -3,7 +3,7 @@
 @name         e621 Redesign Fixes
 @description  Restore e621.net back to its classic look
 @namespace    bitwolfy.com
-@version      2.0.4
+@version      2.0.5
 @author       bitWolfy
 @homepageURL  https://e621.net/forum_topics/25811
 @license      CC-BY-SA-4.0
@@ -79,6 +79,54 @@ a:hover { color: #e9f2fa; }
 
 /* --- Common Elements --- */
 .score-negative, .score-neutral, .score-positive, .post-score-rating { font-weight: 700; }
+
+.score-positive a, .score-positive a:link, .score-positive a:visited { color: darkgreen; }
+
+.theme-hexagon .score-positive a, .theme-hexagon .score-positive a:link, .theme-hexagon .score-positive a:visited { color: darkgreen; }
+
+.theme-bloodlust .score-positive a, .theme-bloodlust .score-positive a:link, .theme-bloodlust .score-positive a:visited { color: darkgreen; }
+
+.theme-hotdog .score-positive a, .theme-hotdog .score-positive a:link, .theme-hotdog .score-positive a:visited { color: darkgreen; }
+
+.score-positive a:hover { color: #003100; }
+
+.theme-hexagon .score-positive a:hover { color: #003100; }
+
+.theme-bloodlust .score-positive a:hover { color: #003100; }
+
+.theme-hotdog .score-positive a:hover { color: #003100; }
+
+.score-neutral a, .score-neutral a:link, .score-neutral a:visited { color: #999999; }
+
+.theme-hexagon .score-neutral a, .theme-hexagon .score-neutral a:link, .theme-hexagon .score-neutral a:visited { color: #999999; }
+
+.theme-bloodlust .score-neutral a, .theme-bloodlust .score-neutral a:link, .theme-bloodlust .score-neutral a:visited { color: #999999; }
+
+.theme-hotdog .score-neutral a, .theme-hotdog .score-neutral a:link, .theme-hotdog .score-neutral a:visited { color: #999999; }
+
+.score-neutral a:hover { color: gray; }
+
+.theme-hexagon .score-neutral a:hover { color: gray; }
+
+.theme-bloodlust .score-neutral a:hover { color: gray; }
+
+.theme-hotdog .score-neutral a:hover { color: gray; }
+
+.score-negative a, .score-negative a:link, .score-negative a:visited { color: maroon; }
+
+.theme-hexagon .score-negative a, .theme-hexagon .score-negative a:link, .theme-hexagon .score-negative a:visited { color: maroon; }
+
+.theme-bloodlust .score-negative a, .theme-bloodlust .score-negative a:link, .theme-bloodlust .score-negative a:visited { color: maroon; }
+
+.theme-hotdog .score-negative a, .theme-hotdog .score-negative a:link, .theme-hotdog .score-negative a:visited { color: maroon; }
+
+.score-negative a:hover { color: #4d0000; }
+
+.theme-hexagon .score-negative a:hover { color: #4d0000; }
+
+.theme-bloodlust .score-negative a:hover { color: #4d0000; }
+
+.theme-hotdog .score-negative a:hover { color: #4d0000; }
 
 div#ad-leaderboard { text-align: center; }
 

@@ -67,6 +67,21 @@ a:hover {
     font-weight: 700;
 }
 
+.score-positive a,
+.score-positive a:link,
+.score-positive a:visited   { @include themable { color: themed("color-success"); } }
+.score-positive a:hover     { @include themable { color: darken( themed("color-success"), 10%); } }
+
+.score-neutral a,
+.score-neutral a:link,
+.score-neutral a:visited   { @include themable { color: themed("color-text-muted"); } }
+.score-neutral a:hover     { @include themable { color: darken( themed("color-text-muted"), 10%); } }
+
+.score-negative a,
+.score-negative a:link,
+.score-negative a:visited   { @include themable { color: themed("color-danger"); } }
+.score-negative a:hover     { @include themable { color: darken( themed("color-danger"), 10%); } }
+
 div#ad-leaderboard { text-align: center; }                      // Center the ads, because why not?
 
 /* --- Tables --- */

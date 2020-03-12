@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         e621 Redesign Scripts
 // @namespace    bitwolfy.com
-// @version      2.0.4
+// @version      2.0.5
 // @description  Scripting portion of the e621 Redesign Fixes project
 // @author       bitWolfy
 // @homepage     https://github.com/bitWolfy/e621-Redesign-Fixes
