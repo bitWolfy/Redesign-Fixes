@@ -1,17 +1,17 @@
 /* --- User Page Links, with Group Styles --- */
-a.user-member.with-style                { @include themable { color: themed("color-user-member"); } }
-a.user-member.with-style:hover          { @include themable { color: themed("color-user-member-alt"); } }
-a.user-privileged.with-style            { @include themable { color: themed("color-user-privileged"); } }
-a.user-privileged.with-style:hover      { @include themable { color: themed("color-user-privileged-alt"); } }
-a.user-contributor.with-style           { @include themable { color: themed("color-user-contributor"); } }
-a.user-contributor.with-style:hover     { @include themable { color: themed("color-user-contributor-alt"); } }
+a.user-member.with-style                { @include themable { color: themed("color-user-member") !important; } }
+a.user-member.with-style:hover          { @include themable { color: themed("color-user-member-alt") !important; } }
+a.user-privileged.with-style            { @include themable { color: themed("color-user-privileged") !important; } }
+a.user-privileged.with-style:hover      { @include themable { color: themed("color-user-privileged-alt") !important; } }
+a.user-contributor.with-style           { @include themable { color: themed("color-user-contributor") !important; } }
+a.user-contributor.with-style:hover     { @include themable { color: themed("color-user-contributor-alt") !important; } }
 
-a.user-blocked.with-style               { @include themable { color: themed("color-user-blocked"); text-decoration: line-through; } }
-a.user-blocked.with-style:hover         { @include themable { color: themed("color-user-blocked-alt"); } }
+a.user-blocked.with-style               { @include themable { color: themed("color-user-blocked") !important; text-decoration: line-through; } }
+a.user-blocked.with-style:hover         { @include themable { color: themed("color-user-blocked-alt") !important; } }
 
-a.user-former.staff.with-style          { @include themable { color: themed("color-user-former-staff"); } }                 // TODO BUG Instead of having class .former-staff
-a.user-former.staff.with-style:hover    { @include themable { color: themed("color-user-former-staff-alt"); } }             // This group has two classes: .former and .staff
-a.user-janitor.with-style               { @include themable { color: themed("color-user-janitor"); } }
-a.user-janitor.with-style:hover         { @include themable { color: themed("color-user-janitor-alt"); } }
-a.user-admin.with-style                 { @include themable { color: themed("color-user-admin"); } }
-a.user-admin.with-style:hover           { @include themable { color: themed("color-user-admin-alt"); } }
+a.user-former.staff.with-style          { @include themable { color: themed("color-user-former-staff") !important; } }      // TODO BUG Instead of having class .former-staff
+a.user-former.staff.with-style:hover    { @include themable { color: themed("color-user-former-staff-alt") !important; } }  // This group has two classes: .former and .staff
+a.user-janitor.with-style               { @include themable { color: themed("color-user-janitor") !important; } }
+a.user-janitor.with-style:hover         { @include themable { color: themed("color-user-janitor-alt") !important; } }
+a.user-admin.with-style                 { @include themable { color: themed("color-user-admin") !important; } }
+a.user-admin.with-style:hover           { @include themable { color: themed("color-user-admin-alt") !important; } }

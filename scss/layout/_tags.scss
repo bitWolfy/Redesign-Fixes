@@ -5,38 +5,44 @@
 /* General */
 .category-0 a,
 .category-0 a:link,
-.category-0 a:visited   { @include themable { color: themed("color-tag-general"); } }
-.category-0 a:hover     { @include themable { color: themed("color-tag-general-alt"); } }
+.category-0 a:visited   { @include themable { color: themed("color-tag-general") !important; } }
+.category-0 a:hover     { @include themable { color: themed("color-tag-general-alt") !important; } }
 
 /* Artist */
 .category-1 a,
 .category-1 a:link,
-.category-1 a:visited   { @include themable { color: themed("color-tag-artist"); } }
-.category-1 a:hover     { @include themable { color: themed("color-tag-artist-alt"); } }
+.category-1 a:visited   { @include themable { color: themed("color-tag-artist") !important; } }
+.category-1 a:hover     { @include themable { color: themed("color-tag-artist-alt") !important; } }
 
 /* Copyright */
 .category-3 a,
 .category-3 a:link,
-.category-3 a:visited   { @include themable { color: themed("color-tag-copyright"); } }
-.category-3 a:hover     { @include themable { color: themed("color-tag-copyright-alt"); } }
+.category-3 a:visited   { @include themable { color: themed("color-tag-copyright") !important; } }
+.category-3 a:hover     { @include themable { color: themed("color-tag-copyright-alt") !important; } }
 
 /* Character */
 .category-4 a,
 .category-4 a:link,
-.category-4 a:visited   { @include themable { color: themed("color-tag-character"); } }
-.category-4 a:hover     { @include themable { color: themed("color-tag-character-alt"); } }
+.category-4 a:visited   { @include themable { color: themed("color-tag-character") !important; } }
+.category-4 a:hover     { @include themable { color: themed("color-tag-character-alt") !important; } }
 
 /* Species */
 .category-5 a,
 .category-5 a:link,
-.category-5 a:visited   { @include themable { color: themed("color-tag-species"); } }
-.category-5 a:hover     { @include themable { color: themed("color-tag-species-alt"); } }
+.category-5 a:visited   { @include themable { color: themed("color-tag-species") !important; } }
+.category-5 a:hover     { @include themable { color: themed("color-tag-species-alt") !important; } }
+
+/* Meta */
+.category-7 a,
+.category-7 a:link,
+.category-7 a:visited   { @include themable { color: themed("color-tag-meta") !important; } }
+.category-7 a:hover     { @include themable { color: themed("color-tag-meta-alt") !important; } }
 
 /* Lore */
 .category-8 a,
 .category-8 a:link,
-.category-8 a:visited   { @include themable { color: themed("color-tag-lore"); } }
-.category-8 a:hover     { @include themable { color: themed("color-tag-lore-alt"); } }
+.category-8 a:visited   { @include themable { color: themed("color-tag-lore") !important; } }
+.category-8 a:hover     { @include themable { color: themed("color-tag-lore-alt") !important; } }
 
 /* Pool */
 .pool-category-series a,
@@ -44,6 +50,6 @@
 .pool-category-series a:visited,
 .pool-category-collection a ,
 .pool-category-collection a:link,
-.pool-category-collection a:visited { @include themable { color: themed("color-tag-pool"); } }
+.pool-category-collection a:visited { @include themable { color: themed("color-tag-pool") !important; } }
 .pool-category-collection a:hover,
-.pool-category-series a:hover       { @include themable { color: themed("color-tag-pool-alt"); } }
+.pool-category-series a:hover       { @include themable { color: themed("color-tag-pool-alt") !important; } }
