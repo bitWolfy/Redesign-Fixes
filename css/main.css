@@ -299,18 +299,21 @@ div#page {
   background-image: url("https://bitwolfy.com/e621/extras/autumn/leaves_bottom.png");
   background-position: left bottom;
   background-repeat: repeat-x;
+  padding-bottom: 6rem;
 }
 
 [data-extras=winter] div#page {
   background-image: url("https://bitwolfy.com/e621/extras/winter/snow_bottom.png"), url("https://bitwolfy.com/e621/extras/winter/snow_top.png");
   background-position: left bottom, left top;
   background-repeat: repeat-x;
+  padding-bottom: 3rem;
 }
 
 [data-extras=spring] div#page {
   background-image: url("https://bitwolfy.com/e621/extras/spring/spring_bottom.png"), url("https://bitwolfy.com/e621/extras/spring/spring_bottom_fox.png"), url("https://bitwolfy.com/e621/extras/spring/spring_top.png"), url("https://bitwolfy.com/e621/extras/spring/spring_top_sky.png");
   background-position: left bottom, right bottom, right top, left top;
   background-repeat: repeat-x, no-repeat, no-repeat, repeat-x;
+  padding-bottom: 3rem;
 }
 
 [data-extras=aurora] div#page {
