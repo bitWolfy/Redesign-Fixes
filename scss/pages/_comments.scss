@@ -79,7 +79,7 @@ div#c-posts div#a-show #artist-commentary {
     }
 }
 
-blockquote p { margin-bottom: unset; }
+blockquote p:last-child { margin-bottom: unset; }
 .styled-dtext div.expandable { padding: unset; }
 .styled-dtext div.expandable div.expandable-header {
     padding: 1rem;

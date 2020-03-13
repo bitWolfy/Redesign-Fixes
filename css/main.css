@@ -1818,7 +1818,7 @@ div#c-posts div#a-show #artist-commentary {
   background: rgba(209, 98, 95, 0.7);
 }
 
-blockquote p {
+blockquote p:last-child {
   margin-bottom: unset;
 }
 

@@ -761,7 +761,7 @@ div#c-posts div#a-show #artist-commentary { position: relative; z-index: 10; -we
 
 [data-theme=hotdog] div#c-posts div#a-show #artist-commentary { border-left: 0.25rem solid maroon; background: rgba(209, 98, 95, 0.7); }
 
-blockquote p { margin-bottom: unset; }
+blockquote p:last-child { margin-bottom: unset; }
 
 .styled-dtext div.expandable { padding: unset; }
 
