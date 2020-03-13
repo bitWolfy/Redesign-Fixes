@@ -1469,7 +1469,7 @@ div#c-comments div#a-index div.post article.comment img {
   -webkit-box-shadow: none;
           box-shadow: none;
   border-radius: 3px;
-  padding: 1rem;
+  padding: 0.5rem 1rem;
   margin: 0 0 1rem;
   border: 1px solid #1f3c67;
   border-left: 0.25rem solid maroon;
@@ -1548,7 +1548,7 @@ blockquote p:last-child {
 }
 
 .styled-dtext div.expandable div.expandable-header {
-  padding: 1rem;
+  padding: 0.5rem 1rem;
 }
 
 .styled-dtext div.expandable div.expandable-content {
@@ -1613,8 +1613,8 @@ blockquote p:last-child {
 
 .styled-dtext blockquote::after {
   content: "\f10e";
-  font-size: 2.5rem;
-  top: 1.125rem;
+  font-size: 2rem;
+  top: 0.5rem;
   right: 1rem;
 }
 
@@ -1640,8 +1640,8 @@ blockquote p:last-child {
 
 .styled-dtext div.expandable::after {
   content: "\f103";
-  font-size: 3rem;
-  top: 1.125rem;
+  font-size: 2.5rem;
+  top: 0.55rem;
   right: 1rem;
 }
 
@@ -1667,8 +1667,8 @@ blockquote p:last-child {
 
 .styled-dtext pre::after {
   content: "\f121";
-  font-size: 2rem;
-  top: 1rem;
+  font-size: 1.75rem;
+  top: 0.5rem;
   right: 1rem;
 }
 

@@ -620,7 +620,7 @@ div#c-comments div#a-index div.post article.comment img { border: unset; }
   div#c-blips article.blip div.author, div#c-blips article.blip div.content { margin: unset; } }
 
 /* --- Comment / Post Features --- */
-.styled-dtext blockquote, .styled-dtext div.expandable, .styled-dtext pre { position: relative; z-index: 10; -webkit-box-shadow: none; box-shadow: none; border-radius: 3px; padding: 1rem; margin: 0 0 1rem; border: 1px solid #1f3c67; border-left: 0.25rem solid maroon; background: rgba(43, 83, 142, 0.7); }
+.styled-dtext blockquote, .styled-dtext div.expandable, .styled-dtext pre { position: relative; z-index: 10; -webkit-box-shadow: none; box-shadow: none; border-radius: 3px; padding: 0.5rem 1rem; margin: 0 0 1rem; border: 1px solid #1f3c67; border-left: 0.25rem solid maroon; background: rgba(43, 83, 142, 0.7); }
 
 [data-theme=pony] .styled-dtext blockquote, [data-theme=pony] .styled-dtext div.expandable, [data-theme=pony] .styled-dtext pre { border: 1px solid #453269; border-left: 0.25rem solid maroon; background: rgba(92, 66, 140, 0.7); }
 
@@ -644,7 +644,7 @@ blockquote p:last-child { margin-bottom: unset; }
 
 .styled-dtext div.expandable { padding: unset; }
 
-.styled-dtext div.expandable div.expandable-header { padding: 1rem; }
+.styled-dtext div.expandable div.expandable-header { padding: 0.5rem 1rem; }
 
 .styled-dtext div.expandable div.expandable-content { padding: 0 1rem 1rem; }
 
@@ -668,7 +668,7 @@ blockquote p:last-child { margin-bottom: unset; }
 
 [data-theme=hotdog] .styled-dtext blockquote { border-left-color: #67717b; }
 
-.styled-dtext blockquote::after { content: "\f10e"; font-size: 2.5rem; top: 1.125rem; right: 1rem; }
+.styled-dtext blockquote::after { content: "\f10e"; font-size: 2rem; top: 0.5rem; right: 1rem; }
 
 .styled-dtext div.expandable { border-left-color: #ffe380; }
 
@@ -680,7 +680,7 @@ blockquote p:last-child { margin-bottom: unset; }
 
 [data-theme=hotdog] .styled-dtext div.expandable { border-left-color: #ffe380; }
 
-.styled-dtext div.expandable::after { content: "\f103"; font-size: 3rem; top: 1.125rem; right: 1rem; }
+.styled-dtext div.expandable::after { content: "\f103"; font-size: 2.5rem; top: 0.55rem; right: 1rem; }
 
 .styled-dtext pre { border-left-color: #17a2b8; }
 
@@ -692,7 +692,7 @@ blockquote p:last-child { margin-bottom: unset; }
 
 [data-theme=hotdog] .styled-dtext pre { border-left-color: #427982; }
 
-.styled-dtext pre::after { content: "\f121"; font-size: 2rem; top: 1rem; right: 1rem; }
+.styled-dtext pre::after { content: "\f121"; font-size: 1.75rem; top: 0.5rem; right: 1rem; }
 
 div#c-posts div#a-show #artist-commentary { border-color: #b4c7d9; padding: unset; }
 

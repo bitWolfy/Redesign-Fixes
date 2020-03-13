@@ -69,7 +69,7 @@ div#c-comments div#a-index div.post article.comment img {       // Bugfix: user 
     z-index: 10;
     box-shadow: none;
     border-radius: 3px;
-    padding: 1rem;
+    padding: 0.5rem 1rem;
     margin: 0 0 1rem;
     @include themable {
         border: 1px solid themed("color-section");
@@ -93,7 +93,7 @@ div#c-posts div#a-show #artist-commentary {
 blockquote p:last-child { margin-bottom: unset; }
 .styled-dtext div.expandable { padding: unset; }
 .styled-dtext div.expandable div.expandable-header {
-    padding: 1rem;
+    padding: 0.5rem 1rem;
 }
 .styled-dtext div.expandable div.expandable-content {
     padding: 0 1rem 1rem;
@@ -120,8 +120,8 @@ blockquote p:last-child { margin-bottom: unset; }
 }
 .styled-dtext blockquote::after {
     content: "\f10e"; // fa-quote-right
-    font-size: 2.5rem;
-    top: 1.125rem;
+    font-size: 2rem;
+    top: 0.5rem;
     right: 1rem;
 }
 
@@ -130,8 +130,8 @@ blockquote p:last-child { margin-bottom: unset; }
 }
 .styled-dtext div.expandable::after {
     content: "\f103";
-    font-size: 3rem;
-    top: 1.125rem;
+    font-size: 2.5rem;
+    top: 0.55rem;
     right: 1rem;
 }
 
@@ -140,8 +140,8 @@ blockquote p:last-child { margin-bottom: unset; }
 }
 .styled-dtext pre::after {
     content: "\f121";
-    font-size: 2rem;
-    top: 1rem;
+    font-size: 1.75rem;
+    top: 0.5rem;
     right: 1rem;
 }
 
