@@ -740,6 +740,68 @@ div#page div.site-notice {
   color: #000000;
 }
 
+div#notice {
+  position: absolute;
+  top: 5rem;
+  left: 25%;
+  z-index: 100;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 50%;
+  padding: 0.25rem 1rem;
+  color: #ffffff;
+  background-color: darkgreen;
+  border: 1px solid #152f56;
+}
+
+[data-theme=pony] div#notice {
+  color: #ffffff;
+  background-color: darkgreen;
+  border: 1px solid #2f175c;
+}
+
+[data-theme=bloodlust] div#notice {
+  color: #ffffff;
+  background-color: darkgreen;
+  border: 1px solid #222222;
+}
+
+[data-theme=serpent] div#notice {
+  color: #000000;
+  background-color: darkgreen;
+  border: 1px solid #dacf6b;
+}
+
+[data-theme=hotdog] div#notice {
+  color: #000000;
+  background-color: darkgreen;
+  border: 1px solid #FF0000;
+}
+
+div#notice.ui-state-error {
+  background-color: maroon;
+}
+
+[data-theme=pony] div#notice.ui-state-error {
+  background-color: maroon;
+}
+
+[data-theme=bloodlust] div#notice.ui-state-error {
+  background-color: maroon;
+}
+
+[data-theme=serpent] div#notice.ui-state-error {
+  background-color: maroon;
+}
+
+[data-theme=hotdog] div#notice.ui-state-error {
+  background-color: maroon;
+}
+
 /* --- Header --- */
 header#top {
   color: #ffffff;
