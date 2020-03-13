@@ -3139,25 +3139,25 @@ div#c-users div#a-show > div.profile-container:last-child {
 
 /* Profile statistics - get rid of striping, add background for clarity */
 div.profile-stats {
-  background: #1f3c67;
   padding: 0.5rem;
+  background: rgba(31, 60, 103, 0.8);
   border-radius: 4px;
 }
 
 [data-th-main=pony] div.profile-stats {
-  background: #453269;
+  background: rgba(69, 50, 105, 0.8);
 }
 
 [data-th-main=bloodlust] div.profile-stats {
-  background: #333333;
+  background: rgba(51, 51, 51, 0.8);
 }
 
 [data-th-main=serpent] div.profile-stats {
-  background: #fff48b;
+  background: rgba(255, 244, 139, 0.8);
 }
 
 [data-th-main=hotdog] div.profile-stats {
-  background: #c53c38;
+  background: rgba(197, 60, 56, 0.8);
 }
 
 [data-th-look=modern] div.profile-stats {
@@ -3167,6 +3167,7 @@ div.profile-stats {
 div#c-users div#a-show table.user-statistics tbody tr {
   border-bottom: 0;
   height: unset;
+  background-color: unset;
 }
 
 div#c-users div#a-show table.user-statistics tbody tr:hover {

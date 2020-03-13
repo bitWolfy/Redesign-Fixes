@@ -17,8 +17,10 @@ div#c-users div#a-show > div.profile-container:last-child {
 }
 /* Profile statistics - get rid of striping, add background for clarity */
 div.profile-stats {
-    @include themable { background: themed("color-section"); }
     padding: 0.5rem;
+    @include themable {
+        background: rgba( themed("color-section"), 0.8);
+    }
     @include themable($theme_look_index) {
         border-radius: themed("border-radius-half");
     }
@@ -26,6 +28,7 @@ div.profile-stats {
 div#c-users div#a-show table.user-statistics tbody tr {                     // TODO The whole table should be converted into a grid
     border-bottom: 0;                                                       // Would have better mobile support, too
     height: unset;
+    background-color: unset;
 }
 div#c-users div#a-show table.user-statistics tbody tr:hover {
     background-color: unset;
