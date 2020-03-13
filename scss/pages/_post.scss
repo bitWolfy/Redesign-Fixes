@@ -121,7 +121,10 @@ div#image-download-link a:hover {
 
 /* Notices */
 div#c-posts div.notice.notice-appealed,
-div#c-posts div.notice.notice-resized {
+div#c-posts div.notice.notice-resized,
+div#c-posts div.notice.notice-child,
+div#c-posts div.notice.notice-parent,
+div#c-posts div.notice.notice-pending {
     @include themable {
         background: themed("color-section");
         border: 1px solid themed("color-foreground");
