@@ -381,7 +381,7 @@ header#top { color: #ffffff; background-color: #020F23; background-image: url("d
 
 body.resp #maintoggle { top: 1vw; left: 3vw; right: unset; }
 
-@media (min-width: 800px) { header#top h1 { display: inline-block; margin: 0 0 0 28px; font-size: 1.2em; font-weight: 400; font-family: Verdana, sans-serif; }
+@media (min-width: 800px) { header#top h1 { display: inline-block; margin: 0 0 0 2rem; font-size: 1.2em; font-weight: 400; font-family: Verdana, sans-serif; }
   header#top nav#nav { display: inline; }
   header#top menu.main { display: inline-block; } }
 

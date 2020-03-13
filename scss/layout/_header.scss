@@ -18,7 +18,7 @@ body.resp #maintoggle {
 @include media-breakpoint(tablet) {                                 // TODO HACK On one hand, this is a terrible hack.
     header#top h1 {                                                 // On the other hand, the mobile breaks without the giant logo.
         display: inline-block;
-        margin: 0 0 0 28px;
+        margin: 0 0 0 2rem;
         font-size: 1.2em;
         font-weight: 400;
         font-family: Verdana, sans-serif;

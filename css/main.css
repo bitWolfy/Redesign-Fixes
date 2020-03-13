@@ -910,7 +910,7 @@ body.resp #maintoggle {
 @media (min-width: 800px) {
   header#top h1 {
     display: inline-block;
-    margin: 0 0 0 28px;
+    margin: 0 0 0 2rem;
     font-size: 1.2em;
     font-weight: 400;
     font-family: Verdana, sans-serif;
