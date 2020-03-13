@@ -3285,9 +3285,9 @@ div#c-users div#a-show div.box.user-favorites div.vertical-section,
 div#c-users div#a-show div.box.user-uploads div.vertical-section {
   height: 12rem;
   -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;

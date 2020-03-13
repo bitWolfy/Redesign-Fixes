@@ -1270,7 +1270,7 @@ div#c-users div#a-show div.box.user-favorites h2, div#c-users div#a-show div.box
 
 [data-th-look=modern] div#c-users div#a-show div.box.user-favorites h2, [data-th-look=modern] div#c-users div#a-show div.box.user-uploads h2 { border-radius: 0px; }
 
-div#c-users div#a-show div.box.user-favorites div.vertical-section, div#c-users div#a-show div.box.user-uploads div.vertical-section { height: 12rem; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; -webkit-box-pack: space-evenly; -ms-flex-pack: space-evenly; justify-content: space-evenly; margin: 0 0 0 2rem; }
+div#c-users div#a-show div.box.user-favorites div.vertical-section, div#c-users div#a-show div.box.user-uploads div.vertical-section { height: 12rem; -webkit-box-orient: horizontal; -webkit-box-direction: reverse; -ms-flex-direction: row-reverse; flex-direction: row-reverse; -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; -webkit-box-pack: space-evenly; -ms-flex-pack: space-evenly; justify-content: space-evenly; margin: 0 0 0 2rem; }
 
 div#c-users div#a-show div.box.user-favorites h4, div#c-users div#a-show div.box.user-uploads h4 { text-align: center; }
 
