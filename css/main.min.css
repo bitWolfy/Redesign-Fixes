@@ -1434,6 +1434,31 @@ div#c-users div#a-show .about-section .about-piece { background: #1f3c67; margin
 
 div#c-users div#a-show .about-section .about-piece:first-child { margin-left: unset; }
 
+/* User Feedback */
+div#c-moderator-dashboards div#col2 .feedback-category-positive, div#c-user-feedbacks .feedback-category-positive { background: #004b00 !important; }
+
+[data-theme=hexagon] div#c-moderator-dashboards div#col2 .feedback-category-positive, [data-theme=hexagon] div#c-user-feedbacks .feedback-category-positive { background: #004b00 !important; }
+
+[data-theme=pony] div#c-moderator-dashboards div#col2 .feedback-category-positive, [data-theme=pony] div#c-user-feedbacks .feedback-category-positive { background: #004b00 !important; }
+
+[data-theme=bloodlust] div#c-moderator-dashboards div#col2 .feedback-category-positive, [data-theme=bloodlust] div#c-user-feedbacks .feedback-category-positive { background: #004b00 !important; }
+
+[data-theme=serpent] div#c-moderator-dashboards div#col2 .feedback-category-positive, [data-theme=serpent] div#c-user-feedbacks .feedback-category-positive { background: #004b00 !important; }
+
+[data-theme=hotdog] div#c-moderator-dashboards div#col2 .feedback-category-positive, [data-theme=hotdog] div#c-user-feedbacks .feedback-category-positive { background: #004b00 !important; }
+
+div#c-moderator-dashboards div#col2 .feedback-category-negative, div#c-user-feedbacks .feedback-category-negative { background: #670000 !important; }
+
+[data-theme=hexagon] div#c-moderator-dashboards div#col2 .feedback-category-negative, [data-theme=hexagon] div#c-user-feedbacks .feedback-category-negative { background: #670000 !important; }
+
+[data-theme=pony] div#c-moderator-dashboards div#col2 .feedback-category-negative, [data-theme=pony] div#c-user-feedbacks .feedback-category-negative { background: #670000 !important; }
+
+[data-theme=bloodlust] div#c-moderator-dashboards div#col2 .feedback-category-negative, [data-theme=bloodlust] div#c-user-feedbacks .feedback-category-negative { background: #670000 !important; }
+
+[data-theme=serpent] div#c-moderator-dashboards div#col2 .feedback-category-negative, [data-theme=serpent] div#c-user-feedbacks .feedback-category-negative { background: #670000 !important; }
+
+[data-theme=hotdog] div#c-moderator-dashboards div#col2 .feedback-category-negative, [data-theme=hotdog] div#c-user-feedbacks .feedback-category-negative { background: #670000 !important; }
+
 /* === SETTINGS === */
 div#c-users div#a-edit h2#edit-options .active { color: #e8c446; }
 

@@ -21,8 +21,8 @@ div.profile-stats {
     padding: 0.5rem;
     border-radius: 4px;
 }
-div#c-users div#a-show table.user-statistics tbody tr {
-    border-bottom: 0;
+div#c-users div#a-show table.user-statistics tbody tr {                     // TODO The whole table should be converted into a grid
+    border-bottom: 0;                                                       // Would have better mobile support, too
     height: unset;
 }
 div#c-users div#a-show table.user-statistics tbody tr:hover {
@@ -102,4 +102,19 @@ div#c-users div#a-show .about-section .about-piece {
 }
 div#c-users div#a-show .about-section .about-piece:first-child {
     margin-left: unset;
+}
+
+/* User Feedback */
+div#c-moderator-dashboards div#col2 .feedback-category-positive,
+div#c-user-feedbacks .feedback-category-positive {
+    @include themable {
+        background: darken( themed("color-success"), 5%) !important;    // TODO Get rid of !important on the original style. No reason to have it.
+    }
+}
+
+div#c-moderator-dashboards div#col2 .feedback-category-negative,
+div#c-user-feedbacks .feedback-category-negative {
+    @include themable {
+        background: darken( themed("color-danger"), 5%) !important;
+    }
 }
