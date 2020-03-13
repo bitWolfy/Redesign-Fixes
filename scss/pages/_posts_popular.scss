@@ -10,7 +10,7 @@ div#c-explore-posts div#a-popular section#blacklist-box {
     flex-basis: 100%;
 }
 
-@media screen and (max-width: 800px) {
+@include media-breakpoint-upto("tablet") {
     body.resp div#page div#c-explore-posts div#a-popular {
         flex-flow: wrap;
         align-items: center;

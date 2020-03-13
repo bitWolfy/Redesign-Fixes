@@ -1,10 +1,7 @@
 /* === SIDEBAR === */
-span.search-help a { font-size: 0; }                            // Make the help links (quite) a bit smaller
-span.search-help a::after {                                     // TODO HACK replace the original instead
-    content: "search help";
-    font-size: 0.7rem;
+div#page aside#sidebar h1 span.search-help {
     float: right;
-    margin-top: 10px;
+    font-size: 80%;
 }
 
 /* Desktop Searchbox */
@@ -21,20 +18,9 @@ div#page aside#sidebar #search-box button[type=submit] {
     border-left: 1px solid #ccc;
 }
 
-/* Desktop - Mobile Searchbox Switching */
-#search-box { display: none; }
-@media only screen and (min-width: 801px) {
+#search-box { display: none; }                                  // Hide the desktop searchbox on mobile
+@include media-breakpoint(tablet) {
     #search-box { display: block; }
-}
-
-/* Tag List */
-div#c-posts aside#sidebar #tag-list h2 {                        // Tags list - smootherer and bolder fonts
-    font-family: verdana, sans-serif;
-}
-.post-count {                                                   // De-emphasize the post count, courtesy of Zermelane
-    @include themable { color: themed("color-text-muted"); }
-    font-size: 85%;
-    font-weight: 500;
 }
 
 /* Mobile Searchbox */
@@ -45,11 +31,51 @@ div#c-posts aside#sidebar #tag-list h2 {                        // Tags list - s
     float: right;                                               // Multi-device styling! https://i.imgur.com/Ong1enY.png
     margin-bottom: 0.5rem;
 }
-body.resp .mobile-search>.search-form>form .search-input input {
+.mobile-search .search-form form .search-input input {
     border-radius: 4px 0 0 4px;
     box-sizing: border-box;
 }
-body.resp .mobile-search>.search-form>form .search-button>button {
+.mobile-search .search-form form .search-button button {
     border-radius: 0 4px 4px 0;
     border-left: 1px solid #ccc;
+}
+
+/* Blacklist */
+a#disable-all-blacklists,
+a#re-enable-all-blacklists {
+    display: inline-block;
+    font-size: 1rem;
+    padding: 0.25rem 0.5rem;
+    margin-top: 0.25rem;
+    border: 0;
+    border-radius: 3px;
+    @include themable { color: themed("color-text-white"); }
+}
+a#disable-all-blacklists {
+    content: "Disable all filters";                             // TODO HACK replace the original link text instead
+    @include themable { background: themed("color-danger"); }
+}
+a#re-enable-all-blacklists {
+    content: "Enable all filters";                              // TODO HACK replace the original link text instead
+    @include themable { background: themed("color-success"); }
+}
+a.blacklist-toggle-link:before { content: "» "; }
+
+#blacklist-box.sidebar-blacklist ul li {                        /* Bugfix: remove extraneous list dots (favorites page only) */
+    list-style-type: none;
+}
+
+div#page aside#sidebar h1 span.blacklist-help {
+    float: right;
+    font-size: 80%;
+}
+
+/* Tag List */
+div#c-posts aside#sidebar #tag-list h2 {                        // Tags list - smootherer and bolder fonts
+    font-family: verdana, sans-serif;
+}
+.post-count {                                                   // De-emphasize the post count, courtesy of Zermelane
+    @include themable { color: themed("color-text-muted"); }
+    font-size: 85%;
+    font-weight: 500;
 }

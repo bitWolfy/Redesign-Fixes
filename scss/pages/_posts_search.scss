@@ -1,8 +1,12 @@
 /* === SEARCH PAGE === */
 div#c-posts div#a-index menu#post-sections { display: none; }   /* Hide "posts" header in search page (useless?) */
 
-article picture img { border-radius: 4px 4px 0 0; }             /* Give the thumbnails their rounded corners back */
-div#page aside#sidebar h1 { margin-bottom: 5px; }               /* Minor padding fix for the tag and blacklist */
+article picture img {
+    border-radius: 4px 4px 0 0;
+    max-height: 10rem;
+    max-width: 10rem;
+}
+div#page aside#sidebar h1 { margin-bottom: 0.25rem; }           /* Minor padding fix for the tag and blacklist */
 
 #mode-box-mode {                                                /* Make the mode box match size with the search bar */
     width: 15em;
@@ -21,54 +25,19 @@ article.post-preview div.desc {
 @include media-breakpoint(tablet) {
     div#posts div#posts-container {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(154px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
         grid-column-gap: 1.5%;
         align-items: self-end;
     }
 
     article.post-preview {                                      /* Space out the thumbnails a bit more */
-        margin: 10px;
+        margin: 0.5rem;
         max-width: max-content;
     }
     article.post-preview div.desc {
         width: inherit;
         margin: 0 auto;
     }
-}
-
-/* Blacklist */
-#blacklist-list { margin-bottom: 10px; }                        /* Beautify the blacklist filters on the search page */
-a#disable-all-blacklists,
-a#re-enable-all-blacklists { font-size:0; }
-a#disable-all-blacklists::after,
-a#re-enable-all-blacklists::after {
-    border: 0;
-    @include themable {
-        color: themed("color-text-white");
-    }
-    box-shadow: none;
-    padding: 3px 10px;
-    font-size: 0.8rem;
-    border-radius: 4px;
-}
-a#disable-all-blacklists::after {
-    content: "Disable all filters";                             // TODO HACK replace the original instead
-    @include themable { background: themed("color-danger"); }
-}
-a#re-enable-all-blacklists::after {
-    content: "Enable all filters";                              // TODO HACK replace the original instead
-    @include themable { background: themed("color-success"); }
-}
-a.blacklist-toggle-link:before { content: "» "; }
-
-#blacklist-box.sidebar-blacklist ul li {                        /* Bugfix: remove extraneous list dots (favorites page only) */
-    list-style-type: none;
-}
-
-span.blacklist-help a { font-size: 0; }                         // Replace the giant blacklist help link with a small (?) one
-span.blacklist-help a::after {                                  // TODO HACK replace the original instead
-    content: "(?)";
-    font-size: 0.8rem;
 }
 
 /* Animation Type Badges */
@@ -82,17 +51,17 @@ article.post-preview[data-tags~="mp4"]::before,
 article.post-preview[data-tags~="flash"]::before,
 article.post-preview[data-tags~="webm"]::before {
     position: absolute;
-    left: -2px;
-    top: 10px;
+    left: 0;
     z-index: 10;
     
     @include themable {
-        background-color: themed("color-highlight");
+        background-color: themed("color-section");
         border: 1px solid themed("color-text-white");
     }
     width: unset;
     height: unset;
-    padding: 1px 5px 1px 5px;
+    padding: 0.125rem 0.25rem;
+    margin: 0.25rem 0;
     border-radius: 5px;
     font-size: 0.6em;
     font-weight: 700;

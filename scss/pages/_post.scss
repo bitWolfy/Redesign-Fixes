@@ -126,7 +126,7 @@ section#comments {                                                     // Cleane
     box-shadow: unset;
 }
 #comments h2:first-of-type { display: none; }                   // TODO HACK This reminder should go somewhere near the new comment box instead
-div.comments-for-post div.list-of-comments article.comment {    // Get rid of the box shadows. It's not the 90s anymore.
+div.comments-for-post div.list-of-comments article.comment {
     box-shadow: none;
 }
 #new_comment .text label { display: none; }                     // No need to label the comment textbox

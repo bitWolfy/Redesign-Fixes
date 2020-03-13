@@ -23,10 +23,10 @@ div#c-comments div#a-show div.post {
 }
 
 div#c-comments div#a-index div.post article.comment img {       // Bugfix: user avatars shouldn't recieve the parent post's status borders
-    border: 0px;
+    border: unset;
 }
 
-@media screen and (max-width: 801px) {
+@include media-breakpoint-upto("tablet") {
     div.comments-for-post div.list-of-comments article.comment,
     div#c-comments div#a-index div#p-index-by-post div.post-preview {
         flex-flow: row wrap;
@@ -58,9 +58,11 @@ div#c-comments div#a-index div.post article.comment img {       // Bugfix: user 
     z-index: 10;
     box-shadow: none;
     border-radius: 3px;
+    padding: 1rem;
+    margin: 0 0 1rem;
     @include themable {
         border: 1px solid themed("color-section");
-        border-left: 4px solid themed("color-danger");
+        border-left: 0.25rem solid themed("color-danger");
         background: rgba( lighten( themed("color-section"), 10%), 0.7);
     }
 }
@@ -72,9 +74,18 @@ div#c-posts div#a-show #artist-commentary {
     border: none;
     border-radius: 3px;
     @include themable {
-        border-left: 4px solid themed("color-danger");
+        border-left: 0.25rem solid themed("color-danger");
         background: rgba( lighten( themed("color-section"), 10%), 0.7);
     }
+}
+
+blockquote p { margin-bottom: unset; }
+.styled-dtext div.expandable { padding: unset; }
+.styled-dtext div.expandable div.expandable-header {
+    padding: 1rem;
+}
+.styled-dtext div.expandable div.expandable-content {
+    padding: 0 1rem;
 }
 
 .styled-dtext blockquote::after,
@@ -82,44 +93,48 @@ div#c-posts div#a-show #artist-commentary {
 .styled-dtext pre::after {
     content: "";
     position: absolute;
-    top: 0; left: 0; bottom: 0; right: 0;
     z-index: -1;
+
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    opacity: 0.4;
+
+    @include themable {
+        color: themed("color-section");
+    }
 }
 
 .styled-dtext blockquote {
     @include themable { border-left-color: themed("color-detail-quote"); }
 }
 .styled-dtext blockquote::after {
-    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAADbUlEQVR4Xu2aS8hOQRiAn9/dDsVPSFkgC5ey+7GwkUspt3ItJVE26I+Sa4qEBUoolyK5ZqOwkCxsJAvKwrUksVJE7nprvjqdzjkzc85c+vpnlt/3nnlmnnnPOTNnpoMeXjp6eP9JAlIGlBvoB3QB44EBNUX9AJ4DD4GflnUIf7ri97e8thWu5RfdAvLbemA3MKwmOH/ZR2AXcAr4p6mzF7BBxQ/1zc8L6A2cAVY7AuerOQusBf6W1C/8c8DKUPy8gL3ADk/wVrWSCcIpKvuA7SH5WQGjgddAH88NkGfBWOB9jjMGeBmanxWwFTjgufOt6rcAR3KsbcD+0PysgMvA0kANuFhwn18BloTmZwXcBmYHasAtYH6OFYWfBGRGIcoIxOanDIg9ArH5KQNij0BsfsqA2CMQm58yIPYIxOanDIg9ArH5KQMyIyArtLkRV4NR+NkMOAmsiyggCj8rYBFwLaKAKPysgL7AM2BcAAlFH0Si8PNfhacBD4CBniUUCRBkcH7RxsgM4CrQ6VFCmQBBBuWXbY4OBjYCC4EJDbbGyhxWCZBrgvFd7Q7L3t0s4Lj65q9LHp0A3fX5/2vzXQloNWgU8BQYpOmBawG1+a4FSEOOqdunyoEvAdZ8HwI2A4cjZYBgrfg+BGwq2PbK+/CZAVZ8HwJ2Ans0GXADkJmfj2LF9yHgArBC0zOZ98shDB/Fiu9agBxweAeM0PRMdqIPeui9Nd+1gAXATYOOySbsXYM42xBrvksBsn54og41VTX8FzAE+GrbO018Lb4rAVLPeWCVQad8vAFq810IkGnoCWCNQeclZDFw3TDWJKwRv6mAmcBRYLJJS4FXanH12zBeF9aYbyJgKjBStUTO8Mk8fyIwB5ika2Hu/+XAJctrvPJ1AuRV1W3Z4LLw+2rFqDsomb3eO79KwHDgg6POfwZkJN9a1BeEXyVAPoTIOd+m5Q8wD7hjWVEQvm8B0nl5Ndre9+LKhQAt36eAL8AyQN77dUpTAUZ8XwIeqQXRizo9V9c0EWDMdy1AjsXLUliOxUv6NSl1BFjzqwTIDEue2vI01hVZA5xW0+FvumDD/4PwdfOAKcAhQD52tsp34JOa1T0G7gFvDDtlG+adrxNg2+C2i08C2m7IHDc4ZYBjoW1XXcqAthsyxw1OGeBYaNtV9x+FQfhBevvUcAAAAABJRU5ErkJggg==');
-    background-repeat: no-repeat;
-    background-position: 99% 0px;
-    background-size: 3rem;
-    opacity: 0.15;
+    content: "\f10e"; // fa-quote-right
+    font-size: 2.5rem;
+    top: 1.125rem;
+    right: 1rem;
 }
+
 .styled-dtext div.expandable {
     @include themable {  border-left-color: themed("color-detail-expandable"); }
 }
 .styled-dtext div.expandable::after {
-    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACxElEQVR4Xu2bPasVMRCGnwsqiiIoCIJw8TfY2mhjIyoWtqKFcP3EVrCzsVP8xkZBsBAsROyuaC/+B+20URC1UBAZPIHDmt1Nzs7smeGc1JvJvE+yk9lkdoUFbysLrp8lgOUK8E1gA3Ac2DPQzR/Ac+BL0473V+AZcGKg+NT9A7AP+DptzzOAVeCjkvhk5jTwOAqAncAnYKMihIvAnSgAxM9zwN1FBiDaZdZuKUEItwKSbi0IYQForYTQADQghAcgEO4DazPGhPAADgEvgM2LCGCo+PQKhcoD0kRriA8LQEt8SACa4sMBqBH/E3gEnO8JjmF2gVrxh4G3BWlzCACzii9Jm90DGCq+D4JrAFriuyAcBV56PA/QFp80ngVuApuAJ8Ap4I83APuB9cL0VqJ9Cnil2fB2YAvwOdfBw5ngVeBagZpZxPea9QBg6+S9PNjhrYl4Gc8DAPGjC4KZeE8A2iCYivcGoAnBXLxHAAmCJCyvgXe9UWzgA2PFANnqJMjdAOSezk0bA8B0kvMGOOIJgjWAXIbnCoIlgK701g0EKwAlub0LCBYASsSnIHgFuD7PiNgFQO7nv+eqKjocrhEv+/yBMba6LsA5AFKW8nRSmfEbuAzcK5ilWvG1X3UFLtQ/kgMgJSlSmjLdLgG3FWfehfi2TFBmXBKWZmuDEHLmk7jcCmgDIH2aEEKLr10BCVqCEF78rACk34PJ+VrJLe0oX3X14e9fj9pXoHYc1+KtAbgXbwkghHgrAGHEWwAIJd4CgFR1XqiNlPN83mIX6Eub56n3v7EtAOQyRleip52xAhAGgiWAEBCsAQgEKXmX6k6XbQwAv4BdwDePBHIAzgAPlZ3d3XY/rzxOtbkcAPlV5T2wt9pavoNUZpxUsqVupu1QdAdwDNg2cET56elVsyxloE3V7hbH4qoOWhtbArAm7N3+wq+Av1Bqq0G9esf7AAAAAElFTkSuQmCC');
-    background-repeat: no-repeat;
-    background-position: 99% 0px;
-    background-size: 3rem;
-    opacity: 0.15;
+    content: "\f103";
+    font-size: 3rem;
+    top: 1.125rem;
+    right: 1rem;
 }
+
 .styled-dtext pre {
     @include themable { border-left-color: themed("color-detail-code"); }
 }
 .styled-dtext pre::after {
-    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAB6UlEQVR4Xu2Z227EIAxEvV/e9stb8UAVRdw8HhMIRtpHbM/xQJzNRw5fn8P1SwAIBxxOII7A4QaISzCOQByBwwnEESAb4FtE0s9zUXMwHZAK+xJxf7L8isgPCzQLQBafOs+KWXNRApAWBQKj2Kv4mQAoEKwA7uJnAzBDsAAoiX8CgAkCCqAm/ikAMAQEQEv8kwAgCFoAPfGUm7kzRFBr0ACgJjZOSrRaRgHQEhqFX7dTahoBQElEFE6F0AMwWzySD9nzD7EFwBQY6LglH7y3BgAOCAhPWxj5oBglAFAgUDhLfE6vrv0OQB3AIJwtHoJwBfAG8WoIGcCbxKsgJABvFD8MYTaA5WDPPALLiU/un3UJLim+9O7uUahHzNbTV5XPexBSFWOcKaC5wnMUXl587+8riwDLXsQIcD6P12G4GES5dY7pAYDOFSgE2WaGPQJgVQhm8b074N4RSkKkzYU9tFpGHTA8W7O+2jZA0cRrHTAKQQtVa4r8dbi0T/1dAi221QU05iiIGgC1eNQBPSc8AQASbwVQezrMBgCLZwAoQZgJwCSeBeAOYRYAs3gmgCuEGQAo4tkAMoT0hPBcKT4th3e3PEFQYgcACsaNg4QDNm4epfRwAAXjxkHCARs3j1J6OICCceMgxzvgD8gGrUFnCXrbAAAAAElFTkSuQmCC');
-    background-repeat: no-repeat;
-    background-position: 99% 0px;
-    background-size: 3rem;
-    opacity: 0.15;
+    content: "\f121";
+    font-size: 2rem;
+    top: 1rem;
+    right: 1rem;
 }
+
 div#c-posts div#a-show #artist-commentary {
     @include themable { border-color: themed("color-detail-quote"); }
     padding: unset;
 }
-
-.styled-dtext div.expandable div.expandable-header { margin: 0 1rem; }
-.styled-dtext div.expandable div.expandable-content { margin: 0 1rem; padding: 0 0 1rem; }
