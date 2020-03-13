@@ -1831,7 +1831,7 @@ blockquote p:last-child {
 }
 
 .styled-dtext div.expandable div.expandable-content {
-  padding: 0 1rem;
+  padding: 0 1rem 1rem;
 }
 
 .styled-dtext blockquote::after,

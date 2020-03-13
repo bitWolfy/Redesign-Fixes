@@ -767,7 +767,7 @@ blockquote p:last-child { margin-bottom: unset; }
 
 .styled-dtext div.expandable div.expandable-header { padding: 1rem; }
 
-.styled-dtext div.expandable div.expandable-content { padding: 0 1rem; }
+.styled-dtext div.expandable div.expandable-content { padding: 0 1rem 1rem; }
 
 .styled-dtext blockquote::after, .styled-dtext div.expandable::after, .styled-dtext pre::after { content: ""; position: absolute; z-index: -1; font-family: 'Font Awesome 5 Free'; font-weight: 900; opacity: 0.4; color: #1f3c67; }
 
