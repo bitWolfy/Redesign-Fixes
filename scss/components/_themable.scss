@@ -1,6 +1,6 @@
 @import '../themes/!index';
 
-@mixin themable($data_map: $theme_primary_index, $apply_to_self: false) {
+@mixin themable($data_map: $theme_main_index, $apply_to_self: false) {
     // Apply the default style to the original element
     $data_current: map-get($data_map, "default") !global;
     @content;

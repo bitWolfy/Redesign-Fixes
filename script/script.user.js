@@ -49,7 +49,7 @@ $(function() {
             <div id="customizer-popup-box" class="bg-section border-foreground color-text" style="display: none;">
                 <div class="customizer-label">Theme:</div>
                 <div class="customizer-controls">
-                    <select id="theme-primary-switcher">
+                    <select id="th-main-switcher">
                         <option value="hexagon">Hexagon</option>
                         <option value="pony">Pony</option>
                         <option value="bloodlust">Bloodlust</option>
@@ -59,14 +59,14 @@ $(function() {
                 </div>
                 <div class="customizer-label">Look:</div>
                 <div class="customizer-controls">
-                    <select id="theme-look-switcher">
+                    <select id="th-look-switcher">
                         <option value="classic">Classic</option>
                         <option value="modern">Modern</option>
                     </select>
                 </div>
                 <div class="customizer-label">Extras:</div>
                 <div class="customizer-controls">
-                    <select id="theme-extras-switcher">
+                    <select id="th-extra-switcher">
                         <option value="none">None</option>
                         <option value="autumn">Autumn</option>
                         <option value="winter">Winter</option>
@@ -108,9 +108,9 @@ $(function() {
         }
     });
 
-    handleThemeSwitcher("theme-primary", "hexagon");
-    handleThemeSwitcher("theme-look", "classic");
-    handleThemeSwitcher("theme-extras", "hexagons");
+    handleThemeSwitcher("th-main",  "hexagon");
+    handleThemeSwitcher("th-look",  "classic");
+    handleThemeSwitcher("th-extra", "hexagons");
 
     function handleThemeSwitcher(selector, def_option) {
         (async () => {
