@@ -3092,6 +3092,42 @@ div#c-posts div.notice.notice-pending {
   border: 1px solid #FF0000;
 }
 
+div#c-posts div.notice.notice-deleted,
+div#c-posts div.notice.notice-flagged {
+  background: #4d0000;
+  border: 1px solid #152f56;
+}
+
+[data-theme=hexagon] div#c-posts div.notice.notice-deleted, [data-theme=hexagon]
+div#c-posts div.notice.notice-flagged {
+  background: #4d0000;
+  border: 1px solid #152f56;
+}
+
+[data-theme=pony] div#c-posts div.notice.notice-deleted, [data-theme=pony]
+div#c-posts div.notice.notice-flagged {
+  background: #4d0000;
+  border: 1px solid #2f175c;
+}
+
+[data-theme=bloodlust] div#c-posts div.notice.notice-deleted, [data-theme=bloodlust]
+div#c-posts div.notice.notice-flagged {
+  background: #4d0000;
+  border: 1px solid #222222;
+}
+
+[data-theme=serpent] div#c-posts div.notice.notice-deleted, [data-theme=serpent]
+div#c-posts div.notice.notice-flagged {
+  background: #4d0000;
+  border: 1px solid #dacf6b;
+}
+
+[data-theme=hotdog] div#c-posts div.notice.notice-deleted, [data-theme=hotdog]
+div#c-posts div.notice.notice-flagged {
+  background: #4d0000;
+  border: 1px solid #FF0000;
+}
+
 /* Comments Style */
 section#comments {
   padding: unset;

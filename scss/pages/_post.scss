@@ -131,6 +131,14 @@ div#c-posts div.notice.notice-pending {
     }
 }
 
+div#c-posts div.notice.notice-deleted,
+div#c-posts div.notice.notice-flagged {
+    @include themable {
+        background: darken( themed("color-danger"), 10%);
+        border: 1px solid themed("color-foreground");
+    }
+}
+
 /* Comments Style */
 section#comments {                                                     // Cleaner, sleaker comment section
     padding: unset;
