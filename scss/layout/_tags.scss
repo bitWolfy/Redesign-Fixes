@@ -32,6 +32,12 @@
 .category-5 a:visited   { @include themable { color: themed("color-tag-species"); } }
 .category-5 a:hover     { @include themable { color: themed("color-tag-species-alt"); } }
 
+/* Meta */
+.category-7 a,
+.category-7 a:link,
+.category-7 a:visited   { @include themable { color: themed("color-tag-meta"); } }
+.category-7 a:hover     { @include themable { color: themed("color-tag-meta-alt"); } }
+
 /* Lore */
 .category-8 a,
 .category-8 a:link,

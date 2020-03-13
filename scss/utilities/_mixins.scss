@@ -1,12 +1,18 @@
 @import 'variables';
 
 // Responsive Breakpoints
+// Adds a media query for $size and above
 @mixin media-breakpoint($size) {
     @if map-has-key($resp-breakpoint, $size) {
         @media (min-width: map-get($resp-breakpoint, $size)) { @content; }
-    } @else {
-        @media (max-width: (map-get($resp-breakpoint, "mobile") - 1)) { @content; }
-    }
+    } @else { @content; }
+}
+
+// Adds a media query for up to $size
+@mixin media-breakpoint-upto($size) {
+    @if map-has-key($resp-breakpoint, $size) {
+        @media (max-width: map-get($resp-breakpoint, $size)) { @content; }
+    } @else { @content; }
 }
 
 @mixin resp-body-width($skip: ("mobile")) {

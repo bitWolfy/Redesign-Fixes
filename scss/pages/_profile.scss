@@ -5,8 +5,8 @@ div.profile-stats > h1 {
 }
 div.profile-stats > h1 > a {
     @include themable { background: themed("color-foreground"); }
-    padding: 3px 20px;
-    border-radius: 20px;
+    padding: 0.25rem 1.5rem;
+    border-radius: 1.5rem;
 }
 /* Padding for top part (table) of profile's page */
 div#c-users div#a-show div.profile-container {
@@ -18,7 +18,7 @@ div#c-users div#a-show > div.profile-container:last-child {
 /* Profile statistics - get rid of striping, add background for clarity */
 div.profile-stats {
     @include themable { background: themed("color-section"); }
-    padding: 10px;
+    padding: 0.5rem;
     border-radius: 4px;
 }
 div#c-users div#a-show table.user-statistics tbody tr {
@@ -33,9 +33,10 @@ div#c-users div#a-show table.user-statistics tbody th {
     width: 1%;
     white-space: nowrap;
 }
-div#c-users div#a-show table.user-statistics td {
+div#c-users div#a-show table.user-statistics tbody th,
+div#c-users div#a-show table.user-statistics tbody td {
     width: auto;
-    padding: 3px;
+    padding: 0.25rem 0.5rem;
 }
 
 /* User rating in profile's page (and everywhere) with bold fonts like before */ 
@@ -51,10 +52,9 @@ div#c-users div#a-show div.box.user-uploads {                       // Would be 
     display: inline-block;
     position: relative;
     flex: 0 0 100%;
-    height: 200px;
-    min-width: 30px;
+    height: 12rem;
+    min-width: 2rem;
     @include themable {
-        border: 1px solid themed("color-foreground");
         background: themed("color-section");
     }
     margin-bottom: 1em;
@@ -63,32 +63,32 @@ div#c-users div#a-show div.box.user-uploads {                       // Would be 
 div#c-users div#a-show div.box.user-favorites h2,                   // Links to Favorites and Uploads, to the side
 div#c-users div#a-show div.box.user-uploads h2 {
     @include themable {
-        border-bottom: 4px solid themed("color-foreground");
+        border-bottom: 0.25rem solid themed("color-foreground");
         background: themed("color-section");
     }
 
     position: absolute;
-    bottom: -39px;
+    bottom: -2.5rem;   // height + border + bottom padding
     transform: rotate(270deg);
     transform-origin: top left;
-    width: 200px;
-    height: 30px;
-    line-height: 30px;
-    padding: 0 0 5px;
+    width: 12rem;
+    height: 2rem;
+    line-height: 2rem;
+    padding: 0 0 0.25rem;
     text-align: center;
     overflow: hidden;
     border-radius: 4px;
 }
 div#c-users div#a-show div.box.user-favorites div.vertical-section,
 div#c-users div#a-show div.box.user-uploads div.vertical-section {
-    height: 200px;
+    height: 12rem;
     flex-direction: row;
     align-items: flex-end;
     justify-content: space-evenly;
-    margin: 0 20px 0 40px;
+    margin: 0 0 0 2rem;
 }
 div#c-users div#a-show div.box.user-favorites h4,                   // "Favorites hidden" text
-div#c-users div#a-show div.box.user-uploads h4 {
+div#c-users div#a-show div.box.user-uploads h4 {                    // TODO BUG If privacy mode is enabled, both this message and actual favorites are shown on your profile
     text-align: center;
 }
 

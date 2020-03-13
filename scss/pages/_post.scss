@@ -1,104 +1,56 @@
 /* === IMAGE PAGE === */
-/* Image Page Navigation Hack */                                // TODO HACK This is just horrible.
-div#nav-links { display: table-row-group; }                     // Re-order the elements on the image page
-div#nav-links div { margin: 5px; }                                
-section#image-container { display: table-header-group; }        // Order is as follows:
-div#pending-approval-notice { display: table-row-group; }       // - pool/search navigation
-div#ad-leaderboard { display: table-footer-group; }             // - notifications
-div#ad-leaderboard-content { margin: 15px auto; }               // - advertisemen
-
-div#c-posts div.notice.notice-pending {                         // Tweak the notices so that they don't interfere with the controls
-    text-align: center;
-    background: transparent;
+/* Search / Pool / Set Navigation */
+#pool-nav .first, #pool-nav .last {                             // TODO HACK Not sure if the links to go to the first and last pages of the pool are even necessary
+    display: none;                                              // But they sure make mobile navigation harder
 }
 
-/* Search Results Navigation */
-div#nav-links div#search-seq-nav {                              // TODO BUG This section stretches fully accross the page on Firefox
-    margin: 0;                                                  // Works fine on Chrome, though.
+div#c-posts div#nav-links {                                     // TODO HACK If the nav-links and the image were in the same container
+    background: transparent;                                    // It wold be possible to have the nav-links be the same size as the image
+    border: unset;                                              // The way it is now, doing so would also squish the comment section
+    padding: unset;
+    margin: unset;
 }
-#search-seq-nav ul li {
+
+div#c-posts div#a-show #pool-nav li,
+div#c-posts div#a-show #search-seq-nav li,
+div#c-posts div#a-show #set-nav li {
+    height: 2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    margin-bottom: 0.5rem;
+
     @include themable {
         background: themed("color-section");
     }
-    padding: 5px;
 }
-div#nav-links div#search-seq-nav span.search-name {
-    padding: 0 15px;
+div#c-posts div#a-show #pool-nav li:last-child,
+div#c-posts div#a-show #search-seq-nav li:last-child,
+div#c-posts div#a-show #set-nav li:last-child {
+    margin-bottom: unset;
 }
-div#nav-links div#search-seq-nav .prev,
-div#nav-links div#search-seq-nav .next {
+
+div#c-posts div#a-show #pool-nav li .prev,
+div#c-posts div#a-show #search-seq-nav li .prev,
+div#c-posts div#a-show #set-nav li .prev {
+    position: unset;
+    left: unset;
     top: unset;
 }
 
-/* Pool Navigation */
-#pool-nav .first, #pool-nav .last { display: none; }            // TODO HACK Not sure if the links to go to the first and last pages of the pool are even necessary
-div#c-posts div#a-show #pool-nav { margin: 5px 0; }             // But they sure make mobile navigation harder
-div#c-posts div#nav-links { background: transparent; }          // Honestly, I'm not really happy with my implementation of pool navigation altogether
-
-#pool-nav ul {
-    display: table;
-    table-layout: fixed;
-    width: stretch;
+div#c-posts div#a-show #pool-nav li .next,
+div#c-posts div#a-show #search-seq-nav li .next,
+div#c-posts div#a-show #set-nav li .next {
+    position: unset;
+    left: unset;
+    top: unset;
 }
 
-div#c-posts div#a-show #pool-nav li.pool-category-series {
-    height: 40px;
-    font-weight: 500;
-    padding: 5px 0;
-    @include themable {
-        border-bottom: 5px solid themed("color-foreground");
-        background: themed("color-section");
-    }
-}
-li.pool-category-series:last-child {
-    border-bottom: 0;
-}
-
-@include media-breakpoint(laptop) {
-    li.pool-category-series {
-        display: table-cell;
-        border-bottom: 0;
-        @include themable {
-            border-right: 10px solid themed("color-foreground");
-        }
-    }
-    li.pool-category-series:last-child {
-        border-right: 0;
-    }
-}
-
-#pool-nav .prev, #pool-nav .next {
-    padding: 10px 0;
-    width: 50%;
-    margin-top: 25px;
-    line-height: 1.25em;
-    font-weight: 700;
-    @include themable {
-        color: themed("color-link");
-    }
-}
-div#c-posts div#a-show #pool-nav li .prev { left: 0; font-size: 0; }
-div#c-posts div#a-show #pool-nav li .next { right: 0; font-size: 0; }
-#pool-nav .prev::after { content: "« Prev"; font-size: 1rem; }                          // TODO HACK replace the original instead
-#pool-nav .next::after { content: "Next »"; font-size: 1rem; }                          // TODO HACK replace the original instead
-#pool-nav a.prev:hover,
-#pool-nav a.next:hover { @include themable { color: themed("color-tag-pool"); } }
-
-#pool-nav span.prev,
-#pool-nav span.next {
-    @include themable {
-        color: themed("color-text-muted");
-    }
-}
-
-span.pool-name {
-    font-weight: 700;
-    padding: 0 15px;
-}
-
-/* Image controls - FAV, Download, Resize */
-#image-extra-controls {
-    margin-top: 10px;
+div#c-posts div#a-show .pool-name,
+div#c-posts div#a-show .search-name {
+    padding: 0 1rem;
 }
 
 /* Information Section */
@@ -110,16 +62,17 @@ div#c-posts .source-link:hover a {
 
 /* Sidebar Favorites Button */
 a#add-to-favorites,                                             // Recolor the sidebar favorites button to what it was before
-a#remove-from-favorites {
-    padding: 2px 4px;
+a#remove-from-favorites {                                       // TODO Just remove this one, the favorite button under the image should be enough
+    padding: 0.25rem 0.5rem;
     border-radius: 3px;
+    font-size: 1rem;
     @include themable {
         color: themed("color-text-white");
     }
 }
 section#post-options ul li:nth-child(1),                        // TODO HACK Best way to add margins to the fav/unfav buttons in the sidebar
 section#post-options ul li:nth-child(2) {                       // Just add classes / IDs to them. This is ridiculous.
-    margin: 5px 0;
+    margin: 0.5rem 0;
 }
 #post-options a#add-to-favorites,
 #post-options a#add-to-favorites:link,
@@ -140,16 +93,16 @@ div#c-posts .fav-buttons button.ui-button {                     // Replace the w
         color: themed("color-text-white");
     }
     box-shadow: none;
-    padding: 3px 10px;
+    padding: 0.25rem 0.5rem;
     font-size: 0em;
 }
 div.fav-buttons button#add-fav-button           { @include themable { background: themed("color-success"); } }
 div.fav-buttons button#add-fav-button:hover     { @include themable { background: darken( themed("color-success"), 5%); } }
-div.fav-buttons button#add-fav-button::after    { content: "+ Favorite"; font-size: 0.9rem; }       // TODO HACK replace the original instead
+div.fav-buttons button#add-fav-button::after    { content: "+ Favorite"; font-size: 1rem; }       // TODO HACK replace the original instead
 
 div.fav-buttons button#remove-fav-button        { @include themable { background: themed("color-danger"); } }
 div.fav-buttons button#remove-fav-button:hover  { @include themable { background: darken( themed("color-danger"), 5%); } }
-div.fav-buttons button#remove-fav-button::after { content: "- Unfavorite"; font-size: 0.9rem; }     // TODO HACK replace the original instead
+div.fav-buttons button#remove-fav-button::after { content: "- Unfavorite"; font-size: 1rem; }     // TODO HACK replace the original instead
 
 /* Download Button */
 div#image-download-link a {                                     // Recolor the download button to match the Favorite one
@@ -157,7 +110,8 @@ div#image-download-link a {                                     // Recolor the d
         background: themed("color-warning");
         color: themed("color-text-white");
     }
-    padding: 3px 10px;
+    font-size: 1rem;
+    padding: 0.25rem 0.5rem;
     border: 0;
     border-radius: 3px;
 }
@@ -166,39 +120,17 @@ div#image-download-link a:hover {
 }
 
 /* Comments Style */
-#comments {                                                     // Cleaner, sleaker comment section
-    padding: 0;
-    background: none;
-    box-shadow: none;
+section#comments {                                                     // Cleaner, sleaker comment section
+    padding: unset;
+    background: unset;
+    box-shadow: unset;
 }
-#comments h2:first-of-type { display: none; }                   // Get rid of the intrusive rule reminder
-div.comments-for-post div.list-of-comments article.comment {    // Get rid of the box shadows. It's not the 90s anymore.
+#comments h2:first-of-type { display: none; }                   // TODO HACK This reminder should go somewhere near the new comment box instead
+div.comments-for-post div.list-of-comments article.comment {
     box-shadow: none;
 }
 #new_comment .text label { display: none; }                     // No need to label the comment textbox
 #comment_body_for_ { width: 100%; box-shadow: none; }           // Streamline the comment textbox
-
-@media screen and (max-width: 800px) {                          // Improved comments on mobile, credit goes to Peegus
-    div.comments-for-post div.list-of-comments article.comment {
-        flex-flow: row wrap;
-    }
-    div.comments-for-post div.list-of-comments article.comment div.author {
-        flex-basis: 100%;
-        display: flex;
-        flex-shrink: inherit;
-        padding: 0;
-    }
-    div.comments-for-post div.list-of-comments article.comment .author .post-thumbnail a img {
-        max-height: 75px;
-        width: auto;
-    }
-    div.comments-for-post div.list-of-comments article.comment .author .author-info {
-        padding-left: 10px;
-    }
-    div.comments-for-post div.list-of-comments article.comment .author .author-info h1 {
-        margin-top: 10px;
-    }
-}
 
 /* Editing Form */
 section#edit {                                                  // Strip shadows and padding from the editing form
@@ -220,6 +152,6 @@ section#edit div.input:last-child {                             // TODO HACK The
     }
     border-radius: 4px 4px 0 0;
     width: min-content;
-    padding: 15px;
+    padding: 1rem;
     margin: 0;
 }

@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         e621 Redesign Scripts
 // @namespace    bitwolfy.com
-// @version      2.0.5
+// @version      2.0.6
 // @description  Scripting portion of the e621 Redesign Fixes project
 // @author       bitWolfy
 // @homepage     https://github.com/bitWolfy/e621-Redesign-Fixes
@@ -13,55 +13,124 @@
 
 $(function() {
 
+    $("head").append(`
+        <style type="text/css">
+            #customizer-container {
+                float: right;
+                position: relative;
+                color: #999;
+                padding: 0.5rem 0;
+            }
+            #customizer-popup-box {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-row-gap: 1rem;
+                grid-column-gap: 0.5rem;
+
+                position: absolute;
+                right: 0;
+                z-index: 15;
+                padding: 1rem;
+
+                border-radius: 5px;
+                box-shadow: 0 2px 10px -5px #000;
+            }
+            .customizer-controls select {
+                width: -webkit-fill-available;
+                width: -moz-available;
+            }
+        </style>
+    `);
+
     // === Theme Switcher and Customizer ===
     $("header#top").prepend(`
-        <div id="theme-switcher-container" style="float: right; position: relative; top: 3px; color: #999; margin: 3px 0;">
-            <a href="" id="theme-switcher-toggle">► Theme</a>
-            <div id="theme-switcher-box" style="display:none; position: absolute; right: 0; background: #25477b; padding: 10px; border: 1px solid #152f56; border-radius: 5px; color: white; width: 150px; margin-top: 4px; z-index: 15;">
-                Theme:
-                <select id="theme-switcher">
-                    <option value="hexagon">Hexagon</option>
-                    <option value="bloodlust">Bloodlust</option>
-                    <option value="hotdog">Hotdog</option>
-                </select>
-                <br style="margin-top:10px;" />
-                <input type="checkbox" id="theme-scaling" name="theme-scaling">
-                <label for="theme-scaling" style="font-weight: 400;">Disable scaling</label>
+        <div id="customizer-container">
+            <a href="" id="customizer-toggle">► Theme</a>
+            <div id="customizer-popup-box" class="bg-section border-foreground color-text" style="display: none;">
+                <div class="customizer-label">Theme:</div>
+                <div class="customizer-controls">
+                    <select id="theme-switcher">
+                        <option value="hexagon">Hexagon</option>
+                        <option value="pony">Pony</option>
+                        <option value="bloodlust">Bloodlust</option>
+                        <option value="serpent">Serpent</option>
+                        <option value="hotdog">Hotdog</option>
+                    </select>
+                </div>
+                <div class="customizer-label">Extras:</div>
+                <div class="customizer-controls">
+                    <select id="extras-switcher">
+                        <option value="none">None</option>
+                        <option value="autumn">Autumn</option>
+                        <option value="winter">Winter</option>
+                        <option value="spring">Spring</option>
+                        <option value="aurora">Aurora</option>
+                        <option value="hexagons">Hexagons</option>
+                        <option value="space">Space</option>
+                        <option value="stars">Stars</option>
+                    </select>
+                </div>
+                <div class="customizer-controls" style="grid-column: 1 / 3;">
+                    <input type="checkbox" id="theme-scaling" name="theme-scaling">
+                    <label for="theme-scaling" style="float: right; font-weight: 400;">Disable scaling</label>
+                </div>
             </div>
         </div>
     `);
 
     // Toggle the theme box
-    $("#theme-switcher-toggle").click(function(e) {
+    $("#customizer-toggle").click(function(e) {
         e.preventDefault();
-        if($("#theme-switcher-box").css("display") == "none") {
-            $("#theme-switcher-box").css("display", "block");
-            $("#theme-switcher-toggle").text("▼ Theme");
+        if($("#customizer-popup-box").css("display") == "none") {
+            $("#customizer-popup-box").css("display", "");
+            $("#customizer-toggle").text("▼ Theme");
         } else {
-            $("#theme-switcher-box").css("display", "none");
-            $("#theme-switcher-toggle").text("► Theme");
+            $("#customizer-popup-box").css("display", "none");
+            $("#customizer-toggle").text("► Theme");
         }
     });
 
+    $(document).click(function(e) {
+        var $target = $(e.target);
+        if($target.is("#customizer-container") || 
+           $("#customizer-container").has($target).length > 0) { return; }
+        
+        if($("#customizer-popup-box").css("display") != "none") {
+            $("#customizer-popup-box").css("display", "none");
+            $("#customizer-toggle").text("► Theme");
+        }
+     });
+
     // Handle the theme selector
     $("#theme-switcher").change(function(e) {
-        $(this).children().each(function(index, option) {
-            $("body").removeClass("theme-" + $(option).val());
-        });
         let theme = $(this).val();
         GM_setValue("e621-theme", theme);
-        $("body").addClass("theme-" + theme);
+        $("body").attr("data-theme", theme);
     });
 
     (async () => {
         let theme = await GM_getValue("e621-theme", "hexagon");
-        $("body").addClass("theme-" + theme);
+        $("body").attr("data-theme", theme);
         $("#theme-switcher").val(theme);
     })();
 
+    // Handle the extras selector
+    $("#extras-switcher").change(function(e) {
+        let extras = $(this).val();
+        GM_setValue("e621-extras", extras);
+        $("body").attr("data-extras", extras);
+    });
+
+    (async () => {
+        let extras = await GM_getValue("e621-extras", "hexagons");
+        $("body").attr("data-extras", extras);
+        $("#extras-switcher").val(extras);
+    })();
+
     // Handle the scaling toggle
-    $("#theme-scaling").click(function(e) {
+    $("#theme-scaling").change(function(e) {
         let disable_scaling = $(this).is(":checked");
+        console.log(disable_scaling);
         GM_setValue("e621-scaling", disable_scaling);
         if(disable_scaling) { $("body").css("max-width", "unset"); }
         else { $("body").css("max-width", ""); }
@@ -71,6 +140,8 @@ $(function() {
         if(disable_scaling) { $("body").css("max-width", "unset"); }
         $("#theme-scaling").prop("checked", disable_scaling);
     })();
+
+
 
     // === Simple blacklist collapsable ===
     $("#blacklist-box h1").html(`<a href="" id="blacklist-toggle">► Blacklisted</a>`);

@@ -1,0 +1,41 @@
+@import 'theme_hexagon';
+@import 'theme_pony';
+@import 'theme_bloodlust';
+@import 'theme_serpent';
+@import 'theme_hotdog';
+
+@import 'extras_none';
+@import 'extras_autumn';
+@import 'extras_winter';
+@import 'extras_spring';
+@import 'extras_aurora';
+@import 'extras_hexagons';
+@import 'extras_space';
+@import 'extras_stars';
+
+$theme_index: (
+    "data-attr":    "theme",
+    "default":      "hexagon",
+    "themes": (
+        "hexagon":      $theme_hexagon,
+        "pony":         $theme_pony,
+        "bloodlust":    $theme_bloodlust,
+        "serpent":      $theme_serpent,
+        "hotdog":       $theme_hotdog,
+    )
+);
+
+$extras_index: (
+    "data-attr":    "extras",
+    "default":      "hexagons",
+    "themes": (
+        "none":         $extras_none,
+        "autumn":       $extras_autumn,
+        "winter":       $extras_winter,
+        "spring":       $extras_spring,
+        "aurora":       $extras_aurora,
+        "hexagons":     $extras_hexagons,
+        "space":        $extras_space,
+        "stars":        $extras_stars,
+    )
+);
