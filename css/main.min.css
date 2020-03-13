@@ -1137,23 +1137,15 @@ article.post-preview div.desc { background-color: #25477b; }
   article.post-preview div.desc { width: inherit; margin: 0 auto; } }
 
 /* Animation Type Badges */
-article.post-preview[data-tags~="animated"]::before { content: "anim"; }
+article.post-preview[data-file-ext=webm] > a::before, article.post-preview[data-tags~=animated] > a::before { position: absolute; left: 0; z-index: 5; background-color: #1f3c67; border: 1px solid #ffffff; color: #ffffff; padding: 0.125rem 0.25rem; border-radius: 5px; font-size: 60%; font-weight: 700; }
 
-article.post-preview[data-tags~="mp4"]::before { content: "mp4"; }
+[data-theme=pony] article.post-preview[data-file-ext=webm] > a::before, [data-theme=pony] article.post-preview[data-tags~=animated] > a::before { background-color: #453269; border: 1px solid #ffffff; color: #ffffff; }
 
-article.post-preview[data-tags~="flash"]::before { content: "swf"; }
+[data-theme=bloodlust] article.post-preview[data-file-ext=webm] > a::before, [data-theme=bloodlust] article.post-preview[data-tags~=animated] > a::before { background-color: #333333; border: 1px solid #ffffff; color: #ffffff; }
 
-article.post-preview[data-tags~="webm"]::before { content: "webm"; }
+[data-theme=serpent] article.post-preview[data-file-ext=webm] > a::before, [data-theme=serpent] article.post-preview[data-tags~=animated] > a::before { background-color: #fff48b; border: 1px solid #ffffff; color: #000000; }
 
-article.post-preview[data-tags~="animated"]::before, article.post-preview[data-tags~="mp4"]::before, article.post-preview[data-tags~="flash"]::before, article.post-preview[data-tags~="webm"]::before { position: absolute; left: 0; z-index: 10; background-color: #1f3c67; border: 1px solid #ffffff; width: unset; height: unset; padding: 0.125rem 0.25rem; margin: 0.25rem 0; border-radius: 5px; font-size: 0.6em; font-weight: 700; }
-
-[data-theme=pony] article.post-preview[data-tags~="animated"]::before, [data-theme=pony] article.post-preview[data-tags~="mp4"]::before, [data-theme=pony] article.post-preview[data-tags~="flash"]::before, [data-theme=pony] article.post-preview[data-tags~="webm"]::before { background-color: #453269; border: 1px solid #ffffff; }
-
-[data-theme=bloodlust] article.post-preview[data-tags~="animated"]::before, [data-theme=bloodlust] article.post-preview[data-tags~="mp4"]::before, [data-theme=bloodlust] article.post-preview[data-tags~="flash"]::before, [data-theme=bloodlust] article.post-preview[data-tags~="webm"]::before { background-color: #333333; border: 1px solid #ffffff; }
-
-[data-theme=serpent] article.post-preview[data-tags~="animated"]::before, [data-theme=serpent] article.post-preview[data-tags~="mp4"]::before, [data-theme=serpent] article.post-preview[data-tags~="flash"]::before, [data-theme=serpent] article.post-preview[data-tags~="webm"]::before { background-color: #fff48b; border: 1px solid #ffffff; }
-
-[data-theme=hotdog] article.post-preview[data-tags~="animated"]::before, [data-theme=hotdog] article.post-preview[data-tags~="mp4"]::before, [data-theme=hotdog] article.post-preview[data-tags~="flash"]::before, [data-theme=hotdog] article.post-preview[data-tags~="webm"]::before { background-color: #c53c38; border: 1px solid #ffffff; }
+[data-theme=hotdog] article.post-preview[data-file-ext=webm] > a::before, [data-theme=hotdog] article.post-preview[data-tags~=animated] > a::before { background-color: #c53c38; border: 1px solid #ffffff; color: #000000; }
 
 /* === UPLOAD PAGE === */
 .toggle-button[data-v-deb50420] { margin: 0.25rem 0.5rem 0.25rem 0; }

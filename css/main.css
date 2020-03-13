@@ -2934,70 +2934,46 @@ article.post-preview div.desc {
 }
 
 /* Animation Type Badges */
-article.post-preview[data-tags~="animated"]::before {
-  content: "anim";
-}
-
-article.post-preview[data-tags~="mp4"]::before {
-  content: "mp4";
-}
-
-article.post-preview[data-tags~="flash"]::before {
-  content: "swf";
-}
-
-article.post-preview[data-tags~="webm"]::before {
-  content: "webm";
-}
-
-article.post-preview[data-tags~="animated"]::before,
-article.post-preview[data-tags~="mp4"]::before,
-article.post-preview[data-tags~="flash"]::before,
-article.post-preview[data-tags~="webm"]::before {
+article.post-preview[data-file-ext=webm] > a::before,
+article.post-preview[data-tags~=animated] > a::before {
   position: absolute;
   left: 0;
-  z-index: 10;
+  z-index: 5;
   background-color: #1f3c67;
   border: 1px solid #ffffff;
-  width: unset;
-  height: unset;
+  color: #ffffff;
   padding: 0.125rem 0.25rem;
-  margin: 0.25rem 0;
   border-radius: 5px;
-  font-size: 0.6em;
+  font-size: 60%;
   font-weight: 700;
 }
 
-[data-theme=pony] article.post-preview[data-tags~="animated"]::before, [data-theme=pony]
-article.post-preview[data-tags~="mp4"]::before, [data-theme=pony]
-article.post-preview[data-tags~="flash"]::before, [data-theme=pony]
-article.post-preview[data-tags~="webm"]::before {
+[data-theme=pony] article.post-preview[data-file-ext=webm] > a::before, [data-theme=pony]
+article.post-preview[data-tags~=animated] > a::before {
   background-color: #453269;
   border: 1px solid #ffffff;
+  color: #ffffff;
 }
 
-[data-theme=bloodlust] article.post-preview[data-tags~="animated"]::before, [data-theme=bloodlust]
-article.post-preview[data-tags~="mp4"]::before, [data-theme=bloodlust]
-article.post-preview[data-tags~="flash"]::before, [data-theme=bloodlust]
-article.post-preview[data-tags~="webm"]::before {
+[data-theme=bloodlust] article.post-preview[data-file-ext=webm] > a::before, [data-theme=bloodlust]
+article.post-preview[data-tags~=animated] > a::before {
   background-color: #333333;
   border: 1px solid #ffffff;
+  color: #ffffff;
 }
 
-[data-theme=serpent] article.post-preview[data-tags~="animated"]::before, [data-theme=serpent]
-article.post-preview[data-tags~="mp4"]::before, [data-theme=serpent]
-article.post-preview[data-tags~="flash"]::before, [data-theme=serpent]
-article.post-preview[data-tags~="webm"]::before {
+[data-theme=serpent] article.post-preview[data-file-ext=webm] > a::before, [data-theme=serpent]
+article.post-preview[data-tags~=animated] > a::before {
   background-color: #fff48b;
   border: 1px solid #ffffff;
+  color: #000000;
 }
 
-[data-theme=hotdog] article.post-preview[data-tags~="animated"]::before, [data-theme=hotdog]
-article.post-preview[data-tags~="mp4"]::before, [data-theme=hotdog]
-article.post-preview[data-tags~="flash"]::before, [data-theme=hotdog]
-article.post-preview[data-tags~="webm"]::before {
+[data-theme=hotdog] article.post-preview[data-file-ext=webm] > a::before, [data-theme=hotdog]
+article.post-preview[data-tags~=animated] > a::before {
   background-color: #c53c38;
   border: 1px solid #ffffff;
+  color: #000000;
 }
 
 /* === UPLOAD PAGE === */
