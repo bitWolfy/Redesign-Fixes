@@ -581,6 +581,17 @@ a.user-admin.with-style:hover { color: #9d6703; }
 /* Home: added padding to "Welcome, <you>" because some unicode languages overlaps with the text below it*/
 body.c-users.a-home div#page h2 { padding: 0.25rem 0 0.25rem; }
 
+/*=== Blips ===*/
+div#c-blips article.blip { background-color: #1f3c67; -webkit-box-shadow: unset; box-shadow: unset; }
+
+[data-theme=pony] div#c-blips article.blip { background-color: #453269; }
+
+[data-theme=bloodlust] div#c-blips article.blip { background-color: #333333; }
+
+[data-theme=serpent] div#c-blips article.blip { background-color: #fff48b; }
+
+[data-theme=hotdog] div#c-blips article.blip { background-color: #c53c38; }
+
 /* === COMMENTS INDEX === */
 div#c-comments div#a-index div.post, div#c-comments div#a-show div.post { margin-bottom: 1em; background-color: rgba(31, 60, 103, 0.7); }
 
@@ -600,11 +611,13 @@ div#c-comments div#a-index div.post, div#c-comments div#a-show div.post { -webki
 
 div#c-comments div#a-index div.post article.comment img { border: unset; }
 
-@media (max-width: 800px) { div.comments-for-post div.list-of-comments article.comment, div#c-comments div#a-index div#p-index-by-post div.post-preview { -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-flow: row wrap; flex-flow: row wrap; }
-  div.comments-for-post div.list-of-comments article.comment div.author { -ms-flex-preferred-size: 100%; flex-basis: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-negative: inherit; flex-shrink: inherit; padding: 0; }
-  div.comments-for-post div.list-of-comments article.comment .author .post-thumbnail a img, div#c-comments div#a-index div.preview a img { max-height: 5rem; width: auto; }
-  div.comments-for-post div.list-of-comments article.comment .author .author-info { padding-left: 1rem; }
-  div.comments-for-post div.list-of-comments article.comment .author .author-info h1 { margin-top: 1rem; } }
+@media (max-width: 800px) { div#c-blips article.blip, div.comments-for-post div.list-of-comments article.comment, div#c-comments div#a-index div#p-index-by-post div.post-preview { -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-flow: row wrap; flex-flow: row wrap; }
+  div#c-blips article.blip div.author, div.comments-for-post div.list-of-comments article.comment div.author { -ms-flex-preferred-size: 100%; flex-basis: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-negative: inherit; flex-shrink: inherit; padding: 0; }
+  div#c-blips article.blip .author .post-thumbnail a img, div.comments-for-post div.list-of-comments article.comment .author .post-thumbnail a img, div#c-comments div#a-index div.preview a img { max-height: 5rem; width: auto; }
+  div#c-blips article.blip .author .author-info, div.comments-for-post div.list-of-comments article.comment .author .author-info { padding-left: 1rem; }
+  div#c-blips article.blip .author .author-info h1, div.comments-for-post div.list-of-comments article.comment .author .author-info h1 { margin-top: 1rem; }
+  div#c-blips article.blip { display: -webkit-box; display: -ms-flexbox; display: flex; }
+  div#c-blips article.blip div.author, div#c-blips article.blip div.content { margin: unset; } }
 
 /* --- Comment / Post Features --- */
 .styled-dtext blockquote, .styled-dtext div.expandable, .styled-dtext pre { position: relative; z-index: 10; -webkit-box-shadow: none; box-shadow: none; border-radius: 3px; padding: 1rem; margin: 0 0 1rem; border: 1px solid #1f3c67; border-left: 0.25rem solid maroon; background: rgba(43, 83, 142, 0.7); }

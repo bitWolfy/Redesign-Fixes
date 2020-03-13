@@ -1,0 +1,7 @@
+/*=== Blips ===*/
+div#c-blips article.blip {
+    @include themable{
+        background-color: themed("color-section");
+    }
+    box-shadow: unset;
+}

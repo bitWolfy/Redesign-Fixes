@@ -27,26 +27,37 @@ div#c-comments div#a-index div.post article.comment img {       // Bugfix: user 
 }
 
 @include media-breakpoint-upto("tablet") {
+    div#c-blips article.blip,
     div.comments-for-post div.list-of-comments article.comment,
     div#c-comments div#a-index div#p-index-by-post div.post-preview {
         flex-flow: row wrap;
     }
+    div#c-blips article.blip div.author,
     div.comments-for-post div.list-of-comments article.comment div.author {
         flex-basis: 100%;
         display: flex;
         flex-shrink: inherit;
         padding: 0;
     }
+    div#c-blips article.blip .author .post-thumbnail a img,
     div.comments-for-post div.list-of-comments article.comment .author .post-thumbnail a img,
     div#c-comments div#a-index div.preview a img {
         max-height: 5rem;
         width: auto;
     }
+    div#c-blips article.blip .author .author-info,
     div.comments-for-post div.list-of-comments article.comment .author .author-info {
         padding-left: 1rem;
     }
+    div#c-blips article.blip .author .author-info h1,
     div.comments-for-post div.list-of-comments article.comment .author .author-info h1 {
         margin-top: 1rem;
+    }
+
+    div#c-blips article.blip { display: flex; }
+    div#c-blips article.blip div.author,                        // TODO BUG Why aren't div.author and div.content not inside div.author-info like the comments
+    div#c-blips article.blip div.content {                      // Just FML, why is everything in this theme so inconsistent
+        margin: unset;
     }
 }
 
