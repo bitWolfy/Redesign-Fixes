@@ -2,11 +2,9 @@
 
 @mixin themable($data_map: $theme_index, $apply_to_self: false) {
     // Apply the default style to the original element
-    @if (map-has-key($data_map, "default") && map_has_key(map-get($data_map, "themes"), map-get($data_map, "default"))) {
-        $data_current: map-get(map-get($data_map, "themes"), map-get($data_map, "default")) !global;
-        @content;
-        $data_current: null !global;
-    }
+    $data_current: map-get($data_map, "default") !global;
+    @content;
+    $data_current: null !global;
 
     $data_attr: "custom";
     @if (map_has_key($data_map, "data-attr")) {

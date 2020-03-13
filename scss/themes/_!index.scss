@@ -15,9 +15,9 @@
 
 $theme_index: (
     "data-attr":    "theme",
-    "default":      "hexagon",
+    "default":      $theme_hexagon,
     "themes": (
-        "hexagon":      $theme_hexagon,
+//      "hexagon":      $theme_hexagon,
         "pony":         $theme_pony,
         "bloodlust":    $theme_bloodlust,
         "serpent":      $theme_serpent,
@@ -27,14 +27,14 @@ $theme_index: (
 
 $extras_index: (
     "data-attr":    "extras",
-    "default":      "hexagons",
+    "default":      $extras_hexagons,
     "themes": (
         "none":         $extras_none,
         "autumn":       $extras_autumn,
         "winter":       $extras_winter,
         "spring":       $extras_spring,
         "aurora":       $extras_aurora,
-        "hexagons":     $extras_hexagons,
+//      "hexagons":     $extras_hexagons,
         "space":        $extras_space,
         "stars":        $extras_stars,
     )
