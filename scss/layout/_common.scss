@@ -20,13 +20,15 @@ div#page {
     @include themable() {
         background-color: themed("color-foreground");
     }
-    @include themable($data_map: $extras_index) {
+    @include themable($data_map: $theme_extras_index) {
         background-image: themed("image-foreground");
         background-position: themed("image-foreground-position");
         background-repeat: themed("image-foreground-repeat");
         padding-bottom: themed("content-padding-bottom");
     }
-    border-radius: 6px;
+    @include themable($data_map: $theme_look_index) {
+        border-radius: themed("border-radius-full");
+    }
 }
 
 footer#page-footer {

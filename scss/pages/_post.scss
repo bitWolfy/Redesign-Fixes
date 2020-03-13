@@ -64,8 +64,10 @@ div#c-posts .source-link:hover a {
 a#add-to-favorites,                                             // Recolor the sidebar favorites button to what it was before
 a#remove-from-favorites {                                       // TODO Just remove this one, the favorite button under the image should be enough
     padding: 0.25rem 0.5rem;
-    border-radius: 3px;
     font-size: 1rem;
+    @include themable($data_map: $theme_look_index) {
+        border-radius: themed("border-radius-half");
+    }
     @include themable {
         color: themed("color-text-white");
     }
@@ -92,6 +94,9 @@ div#c-posts .fav-buttons button.ui-button {                     // Replace the w
     @include themable {
         color: themed("color-text-white");
     }
+    @include themable($data_map: $theme_look_index) {
+        border-radius: themed("border-radius-half");
+    }
     box-shadow: none;
     padding: 0.25rem 0.5rem;
     font-size: 0em;
@@ -110,10 +115,12 @@ div#image-download-link a {                                     // Recolor the d
         background: themed("color-warning");
         color: themed("color-text-white");
     }
+    @include themable($data_map: $theme_look_index) {
+        border-radius: themed("border-radius-half");
+    }
     font-size: 1rem;
     padding: 0.25rem 0.5rem;
     border: 0;
-    border-radius: 3px;
 }
 div#image-download-link a:hover {
     @include themable { background: darken( themed("color-warning"), 5%); }
@@ -146,9 +153,6 @@ section#comments {                                                     // Cleane
     box-shadow: unset;
 }
 #comments h2:first-of-type { display: none; }                   // TODO HACK This reminder should go somewhere near the new comment box instead
-div.comments-for-post div.list-of-comments article.comment {
-    box-shadow: none;
-}
 #new_comment .text label { display: none; }                     // No need to label the comment textbox
 #comment_body_for_ { width: 100%; box-shadow: none; }           // Streamline the comment textbox
 

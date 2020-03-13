@@ -48,16 +48,17 @@ a#re-enable-all-blacklists {
     padding: 0.25rem 0.5rem;
     margin-top: 0.25rem;
     border: 0;
-    border-radius: 3px;
+    
+    @include themable($data_map: $theme_look_index) { border-radius: themed("border-radius-half"); }
     @include themable { color: themed("color-text-white"); }
 }
 a#disable-all-blacklists {
-    content: "Disable all filters";                             // TODO HACK replace the original link text instead
-    @include themable { background: themed("color-danger"); }
+    content: "Disable all filters";                             // TODO FIX replace the original link text instead
+    @include themable { background: darken( themed("color-danger"), 5%); }
 }
 a#re-enable-all-blacklists {
-    content: "Enable all filters";                              // TODO HACK replace the original link text instead
-    @include themable { background: themed("color-success"); }
+    content: "Enable all filters";                              // TODO FIX replace the original link text instead
+    @include themable { background: darken( themed("color-success"), 5%); }
 }
 a.blacklist-toggle-link:before { content: "» "; }
 

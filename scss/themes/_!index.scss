@@ -4,6 +4,9 @@
 @import 'theme_serpent';
 @import 'theme_hotdog';
 
+@import 'look_classic';
+@import 'look_modern';
+
 @import 'extras_none';
 @import 'extras_autumn';
 @import 'extras_winter';
@@ -13,8 +16,8 @@
 @import 'extras_space';
 @import 'extras_stars';
 
-$theme_index: (
-    "data-attr":    "theme",
+$theme_primary_index: (
+    "data-attr":    "main",
     "default":      $theme_hexagon,
     "themes": (
 //      "hexagon":      $theme_hexagon,
@@ -25,16 +28,25 @@ $theme_index: (
     )
 );
 
-$extras_index: (
-    "data-attr":    "extras",
+$theme_look_index: (
+    "data-attr":    "look",
+    "default":      $look_classic,
+    "themes": (
+//      "classic":  $look_classic,
+        "modern":   $look_modern,
+    )
+);
+
+$theme_extras_index: (
+    "data-attr":    "extra",
     "default":      $extras_hexagons,
     "themes": (
+//      "hexagons":     $extras_hexagons,
         "none":         $extras_none,
         "autumn":       $extras_autumn,
         "winter":       $extras_winter,
         "spring":       $extras_spring,
         "aurora":       $extras_aurora,
-//      "hexagons":     $extras_hexagons,
         "space":        $extras_space,
         "stars":        $extras_stars,
     )

@@ -49,7 +49,7 @@ $(function() {
             <div id="customizer-popup-box" class="bg-section border-foreground color-text" style="display: none;">
                 <div class="customizer-label">Theme:</div>
                 <div class="customizer-controls">
-                    <select id="theme-switcher">
+                    <select id="theme-primary-switcher">
                         <option value="hexagon">Hexagon</option>
                         <option value="pony">Pony</option>
                         <option value="bloodlust">Bloodlust</option>
@@ -57,9 +57,16 @@ $(function() {
                         <option value="hotdog">Hotdog</option>
                     </select>
                 </div>
+                <div class="customizer-label">Look:</div>
+                <div class="customizer-controls">
+                    <select id="theme-look-switcher">
+                        <option value="classic">Classic</option>
+                        <option value="modern">Modern</option>
+                    </select>
+                </div>
                 <div class="customizer-label">Extras:</div>
                 <div class="customizer-controls">
-                    <select id="extras-switcher">
+                    <select id="theme-extras-switcher">
                         <option value="none">None</option>
                         <option value="autumn">Autumn</option>
                         <option value="winter">Winter</option>
@@ -99,33 +106,25 @@ $(function() {
             $("#customizer-popup-box").css("display", "none");
             $("#customizer-toggle").text("► Theme");
         }
-     });
-
-    // Handle the theme selector
-    $("#theme-switcher").change(function(e) {
-        let theme = $(this).val();
-        GM_setValue("e621-theme", theme);
-        $("body").attr("data-theme", theme);
     });
 
-    (async () => {
-        let theme = await GM_getValue("e621-theme", "hexagon");
-        $("body").attr("data-theme", theme);
-        $("#theme-switcher").val(theme);
-    })();
+    handleThemeSwitcher("theme-primary", "hexagon");
+    handleThemeSwitcher("theme-look", "classic");
+    handleThemeSwitcher("theme-extras", "hexagons");
 
-    // Handle the extras selector
-    $("#extras-switcher").change(function(e) {
-        let extras = $(this).val();
-        GM_setValue("e621-extras", extras);
-        $("body").attr("data-extras", extras);
-    });
+    function handleThemeSwitcher(selector, def_option) {
+        (async () => {
+            let theme = await GM_getValue("e621-" + selector, def_option);
+            $("body").attr("data-" + selector, theme);
+            $("#" + selector + "-switcher").val(theme);
+        })();
 
-    (async () => {
-        let extras = await GM_getValue("e621-extras", "hexagons");
-        $("body").attr("data-extras", extras);
-        $("#extras-switcher").val(extras);
-    })();
+        $("#" + selector + "-switcher").change(function(e) {
+            let theme = $(this).val();
+            GM_setValue("e621-" + selector, theme);
+            $("body").attr("data-" + selector, theme);
+        });
+    }
 
     // Handle the scaling toggle
     $("#theme-scaling").change(function(e) {

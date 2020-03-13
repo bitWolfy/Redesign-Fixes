@@ -32,7 +32,9 @@ header#top menu:not(.main) {
     @include themable {
         background-color: themed("color-foreground");
     }
-    border-radius: 6px;
+    @include themable($data_map: $theme_look_index) {
+        border-radius: themed("border-radius-full");
+    }
 }
 header#top menu.main {
     background-color: unset;
