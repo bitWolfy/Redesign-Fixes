@@ -2,11 +2,10 @@
 
 /* --- Layout --- */
 body {
-    @include themable($flipped: true) {
+    @include themable($apply_to_self: true) {
+        color: themed("color-text");
         background-color: themed("color-background");
         background-image: themed("image-background");
-
-        color: themed("color-text");
     }
 
     font-family: Verdana, sans-serif;
@@ -18,12 +17,15 @@ body {
 @include resp-body-width;
 
 div#page {
-    @include themable {
-        background-image: themed("image-foreground");
+    @include themable() {
         background-color: themed("color-foreground");
     }
-    background-position: left top;
-    background-repeat: repeat-x;
+    @include themable($data_map: $extras_index) {
+        background-image: themed("image-foreground");
+        background-position: themed("image-foreground-position");
+        background-repeat: themed("image-foreground-repeat");
+        padding-bottom: themed("content-padding-bottom");
+    }
     border-radius: 6px;
 }
 
@@ -82,7 +84,12 @@ a:hover {
 .score-negative a:visited   { @include themable { color: themed("color-danger"); } }
 .score-negative a:hover     { @include themable { color: darken( themed("color-danger"), 10%); } }
 
-div#ad-leaderboard { text-align: center; }                      // Center the ads, because why not?
+.box-section {
+    box-shadow: unset;
+    @include themable {
+        background-color: themed("color-section");
+    }
+}
 
 /* --- Tables --- */
 table.striped {
@@ -106,7 +113,7 @@ table.striped tbody tr:hover {
     }
 }
 table.striped tbody tr td {
-    padding: 15px 5px;
+    padding: 0.5rem 0.25rem;
 }
 
 td a.last-page,
@@ -122,8 +129,9 @@ td a.last-page:hover {
 div#page div.site-notice {
     @include themable {
         background-color: themed("color-section");
+        border: 1px solid themed("color-foreground");
+        color: themed("color-text");
     }
-    border: 1px solid rgba(0, 0, 0, 0.5);
-    padding: 4px !important;
-    box-shadow: 0 0 27px rgba(0, 0, 0, 0.2);
+    margin-bottom: 0.5rem;
+    box-shadow: unset;
 }

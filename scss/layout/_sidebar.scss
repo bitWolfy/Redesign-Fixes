@@ -1,31 +1,73 @@
 /* === SIDEBAR === */
-span.search-help a { font-size: 0; }                            // Make the help links (quite) a bit smaller
-span.search-help a::after {                                     // TODO HACK replace the original instead
-    content: "search help";
-    font-size: 0.7rem;
+div#page aside#sidebar h1 span.search-help {
     float: right;
-    margin-top: 10px;
+    font-size: 80%;
 }
 
 /* Desktop Searchbox */
 div#page aside#sidebar input[type=text] {                       // Re-style the search bar
     width: 13em;                                                // Spite-filled redesigning initiated
-    padding: 2px 3px;
+    padding: 0.125rem 0.125rem;
     border-radius: 4px 0 0 4px;
     border-right: 0;
     box-sizing: border-box;
 }
 div#page aside#sidebar #search-box button[type=submit] {
     width: 2em;
-    padding: 2px 6px;
     border-radius: 0 4px 4px 0;
     border-left: 1px solid #ccc;
 }
 
-/* Desktop - Mobile Searchbox Switching */
-#search-box { display: none; }
-@media only screen and (min-width: 801px) {
+#search-box { display: none; }                                  // Hide the desktop searchbox on mobile
+@include media-breakpoint(tablet) {
     #search-box { display: block; }
+}
+
+/* Mobile Searchbox */
+.mobile-search {                                                // Streamline the mobile search form
+    margin: 0.5rem 0.5rem 1.5rem;
+}
+.mobile-search a:first-child {                                  // Screw you, I'll re-style the mobile searchform too
+    float: right;                                               // Multi-device styling! https://i.imgur.com/Ong1enY.png
+    margin-bottom: 0.5rem;
+}
+.mobile-search .search-form form .search-input input {
+    border-radius: 4px 0 0 4px;
+    box-sizing: border-box;
+}
+.mobile-search .search-form form .search-button button {
+    border-radius: 0 4px 4px 0;
+    border-left: 1px solid #ccc;
+}
+
+/* Blacklist */
+a#disable-all-blacklists,
+a#re-enable-all-blacklists {
+    display: inline-block;
+    font-size: 1rem;
+    padding: 0.25rem 0.5rem;
+    margin-top: 0.25rem;
+    border: 0;
+    border-radius: 3px;
+    @include themable { color: themed("color-text-white"); }
+}
+a#disable-all-blacklists {
+    content: "Disable all filters";                             // TODO HACK replace the original link text instead
+    @include themable { background: themed("color-danger"); }
+}
+a#re-enable-all-blacklists {
+    content: "Enable all filters";                              // TODO HACK replace the original link text instead
+    @include themable { background: themed("color-success"); }
+}
+a.blacklist-toggle-link:before { content: "» "; }
+
+#blacklist-box.sidebar-blacklist ul li {                        /* Bugfix: remove extraneous list dots (favorites page only) */
+    list-style-type: none;
+}
+
+div#page aside#sidebar h1 span.blacklist-help {
+    float: right;
+    font-size: 80%;
 }
 
 /* Tag List */
@@ -36,21 +78,4 @@ div#c-posts aside#sidebar #tag-list h2 {                        // Tags list - s
     @include themable { color: themed("color-text-muted"); }
     font-size: 85%;
     font-weight: 500;
-}
-
-/* Mobile Searchbox */
-.mobile-search { margin: 10px 10px 25px ; }                     // Streamline the mobile search form
-.mobile-search a:first-child {                                  // Screw you, I'll re-style the mobile searchform too
-    float: right;                                               // Multi-device styling! https://i.imgur.com/Ong1enY.png
-    margin-bottom: 10px;
-}
-body.resp .mobile-search>.search-form>form .search-input input {
-    border-radius: 4px 0 0 4px;
-    padding: 1px 3px;
-    box-sizing: border-box;
-}
-body.resp .mobile-search>.search-form>form .search-button>button {
-    border-radius: 0 4px 4px 0;
-    padding: 2px 6px;
-    border-left: 1px solid #ccc;
 }

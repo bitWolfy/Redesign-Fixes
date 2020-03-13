@@ -1,6 +1,6 @@
 /* === FORUMS === */
-.c-forum-topics .forum-post { padding: 15px; }
-.c-forum-topics #a-show { margin-top: 15px; }
+.c-forum-topics article.forum-post,
+#c-forum-posts article.forum-post { padding: 1rem; }
 
 div.list-of-forum-posts article {                               // Re-color the forum posts to look like normal comments
     @include themable {
@@ -16,7 +16,7 @@ div.list-of-forum-posts article:nth-child(2n) {                 // Get rid of th
         background-color: themed("color-section");
     }
 }
-div.list-of-forum-posts article[data-is-deleted="true"] {       // Restore the highlight on the deleted posts
+div.list-of-forum-posts article[data-is-deleted="true"] {           // Restore the highlight on the deleted posts
     position: relative;
     z-index: 5;
 }
