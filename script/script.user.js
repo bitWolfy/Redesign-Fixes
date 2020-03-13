@@ -70,6 +70,10 @@ $(function() {
                         <option value="stars">Stars</option>
                     </select>
                 </div>
+                <div class="customizer-controls" style="grid-column: 1 / 3;">
+                    <input type="checkbox" id="theme-scaling" name="theme-scaling">
+                    <label for="theme-scaling" style="float: right; font-weight: 400;">Disable scaling</label>
+                </div>
             </div>
         </div>
     `);
@@ -88,7 +92,8 @@ $(function() {
 
     $(document).click(function(e) {
         var $target = $(e.target);
-        if($target.parents().is("#customizer-container") || $target.is("#customizer-container")) { return false; }
+        if($target.is("#customizer-container") || 
+           $("#customizer-container").has($target).length > 0) { return; }
         
         if($("#customizer-popup-box").css("display") != "none") {
             $("#customizer-popup-box").css("display", "none");
@@ -120,6 +125,20 @@ $(function() {
         let extras = await GM_getValue("e621-extras", "hexagons");
         $("body").attr("data-extras", extras);
         $("#extras-switcher").val(extras);
+    })();
+
+    // Handle the scaling toggle
+    $("#theme-scaling").change(function(e) {
+        let disable_scaling = $(this).is(":checked");
+        console.log(disable_scaling);
+        GM_setValue("e621-scaling", disable_scaling);
+        if(disable_scaling) { $("body").css("max-width", "unset"); }
+        else { $("body").css("max-width", ""); }
+    });
+    (async () => {
+        let disable_scaling = await GM_getValue("e621-scaling", "false");
+        if(disable_scaling) { $("body").css("max-width", "unset"); }
+        $("#theme-scaling").prop("checked", disable_scaling);
     })();
 
 
