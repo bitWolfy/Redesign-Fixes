@@ -2152,6 +2152,31 @@ div#image-download-link a:hover {
   background: #8c4827;
 }
 
+/* Notices */
+div#c-posts div.notice.notice-appealed,
+div#c-posts div.notice.notice-resized {
+  background: #1f3c67;
+  border: 1px solid #152f56;
+}
+
+.theme-hexagon div#c-posts div.notice.notice-appealed, .theme-hexagon
+div#c-posts div.notice.notice-resized {
+  background: #1f3c67;
+  border: 1px solid #152f56;
+}
+
+.theme-bloodlust div#c-posts div.notice.notice-appealed, .theme-bloodlust
+div#c-posts div.notice.notice-resized {
+  background: #333333;
+  border: 1px solid #222222;
+}
+
+.theme-hotdog div#c-posts div.notice.notice-appealed, .theme-hotdog
+div#c-posts div.notice.notice-resized {
+  background: #c53c38;
+  border: 1px solid #FF0000;
+}
+
 /* Comments Style */
 #comments {
   padding: 0;

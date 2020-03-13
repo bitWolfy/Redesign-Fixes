@@ -165,6 +165,15 @@ div#image-download-link a:hover {
     @include themable { background: darken( themed("color-warning"), 5%); }
 }
 
+/* Notices */
+div#c-posts div.notice.notice-appealed,
+div#c-posts div.notice.notice-resized {
+    @include themable {
+        background: themed("color-section");
+        border: 1px solid themed("color-foreground");
+    }
+}
+
 /* Comments Style */
 #comments {                                                     // Cleaner, sleaker comment section
     padding: 0;
