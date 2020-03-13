@@ -2,16 +2,20 @@
 div#c-posts div#a-index menu#post-sections { display: none; }   /* Hide "posts" header in search page (useless?) */
 
 article picture img {
-    border-radius: 4px 4px 0 0;
     max-height: 10rem;
     max-width: 10rem;
+    @include themable($theme_look_index) {
+        border-radius: themed("border-radius-half") themed("border-radius-half") 0 0;
+    }
 }
 div#page aside#sidebar h1 { margin-bottom: 0.25rem; }           /* Minor padding fix for the tag and blacklist */
 
 #mode-box-mode {                                                /* Make the mode box match size with the search bar */
     width: 15em;
-    border-radius: 4px;
     box-shadow: none;
+    @include themable($theme_look_index) {
+        border-radius: themed("border-radius-half");
+    }
 }
 
 div.post-score { font-size: 0.8rem; }                           /* Increase the font size on post preview details */
@@ -59,7 +63,10 @@ article.post-preview[data-tags~=animated] > a::before {
     }
     
     padding: 0.125rem 0.25rem;
-    border-radius: 5px;
     font-size: 60%;
     font-weight: 700;
+
+    @include themable($theme_look_index) {
+        border-radius: themed("border-radius-half");
+    }
 }

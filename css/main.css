@@ -324,6 +324,10 @@ footer#page-footer {
   background-color: #FF0000;
 }
 
+[data-th-look=modern] footer#page-footer {
+  border-radius: 0px 0px 0 0;
+}
+
 button, input, select, textarea {
   -webkit-box-shadow: unset;
           box-shadow: unset;
@@ -917,16 +921,24 @@ div#page aside#sidebar h1 span.search-help {
 div#page aside#sidebar input[type=text] {
   width: 13em;
   padding: 0.125rem 0.125rem;
-  border-radius: 4px 0 0 4px;
   border-right: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  border-radius: 4px 0 0 4px;
+}
+
+[data-th-look=modern] div#page aside#sidebar input[type=text] {
+  border-radius: 0px 0 0 0px;
 }
 
 div#page aside#sidebar #search-box button[type=submit] {
   width: 2em;
-  border-radius: 0 4px 4px 0;
   border-left: 1px solid #ccc;
+  border-radius: 0 4px 4px 0;
+}
+
+[data-th-look=modern] div#page aside#sidebar #search-box button[type=submit] {
+  border-radius: 0 0px 0px 0;
 }
 
 #search-box {
@@ -950,14 +962,22 @@ div#page aside#sidebar #search-box button[type=submit] {
 }
 
 .mobile-search .search-form form .search-input input {
-  border-radius: 4px 0 0 4px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  border-radius: 4px 0 0 4px;
+}
+
+[data-th-look=modern] .mobile-search .search-form form .search-input input {
+  border-radius: 0px 0 0 0px;
 }
 
 .mobile-search .search-form form .search-button button {
-  border-radius: 0 4px 4px 0;
   border-left: 1px solid #ccc;
+  border-radius: 0 4px 4px 0;
+}
+
+[data-th-look=modern] .mobile-search .search-form form .search-button button {
+  border-radius: 0 0px 0px 0;
 }
 
 /* Blacklist */
@@ -2863,6 +2883,10 @@ section#edit div.input:last-child {
   background: #c53c38;
 }
 
+[data-th-look=modern] section#edit div.input:last-child {
+  border-radius: 0px 0px 0 0;
+}
+
 /* === POPULAR PAGE === */
 div#c-explore-posts div#a-popular {
   display: -webkit-box;
@@ -2908,9 +2932,13 @@ div#c-posts div#a-index menu#post-sections {
 
 /* Hide "posts" header in search page (useless?) */
 article picture img {
-  border-radius: 4px 4px 0 0;
   max-height: 10rem;
   max-width: 10rem;
+  border-radius: 4px 4px 0 0;
+}
+
+[data-th-look=modern] article picture img {
+  border-radius: 0px 0px 0 0;
 }
 
 div#page aside#sidebar h1 {
@@ -2921,9 +2949,13 @@ div#page aside#sidebar h1 {
 #mode-box-mode {
   /* Make the mode box match size with the search bar */
   width: 15em;
-  border-radius: 4px;
   -webkit-box-shadow: none;
           box-shadow: none;
+  border-radius: 4px;
+}
+
+[data-th-look=modern] #mode-box-mode {
+  border-radius: 0px;
 }
 
 div.post-score {
@@ -2991,9 +3023,9 @@ article.post-preview[data-tags~=animated] > a::before {
   border: 1px solid #ffffff;
   color: #ffffff;
   padding: 0.125rem 0.25rem;
-  border-radius: 5px;
   font-size: 60%;
   font-weight: 700;
+  border-radius: 4px;
 }
 
 [data-th-main=pony] article.post-preview[data-file-ext=webm] > a::before, [data-th-main=pony]
@@ -3026,6 +3058,12 @@ article.post-preview[data-tags~=animated] > a::before {
   background-color: #c53c38;
   border: 1px solid #ffffff;
   color: #000000;
+}
+
+[data-th-look=modern] article.post-preview[data-file-ext=webm] > a::before, [data-th-look=modern]
+article.post-preview[data-tags~=flash] > a::before, [data-th-look=modern]
+article.post-preview[data-tags~=animated] > a::before {
+  border-radius: 0px;
 }
 
 /* === UPLOAD PAGE === */
@@ -3122,6 +3160,10 @@ div.profile-stats {
   background: #c53c38;
 }
 
+[data-th-look=modern] div.profile-stats {
+  border-radius: 0px;
+}
+
 div#c-users div#a-show table.user-statistics tbody tr {
   border-bottom: 0;
   height: unset;
@@ -3185,6 +3227,11 @@ div#c-users div#a-show div.box.user-uploads {
   background: #c53c38;
 }
 
+[data-th-look=modern] div#c-users div#a-show div.box.user-favorites, [data-th-look=modern]
+div#c-users div#a-show div.box.user-uploads {
+  border-radius: 0px;
+}
+
 div#c-users div#a-show div.box.user-favorites h2,
 div#c-users div#a-show div.box.user-uploads h2 {
   border-bottom: 0.25rem solid #152f56;
@@ -3226,6 +3273,11 @@ div#c-users div#a-show div.box.user-uploads h2 {
 div#c-users div#a-show div.box.user-uploads h2 {
   border-bottom: 0.25rem solid #FF0000;
   background: #c53c38;
+}
+
+[data-th-look=modern] div#c-users div#a-show div.box.user-favorites h2, [data-th-look=modern]
+div#c-users div#a-show div.box.user-uploads h2 {
+  border-radius: 0px;
 }
 
 div#c-users div#a-show div.box.user-favorites div.vertical-section,

@@ -174,7 +174,9 @@ section#edit div.input:last-child {                             // TODO HACK The
     @include themable {
         background: themed("color-section");
     }
-    border-radius: 4px 4px 0 0;
+    @include themable($theme_look_index) {
+        border-radius: themed("border-radius-half") themed("border-radius-half") 0 0;
+    }
     width: min-content;
     padding: 1rem;
     margin: 0;

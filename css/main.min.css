@@ -142,6 +142,8 @@ footer#page-footer { background-color: #152f56; margin: 1em; margin-bottom: 0; w
 
 [data-th-main=hotdog] footer#page-footer { background-color: #FF0000; }
 
+[data-th-look=modern] footer#page-footer { border-radius: 0px 0px 0 0; }
+
 button, input, select, textarea { -webkit-box-shadow: unset; box-shadow: unset; }
 
 /* --- Links --- */
@@ -380,9 +382,13 @@ header#top menu.main li.current a { background-color: #152f56; }
 div#page aside#sidebar h1 span.search-help { float: right; font-size: 80%; }
 
 /* Desktop Searchbox */
-div#page aside#sidebar input[type=text] { width: 13em; padding: 0.125rem 0.125rem; border-radius: 4px 0 0 4px; border-right: 0; -webkit-box-sizing: border-box; box-sizing: border-box; }
+div#page aside#sidebar input[type=text] { width: 13em; padding: 0.125rem 0.125rem; border-right: 0; -webkit-box-sizing: border-box; box-sizing: border-box; border-radius: 4px 0 0 4px; }
 
-div#page aside#sidebar #search-box button[type=submit] { width: 2em; border-radius: 0 4px 4px 0; border-left: 1px solid #ccc; }
+[data-th-look=modern] div#page aside#sidebar input[type=text] { border-radius: 0px 0 0 0px; }
+
+div#page aside#sidebar #search-box button[type=submit] { width: 2em; border-left: 1px solid #ccc; border-radius: 0 4px 4px 0; }
+
+[data-th-look=modern] div#page aside#sidebar #search-box button[type=submit] { border-radius: 0 0px 0px 0; }
 
 #search-box { display: none; }
 
@@ -393,9 +399,13 @@ div#page aside#sidebar #search-box button[type=submit] { width: 2em; border-radi
 
 .mobile-search a:first-child { float: right; margin-bottom: 0.5rem; }
 
-.mobile-search .search-form form .search-input input { border-radius: 4px 0 0 4px; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.mobile-search .search-form form .search-input input { -webkit-box-sizing: border-box; box-sizing: border-box; border-radius: 4px 0 0 4px; }
 
-.mobile-search .search-form form .search-button button { border-radius: 0 4px 4px 0; border-left: 1px solid #ccc; }
+[data-th-look=modern] .mobile-search .search-form form .search-input input { border-radius: 0px 0 0 0px; }
+
+.mobile-search .search-form form .search-button button { border-left: 1px solid #ccc; border-radius: 0 4px 4px 0; }
+
+[data-th-look=modern] .mobile-search .search-form form .search-button button { border-radius: 0 0px 0px 0; }
 
 /* Blacklist */
 a#disable-all-blacklists, a#re-enable-all-blacklists { display: inline-block; font-size: 1rem; padding: 0.25rem 0.5rem; margin-top: 0.25rem; border: 0; border-radius: 4px; color: #ffffff; }
@@ -1118,6 +1128,8 @@ section#edit div.input:last-child { position: -webkit-sticky; position: sticky; 
 
 [data-th-main=hotdog] section#edit div.input:last-child { background: #c53c38; }
 
+[data-th-look=modern] section#edit div.input:last-child { border-radius: 0px 0px 0 0; }
+
 /* === POPULAR PAGE === */
 div#c-explore-posts div#a-popular { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; }
 
@@ -1130,12 +1142,16 @@ div#c-explore-posts div#a-popular h1, div#c-explore-posts div#a-popular #popular
 div#c-posts div#a-index menu#post-sections { display: none; }
 
 /* Hide "posts" header in search page (useless?) */
-article picture img { border-radius: 4px 4px 0 0; max-height: 10rem; max-width: 10rem; }
+article picture img { max-height: 10rem; max-width: 10rem; border-radius: 4px 4px 0 0; }
+
+[data-th-look=modern] article picture img { border-radius: 0px 0px 0 0; }
 
 div#page aside#sidebar h1 { margin-bottom: 0.25rem; }
 
 /* Minor padding fix for the tag and blacklist */
-#mode-box-mode { /* Make the mode box match size with the search bar */ width: 15em; border-radius: 4px; -webkit-box-shadow: none; box-shadow: none; }
+#mode-box-mode { /* Make the mode box match size with the search bar */ width: 15em; -webkit-box-shadow: none; box-shadow: none; border-radius: 4px; }
+
+[data-th-look=modern] #mode-box-mode { border-radius: 0px; }
 
 div.post-score { font-size: 0.8rem; }
 
@@ -1157,7 +1173,7 @@ article.post-preview div.desc { background-color: #25477b; }
 /* Animation Type Badges */
 article.post-preview[data-tags~=flash] > a::before { content: "SWF"; }
 
-article.post-preview[data-file-ext=webm] > a::before, article.post-preview[data-tags~=flash] > a::before, article.post-preview[data-tags~=animated] > a::before { position: absolute; left: 0; top: 0.5rem; z-index: 5; background-color: #1f3c67; border: 1px solid #ffffff; color: #ffffff; padding: 0.125rem 0.25rem; border-radius: 5px; font-size: 60%; font-weight: 700; }
+article.post-preview[data-file-ext=webm] > a::before, article.post-preview[data-tags~=flash] > a::before, article.post-preview[data-tags~=animated] > a::before { position: absolute; left: 0; top: 0.5rem; z-index: 5; background-color: #1f3c67; border: 1px solid #ffffff; color: #ffffff; padding: 0.125rem 0.25rem; font-size: 60%; font-weight: 700; border-radius: 4px; }
 
 [data-th-main=pony] article.post-preview[data-file-ext=webm] > a::before, [data-th-main=pony] article.post-preview[data-tags~=flash] > a::before, [data-th-main=pony] article.post-preview[data-tags~=animated] > a::before { background-color: #453269; border: 1px solid #ffffff; color: #ffffff; }
 
@@ -1166,6 +1182,8 @@ article.post-preview[data-file-ext=webm] > a::before, article.post-preview[data-
 [data-th-main=serpent] article.post-preview[data-file-ext=webm] > a::before, [data-th-main=serpent] article.post-preview[data-tags~=flash] > a::before, [data-th-main=serpent] article.post-preview[data-tags~=animated] > a::before { background-color: #fff48b; border: 1px solid #ffffff; color: #000000; }
 
 [data-th-main=hotdog] article.post-preview[data-file-ext=webm] > a::before, [data-th-main=hotdog] article.post-preview[data-tags~=flash] > a::before, [data-th-main=hotdog] article.post-preview[data-tags~=animated] > a::before { background-color: #c53c38; border: 1px solid #ffffff; color: #000000; }
+
+[data-th-look=modern] article.post-preview[data-file-ext=webm] > a::before, [data-th-look=modern] article.post-preview[data-tags~=flash] > a::before, [data-th-look=modern] article.post-preview[data-tags~=animated] > a::before { border-radius: 0px; }
 
 /* === UPLOAD PAGE === */
 .toggle-button[data-v-deb50420] { margin: 0.25rem 0.5rem 0.25rem 0; }
@@ -1214,6 +1232,8 @@ div.profile-stats { background: #1f3c67; padding: 0.5rem; border-radius: 4px; }
 
 [data-th-main=hotdog] div.profile-stats { background: #c53c38; }
 
+[data-th-look=modern] div.profile-stats { border-radius: 0px; }
+
 div#c-users div#a-show table.user-statistics tbody tr { border-bottom: 0; height: unset; }
 
 div#c-users div#a-show table.user-statistics tbody tr:hover { background-color: unset; }
@@ -1236,6 +1256,8 @@ div#c-users div#a-show div.box.user-favorites, div#c-users div#a-show div.box.us
 
 [data-th-main=hotdog] div#c-users div#a-show div.box.user-favorites, [data-th-main=hotdog] div#c-users div#a-show div.box.user-uploads { background: #c53c38; }
 
+[data-th-look=modern] div#c-users div#a-show div.box.user-favorites, [data-th-look=modern] div#c-users div#a-show div.box.user-uploads { border-radius: 0px; }
+
 div#c-users div#a-show div.box.user-favorites h2, div#c-users div#a-show div.box.user-uploads h2 { border-bottom: 0.25rem solid #152f56; background: #1f3c67; position: absolute; bottom: -2.5rem; -webkit-transform: rotate(270deg); transform: rotate(270deg); -webkit-transform-origin: top left; transform-origin: top left; width: 12rem; height: 2rem; line-height: 2rem; padding: 0 0 0.25rem; text-align: center; overflow: hidden; border-radius: 4px; }
 
 [data-th-main=pony] div#c-users div#a-show div.box.user-favorites h2, [data-th-main=pony] div#c-users div#a-show div.box.user-uploads h2 { border-bottom: 0.25rem solid #2f175c; background: #453269; }
@@ -1245,6 +1267,8 @@ div#c-users div#a-show div.box.user-favorites h2, div#c-users div#a-show div.box
 [data-th-main=serpent] div#c-users div#a-show div.box.user-favorites h2, [data-th-main=serpent] div#c-users div#a-show div.box.user-uploads h2 { border-bottom: 0.25rem solid #dacf6b; background: #fff48b; }
 
 [data-th-main=hotdog] div#c-users div#a-show div.box.user-favorites h2, [data-th-main=hotdog] div#c-users div#a-show div.box.user-uploads h2 { border-bottom: 0.25rem solid #FF0000; background: #c53c38; }
+
+[data-th-look=modern] div#c-users div#a-show div.box.user-favorites h2, [data-th-look=modern] div#c-users div#a-show div.box.user-uploads h2 { border-radius: 0px; }
 
 div#c-users div#a-show div.box.user-favorites div.vertical-section, div#c-users div#a-show div.box.user-uploads div.vertical-section { height: 12rem; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; -webkit-box-pack: space-evenly; -ms-flex-pack: space-evenly; justify-content: space-evenly; margin: 0 0 0 2rem; }
 

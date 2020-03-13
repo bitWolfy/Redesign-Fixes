@@ -8,14 +8,18 @@ div#page aside#sidebar h1 span.search-help {
 div#page aside#sidebar input[type=text] {                       // Re-style the search bar
     width: 13em;                                                // Spite-filled redesigning initiated
     padding: 0.125rem 0.125rem;
-    border-radius: 4px 0 0 4px;
     border-right: 0;
     box-sizing: border-box;
+    @include themable($theme_look_index) {
+        border-radius: themed("border-radius-half") 0 0 themed("border-radius-half");
+    }
 }
 div#page aside#sidebar #search-box button[type=submit] {
     width: 2em;
-    border-radius: 0 4px 4px 0;
     border-left: 1px solid #ccc;
+    @include themable($theme_look_index) {
+        border-radius: 0 themed("border-radius-half") themed("border-radius-half") 0;
+    }
 }
 
 #search-box { display: none; }                                  // Hide the desktop searchbox on mobile
@@ -32,12 +36,16 @@ div#page aside#sidebar #search-box button[type=submit] {
     margin-bottom: 0.5rem;
 }
 .mobile-search .search-form form .search-input input {
-    border-radius: 4px 0 0 4px;
     box-sizing: border-box;
+    @include themable($theme_look_index) {
+        border-radius: themed("border-radius-half") 0 0 themed("border-radius-half");
+    }
 }
 .mobile-search .search-form form .search-button button {
-    border-radius: 0 4px 4px 0;
     border-left: 1px solid #ccc;
+    @include themable($theme_look_index) {
+        border-radius: 0 themed("border-radius-half") themed("border-radius-half") 0;
+    }
 }
 
 /* Blacklist */
