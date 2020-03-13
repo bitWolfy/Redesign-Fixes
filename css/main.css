@@ -2934,10 +2934,16 @@ article.post-preview div.desc {
 }
 
 /* Animation Type Badges */
+article.post-preview[data-tags~=flash] > a::before {
+  content: "SWF";
+}
+
 article.post-preview[data-file-ext=webm] > a::before,
+article.post-preview[data-tags~=flash] > a::before,
 article.post-preview[data-tags~=animated] > a::before {
   position: absolute;
   left: 0;
+  top: 0.5rem;
   z-index: 5;
   background-color: #1f3c67;
   border: 1px solid #ffffff;
@@ -2949,6 +2955,7 @@ article.post-preview[data-tags~=animated] > a::before {
 }
 
 [data-theme=pony] article.post-preview[data-file-ext=webm] > a::before, [data-theme=pony]
+article.post-preview[data-tags~=flash] > a::before, [data-theme=pony]
 article.post-preview[data-tags~=animated] > a::before {
   background-color: #453269;
   border: 1px solid #ffffff;
@@ -2956,6 +2963,7 @@ article.post-preview[data-tags~=animated] > a::before {
 }
 
 [data-theme=bloodlust] article.post-preview[data-file-ext=webm] > a::before, [data-theme=bloodlust]
+article.post-preview[data-tags~=flash] > a::before, [data-theme=bloodlust]
 article.post-preview[data-tags~=animated] > a::before {
   background-color: #333333;
   border: 1px solid #ffffff;
@@ -2963,6 +2971,7 @@ article.post-preview[data-tags~=animated] > a::before {
 }
 
 [data-theme=serpent] article.post-preview[data-file-ext=webm] > a::before, [data-theme=serpent]
+article.post-preview[data-tags~=flash] > a::before, [data-theme=serpent]
 article.post-preview[data-tags~=animated] > a::before {
   background-color: #fff48b;
   border: 1px solid #ffffff;
@@ -2970,6 +2979,7 @@ article.post-preview[data-tags~=animated] > a::before {
 }
 
 [data-theme=hotdog] article.post-preview[data-file-ext=webm] > a::before, [data-theme=hotdog]
+article.post-preview[data-tags~=flash] > a::before, [data-theme=hotdog]
 article.post-preview[data-tags~=animated] > a::before {
   background-color: #c53c38;
   border: 1px solid #ffffff;

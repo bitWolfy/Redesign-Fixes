@@ -41,10 +41,15 @@ article.post-preview div.desc {
 }
 
 /* Animation Type Badges */
+article.post-preview[data-tags~=flash] > a::before {
+    content: "SWF"
+}
 article.post-preview[data-file-ext=webm]  > a::before,
+article.post-preview[data-tags~=flash] > a::before,
 article.post-preview[data-tags~=animated] > a::before {
     position: absolute;
     left: 0;
+    top: 0.5rem;
     z-index: 5;
     
     @include themable {
