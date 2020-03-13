@@ -129,8 +129,9 @@ td a.last-page:hover {
 div#page div.site-notice {
     @include themable {
         background-color: themed("color-section");
+        border: 1px solid themed("color-foreground");
+        color: themed("color-text");
     }
-    border: 1px solid rgba(0, 0, 0, 0.5);
-    padding: 0.25rem !important;
-    box-shadow: 0 0 27px rgba(0, 0, 0, 0.2);
+    margin-bottom: 0.5rem;
+    box-shadow: unset;
 }

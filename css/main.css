@@ -829,30 +829,41 @@ td a.last-page:hover {
 /* === NOTICES === */
 div#page div.site-notice {
   background-color: #1f3c67;
-  border: 1px solid rgba(0, 0, 0, 0.5);
-  padding: 0.25rem !important;
-  -webkit-box-shadow: 0 0 27px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 0 27px rgba(0, 0, 0, 0.2);
+  border: 1px solid #152f56;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+  -webkit-box-shadow: unset;
+          box-shadow: unset;
 }
 
 [data-theme=hexagon] div#page div.site-notice {
   background-color: #1f3c67;
+  border: 1px solid #152f56;
+  color: #ffffff;
 }
 
 [data-theme=pony] div#page div.site-notice {
   background-color: #453269;
+  border: 1px solid #2f175c;
+  color: #ffffff;
 }
 
 [data-theme=bloodlust] div#page div.site-notice {
   background-color: #333333;
+  border: 1px solid #222222;
+  color: #ffffff;
 }
 
 [data-theme=serpent] div#page div.site-notice {
   background-color: #fff48b;
+  border: 1px solid #dacf6b;
+  color: #000000;
 }
 
 [data-theme=hotdog] div#page div.site-notice {
   background-color: #c53c38;
+  border: 1px solid #FF0000;
+  color: #000000;
 }
 
 /* --- Header --- */
