@@ -1302,9 +1302,11 @@ article.post-preview[data-tags~="animated"]::before, article.post-preview[data-t
 [data-theme=hotdog] article.post-preview[data-tags~="animated"]::before, [data-theme=hotdog] article.post-preview[data-tags~="mp4"]::before, [data-theme=hotdog] article.post-preview[data-tags~="flash"]::before, [data-theme=hotdog] article.post-preview[data-tags~="webm"]::before { background-color: #c53c38; border: 1px solid #ffffff; }
 
 /* === UPLOAD PAGE === */
-.toggle-button[data-v-deb50420] { margin-bottom: 5px; }
+.toggle-button[data-v-deb50420] { margin: 0.25rem 0.5rem 0.25rem 0; }
 
-.tag-textarea[data-v-deb50420], .flex-wrap[data-v-deb50420] { margin: 10px 0 5px; }
+.toggle-button[data-v-deb50420]:last-child { margin-right: 0; }
+
+textarea[data-v-deb50420] { margin: 0.25rem 0; }
 
 .toggle-button.active[data-v-deb50420] { background-color: #e8c446; }
 
@@ -1322,7 +1324,7 @@ article.post-preview[data-tags~="animated"]::before, article.post-preview[data-t
 /* Shadow below user-name in profile's page, because why not */
 div.profile-stats > h1 { margin: 0.25em 0.5em; }
 
-div.profile-stats > h1 > a { background: #152f56; padding: 3px 20px; border-radius: 20px; }
+div.profile-stats > h1 > a { background: #152f56; padding: 0.25rem 1.5rem; border-radius: 1.5rem; }
 
 [data-theme=hexagon] div.profile-stats > h1 > a { background: #152f56; }
 
@@ -1340,7 +1342,7 @@ div#c-users div#a-show div.profile-container { padding: 0 0 1em; }
 div#c-users div#a-show > div.profile-container:last-child { -ms-flex-flow: wrap; flex-flow: wrap; }
 
 /* Profile statistics - get rid of striping, add background for clarity */
-div.profile-stats { background: #1f3c67; padding: 10px; border-radius: 4px; }
+div.profile-stats { background: #1f3c67; padding: 0.5rem; border-radius: 4px; }
 
 [data-theme=hexagon] div.profile-stats { background: #1f3c67; }
 
@@ -1358,37 +1360,37 @@ div#c-users div#a-show table.user-statistics tbody tr:hover { background-color: 
 
 div#c-users div#a-show table.user-statistics tbody th { vertical-align: middle; width: 1%; white-space: nowrap; }
 
-div#c-users div#a-show table.user-statistics td { width: auto; padding: 3px; }
+div#c-users div#a-show table.user-statistics tbody th, div#c-users div#a-show table.user-statistics tbody td { width: auto; padding: 0.25rem 0.5rem; }
 
 /* User rating in profile's page (and everywhere) with bold fonts like before */
 .user-feedback-positive, .user-feedback-neutral, .user-feedback-negative { font-weight: 700; }
 
 /* Re-position the favorites section */
-div#c-users div#a-show div.box.user-favorites, div#c-users div#a-show div.box.user-uploads { display: inline-block; position: relative; -webkit-box-flex: 0; -ms-flex: 0 0 100%; flex: 0 0 100%; height: 200px; min-width: 30px; border: 1px solid #152f56; background: #1f3c67; margin-bottom: 1em; border-radius: 4px; }
+div#c-users div#a-show div.box.user-favorites, div#c-users div#a-show div.box.user-uploads { display: inline-block; position: relative; -webkit-box-flex: 0; -ms-flex: 0 0 100%; flex: 0 0 100%; height: 12rem; min-width: 2rem; background: #1f3c67; margin-bottom: 1em; border-radius: 4px; }
 
-[data-theme=hexagon] div#c-users div#a-show div.box.user-favorites, [data-theme=hexagon] div#c-users div#a-show div.box.user-uploads { border: 1px solid #152f56; background: #1f3c67; }
+[data-theme=hexagon] div#c-users div#a-show div.box.user-favorites, [data-theme=hexagon] div#c-users div#a-show div.box.user-uploads { background: #1f3c67; }
 
-[data-theme=pony] div#c-users div#a-show div.box.user-favorites, [data-theme=pony] div#c-users div#a-show div.box.user-uploads { border: 1px solid #2f175c; background: #453269; }
+[data-theme=pony] div#c-users div#a-show div.box.user-favorites, [data-theme=pony] div#c-users div#a-show div.box.user-uploads { background: #453269; }
 
-[data-theme=bloodlust] div#c-users div#a-show div.box.user-favorites, [data-theme=bloodlust] div#c-users div#a-show div.box.user-uploads { border: 1px solid #222222; background: #333333; }
+[data-theme=bloodlust] div#c-users div#a-show div.box.user-favorites, [data-theme=bloodlust] div#c-users div#a-show div.box.user-uploads { background: #333333; }
 
-[data-theme=serpent] div#c-users div#a-show div.box.user-favorites, [data-theme=serpent] div#c-users div#a-show div.box.user-uploads { border: 1px solid #dacf6b; background: #fff48b; }
+[data-theme=serpent] div#c-users div#a-show div.box.user-favorites, [data-theme=serpent] div#c-users div#a-show div.box.user-uploads { background: #fff48b; }
 
-[data-theme=hotdog] div#c-users div#a-show div.box.user-favorites, [data-theme=hotdog] div#c-users div#a-show div.box.user-uploads { border: 1px solid #FF0000; background: #c53c38; }
+[data-theme=hotdog] div#c-users div#a-show div.box.user-favorites, [data-theme=hotdog] div#c-users div#a-show div.box.user-uploads { background: #c53c38; }
 
-div#c-users div#a-show div.box.user-favorites h2, div#c-users div#a-show div.box.user-uploads h2 { border-bottom: 4px solid #152f56; background: #1f3c67; position: absolute; bottom: -39px; -webkit-transform: rotate(270deg); transform: rotate(270deg); -webkit-transform-origin: top left; transform-origin: top left; width: 200px; height: 30px; line-height: 30px; padding: 0 0 5px; text-align: center; overflow: hidden; border-radius: 4px; }
+div#c-users div#a-show div.box.user-favorites h2, div#c-users div#a-show div.box.user-uploads h2 { border-bottom: 0.25rem solid #152f56; background: #1f3c67; position: absolute; bottom: -2.5rem; -webkit-transform: rotate(270deg); transform: rotate(270deg); -webkit-transform-origin: top left; transform-origin: top left; width: 12rem; height: 2rem; line-height: 2rem; padding: 0 0 0.25rem; text-align: center; overflow: hidden; border-radius: 4px; }
 
-[data-theme=hexagon] div#c-users div#a-show div.box.user-favorites h2, [data-theme=hexagon] div#c-users div#a-show div.box.user-uploads h2 { border-bottom: 4px solid #152f56; background: #1f3c67; }
+[data-theme=hexagon] div#c-users div#a-show div.box.user-favorites h2, [data-theme=hexagon] div#c-users div#a-show div.box.user-uploads h2 { border-bottom: 0.25rem solid #152f56; background: #1f3c67; }
 
-[data-theme=pony] div#c-users div#a-show div.box.user-favorites h2, [data-theme=pony] div#c-users div#a-show div.box.user-uploads h2 { border-bottom: 4px solid #2f175c; background: #453269; }
+[data-theme=pony] div#c-users div#a-show div.box.user-favorites h2, [data-theme=pony] div#c-users div#a-show div.box.user-uploads h2 { border-bottom: 0.25rem solid #2f175c; background: #453269; }
 
-[data-theme=bloodlust] div#c-users div#a-show div.box.user-favorites h2, [data-theme=bloodlust] div#c-users div#a-show div.box.user-uploads h2 { border-bottom: 4px solid #222222; background: #333333; }
+[data-theme=bloodlust] div#c-users div#a-show div.box.user-favorites h2, [data-theme=bloodlust] div#c-users div#a-show div.box.user-uploads h2 { border-bottom: 0.25rem solid #222222; background: #333333; }
 
-[data-theme=serpent] div#c-users div#a-show div.box.user-favorites h2, [data-theme=serpent] div#c-users div#a-show div.box.user-uploads h2 { border-bottom: 4px solid #dacf6b; background: #fff48b; }
+[data-theme=serpent] div#c-users div#a-show div.box.user-favorites h2, [data-theme=serpent] div#c-users div#a-show div.box.user-uploads h2 { border-bottom: 0.25rem solid #dacf6b; background: #fff48b; }
 
-[data-theme=hotdog] div#c-users div#a-show div.box.user-favorites h2, [data-theme=hotdog] div#c-users div#a-show div.box.user-uploads h2 { border-bottom: 4px solid #FF0000; background: #c53c38; }
+[data-theme=hotdog] div#c-users div#a-show div.box.user-favorites h2, [data-theme=hotdog] div#c-users div#a-show div.box.user-uploads h2 { border-bottom: 0.25rem solid #FF0000; background: #c53c38; }
 
-div#c-users div#a-show div.box.user-favorites div.vertical-section, div#c-users div#a-show div.box.user-uploads div.vertical-section { height: 200px; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; -webkit-box-pack: space-evenly; -ms-flex-pack: space-evenly; justify-content: space-evenly; margin: 0 20px 0 40px; }
+div#c-users div#a-show div.box.user-favorites div.vertical-section, div#c-users div#a-show div.box.user-uploads div.vertical-section { height: 12rem; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; -webkit-box-pack: space-evenly; -ms-flex-pack: space-evenly; justify-content: space-evenly; margin: 0 0 0 2rem; }
 
 div#c-users div#a-show div.box.user-favorites h4, div#c-users div#a-show div.box.user-uploads h4 { text-align: center; }
 
@@ -1424,7 +1426,7 @@ fieldset { min-width: 0; }
 
 form select, form input { font-size: inherit; }
 
-body.resp form.simple_form div.input input[type="email"], body.resp form.simple_form div.input input[type="number"], body.resp form.simple_form div.input input[type="password"], body.resp form.simple_form div.input input[type="text"], body.resp form.simple_form div.input textarea { width: calc(100% - 5px); }
+body.resp form.simple_form div.input input[type="email"], body.resp form.simple_form div.input input[type="number"], body.resp form.simple_form div.input input[type="password"], body.resp form.simple_form div.input input[type="text"], body.resp form.simple_form div.input textarea { width: 100%; }
 
 div#c-users div#a-edit div.input { margin-bottom: 1em; }
 
@@ -1432,9 +1434,7 @@ div#c-users div#a-edit h1 { margin: unset; }
 
 div#c-users div#a-edit h2 { margin-bottom: .5em; }
 
-#user_custom_style { height: 800px; }
-
-#user_blacklisted_tags { height: 300px; }
+#user_custom_styl, #user_blacklisted_tags { height: 25rem; }
 
 .simple_form { padding: 0.5em; background: unset; }
 

@@ -1,9 +1,7 @@
 /* === UPLOAD PAGE === */
-.toggle-button[data-v-deb50420] { margin-bottom: 5px; }         // Fix the spacing on the uploads page
-.tag-textarea[data-v-deb50420],                                 // Credit goes to Peegus for this one
-.flex-wrap[data-v-deb50420] { margin: 10px 0 5px; }
-.toggle-button.active[data-v-deb50420] {                        // Make selected buttons stand out more
-    @include themable {
-        background-color: themed("color-link-active");
-    }
+.toggle-button[data-v-deb50420] { margin: 0.25rem 0.5rem 0.25rem 0; }
+.toggle-button[data-v-deb50420]:last-child { margin-right: 0; }
+textarea[data-v-deb50420] { margin: 0.25rem 0; }
+.toggle-button.active[data-v-deb50420] {
+    @include themable { background-color: themed("color-link-active"); }
 }
