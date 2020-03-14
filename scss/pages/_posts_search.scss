@@ -1,6 +1,7 @@
 /* === MAIN PAGE LAYOUT === */
-div#page div#a-index,
-div#page div#a-show {
+div#page div#c-posts div#a-index,
+div#page div#c-favorites div#a-index,
+div#page div#c-posts div#a-show {
 
     display: grid;
     grid-template-columns: auto;
