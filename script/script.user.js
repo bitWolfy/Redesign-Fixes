@@ -145,7 +145,8 @@ $(function() {
     // === Simple blacklist collapsable ===
     $("#blacklist-box h1").html(`<a href="" id="blacklist-toggle">► Blacklisted</a>`);
 
-    $("#blacklist-box div").css("display", "none");
+    // Disable e6NG Helper's blacklist toggle
+    $("#blacklist-box > div").first().css("display", "none");
 
     // Hide the filters by default, unless they are all disabled
     if($("a#re-enable-all-blacklists").css("display") == "none") {
