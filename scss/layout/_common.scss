@@ -26,9 +26,7 @@ div#page {
         background-repeat: themed("image-foreground-repeat");
         padding-bottom: themed("content-padding-bottom");
     }
-    @include themable($data_map: $theme_look_index) {
-        border-radius: themed("border-radius-full");
-    }
+    border-radius: $border-radius-full;
 }
 
 footer#page-footer {
@@ -38,9 +36,7 @@ footer#page-footer {
     margin: 1em;
     margin-bottom: 0;
     width: unset;
-    @include themable($theme_look_index) {
-        border-radius: themed("border-radius-full") themed("border-radius-full") 0 0;
-    }
+    border-radius: $border-radius-full $border-radius-full 0 0;
 }
 
 button, input, select, textarea { box-shadow: unset; }          // Get rid of shadows on inputs
