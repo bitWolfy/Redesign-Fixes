@@ -785,9 +785,6 @@ div#notice {
   top: 5rem;
   left: 25%;
   z-index: 100;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
