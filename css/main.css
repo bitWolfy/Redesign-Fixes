@@ -2306,6 +2306,86 @@ div#c-post-versions div#a-index .pv-sources {
 }
 
 /* === IMAGE PAGE === */
+/* Re-order the elements */
+div#c-posts div#a-show section#content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto minmax(0, 1fr);
+      grid-template-columns: auto minmax(0, 1fr);
+}
+
+div#c-posts div#a-show div#ad-leaderboard {
+  grid-area: 1  / 1 / auto / none;
+}
+
+div#c-posts div#a-show div#nav-links {
+  -ms-grid-column: 1;
+  grid-area: 2  / 1 / auto / 1;
+}
+
+div#c-posts div.notice.notice-resized {
+  -ms-grid-column: 1;
+  grid-area: 4  / 1 / auto / 1;
+}
+
+div#c-posts div#a-show section#image-container {
+  -ms-grid-column: 1;
+  grid-area: 4  / 1 / auto / 1;
+}
+
+div#c-posts div.notice.notice-flagged {
+  -ms-grid-column: 1;
+  grid-area: 5  / 1 / auto / 1;
+}
+
+div#c-posts div.notice.notice-pending {
+  -ms-grid-column: 1;
+  grid-area: 6  / 1 / auto / 1;
+}
+
+div#c-posts div.notice.notice-deleted {
+  -ms-grid-column: 1;
+  grid-area: 6  / 1 / auto / 1;
+}
+
+div#c-posts div.notice.notice-appealed {
+  -ms-grid-column: 1;
+  grid-area: 6  / 1 / auto / 1;
+}
+
+div#c-posts div.bottom-notices {
+  -ms-grid-column: 1;
+  grid-area: 7  / 1 / auto / 1;
+}
+
+div#c-posts div#a-show section#image-extra-controls {
+  grid-area: 8  / 1 / auto / none;
+}
+
+div#c-posts div#a-show div#post-description-container {
+  grid-area: 9  / 1 / auto / none;
+}
+
+div#c-posts div#a-show section#mark-as-translated-section {
+  grid-area: 10 / 1 / auto / none;
+}
+
+div#c-posts div#a-show section#notes {
+  grid-area: 11 / 1 / auto / none;
+}
+
+div#c-posts div#a-show menu#post-sections {
+  grid-area: 12 / 1 / auto / none;
+}
+
+div#c-posts div#a-show section#comments {
+  grid-area: 13 / 1 / auto / none;
+}
+
+div#c-posts div#a-show section#edit {
+  grid-area: 13 / 1 / auto / none;
+}
+
 /* Search / Pool / Set Navigation */
 #pool-nav .first, #pool-nav .last {
   display: none;
@@ -2730,17 +2810,48 @@ div#image-download-link a:hover {
 }
 
 /* Notices */
+div#c-posts div.notice.notice-resized {
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  max-height: 1rem;
+  margin: 0 auto;
+  border: 0;
+  font-weight: 700;
+  background: rgba(31, 60, 103, 0.7);
+  border-radius: 0 0 6px 6px;
+}
+
+[data-th-main=pony] div#c-posts div.notice.notice-resized {
+  background: rgba(69, 50, 105, 0.7);
+}
+
+[data-th-main=bloodlust] div#c-posts div.notice.notice-resized {
+  background: rgba(51, 51, 51, 0.7);
+}
+
+[data-th-main=serpent] div#c-posts div.notice.notice-resized {
+  background: rgba(255, 244, 139, 0.7);
+}
+
+[data-th-main=hotdog] div#c-posts div.notice.notice-resized {
+  background: rgba(197, 60, 56, 0.7);
+}
+
+[data-th-look=modern] div#c-posts div.notice.notice-resized {
+  border-radius: 0 0 0px 0px;
+}
+
 div#c-posts div.notice.notice-appealed,
-div#c-posts div.notice.notice-resized,
 div#c-posts div.notice.notice-child,
 div#c-posts div.notice.notice-parent,
 div#c-posts div.notice.notice-pending {
+  margin: unset;
   background: #1f3c67;
   border: 1px solid #152f56;
 }
 
 [data-th-main=pony] div#c-posts div.notice.notice-appealed, [data-th-main=pony]
-div#c-posts div.notice.notice-resized, [data-th-main=pony]
 div#c-posts div.notice.notice-child, [data-th-main=pony]
 div#c-posts div.notice.notice-parent, [data-th-main=pony]
 div#c-posts div.notice.notice-pending {
@@ -2749,7 +2860,6 @@ div#c-posts div.notice.notice-pending {
 }
 
 [data-th-main=bloodlust] div#c-posts div.notice.notice-appealed, [data-th-main=bloodlust]
-div#c-posts div.notice.notice-resized, [data-th-main=bloodlust]
 div#c-posts div.notice.notice-child, [data-th-main=bloodlust]
 div#c-posts div.notice.notice-parent, [data-th-main=bloodlust]
 div#c-posts div.notice.notice-pending {
@@ -2758,7 +2868,6 @@ div#c-posts div.notice.notice-pending {
 }
 
 [data-th-main=serpent] div#c-posts div.notice.notice-appealed, [data-th-main=serpent]
-div#c-posts div.notice.notice-resized, [data-th-main=serpent]
 div#c-posts div.notice.notice-child, [data-th-main=serpent]
 div#c-posts div.notice.notice-parent, [data-th-main=serpent]
 div#c-posts div.notice.notice-pending {
@@ -2767,7 +2876,6 @@ div#c-posts div.notice.notice-pending {
 }
 
 [data-th-main=hotdog] div#c-posts div.notice.notice-appealed, [data-th-main=hotdog]
-div#c-posts div.notice.notice-resized, [data-th-main=hotdog]
 div#c-posts div.notice.notice-child, [data-th-main=hotdog]
 div#c-posts div.notice.notice-parent, [data-th-main=hotdog]
 div#c-posts div.notice.notice-pending {

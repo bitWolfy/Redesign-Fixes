@@ -1,12 +1,42 @@
 /* === IMAGE PAGE === */
+/* Re-order the elements */
+div#c-posts div#a-show section#content {                        // TODO HACK Today, on bitWolfy abuses the grid system...
+    display: grid;                                              // To demonstrate the power of grid layout, I cut this page in half
+    grid-template-columns: auto minmax(0, 1fr);
+}
+
+div#c-posts div#a-show div#ad-leaderboard                   { grid-area: 1  / 1 / auto / none; }        // ad banner
+div#c-posts div#a-show div#nav-links                        { grid-area: 2  / 1 / auto / 1; }           // search / pool / set navs
+
+div#c-posts div.notice.notice-resized                       { grid-area: 4  / 1 / auto / 1; }           // image resized notice
+div#c-posts div#a-show section#image-container              { grid-area: 4  / 1 / auto / 1; }           // main image
+
+div#c-posts div.notice.notice-flagged                       { grid-area: 5  / 1 / auto / 1; }           // moderation flags
+div#c-posts div.notice.notice-pending                       { grid-area: 6  / 1 / auto / 1; }
+div#c-posts div.notice.notice-deleted                       { grid-area: 6  / 1 / auto / 1; }
+div#c-posts div.notice.notice-appealed                      { grid-area: 6  / 1 / auto / 1; }
+
+div#c-posts div.bottom-notices                              { grid-area: 7  / 1 / auto / 1; }           // parent-child section
+
+div#c-posts div#a-show section#image-extra-controls         { grid-area: 8  / 1 / auto / none; }        // favorite, download, change size
+
+div#c-posts div#a-show div#post-description-container       { grid-area: 9  / 1 / auto / none; }        // description
+
+div#c-posts div#a-show section#mark-as-translated-section   { grid-area: 10 / 1 / auto / none; }        // new note form
+div#c-posts div#a-show section#notes                        { grid-area: 11 / 1 / auto / none; }        // existing notes
+
+div#c-posts div#a-show menu#post-sections                   { grid-area: 12 / 1 / auto / none; }        // comments / edit controls
+div#c-posts div#a-show section#comments                     { grid-area: 13 / 1 / auto / none; }        // comment section
+div#c-posts div#a-show section#edit                         { grid-area: 13 / 1 / auto / none; }        // tag editing form
+
 /* Search / Pool / Set Navigation */
 #pool-nav .first, #pool-nav .last {                             // TODO HACK Not sure if the links to go to the first and last pages of the pool are even necessary
     display: none;                                              // But they sure make mobile navigation harder
 }
 
-div#c-posts div#nav-links {                                     // TODO HACK If the nav-links and the image were in the same container
-    background: transparent;                                    // It wold be possible to have the nav-links be the same size as the image
-    border: unset;                                              // The way it is now, doing so would also squish the comment section
+div#c-posts div#nav-links {
+    background: transparent;
+    border: unset;
     padding: unset;
     margin: unset;
 }
@@ -115,7 +145,7 @@ div#image-download-link a {                                     // Recolor the d
         background: themed("color-warning");
         color: themed("color-text-white");
     }
-    @include themable($data_map: $theme_look_index) {
+    @include themable($theme_look_index) {
         border-radius: themed("border-radius-half");
     }
     font-size: 1rem;
@@ -127,11 +157,26 @@ div#image-download-link a:hover {
 }
 
 /* Notices */
+div#c-posts div.notice.notice-resized {
+    max-width: fit-content;
+    max-height: 1rem;
+    margin: 0 auto;
+    border: 0;
+    font-weight: 700;
+
+    @include themable {
+        background: rgba( themed("color-section"), 0.7);
+    }
+    @include themable($theme_look_index) {
+        border-radius: 0 0 themed("border-radius-full") themed("border-radius-full");
+    }
+}
+
 div#c-posts div.notice.notice-appealed,
-div#c-posts div.notice.notice-resized,
 div#c-posts div.notice.notice-child,
 div#c-posts div.notice.notice-parent,
 div#c-posts div.notice.notice-pending {
+    margin: unset;
     @include themable {
         background: themed("color-section");
         border: 1px solid themed("color-foreground");
