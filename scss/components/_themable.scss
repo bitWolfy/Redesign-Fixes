@@ -1,6 +1,6 @@
 @import '../themes/!index';
 
-@mixin themable($data_map: $theme_index, $apply_to_self: false) {
+@mixin themable($data_map: $theme_main_index, $apply_to_self: false) {
     // Apply the default style to the original element
     $data_current: map-get($data_map, "default") !global;
     @content;
@@ -14,13 +14,13 @@
     // Iterates over the list of themes and creates corresponding classes
     @each $theme, $map in map-get($data_map, "themes") {
         @if ($apply_to_self == true) {
-            &[data-#{$data_attr}=#{$theme}] {
+            &[data-th-#{$data_attr}=#{$theme}] {
                 $data_current: $map !global;
                 @content;
                 $data_current: null !global;
             }
         } @else {
-            [data-#{$data_attr}=#{$theme}] & {
+            [data-th-#{$data_attr}=#{$theme}] & {
                 $data_current: $map !global;
                 @content;
                 $data_current: null !global;

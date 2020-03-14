@@ -4,17 +4,21 @@
 @import 'theme_serpent';
 @import 'theme_hotdog';
 
-@import 'extras_none';
-@import 'extras_autumn';
-@import 'extras_winter';
-@import 'extras_spring';
-@import 'extras_aurora';
-@import 'extras_hexagons';
-@import 'extras_space';
-@import 'extras_stars';
+@import 'look_classic';
+@import 'look_modern';
 
-$theme_index: (
-    "data-attr":    "theme",
+@import 'extra_none';
+@import 'extra_autumn';
+@import 'extra_winter';
+@import 'extra_spring';
+@import 'extra_aurora';
+@import 'extra_hexagons';
+@import 'extra_space';
+@import 'extra_stars';
+
+// Primary theming - colors, main backgrounds, etc
+$theme_main_index: (
+    "data-attr":    "main",
     "default":      $theme_hexagon,
     "themes": (
 //      "hexagon":      $theme_hexagon,
@@ -25,17 +29,28 @@ $theme_index: (
     )
 );
 
-$extras_index: (
-    "data-attr":    "extras",
-    "default":      $extras_hexagons,
+// Secondary theming - padding, margins, border width and radius
+$theme_look_index: (
+    "data-attr":        "look",
+    "default":          $look_classic,
     "themes": (
-        "none":         $extras_none,
-        "autumn":       $extras_autumn,
-        "winter":       $extras_winter,
-        "spring":       $extras_spring,
-        "aurora":       $extras_aurora,
-//      "hexagons":     $extras_hexagons,
-        "space":        $extras_space,
-        "stars":        $extras_stars,
+//      "classic":      $look_classic,
+        "modern":       $look_modern,
+    )
+);
+
+// Tertiary theming - seasonal decorations
+$theme_extra_index: (
+    "data-attr":        "extra",
+    "default":          $extra_hexagons,
+    "themes": (
+//      "hexagons":     $extra_hexagons,
+        "none":         $extra_none,
+        "autumn":       $extra_autumn,
+        "winter":       $extra_winter,
+        "spring":       $extra_spring,
+        "aurora":       $extra_aurora,
+        "space":        $extra_space,
+        "stars":        $extra_stars,
     )
 );

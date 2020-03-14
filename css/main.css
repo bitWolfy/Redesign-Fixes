@@ -3,7 +3,7 @@
 @name         e621 Redesign Fixes
 @description  Restore e621.net back to its classic look
 @namespace    bitwolfy.com
-@version      2.0.6
+@version      2.0.7
 @author       bitWolfy
 @homepageURL  https://e621.net/forum_topics/25811
 @license      CC-BY-SA-4.0
@@ -12,19 +12,19 @@
   background-color: #020F23;
 }
 
-[data-theme=pony] .bg-background {
+[data-th-main=pony] .bg-background {
   background-color: #250D51;
 }
 
-[data-theme=bloodlust] .bg-background {
+[data-th-main=bloodlust] .bg-background {
   background-color: #000000;
 }
 
-[data-theme=serpent] .bg-background {
+[data-th-main=serpent] .bg-background {
   background-color: #44a544;
 }
 
-[data-theme=hotdog] .bg-background {
+[data-th-main=hotdog] .bg-background {
   background-color: #FFFF00;
 }
 
@@ -32,19 +32,19 @@
   background-color: #152f56;
 }
 
-[data-theme=pony] .bg-foreground {
+[data-th-main=pony] .bg-foreground {
   background-color: #2f175c;
 }
 
-[data-theme=bloodlust] .bg-foreground {
+[data-th-main=bloodlust] .bg-foreground {
   background-color: #222222;
 }
 
-[data-theme=serpent] .bg-foreground {
+[data-th-main=serpent] .bg-foreground {
   background-color: #dacf6b;
 }
 
-[data-theme=hotdog] .bg-foreground {
+[data-th-main=hotdog] .bg-foreground {
   background-color: #FF0000;
 }
 
@@ -52,39 +52,59 @@
   background-color: #1f3c67;
 }
 
-[data-theme=pony] .bg-section {
+[data-th-main=pony] .bg-section {
   background-color: #453269;
 }
 
-[data-theme=bloodlust] .bg-section {
+[data-th-main=bloodlust] .bg-section {
   background-color: #333333;
 }
 
-[data-theme=serpent] .bg-section {
+[data-th-main=serpent] .bg-section {
   background-color: #fff48b;
 }
 
-[data-theme=hotdog] .bg-section {
+[data-th-main=hotdog] .bg-section {
   background-color: #c53c38;
+}
+
+.bg-highlight {
+  background-color: #2b538e;
+}
+
+[data-th-main=pony] .bg-highlight {
+  background-color: #5c428c;
+}
+
+[data-th-main=bloodlust] .bg-highlight {
+  background-color: #4d4d4d;
+}
+
+[data-th-main=serpent] .bg-highlight {
+  background-color: #fff9be;
+}
+
+[data-th-main=hotdog] .bg-highlight {
+  background-color: #d1625f;
 }
 
 .border-background {
   border: 1px solid #020F23;
 }
 
-[data-theme=pony] .border-background {
+[data-th-main=pony] .border-background {
   border: 1px solid #250D51;
 }
 
-[data-theme=bloodlust] .border-background {
+[data-th-main=bloodlust] .border-background {
   border: 1px solid #000000;
 }
 
-[data-theme=serpent] .border-background {
+[data-th-main=serpent] .border-background {
   border: 1px solid #44a544;
 }
 
-[data-theme=hotdog] .border-background {
+[data-th-main=hotdog] .border-background {
   border: 1px solid #FFFF00;
 }
 
@@ -92,19 +112,19 @@
   border: 1px solid #152f56;
 }
 
-[data-theme=pony] .border-foreground {
+[data-th-main=pony] .border-foreground {
   border: 1px solid #2f175c;
 }
 
-[data-theme=bloodlust] .border-foreground {
+[data-th-main=bloodlust] .border-foreground {
   border: 1px solid #222222;
 }
 
-[data-theme=serpent] .border-foreground {
+[data-th-main=serpent] .border-foreground {
   border: 1px solid #dacf6b;
 }
 
-[data-theme=hotdog] .border-foreground {
+[data-th-main=hotdog] .border-foreground {
   border: 1px solid #FF0000;
 }
 
@@ -112,39 +132,59 @@
   border: 1px solid #1f3c67;
 }
 
-[data-theme=pony] .border-section {
+[data-th-main=pony] .border-section {
   border: 1px solid #453269;
 }
 
-[data-theme=bloodlust] .border-section {
+[data-th-main=bloodlust] .border-section {
   border: 1px solid #333333;
 }
 
-[data-theme=serpent] .border-section {
+[data-th-main=serpent] .border-section {
   border: 1px solid #fff48b;
 }
 
-[data-theme=hotdog] .border-section {
+[data-th-main=hotdog] .border-section {
   border: 1px solid #c53c38;
+}
+
+.border-highlight {
+  borer: 1px solid #2b538e;
+}
+
+[data-th-main=pony] .border-highlight {
+  borer: 1px solid #5c428c;
+}
+
+[data-th-main=bloodlust] .border-highlight {
+  borer: 1px solid #4d4d4d;
+}
+
+[data-th-main=serpent] .border-highlight {
+  borer: 1px solid #fff9be;
+}
+
+[data-th-main=hotdog] .border-highlight {
+  borer: 1px solid #d1625f;
 }
 
 .color-text {
   color: #ffffff;
 }
 
-[data-theme=pony] .color-text {
+[data-th-main=pony] .color-text {
   color: #ffffff;
 }
 
-[data-theme=bloodlust] .color-text {
+[data-th-main=bloodlust] .color-text {
   color: #ffffff;
 }
 
-[data-theme=serpent] .color-text {
+[data-th-main=serpent] .color-text {
   color: #000000;
 }
 
-[data-theme=hotdog] .color-text {
+[data-th-main=hotdog] .color-text {
   color: #000000;
 }
 
@@ -159,22 +199,22 @@ body {
   margin: 0 auto;
 }
 
-body[data-theme=pony] {
+body[data-th-main=pony] {
   color: #ffffff;
   background-color: #250D51;
 }
 
-body[data-theme=bloodlust] {
+body[data-th-main=bloodlust] {
   color: #ffffff;
   background-color: #000000;
 }
 
-body[data-theme=serpent] {
+body[data-th-main=serpent] {
   color: #000000;
   background-color: #44a544;
 }
 
-body[data-theme=hotdog] {
+body[data-th-main=hotdog] {
   color: #000000;
   background-color: #FFFF00;
 }
@@ -235,65 +275,69 @@ div#page {
   border-radius: 6px;
 }
 
-[data-theme=pony] div#page {
+[data-th-main=pony] div#page {
   background-color: #2f175c;
 }
 
-[data-theme=bloodlust] div#page {
+[data-th-main=bloodlust] div#page {
   background-color: #222222;
 }
 
-[data-theme=serpent] div#page {
+[data-th-main=serpent] div#page {
   background-color: #dacf6b;
 }
 
-[data-theme=hotdog] div#page {
+[data-th-main=hotdog] div#page {
   background-color: #FF0000;
 }
 
-[data-extras=none] div#page {
+[data-th-extra=none] div#page {
   background-image: none;
   background-position: unset;
   background-repeat: unset;
 }
 
-[data-extras=autumn] div#page {
+[data-th-extra=autumn] div#page {
   background-image: url("https://bitwolfy.com/e621/extras/autumn/leaves_bottom.png");
   background-position: left bottom;
   background-repeat: repeat-x;
   padding-bottom: 6rem;
 }
 
-[data-extras=winter] div#page {
+[data-th-extra=winter] div#page {
   background-image: url("https://bitwolfy.com/e621/extras/winter/snow_bottom.png"), url("https://bitwolfy.com/e621/extras/winter/snow_top.png");
   background-position: left bottom, left top;
   background-repeat: repeat-x;
   padding-bottom: 3rem;
 }
 
-[data-extras=spring] div#page {
+[data-th-extra=spring] div#page {
   background-image: url("https://bitwolfy.com/e621/extras/spring/spring_bottom.png"), url("https://bitwolfy.com/e621/extras/spring/spring_bottom_fox.png"), url("https://bitwolfy.com/e621/extras/spring/spring_top.png"), url("https://bitwolfy.com/e621/extras/spring/spring_top_sky.png");
   background-position: left bottom, right bottom, right top, left top;
   background-repeat: repeat-x, no-repeat, no-repeat, repeat-x;
   padding-bottom: 3rem;
 }
 
-[data-extras=aurora] div#page {
+[data-th-extra=aurora] div#page {
   background-image: url("https://bitwolfy.com/e621/extras/aurora/aurora.png");
   background-position: left top;
   background-repeat: repeat-x;
 }
 
-[data-extras=space] div#page {
+[data-th-extra=space] div#page {
   background-image: url("https://bitwolfy.com/e621/extras/space/space.png");
   background-position: left top;
   background-repeat: repeat-x;
 }
 
-[data-extras=stars] div#page {
+[data-th-extra=stars] div#page {
   background-image: url("https://bitwolfy.com/e621/extras/stars/stars.png");
   background-position: left top;
   background-repeat: repeat-x;
+}
+
+[data-th-look=modern] div#page {
+  border-radius: 0px;
 }
 
 footer#page-footer {
@@ -304,20 +348,24 @@ footer#page-footer {
   border-radius: 6px 6px 0 0;
 }
 
-[data-theme=pony] footer#page-footer {
+[data-th-main=pony] footer#page-footer {
   background-color: #2f175c;
 }
 
-[data-theme=bloodlust] footer#page-footer {
+[data-th-main=bloodlust] footer#page-footer {
   background-color: #222222;
 }
 
-[data-theme=serpent] footer#page-footer {
+[data-th-main=serpent] footer#page-footer {
   background-color: #dacf6b;
 }
 
-[data-theme=hotdog] footer#page-footer {
+[data-th-main=hotdog] footer#page-footer {
   background-color: #FF0000;
+}
+
+[data-th-look=modern] footer#page-footer {
+  border-radius: 0px 0px 0 0;
 }
 
 button, input, select, textarea {
@@ -333,26 +381,26 @@ a:visited {
   text-decoration: none;
 }
 
-[data-theme=pony] a, [data-theme=pony]
-a:link, [data-theme=pony]
+[data-th-main=pony] a, [data-th-main=pony]
+a:link, [data-th-main=pony]
 a:visited {
   color: #b4c7d9;
 }
 
-[data-theme=bloodlust] a, [data-theme=bloodlust]
-a:link, [data-theme=bloodlust]
+[data-th-main=bloodlust] a, [data-th-main=bloodlust]
+a:link, [data-th-main=bloodlust]
 a:visited {
   color: #ffee95;
 }
 
-[data-theme=serpent] a, [data-theme=serpent]
-a:link, [data-theme=serpent]
+[data-th-main=serpent] a, [data-th-main=serpent]
+a:link, [data-th-main=serpent]
 a:visited {
   color: #005500;
 }
 
-[data-theme=hotdog] a, [data-theme=hotdog]
-a:link, [data-theme=hotdog]
+[data-th-main=hotdog] a, [data-th-main=hotdog]
+a:link, [data-th-main=hotdog]
 a:visited {
   color: #000000;
 }
@@ -361,19 +409,19 @@ a:active {
   color: #e8c446;
 }
 
-[data-theme=pony] a:active {
+[data-th-main=pony] a:active {
   color: #e8c446;
 }
 
-[data-theme=bloodlust] a:active {
+[data-th-main=bloodlust] a:active {
   color: #ffffff;
 }
 
-[data-theme=serpent] a:active {
+[data-th-main=serpent] a:active {
   color: #e8c446;
 }
 
-[data-theme=hotdog] a:active {
+[data-th-main=hotdog] a:active {
   color: #ffe380;
 }
 
@@ -381,19 +429,19 @@ a:hover {
   color: #e9f2fa;
 }
 
-[data-theme=pony] a:hover {
+[data-th-main=pony] a:hover {
   color: #e9f2fa;
 }
 
-[data-theme=bloodlust] a:hover {
+[data-th-main=bloodlust] a:hover {
   color: #f68b00;
 }
 
-[data-theme=serpent] a:hover {
+[data-th-main=serpent] a:hover {
   color: #3A8F3A;
 }
 
-[data-theme=hotdog] a:hover {
+[data-th-main=hotdog] a:hover {
   color: #666666;
 }
 
@@ -411,26 +459,26 @@ a:hover {
   color: darkgreen;
 }
 
-[data-theme=pony] .score-positive a, [data-theme=pony]
-.score-positive a:link, [data-theme=pony]
+[data-th-main=pony] .score-positive a, [data-th-main=pony]
+.score-positive a:link, [data-th-main=pony]
 .score-positive a:visited {
   color: darkgreen;
 }
 
-[data-theme=bloodlust] .score-positive a, [data-theme=bloodlust]
-.score-positive a:link, [data-theme=bloodlust]
+[data-th-main=bloodlust] .score-positive a, [data-th-main=bloodlust]
+.score-positive a:link, [data-th-main=bloodlust]
 .score-positive a:visited {
   color: darkgreen;
 }
 
-[data-theme=serpent] .score-positive a, [data-theme=serpent]
-.score-positive a:link, [data-theme=serpent]
+[data-th-main=serpent] .score-positive a, [data-th-main=serpent]
+.score-positive a:link, [data-th-main=serpent]
 .score-positive a:visited {
   color: darkgreen;
 }
 
-[data-theme=hotdog] .score-positive a, [data-theme=hotdog]
-.score-positive a:link, [data-theme=hotdog]
+[data-th-main=hotdog] .score-positive a, [data-th-main=hotdog]
+.score-positive a:link, [data-th-main=hotdog]
 .score-positive a:visited {
   color: darkgreen;
 }
@@ -439,19 +487,19 @@ a:hover {
   color: #003100;
 }
 
-[data-theme=pony] .score-positive a:hover {
+[data-th-main=pony] .score-positive a:hover {
   color: #003100;
 }
 
-[data-theme=bloodlust] .score-positive a:hover {
+[data-th-main=bloodlust] .score-positive a:hover {
   color: #003100;
 }
 
-[data-theme=serpent] .score-positive a:hover {
+[data-th-main=serpent] .score-positive a:hover {
   color: #003100;
 }
 
-[data-theme=hotdog] .score-positive a:hover {
+[data-th-main=hotdog] .score-positive a:hover {
   color: #003100;
 }
 
@@ -461,26 +509,26 @@ a:hover {
   color: #999999;
 }
 
-[data-theme=pony] .score-neutral a, [data-theme=pony]
-.score-neutral a:link, [data-theme=pony]
+[data-th-main=pony] .score-neutral a, [data-th-main=pony]
+.score-neutral a:link, [data-th-main=pony]
 .score-neutral a:visited {
   color: #999999;
 }
 
-[data-theme=bloodlust] .score-neutral a, [data-theme=bloodlust]
-.score-neutral a:link, [data-theme=bloodlust]
+[data-th-main=bloodlust] .score-neutral a, [data-th-main=bloodlust]
+.score-neutral a:link, [data-th-main=bloodlust]
 .score-neutral a:visited {
   color: #999999;
 }
 
-[data-theme=serpent] .score-neutral a, [data-theme=serpent]
-.score-neutral a:link, [data-theme=serpent]
+[data-th-main=serpent] .score-neutral a, [data-th-main=serpent]
+.score-neutral a:link, [data-th-main=serpent]
 .score-neutral a:visited {
   color: #555555;
 }
 
-[data-theme=hotdog] .score-neutral a, [data-theme=hotdog]
-.score-neutral a:link, [data-theme=hotdog]
+[data-th-main=hotdog] .score-neutral a, [data-th-main=hotdog]
+.score-neutral a:link, [data-th-main=hotdog]
 .score-neutral a:visited {
   color: #999999;
 }
@@ -489,19 +537,19 @@ a:hover {
   color: gray;
 }
 
-[data-theme=pony] .score-neutral a:hover {
+[data-th-main=pony] .score-neutral a:hover {
   color: gray;
 }
 
-[data-theme=bloodlust] .score-neutral a:hover {
+[data-th-main=bloodlust] .score-neutral a:hover {
   color: gray;
 }
 
-[data-theme=serpent] .score-neutral a:hover {
+[data-th-main=serpent] .score-neutral a:hover {
   color: #3c3c3c;
 }
 
-[data-theme=hotdog] .score-neutral a:hover {
+[data-th-main=hotdog] .score-neutral a:hover {
   color: gray;
 }
 
@@ -511,26 +559,26 @@ a:hover {
   color: maroon;
 }
 
-[data-theme=pony] .score-negative a, [data-theme=pony]
-.score-negative a:link, [data-theme=pony]
+[data-th-main=pony] .score-negative a, [data-th-main=pony]
+.score-negative a:link, [data-th-main=pony]
 .score-negative a:visited {
   color: maroon;
 }
 
-[data-theme=bloodlust] .score-negative a, [data-theme=bloodlust]
-.score-negative a:link, [data-theme=bloodlust]
+[data-th-main=bloodlust] .score-negative a, [data-th-main=bloodlust]
+.score-negative a:link, [data-th-main=bloodlust]
 .score-negative a:visited {
   color: maroon;
 }
 
-[data-theme=serpent] .score-negative a, [data-theme=serpent]
-.score-negative a:link, [data-theme=serpent]
+[data-th-main=serpent] .score-negative a, [data-th-main=serpent]
+.score-negative a:link, [data-th-main=serpent]
 .score-negative a:visited {
   color: maroon;
 }
 
-[data-theme=hotdog] .score-negative a, [data-theme=hotdog]
-.score-negative a:link, [data-theme=hotdog]
+[data-th-main=hotdog] .score-negative a, [data-th-main=hotdog]
+.score-negative a:link, [data-th-main=hotdog]
 .score-negative a:visited {
   color: maroon;
 }
@@ -539,19 +587,19 @@ a:hover {
   color: #4d0000;
 }
 
-[data-theme=pony] .score-negative a:hover {
+[data-th-main=pony] .score-negative a:hover {
   color: #4d0000;
 }
 
-[data-theme=bloodlust] .score-negative a:hover {
+[data-th-main=bloodlust] .score-negative a:hover {
   color: #4d0000;
 }
 
-[data-theme=serpent] .score-negative a:hover {
+[data-th-main=serpent] .score-negative a:hover {
   color: #4d0000;
 }
 
-[data-theme=hotdog] .score-negative a:hover {
+[data-th-main=hotdog] .score-negative a:hover {
   color: #4d0000;
 }
 
@@ -561,19 +609,19 @@ a:hover {
   background-color: #1f3c67;
 }
 
-[data-theme=pony] .box-section {
+[data-th-main=pony] .box-section {
   background-color: #453269;
 }
 
-[data-theme=bloodlust] .box-section {
+[data-th-main=bloodlust] .box-section {
   background-color: #333333;
 }
 
-[data-theme=serpent] .box-section {
+[data-th-main=serpent] .box-section {
   background-color: #fff48b;
 }
 
-[data-theme=hotdog] .box-section {
+[data-th-main=hotdog] .box-section {
   background-color: #c53c38;
 }
 
@@ -587,22 +635,22 @@ table.striped thead tr {
   border-bottom: 1px solid #152f56;
 }
 
-[data-theme=pony] table.striped thead tr {
+[data-th-main=pony] table.striped thead tr {
   background-color: #3a2a58;
   border-bottom: 1px solid #2f175c;
 }
 
-[data-theme=bloodlust] table.striped thead tr {
+[data-th-main=bloodlust] table.striped thead tr {
   background-color: #262626;
   border-bottom: 1px solid #222222;
 }
 
-[data-theme=serpent] table.striped thead tr {
+[data-th-main=serpent] table.striped thead tr {
   background-color: #fff272;
   border-bottom: 1px solid #dacf6b;
 }
 
-[data-theme=hotdog] table.striped thead tr {
+[data-th-main=hotdog] table.striped thead tr {
   background-color: #b13632;
   border-bottom: 1px solid #FF0000;
 }
@@ -612,22 +660,22 @@ table.striped tbody tr {
   border-bottom: 1px solid #152f56;
 }
 
-[data-theme=pony] table.striped tbody tr {
+[data-th-main=pony] table.striped tbody tr {
   background-color: #453269;
   border-bottom: 1px solid #2f175c;
 }
 
-[data-theme=bloodlust] table.striped tbody tr {
+[data-th-main=bloodlust] table.striped tbody tr {
   background-color: #333333;
   border-bottom: 1px solid #222222;
 }
 
-[data-theme=serpent] table.striped tbody tr {
+[data-th-main=serpent] table.striped tbody tr {
   background-color: #fff48b;
   border-bottom: 1px solid #dacf6b;
 }
 
-[data-theme=hotdog] table.striped tbody tr {
+[data-th-main=hotdog] table.striped tbody tr {
   background-color: #c53c38;
   border-bottom: 1px solid #FF0000;
 }
@@ -636,19 +684,19 @@ table.striped tbody tr:hover {
   background-color: #2b538e;
 }
 
-[data-theme=pony] table.striped tbody tr:hover {
+[data-th-main=pony] table.striped tbody tr:hover {
   background-color: #5c428c;
 }
 
-[data-theme=bloodlust] table.striped tbody tr:hover {
+[data-th-main=bloodlust] table.striped tbody tr:hover {
   background-color: #4d4d4d;
 }
 
-[data-theme=serpent] table.striped tbody tr:hover {
+[data-th-main=serpent] table.striped tbody tr:hover {
   background-color: #fff9be;
 }
 
-[data-theme=hotdog] table.striped tbody tr:hover {
+[data-th-main=hotdog] table.striped tbody tr:hover {
   background-color: #d1625f;
 }
 
@@ -662,26 +710,26 @@ td a.last-page:visited {
   color: #999999;
 }
 
-[data-theme=pony] td a.last-page, [data-theme=pony]
-td a.last-page:link, [data-theme=pony]
+[data-th-main=pony] td a.last-page, [data-th-main=pony]
+td a.last-page:link, [data-th-main=pony]
 td a.last-page:visited {
   color: #999999;
 }
 
-[data-theme=bloodlust] td a.last-page, [data-theme=bloodlust]
-td a.last-page:link, [data-theme=bloodlust]
+[data-th-main=bloodlust] td a.last-page, [data-th-main=bloodlust]
+td a.last-page:link, [data-th-main=bloodlust]
 td a.last-page:visited {
   color: #999999;
 }
 
-[data-theme=serpent] td a.last-page, [data-theme=serpent]
-td a.last-page:link, [data-theme=serpent]
+[data-th-main=serpent] td a.last-page, [data-th-main=serpent]
+td a.last-page:link, [data-th-main=serpent]
 td a.last-page:visited {
   color: #555555;
 }
 
-[data-theme=hotdog] td a.last-page, [data-theme=hotdog]
-td a.last-page:link, [data-theme=hotdog]
+[data-th-main=hotdog] td a.last-page, [data-th-main=hotdog]
+td a.last-page:link, [data-th-main=hotdog]
 td a.last-page:visited {
   color: #999999;
 }
@@ -690,19 +738,19 @@ td a.last-page:hover {
   color: #e9f2fa;
 }
 
-[data-theme=pony] td a.last-page:hover {
+[data-th-main=pony] td a.last-page:hover {
   color: #e9f2fa;
 }
 
-[data-theme=bloodlust] td a.last-page:hover {
+[data-th-main=bloodlust] td a.last-page:hover {
   color: #f68b00;
 }
 
-[data-theme=serpent] td a.last-page:hover {
+[data-th-main=serpent] td a.last-page:hover {
   color: #3A8F3A;
 }
 
-[data-theme=hotdog] td a.last-page:hover {
+[data-th-main=hotdog] td a.last-page:hover {
   color: #666666;
 }
 
@@ -716,28 +764,90 @@ div#page div.site-notice {
           box-shadow: unset;
 }
 
-[data-theme=pony] div#page div.site-notice {
+[data-th-main=pony] div#page div.site-notice {
   background-color: #453269;
   border: 1px solid #2f175c;
   color: #ffffff;
 }
 
-[data-theme=bloodlust] div#page div.site-notice {
+[data-th-main=bloodlust] div#page div.site-notice {
   background-color: #333333;
   border: 1px solid #222222;
   color: #ffffff;
 }
 
-[data-theme=serpent] div#page div.site-notice {
+[data-th-main=serpent] div#page div.site-notice {
   background-color: #fff48b;
   border: 1px solid #dacf6b;
   color: #000000;
 }
 
-[data-theme=hotdog] div#page div.site-notice {
+[data-th-main=hotdog] div#page div.site-notice {
   background-color: #c53c38;
   border: 1px solid #FF0000;
   color: #000000;
+}
+
+div#notice {
+  position: absolute;
+  top: 5rem;
+  left: 25%;
+  z-index: 100;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 50%;
+  padding: 0.25rem 1rem;
+  color: #ffffff;
+  background-color: darkgreen;
+  border: 1px solid #152f56;
+}
+
+[data-th-main=pony] div#notice {
+  color: #ffffff;
+  background-color: darkgreen;
+  border: 1px solid #2f175c;
+}
+
+[data-th-main=bloodlust] div#notice {
+  color: #ffffff;
+  background-color: darkgreen;
+  border: 1px solid #222222;
+}
+
+[data-th-main=serpent] div#notice {
+  color: #000000;
+  background-color: darkgreen;
+  border: 1px solid #dacf6b;
+}
+
+[data-th-main=hotdog] div#notice {
+  color: #000000;
+  background-color: darkgreen;
+  border: 1px solid #FF0000;
+}
+
+div#notice.ui-state-error {
+  background-color: maroon;
+}
+
+[data-th-main=pony] div#notice.ui-state-error {
+  background-color: maroon;
+}
+
+[data-th-main=bloodlust] div#notice.ui-state-error {
+  background-color: maroon;
+}
+
+[data-th-main=serpent] div#notice.ui-state-error {
+  background-color: maroon;
+}
+
+[data-th-main=hotdog] div#notice.ui-state-error {
+  background-color: maroon;
 }
 
 /* --- Header --- */
@@ -749,22 +859,22 @@ header#top {
   margin: 0 1em 0.8rem;
 }
 
-[data-theme=pony] header#top {
+[data-th-main=pony] header#top {
   color: #ffffff;
   background-color: #250D51;
 }
 
-[data-theme=bloodlust] header#top {
+[data-th-main=bloodlust] header#top {
   color: #ffffff;
   background-color: #000000;
 }
 
-[data-theme=serpent] header#top {
+[data-th-main=serpent] header#top {
   color: #000000;
   background-color: #44a544;
 }
 
-[data-theme=hotdog] header#top {
+[data-th-main=hotdog] header#top {
   color: #000000;
   background-color: #FFFF00;
 }
@@ -797,20 +907,24 @@ header#top menu:not(.main) {
   border-radius: 6px;
 }
 
-[data-theme=pony] header#top menu:not(.main) {
+[data-th-main=pony] header#top menu:not(.main) {
   background-color: #2f175c;
 }
 
-[data-theme=bloodlust] header#top menu:not(.main) {
+[data-th-main=bloodlust] header#top menu:not(.main) {
   background-color: #222222;
 }
 
-[data-theme=serpent] header#top menu:not(.main) {
+[data-th-main=serpent] header#top menu:not(.main) {
   background-color: #dacf6b;
 }
 
-[data-theme=hotdog] header#top menu:not(.main) {
+[data-th-main=hotdog] header#top menu:not(.main) {
   background-color: #FF0000;
+}
+
+[data-th-look=modern] header#top menu:not(.main) {
+  border-radius: 0px;
 }
 
 header#top menu.main {
@@ -821,42 +935,51 @@ header#top menu.main li.current a {
   background-color: #152f56;
 }
 
-[data-theme=pony] header#top menu.main li.current a {
+[data-th-main=pony] header#top menu.main li.current a {
   background-color: #2f175c;
 }
 
-[data-theme=bloodlust] header#top menu.main li.current a {
+[data-th-main=bloodlust] header#top menu.main li.current a {
   background-color: #222222;
 }
 
-[data-theme=serpent] header#top menu.main li.current a {
+[data-th-main=serpent] header#top menu.main li.current a {
   background-color: #dacf6b;
 }
 
-[data-theme=hotdog] header#top menu.main li.current a {
+[data-th-main=hotdog] header#top menu.main li.current a {
   background-color: #FF0000;
 }
 
 /* === SIDEBAR === */
-div#page aside#sidebar h1 span.search-help {
+div#page aside#sidebar h1 span.search-help,
+div#page aside#sidebar h1 span.blacklist-help {
   float: right;
-  font-size: 80%;
+  font-size: 70%;
 }
 
 /* Desktop Searchbox */
 div#page aside#sidebar input[type=text] {
   width: 13em;
   padding: 0.125rem 0.125rem;
-  border-radius: 4px 0 0 4px;
   border-right: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  border-radius: 4px 0 0 4px;
+}
+
+[data-th-look=modern] div#page aside#sidebar input[type=text] {
+  border-radius: 0px 0 0 0px;
 }
 
 div#page aside#sidebar #search-box button[type=submit] {
   width: 2em;
-  border-radius: 0 4px 4px 0;
   border-left: 1px solid #ccc;
+  border-radius: 0 4px 4px 0;
+}
+
+[data-th-look=modern] div#page aside#sidebar #search-box button[type=submit] {
+  border-radius: 0 0px 0px 0;
 }
 
 #search-box {
@@ -880,102 +1003,42 @@ div#page aside#sidebar #search-box button[type=submit] {
 }
 
 .mobile-search .search-form form .search-input input {
-  border-radius: 4px 0 0 4px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  border-radius: 4px 0 0 4px;
+}
+
+[data-th-look=modern] .mobile-search .search-form form .search-input input {
+  border-radius: 0px 0 0 0px;
 }
 
 .mobile-search .search-form form .search-button button {
-  border-radius: 0 4px 4px 0;
   border-left: 1px solid #ccc;
+  border-radius: 0 4px 4px 0;
+}
+
+[data-th-look=modern] .mobile-search .search-form form .search-button button {
+  border-radius: 0 0px 0px 0;
 }
 
 /* Blacklist */
 a#disable-all-blacklists,
 a#re-enable-all-blacklists {
   display: inline-block;
-  font-size: 1rem;
-  padding: 0.25rem 0.5rem;
-  margin-top: 0.25rem;
+  font-size: 0.75rem;
+  margin-top: 0.5rem;
   border: 0;
-  border-radius: 3px;
-  color: #ffffff;
 }
 
-[data-theme=pony] a#disable-all-blacklists, [data-theme=pony]
-a#re-enable-all-blacklists {
-  color: #ffffff;
-}
-
-[data-theme=bloodlust] a#disable-all-blacklists, [data-theme=bloodlust]
-a#re-enable-all-blacklists {
-  color: #ffffff;
-}
-
-[data-theme=serpent] a#disable-all-blacklists, [data-theme=serpent]
-a#re-enable-all-blacklists {
-  color: #ffffff;
-}
-
-[data-theme=hotdog] a#disable-all-blacklists, [data-theme=hotdog]
-a#re-enable-all-blacklists {
-  color: #ffffff;
-}
-
-a#disable-all-blacklists {
-  content: "Disable all filters";
-  background: maroon;
-}
-
-[data-theme=pony] a#disable-all-blacklists {
-  background: maroon;
-}
-
-[data-theme=bloodlust] a#disable-all-blacklists {
-  background: maroon;
-}
-
-[data-theme=serpent] a#disable-all-blacklists {
-  background: maroon;
-}
-
-[data-theme=hotdog] a#disable-all-blacklists {
-  background: maroon;
-}
-
-a#re-enable-all-blacklists {
-  content: "Enable all filters";
-  background: darkgreen;
-}
-
-[data-theme=pony] a#re-enable-all-blacklists {
-  background: darkgreen;
-}
-
-[data-theme=bloodlust] a#re-enable-all-blacklists {
-  background: darkgreen;
-}
-
-[data-theme=serpent] a#re-enable-all-blacklists {
-  background: darkgreen;
-}
-
-[data-theme=hotdog] a#re-enable-all-blacklists {
-  background: darkgreen;
-}
-
-a.blacklist-toggle-link:before {
+a#disable-all-blacklists::before,
+a#re-enable-all-blacklists::before,
+a.blacklist-toggle-link::before {
   content: "» ";
 }
 
 #blacklist-box.sidebar-blacklist ul li {
   /* Bugfix: remove extraneous list dots (favorites page only) */
   list-style-type: none;
-}
-
-div#page aside#sidebar h1 span.blacklist-help {
-  float: right;
-  font-size: 80%;
 }
 
 /* Tag List */
@@ -989,19 +1052,19 @@ div#c-posts aside#sidebar #tag-list h2 {
   font-weight: 500;
 }
 
-[data-theme=pony] .post-count {
+[data-th-main=pony] .post-count {
   color: #999999;
 }
 
-[data-theme=bloodlust] .post-count {
+[data-th-main=bloodlust] .post-count {
   color: #999999;
 }
 
-[data-theme=serpent] .post-count {
+[data-th-main=serpent] .post-count {
   color: #555555;
 }
 
-[data-theme=hotdog] .post-count {
+[data-th-main=hotdog] .post-count {
   color: #999999;
 }
 
@@ -1021,26 +1084,26 @@ div#c-posts aside#sidebar #tag-list h2 {
   color: #b4c7d9;
 }
 
-[data-theme=pony] .category-0 a, [data-theme=pony]
-.category-0 a:link, [data-theme=pony]
+[data-th-main=pony] .category-0 a, [data-th-main=pony]
+.category-0 a:link, [data-th-main=pony]
 .category-0 a:visited {
   color: #e5d6ff;
 }
 
-[data-theme=bloodlust] .category-0 a, [data-theme=bloodlust]
-.category-0 a:link, [data-theme=bloodlust]
+[data-th-main=bloodlust] .category-0 a, [data-th-main=bloodlust]
+.category-0 a:link, [data-th-main=bloodlust]
 .category-0 a:visited {
   color: #ffee95;
 }
 
-[data-theme=serpent] .category-0 a, [data-theme=serpent]
-.category-0 a:link, [data-theme=serpent]
+[data-th-main=serpent] .category-0 a, [data-th-main=serpent]
+.category-0 a:link, [data-th-main=serpent]
 .category-0 a:visited {
   color: #005500;
 }
 
-[data-theme=hotdog] .category-0 a, [data-theme=hotdog]
-.category-0 a:link, [data-theme=hotdog]
+[data-th-main=hotdog] .category-0 a, [data-th-main=hotdog]
+.category-0 a:link, [data-th-main=hotdog]
 .category-0 a:visited {
   color: #000000;
 }
@@ -1049,19 +1112,19 @@ div#c-posts aside#sidebar #tag-list h2 {
   color: #2e76b4;
 }
 
-[data-theme=pony] .category-0 a:hover {
+[data-th-main=pony] .category-0 a:hover {
   color: #2e76b4;
 }
 
-[data-theme=bloodlust] .category-0 a:hover {
+[data-th-main=bloodlust] .category-0 a:hover {
   color: #f68b00;
 }
 
-[data-theme=serpent] .category-0 a:hover {
+[data-th-main=serpent] .category-0 a:hover {
   color: #3A8F3A;
 }
 
-[data-theme=hotdog] .category-0 a:hover {
+[data-th-main=hotdog] .category-0 a:hover {
   color: #999999;
 }
 
@@ -1151,19 +1214,19 @@ a.user-member.with-style {
   color: #b4c7d9;
 }
 
-[data-theme=pony] a.user-member.with-style {
+[data-th-main=pony] a.user-member.with-style {
   color: #e5d6ff;
 }
 
-[data-theme=bloodlust] a.user-member.with-style {
+[data-th-main=bloodlust] a.user-member.with-style {
   color: #ffee95;
 }
 
-[data-theme=serpent] a.user-member.with-style {
+[data-th-main=serpent] a.user-member.with-style {
   color: #005500;
 }
 
-[data-theme=hotdog] a.user-member.with-style {
+[data-th-main=hotdog] a.user-member.with-style {
   color: #000000;
 }
 
@@ -1171,19 +1234,19 @@ a.user-member.with-style:hover {
   color: #2e76b4;
 }
 
-[data-theme=pony] a.user-member.with-style:hover {
+[data-th-main=pony] a.user-member.with-style:hover {
   color: #2e76b4;
 }
 
-[data-theme=bloodlust] a.user-member.with-style:hover {
+[data-th-main=bloodlust] a.user-member.with-style:hover {
   color: #f68b00;
 }
 
-[data-theme=serpent] a.user-member.with-style:hover {
+[data-th-main=serpent] a.user-member.with-style:hover {
   color: #3A8F3A;
 }
 
-[data-theme=hotdog] a.user-member.with-style:hover {
+[data-th-main=hotdog] a.user-member.with-style:hover {
   color: #999999;
 }
 
@@ -1191,19 +1254,19 @@ a.user-privileged.with-style {
   color: #b4c7d9;
 }
 
-[data-theme=pony] a.user-privileged.with-style {
+[data-th-main=pony] a.user-privileged.with-style {
   color: #e5d6ff;
 }
 
-[data-theme=bloodlust] a.user-privileged.with-style {
+[data-th-main=bloodlust] a.user-privileged.with-style {
   color: #ffee95;
 }
 
-[data-theme=serpent] a.user-privileged.with-style {
+[data-th-main=serpent] a.user-privileged.with-style {
   color: #005500;
 }
 
-[data-theme=hotdog] a.user-privileged.with-style {
+[data-th-main=hotdog] a.user-privileged.with-style {
   color: #000000;
 }
 
@@ -1211,19 +1274,19 @@ a.user-privileged.with-style:hover {
   color: #2e76b4;
 }
 
-[data-theme=pony] a.user-privileged.with-style:hover {
+[data-th-main=pony] a.user-privileged.with-style:hover {
   color: #2e76b4;
 }
 
-[data-theme=bloodlust] a.user-privileged.with-style:hover {
+[data-th-main=bloodlust] a.user-privileged.with-style:hover {
   color: #f68b00;
 }
 
-[data-theme=serpent] a.user-privileged.with-style:hover {
+[data-th-main=serpent] a.user-privileged.with-style:hover {
   color: #3A8F3A;
 }
 
-[data-theme=hotdog] a.user-privileged.with-style:hover {
+[data-th-main=hotdog] a.user-privileged.with-style:hover {
   color: #999999;
 }
 
@@ -1231,19 +1294,19 @@ a.user-contributor.with-style {
   color: #b4c7d9;
 }
 
-[data-theme=pony] a.user-contributor.with-style {
+[data-th-main=pony] a.user-contributor.with-style {
   color: #e5d6ff;
 }
 
-[data-theme=bloodlust] a.user-contributor.with-style {
+[data-th-main=bloodlust] a.user-contributor.with-style {
   color: #ffee95;
 }
 
-[data-theme=serpent] a.user-contributor.with-style {
+[data-th-main=serpent] a.user-contributor.with-style {
   color: #005500;
 }
 
-[data-theme=hotdog] a.user-contributor.with-style {
+[data-th-main=hotdog] a.user-contributor.with-style {
   color: #000000;
 }
 
@@ -1251,19 +1314,19 @@ a.user-contributor.with-style:hover {
   color: #2e76b4;
 }
 
-[data-theme=pony] a.user-contributor.with-style:hover {
+[data-th-main=pony] a.user-contributor.with-style:hover {
   color: #2e76b4;
 }
 
-[data-theme=bloodlust] a.user-contributor.with-style:hover {
+[data-th-main=bloodlust] a.user-contributor.with-style:hover {
   color: #f68b00;
 }
 
-[data-theme=serpent] a.user-contributor.with-style:hover {
+[data-th-main=serpent] a.user-contributor.with-style:hover {
   color: #3A8F3A;
 }
 
-[data-theme=hotdog] a.user-contributor.with-style:hover {
+[data-th-main=hotdog] a.user-contributor.with-style:hover {
   color: #999999;
 }
 
@@ -1272,22 +1335,22 @@ a.user-blocked.with-style {
   text-decoration: line-through;
 }
 
-[data-theme=pony] a.user-blocked.with-style {
+[data-th-main=pony] a.user-blocked.with-style {
   color: #e5d6ff;
   text-decoration: line-through;
 }
 
-[data-theme=bloodlust] a.user-blocked.with-style {
+[data-th-main=bloodlust] a.user-blocked.with-style {
   color: #ffee95;
   text-decoration: line-through;
 }
 
-[data-theme=serpent] a.user-blocked.with-style {
+[data-th-main=serpent] a.user-blocked.with-style {
   color: #005500;
   text-decoration: line-through;
 }
 
-[data-theme=hotdog] a.user-blocked.with-style {
+[data-th-main=hotdog] a.user-blocked.with-style {
   color: #000000;
   text-decoration: line-through;
 }
@@ -1296,19 +1359,19 @@ a.user-blocked.with-style:hover {
   color: #2e76b4;
 }
 
-[data-theme=pony] a.user-blocked.with-style:hover {
+[data-th-main=pony] a.user-blocked.with-style:hover {
   color: #2e76b4;
 }
 
-[data-theme=bloodlust] a.user-blocked.with-style:hover {
+[data-th-main=bloodlust] a.user-blocked.with-style:hover {
   color: #f68b00;
 }
 
-[data-theme=serpent] a.user-blocked.with-style:hover {
+[data-th-main=serpent] a.user-blocked.with-style:hover {
   color: #3A8F3A;
 }
 
-[data-theme=hotdog] a.user-blocked.with-style:hover {
+[data-th-main=hotdog] a.user-blocked.with-style:hover {
   color: #999999;
 }
 
@@ -1349,19 +1412,19 @@ div#c-blips article.blip {
           box-shadow: unset;
 }
 
-[data-theme=pony] div#c-blips article.blip {
+[data-th-main=pony] div#c-blips article.blip {
   background-color: #453269;
 }
 
-[data-theme=bloodlust] div#c-blips article.blip {
+[data-th-main=bloodlust] div#c-blips article.blip {
   background-color: #333333;
 }
 
-[data-theme=serpent] div#c-blips article.blip {
+[data-th-main=serpent] div#c-blips article.blip {
   background-color: #fff48b;
 }
 
-[data-theme=hotdog] div#c-blips article.blip {
+[data-th-main=hotdog] div#c-blips article.blip {
   background-color: #c53c38;
 }
 
@@ -1372,24 +1435,34 @@ div#c-comments div#a-show div.post {
   background-color: rgba(31, 60, 103, 0.7);
 }
 
-[data-theme=pony] div#c-comments div#a-index div.post, [data-theme=pony]
+[data-th-main=pony] div#c-comments div#a-index div.post, [data-th-main=pony]
 div#c-comments div#a-show div.post {
   background-color: rgba(69, 50, 105, 0.7);
 }
 
-[data-theme=bloodlust] div#c-comments div#a-index div.post, [data-theme=bloodlust]
+[data-th-main=bloodlust] div#c-comments div#a-index div.post, [data-th-main=bloodlust]
 div#c-comments div#a-show div.post {
   background-color: rgba(51, 51, 51, 0.7);
 }
 
-[data-theme=serpent] div#c-comments div#a-index div.post, [data-theme=serpent]
+[data-th-main=serpent] div#c-comments div#a-index div.post, [data-th-main=serpent]
 div#c-comments div#a-show div.post {
   background-color: rgba(255, 244, 139, 0.7);
 }
 
-[data-theme=hotdog] div#c-comments div#a-index div.post, [data-theme=hotdog]
+[data-th-main=hotdog] div#c-comments div#a-index div.post, [data-th-main=hotdog]
 div#c-comments div#a-show div.post {
   background-color: rgba(197, 60, 56, 0.7);
+}
+
+div.comments-for-post div.list-of-comments article.comment {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: 4px;
+}
+
+[data-th-look=modern] div.comments-for-post div.list-of-comments article.comment {
+  border-radius: 0px;
 }
 
 div#c-comments div#a-index div.preview,
@@ -1461,6 +1534,9 @@ div#c-comments div#a-index div.post article.comment img {
 }
 
 /* --- Comment / Post Features --- */
+#c-help blockquote,
+#c-help pre,
+#c-help div.expandable,
 .styled-dtext blockquote,
 .styled-dtext div.expandable,
 .styled-dtext pre {
@@ -1468,93 +1544,70 @@ div#c-comments div#a-index div.post article.comment img {
   z-index: 10;
   -webkit-box-shadow: none;
           box-shadow: none;
-  border-radius: 3px;
-  padding: 1rem;
+  padding: 0.5rem 1rem;
   margin: 0 0 1rem;
+  border-radius: 4px;
   border: 1px solid #1f3c67;
   border-left: 0.25rem solid maroon;
   background: rgba(43, 83, 142, 0.7);
 }
 
-[data-theme=pony] .styled-dtext blockquote, [data-theme=pony]
-.styled-dtext div.expandable, [data-theme=pony]
+[data-th-look=modern] #c-help blockquote, [data-th-look=modern]
+#c-help pre, [data-th-look=modern]
+#c-help div.expandable, [data-th-look=modern]
+.styled-dtext blockquote, [data-th-look=modern]
+.styled-dtext div.expandable, [data-th-look=modern]
+.styled-dtext pre {
+  border-radius: 0px;
+}
+
+[data-th-main=pony] #c-help blockquote, [data-th-main=pony]
+#c-help pre, [data-th-main=pony]
+#c-help div.expandable, [data-th-main=pony]
+.styled-dtext blockquote, [data-th-main=pony]
+.styled-dtext div.expandable, [data-th-main=pony]
 .styled-dtext pre {
   border: 1px solid #453269;
   border-left: 0.25rem solid maroon;
   background: rgba(92, 66, 140, 0.7);
 }
 
-[data-theme=bloodlust] .styled-dtext blockquote, [data-theme=bloodlust]
-.styled-dtext div.expandable, [data-theme=bloodlust]
+[data-th-main=bloodlust] #c-help blockquote, [data-th-main=bloodlust]
+#c-help pre, [data-th-main=bloodlust]
+#c-help div.expandable, [data-th-main=bloodlust]
+.styled-dtext blockquote, [data-th-main=bloodlust]
+.styled-dtext div.expandable, [data-th-main=bloodlust]
 .styled-dtext pre {
   border: 1px solid #333333;
   border-left: 0.25rem solid maroon;
   background: rgba(77, 77, 77, 0.7);
 }
 
-[data-theme=serpent] .styled-dtext blockquote, [data-theme=serpent]
-.styled-dtext div.expandable, [data-theme=serpent]
+[data-th-main=serpent] #c-help blockquote, [data-th-main=serpent]
+#c-help pre, [data-th-main=serpent]
+#c-help div.expandable, [data-th-main=serpent]
+.styled-dtext blockquote, [data-th-main=serpent]
+.styled-dtext div.expandable, [data-th-main=serpent]
 .styled-dtext pre {
   border: 1px solid #fff48b;
   border-left: 0.25rem solid maroon;
   background: rgba(255, 249, 190, 0.7);
 }
 
-[data-theme=hotdog] .styled-dtext blockquote, [data-theme=hotdog]
-.styled-dtext div.expandable, [data-theme=hotdog]
+[data-th-main=hotdog] #c-help blockquote, [data-th-main=hotdog]
+#c-help pre, [data-th-main=hotdog]
+#c-help div.expandable, [data-th-main=hotdog]
+.styled-dtext blockquote, [data-th-main=hotdog]
+.styled-dtext div.expandable, [data-th-main=hotdog]
 .styled-dtext pre {
   border: 1px solid #c53c38;
   border-left: 0.25rem solid maroon;
   background: rgba(209, 98, 95, 0.7);
 }
 
-div#c-posts div#a-show #artist-commentary {
-  position: relative;
-  z-index: 10;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  border: none;
-  border-radius: 3px;
-  border-left: 0.25rem solid maroon;
-  background: rgba(43, 83, 142, 0.7);
-}
-
-[data-theme=pony] div#c-posts div#a-show #artist-commentary {
-  border-left: 0.25rem solid maroon;
-  background: rgba(92, 66, 140, 0.7);
-}
-
-[data-theme=bloodlust] div#c-posts div#a-show #artist-commentary {
-  border-left: 0.25rem solid maroon;
-  background: rgba(77, 77, 77, 0.7);
-}
-
-[data-theme=serpent] div#c-posts div#a-show #artist-commentary {
-  border-left: 0.25rem solid maroon;
-  background: rgba(255, 249, 190, 0.7);
-}
-
-[data-theme=hotdog] div#c-posts div#a-show #artist-commentary {
-  border-left: 0.25rem solid maroon;
-  background: rgba(209, 98, 95, 0.7);
-}
-
-blockquote p:last-child {
-  margin-bottom: unset;
-}
-
-.styled-dtext div.expandable {
-  padding: unset;
-}
-
-.styled-dtext div.expandable div.expandable-header {
-  padding: 1rem;
-}
-
-.styled-dtext div.expandable div.expandable-content {
-  padding: 0 1rem 1rem;
-}
-
+#c-help blockquote::after,
+#c-help div.expandable::after,
+#c-help pre::after,
 .styled-dtext blockquote::after,
 .styled-dtext div.expandable::after,
 .styled-dtext pre::after {
@@ -1567,108 +1620,196 @@ blockquote p:last-child {
   color: #1f3c67;
 }
 
-[data-theme=pony] .styled-dtext blockquote::after, [data-theme=pony]
-.styled-dtext div.expandable::after, [data-theme=pony]
+[data-th-main=pony] #c-help blockquote::after, [data-th-main=pony]
+#c-help div.expandable::after, [data-th-main=pony]
+#c-help pre::after, [data-th-main=pony]
+.styled-dtext blockquote::after, [data-th-main=pony]
+.styled-dtext div.expandable::after, [data-th-main=pony]
 .styled-dtext pre::after {
   color: #453269;
 }
 
-[data-theme=bloodlust] .styled-dtext blockquote::after, [data-theme=bloodlust]
-.styled-dtext div.expandable::after, [data-theme=bloodlust]
+[data-th-main=bloodlust] #c-help blockquote::after, [data-th-main=bloodlust]
+#c-help div.expandable::after, [data-th-main=bloodlust]
+#c-help pre::after, [data-th-main=bloodlust]
+.styled-dtext blockquote::after, [data-th-main=bloodlust]
+.styled-dtext div.expandable::after, [data-th-main=bloodlust]
 .styled-dtext pre::after {
   color: #333333;
 }
 
-[data-theme=serpent] .styled-dtext blockquote::after, [data-theme=serpent]
-.styled-dtext div.expandable::after, [data-theme=serpent]
+[data-th-main=serpent] #c-help blockquote::after, [data-th-main=serpent]
+#c-help div.expandable::after, [data-th-main=serpent]
+#c-help pre::after, [data-th-main=serpent]
+.styled-dtext blockquote::after, [data-th-main=serpent]
+.styled-dtext div.expandable::after, [data-th-main=serpent]
 .styled-dtext pre::after {
   color: #fff48b;
 }
 
-[data-theme=hotdog] .styled-dtext blockquote::after, [data-theme=hotdog]
-.styled-dtext div.expandable::after, [data-theme=hotdog]
+[data-th-main=hotdog] #c-help blockquote::after, [data-th-main=hotdog]
+#c-help div.expandable::after, [data-th-main=hotdog]
+#c-help pre::after, [data-th-main=hotdog]
+.styled-dtext blockquote::after, [data-th-main=hotdog]
+.styled-dtext div.expandable::after, [data-th-main=hotdog]
 .styled-dtext pre::after {
   color: #c53c38;
 }
 
+div#c-posts div#a-show #artist-commentary {
+  position: relative;
+  z-index: 10;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+  border-radius: 4px;
+  border-left: 0.25rem solid maroon;
+  background: rgba(43, 83, 142, 0.7);
+}
+
+[data-th-look=modern] div#c-posts div#a-show #artist-commentary {
+  border-radius: 0px;
+}
+
+[data-th-main=pony] div#c-posts div#a-show #artist-commentary {
+  border-left: 0.25rem solid maroon;
+  background: rgba(92, 66, 140, 0.7);
+}
+
+[data-th-main=bloodlust] div#c-posts div#a-show #artist-commentary {
+  border-left: 0.25rem solid maroon;
+  background: rgba(77, 77, 77, 0.7);
+}
+
+[data-th-main=serpent] div#c-posts div#a-show #artist-commentary {
+  border-left: 0.25rem solid maroon;
+  background: rgba(255, 249, 190, 0.7);
+}
+
+[data-th-main=hotdog] div#c-posts div#a-show #artist-commentary {
+  border-left: 0.25rem solid maroon;
+  background: rgba(209, 98, 95, 0.7);
+}
+
+#c-help blockquote,
 .styled-dtext blockquote {
   border-left-color: #b4c7d9;
 }
 
-[data-theme=pony] .styled-dtext blockquote {
+[data-th-main=pony] #c-help blockquote, [data-th-main=pony]
+.styled-dtext blockquote {
   border-left-color: #67717b;
 }
 
-[data-theme=bloodlust] .styled-dtext blockquote {
+[data-th-main=bloodlust] #c-help blockquote, [data-th-main=bloodlust]
+.styled-dtext blockquote {
   border-left-color: #67717b;
 }
 
-[data-theme=serpent] .styled-dtext blockquote {
+[data-th-main=serpent] #c-help blockquote, [data-th-main=serpent]
+.styled-dtext blockquote {
   border-left-color: #67717b;
 }
 
-[data-theme=hotdog] .styled-dtext blockquote {
+[data-th-main=hotdog] #c-help blockquote, [data-th-main=hotdog]
+.styled-dtext blockquote {
   border-left-color: #67717b;
 }
 
+#c-help blockquote::after,
 .styled-dtext blockquote::after {
   content: "\f10e";
-  font-size: 2.5rem;
-  top: 1.125rem;
+  font-size: 2rem;
+  top: 0.5rem;
   right: 1rem;
 }
 
+#c-help blockquote p:last-child,
+.styled-dtext blockquote p:last-child {
+  margin-bottom: unset;
+}
+
+#c-help div.expandable,
+.styled-dtext div.expandable {
+  padding: unset;
+  border-left-color: #ffe380;
+}
+
+[data-th-main=pony] #c-help div.expandable, [data-th-main=pony]
 .styled-dtext div.expandable {
   border-left-color: #ffe380;
 }
 
-[data-theme=pony] .styled-dtext div.expandable {
+[data-th-main=bloodlust] #c-help div.expandable, [data-th-main=bloodlust]
+.styled-dtext div.expandable {
   border-left-color: #ffe380;
 }
 
-[data-theme=bloodlust] .styled-dtext div.expandable {
+[data-th-main=serpent] #c-help div.expandable, [data-th-main=serpent]
+.styled-dtext div.expandable {
   border-left-color: #ffe380;
 }
 
-[data-theme=serpent] .styled-dtext div.expandable {
+[data-th-main=hotdog] #c-help div.expandable, [data-th-main=hotdog]
+.styled-dtext div.expandable {
   border-left-color: #ffe380;
 }
 
-[data-theme=hotdog] .styled-dtext div.expandable {
-  border-left-color: #ffe380;
+#c-help div.expandable div.expandable-header,
+.styled-dtext div.expandable div.expandable-header {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
 }
 
+#c-help div.expandable div.expandable-content,
+.styled-dtext div.expandable div.expandable-content {
+  display: none;
+  padding: 0 1rem 1rem;
+}
+
+#c-help div.expandable.expanded div.expandable-content,
+.styled-dtext div.expandable.expanded div.expandable-content {
+  display: block;
+}
+
+#c-help div.expandable::after,
 .styled-dtext div.expandable::after {
   content: "\f103";
-  font-size: 3rem;
-  top: 1.125rem;
+  font-size: 2.5rem;
+  top: 0.55rem;
   right: 1rem;
 }
 
+#c-help pre,
 .styled-dtext pre {
   border-left-color: #17a2b8;
 }
 
-[data-theme=pony] .styled-dtext pre {
+[data-th-main=pony] #c-help pre, [data-th-main=pony]
+.styled-dtext pre {
   border-left-color: #427982;
 }
 
-[data-theme=bloodlust] .styled-dtext pre {
+[data-th-main=bloodlust] #c-help pre, [data-th-main=bloodlust]
+.styled-dtext pre {
   border-left-color: #427982;
 }
 
-[data-theme=serpent] .styled-dtext pre {
+[data-th-main=serpent] #c-help pre, [data-th-main=serpent]
+.styled-dtext pre {
   border-left-color: #427982;
 }
 
-[data-theme=hotdog] .styled-dtext pre {
+[data-th-main=hotdog] #c-help pre, [data-th-main=hotdog]
+.styled-dtext pre {
   border-left-color: #427982;
 }
 
+#c-help pre::after,
 .styled-dtext pre::after {
   content: "\f121";
-  font-size: 2rem;
-  top: 1rem;
+  font-size: 1.75rem;
+  top: 0.5rem;
   right: 1rem;
 }
 
@@ -1677,19 +1818,19 @@ div#c-posts div#a-show #artist-commentary {
   padding: unset;
 }
 
-[data-theme=pony] div#c-posts div#a-show #artist-commentary {
+[data-th-main=pony] div#c-posts div#a-show #artist-commentary {
   border-color: #67717b;
 }
 
-[data-theme=bloodlust] div#c-posts div#a-show #artist-commentary {
+[data-th-main=bloodlust] div#c-posts div#a-show #artist-commentary {
   border-color: #67717b;
 }
 
-[data-theme=serpent] div#c-posts div#a-show #artist-commentary {
+[data-th-main=serpent] div#c-posts div#a-show #artist-commentary {
   border-color: #67717b;
 }
 
-[data-theme=hotdog] div#c-posts div#a-show #artist-commentary {
+[data-th-main=hotdog] div#c-posts div#a-show #artist-commentary {
   border-color: #67717b;
 }
 
@@ -1705,19 +1846,19 @@ div.list-of-forum-posts article {
           box-shadow: none;
 }
 
-[data-theme=pony] div.list-of-forum-posts article {
+[data-th-main=pony] div.list-of-forum-posts article {
   background: #453269;
 }
 
-[data-theme=bloodlust] div.list-of-forum-posts article {
+[data-th-main=bloodlust] div.list-of-forum-posts article {
   background: #333333;
 }
 
-[data-theme=serpent] div.list-of-forum-posts article {
+[data-th-main=serpent] div.list-of-forum-posts article {
   background: #fff48b;
 }
 
-[data-theme=hotdog] div.list-of-forum-posts article {
+[data-th-main=hotdog] div.list-of-forum-posts article {
   background: #c53c38;
 }
 
@@ -1735,19 +1876,19 @@ div.list-of-forum-posts article:nth-child(2n) {
   background-color: #1f3c67;
 }
 
-[data-theme=pony] div.list-of-forum-posts article:nth-child(2n) {
+[data-th-main=pony] div.list-of-forum-posts article:nth-child(2n) {
   background-color: #453269;
 }
 
-[data-theme=bloodlust] div.list-of-forum-posts article:nth-child(2n) {
+[data-th-main=bloodlust] div.list-of-forum-posts article:nth-child(2n) {
   background-color: #333333;
 }
 
-[data-theme=serpent] div.list-of-forum-posts article:nth-child(2n) {
+[data-th-main=serpent] div.list-of-forum-posts article:nth-child(2n) {
   background-color: #fff48b;
 }
 
-[data-theme=hotdog] div.list-of-forum-posts article:nth-child(2n) {
+[data-th-main=hotdog] div.list-of-forum-posts article:nth-child(2n) {
   background-color: #c53c38;
 }
 
@@ -1772,19 +1913,19 @@ div.list-of-forum-posts article[data-is-deleted="true"]::after {
   background: rgba(128, 0, 0, 0.2);
 }
 
-[data-theme=pony] div.list-of-forum-posts article[data-is-deleted="true"]::after {
+[data-th-main=pony] div.list-of-forum-posts article[data-is-deleted="true"]::after {
   background: rgba(128, 0, 0, 0.2);
 }
 
-[data-theme=bloodlust] div.list-of-forum-posts article[data-is-deleted="true"]::after {
+[data-th-main=bloodlust] div.list-of-forum-posts article[data-is-deleted="true"]::after {
   background: rgba(128, 0, 0, 0.2);
 }
 
-[data-theme=serpent] div.list-of-forum-posts article[data-is-deleted="true"]::after {
+[data-th-main=serpent] div.list-of-forum-posts article[data-is-deleted="true"]::after {
   background: rgba(128, 0, 0, 0.2);
 }
 
-[data-theme=hotdog] div.list-of-forum-posts article[data-is-deleted="true"]::after {
+[data-th-main=hotdog] div.list-of-forum-posts article[data-is-deleted="true"]::after {
   background: rgba(128, 0, 0, 0.2);
 }
 
@@ -1805,22 +1946,22 @@ div#c-post-versions div#a-index .post-version {
   background: #1f3c67;
 }
 
-[data-theme=pony] div#c-post-versions div#a-index .post-version {
+[data-th-main=pony] div#c-post-versions div#a-index .post-version {
   border: 1px solid #2f175c;
   background: #453269;
 }
 
-[data-theme=bloodlust] div#c-post-versions div#a-index .post-version {
+[data-th-main=bloodlust] div#c-post-versions div#a-index .post-version {
   border: 1px solid #222222;
   background: #333333;
 }
 
-[data-theme=serpent] div#c-post-versions div#a-index .post-version {
+[data-th-main=serpent] div#c-post-versions div#a-index .post-version {
   border: 1px solid #dacf6b;
   background: #fff48b;
 }
 
-[data-theme=hotdog] div#c-post-versions div#a-index .post-version {
+[data-th-main=hotdog] div#c-post-versions div#a-index .post-version {
   border: 1px solid #FF0000;
   background: #c53c38;
 }
@@ -1833,22 +1974,22 @@ div#c-post-versions div#a-index .pv-check {
   background: #25477b;
 }
 
-[data-theme=pony] div#c-post-versions div#a-index .pv-check {
+[data-th-main=pony] div#c-post-versions div#a-index .pv-check {
   border-color: #2f175c;
   background: #503a7a;
 }
 
-[data-theme=bloodlust] div#c-post-versions div#a-index .pv-check {
+[data-th-main=bloodlust] div#c-post-versions div#a-index .pv-check {
   border-color: #222222;
   background: #404040;
 }
 
-[data-theme=serpent] div#c-post-versions div#a-index .pv-check {
+[data-th-main=serpent] div#c-post-versions div#a-index .pv-check {
   border-color: #dacf6b;
   background: #fff6a5;
 }
 
-[data-theme=hotdog] div#c-post-versions div#a-index .pv-check {
+[data-th-main=hotdog] div#c-post-versions div#a-index .pv-check {
   border-color: #FF0000;
   background: #cc4e4b;
 }
@@ -1877,38 +2018,38 @@ div#c-post-versions div#a-index .pv-actions {
   background: #25477b;
 }
 
-[data-theme=pony] div#c-post-versions div#a-index .pv-post, [data-theme=pony]
-div#c-post-versions div#a-index .pv-date, [data-theme=pony]
-div#c-post-versions div#a-index .pv-reason, [data-theme=pony]
-div#c-post-versions div#a-index .pv-description, [data-theme=pony]
-div#c-post-versions div#a-index .pv-tags-locked, [data-theme=pony]
+[data-th-main=pony] div#c-post-versions div#a-index .pv-post, [data-th-main=pony]
+div#c-post-versions div#a-index .pv-date, [data-th-main=pony]
+div#c-post-versions div#a-index .pv-reason, [data-th-main=pony]
+div#c-post-versions div#a-index .pv-description, [data-th-main=pony]
+div#c-post-versions div#a-index .pv-tags-locked, [data-th-main=pony]
 div#c-post-versions div#a-index .pv-actions {
   background: #503a7a;
 }
 
-[data-theme=bloodlust] div#c-post-versions div#a-index .pv-post, [data-theme=bloodlust]
-div#c-post-versions div#a-index .pv-date, [data-theme=bloodlust]
-div#c-post-versions div#a-index .pv-reason, [data-theme=bloodlust]
-div#c-post-versions div#a-index .pv-description, [data-theme=bloodlust]
-div#c-post-versions div#a-index .pv-tags-locked, [data-theme=bloodlust]
+[data-th-main=bloodlust] div#c-post-versions div#a-index .pv-post, [data-th-main=bloodlust]
+div#c-post-versions div#a-index .pv-date, [data-th-main=bloodlust]
+div#c-post-versions div#a-index .pv-reason, [data-th-main=bloodlust]
+div#c-post-versions div#a-index .pv-description, [data-th-main=bloodlust]
+div#c-post-versions div#a-index .pv-tags-locked, [data-th-main=bloodlust]
 div#c-post-versions div#a-index .pv-actions {
   background: #404040;
 }
 
-[data-theme=serpent] div#c-post-versions div#a-index .pv-post, [data-theme=serpent]
-div#c-post-versions div#a-index .pv-date, [data-theme=serpent]
-div#c-post-versions div#a-index .pv-reason, [data-theme=serpent]
-div#c-post-versions div#a-index .pv-description, [data-theme=serpent]
-div#c-post-versions div#a-index .pv-tags-locked, [data-theme=serpent]
+[data-th-main=serpent] div#c-post-versions div#a-index .pv-post, [data-th-main=serpent]
+div#c-post-versions div#a-index .pv-date, [data-th-main=serpent]
+div#c-post-versions div#a-index .pv-reason, [data-th-main=serpent]
+div#c-post-versions div#a-index .pv-description, [data-th-main=serpent]
+div#c-post-versions div#a-index .pv-tags-locked, [data-th-main=serpent]
 div#c-post-versions div#a-index .pv-actions {
   background: #fff6a5;
 }
 
-[data-theme=hotdog] div#c-post-versions div#a-index .pv-post, [data-theme=hotdog]
-div#c-post-versions div#a-index .pv-date, [data-theme=hotdog]
-div#c-post-versions div#a-index .pv-reason, [data-theme=hotdog]
-div#c-post-versions div#a-index .pv-description, [data-theme=hotdog]
-div#c-post-versions div#a-index .pv-tags-locked, [data-theme=hotdog]
+[data-th-main=hotdog] div#c-post-versions div#a-index .pv-post, [data-th-main=hotdog]
+div#c-post-versions div#a-index .pv-date, [data-th-main=hotdog]
+div#c-post-versions div#a-index .pv-reason, [data-th-main=hotdog]
+div#c-post-versions div#a-index .pv-description, [data-th-main=hotdog]
+div#c-post-versions div#a-index .pv-tags-locked, [data-th-main=hotdog]
 div#c-post-versions div#a-index .pv-actions {
   background: #cc4e4b;
 }
@@ -1918,22 +2059,22 @@ div#c-post-versions div#a-index .pv-sources {
   border-top: 1px solid #152f56;
 }
 
-[data-theme=pony] div#c-post-versions div#a-index .pv-tags, [data-theme=pony]
+[data-th-main=pony] div#c-post-versions div#a-index .pv-tags, [data-th-main=pony]
 div#c-post-versions div#a-index .pv-sources {
   border-top: 1px solid #2f175c;
 }
 
-[data-theme=bloodlust] div#c-post-versions div#a-index .pv-tags, [data-theme=bloodlust]
+[data-th-main=bloodlust] div#c-post-versions div#a-index .pv-tags, [data-th-main=bloodlust]
 div#c-post-versions div#a-index .pv-sources {
   border-top: 1px solid #222222;
 }
 
-[data-theme=serpent] div#c-post-versions div#a-index .pv-tags, [data-theme=serpent]
+[data-th-main=serpent] div#c-post-versions div#a-index .pv-tags, [data-th-main=serpent]
 div#c-post-versions div#a-index .pv-sources {
   border-top: 1px solid #dacf6b;
 }
 
-[data-theme=hotdog] div#c-post-versions div#a-index .pv-tags, [data-theme=hotdog]
+[data-th-main=hotdog] div#c-post-versions div#a-index .pv-tags, [data-th-main=hotdog]
 div#c-post-versions div#a-index .pv-sources {
   border-top: 1px solid #FF0000;
 }
@@ -1946,30 +2087,30 @@ div#c-post-versions div#a-index .pv-sources {
   color: #009700;
 }
 
-[data-theme=pony] .diff-list ins, [data-theme=pony]
-.diff-list ins a, [data-theme=pony]
-.diff-list ins a:link, [data-theme=pony]
+[data-th-main=pony] .diff-list ins, [data-th-main=pony]
+.diff-list ins a, [data-th-main=pony]
+.diff-list ins a:link, [data-th-main=pony]
 .diff-list ins a:visited {
   color: #009700;
 }
 
-[data-theme=bloodlust] .diff-list ins, [data-theme=bloodlust]
-.diff-list ins a, [data-theme=bloodlust]
-.diff-list ins a:link, [data-theme=bloodlust]
+[data-th-main=bloodlust] .diff-list ins, [data-th-main=bloodlust]
+.diff-list ins a, [data-th-main=bloodlust]
+.diff-list ins a:link, [data-th-main=bloodlust]
 .diff-list ins a:visited {
   color: #009700;
 }
 
-[data-theme=serpent] .diff-list ins, [data-theme=serpent]
-.diff-list ins a, [data-theme=serpent]
-.diff-list ins a:link, [data-theme=serpent]
+[data-th-main=serpent] .diff-list ins, [data-th-main=serpent]
+.diff-list ins a, [data-th-main=serpent]
+.diff-list ins a:link, [data-th-main=serpent]
 .diff-list ins a:visited {
   color: #009700;
 }
 
-[data-theme=hotdog] .diff-list ins, [data-theme=hotdog]
-.diff-list ins a, [data-theme=hotdog]
-.diff-list ins a:link, [data-theme=hotdog]
+[data-th-main=hotdog] .diff-list ins, [data-th-main=hotdog]
+.diff-list ins a, [data-th-main=hotdog]
+.diff-list ins a:link, [data-th-main=hotdog]
 .diff-list ins a:visited {
   color: #009700;
 }
@@ -1978,19 +2119,19 @@ div#c-post-versions div#a-index .pv-sources {
   color: #00b100;
 }
 
-[data-theme=pony] .diff-list ins a:hover {
+[data-th-main=pony] .diff-list ins a:hover {
   color: #00b100;
 }
 
-[data-theme=bloodlust] .diff-list ins a:hover {
+[data-th-main=bloodlust] .diff-list ins a:hover {
   color: #00b100;
 }
 
-[data-theme=serpent] .diff-list ins a:hover {
+[data-th-main=serpent] .diff-list ins a:hover {
   color: #00b100;
 }
 
-[data-theme=hotdog] .diff-list ins a:hover {
+[data-th-main=hotdog] .diff-list ins a:hover {
   color: #00b100;
 }
 
@@ -2001,30 +2142,30 @@ div#c-post-versions div#a-index .pv-sources {
   color: #9a0000;
 }
 
-[data-theme=pony] .diff-list del, [data-theme=pony]
-.diff-list del a, [data-theme=pony]
-.diff-list del a:link, [data-theme=pony]
+[data-th-main=pony] .diff-list del, [data-th-main=pony]
+.diff-list del a, [data-th-main=pony]
+.diff-list del a:link, [data-th-main=pony]
 .diff-list del a:visited {
   color: #9a0000;
 }
 
-[data-theme=bloodlust] .diff-list del, [data-theme=bloodlust]
-.diff-list del a, [data-theme=bloodlust]
-.diff-list del a:link, [data-theme=bloodlust]
+[data-th-main=bloodlust] .diff-list del, [data-th-main=bloodlust]
+.diff-list del a, [data-th-main=bloodlust]
+.diff-list del a:link, [data-th-main=bloodlust]
 .diff-list del a:visited {
   color: #9a0000;
 }
 
-[data-theme=serpent] .diff-list del, [data-theme=serpent]
-.diff-list del a, [data-theme=serpent]
-.diff-list del a:link, [data-theme=serpent]
+[data-th-main=serpent] .diff-list del, [data-th-main=serpent]
+.diff-list del a, [data-th-main=serpent]
+.diff-list del a:link, [data-th-main=serpent]
 .diff-list del a:visited {
   color: #9a0000;
 }
 
-[data-theme=hotdog] .diff-list del, [data-theme=hotdog]
-.diff-list del a, [data-theme=hotdog]
-.diff-list del a:link, [data-theme=hotdog]
+[data-th-main=hotdog] .diff-list del, [data-th-main=hotdog]
+.diff-list del a, [data-th-main=hotdog]
+.diff-list del a:link, [data-th-main=hotdog]
 .diff-list del a:visited {
   color: #9a0000;
 }
@@ -2033,19 +2174,19 @@ div#c-post-versions div#a-index .pv-sources {
   color: #cd0000;
 }
 
-[data-theme=pony] .diff-list del a:hover {
+[data-th-main=pony] .diff-list del a:hover {
   color: #cd0000;
 }
 
-[data-theme=bloodlust] .diff-list del a:hover {
+[data-th-main=bloodlust] .diff-list del a:hover {
   color: #cd0000;
 }
 
-[data-theme=serpent] .diff-list del a:hover {
+[data-th-main=serpent] .diff-list del a:hover {
   color: #cd0000;
 }
 
-[data-theme=hotdog] .diff-list del a:hover {
+[data-th-main=hotdog] .diff-list del a:hover {
   color: #cd0000;
 }
 
@@ -2205,6 +2346,86 @@ div#c-post-versions div#a-index .pv-sources {
 }
 
 /* === IMAGE PAGE === */
+/* Re-order the elements */
+div#c-posts div#a-show section#content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto minmax(0, 1fr);
+      grid-template-columns: auto minmax(0, 1fr);
+}
+
+div#c-posts div#a-show div#ad-leaderboard {
+  grid-area: 1  / 1 / auto / none;
+}
+
+div#c-posts div#a-show div#nav-links {
+  -ms-grid-column: 1;
+  grid-area: 2  / 1 / auto / 1;
+}
+
+div#c-posts div.notice.notice-resized {
+  -ms-grid-column: 1;
+  grid-area: 4  / 1 / auto / 1;
+}
+
+div#c-posts div#a-show section#image-container {
+  -ms-grid-column: 1;
+  grid-area: 4  / 1 / auto / 1;
+}
+
+div#c-posts div.notice.notice-flagged {
+  -ms-grid-column: 1;
+  grid-area: 5  / 1 / auto / 1;
+}
+
+div#c-posts div.notice.notice-pending {
+  -ms-grid-column: 1;
+  grid-area: 6  / 1 / auto / 1;
+}
+
+div#c-posts div.notice.notice-deleted {
+  -ms-grid-column: 1;
+  grid-area: 6  / 1 / auto / 1;
+}
+
+div#c-posts div.notice.notice-appealed {
+  -ms-grid-column: 1;
+  grid-area: 6  / 1 / auto / 1;
+}
+
+div#c-posts div.bottom-notices {
+  -ms-grid-column: 1;
+  grid-area: 7  / 1 / auto / 1;
+}
+
+div#c-posts div#a-show section#image-extra-controls {
+  grid-area: 8  / 1 / auto / none;
+}
+
+div#c-posts div#a-show div#post-description-container {
+  grid-area: 9  / 1 / auto / none;
+}
+
+div#c-posts div#a-show section#mark-as-translated-section {
+  grid-area: 10 / 1 / auto / none;
+}
+
+div#c-posts div#a-show section#notes {
+  grid-area: 11 / 1 / auto / none;
+}
+
+div#c-posts div#a-show menu#post-sections {
+  grid-area: 12 / 1 / auto / none;
+}
+
+div#c-posts div#a-show section#comments {
+  grid-area: 13 / 1 / auto / none;
+}
+
+div#c-posts div#a-show section#edit {
+  grid-area: 13 / 1 / auto / none;
+}
+
 /* Search / Pool / Set Navigation */
 #pool-nav .first, #pool-nav .last {
   display: none;
@@ -2234,26 +2455,26 @@ div#c-posts div#a-show #set-nav li {
   background: #1f3c67;
 }
 
-[data-theme=pony] div#c-posts div#a-show #pool-nav li, [data-theme=pony]
-div#c-posts div#a-show #search-seq-nav li, [data-theme=pony]
+[data-th-main=pony] div#c-posts div#a-show #pool-nav li, [data-th-main=pony]
+div#c-posts div#a-show #search-seq-nav li, [data-th-main=pony]
 div#c-posts div#a-show #set-nav li {
   background: #453269;
 }
 
-[data-theme=bloodlust] div#c-posts div#a-show #pool-nav li, [data-theme=bloodlust]
-div#c-posts div#a-show #search-seq-nav li, [data-theme=bloodlust]
+[data-th-main=bloodlust] div#c-posts div#a-show #pool-nav li, [data-th-main=bloodlust]
+div#c-posts div#a-show #search-seq-nav li, [data-th-main=bloodlust]
 div#c-posts div#a-show #set-nav li {
   background: #333333;
 }
 
-[data-theme=serpent] div#c-posts div#a-show #pool-nav li, [data-theme=serpent]
-div#c-posts div#a-show #search-seq-nav li, [data-theme=serpent]
+[data-th-main=serpent] div#c-posts div#a-show #pool-nav li, [data-th-main=serpent]
+div#c-posts div#a-show #search-seq-nav li, [data-th-main=serpent]
 div#c-posts div#a-show #set-nav li {
   background: #fff48b;
 }
 
-[data-theme=hotdog] div#c-posts div#a-show #pool-nav li, [data-theme=hotdog]
-div#c-posts div#a-show #search-seq-nav li, [data-theme=hotdog]
+[data-th-main=hotdog] div#c-posts div#a-show #pool-nav li, [data-th-main=hotdog]
+div#c-posts div#a-show #search-seq-nav li, [data-th-main=hotdog]
 div#c-posts div#a-show #set-nav li {
   background: #c53c38;
 }
@@ -2290,19 +2511,19 @@ div#c-posts .source-link:hover a {
   background: #020F23;
 }
 
-[data-theme=pony] div#c-posts .source-link:hover a {
+[data-th-main=pony] div#c-posts .source-link:hover a {
   background: #250D51;
 }
 
-[data-theme=bloodlust] div#c-posts .source-link:hover a {
+[data-th-main=bloodlust] div#c-posts .source-link:hover a {
   background: #000000;
 }
 
-[data-theme=serpent] div#c-posts .source-link:hover a {
+[data-th-main=serpent] div#c-posts .source-link:hover a {
   background: #44a544;
 }
 
-[data-theme=hotdog] div#c-posts .source-link:hover a {
+[data-th-main=hotdog] div#c-posts .source-link:hover a {
   background: #FFFF00;
 }
 
@@ -2310,27 +2531,32 @@ div#c-posts .source-link:hover a {
 a#add-to-favorites,
 a#remove-from-favorites {
   padding: 0.25rem 0.5rem;
-  border-radius: 3px;
   font-size: 1rem;
+  border-radius: 4px;
   color: #ffffff;
 }
 
-[data-theme=pony] a#add-to-favorites, [data-theme=pony]
+[data-th-look=modern] a#add-to-favorites, [data-th-look=modern]
+a#remove-from-favorites {
+  border-radius: 0px;
+}
+
+[data-th-main=pony] a#add-to-favorites, [data-th-main=pony]
 a#remove-from-favorites {
   color: #ffffff;
 }
 
-[data-theme=bloodlust] a#add-to-favorites, [data-theme=bloodlust]
+[data-th-main=bloodlust] a#add-to-favorites, [data-th-main=bloodlust]
 a#remove-from-favorites {
   color: #ffffff;
 }
 
-[data-theme=serpent] a#add-to-favorites, [data-theme=serpent]
+[data-th-main=serpent] a#add-to-favorites, [data-th-main=serpent]
 a#remove-from-favorites {
   color: #ffffff;
 }
 
-[data-theme=hotdog] a#add-to-favorites, [data-theme=hotdog]
+[data-th-main=hotdog] a#add-to-favorites, [data-th-main=hotdog]
 a#remove-from-favorites {
   color: #ffffff;
 }
@@ -2346,26 +2572,26 @@ section#post-options ul li:nth-child(2) {
   background: darkgreen;
 }
 
-[data-theme=pony] #post-options a#add-to-favorites, [data-theme=pony]
-#post-options a#add-to-favorites:link, [data-theme=pony]
+[data-th-main=pony] #post-options a#add-to-favorites, [data-th-main=pony]
+#post-options a#add-to-favorites:link, [data-th-main=pony]
 #post-options a#add-to-favorites:visited {
   background: darkgreen;
 }
 
-[data-theme=bloodlust] #post-options a#add-to-favorites, [data-theme=bloodlust]
-#post-options a#add-to-favorites:link, [data-theme=bloodlust]
+[data-th-main=bloodlust] #post-options a#add-to-favorites, [data-th-main=bloodlust]
+#post-options a#add-to-favorites:link, [data-th-main=bloodlust]
 #post-options a#add-to-favorites:visited {
   background: darkgreen;
 }
 
-[data-theme=serpent] #post-options a#add-to-favorites, [data-theme=serpent]
-#post-options a#add-to-favorites:link, [data-theme=serpent]
+[data-th-main=serpent] #post-options a#add-to-favorites, [data-th-main=serpent]
+#post-options a#add-to-favorites:link, [data-th-main=serpent]
 #post-options a#add-to-favorites:visited {
   background: darkgreen;
 }
 
-[data-theme=hotdog] #post-options a#add-to-favorites, [data-theme=hotdog]
-#post-options a#add-to-favorites:link, [data-theme=hotdog]
+[data-th-main=hotdog] #post-options a#add-to-favorites, [data-th-main=hotdog]
+#post-options a#add-to-favorites:link, [data-th-main=hotdog]
 #post-options a#add-to-favorites:visited {
   background: darkgreen;
 }
@@ -2374,19 +2600,19 @@ section#post-options ul li:nth-child(2) {
   background: #004b00;
 }
 
-[data-theme=pony] #post-options a#add-to-favorites:hover {
+[data-th-main=pony] #post-options a#add-to-favorites:hover {
   background: #004b00;
 }
 
-[data-theme=bloodlust] #post-options a#add-to-favorites:hover {
+[data-th-main=bloodlust] #post-options a#add-to-favorites:hover {
   background: #004b00;
 }
 
-[data-theme=serpent] #post-options a#add-to-favorites:hover {
+[data-th-main=serpent] #post-options a#add-to-favorites:hover {
   background: #004b00;
 }
 
-[data-theme=hotdog] #post-options a#add-to-favorites:hover {
+[data-th-main=hotdog] #post-options a#add-to-favorites:hover {
   background: #004b00;
 }
 
@@ -2400,26 +2626,26 @@ section#post-options ul li:nth-child(2) {
   background: maroon;
 }
 
-[data-theme=pony] #post-options a#remove-from-favorites, [data-theme=pony]
-#post-options a#remove-from-favorites:link, [data-theme=pony]
+[data-th-main=pony] #post-options a#remove-from-favorites, [data-th-main=pony]
+#post-options a#remove-from-favorites:link, [data-th-main=pony]
 #post-options a#remove-from-favorites:visited {
   background: maroon;
 }
 
-[data-theme=bloodlust] #post-options a#remove-from-favorites, [data-theme=bloodlust]
-#post-options a#remove-from-favorites:link, [data-theme=bloodlust]
+[data-th-main=bloodlust] #post-options a#remove-from-favorites, [data-th-main=bloodlust]
+#post-options a#remove-from-favorites:link, [data-th-main=bloodlust]
 #post-options a#remove-from-favorites:visited {
   background: maroon;
 }
 
-[data-theme=serpent] #post-options a#remove-from-favorites, [data-theme=serpent]
-#post-options a#remove-from-favorites:link, [data-theme=serpent]
+[data-th-main=serpent] #post-options a#remove-from-favorites, [data-th-main=serpent]
+#post-options a#remove-from-favorites:link, [data-th-main=serpent]
 #post-options a#remove-from-favorites:visited {
   background: maroon;
 }
 
-[data-theme=hotdog] #post-options a#remove-from-favorites, [data-theme=hotdog]
-#post-options a#remove-from-favorites:link, [data-theme=hotdog]
+[data-th-main=hotdog] #post-options a#remove-from-favorites, [data-th-main=hotdog]
+#post-options a#remove-from-favorites:link, [data-th-main=hotdog]
 #post-options a#remove-from-favorites:visited {
   background: maroon;
 }
@@ -2428,19 +2654,19 @@ section#post-options ul li:nth-child(2) {
   background: #670000;
 }
 
-[data-theme=pony] #post-options a#remove-from-favorites:hover {
+[data-th-main=pony] #post-options a#remove-from-favorites:hover {
   background: #670000;
 }
 
-[data-theme=bloodlust] #post-options a#remove-from-favorites:hover {
+[data-th-main=bloodlust] #post-options a#remove-from-favorites:hover {
   background: #670000;
 }
 
-[data-theme=serpent] #post-options a#remove-from-favorites:hover {
+[data-th-main=serpent] #post-options a#remove-from-favorites:hover {
   background: #670000;
 }
 
-[data-theme=hotdog] #post-options a#remove-from-favorites:hover {
+[data-th-main=hotdog] #post-options a#remove-from-favorites:hover {
   background: #670000;
 }
 
@@ -2452,45 +2678,50 @@ section#post-options ul li:nth-child(2) {
 div#c-posts .fav-buttons button.ui-button {
   border: 0;
   color: #ffffff;
+  border-radius: 4px;
   -webkit-box-shadow: none;
           box-shadow: none;
   padding: 0.25rem 0.5rem;
   font-size: 0em;
 }
 
-[data-theme=pony] div#c-posts .fav-buttons button.ui-button {
+[data-th-main=pony] div#c-posts .fav-buttons button.ui-button {
   color: #ffffff;
 }
 
-[data-theme=bloodlust] div#c-posts .fav-buttons button.ui-button {
+[data-th-main=bloodlust] div#c-posts .fav-buttons button.ui-button {
   color: #ffffff;
 }
 
-[data-theme=serpent] div#c-posts .fav-buttons button.ui-button {
+[data-th-main=serpent] div#c-posts .fav-buttons button.ui-button {
   color: #ffffff;
 }
 
-[data-theme=hotdog] div#c-posts .fav-buttons button.ui-button {
+[data-th-main=hotdog] div#c-posts .fav-buttons button.ui-button {
   color: #ffffff;
+}
+
+[data-th-look=modern] div#c-posts .fav-buttons button.ui-button {
+  border-radius: 0px;
 }
 
 div.fav-buttons button#add-fav-button {
   background: darkgreen;
 }
 
-[data-theme=pony] div.fav-buttons button#add-fav-button {
+[data-th-main=pony] div.fav-buttons button#add-fav-button {
   background: darkgreen;
 }
 
-[data-theme=bloodlust] div.fav-buttons button#add-fav-button {
+[data-th-main=bloodlust] div.fav-buttons button#add-fav-button {
   background: darkgreen;
 }
 
-[data-theme=serpent] div.fav-buttons button#add-fav-button {
+[data-th-main=serpent] div.fav-buttons button#add-fav-button {
   background: darkgreen;
 }
 
-[data-theme=hotdog] div.fav-buttons button#add-fav-button {
+[data-th-main=hotdog] div.fav-buttons button#add-fav-button {
   background: darkgreen;
 }
 
@@ -2498,19 +2729,19 @@ div.fav-buttons button#add-fav-button:hover {
   background: #004b00;
 }
 
-[data-theme=pony] div.fav-buttons button#add-fav-button:hover {
+[data-th-main=pony] div.fav-buttons button#add-fav-button:hover {
   background: #004b00;
 }
 
-[data-theme=bloodlust] div.fav-buttons button#add-fav-button:hover {
+[data-th-main=bloodlust] div.fav-buttons button#add-fav-button:hover {
   background: #004b00;
 }
 
-[data-theme=serpent] div.fav-buttons button#add-fav-button:hover {
+[data-th-main=serpent] div.fav-buttons button#add-fav-button:hover {
   background: #004b00;
 }
 
-[data-theme=hotdog] div.fav-buttons button#add-fav-button:hover {
+[data-th-main=hotdog] div.fav-buttons button#add-fav-button:hover {
   background: #004b00;
 }
 
@@ -2523,19 +2754,19 @@ div.fav-buttons button#remove-fav-button {
   background: maroon;
 }
 
-[data-theme=pony] div.fav-buttons button#remove-fav-button {
+[data-th-main=pony] div.fav-buttons button#remove-fav-button {
   background: maroon;
 }
 
-[data-theme=bloodlust] div.fav-buttons button#remove-fav-button {
+[data-th-main=bloodlust] div.fav-buttons button#remove-fav-button {
   background: maroon;
 }
 
-[data-theme=serpent] div.fav-buttons button#remove-fav-button {
+[data-th-main=serpent] div.fav-buttons button#remove-fav-button {
   background: maroon;
 }
 
-[data-theme=hotdog] div.fav-buttons button#remove-fav-button {
+[data-th-main=hotdog] div.fav-buttons button#remove-fav-button {
   background: maroon;
 }
 
@@ -2543,19 +2774,19 @@ div.fav-buttons button#remove-fav-button:hover {
   background: #670000;
 }
 
-[data-theme=pony] div.fav-buttons button#remove-fav-button:hover {
+[data-th-main=pony] div.fav-buttons button#remove-fav-button:hover {
   background: #670000;
 }
 
-[data-theme=bloodlust] div.fav-buttons button#remove-fav-button:hover {
+[data-th-main=bloodlust] div.fav-buttons button#remove-fav-button:hover {
   background: #670000;
 }
 
-[data-theme=serpent] div.fav-buttons button#remove-fav-button:hover {
+[data-th-main=serpent] div.fav-buttons button#remove-fav-button:hover {
   background: #670000;
 }
 
-[data-theme=hotdog] div.fav-buttons button#remove-fav-button:hover {
+[data-th-main=hotdog] div.fav-buttons button#remove-fav-button:hover {
   background: #670000;
 }
 
@@ -2568,93 +2799,125 @@ div.fav-buttons button#remove-fav-button::after {
 div#image-download-link a {
   background: sienna;
   color: #ffffff;
+  border-radius: 4px;
   font-size: 1rem;
   padding: 0.25rem 0.5rem;
   border: 0;
-  border-radius: 3px;
 }
 
-[data-theme=pony] div#image-download-link a {
+[data-th-main=pony] div#image-download-link a {
   background: sienna;
   color: #ffffff;
 }
 
-[data-theme=bloodlust] div#image-download-link a {
+[data-th-main=bloodlust] div#image-download-link a {
   background: sienna;
   color: #ffffff;
 }
 
-[data-theme=serpent] div#image-download-link a {
+[data-th-main=serpent] div#image-download-link a {
   background: sienna;
   color: #ffffff;
 }
 
-[data-theme=hotdog] div#image-download-link a {
+[data-th-main=hotdog] div#image-download-link a {
   background: sienna;
   color: #ffffff;
+}
+
+[data-th-look=modern] div#image-download-link a {
+  border-radius: 0px;
 }
 
 div#image-download-link a:hover {
   background: #8c4827;
 }
 
-[data-theme=pony] div#image-download-link a:hover {
+[data-th-main=pony] div#image-download-link a:hover {
   background: #8c4827;
 }
 
-[data-theme=bloodlust] div#image-download-link a:hover {
+[data-th-main=bloodlust] div#image-download-link a:hover {
   background: #8c4827;
 }
 
-[data-theme=serpent] div#image-download-link a:hover {
+[data-th-main=serpent] div#image-download-link a:hover {
   background: #8c4827;
 }
 
-[data-theme=hotdog] div#image-download-link a:hover {
+[data-th-main=hotdog] div#image-download-link a:hover {
   background: #8c4827;
 }
 
 /* Notices */
+div#c-posts div.notice.notice-resized {
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  max-height: 1rem;
+  margin: 0 auto;
+  border: 0;
+  font-weight: 700;
+  background: rgba(31, 60, 103, 0.7);
+  border-radius: 0 0 6px 6px;
+}
+
+[data-th-main=pony] div#c-posts div.notice.notice-resized {
+  background: rgba(69, 50, 105, 0.7);
+}
+
+[data-th-main=bloodlust] div#c-posts div.notice.notice-resized {
+  background: rgba(51, 51, 51, 0.7);
+}
+
+[data-th-main=serpent] div#c-posts div.notice.notice-resized {
+  background: rgba(255, 244, 139, 0.7);
+}
+
+[data-th-main=hotdog] div#c-posts div.notice.notice-resized {
+  background: rgba(197, 60, 56, 0.7);
+}
+
+[data-th-look=modern] div#c-posts div.notice.notice-resized {
+  border-radius: 0 0 0px 0px;
+}
+
 div#c-posts div.notice.notice-appealed,
-div#c-posts div.notice.notice-resized,
 div#c-posts div.notice.notice-child,
 div#c-posts div.notice.notice-parent,
 div#c-posts div.notice.notice-pending {
+  margin: unset;
   background: #1f3c67;
   border: 1px solid #152f56;
 }
 
-[data-theme=pony] div#c-posts div.notice.notice-appealed, [data-theme=pony]
-div#c-posts div.notice.notice-resized, [data-theme=pony]
-div#c-posts div.notice.notice-child, [data-theme=pony]
-div#c-posts div.notice.notice-parent, [data-theme=pony]
+[data-th-main=pony] div#c-posts div.notice.notice-appealed, [data-th-main=pony]
+div#c-posts div.notice.notice-child, [data-th-main=pony]
+div#c-posts div.notice.notice-parent, [data-th-main=pony]
 div#c-posts div.notice.notice-pending {
   background: #453269;
   border: 1px solid #2f175c;
 }
 
-[data-theme=bloodlust] div#c-posts div.notice.notice-appealed, [data-theme=bloodlust]
-div#c-posts div.notice.notice-resized, [data-theme=bloodlust]
-div#c-posts div.notice.notice-child, [data-theme=bloodlust]
-div#c-posts div.notice.notice-parent, [data-theme=bloodlust]
+[data-th-main=bloodlust] div#c-posts div.notice.notice-appealed, [data-th-main=bloodlust]
+div#c-posts div.notice.notice-child, [data-th-main=bloodlust]
+div#c-posts div.notice.notice-parent, [data-th-main=bloodlust]
 div#c-posts div.notice.notice-pending {
   background: #333333;
   border: 1px solid #222222;
 }
 
-[data-theme=serpent] div#c-posts div.notice.notice-appealed, [data-theme=serpent]
-div#c-posts div.notice.notice-resized, [data-theme=serpent]
-div#c-posts div.notice.notice-child, [data-theme=serpent]
-div#c-posts div.notice.notice-parent, [data-theme=serpent]
+[data-th-main=serpent] div#c-posts div.notice.notice-appealed, [data-th-main=serpent]
+div#c-posts div.notice.notice-child, [data-th-main=serpent]
+div#c-posts div.notice.notice-parent, [data-th-main=serpent]
 div#c-posts div.notice.notice-pending {
   background: #fff48b;
   border: 1px solid #dacf6b;
 }
 
-[data-theme=hotdog] div#c-posts div.notice.notice-appealed, [data-theme=hotdog]
-div#c-posts div.notice.notice-resized, [data-theme=hotdog]
-div#c-posts div.notice.notice-child, [data-theme=hotdog]
-div#c-posts div.notice.notice-parent, [data-theme=hotdog]
+[data-th-main=hotdog] div#c-posts div.notice.notice-appealed, [data-th-main=hotdog]
+div#c-posts div.notice.notice-child, [data-th-main=hotdog]
+div#c-posts div.notice.notice-parent, [data-th-main=hotdog]
 div#c-posts div.notice.notice-pending {
   background: #c53c38;
   border: 1px solid #FF0000;
@@ -2666,25 +2929,25 @@ div#c-posts div.notice.notice-flagged {
   border: 1px solid #152f56;
 }
 
-[data-theme=pony] div#c-posts div.notice.notice-deleted, [data-theme=pony]
+[data-th-main=pony] div#c-posts div.notice.notice-deleted, [data-th-main=pony]
 div#c-posts div.notice.notice-flagged {
   background: #4d0000;
   border: 1px solid #2f175c;
 }
 
-[data-theme=bloodlust] div#c-posts div.notice.notice-deleted, [data-theme=bloodlust]
+[data-th-main=bloodlust] div#c-posts div.notice.notice-deleted, [data-th-main=bloodlust]
 div#c-posts div.notice.notice-flagged {
   background: #4d0000;
   border: 1px solid #222222;
 }
 
-[data-theme=serpent] div#c-posts div.notice.notice-deleted, [data-theme=serpent]
+[data-th-main=serpent] div#c-posts div.notice.notice-deleted, [data-th-main=serpent]
 div#c-posts div.notice.notice-flagged {
   background: #4d0000;
   border: 1px solid #dacf6b;
 }
 
-[data-theme=hotdog] div#c-posts div.notice.notice-deleted, [data-theme=hotdog]
+[data-th-main=hotdog] div#c-posts div.notice.notice-deleted, [data-th-main=hotdog]
 div#c-posts div.notice.notice-flagged {
   background: #4d0000;
   border: 1px solid #FF0000;
@@ -2700,11 +2963,6 @@ section#comments {
 
 #comments h2:first-of-type {
   display: none;
-}
-
-div.comments-for-post div.list-of-comments article.comment {
-  -webkit-box-shadow: none;
-          box-shadow: none;
 }
 
 #new_comment .text label {
@@ -2743,20 +3001,24 @@ section#edit div.input:last-child {
   margin: 0;
 }
 
-[data-theme=pony] section#edit div.input:last-child {
+[data-th-main=pony] section#edit div.input:last-child {
   background: #453269;
 }
 
-[data-theme=bloodlust] section#edit div.input:last-child {
+[data-th-main=bloodlust] section#edit div.input:last-child {
   background: #333333;
 }
 
-[data-theme=serpent] section#edit div.input:last-child {
+[data-th-main=serpent] section#edit div.input:last-child {
   background: #fff48b;
 }
 
-[data-theme=hotdog] section#edit div.input:last-child {
+[data-th-main=hotdog] section#edit div.input:last-child {
   background: #c53c38;
+}
+
+[data-th-look=modern] section#edit div.input:last-child {
+  border-radius: 0px 0px 0 0;
 }
 
 /* === POPULAR PAGE === */
@@ -2804,9 +3066,13 @@ div#c-posts div#a-index menu#post-sections {
 
 /* Hide "posts" header in search page (useless?) */
 article picture img {
-  border-radius: 4px 4px 0 0;
   max-height: 10rem;
   max-width: 10rem;
+  border-radius: 4px 4px 0 0;
+}
+
+[data-th-look=modern] article picture img {
+  border-radius: 0px 0px 0 0;
 }
 
 div#page aside#sidebar h1 {
@@ -2817,9 +3083,13 @@ div#page aside#sidebar h1 {
 #mode-box-mode {
   /* Make the mode box match size with the search bar */
   width: 15em;
-  border-radius: 4px;
   -webkit-box-shadow: none;
           box-shadow: none;
+  border-radius: 4px;
+}
+
+[data-th-look=modern] #mode-box-mode {
+  border-radius: 0px;
 }
 
 div.post-score {
@@ -2831,19 +3101,19 @@ article.post-preview div.desc {
   background-color: #25477b;
 }
 
-[data-theme=pony] article.post-preview div.desc {
+[data-th-main=pony] article.post-preview div.desc {
   background-color: #503a7a;
 }
 
-[data-theme=bloodlust] article.post-preview div.desc {
+[data-th-main=bloodlust] article.post-preview div.desc {
   background-color: #404040;
 }
 
-[data-theme=serpent] article.post-preview div.desc {
+[data-th-main=serpent] article.post-preview div.desc {
   background-color: #fff6a5;
 }
 
-[data-theme=hotdog] article.post-preview div.desc {
+[data-th-main=hotdog] article.post-preview div.desc {
   background-color: #cc4e4b;
 }
 
@@ -2872,70 +3142,62 @@ article.post-preview div.desc {
 }
 
 /* Animation Type Badges */
-article.post-preview[data-tags~="animated"]::before {
-  content: "anim";
+article.post-preview[data-tags~=flash] > a::before {
+  content: "SWF";
 }
 
-article.post-preview[data-tags~="mp4"]::before {
-  content: "mp4";
-}
-
-article.post-preview[data-tags~="flash"]::before {
-  content: "swf";
-}
-
-article.post-preview[data-tags~="webm"]::before {
-  content: "webm";
-}
-
-article.post-preview[data-tags~="animated"]::before,
-article.post-preview[data-tags~="mp4"]::before,
-article.post-preview[data-tags~="flash"]::before,
-article.post-preview[data-tags~="webm"]::before {
+article.post-preview[data-file-ext=webm] > a::before,
+article.post-preview[data-tags~=flash] > a::before,
+article.post-preview[data-tags~=animated] > a::before {
   position: absolute;
   left: 0;
-  z-index: 10;
+  top: 0.5rem;
+  z-index: 5;
   background-color: #1f3c67;
   border: 1px solid #ffffff;
-  width: unset;
-  height: unset;
+  color: #ffffff;
   padding: 0.125rem 0.25rem;
-  margin: 0.25rem 0;
-  border-radius: 5px;
-  font-size: 0.6em;
+  font-size: 60%;
   font-weight: 700;
+  border-radius: 4px;
 }
 
-[data-theme=pony] article.post-preview[data-tags~="animated"]::before, [data-theme=pony]
-article.post-preview[data-tags~="mp4"]::before, [data-theme=pony]
-article.post-preview[data-tags~="flash"]::before, [data-theme=pony]
-article.post-preview[data-tags~="webm"]::before {
+[data-th-main=pony] article.post-preview[data-file-ext=webm] > a::before, [data-th-main=pony]
+article.post-preview[data-tags~=flash] > a::before, [data-th-main=pony]
+article.post-preview[data-tags~=animated] > a::before {
   background-color: #453269;
   border: 1px solid #ffffff;
+  color: #ffffff;
 }
 
-[data-theme=bloodlust] article.post-preview[data-tags~="animated"]::before, [data-theme=bloodlust]
-article.post-preview[data-tags~="mp4"]::before, [data-theme=bloodlust]
-article.post-preview[data-tags~="flash"]::before, [data-theme=bloodlust]
-article.post-preview[data-tags~="webm"]::before {
+[data-th-main=bloodlust] article.post-preview[data-file-ext=webm] > a::before, [data-th-main=bloodlust]
+article.post-preview[data-tags~=flash] > a::before, [data-th-main=bloodlust]
+article.post-preview[data-tags~=animated] > a::before {
   background-color: #333333;
   border: 1px solid #ffffff;
+  color: #ffffff;
 }
 
-[data-theme=serpent] article.post-preview[data-tags~="animated"]::before, [data-theme=serpent]
-article.post-preview[data-tags~="mp4"]::before, [data-theme=serpent]
-article.post-preview[data-tags~="flash"]::before, [data-theme=serpent]
-article.post-preview[data-tags~="webm"]::before {
+[data-th-main=serpent] article.post-preview[data-file-ext=webm] > a::before, [data-th-main=serpent]
+article.post-preview[data-tags~=flash] > a::before, [data-th-main=serpent]
+article.post-preview[data-tags~=animated] > a::before {
   background-color: #fff48b;
   border: 1px solid #ffffff;
+  color: #000000;
 }
 
-[data-theme=hotdog] article.post-preview[data-tags~="animated"]::before, [data-theme=hotdog]
-article.post-preview[data-tags~="mp4"]::before, [data-theme=hotdog]
-article.post-preview[data-tags~="flash"]::before, [data-theme=hotdog]
-article.post-preview[data-tags~="webm"]::before {
+[data-th-main=hotdog] article.post-preview[data-file-ext=webm] > a::before, [data-th-main=hotdog]
+article.post-preview[data-tags~=flash] > a::before, [data-th-main=hotdog]
+article.post-preview[data-tags~=animated] > a::before {
   background-color: #c53c38;
   border: 1px solid #ffffff;
+  color: #000000;
+}
+
+[data-th-look=modern] article.post-preview[data-file-ext=webm] > a::before, [data-th-look=modern]
+article.post-preview[data-tags~=flash] > a::before, [data-th-look=modern]
+article.post-preview[data-tags~=animated] > a::before {
+  border-radius: 0px;
 }
 
 /* === UPLOAD PAGE === */
@@ -2955,19 +3217,19 @@ textarea[data-v-deb50420] {
   background-color: #e8c446;
 }
 
-[data-theme=pony] .toggle-button.active[data-v-deb50420] {
+[data-th-main=pony] .toggle-button.active[data-v-deb50420] {
   background-color: #e8c446;
 }
 
-[data-theme=bloodlust] .toggle-button.active[data-v-deb50420] {
+[data-th-main=bloodlust] .toggle-button.active[data-v-deb50420] {
   background-color: #ffffff;
 }
 
-[data-theme=serpent] .toggle-button.active[data-v-deb50420] {
+[data-th-main=serpent] .toggle-button.active[data-v-deb50420] {
   background-color: #e8c446;
 }
 
-[data-theme=hotdog] .toggle-button.active[data-v-deb50420] {
+[data-th-main=hotdog] .toggle-button.active[data-v-deb50420] {
   background-color: #ffe380;
 }
 
@@ -2983,19 +3245,19 @@ div.profile-stats > h1 > a {
   border-radius: 1.5rem;
 }
 
-[data-theme=pony] div.profile-stats > h1 > a {
+[data-th-main=pony] div.profile-stats > h1 > a {
   background: #2f175c;
 }
 
-[data-theme=bloodlust] div.profile-stats > h1 > a {
+[data-th-main=bloodlust] div.profile-stats > h1 > a {
   background: #222222;
 }
 
-[data-theme=serpent] div.profile-stats > h1 > a {
+[data-th-main=serpent] div.profile-stats > h1 > a {
   background: #dacf6b;
 }
 
-[data-theme=hotdog] div.profile-stats > h1 > a {
+[data-th-main=hotdog] div.profile-stats > h1 > a {
   background: #FF0000;
 }
 
@@ -3011,30 +3273,35 @@ div#c-users div#a-show > div.profile-container:last-child {
 
 /* Profile statistics - get rid of striping, add background for clarity */
 div.profile-stats {
-  background: #1f3c67;
   padding: 0.5rem;
+  background: rgba(31, 60, 103, 0.8);
   border-radius: 4px;
 }
 
-[data-theme=pony] div.profile-stats {
-  background: #453269;
+[data-th-main=pony] div.profile-stats {
+  background: rgba(69, 50, 105, 0.8);
 }
 
-[data-theme=bloodlust] div.profile-stats {
-  background: #333333;
+[data-th-main=bloodlust] div.profile-stats {
+  background: rgba(51, 51, 51, 0.8);
 }
 
-[data-theme=serpent] div.profile-stats {
-  background: #fff48b;
+[data-th-main=serpent] div.profile-stats {
+  background: rgba(255, 244, 139, 0.8);
 }
 
-[data-theme=hotdog] div.profile-stats {
-  background: #c53c38;
+[data-th-main=hotdog] div.profile-stats {
+  background: rgba(197, 60, 56, 0.8);
+}
+
+[data-th-look=modern] div.profile-stats {
+  border-radius: 0px;
 }
 
 div#c-users div#a-show table.user-statistics tbody tr {
   border-bottom: 0;
   height: unset;
+  background-color: unset;
 }
 
 div#c-users div#a-show table.user-statistics tbody tr:hover {
@@ -3075,24 +3342,29 @@ div#c-users div#a-show div.box.user-uploads {
   border-radius: 4px;
 }
 
-[data-theme=pony] div#c-users div#a-show div.box.user-favorites, [data-theme=pony]
+[data-th-main=pony] div#c-users div#a-show div.box.user-favorites, [data-th-main=pony]
 div#c-users div#a-show div.box.user-uploads {
   background: #453269;
 }
 
-[data-theme=bloodlust] div#c-users div#a-show div.box.user-favorites, [data-theme=bloodlust]
+[data-th-main=bloodlust] div#c-users div#a-show div.box.user-favorites, [data-th-main=bloodlust]
 div#c-users div#a-show div.box.user-uploads {
   background: #333333;
 }
 
-[data-theme=serpent] div#c-users div#a-show div.box.user-favorites, [data-theme=serpent]
+[data-th-main=serpent] div#c-users div#a-show div.box.user-favorites, [data-th-main=serpent]
 div#c-users div#a-show div.box.user-uploads {
   background: #fff48b;
 }
 
-[data-theme=hotdog] div#c-users div#a-show div.box.user-favorites, [data-theme=hotdog]
+[data-th-main=hotdog] div#c-users div#a-show div.box.user-favorites, [data-th-main=hotdog]
 div#c-users div#a-show div.box.user-uploads {
   background: #c53c38;
+}
+
+[data-th-look=modern] div#c-users div#a-show div.box.user-favorites, [data-th-look=modern]
+div#c-users div#a-show div.box.user-uploads {
+  border-radius: 0px;
 }
 
 div#c-users div#a-show div.box.user-favorites h2,
@@ -3114,37 +3386,42 @@ div#c-users div#a-show div.box.user-uploads h2 {
   border-radius: 4px;
 }
 
-[data-theme=pony] div#c-users div#a-show div.box.user-favorites h2, [data-theme=pony]
+[data-th-main=pony] div#c-users div#a-show div.box.user-favorites h2, [data-th-main=pony]
 div#c-users div#a-show div.box.user-uploads h2 {
   border-bottom: 0.25rem solid #2f175c;
   background: #453269;
 }
 
-[data-theme=bloodlust] div#c-users div#a-show div.box.user-favorites h2, [data-theme=bloodlust]
+[data-th-main=bloodlust] div#c-users div#a-show div.box.user-favorites h2, [data-th-main=bloodlust]
 div#c-users div#a-show div.box.user-uploads h2 {
   border-bottom: 0.25rem solid #222222;
   background: #333333;
 }
 
-[data-theme=serpent] div#c-users div#a-show div.box.user-favorites h2, [data-theme=serpent]
+[data-th-main=serpent] div#c-users div#a-show div.box.user-favorites h2, [data-th-main=serpent]
 div#c-users div#a-show div.box.user-uploads h2 {
   border-bottom: 0.25rem solid #dacf6b;
   background: #fff48b;
 }
 
-[data-theme=hotdog] div#c-users div#a-show div.box.user-favorites h2, [data-theme=hotdog]
+[data-th-main=hotdog] div#c-users div#a-show div.box.user-favorites h2, [data-th-main=hotdog]
 div#c-users div#a-show div.box.user-uploads h2 {
   border-bottom: 0.25rem solid #FF0000;
   background: #c53c38;
+}
+
+[data-th-look=modern] div#c-users div#a-show div.box.user-favorites h2, [data-th-look=modern]
+div#c-users div#a-show div.box.user-uploads h2 {
+  border-radius: 0px;
 }
 
 div#c-users div#a-show div.box.user-favorites div.vertical-section,
 div#c-users div#a-show div.box.user-uploads div.vertical-section {
   height: 12rem;
   -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
@@ -3169,19 +3446,19 @@ div#c-users div#a-show .about-section .about-piece {
   padding: 0.5rem;
 }
 
-[data-theme=pony] div#c-users div#a-show .about-section .about-piece {
+[data-th-main=pony] div#c-users div#a-show .about-section .about-piece {
   background: #453269;
 }
 
-[data-theme=bloodlust] div#c-users div#a-show .about-section .about-piece {
+[data-th-main=bloodlust] div#c-users div#a-show .about-section .about-piece {
   background: #333333;
 }
 
-[data-theme=serpent] div#c-users div#a-show .about-section .about-piece {
+[data-th-main=serpent] div#c-users div#a-show .about-section .about-piece {
   background: #fff48b;
 }
 
-[data-theme=hotdog] div#c-users div#a-show .about-section .about-piece {
+[data-th-main=hotdog] div#c-users div#a-show .about-section .about-piece {
   background: #c53c38;
 }
 
@@ -3195,22 +3472,22 @@ div#c-user-feedbacks .feedback-category-positive {
   background: #004b00 !important;
 }
 
-[data-theme=pony] div#c-moderator-dashboards div#col2 .feedback-category-positive, [data-theme=pony]
+[data-th-main=pony] div#c-moderator-dashboards div#col2 .feedback-category-positive, [data-th-main=pony]
 div#c-user-feedbacks .feedback-category-positive {
   background: #004b00 !important;
 }
 
-[data-theme=bloodlust] div#c-moderator-dashboards div#col2 .feedback-category-positive, [data-theme=bloodlust]
+[data-th-main=bloodlust] div#c-moderator-dashboards div#col2 .feedback-category-positive, [data-th-main=bloodlust]
 div#c-user-feedbacks .feedback-category-positive {
   background: #004b00 !important;
 }
 
-[data-theme=serpent] div#c-moderator-dashboards div#col2 .feedback-category-positive, [data-theme=serpent]
+[data-th-main=serpent] div#c-moderator-dashboards div#col2 .feedback-category-positive, [data-th-main=serpent]
 div#c-user-feedbacks .feedback-category-positive {
   background: #004b00 !important;
 }
 
-[data-theme=hotdog] div#c-moderator-dashboards div#col2 .feedback-category-positive, [data-theme=hotdog]
+[data-th-main=hotdog] div#c-moderator-dashboards div#col2 .feedback-category-positive, [data-th-main=hotdog]
 div#c-user-feedbacks .feedback-category-positive {
   background: #004b00 !important;
 }
@@ -3220,22 +3497,22 @@ div#c-user-feedbacks .feedback-category-negative {
   background: #670000 !important;
 }
 
-[data-theme=pony] div#c-moderator-dashboards div#col2 .feedback-category-negative, [data-theme=pony]
+[data-th-main=pony] div#c-moderator-dashboards div#col2 .feedback-category-negative, [data-th-main=pony]
 div#c-user-feedbacks .feedback-category-negative {
   background: #670000 !important;
 }
 
-[data-theme=bloodlust] div#c-moderator-dashboards div#col2 .feedback-category-negative, [data-theme=bloodlust]
+[data-th-main=bloodlust] div#c-moderator-dashboards div#col2 .feedback-category-negative, [data-th-main=bloodlust]
 div#c-user-feedbacks .feedback-category-negative {
   background: #670000 !important;
 }
 
-[data-theme=serpent] div#c-moderator-dashboards div#col2 .feedback-category-negative, [data-theme=serpent]
+[data-th-main=serpent] div#c-moderator-dashboards div#col2 .feedback-category-negative, [data-th-main=serpent]
 div#c-user-feedbacks .feedback-category-negative {
   background: #670000 !important;
 }
 
-[data-theme=hotdog] div#c-moderator-dashboards div#col2 .feedback-category-negative, [data-theme=hotdog]
+[data-th-main=hotdog] div#c-moderator-dashboards div#col2 .feedback-category-negative, [data-th-main=hotdog]
 div#c-user-feedbacks .feedback-category-negative {
   background: #670000 !important;
 }
@@ -3245,19 +3522,19 @@ div#c-users div#a-edit h2#edit-options .active {
   color: #e8c446;
 }
 
-[data-theme=pony] div#c-users div#a-edit h2#edit-options .active {
+[data-th-main=pony] div#c-users div#a-edit h2#edit-options .active {
   color: #e8c446;
 }
 
-[data-theme=bloodlust] div#c-users div#a-edit h2#edit-options .active {
+[data-th-main=bloodlust] div#c-users div#a-edit h2#edit-options .active {
   color: #ffffff;
 }
 
-[data-theme=serpent] div#c-users div#a-edit h2#edit-options .active {
+[data-th-main=serpent] div#c-users div#a-edit h2#edit-options .active {
   color: #e8c446;
 }
 
-[data-theme=hotdog] div#c-users div#a-edit h2#edit-options .active {
+[data-th-main=hotdog] div#c-users div#a-edit h2#edit-options .active {
   color: #ffe380;
 }
 

@@ -1,21 +1,26 @@
 /* === SIDEBAR === */
-div#page aside#sidebar h1 span.search-help {
+div#page aside#sidebar h1 span.search-help,
+div#page aside#sidebar h1 span.blacklist-help {
     float: right;
-    font-size: 80%;
+    font-size: 70%;
 }
 
 /* Desktop Searchbox */
 div#page aside#sidebar input[type=text] {                       // Re-style the search bar
     width: 13em;                                                // Spite-filled redesigning initiated
     padding: 0.125rem 0.125rem;
-    border-radius: 4px 0 0 4px;
     border-right: 0;
     box-sizing: border-box;
+    @include themable($theme_look_index) {
+        border-radius: themed("border-radius-half") 0 0 themed("border-radius-half");
+    }
 }
 div#page aside#sidebar #search-box button[type=submit] {
     width: 2em;
-    border-radius: 0 4px 4px 0;
     border-left: 1px solid #ccc;
+    @include themable($theme_look_index) {
+        border-radius: 0 themed("border-radius-half") themed("border-radius-half") 0;
+    }
 }
 
 #search-box { display: none; }                                  // Hide the desktop searchbox on mobile
@@ -32,42 +37,32 @@ div#page aside#sidebar #search-box button[type=submit] {
     margin-bottom: 0.5rem;
 }
 .mobile-search .search-form form .search-input input {
-    border-radius: 4px 0 0 4px;
     box-sizing: border-box;
+    @include themable($theme_look_index) {
+        border-radius: themed("border-radius-half") 0 0 themed("border-radius-half");
+    }
 }
 .mobile-search .search-form form .search-button button {
-    border-radius: 0 4px 4px 0;
     border-left: 1px solid #ccc;
+    @include themable($theme_look_index) {
+        border-radius: 0 themed("border-radius-half") themed("border-radius-half") 0;
+    }
 }
 
 /* Blacklist */
 a#disable-all-blacklists,
 a#re-enable-all-blacklists {
     display: inline-block;
-    font-size: 1rem;
-    padding: 0.25rem 0.5rem;
-    margin-top: 0.25rem;
+    font-size: 0.75rem;
+    margin-top: 0.5rem;
     border: 0;
-    border-radius: 3px;
-    @include themable { color: themed("color-text-white"); }
 }
-a#disable-all-blacklists {
-    content: "Disable all filters";                             // TODO HACK replace the original link text instead
-    @include themable { background: themed("color-danger"); }
-}
-a#re-enable-all-blacklists {
-    content: "Enable all filters";                              // TODO HACK replace the original link text instead
-    @include themable { background: themed("color-success"); }
-}
-a.blacklist-toggle-link:before { content: "» "; }
+a#disable-all-blacklists::before,
+a#re-enable-all-blacklists::before,
+a.blacklist-toggle-link::before { content: "» "; }
 
 #blacklist-box.sidebar-blacklist ul li {                        /* Bugfix: remove extraneous list dots (favorites page only) */
     list-style-type: none;
-}
-
-div#page aside#sidebar h1 span.blacklist-help {
-    float: right;
-    font-size: 80%;
 }
 
 /* Tag List */

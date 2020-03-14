@@ -2,16 +2,20 @@
 div#c-posts div#a-index menu#post-sections { display: none; }   /* Hide "posts" header in search page (useless?) */
 
 article picture img {
-    border-radius: 4px 4px 0 0;
     max-height: 10rem;
     max-width: 10rem;
+    @include themable($theme_look_index) {
+        border-radius: themed("border-radius-half") themed("border-radius-half") 0 0;
+    }
 }
 div#page aside#sidebar h1 { margin-bottom: 0.25rem; }           /* Minor padding fix for the tag and blacklist */
 
 #mode-box-mode {                                                /* Make the mode box match size with the search bar */
     width: 15em;
-    border-radius: 4px;
     box-shadow: none;
+    @include themable($theme_look_index) {
+        border-radius: themed("border-radius-half");
+    }
 }
 
 div.post-score { font-size: 0.8rem; }                           /* Increase the font size on post preview details */
@@ -41,28 +45,28 @@ article.post-preview div.desc {
 }
 
 /* Animation Type Badges */
-article.post-preview[data-tags~="animated"]::before { content: "anim"; }
-article.post-preview[data-tags~="mp4"]::before { content: "mp4"; }
-article.post-preview[data-tags~="flash"]::before { content: "swf"; }
-article.post-preview[data-tags~="webm"]::before { content: "webm"; }
-
-article.post-preview[data-tags~="animated"]::before,            // This is a horrible, hacky way of doing it.
-article.post-preview[data-tags~="mp4"]::before,
-article.post-preview[data-tags~="flash"]::before,
-article.post-preview[data-tags~="webm"]::before {
+article.post-preview[data-tags~=flash] > a::before {
+    content: "SWF"
+}
+article.post-preview[data-file-ext=webm]  > a::before,
+article.post-preview[data-tags~=flash] > a::before,
+article.post-preview[data-tags~=animated] > a::before {
     position: absolute;
     left: 0;
-    z-index: 10;
+    top: 0.5rem;
+    z-index: 5;
     
     @include themable {
         background-color: themed("color-section");
         border: 1px solid themed("color-text-white");
+        color: themed("color-text");
     }
-    width: unset;
-    height: unset;
+    
     padding: 0.125rem 0.25rem;
-    margin: 0.25rem 0;
-    border-radius: 5px;
-    font-size: 0.6em;
+    font-size: 60%;
     font-weight: 700;
+
+    @include themable($theme_look_index) {
+        border-radius: themed("border-radius-half");
+    }
 }

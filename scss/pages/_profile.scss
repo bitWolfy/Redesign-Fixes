@@ -17,13 +17,18 @@ div#c-users div#a-show > div.profile-container:last-child {
 }
 /* Profile statistics - get rid of striping, add background for clarity */
 div.profile-stats {
-    @include themable { background: themed("color-section"); }
     padding: 0.5rem;
-    border-radius: 4px;
+    @include themable {
+        background: rgba( themed("color-section"), 0.8);
+    }
+    @include themable($theme_look_index) {
+        border-radius: themed("border-radius-half");
+    }
 }
 div#c-users div#a-show table.user-statistics tbody tr {                     // TODO The whole table should be converted into a grid
     border-bottom: 0;                                                       // Would have better mobile support, too
     height: unset;
+    background-color: unset;
 }
 div#c-users div#a-show table.user-statistics tbody tr:hover {
     background-color: unset;
@@ -58,7 +63,9 @@ div#c-users div#a-show div.box.user-uploads {                       // Would be 
         background: themed("color-section");
     }
     margin-bottom: 1em;
-    border-radius: 4px;
+    @include themable($theme_look_index) {
+        border-radius: themed("border-radius-half");
+    }
 }
 div#c-users div#a-show div.box.user-favorites h2,                   // Links to Favorites and Uploads, to the side
 div#c-users div#a-show div.box.user-uploads h2 {
@@ -77,12 +84,14 @@ div#c-users div#a-show div.box.user-uploads h2 {
     padding: 0 0 0.25rem;
     text-align: center;
     overflow: hidden;
-    border-radius: 4px;
+    @include themable($theme_look_index) {
+        border-radius: themed("border-radius-half");
+    }
 }
 div#c-users div#a-show div.box.user-favorites div.vertical-section,
 div#c-users div#a-show div.box.user-uploads div.vertical-section {
     height: 12rem;
-    flex-direction: row;
+    flex-direction: row-reverse;
     align-items: flex-end;
     justify-content: space-evenly;
     margin: 0 0 0 2rem;

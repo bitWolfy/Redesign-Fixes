@@ -20,13 +20,15 @@ div#page {
     @include themable() {
         background-color: themed("color-foreground");
     }
-    @include themable($data_map: $extras_index) {
+    @include themable($data_map: $theme_extra_index) {
         background-image: themed("image-foreground");
         background-position: themed("image-foreground-position");
         background-repeat: themed("image-foreground-repeat");
         padding-bottom: themed("content-padding-bottom");
     }
-    border-radius: 6px;
+    @include themable($data_map: $theme_look_index) {
+        border-radius: themed("border-radius-full");
+    }
 }
 
 footer#page-footer {
@@ -36,7 +38,9 @@ footer#page-footer {
     margin: 1em;
     margin-bottom: 0;
     width: unset;
-    border-radius: 6px 6px 0 0;
+    @include themable($theme_look_index) {
+        border-radius: themed("border-radius-full") themed("border-radius-full") 0 0;
+    }
 }
 
 button, input, select, textarea { box-shadow: unset; }          // Get rid of shadows on inputs
@@ -126,12 +130,32 @@ td a.last-page:hover {
 }
 
 /* === NOTICES === */
-div#page div.site-notice {
-    @include themable {
+div#page div.site-notice {                                          // TODO Really not obvious selector names
+    @include themable {                                             // This is actually the news block...
         background-color: themed("color-section");
         border: 1px solid themed("color-foreground");
         color: themed("color-text");
     }
     margin-bottom: 0.5rem;
     box-shadow: unset;
+}
+div#notice {                                                        // ... and these are the "settings saved" notifications
+    position: absolute;
+    top: 5rem;
+    left: 25%;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    padding: 0.25rem 1rem;
+    @include themable {
+        color: themed("color-text");
+        background-color: themed("color-success");
+        border: 1px solid themed("color-foreground");
+    }
+}
+div#notice.ui-state-error {                                         // TODO BUG I don't think that this is actually used anywhere. Wrong password, CSS too long - those show normal notices
+    @include themable {
+        background-color: themed("color-danger");
+    }
 }

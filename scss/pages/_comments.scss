@@ -6,6 +6,11 @@ div#c-comments div#a-show div.post {                            // Straighten ou
         background-color: rgba( themed("color-section"), 0.7);
     }
 }
+div.comments-for-post div.list-of-comments article.comment {
+    box-shadow: none;
+    @include themable($data_map: $theme_look_index) { border-radius: themed("border-radius-half"); }
+}
+
 div#c-comments div#a-index div.preview,
 div#c-comments div#a-show div.preview {
     text-align: center;
@@ -62,15 +67,18 @@ div#c-comments div#a-index div.post article.comment img {       // Bugfix: user 
 }
 
 /* --- Comment / Post Features --- */
-.styled-dtext blockquote,                                       // Re-style the quotes and collapsable blocks
+#c-help blockquote,                                             // TODO BUG The wiki is missing the .styled-dtext class, so none of the subsections get styled without this
+#c-help pre,                                                    // But if I just use the base element, the styles get overwritten in the forums and comments
+#c-help div.expandable,
+.styled-dtext blockquote,
 .styled-dtext div.expandable,
 .styled-dtext pre {
     position: relative;
     z-index: 10;
     box-shadow: none;
-    border-radius: 3px;
-    padding: 1rem;
+    padding: 0.5rem 1rem;
     margin: 0 0 1rem;
+    @include themable($data_map: $theme_look_index) { border-radius: themed("border-radius-half"); }
     @include themable {
         border: 1px solid themed("color-section");
         border-left: 0.25rem solid themed("color-danger");
@@ -78,27 +86,9 @@ div#c-comments div#a-index div.post article.comment img {       // Bugfix: user 
     }
 }
 
-div#c-posts div#a-show #artist-commentary {
-    position: relative;
-    z-index: 10;
-    box-shadow: none;
-    border: none;
-    border-radius: 3px;
-    @include themable {
-        border-left: 0.25rem solid themed("color-danger");
-        background: rgba( lighten( themed("color-section"), 10%), 0.7);
-    }
-}
-
-blockquote p:last-child { margin-bottom: unset; }
-.styled-dtext div.expandable { padding: unset; }
-.styled-dtext div.expandable div.expandable-header {
-    padding: 1rem;
-}
-.styled-dtext div.expandable div.expandable-content {
-    padding: 0 1rem 1rem;
-}
-
+#c-help blockquote::after,
+#c-help div.expandable::after,
+#c-help pre::after,
 .styled-dtext blockquote::after,
 .styled-dtext div.expandable::after,
 .styled-dtext pre::after {
@@ -115,36 +105,83 @@ blockquote p:last-child { margin-bottom: unset; }
     }
 }
 
-.styled-dtext blockquote {
-    @include themable { border-left-color: themed("color-detail-quote"); }
+div#c-posts div#a-show #artist-commentary {
+    position: relative;
+    z-index: 10;
+    box-shadow: none;
+    border: none;
+    @include themable($data_map: $theme_look_index) { border-radius: themed("border-radius-half"); }
+    @include themable {
+        border-left: 0.25rem solid themed("color-danger");
+        background: rgba( lighten( themed("color-section"), 10%), 0.7);
+    }
 }
+
+// BLOCKQUOTE
+#c-help blockquote,
+.styled-dtext blockquote {
+    @include themable {
+        border-left-color: themed("color-detail-quote");
+    }
+}
+#c-help blockquote::after,
 .styled-dtext blockquote::after {
     content: "\f10e"; // fa-quote-right
-    font-size: 2.5rem;
-    top: 1.125rem;
+    font-size: 2rem;
+    top: 0.5rem;
     right: 1rem;
 }
 
-.styled-dtext div.expandable {
-    @include themable {  border-left-color: themed("color-detail-expandable"); }
+#c-help blockquote p:last-child,
+.styled-dtext blockquote p:last-child  {
+    margin-bottom: unset;
 }
+
+// EXPANDABLE
+#c-help div.expandable,
+.styled-dtext div.expandable {
+    padding: unset;
+    @include themable {
+        border-left-color: themed("color-detail-expandable");
+    }
+}
+#c-help div.expandable div.expandable-header,
+.styled-dtext div.expandable div.expandable-header {
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+}
+#c-help div.expandable div.expandable-content,
+.styled-dtext div.expandable div.expandable-content {
+    display: none;
+    padding: 0 1rem 1rem;
+}
+#c-help div.expandable.expanded div.expandable-content,
+.styled-dtext div.expandable.expanded div.expandable-content {
+    display: block;
+}
+
+#c-help div.expandable::after,
 .styled-dtext div.expandable::after {
     content: "\f103";
-    font-size: 3rem;
-    top: 1.125rem;
+    font-size: 2.5rem;
+    top: 0.55rem;
     right: 1rem;
 }
 
+// CODE
+#c-help pre,
 .styled-dtext pre {
     @include themable { border-left-color: themed("color-detail-code"); }
 }
+#c-help pre::after,
 .styled-dtext pre::after {
     content: "\f121";
-    font-size: 2rem;
-    top: 1rem;
+    font-size: 1.75rem;
+    top: 0.5rem;
     right: 1rem;
 }
 
+// ARTIST COMMENTARY
 div#c-posts div#a-show #artist-commentary {
     @include themable { border-color: themed("color-detail-quote"); }
     padding: unset;

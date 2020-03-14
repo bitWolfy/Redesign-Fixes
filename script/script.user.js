@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         e621 Redesign Scripts
 // @namespace    bitwolfy.com
-// @version      2.0.6
+// @version      2.0.7
 // @description  Scripting portion of the e621 Redesign Fixes project
 // @author       bitWolfy
 // @homepage     https://github.com/bitWolfy/e621-Redesign-Fixes
@@ -13,6 +13,7 @@
 
 $(function() {
 
+    /* === HTML Changes */
     $("head").append(`
         <style type="text/css">
             #customizer-container {
@@ -42,14 +43,29 @@ $(function() {
         </style>
     `);
 
-    // === Theme Switcher and Customizer ===
+    // Sidebar Changes
+    $("#search-box h1").html(`
+        <span id="search-header">Search</span>
+        <span class="search-help"><a href="/help/cheatsheet" data-ytta-id="-">(syntax help)</a></span>
+    `);
+    $("#blacklist-box h1").html(`
+        <a href="" id="blacklist-toggle">► Blacklisted</a>
+        <span class="blacklist-help"><a href="/help/blacklist" data-ytta-id="-">(filter help)</a></span>
+    `);
+    $("#disable-all-blacklists").text("Disable all filters");
+    $("#re-enable-all-blacklists").text("Enable all filters");
+
+    // Disable e6NG Helper's blacklist toggle
+    $("#blacklist-box > div").first().css("display", "none");
+
+    // Style Customizer
     $("header#top").prepend(`
         <div id="customizer-container">
             <a href="" id="customizer-toggle">► Theme</a>
             <div id="customizer-popup-box" class="bg-section border-foreground color-text" style="display: none;">
                 <div class="customizer-label">Theme:</div>
                 <div class="customizer-controls">
-                    <select id="theme-switcher">
+                    <select id="th-main-switcher">
                         <option value="hexagon">Hexagon</option>
                         <option value="pony">Pony</option>
                         <option value="bloodlust">Bloodlust</option>
@@ -57,9 +73,16 @@ $(function() {
                         <option value="hotdog">Hotdog</option>
                     </select>
                 </div>
+                <div class="customizer-label">Look:</div>
+                <div class="customizer-controls">
+                    <select id="th-look-switcher">
+                        <option value="classic">Classic</option>
+                        <option value="modern">Modern</option>
+                    </select>
+                </div>
                 <div class="customizer-label">Extras:</div>
                 <div class="customizer-controls">
-                    <select id="extras-switcher">
+                    <select id="th-extra-switcher">
                         <option value="none">None</option>
                         <option value="autumn">Autumn</option>
                         <option value="winter">Winter</option>
@@ -78,6 +101,7 @@ $(function() {
         </div>
     `);
 
+    // === Theme Switcher and Customizer ===
     // Toggle the theme box
     $("#customizer-toggle").click(function(e) {
         e.preventDefault();
@@ -99,33 +123,25 @@ $(function() {
             $("#customizer-popup-box").css("display", "none");
             $("#customizer-toggle").text("► Theme");
         }
-     });
-
-    // Handle the theme selector
-    $("#theme-switcher").change(function(e) {
-        let theme = $(this).val();
-        GM_setValue("e621-theme", theme);
-        $("body").attr("data-theme", theme);
     });
 
-    (async () => {
-        let theme = await GM_getValue("e621-theme", "hexagon");
-        $("body").attr("data-theme", theme);
-        $("#theme-switcher").val(theme);
-    })();
+    handleThemeSwitcher("th-main",  "hexagon");
+    handleThemeSwitcher("th-look",  "classic");
+    handleThemeSwitcher("th-extra", "hexagons");
 
-    // Handle the extras selector
-    $("#extras-switcher").change(function(e) {
-        let extras = $(this).val();
-        GM_setValue("e621-extras", extras);
-        $("body").attr("data-extras", extras);
-    });
+    function handleThemeSwitcher(selector, def_option) {
+        (async () => {
+            let theme = await GM_getValue("e621-" + selector, def_option);
+            $("body").attr("data-" + selector, theme);
+            $("#" + selector + "-switcher").val(theme);
+        })();
 
-    (async () => {
-        let extras = await GM_getValue("e621-extras", "hexagons");
-        $("body").attr("data-extras", extras);
-        $("#extras-switcher").val(extras);
-    })();
+        $("#" + selector + "-switcher").change(function(e) {
+            let theme = $(this).val();
+            GM_setValue("e621-" + selector, theme);
+            $("body").attr("data-" + selector, theme);
+        });
+    }
 
     // Handle the scaling toggle
     $("#theme-scaling").change(function(e) {
@@ -144,9 +160,6 @@ $(function() {
 
 
     // === Simple blacklist collapsable ===
-    $("#blacklist-box h1").html(`<a href="" id="blacklist-toggle">► Blacklisted</a>`);
-
-    $("#blacklist-box div").css("display", "none");
 
     // Hide the filters by default, unless they are all disabled
     if($("a#re-enable-all-blacklists").css("display") == "none") {
