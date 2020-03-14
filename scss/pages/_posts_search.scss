@@ -1,66 +1,176 @@
-/* === SEARCH PAGE === */
-div#c-posts div#a-index menu#post-sections { display: none; }   /* Hide "posts" header in search page (useless?) */
+/* === MAIN PAGE LAYOUT === */
+div#page div#a-index,
+div#page div#a-show {
 
-article picture img {
-    max-height: 10rem;
-    max-width: 10rem;
-    border-radius: $border-radius-half $border-radius-half 0 0;
-}
-div#page aside#sidebar h1 { margin-bottom: 0.25rem; }           /* Minor padding fix for the tag and blacklist */
+    display: grid;
+    grid-template-columns: auto;
 
-#mode-box-mode {                                                /* Make the mode box match size with the search bar */
-    width: 15em;
-    box-shadow: none;
-    border-radius: $border-radius-half;
-}
-
-div.post-score { font-size: 0.8rem; }                           /* Increase the font size on post preview details */
-
-article.post-preview div.desc {
-    @include themable {
-        background-color: lighten( themed("color-section"), 5%);
-    }
-}
-
-@include media-breakpoint(tablet) {
-    div#posts div#posts-container {
+    @include media-breakpoint("tablet") {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
-        grid-column-gap: 1.5%;
-        align-items: self-end;
+        grid-template-columns: 14rem minmax(0, 1fr);
+        grid-column-gap: 1rem;
     }
 
-    article.post-preview {                                      /* Space out the thumbnails a bit more */
-        margin: 0.5rem;
-        max-width: max-content;
-    }
-    article.post-preview div.desc {
-        width: inherit;
-        margin: 0 auto;
-    }
-}
 
-/* Animation Type Badges */
-article.post-preview[data-tags~=flash] > a::before {
-    content: "SWF"
-}
-article.post-preview[data-file-ext=webm]  > a::before,
-article.post-preview[data-tags~=flash] > a::before,
-article.post-preview[data-tags~=animated] > a::before {
-    position: absolute;
-    left: 0;
-    top: 0.5rem;
-    z-index: 5;
-    
-    @include themable {
-        background-color: themed("color-section");
-        border: 1px solid themed("color-text-white");
-        color: themed("color-text");
-    }
-    
-    padding: 0.125rem 0.25rem;
-    font-size: 60%;
-    font-weight: 700;
+    /* === SIDEBAR === */
+    aside#sidebar {
+        width: unset;
+        float: unset;
 
-    border-radius: $border-radius-half;
+        // Search, Mode, Blacklist, etc. Headers
+        h1 {
+            margin-bottom: 0.25rem;
+            span.search-help,
+            span.blacklist-help {
+                float: right;
+                font-size: 70%;
+            }
+        }
+
+        // Desktop Searchbar
+        section#search-box {
+            display: none;
+
+            @include media-breakpoint(tablet) {
+                display: block;
+                margin-bottom: 1rem;
+            }
+
+            form {
+                display: grid;
+                grid-template-columns: auto auto;
+            }
+            form input[type=text] {
+                position: unset;
+                padding: 0.125rem 0.125rem;
+                border-right: 0;
+                border-radius: $border-radius-half 0 0 $border-radius-half;
+            }
+            button[type=submit] {
+                border-left: 1px solid #ccc;
+                border-radius: 0 $border-radius-half $border-radius-half 0;
+            }
+        }
+
+        // Mode Selector
+        section#mode-box {
+            margin-bottom: 1rem;
+
+            select#mode-box-mode {
+                width: 100%;
+                border-radius: $border-radius-half;
+            }
+        }
+
+        // Blacklist Filters
+        section#blacklist-box {
+            a#disable-all-blacklists,
+            a#re-enable-all-blacklists {
+                display: inline-block;
+                font-size: 0.75rem;
+                margin-top: 0.5rem;
+                border: 0;
+            }
+            a#disable-all-blacklists::before,
+            a#re-enable-all-blacklists::before,
+            a.blacklist-toggle-link::before {
+                content: "» ";
+            }
+
+            ul#blacklist-list li {
+                list-style-type: none;  // Bugfix: remove extraneous list dots (favorites page only)
+            }
+        }
+
+        // Tag List
+        section#tag-box,
+        section#tag-list {
+            h2 { font-family: verdana, sans-serif; }
+            .post-count {
+                @include themable { color: themed("color-text-muted"); }
+                font-size: 85%;
+                font-weight: 500;
+            }
+        }
+    }
+
+
+    /* === CONTENT SECTION === */
+    section#content {
+        overflow: unset;
+        margin-left: unset;
+        padding-left: unset;
+
+        // Mobile Searchbox
+        div.mobile-search {
+            margin: 0.5rem 0.5rem 1.5rem;
+
+            a:first-child {
+                float: right;
+                margin-bottom: 0.5rem;
+                font-weight: bold;
+            }
+            div.search-input > input {
+                border-radius: $border-radius-half 0 0 $border-radius-half;
+            }
+            div.search-button > button {
+                border-left: 1px solid #ccc;
+                border-radius: 0 $border-radius-half $border-radius-half 0;
+            }
+        }
+
+        // Posts Container
+        div#posts-container {
+            width: unset;
+            flex-wrap: unset;
+            align-items: unset;
+            justify-content: unset;
+
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(33%, 1fr));
+
+            @include media-breakpoint("tablet") {
+                grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+                grid-column-gap: 1.5%;
+                align-items: self-end;
+            }
+
+            article.post-preview {
+                picture img {
+                    border-radius: $border-radius-half $border-radius-half 0 0;
+                }
+
+                div.desc {
+                    @include themable {
+                        background-color: lighten( themed("color-section"), 5%);
+                    }
+                    font-size: 0.8rem; 
+                }
+            }
+
+            /* Animation Type Badges */
+            article.post-preview[data-tags~=flash] > a::before { content: "SWF" }   // TODO BUG This does not get set by default, for some reason
+            article.post-preview[data-file-ext=webm]  > a::before,
+            article.post-preview[data-tags~=flash] > a::before,
+            article.post-preview[data-tags~=animated] > a::before {
+                position: absolute;
+                left: 0;
+                top: 0.5rem;
+                z-index: 5;
+                
+                @include themable {
+                    background-color: themed("color-section");
+                    border: 1px solid themed("color-text-white");
+                    color: themed("color-text");
+                }
+                
+                padding: 0.125rem 0.25rem;
+                font-size: 60%;
+                font-weight: 700;
+
+                border-radius: $border-radius-half;
+            }
+        }
+    }
+
 }

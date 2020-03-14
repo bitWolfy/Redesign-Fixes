@@ -14,7 +14,7 @@ body {
     margin: 0 auto;
 }
 
-@include resp-body-width;
+//@include resp-body-width;
 
 div#page {
     @include themable() {
@@ -39,7 +39,10 @@ footer#page-footer {
     border-radius: $border-radius-full $border-radius-full 0 0;
 }
 
-button, input, select, textarea { box-shadow: unset; }          // Get rid of shadows on inputs
+button, input, select, textarea {
+    box-shadow: unset;
+    border-radius: $border-radius-half;
+}
 
 /* --- Links --- */
 a,

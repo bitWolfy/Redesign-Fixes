@@ -3,6 +3,7 @@
 div#c-posts div#a-show section#content {                        // TODO HACK Today, on bitWolfy abuses the grid system...
     display: grid;                                              // To demonstrate the power of grid layout, I cut this page in half
     grid-template-columns: auto minmax(0, 1fr);
+    grid-template-rows: repeat(20, min-content) auto;
 }
 
 div#c-posts div#a-show div#ad-leaderboard                   { grid-area: 1  / 1 / auto / none; }        // ad banner
