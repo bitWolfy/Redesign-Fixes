@@ -68,6 +68,26 @@
   background-color: #c53c38;
 }
 
+.bg-highlight {
+  background-color: #2b538e;
+}
+
+[data-th-main=pony] .bg-highlight {
+  background-color: #5c428c;
+}
+
+[data-th-main=bloodlust] .bg-highlight {
+  background-color: #4d4d4d;
+}
+
+[data-th-main=serpent] .bg-highlight {
+  background-color: #fff9be;
+}
+
+[data-th-main=hotdog] .bg-highlight {
+  background-color: #d1625f;
+}
+
 .border-background {
   border: 1px solid #020F23;
 }
@@ -126,6 +146,26 @@
 
 [data-th-main=hotdog] .border-section {
   border: 1px solid #c53c38;
+}
+
+.border-highlight {
+  borer: 1px solid #2b538e;
+}
+
+[data-th-main=pony] .border-highlight {
+  borer: 1px solid #5c428c;
+}
+
+[data-th-main=bloodlust] .border-highlight {
+  borer: 1px solid #4d4d4d;
+}
+
+[data-th-main=serpent] .border-highlight {
+  borer: 1px solid #fff9be;
+}
+
+[data-th-main=hotdog] .border-highlight {
+  borer: 1px solid #d1625f;
 }
 
 .color-text {
