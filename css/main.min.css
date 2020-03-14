@@ -660,17 +660,27 @@ div#c-comments div#a-index div.post article.comment img { border: unset; }
   div#c-blips article.blip div.author, div#c-blips article.blip div.content { margin: unset; } }
 
 /* --- Comment / Post Features --- */
-.styled-dtext blockquote, .styled-dtext div.expandable, .styled-dtext pre { position: relative; z-index: 10; -webkit-box-shadow: none; box-shadow: none; padding: 0.5rem 1rem; margin: 0 0 1rem; border-radius: 4px; border: 1px solid #1f3c67; border-left: 0.25rem solid maroon; background: rgba(43, 83, 142, 0.7); }
+#c-help blockquote, #c-help pre, #c-help div.expandable, .styled-dtext blockquote, .styled-dtext div.expandable, .styled-dtext pre { position: relative; z-index: 10; -webkit-box-shadow: none; box-shadow: none; padding: 0.5rem 1rem; margin: 0 0 1rem; border-radius: 4px; border: 1px solid #1f3c67; border-left: 0.25rem solid maroon; background: rgba(43, 83, 142, 0.7); }
 
-[data-th-look=modern] .styled-dtext blockquote, [data-th-look=modern] .styled-dtext div.expandable, [data-th-look=modern] .styled-dtext pre { border-radius: 0px; }
+[data-th-look=modern] #c-help blockquote, [data-th-look=modern] #c-help pre, [data-th-look=modern] #c-help div.expandable, [data-th-look=modern] .styled-dtext blockquote, [data-th-look=modern] .styled-dtext div.expandable, [data-th-look=modern] .styled-dtext pre { border-radius: 0px; }
 
-[data-th-main=pony] .styled-dtext blockquote, [data-th-main=pony] .styled-dtext div.expandable, [data-th-main=pony] .styled-dtext pre { border: 1px solid #453269; border-left: 0.25rem solid maroon; background: rgba(92, 66, 140, 0.7); }
+[data-th-main=pony] #c-help blockquote, [data-th-main=pony] #c-help pre, [data-th-main=pony] #c-help div.expandable, [data-th-main=pony] .styled-dtext blockquote, [data-th-main=pony] .styled-dtext div.expandable, [data-th-main=pony] .styled-dtext pre { border: 1px solid #453269; border-left: 0.25rem solid maroon; background: rgba(92, 66, 140, 0.7); }
 
-[data-th-main=bloodlust] .styled-dtext blockquote, [data-th-main=bloodlust] .styled-dtext div.expandable, [data-th-main=bloodlust] .styled-dtext pre { border: 1px solid #333333; border-left: 0.25rem solid maroon; background: rgba(77, 77, 77, 0.7); }
+[data-th-main=bloodlust] #c-help blockquote, [data-th-main=bloodlust] #c-help pre, [data-th-main=bloodlust] #c-help div.expandable, [data-th-main=bloodlust] .styled-dtext blockquote, [data-th-main=bloodlust] .styled-dtext div.expandable, [data-th-main=bloodlust] .styled-dtext pre { border: 1px solid #333333; border-left: 0.25rem solid maroon; background: rgba(77, 77, 77, 0.7); }
 
-[data-th-main=serpent] .styled-dtext blockquote, [data-th-main=serpent] .styled-dtext div.expandable, [data-th-main=serpent] .styled-dtext pre { border: 1px solid #fff48b; border-left: 0.25rem solid maroon; background: rgba(255, 249, 190, 0.7); }
+[data-th-main=serpent] #c-help blockquote, [data-th-main=serpent] #c-help pre, [data-th-main=serpent] #c-help div.expandable, [data-th-main=serpent] .styled-dtext blockquote, [data-th-main=serpent] .styled-dtext div.expandable, [data-th-main=serpent] .styled-dtext pre { border: 1px solid #fff48b; border-left: 0.25rem solid maroon; background: rgba(255, 249, 190, 0.7); }
 
-[data-th-main=hotdog] .styled-dtext blockquote, [data-th-main=hotdog] .styled-dtext div.expandable, [data-th-main=hotdog] .styled-dtext pre { border: 1px solid #c53c38; border-left: 0.25rem solid maroon; background: rgba(209, 98, 95, 0.7); }
+[data-th-main=hotdog] #c-help blockquote, [data-th-main=hotdog] #c-help pre, [data-th-main=hotdog] #c-help div.expandable, [data-th-main=hotdog] .styled-dtext blockquote, [data-th-main=hotdog] .styled-dtext div.expandable, [data-th-main=hotdog] .styled-dtext pre { border: 1px solid #c53c38; border-left: 0.25rem solid maroon; background: rgba(209, 98, 95, 0.7); }
+
+#c-help blockquote::after, #c-help div.expandable::after, #c-help pre::after, .styled-dtext blockquote::after, .styled-dtext div.expandable::after, .styled-dtext pre::after { content: ""; position: absolute; z-index: -1; font-family: 'Font Awesome 5 Free'; font-weight: 900; opacity: 0.4; color: #1f3c67; }
+
+[data-th-main=pony] #c-help blockquote::after, [data-th-main=pony] #c-help div.expandable::after, [data-th-main=pony] #c-help pre::after, [data-th-main=pony] .styled-dtext blockquote::after, [data-th-main=pony] .styled-dtext div.expandable::after, [data-th-main=pony] .styled-dtext pre::after { color: #453269; }
+
+[data-th-main=bloodlust] #c-help blockquote::after, [data-th-main=bloodlust] #c-help div.expandable::after, [data-th-main=bloodlust] #c-help pre::after, [data-th-main=bloodlust] .styled-dtext blockquote::after, [data-th-main=bloodlust] .styled-dtext div.expandable::after, [data-th-main=bloodlust] .styled-dtext pre::after { color: #333333; }
+
+[data-th-main=serpent] #c-help blockquote::after, [data-th-main=serpent] #c-help div.expandable::after, [data-th-main=serpent] #c-help pre::after, [data-th-main=serpent] .styled-dtext blockquote::after, [data-th-main=serpent] .styled-dtext div.expandable::after, [data-th-main=serpent] .styled-dtext pre::after { color: #fff48b; }
+
+[data-th-main=hotdog] #c-help blockquote::after, [data-th-main=hotdog] #c-help div.expandable::after, [data-th-main=hotdog] #c-help pre::after, [data-th-main=hotdog] .styled-dtext blockquote::after, [data-th-main=hotdog] .styled-dtext div.expandable::after, [data-th-main=hotdog] .styled-dtext pre::after { color: #c53c38; }
 
 div#c-posts div#a-show #artist-commentary { position: relative; z-index: 10; -webkit-box-shadow: none; box-shadow: none; border: none; border-radius: 4px; border-left: 0.25rem solid maroon; background: rgba(43, 83, 142, 0.7); }
 
@@ -684,59 +694,49 @@ div#c-posts div#a-show #artist-commentary { position: relative; z-index: 10; -we
 
 [data-th-main=hotdog] div#c-posts div#a-show #artist-commentary { border-left: 0.25rem solid maroon; background: rgba(209, 98, 95, 0.7); }
 
-blockquote p:last-child { margin-bottom: unset; }
+#c-help blockquote, .styled-dtext blockquote { border-left-color: #b4c7d9; }
 
-.styled-dtext div.expandable { padding: unset; }
+[data-th-main=pony] #c-help blockquote, [data-th-main=pony] .styled-dtext blockquote { border-left-color: #67717b; }
 
-.styled-dtext div.expandable div.expandable-header { padding: 0.5rem 1rem; }
+[data-th-main=bloodlust] #c-help blockquote, [data-th-main=bloodlust] .styled-dtext blockquote { border-left-color: #67717b; }
 
-.styled-dtext div.expandable div.expandable-content { padding: 0 1rem 1rem; }
+[data-th-main=serpent] #c-help blockquote, [data-th-main=serpent] .styled-dtext blockquote { border-left-color: #67717b; }
 
-.styled-dtext blockquote::after, .styled-dtext div.expandable::after, .styled-dtext pre::after { content: ""; position: absolute; z-index: -1; font-family: 'Font Awesome 5 Free'; font-weight: 900; opacity: 0.4; color: #1f3c67; }
+[data-th-main=hotdog] #c-help blockquote, [data-th-main=hotdog] .styled-dtext blockquote { border-left-color: #67717b; }
 
-[data-th-main=pony] .styled-dtext blockquote::after, [data-th-main=pony] .styled-dtext div.expandable::after, [data-th-main=pony] .styled-dtext pre::after { color: #453269; }
+#c-help blockquote::after, .styled-dtext blockquote::after { content: "\f10e"; font-size: 2rem; top: 0.5rem; right: 1rem; }
 
-[data-th-main=bloodlust] .styled-dtext blockquote::after, [data-th-main=bloodlust] .styled-dtext div.expandable::after, [data-th-main=bloodlust] .styled-dtext pre::after { color: #333333; }
+#c-help blockquote p:last-child, .styled-dtext blockquote p:last-child { margin-bottom: unset; }
 
-[data-th-main=serpent] .styled-dtext blockquote::after, [data-th-main=serpent] .styled-dtext div.expandable::after, [data-th-main=serpent] .styled-dtext pre::after { color: #fff48b; }
+#c-help div.expandable, .styled-dtext div.expandable { padding: unset; border-left-color: #ffe380; }
 
-[data-th-main=hotdog] .styled-dtext blockquote::after, [data-th-main=hotdog] .styled-dtext div.expandable::after, [data-th-main=hotdog] .styled-dtext pre::after { color: #c53c38; }
+[data-th-main=pony] #c-help div.expandable, [data-th-main=pony] .styled-dtext div.expandable { border-left-color: #ffe380; }
 
-.styled-dtext blockquote { border-left-color: #b4c7d9; }
+[data-th-main=bloodlust] #c-help div.expandable, [data-th-main=bloodlust] .styled-dtext div.expandable { border-left-color: #ffe380; }
 
-[data-th-main=pony] .styled-dtext blockquote { border-left-color: #67717b; }
+[data-th-main=serpent] #c-help div.expandable, [data-th-main=serpent] .styled-dtext div.expandable { border-left-color: #ffe380; }
 
-[data-th-main=bloodlust] .styled-dtext blockquote { border-left-color: #67717b; }
+[data-th-main=hotdog] #c-help div.expandable, [data-th-main=hotdog] .styled-dtext div.expandable { border-left-color: #ffe380; }
 
-[data-th-main=serpent] .styled-dtext blockquote { border-left-color: #67717b; }
+#c-help div.expandable div.expandable-header, .styled-dtext div.expandable div.expandable-header { cursor: pointer; padding: 0.5rem 1rem; }
 
-[data-th-main=hotdog] .styled-dtext blockquote { border-left-color: #67717b; }
+#c-help div.expandable div.expandable-content, .styled-dtext div.expandable div.expandable-content { display: none; padding: 0 1rem 1rem; }
 
-.styled-dtext blockquote::after { content: "\f10e"; font-size: 2rem; top: 0.5rem; right: 1rem; }
+#c-help div.expandable.expanded div.expandable-content, .styled-dtext div.expandable.expanded div.expandable-content { display: block; }
 
-.styled-dtext div.expandable { border-left-color: #ffe380; }
+#c-help div.expandable::after, .styled-dtext div.expandable::after { content: "\f103"; font-size: 2.5rem; top: 0.55rem; right: 1rem; }
 
-[data-th-main=pony] .styled-dtext div.expandable { border-left-color: #ffe380; }
+#c-help pre, .styled-dtext pre { border-left-color: #17a2b8; }
 
-[data-th-main=bloodlust] .styled-dtext div.expandable { border-left-color: #ffe380; }
+[data-th-main=pony] #c-help pre, [data-th-main=pony] .styled-dtext pre { border-left-color: #427982; }
 
-[data-th-main=serpent] .styled-dtext div.expandable { border-left-color: #ffe380; }
+[data-th-main=bloodlust] #c-help pre, [data-th-main=bloodlust] .styled-dtext pre { border-left-color: #427982; }
 
-[data-th-main=hotdog] .styled-dtext div.expandable { border-left-color: #ffe380; }
+[data-th-main=serpent] #c-help pre, [data-th-main=serpent] .styled-dtext pre { border-left-color: #427982; }
 
-.styled-dtext div.expandable::after { content: "\f103"; font-size: 2.5rem; top: 0.55rem; right: 1rem; }
+[data-th-main=hotdog] #c-help pre, [data-th-main=hotdog] .styled-dtext pre { border-left-color: #427982; }
 
-.styled-dtext pre { border-left-color: #17a2b8; }
-
-[data-th-main=pony] .styled-dtext pre { border-left-color: #427982; }
-
-[data-th-main=bloodlust] .styled-dtext pre { border-left-color: #427982; }
-
-[data-th-main=serpent] .styled-dtext pre { border-left-color: #427982; }
-
-[data-th-main=hotdog] .styled-dtext pre { border-left-color: #427982; }
-
-.styled-dtext pre::after { content: "\f121"; font-size: 1.75rem; top: 0.5rem; right: 1rem; }
+#c-help pre::after, .styled-dtext pre::after { content: "\f121"; font-size: 1.75rem; top: 0.5rem; right: 1rem; }
 
 div#c-posts div#a-show #artist-commentary { border-color: #b4c7d9; padding: unset; }
 
