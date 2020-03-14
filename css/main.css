@@ -985,82 +985,14 @@ div#page aside#sidebar #search-box button[type=submit] {
 a#disable-all-blacklists,
 a#re-enable-all-blacklists {
   display: inline-block;
-  font-size: 1rem;
-  padding: 0.25rem 0.5rem;
-  margin-top: 0.25rem;
+  font-size: 0.75rem;
+  margin-top: 0.5rem;
   border: 0;
-  border-radius: 4px;
-  color: #ffffff;
 }
 
-[data-th-look=modern] a#disable-all-blacklists, [data-th-look=modern]
-a#re-enable-all-blacklists {
-  border-radius: 0px;
-}
-
-[data-th-main=pony] a#disable-all-blacklists, [data-th-main=pony]
-a#re-enable-all-blacklists {
-  color: #ffffff;
-}
-
-[data-th-main=bloodlust] a#disable-all-blacklists, [data-th-main=bloodlust]
-a#re-enable-all-blacklists {
-  color: #ffffff;
-}
-
-[data-th-main=serpent] a#disable-all-blacklists, [data-th-main=serpent]
-a#re-enable-all-blacklists {
-  color: #ffffff;
-}
-
-[data-th-main=hotdog] a#disable-all-blacklists, [data-th-main=hotdog]
-a#re-enable-all-blacklists {
-  color: #ffffff;
-}
-
-a#disable-all-blacklists {
-  content: "Disable all filters";
-  background: #670000;
-}
-
-[data-th-main=pony] a#disable-all-blacklists {
-  background: #670000;
-}
-
-[data-th-main=bloodlust] a#disable-all-blacklists {
-  background: #670000;
-}
-
-[data-th-main=serpent] a#disable-all-blacklists {
-  background: #670000;
-}
-
-[data-th-main=hotdog] a#disable-all-blacklists {
-  background: #670000;
-}
-
-a#re-enable-all-blacklists {
-  content: "Enable all filters";
-  background: #004b00;
-}
-
-[data-th-main=pony] a#re-enable-all-blacklists {
-  background: #004b00;
-}
-
-[data-th-main=bloodlust] a#re-enable-all-blacklists {
-  background: #004b00;
-}
-
-[data-th-main=serpent] a#re-enable-all-blacklists {
-  background: #004b00;
-}
-
-[data-th-main=hotdog] a#re-enable-all-blacklists {
-  background: #004b00;
-}
-
-a.blacklist-toggle-link:before {
+a#disable-all-blacklists::before,
+a#re-enable-all-blacklists::before,
+a.blacklist-toggle-link::before {
   content: "» ";
 }
 

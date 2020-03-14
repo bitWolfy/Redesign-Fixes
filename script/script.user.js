@@ -52,6 +52,8 @@ $(function() {
         <a href="" id="blacklist-toggle">► Blacklisted</a>
         <span class="blacklist-help"><a href="/help/blacklist" data-ytta-id="-">(filter help)</a></span>
     `);
+    $("#disable-all-blacklists").text("Disable all filters");
+    $("#re-enable-all-blacklists").text("Enable all filters");
 
     // Disable e6NG Helper's blacklist toggle
     $("#blacklist-box > div").first().css("display", "none");

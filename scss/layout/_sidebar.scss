@@ -53,23 +53,13 @@ div#page aside#sidebar #search-box button[type=submit] {
 a#disable-all-blacklists,
 a#re-enable-all-blacklists {
     display: inline-block;
-    font-size: 1rem;
-    padding: 0.25rem 0.5rem;
-    margin-top: 0.25rem;
+    font-size: 0.75rem;
+    margin-top: 0.5rem;
     border: 0;
-    
-    @include themable($data_map: $theme_look_index) { border-radius: themed("border-radius-half"); }
-    @include themable { color: themed("color-text-white"); }
 }
-a#disable-all-blacklists {
-    content: "Disable all filters";                             // TODO FIX replace the original link text instead
-    @include themable { background: darken( themed("color-danger"), 5%); }
-}
-a#re-enable-all-blacklists {
-    content: "Enable all filters";                              // TODO FIX replace the original link text instead
-    @include themable { background: darken( themed("color-success"), 5%); }
-}
-a.blacklist-toggle-link:before { content: "» "; }
+a#disable-all-blacklists::before,
+a#re-enable-all-blacklists::before,
+a.blacklist-toggle-link::before { content: "» "; }
 
 #blacklist-box.sidebar-blacklist ul li {                        /* Bugfix: remove extraneous list dots (favorites page only) */
     list-style-type: none;
