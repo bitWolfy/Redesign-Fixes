@@ -73,13 +73,6 @@ $(function() {
                         <option value="hotdog">Hotdog</option>
                     </select>
                 </div>
-                <div class="customizer-label">Look:</div>
-                <div class="customizer-controls">
-                    <select id="th-look-switcher">
-                        <option value="classic">Classic</option>
-                        <option value="modern">Modern</option>
-                    </select>
-                </div>
                 <div class="customizer-label">Extras:</div>
                 <div class="customizer-controls">
                     <select id="th-extra-switcher">
@@ -126,7 +119,6 @@ $(function() {
     });
 
     handleThemeSwitcher("th-main",  "hexagon");
-    handleThemeSwitcher("th-look",  "classic");
     handleThemeSwitcher("th-extra", "hexagons");
 
     function handleThemeSwitcher(selector, def_option) {

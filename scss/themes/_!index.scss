@@ -4,9 +4,6 @@
 @import 'theme_serpent';
 @import 'theme_hotdog';
 
-@import 'look_classic';
-@import 'look_modern';
-
 @import 'extra_none';
 @import 'extra_autumn';
 @import 'extra_winter';
@@ -26,16 +23,6 @@ $theme_main_index: (
         "bloodlust":    $theme_bloodlust,
         "serpent":      $theme_serpent,
         "hotdog":       $theme_hotdog,
-    )
-);
-
-// Secondary theming - padding, margins, border width and radius
-$theme_look_index: (
-    "data-attr":        "look",
-    "default":          $look_classic,
-    "themes": (
-//      "classic":      $look_classic,
-        "modern":       $look_modern,
     )
 );
 

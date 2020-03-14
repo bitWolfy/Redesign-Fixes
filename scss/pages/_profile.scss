@@ -21,9 +21,7 @@ div.profile-stats {
     @include themable {
         background: rgba( themed("color-section"), 0.8);
     }
-    @include themable($theme_look_index) {
-        border-radius: themed("border-radius-half");
-    }
+    border-radius: $border-radius-half;
 }
 div#c-users div#a-show table.user-statistics tbody tr {                     // TODO The whole table should be converted into a grid
     border-bottom: 0;                                                       // Would have better mobile support, too
@@ -63,9 +61,7 @@ div#c-users div#a-show div.box.user-uploads {                       // Would be 
         background: themed("color-section");
     }
     margin-bottom: 1em;
-    @include themable($theme_look_index) {
-        border-radius: themed("border-radius-half");
-    }
+    border-radius: $border-radius-half;
 }
 div#c-users div#a-show div.box.user-favorites h2,                   // Links to Favorites and Uploads, to the side
 div#c-users div#a-show div.box.user-uploads h2 {
@@ -84,9 +80,7 @@ div#c-users div#a-show div.box.user-uploads h2 {
     padding: 0 0 0.25rem;
     text-align: center;
     overflow: hidden;
-    @include themable($theme_look_index) {
-        border-radius: themed("border-radius-half");
-    }
+    border-radius: $border-radius-half;
 }
 div#c-users div#a-show div.box.user-favorites div.vertical-section,
 div#c-users div#a-show div.box.user-uploads div.vertical-section {

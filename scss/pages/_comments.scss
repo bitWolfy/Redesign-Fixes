@@ -8,7 +8,7 @@ div#c-comments div#a-show div.post {                            // Straighten ou
 }
 div.comments-for-post div.list-of-comments article.comment {
     box-shadow: none;
-    @include themable($data_map: $theme_look_index) { border-radius: themed("border-radius-half"); }
+    border-radius: $border-radius-half;
 }
 
 div#c-comments div#a-index div.preview,
@@ -78,7 +78,7 @@ div#c-comments div#a-index div.post article.comment img {       // Bugfix: user 
     box-shadow: none;
     padding: 0.5rem 1rem;
     margin: 0 0 1rem;
-    @include themable($data_map: $theme_look_index) { border-radius: themed("border-radius-half"); }
+    border-radius: $border-radius-half;
     @include themable {
         border: 1px solid themed("color-section");
         border-left: 0.25rem solid themed("color-danger");
@@ -110,7 +110,7 @@ div#c-posts div#a-show #artist-commentary {
     z-index: 10;
     box-shadow: none;
     border: none;
-    @include themable($data_map: $theme_look_index) { border-radius: themed("border-radius-half"); }
+    border-radius: $border-radius-half;
     @include themable {
         border-left: 0.25rem solid themed("color-danger");
         background: rgba( lighten( themed("color-section"), 10%), 0.7);
