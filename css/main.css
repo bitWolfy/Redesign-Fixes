@@ -149,23 +149,23 @@
 }
 
 .border-highlight {
-  borer: 1px solid #2b538e;
+  border: 1px solid #2b538e;
 }
 
 [data-th-main=pony] .border-highlight {
-  borer: 1px solid #5c428c;
+  border: 1px solid #5c428c;
 }
 
 [data-th-main=bloodlust] .border-highlight {
-  borer: 1px solid #4d4d4d;
+  border: 1px solid #4d4d4d;
 }
 
 [data-th-main=serpent] .border-highlight {
-  borer: 1px solid #fff9be;
+  border: 1px solid #fff9be;
 }
 
 [data-th-main=hotdog] .border-highlight {
-  borer: 1px solid #d1625f;
+  border: 1px solid #d1625f;
 }
 
 .color-text {
