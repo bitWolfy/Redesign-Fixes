@@ -3053,7 +3053,6 @@ div#page div#c-posts div#a-show section#content div#posts-container {
   display: grid;
   -ms-grid-columns: (minmax(33%, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(33%, 1fr));
-  /* Animation Type Badges */
 }
 
 @media (min-width: 800px) {
@@ -3104,6 +3103,12 @@ div#page div#c-posts div#a-show section#content div#posts-container article.post
 div#page div#c-favorites div#a-index section#content div#posts-container article.post-preview div.desc, [data-th-main=hotdog]
 div#page div#c-posts div#a-show section#content div#posts-container article.post-preview div.desc {
   background-color: #cc4e4b;
+}
+
+div#page div#c-posts div#a-index section#content div#posts-container p,
+div#page div#c-favorites div#a-index section#content div#posts-container p,
+div#page div#c-posts div#a-show section#content div#posts-container p {
+  grid-area: auto / 1 / auto / none;
 }
 
 div#page div#c-posts div#a-index section#content div#posts-container article.post-preview[data-tags~=flash] > a::before,

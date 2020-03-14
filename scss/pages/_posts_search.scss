@@ -136,6 +136,7 @@ div#page div#c-posts div#a-show {
                 align-items: self-end;
             }
 
+            // Image Thumbnails
             article.post-preview {
                 picture img {
                     border-radius: $border-radius-half $border-radius-half 0 0;
@@ -149,7 +150,12 @@ div#page div#c-posts div#a-show {
                 }
             }
 
-            /* Animation Type Badges */
+            // "No results" message
+            p {
+                grid-area: auto / 1 / auto / none;
+            }
+
+            // Animation Type Badges
             article.post-preview[data-tags~=flash] > a::before { content: "SWF" }   // TODO BUG This does not get set by default, for some reason
             article.post-preview[data-file-ext=webm]  > a::before,
             article.post-preview[data-tags~=flash] > a::before,
