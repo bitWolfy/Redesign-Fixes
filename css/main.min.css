@@ -704,124 +704,118 @@ div.list-of-forum-posts article div.content { padding: unset; }
 
 textarea#forum_post_body { max-width: unset; }
 
-/* Post History Stuff */
-div#page div#c-post-versions div#a-index { -ms-grid-columns: auto; grid-template-columns: auto; }
+/* Post History Page Layout */
+div#page div#c-post-versions div#a-index .post-version { -webkit-box-shadow: none; box-shadow: none; border: 1px solid #152f56; background: #1f3c67; /* Theme Up the Colors */ /* Mobile Support */ }
 
-/* Simplify the structure, we don't to repeat the label header with every entry */
-/* Just put in the same labels on the very top and slap display: sticky on it */
-div#c-post-versions div#a-index .post-version { -webkit-box-shadow: none; box-shadow: none; border: 1px solid #152f56; background: #1f3c67; }
+[data-th-main=pony] div#page div#c-post-versions div#a-index .post-version { border: 1px solid #2f175c; background: #453269; }
 
-[data-th-main=pony] div#c-post-versions div#a-index .post-version { border: 1px solid #2f175c; background: #453269; }
+[data-th-main=bloodlust] div#page div#c-post-versions div#a-index .post-version { border: 1px solid #222222; background: #333333; }
 
-[data-th-main=bloodlust] div#c-post-versions div#a-index .post-version { border: 1px solid #222222; background: #333333; }
+[data-th-main=serpent] div#page div#c-post-versions div#a-index .post-version { border: 1px solid #dacf6b; background: #fff48b; }
 
-[data-th-main=serpent] div#c-post-versions div#a-index .post-version { border: 1px solid #dacf6b; background: #fff48b; }
+[data-th-main=hotdog] div#page div#c-post-versions div#a-index .post-version { border: 1px solid #FF0000; background: #c53c38; }
 
-[data-th-main=hotdog] div#c-post-versions div#a-index .post-version { border: 1px solid #FF0000; background: #c53c38; }
+div#page div#c-post-versions div#a-index .post-version .pv-check { -webkit-box-shadow: none; box-shadow: none; border-bottom: 0; border-color: #152f56; background: #25477b; }
 
-div#c-post-versions div#a-index .pv-check { -webkit-box-shadow: none; box-shadow: none; border-bottom: 0; border-color: #152f56; background: #25477b; }
+[data-th-main=pony] div#page div#c-post-versions div#a-index .post-version .pv-check { border-color: #2f175c; background: #503a7a; }
 
-[data-th-main=pony] div#c-post-versions div#a-index .pv-check { border-color: #2f175c; background: #503a7a; }
+[data-th-main=bloodlust] div#page div#c-post-versions div#a-index .post-version .pv-check { border-color: #222222; background: #404040; }
 
-[data-th-main=bloodlust] div#c-post-versions div#a-index .pv-check { border-color: #222222; background: #404040; }
+[data-th-main=serpent] div#page div#c-post-versions div#a-index .post-version .pv-check { border-color: #dacf6b; background: #fff6a5; }
 
-[data-th-main=serpent] div#c-post-versions div#a-index .pv-check { border-color: #dacf6b; background: #fff6a5; }
+[data-th-main=hotdog] div#page div#c-post-versions div#a-index .post-version .pv-check { border-color: #FF0000; background: #cc4e4b; }
 
-[data-th-main=hotdog] div#c-post-versions div#a-index .pv-check { border-color: #FF0000; background: #cc4e4b; }
+div#page div#c-post-versions div#a-index .post-version .pv-post-label, div#page div#c-post-versions div#a-index .post-version .pv-date-label, div#page div#c-post-versions div#a-index .post-version .pv-reason-label, div#page div#c-post-versions div#a-index .post-version .pv-description-label, div#page div#c-post-versions div#a-index .post-version .pv-tags-locked-label, div#page div#c-post-versions div#a-index .post-version .pv-spacer, div#page div#c-post-versions div#a-index .post-version .pv-tags-label, div#page div#c-post-versions div#a-index .post-version .pv-sources-label { display: none; }
 
-div#c-post-versions div#a-index .pv-post-label, div#c-post-versions div#a-index .pv-date-label, div#c-post-versions div#a-index .pv-reason-label, div#c-post-versions div#a-index .pv-description-label, div#c-post-versions div#a-index .pv-tags-locked-label, div#c-post-versions div#a-index .pv-spacer, div#c-post-versions div#a-index .pv-tags-label, div#c-post-versions div#a-index .pv-sources-label { display: none; }
+div#page div#c-post-versions div#a-index .post-version .pv-content:empty { padding: 0; }
 
-div#c-post-versions div#a-index .pv-content:empty { padding: 0; }
+div#page div#c-post-versions div#a-index .post-version .pv-post, div#page div#c-post-versions div#a-index .post-version .pv-date, div#page div#c-post-versions div#a-index .post-version .pv-reason, div#page div#c-post-versions div#a-index .post-version .pv-description, div#page div#c-post-versions div#a-index .post-version .pv-tags-locked, div#page div#c-post-versions div#a-index .post-version .pv-actions { background: #25477b; }
 
-div#c-post-versions div#a-index .pv-post, div#c-post-versions div#a-index .pv-date, div#c-post-versions div#a-index .pv-reason, div#c-post-versions div#a-index .pv-description, div#c-post-versions div#a-index .pv-tags-locked, div#c-post-versions div#a-index .pv-actions { background: #25477b; }
+[data-th-main=pony] div#page div#c-post-versions div#a-index .post-version .pv-post, [data-th-main=pony] div#page div#c-post-versions div#a-index .post-version .pv-date, [data-th-main=pony] div#page div#c-post-versions div#a-index .post-version .pv-reason, [data-th-main=pony] div#page div#c-post-versions div#a-index .post-version .pv-description, [data-th-main=pony] div#page div#c-post-versions div#a-index .post-version .pv-tags-locked, [data-th-main=pony] div#page div#c-post-versions div#a-index .post-version .pv-actions { background: #503a7a; }
 
-[data-th-main=pony] div#c-post-versions div#a-index .pv-post, [data-th-main=pony] div#c-post-versions div#a-index .pv-date, [data-th-main=pony] div#c-post-versions div#a-index .pv-reason, [data-th-main=pony] div#c-post-versions div#a-index .pv-description, [data-th-main=pony] div#c-post-versions div#a-index .pv-tags-locked, [data-th-main=pony] div#c-post-versions div#a-index .pv-actions { background: #503a7a; }
+[data-th-main=bloodlust] div#page div#c-post-versions div#a-index .post-version .pv-post, [data-th-main=bloodlust] div#page div#c-post-versions div#a-index .post-version .pv-date, [data-th-main=bloodlust] div#page div#c-post-versions div#a-index .post-version .pv-reason, [data-th-main=bloodlust] div#page div#c-post-versions div#a-index .post-version .pv-description, [data-th-main=bloodlust] div#page div#c-post-versions div#a-index .post-version .pv-tags-locked, [data-th-main=bloodlust] div#page div#c-post-versions div#a-index .post-version .pv-actions { background: #404040; }
 
-[data-th-main=bloodlust] div#c-post-versions div#a-index .pv-post, [data-th-main=bloodlust] div#c-post-versions div#a-index .pv-date, [data-th-main=bloodlust] div#c-post-versions div#a-index .pv-reason, [data-th-main=bloodlust] div#c-post-versions div#a-index .pv-description, [data-th-main=bloodlust] div#c-post-versions div#a-index .pv-tags-locked, [data-th-main=bloodlust] div#c-post-versions div#a-index .pv-actions { background: #404040; }
+[data-th-main=serpent] div#page div#c-post-versions div#a-index .post-version .pv-post, [data-th-main=serpent] div#page div#c-post-versions div#a-index .post-version .pv-date, [data-th-main=serpent] div#page div#c-post-versions div#a-index .post-version .pv-reason, [data-th-main=serpent] div#page div#c-post-versions div#a-index .post-version .pv-description, [data-th-main=serpent] div#page div#c-post-versions div#a-index .post-version .pv-tags-locked, [data-th-main=serpent] div#page div#c-post-versions div#a-index .post-version .pv-actions { background: #fff6a5; }
 
-[data-th-main=serpent] div#c-post-versions div#a-index .pv-post, [data-th-main=serpent] div#c-post-versions div#a-index .pv-date, [data-th-main=serpent] div#c-post-versions div#a-index .pv-reason, [data-th-main=serpent] div#c-post-versions div#a-index .pv-description, [data-th-main=serpent] div#c-post-versions div#a-index .pv-tags-locked, [data-th-main=serpent] div#c-post-versions div#a-index .pv-actions { background: #fff6a5; }
+[data-th-main=hotdog] div#page div#c-post-versions div#a-index .post-version .pv-post, [data-th-main=hotdog] div#page div#c-post-versions div#a-index .post-version .pv-date, [data-th-main=hotdog] div#page div#c-post-versions div#a-index .post-version .pv-reason, [data-th-main=hotdog] div#page div#c-post-versions div#a-index .post-version .pv-description, [data-th-main=hotdog] div#page div#c-post-versions div#a-index .post-version .pv-tags-locked, [data-th-main=hotdog] div#page div#c-post-versions div#a-index .post-version .pv-actions { background: #cc4e4b; }
 
-[data-th-main=hotdog] div#c-post-versions div#a-index .pv-post, [data-th-main=hotdog] div#c-post-versions div#a-index .pv-date, [data-th-main=hotdog] div#c-post-versions div#a-index .pv-reason, [data-th-main=hotdog] div#c-post-versions div#a-index .pv-description, [data-th-main=hotdog] div#c-post-versions div#a-index .pv-tags-locked, [data-th-main=hotdog] div#c-post-versions div#a-index .pv-actions { background: #cc4e4b; }
+div#page div#c-post-versions div#a-index .post-version .pv-tags, div#page div#c-post-versions div#a-index .post-version .pv-sources { border-top: 1px solid #152f56; }
 
-div#c-post-versions div#a-index .pv-tags, div#c-post-versions div#a-index .pv-sources { border-top: 1px solid #152f56; }
+[data-th-main=pony] div#page div#c-post-versions div#a-index .post-version .pv-tags, [data-th-main=pony] div#page div#c-post-versions div#a-index .post-version .pv-sources { border-top: 1px solid #2f175c; }
 
-[data-th-main=pony] div#c-post-versions div#a-index .pv-tags, [data-th-main=pony] div#c-post-versions div#a-index .pv-sources { border-top: 1px solid #2f175c; }
+[data-th-main=bloodlust] div#page div#c-post-versions div#a-index .post-version .pv-tags, [data-th-main=bloodlust] div#page div#c-post-versions div#a-index .post-version .pv-sources { border-top: 1px solid #222222; }
 
-[data-th-main=bloodlust] div#c-post-versions div#a-index .pv-tags, [data-th-main=bloodlust] div#c-post-versions div#a-index .pv-sources { border-top: 1px solid #222222; }
+[data-th-main=serpent] div#page div#c-post-versions div#a-index .post-version .pv-tags, [data-th-main=serpent] div#page div#c-post-versions div#a-index .post-version .pv-sources { border-top: 1px solid #dacf6b; }
 
-[data-th-main=serpent] div#c-post-versions div#a-index .pv-tags, [data-th-main=serpent] div#c-post-versions div#a-index .pv-sources { border-top: 1px solid #dacf6b; }
+[data-th-main=hotdog] div#page div#c-post-versions div#a-index .post-version .pv-tags, [data-th-main=hotdog] div#page div#c-post-versions div#a-index .post-version .pv-sources { border-top: 1px solid #FF0000; }
 
-[data-th-main=hotdog] div#c-post-versions div#a-index .pv-tags, [data-th-main=hotdog] div#c-post-versions div#a-index .pv-sources { border-top: 1px solid #FF0000; }
+div#page div#c-post-versions div#a-index .post-version .diff-list ins, div#page div#c-post-versions div#a-index .post-version .diff-list ins a, div#page div#c-post-versions div#a-index .post-version .diff-list ins a:link, div#page div#c-post-versions div#a-index .post-version .diff-list ins a:visited { color: #009700; }
 
-/* Theme Up the Colors */
-.diff-list ins, .diff-list ins a, .diff-list ins a:link, .diff-list ins a:visited { color: #009700; }
+[data-th-main=pony] div#page div#c-post-versions div#a-index .post-version .diff-list ins, [data-th-main=pony] div#page div#c-post-versions div#a-index .post-version .diff-list ins a, [data-th-main=pony] div#page div#c-post-versions div#a-index .post-version .diff-list ins a:link, [data-th-main=pony] div#page div#c-post-versions div#a-index .post-version .diff-list ins a:visited { color: #009700; }
 
-[data-th-main=pony] .diff-list ins, [data-th-main=pony] .diff-list ins a, [data-th-main=pony] .diff-list ins a:link, [data-th-main=pony] .diff-list ins a:visited { color: #009700; }
+[data-th-main=bloodlust] div#page div#c-post-versions div#a-index .post-version .diff-list ins, [data-th-main=bloodlust] div#page div#c-post-versions div#a-index .post-version .diff-list ins a, [data-th-main=bloodlust] div#page div#c-post-versions div#a-index .post-version .diff-list ins a:link, [data-th-main=bloodlust] div#page div#c-post-versions div#a-index .post-version .diff-list ins a:visited { color: #009700; }
 
-[data-th-main=bloodlust] .diff-list ins, [data-th-main=bloodlust] .diff-list ins a, [data-th-main=bloodlust] .diff-list ins a:link, [data-th-main=bloodlust] .diff-list ins a:visited { color: #009700; }
+[data-th-main=serpent] div#page div#c-post-versions div#a-index .post-version .diff-list ins, [data-th-main=serpent] div#page div#c-post-versions div#a-index .post-version .diff-list ins a, [data-th-main=serpent] div#page div#c-post-versions div#a-index .post-version .diff-list ins a:link, [data-th-main=serpent] div#page div#c-post-versions div#a-index .post-version .diff-list ins a:visited { color: #009700; }
 
-[data-th-main=serpent] .diff-list ins, [data-th-main=serpent] .diff-list ins a, [data-th-main=serpent] .diff-list ins a:link, [data-th-main=serpent] .diff-list ins a:visited { color: #009700; }
+[data-th-main=hotdog] div#page div#c-post-versions div#a-index .post-version .diff-list ins, [data-th-main=hotdog] div#page div#c-post-versions div#a-index .post-version .diff-list ins a, [data-th-main=hotdog] div#page div#c-post-versions div#a-index .post-version .diff-list ins a:link, [data-th-main=hotdog] div#page div#c-post-versions div#a-index .post-version .diff-list ins a:visited { color: #009700; }
 
-[data-th-main=hotdog] .diff-list ins, [data-th-main=hotdog] .diff-list ins a, [data-th-main=hotdog] .diff-list ins a:link, [data-th-main=hotdog] .diff-list ins a:visited { color: #009700; }
+div#page div#c-post-versions div#a-index .post-version .diff-list ins a:hover { color: #00b100; }
 
-.diff-list ins a:hover { color: #00b100; }
+[data-th-main=pony] div#page div#c-post-versions div#a-index .post-version .diff-list ins a:hover { color: #00b100; }
 
-[data-th-main=pony] .diff-list ins a:hover { color: #00b100; }
+[data-th-main=bloodlust] div#page div#c-post-versions div#a-index .post-version .diff-list ins a:hover { color: #00b100; }
 
-[data-th-main=bloodlust] .diff-list ins a:hover { color: #00b100; }
+[data-th-main=serpent] div#page div#c-post-versions div#a-index .post-version .diff-list ins a:hover { color: #00b100; }
 
-[data-th-main=serpent] .diff-list ins a:hover { color: #00b100; }
+[data-th-main=hotdog] div#page div#c-post-versions div#a-index .post-version .diff-list ins a:hover { color: #00b100; }
 
-[data-th-main=hotdog] .diff-list ins a:hover { color: #00b100; }
+div#page div#c-post-versions div#a-index .post-version .diff-list del, div#page div#c-post-versions div#a-index .post-version .diff-list del a, div#page div#c-post-versions div#a-index .post-version .diff-list del a:link, div#page div#c-post-versions div#a-index .post-version .diff-list del a:visited { color: #9a0000; }
 
-.diff-list del, .diff-list del a, .diff-list del a:link, .diff-list del a:visited { color: #9a0000; }
+[data-th-main=pony] div#page div#c-post-versions div#a-index .post-version .diff-list del, [data-th-main=pony] div#page div#c-post-versions div#a-index .post-version .diff-list del a, [data-th-main=pony] div#page div#c-post-versions div#a-index .post-version .diff-list del a:link, [data-th-main=pony] div#page div#c-post-versions div#a-index .post-version .diff-list del a:visited { color: #9a0000; }
 
-[data-th-main=pony] .diff-list del, [data-th-main=pony] .diff-list del a, [data-th-main=pony] .diff-list del a:link, [data-th-main=pony] .diff-list del a:visited { color: #9a0000; }
+[data-th-main=bloodlust] div#page div#c-post-versions div#a-index .post-version .diff-list del, [data-th-main=bloodlust] div#page div#c-post-versions div#a-index .post-version .diff-list del a, [data-th-main=bloodlust] div#page div#c-post-versions div#a-index .post-version .diff-list del a:link, [data-th-main=bloodlust] div#page div#c-post-versions div#a-index .post-version .diff-list del a:visited { color: #9a0000; }
 
-[data-th-main=bloodlust] .diff-list del, [data-th-main=bloodlust] .diff-list del a, [data-th-main=bloodlust] .diff-list del a:link, [data-th-main=bloodlust] .diff-list del a:visited { color: #9a0000; }
+[data-th-main=serpent] div#page div#c-post-versions div#a-index .post-version .diff-list del, [data-th-main=serpent] div#page div#c-post-versions div#a-index .post-version .diff-list del a, [data-th-main=serpent] div#page div#c-post-versions div#a-index .post-version .diff-list del a:link, [data-th-main=serpent] div#page div#c-post-versions div#a-index .post-version .diff-list del a:visited { color: #9a0000; }
 
-[data-th-main=serpent] .diff-list del, [data-th-main=serpent] .diff-list del a, [data-th-main=serpent] .diff-list del a:link, [data-th-main=serpent] .diff-list del a:visited { color: #9a0000; }
+[data-th-main=hotdog] div#page div#c-post-versions div#a-index .post-version .diff-list del, [data-th-main=hotdog] div#page div#c-post-versions div#a-index .post-version .diff-list del a, [data-th-main=hotdog] div#page div#c-post-versions div#a-index .post-version .diff-list del a:link, [data-th-main=hotdog] div#page div#c-post-versions div#a-index .post-version .diff-list del a:visited { color: #9a0000; }
 
-[data-th-main=hotdog] .diff-list del, [data-th-main=hotdog] .diff-list del a, [data-th-main=hotdog] .diff-list del a:link, [data-th-main=hotdog] .diff-list del a:visited { color: #9a0000; }
+div#page div#c-post-versions div#a-index .post-version .diff-list del a:hover { color: #cd0000; }
 
-.diff-list del a:hover { color: #cd0000; }
+[data-th-main=pony] div#page div#c-post-versions div#a-index .post-version .diff-list del a:hover { color: #cd0000; }
 
-[data-th-main=pony] .diff-list del a:hover { color: #cd0000; }
+[data-th-main=bloodlust] div#page div#c-post-versions div#a-index .post-version .diff-list del a:hover { color: #cd0000; }
 
-[data-th-main=bloodlust] .diff-list del a:hover { color: #cd0000; }
+[data-th-main=serpent] div#page div#c-post-versions div#a-index .post-version .diff-list del a:hover { color: #cd0000; }
 
-[data-th-main=serpent] .diff-list del a:hover { color: #cd0000; }
+[data-th-main=hotdog] div#page div#c-post-versions div#a-index .post-version .diff-list del a:hover { color: #cd0000; }
 
-[data-th-main=hotdog] .diff-list del a:hover { color: #cd0000; }
+div#page div#c-post-versions div#a-index .post-version .pv-check { -ms-grid-row: 1; -ms-grid-row-span: 7; -ms-grid-column: 1; -ms-grid-column-span: 1; grid-area: 1 / 1 / 8 / 2; }
 
-/* Mobile Support */
-div#c-post-versions div#a-index .pv-check { -ms-grid-row: 1; grid-row: 1; grid-row-start: 1; grid-row-end: 8; -ms-grid-column: 1; grid-column: 1; }
+div#page div#c-post-versions div#a-index .post-version .pv-post { -ms-grid-row: 2; -ms-grid-column: 2; -ms-grid-column-span: 1; grid-area: 2 / 2 / 2 / 3; }
 
-div#c-post-versions div#a-index .pv-post { -ms-grid-row: 2; grid-row: 2; -ms-grid-column: 2; grid-column: 2; grid-column-start: 2; grid-column-end: 3; }
+div#page div#c-post-versions div#a-index .post-version .pv-date { -ms-grid-row: 2; -ms-grid-column: 3; -ms-grid-column-span: 7; grid-area: 2 / 3 / 2 / 10; }
 
-div#c-post-versions div#a-index .pv-date { -ms-grid-row: 2; grid-row: 2; -ms-grid-column: 3; grid-column: 3; grid-column-start: 3; grid-column-end: 14; }
+div#page div#c-post-versions div#a-index .post-version .pv-actions { -ms-grid-row: 2; -ms-grid-row-span: 3; -ms-grid-column: 10; -ms-grid-column-span: 4; grid-area: 2 / 10 / 5 / 14; }
 
-div#c-post-versions div#a-index .pv-reason { -ms-grid-row: 3; grid-row: 3; -ms-grid-column: 2; grid-column: 2; grid-column-start: 2; grid-column-end: 14; }
+div#page div#c-post-versions div#a-index .post-version .pv-reason { -ms-grid-row: 3; -ms-grid-column: 2; -ms-grid-column-span: 12; grid-area: 3 / 2 / 3 / 14; }
 
-div#c-post-versions div#a-index .pv-description { -ms-grid-row: 4; grid-row: 4; -ms-grid-column: 2; grid-column: 2; grid-column-start: 2; grid-column-end: 9; }
+div#page div#c-post-versions div#a-index .post-version .pv-description { -ms-grid-row: 4; -ms-grid-column: 2; -ms-grid-column-span: 12; grid-area: 4 / 2 / 4 / 14; }
 
-div#c-post-versions div#a-index .pv-tags-locked { -ms-grid-row: 5; grid-row: 5; -ms-grid-column: 2; grid-column: 2; grid-column-start: 2; grid-column-end: 14; }
+div#page div#c-post-versions div#a-index .post-version .pv-tags-locked { -ms-grid-row: 5; -ms-grid-column: 2; -ms-grid-column-span: 12; grid-area: 5 / 2 / 5 / 14; }
 
-div#c-post-versions div#a-index .pv-actions { -ms-grid-row: 4; grid-row: 4; -ms-grid-column: 9; grid-column: 9; grid-column-start: 9; grid-column-end: 14; }
+div#page div#c-post-versions div#a-index .post-version .pv-tags { -ms-grid-row: 6; -ms-grid-column: 2; -ms-grid-column-span: 12; grid-area: 6 / 2 / 6 / 14; }
 
-div#c-post-versions div#a-index .pv-tags { -ms-grid-row: 6; grid-row: 6; -ms-grid-column: 2; grid-column: 2; grid-column-start: 2; grid-column-end: 14; }
+div#page div#c-post-versions div#a-index .post-version .pv-sources { -ms-grid-row: 7; -ms-grid-column: 2; -ms-grid-column-span: 12; grid-area: 7 / 2 / 7 / 14; }
 
-div#c-post-versions div#a-index .pv-sources { -ms-grid-row: 7; grid-row: 7; -ms-grid-column: 2; grid-column: 2; grid-column-start: 2; grid-column-end: 14; }
-
-@media (min-width: 800px) { div#c-post-versions div#a-index .pv-check { -ms-grid-row: 1; grid-row: 1; grid-row-start: 1; grid-row-end: 5; -ms-grid-column: 1; grid-column: 1; }
-  div#c-post-versions div#a-index .pv-post { -ms-grid-row: 2; grid-row: 2; -ms-grid-column: 2; grid-column: 2; grid-column-start: 2; grid-column-end: 3; }
-  div#c-post-versions div#a-index .pv-date { -ms-grid-row: 2; grid-row: 2; -ms-grid-column: 3; grid-column: 3; grid-column-start: 3; grid-column-end: 5; }
-  div#c-post-versions div#a-index .pv-reason { -ms-grid-row: 2; grid-row: 2; -ms-grid-column: 5; grid-column: 5; grid-column-start: 5; grid-column-end: 7; }
-  div#c-post-versions div#a-index .pv-description { -ms-grid-row: 2; grid-row: 2; -ms-grid-column: 7; grid-column: 7; grid-column-start: 7; grid-column-end: 9; }
-  div#c-post-versions div#a-index .pv-tags-locked { -ms-grid-row: 2; grid-row: 2; -ms-grid-column: 9; grid-column: 9; grid-column-start: 9; grid-column-end: 13; }
-  div#c-post-versions div#a-index .pv-actions { -ms-grid-row: 2; grid-row: 2; -ms-grid-column: 13; grid-column: 13; }
-  div#c-post-versions div#a-index .pv-tags { -ms-grid-row: 4; grid-row: 4; -ms-grid-column: 2; grid-column: 2; grid-column-start: 2; grid-column-end: 10; }
-  div#c-post-versions div#a-index .pv-sources { -ms-grid-row: 4; grid-row: 4; -ms-grid-column: 10; grid-column: 10; grid-column-start: 10; grid-column-end: 14; } }
+@media (min-width: 800px) { div#page div#c-post-versions div#a-index .post-version .pv-check { -ms-grid-row: 1; -ms-grid-row-span: 4; -ms-grid-column: 1; -ms-grid-column-span: 1; grid-area: 1 / 1 / 5 / 2; }
+  div#page div#c-post-versions div#a-index .post-version .pv-post { -ms-grid-row: 2; -ms-grid-column: 2; -ms-grid-column-span: 1; grid-area: 2 / 2 / 2 / 3; }
+  div#page div#c-post-versions div#a-index .post-version .pv-date { -ms-grid-row: 2; -ms-grid-column: 3; -ms-grid-column-span: 2; grid-area: 2 / 3 / 2 / 5; }
+  div#page div#c-post-versions div#a-index .post-version .pv-reason { -ms-grid-row: 2; -ms-grid-column: 5; -ms-grid-column-span: 2; grid-area: 2 / 5 / 2 / 7; }
+  div#page div#c-post-versions div#a-index .post-version .pv-description { -ms-grid-row: 2; -ms-grid-column: 7; -ms-grid-column-span: 2; grid-area: 2 / 7 / 2 / 9; }
+  div#page div#c-post-versions div#a-index .post-version .pv-tags-locked { -ms-grid-row: 2; -ms-grid-column: 9; -ms-grid-column-span: 4; grid-area: 2 / 9 / 2 / 13; }
+  div#page div#c-post-versions div#a-index .post-version .pv-actions { -ms-grid-row: 2; -ms-grid-column: 13; -ms-grid-column-span: 1; grid-area: 2 / 13 / 2 / 14; }
+  div#page div#c-post-versions div#a-index .post-version .pv-tags { -ms-grid-row: 4; -ms-grid-column: 2; -ms-grid-column-span: 8; grid-area: 4 / 2 / 4 / 10; }
+  div#page div#c-post-versions div#a-index .post-version .pv-sources { -ms-grid-row: 4; -ms-grid-column: 10; -ms-grid-column-span: 4; grid-area: 4 / 10 / 4 / 14; } }
 
 /* === IMAGE PAGE === */
 /* Re-order the elements */
@@ -1090,85 +1084,85 @@ div#c-explore-posts div#a-popular h1, div#c-explore-posts div#a-popular #popular
   body.resp div#page div#c-explore-posts div#a-popular article.post-preview img { height: auto; max-height: none; max-width: none; width: 32vw; } }
 
 /* === MAIN PAGE LAYOUT === */
-div#page div#a-index, div#page div#a-show { display: -ms-grid; display: grid; -ms-grid-columns: auto; grid-template-columns: auto; /* === SIDEBAR === */ /* === CONTENT SECTION === */ }
+div#page div#c-posts div#a-index, div#page div#c-favorites div#a-index, div#page div#c-posts div#a-show { display: -ms-grid; display: grid; -ms-grid-columns: auto; grid-template-columns: auto; /* === SIDEBAR === */ /* === CONTENT SECTION === */ }
 
-@media (min-width: 800px) { div#page div#a-index, div#page div#a-show { display: -ms-grid; display: grid; -ms-grid-columns: 14rem minmax(0, 1fr); grid-template-columns: 14rem minmax(0, 1fr); grid-column-gap: 1rem; } }
+@media (min-width: 800px) { div#page div#c-posts div#a-index, div#page div#c-favorites div#a-index, div#page div#c-posts div#a-show { display: -ms-grid; display: grid; -ms-grid-columns: 14rem minmax(0, 1fr); grid-template-columns: 14rem minmax(0, 1fr); grid-column-gap: 1rem; } }
 
-div#page div#a-index aside#sidebar, div#page div#a-show aside#sidebar { width: unset; float: unset; }
+div#page div#c-posts div#a-index aside#sidebar, div#page div#c-favorites div#a-index aside#sidebar, div#page div#c-posts div#a-show aside#sidebar { width: unset; float: unset; }
 
-div#page div#a-index aside#sidebar h1, div#page div#a-show aside#sidebar h1 { margin-bottom: 0.25rem; }
+div#page div#c-posts div#a-index aside#sidebar h1, div#page div#c-favorites div#a-index aside#sidebar h1, div#page div#c-posts div#a-show aside#sidebar h1 { margin-bottom: 0.25rem; }
 
-div#page div#a-index aside#sidebar h1 span.search-help, div#page div#a-index aside#sidebar h1 span.blacklist-help, div#page div#a-show aside#sidebar h1 span.search-help, div#page div#a-show aside#sidebar h1 span.blacklist-help { float: right; font-size: 70%; }
+div#page div#c-posts div#a-index aside#sidebar h1 span.search-help, div#page div#c-posts div#a-index aside#sidebar h1 span.blacklist-help, div#page div#c-favorites div#a-index aside#sidebar h1 span.search-help, div#page div#c-favorites div#a-index aside#sidebar h1 span.blacklist-help, div#page div#c-posts div#a-show aside#sidebar h1 span.search-help, div#page div#c-posts div#a-show aside#sidebar h1 span.blacklist-help { float: right; font-size: 70%; }
 
-div#page div#a-index aside#sidebar section#search-box, div#page div#a-show aside#sidebar section#search-box { display: none; }
+div#page div#c-posts div#a-index aside#sidebar section#search-box, div#page div#c-favorites div#a-index aside#sidebar section#search-box, div#page div#c-posts div#a-show aside#sidebar section#search-box { display: none; }
 
-@media (min-width: 800px) { div#page div#a-index aside#sidebar section#search-box, div#page div#a-show aside#sidebar section#search-box { display: block; margin-bottom: 1rem; } }
+@media (min-width: 800px) { div#page div#c-posts div#a-index aside#sidebar section#search-box, div#page div#c-favorites div#a-index aside#sidebar section#search-box, div#page div#c-posts div#a-show aside#sidebar section#search-box { display: block; margin-bottom: 1rem; } }
 
-div#page div#a-index aside#sidebar section#search-box form, div#page div#a-show aside#sidebar section#search-box form { display: -ms-grid; display: grid; -ms-grid-columns: auto auto; grid-template-columns: auto auto; }
+div#page div#c-posts div#a-index aside#sidebar section#search-box form, div#page div#c-favorites div#a-index aside#sidebar section#search-box form, div#page div#c-posts div#a-show aside#sidebar section#search-box form { display: -ms-grid; display: grid; -ms-grid-columns: auto auto; grid-template-columns: auto auto; }
 
-div#page div#a-index aside#sidebar section#search-box form input[type=text], div#page div#a-show aside#sidebar section#search-box form input[type=text] { position: unset; padding: 0.125rem 0.125rem; border-right: 0; border-radius: 4px 0 0 4px; }
+div#page div#c-posts div#a-index aside#sidebar section#search-box form input[type=text], div#page div#c-favorites div#a-index aside#sidebar section#search-box form input[type=text], div#page div#c-posts div#a-show aside#sidebar section#search-box form input[type=text] { position: unset; padding: 0.125rem 0.125rem; border-right: 0; border-radius: 4px 0 0 4px; }
 
-div#page div#a-index aside#sidebar section#search-box button[type=submit], div#page div#a-show aside#sidebar section#search-box button[type=submit] { border-left: 1px solid #ccc; border-radius: 0 4px 4px 0; }
+div#page div#c-posts div#a-index aside#sidebar section#search-box button[type=submit], div#page div#c-favorites div#a-index aside#sidebar section#search-box button[type=submit], div#page div#c-posts div#a-show aside#sidebar section#search-box button[type=submit] { border-left: 1px solid #ccc; border-radius: 0 4px 4px 0; }
 
-div#page div#a-index aside#sidebar section#mode-box, div#page div#a-show aside#sidebar section#mode-box { margin-bottom: 1rem; }
+div#page div#c-posts div#a-index aside#sidebar section#mode-box, div#page div#c-favorites div#a-index aside#sidebar section#mode-box, div#page div#c-posts div#a-show aside#sidebar section#mode-box { margin-bottom: 1rem; }
 
-div#page div#a-index aside#sidebar section#mode-box select#mode-box-mode, div#page div#a-show aside#sidebar section#mode-box select#mode-box-mode { width: 100%; border-radius: 4px; }
+div#page div#c-posts div#a-index aside#sidebar section#mode-box select#mode-box-mode, div#page div#c-favorites div#a-index aside#sidebar section#mode-box select#mode-box-mode, div#page div#c-posts div#a-show aside#sidebar section#mode-box select#mode-box-mode { width: 100%; border-radius: 4px; }
 
-div#page div#a-index aside#sidebar section#blacklist-box a#disable-all-blacklists, div#page div#a-index aside#sidebar section#blacklist-box a#re-enable-all-blacklists, div#page div#a-show aside#sidebar section#blacklist-box a#disable-all-blacklists, div#page div#a-show aside#sidebar section#blacklist-box a#re-enable-all-blacklists { display: inline-block; font-size: 0.75rem; margin-top: 0.5rem; border: 0; }
+div#page div#c-posts div#a-index aside#sidebar section#blacklist-box a#disable-all-blacklists, div#page div#c-posts div#a-index aside#sidebar section#blacklist-box a#re-enable-all-blacklists, div#page div#c-favorites div#a-index aside#sidebar section#blacklist-box a#disable-all-blacklists, div#page div#c-favorites div#a-index aside#sidebar section#blacklist-box a#re-enable-all-blacklists, div#page div#c-posts div#a-show aside#sidebar section#blacklist-box a#disable-all-blacklists, div#page div#c-posts div#a-show aside#sidebar section#blacklist-box a#re-enable-all-blacklists { display: inline-block; font-size: 0.75rem; margin-top: 0.5rem; border: 0; }
 
-div#page div#a-index aside#sidebar section#blacklist-box a#disable-all-blacklists::before, div#page div#a-index aside#sidebar section#blacklist-box a#re-enable-all-blacklists::before, div#page div#a-index aside#sidebar section#blacklist-box a.blacklist-toggle-link::before, div#page div#a-show aside#sidebar section#blacklist-box a#disable-all-blacklists::before, div#page div#a-show aside#sidebar section#blacklist-box a#re-enable-all-blacklists::before, div#page div#a-show aside#sidebar section#blacklist-box a.blacklist-toggle-link::before { content: "» "; }
+div#page div#c-posts div#a-index aside#sidebar section#blacklist-box a#disable-all-blacklists::before, div#page div#c-posts div#a-index aside#sidebar section#blacklist-box a#re-enable-all-blacklists::before, div#page div#c-posts div#a-index aside#sidebar section#blacklist-box a.blacklist-toggle-link::before, div#page div#c-favorites div#a-index aside#sidebar section#blacklist-box a#disable-all-blacklists::before, div#page div#c-favorites div#a-index aside#sidebar section#blacklist-box a#re-enable-all-blacklists::before, div#page div#c-favorites div#a-index aside#sidebar section#blacklist-box a.blacklist-toggle-link::before, div#page div#c-posts div#a-show aside#sidebar section#blacklist-box a#disable-all-blacklists::before, div#page div#c-posts div#a-show aside#sidebar section#blacklist-box a#re-enable-all-blacklists::before, div#page div#c-posts div#a-show aside#sidebar section#blacklist-box a.blacklist-toggle-link::before { content: "» "; }
 
-div#page div#a-index aside#sidebar section#blacklist-box ul#blacklist-list li, div#page div#a-show aside#sidebar section#blacklist-box ul#blacklist-list li { list-style-type: none; }
+div#page div#c-posts div#a-index aside#sidebar section#blacklist-box ul#blacklist-list li, div#page div#c-favorites div#a-index aside#sidebar section#blacklist-box ul#blacklist-list li, div#page div#c-posts div#a-show aside#sidebar section#blacklist-box ul#blacklist-list li { list-style-type: none; }
 
-div#page div#a-index aside#sidebar section#tag-box h2, div#page div#a-index aside#sidebar section#tag-list h2, div#page div#a-show aside#sidebar section#tag-box h2, div#page div#a-show aside#sidebar section#tag-list h2 { font-family: verdana, sans-serif; }
+div#page div#c-posts div#a-index aside#sidebar section#tag-box h2, div#page div#c-posts div#a-index aside#sidebar section#tag-list h2, div#page div#c-favorites div#a-index aside#sidebar section#tag-box h2, div#page div#c-favorites div#a-index aside#sidebar section#tag-list h2, div#page div#c-posts div#a-show aside#sidebar section#tag-box h2, div#page div#c-posts div#a-show aside#sidebar section#tag-list h2 { font-family: verdana, sans-serif; }
 
-div#page div#a-index aside#sidebar section#tag-box .post-count, div#page div#a-index aside#sidebar section#tag-list .post-count, div#page div#a-show aside#sidebar section#tag-box .post-count, div#page div#a-show aside#sidebar section#tag-list .post-count { color: #999999; font-size: 85%; font-weight: 500; }
+div#page div#c-posts div#a-index aside#sidebar section#tag-box .post-count, div#page div#c-posts div#a-index aside#sidebar section#tag-list .post-count, div#page div#c-favorites div#a-index aside#sidebar section#tag-box .post-count, div#page div#c-favorites div#a-index aside#sidebar section#tag-list .post-count, div#page div#c-posts div#a-show aside#sidebar section#tag-box .post-count, div#page div#c-posts div#a-show aside#sidebar section#tag-list .post-count { color: #999999; font-size: 85%; font-weight: 500; }
 
-[data-th-main=pony] div#page div#a-index aside#sidebar section#tag-box .post-count, [data-th-main=pony] div#page div#a-index aside#sidebar section#tag-list .post-count, [data-th-main=pony] div#page div#a-show aside#sidebar section#tag-box .post-count, [data-th-main=pony] div#page div#a-show aside#sidebar section#tag-list .post-count { color: #999999; }
+[data-th-main=pony] div#page div#c-posts div#a-index aside#sidebar section#tag-box .post-count, [data-th-main=pony] div#page div#c-posts div#a-index aside#sidebar section#tag-list .post-count, [data-th-main=pony] div#page div#c-favorites div#a-index aside#sidebar section#tag-box .post-count, [data-th-main=pony] div#page div#c-favorites div#a-index aside#sidebar section#tag-list .post-count, [data-th-main=pony] div#page div#c-posts div#a-show aside#sidebar section#tag-box .post-count, [data-th-main=pony] div#page div#c-posts div#a-show aside#sidebar section#tag-list .post-count { color: #999999; }
 
-[data-th-main=bloodlust] div#page div#a-index aside#sidebar section#tag-box .post-count, [data-th-main=bloodlust] div#page div#a-index aside#sidebar section#tag-list .post-count, [data-th-main=bloodlust] div#page div#a-show aside#sidebar section#tag-box .post-count, [data-th-main=bloodlust] div#page div#a-show aside#sidebar section#tag-list .post-count { color: #999999; }
+[data-th-main=bloodlust] div#page div#c-posts div#a-index aside#sidebar section#tag-box .post-count, [data-th-main=bloodlust] div#page div#c-posts div#a-index aside#sidebar section#tag-list .post-count, [data-th-main=bloodlust] div#page div#c-favorites div#a-index aside#sidebar section#tag-box .post-count, [data-th-main=bloodlust] div#page div#c-favorites div#a-index aside#sidebar section#tag-list .post-count, [data-th-main=bloodlust] div#page div#c-posts div#a-show aside#sidebar section#tag-box .post-count, [data-th-main=bloodlust] div#page div#c-posts div#a-show aside#sidebar section#tag-list .post-count { color: #999999; }
 
-[data-th-main=serpent] div#page div#a-index aside#sidebar section#tag-box .post-count, [data-th-main=serpent] div#page div#a-index aside#sidebar section#tag-list .post-count, [data-th-main=serpent] div#page div#a-show aside#sidebar section#tag-box .post-count, [data-th-main=serpent] div#page div#a-show aside#sidebar section#tag-list .post-count { color: #555555; }
+[data-th-main=serpent] div#page div#c-posts div#a-index aside#sidebar section#tag-box .post-count, [data-th-main=serpent] div#page div#c-posts div#a-index aside#sidebar section#tag-list .post-count, [data-th-main=serpent] div#page div#c-favorites div#a-index aside#sidebar section#tag-box .post-count, [data-th-main=serpent] div#page div#c-favorites div#a-index aside#sidebar section#tag-list .post-count, [data-th-main=serpent] div#page div#c-posts div#a-show aside#sidebar section#tag-box .post-count, [data-th-main=serpent] div#page div#c-posts div#a-show aside#sidebar section#tag-list .post-count { color: #555555; }
 
-[data-th-main=hotdog] div#page div#a-index aside#sidebar section#tag-box .post-count, [data-th-main=hotdog] div#page div#a-index aside#sidebar section#tag-list .post-count, [data-th-main=hotdog] div#page div#a-show aside#sidebar section#tag-box .post-count, [data-th-main=hotdog] div#page div#a-show aside#sidebar section#tag-list .post-count { color: #999999; }
+[data-th-main=hotdog] div#page div#c-posts div#a-index aside#sidebar section#tag-box .post-count, [data-th-main=hotdog] div#page div#c-posts div#a-index aside#sidebar section#tag-list .post-count, [data-th-main=hotdog] div#page div#c-favorites div#a-index aside#sidebar section#tag-box .post-count, [data-th-main=hotdog] div#page div#c-favorites div#a-index aside#sidebar section#tag-list .post-count, [data-th-main=hotdog] div#page div#c-posts div#a-show aside#sidebar section#tag-box .post-count, [data-th-main=hotdog] div#page div#c-posts div#a-show aside#sidebar section#tag-list .post-count { color: #999999; }
 
-div#page div#a-index section#content, div#page div#a-show section#content { overflow: unset; margin-left: unset; padding-left: unset; }
+div#page div#c-posts div#a-index section#content, div#page div#c-favorites div#a-index section#content, div#page div#c-posts div#a-show section#content { overflow: unset; margin-left: unset; padding-left: unset; }
 
-div#page div#a-index section#content div.mobile-search, div#page div#a-show section#content div.mobile-search { margin: 0.5rem 0.5rem 1.5rem; }
+div#page div#c-posts div#a-index section#content div.mobile-search, div#page div#c-favorites div#a-index section#content div.mobile-search, div#page div#c-posts div#a-show section#content div.mobile-search { margin: 0.5rem 0.5rem 1.5rem; }
 
-div#page div#a-index section#content div.mobile-search a:first-child, div#page div#a-show section#content div.mobile-search a:first-child { float: right; margin-bottom: 0.5rem; font-weight: bold; }
+div#page div#c-posts div#a-index section#content div.mobile-search a:first-child, div#page div#c-favorites div#a-index section#content div.mobile-search a:first-child, div#page div#c-posts div#a-show section#content div.mobile-search a:first-child { float: right; margin-bottom: 0.5rem; font-weight: bold; }
 
-div#page div#a-index section#content div.mobile-search div.search-input > input, div#page div#a-show section#content div.mobile-search div.search-input > input { border-radius: 4px 0 0 4px; }
+div#page div#c-posts div#a-index section#content div.mobile-search div.search-input > input, div#page div#c-favorites div#a-index section#content div.mobile-search div.search-input > input, div#page div#c-posts div#a-show section#content div.mobile-search div.search-input > input { border-radius: 4px 0 0 4px; }
 
-div#page div#a-index section#content div.mobile-search div.search-button > button, div#page div#a-show section#content div.mobile-search div.search-button > button { border-left: 1px solid #ccc; border-radius: 0 4px 4px 0; }
+div#page div#c-posts div#a-index section#content div.mobile-search div.search-button > button, div#page div#c-favorites div#a-index section#content div.mobile-search div.search-button > button, div#page div#c-posts div#a-show section#content div.mobile-search div.search-button > button { border-left: 1px solid #ccc; border-radius: 0 4px 4px 0; }
 
-div#page div#a-index section#content div#posts-container, div#page div#a-show section#content div#posts-container { width: unset; -ms-flex-wrap: unset; flex-wrap: unset; -webkit-box-align: unset; -ms-flex-align: unset; align-items: unset; -webkit-box-pack: unset; -ms-flex-pack: unset; justify-content: unset; display: -ms-grid; display: grid; -ms-grid-columns: (minmax(33%, 1fr))[auto-fit]; grid-template-columns: repeat(auto-fit, minmax(33%, 1fr)); /* Animation Type Badges */ }
+div#page div#c-posts div#a-index section#content div#posts-container, div#page div#c-favorites div#a-index section#content div#posts-container, div#page div#c-posts div#a-show section#content div#posts-container { width: unset; -ms-flex-wrap: unset; flex-wrap: unset; -webkit-box-align: unset; -ms-flex-align: unset; align-items: unset; -webkit-box-pack: unset; -ms-flex-pack: unset; justify-content: unset; display: -ms-grid; display: grid; -ms-grid-columns: (minmax(33%, 1fr))[auto-fit]; grid-template-columns: repeat(auto-fit, minmax(33%, 1fr)); /* Animation Type Badges */ }
 
-@media (min-width: 800px) { div#page div#a-index section#content div#posts-container, div#page div#a-show section#content div#posts-container { -ms-grid-columns: (minmax(10rem, 1fr))[auto-fill]; grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr)); grid-column-gap: 1.5%; -webkit-box-align: self-end; -ms-flex-align: self-end; align-items: self-end; } }
+@media (min-width: 800px) { div#page div#c-posts div#a-index section#content div#posts-container, div#page div#c-favorites div#a-index section#content div#posts-container, div#page div#c-posts div#a-show section#content div#posts-container { -ms-grid-columns: (minmax(10rem, 1fr))[auto-fill]; grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr)); grid-column-gap: 1.5%; -webkit-box-align: self-end; -ms-flex-align: self-end; align-items: self-end; } }
 
-div#page div#a-index section#content div#posts-container article.post-preview picture img, div#page div#a-show section#content div#posts-container article.post-preview picture img { border-radius: 4px 4px 0 0; }
+div#page div#c-posts div#a-index section#content div#posts-container article.post-preview picture img, div#page div#c-favorites div#a-index section#content div#posts-container article.post-preview picture img, div#page div#c-posts div#a-show section#content div#posts-container article.post-preview picture img { border-radius: 4px 4px 0 0; }
 
-div#page div#a-index section#content div#posts-container article.post-preview div.desc, div#page div#a-show section#content div#posts-container article.post-preview div.desc { background-color: #25477b; font-size: 0.8rem; }
+div#page div#c-posts div#a-index section#content div#posts-container article.post-preview div.desc, div#page div#c-favorites div#a-index section#content div#posts-container article.post-preview div.desc, div#page div#c-posts div#a-show section#content div#posts-container article.post-preview div.desc { background-color: #25477b; font-size: 0.8rem; }
 
-[data-th-main=pony] div#page div#a-index section#content div#posts-container article.post-preview div.desc, [data-th-main=pony] div#page div#a-show section#content div#posts-container article.post-preview div.desc { background-color: #503a7a; }
+[data-th-main=pony] div#page div#c-posts div#a-index section#content div#posts-container article.post-preview div.desc, [data-th-main=pony] div#page div#c-favorites div#a-index section#content div#posts-container article.post-preview div.desc, [data-th-main=pony] div#page div#c-posts div#a-show section#content div#posts-container article.post-preview div.desc { background-color: #503a7a; }
 
-[data-th-main=bloodlust] div#page div#a-index section#content div#posts-container article.post-preview div.desc, [data-th-main=bloodlust] div#page div#a-show section#content div#posts-container article.post-preview div.desc { background-color: #404040; }
+[data-th-main=bloodlust] div#page div#c-posts div#a-index section#content div#posts-container article.post-preview div.desc, [data-th-main=bloodlust] div#page div#c-favorites div#a-index section#content div#posts-container article.post-preview div.desc, [data-th-main=bloodlust] div#page div#c-posts div#a-show section#content div#posts-container article.post-preview div.desc { background-color: #404040; }
 
-[data-th-main=serpent] div#page div#a-index section#content div#posts-container article.post-preview div.desc, [data-th-main=serpent] div#page div#a-show section#content div#posts-container article.post-preview div.desc { background-color: #fff6a5; }
+[data-th-main=serpent] div#page div#c-posts div#a-index section#content div#posts-container article.post-preview div.desc, [data-th-main=serpent] div#page div#c-favorites div#a-index section#content div#posts-container article.post-preview div.desc, [data-th-main=serpent] div#page div#c-posts div#a-show section#content div#posts-container article.post-preview div.desc { background-color: #fff6a5; }
 
-[data-th-main=hotdog] div#page div#a-index section#content div#posts-container article.post-preview div.desc, [data-th-main=hotdog] div#page div#a-show section#content div#posts-container article.post-preview div.desc { background-color: #cc4e4b; }
+[data-th-main=hotdog] div#page div#c-posts div#a-index section#content div#posts-container article.post-preview div.desc, [data-th-main=hotdog] div#page div#c-favorites div#a-index section#content div#posts-container article.post-preview div.desc, [data-th-main=hotdog] div#page div#c-posts div#a-show section#content div#posts-container article.post-preview div.desc { background-color: #cc4e4b; }
 
-div#page div#a-index section#content div#posts-container article.post-preview[data-tags~=flash] > a::before, div#page div#a-show section#content div#posts-container article.post-preview[data-tags~=flash] > a::before { content: "SWF"; }
+div#page div#c-posts div#a-index section#content div#posts-container article.post-preview[data-tags~=flash] > a::before, div#page div#c-favorites div#a-index section#content div#posts-container article.post-preview[data-tags~=flash] > a::before, div#page div#c-posts div#a-show section#content div#posts-container article.post-preview[data-tags~=flash] > a::before { content: "SWF"; }
 
-div#page div#a-index section#content div#posts-container article.post-preview[data-file-ext=webm] > a::before, div#page div#a-index section#content div#posts-container article.post-preview[data-tags~=flash] > a::before, div#page div#a-index section#content div#posts-container article.post-preview[data-tags~=animated] > a::before, div#page div#a-show section#content div#posts-container article.post-preview[data-file-ext=webm] > a::before, div#page div#a-show section#content div#posts-container article.post-preview[data-tags~=flash] > a::before, div#page div#a-show section#content div#posts-container article.post-preview[data-tags~=animated] > a::before { position: absolute; left: 0; top: 0.5rem; z-index: 5; background-color: #1f3c67; border: 1px solid #ffffff; color: #ffffff; padding: 0.125rem 0.25rem; font-size: 60%; font-weight: 700; border-radius: 4px; }
+div#page div#c-posts div#a-index section#content div#posts-container article.post-preview[data-file-ext=webm] > a::before, div#page div#c-posts div#a-index section#content div#posts-container article.post-preview[data-tags~=flash] > a::before, div#page div#c-posts div#a-index section#content div#posts-container article.post-preview[data-tags~=animated] > a::before, div#page div#c-favorites div#a-index section#content div#posts-container article.post-preview[data-file-ext=webm] > a::before, div#page div#c-favorites div#a-index section#content div#posts-container article.post-preview[data-tags~=flash] > a::before, div#page div#c-favorites div#a-index section#content div#posts-container article.post-preview[data-tags~=animated] > a::before, div#page div#c-posts div#a-show section#content div#posts-container article.post-preview[data-file-ext=webm] > a::before, div#page div#c-posts div#a-show section#content div#posts-container article.post-preview[data-tags~=flash] > a::before, div#page div#c-posts div#a-show section#content div#posts-container article.post-preview[data-tags~=animated] > a::before { position: absolute; left: 0; top: 0.5rem; z-index: 5; background-color: #1f3c67; border: 1px solid #ffffff; color: #ffffff; padding: 0.125rem 0.25rem; font-size: 60%; font-weight: 700; border-radius: 4px; }
 
-[data-th-main=pony] div#page div#a-index section#content div#posts-container article.post-preview[data-file-ext=webm] > a::before, [data-th-main=pony] div#page div#a-index section#content div#posts-container article.post-preview[data-tags~=flash] > a::before, [data-th-main=pony] div#page div#a-index section#content div#posts-container article.post-preview[data-tags~=animated] > a::before, [data-th-main=pony] div#page div#a-show section#content div#posts-container article.post-preview[data-file-ext=webm] > a::before, [data-th-main=pony] div#page div#a-show section#content div#posts-container article.post-preview[data-tags~=flash] > a::before, [data-th-main=pony] div#page div#a-show section#content div#posts-container article.post-preview[data-tags~=animated] > a::before { background-color: #453269; border: 1px solid #ffffff; color: #ffffff; }
+[data-th-main=pony] div#page div#c-posts div#a-index section#content div#posts-container article.post-preview[data-file-ext=webm] > a::before, [data-th-main=pony] div#page div#c-posts div#a-index section#content div#posts-container article.post-preview[data-tags~=flash] > a::before, [data-th-main=pony] div#page div#c-posts div#a-index section#content div#posts-container article.post-preview[data-tags~=animated] > a::before, [data-th-main=pony] div#page div#c-favorites div#a-index section#content div#posts-container article.post-preview[data-file-ext=webm] > a::before, [data-th-main=pony] div#page div#c-favorites div#a-index section#content div#posts-container article.post-preview[data-tags~=flash] > a::before, [data-th-main=pony] div#page div#c-favorites div#a-index section#content div#posts-container article.post-preview[data-tags~=animated] > a::before, [data-th-main=pony] div#page div#c-posts div#a-show section#content div#posts-container article.post-preview[data-file-ext=webm] > a::before, [data-th-main=pony] div#page div#c-posts div#a-show section#content div#posts-container article.post-preview[data-tags~=flash] > a::before, [data-th-main=pony] div#page div#c-posts div#a-show section#content div#posts-container article.post-preview[data-tags~=animated] > a::before { background-color: #453269; border: 1px solid #ffffff; color: #ffffff; }
 
-[data-th-main=bloodlust] div#page div#a-index section#content div#posts-container article.post-preview[data-file-ext=webm] > a::before, [data-th-main=bloodlust] div#page div#a-index section#content div#posts-container article.post-preview[data-tags~=flash] > a::before, [data-th-main=bloodlust] div#page div#a-index section#content div#posts-container article.post-preview[data-tags~=animated] > a::before, [data-th-main=bloodlust] div#page div#a-show section#content div#posts-container article.post-preview[data-file-ext=webm] > a::before, [data-th-main=bloodlust] div#page div#a-show section#content div#posts-container article.post-preview[data-tags~=flash] > a::before, [data-th-main=bloodlust] div#page div#a-show section#content div#posts-container article.post-preview[data-tags~=animated] > a::before { background-color: #333333; border: 1px solid #ffffff; color: #ffffff; }
+[data-th-main=bloodlust] div#page div#c-posts div#a-index section#content div#posts-container article.post-preview[data-file-ext=webm] > a::before, [data-th-main=bloodlust] div#page div#c-posts div#a-index section#content div#posts-container article.post-preview[data-tags~=flash] > a::before, [data-th-main=bloodlust] div#page div#c-posts div#a-index section#content div#posts-container article.post-preview[data-tags~=animated] > a::before, [data-th-main=bloodlust] div#page div#c-favorites div#a-index section#content div#posts-container article.post-preview[data-file-ext=webm] > a::before, [data-th-main=bloodlust] div#page div#c-favorites div#a-index section#content div#posts-container article.post-preview[data-tags~=flash] > a::before, [data-th-main=bloodlust] div#page div#c-favorites div#a-index section#content div#posts-container article.post-preview[data-tags~=animated] > a::before, [data-th-main=bloodlust] div#page div#c-posts div#a-show section#content div#posts-container article.post-preview[data-file-ext=webm] > a::before, [data-th-main=bloodlust] div#page div#c-posts div#a-show section#content div#posts-container article.post-preview[data-tags~=flash] > a::before, [data-th-main=bloodlust] div#page div#c-posts div#a-show section#content div#posts-container article.post-preview[data-tags~=animated] > a::before { background-color: #333333; border: 1px solid #ffffff; color: #ffffff; }
 
-[data-th-main=serpent] div#page div#a-index section#content div#posts-container article.post-preview[data-file-ext=webm] > a::before, [data-th-main=serpent] div#page div#a-index section#content div#posts-container article.post-preview[data-tags~=flash] > a::before, [data-th-main=serpent] div#page div#a-index section#content div#posts-container article.post-preview[data-tags~=animated] > a::before, [data-th-main=serpent] div#page div#a-show section#content div#posts-container article.post-preview[data-file-ext=webm] > a::before, [data-th-main=serpent] div#page div#a-show section#content div#posts-container article.post-preview[data-tags~=flash] > a::before, [data-th-main=serpent] div#page div#a-show section#content div#posts-container article.post-preview[data-tags~=animated] > a::before { background-color: #fff48b; border: 1px solid #ffffff; color: #000000; }
+[data-th-main=serpent] div#page div#c-posts div#a-index section#content div#posts-container article.post-preview[data-file-ext=webm] > a::before, [data-th-main=serpent] div#page div#c-posts div#a-index section#content div#posts-container article.post-preview[data-tags~=flash] > a::before, [data-th-main=serpent] div#page div#c-posts div#a-index section#content div#posts-container article.post-preview[data-tags~=animated] > a::before, [data-th-main=serpent] div#page div#c-favorites div#a-index section#content div#posts-container article.post-preview[data-file-ext=webm] > a::before, [data-th-main=serpent] div#page div#c-favorites div#a-index section#content div#posts-container article.post-preview[data-tags~=flash] > a::before, [data-th-main=serpent] div#page div#c-favorites div#a-index section#content div#posts-container article.post-preview[data-tags~=animated] > a::before, [data-th-main=serpent] div#page div#c-posts div#a-show section#content div#posts-container article.post-preview[data-file-ext=webm] > a::before, [data-th-main=serpent] div#page div#c-posts div#a-show section#content div#posts-container article.post-preview[data-tags~=flash] > a::before, [data-th-main=serpent] div#page div#c-posts div#a-show section#content div#posts-container article.post-preview[data-tags~=animated] > a::before { background-color: #fff48b; border: 1px solid #ffffff; color: #000000; }
 
-[data-th-main=hotdog] div#page div#a-index section#content div#posts-container article.post-preview[data-file-ext=webm] > a::before, [data-th-main=hotdog] div#page div#a-index section#content div#posts-container article.post-preview[data-tags~=flash] > a::before, [data-th-main=hotdog] div#page div#a-index section#content div#posts-container article.post-preview[data-tags~=animated] > a::before, [data-th-main=hotdog] div#page div#a-show section#content div#posts-container article.post-preview[data-file-ext=webm] > a::before, [data-th-main=hotdog] div#page div#a-show section#content div#posts-container article.post-preview[data-tags~=flash] > a::before, [data-th-main=hotdog] div#page div#a-show section#content div#posts-container article.post-preview[data-tags~=animated] > a::before { background-color: #c53c38; border: 1px solid #ffffff; color: #000000; }
+[data-th-main=hotdog] div#page div#c-posts div#a-index section#content div#posts-container article.post-preview[data-file-ext=webm] > a::before, [data-th-main=hotdog] div#page div#c-posts div#a-index section#content div#posts-container article.post-preview[data-tags~=flash] > a::before, [data-th-main=hotdog] div#page div#c-posts div#a-index section#content div#posts-container article.post-preview[data-tags~=animated] > a::before, [data-th-main=hotdog] div#page div#c-favorites div#a-index section#content div#posts-container article.post-preview[data-file-ext=webm] > a::before, [data-th-main=hotdog] div#page div#c-favorites div#a-index section#content div#posts-container article.post-preview[data-tags~=flash] > a::before, [data-th-main=hotdog] div#page div#c-favorites div#a-index section#content div#posts-container article.post-preview[data-tags~=animated] > a::before, [data-th-main=hotdog] div#page div#c-posts div#a-show section#content div#posts-container article.post-preview[data-file-ext=webm] > a::before, [data-th-main=hotdog] div#page div#c-posts div#a-show section#content div#posts-container article.post-preview[data-tags~=flash] > a::before, [data-th-main=hotdog] div#page div#c-posts div#a-show section#content div#posts-container article.post-preview[data-tags~=animated] > a::before { background-color: #c53c38; border: 1px solid #ffffff; color: #000000; }
 
 /* === UPLOAD PAGE === */
 .toggle-button[data-v-deb50420] { margin: 0.25rem 0.5rem 0.25rem 0; }

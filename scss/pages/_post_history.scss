@@ -1,199 +1,109 @@
-/* Post History Stuff */
+/* Post History Page Layout */
 div#page div#c-post-versions div#a-index {
-    grid-template-columns: auto;                            // TODO BUG Since this page has no sidebar, the grid bugs out
-}
 
-/* Simplify the structure, we don't to repeat the label header with every entry */
-/* Just put in the same labels on the very top and slap display: sticky on it */
-div#c-post-versions div#a-index .post-version {
-    box-shadow: none;
-    @include themable {
-        border: 1px solid themed("color-foreground");
-        background: themed("color-section");
-    }
-}
+    .post-version {
+        box-shadow: none;
+        @include themable {
+            border: 1px solid themed("color-foreground");
+            background: themed("color-section");
+        }
 
-div#c-post-versions div#a-index .pv-check {
-    box-shadow: none;
-    border-bottom: 0;
-    @include themable {
-        border-color: themed("color-foreground");
-        background: lighten( themed("color-section"), 5%);
-    }
-}
+        .pv-check {
+            box-shadow: none;
+            border-bottom: 0;
+            @include themable {
+                border-color: themed("color-foreground");
+                background: lighten( themed("color-section"), 5%);
+            }
+        }
 
-div#c-post-versions div#a-index .pv-post-label,
-div#c-post-versions div#a-index .pv-date-label,
-div#c-post-versions div#a-index .pv-reason-label,
-div#c-post-versions div#a-index .pv-description-label,
-div#c-post-versions div#a-index .pv-tags-locked-label,
-div#c-post-versions div#a-index .pv-spacer,
-div#c-post-versions div#a-index .pv-tags-label,
-div#c-post-versions div#a-index .pv-sources-label {
-    display: none;
-}
+        .pv-post-label,                                     // TODO HACK The header is important for clarity, but repeating it with every single entry makes the page way too busy
+        .pv-date-label,                                     //           Put the header above all the posts, then stick a display: sticky on it
+        .pv-reason-label,
+        .pv-description-label,
+        .pv-tags-locked-label,
+        .pv-spacer,
+        .pv-tags-label,
+        .pv-sources-label {
+            display: none;
+        }
 
-div#c-post-versions div#a-index .pv-content:empty {             // TODO BUG this _would_ work if the empty containers would actually be empty.
-    padding: 0;                                                 // Instead, they are filled with spaces.
-}
+        .pv-content:empty {                                 // TODO BUG this _would_ work if the empty containers would actually be empty.
+            padding: 0;                                     //          Instead, they are filled with spaces.
+        }
 
-div#c-post-versions div#a-index .pv-post,
-div#c-post-versions div#a-index .pv-date,
-div#c-post-versions div#a-index .pv-reason,
-div#c-post-versions div#a-index .pv-description,
-div#c-post-versions div#a-index .pv-tags-locked,
-div#c-post-versions div#a-index .pv-actions {
-    @include themable {
-        background: lighten( themed("color-section"), 5%);
-    }
-}
+        .pv-post,
+        .pv-date,
+        .pv-reason,
+        .pv-description,
+        .pv-tags-locked,
+        .pv-actions {
+            @include themable {
+                background: lighten( themed("color-section"), 5%);
+            }
+        }
 
-div#c-post-versions div#a-index .pv-tags,
-div#c-post-versions div#a-index .pv-sources {
-    @include themable {
-        border-top: 1px solid themed("color-foreground");
-    }
-}
+        .pv-tags,
+        .pv-sources {
+            @include themable {
+                border-top: 1px solid themed("color-foreground");
+            }
+        }
 
-/* Theme Up the Colors */
-.diff-list ins,
-.diff-list ins a,
-.diff-list ins a:link,
-.diff-list ins a:visited {
-    @include themable {
-        color: lighten( themed("color-success"), 10%);
-    }
-}
-.diff-list ins a:hover {
-    @include themable {
-        color: lighten( themed("color-success"), 15%);
-    }
-}
-.diff-list del,
-.diff-list del a,
-.diff-list del a:link,
-.diff-list del a:visited {
-    @include themable {
-        color: lighten( themed("color-danger"), 5%);
-    }
-}
-.diff-list del a:hover {
-    @include themable {
-        color: lighten( themed("color-danger"), 15%);
-    }
-}
+        /* Theme Up the Colors */
+        .diff-list ins,
+        .diff-list ins a,
+        .diff-list ins a:link,
+        .diff-list ins a:visited {
+            @include themable {
+                color: lighten( themed("color-success"), 10%);
+            }
+        }
+        .diff-list ins a:hover {
+            @include themable {
+                color: lighten( themed("color-success"), 15%);
+            }
+        }
+        .diff-list del,
+        .diff-list del a,
+        .diff-list del a:link,
+        .diff-list del a:visited {
+            @include themable {
+                color: lighten( themed("color-danger"), 5%);
+            }
+        }
+        .diff-list del a:hover {
+            @include themable {
+                color: lighten( themed("color-danger"), 15%);
+            }
+        }
 
-/* Mobile Support */
-div#c-post-versions div#a-index .pv-check {
-    grid-row: 1;
-    grid-row-start: 1;
-    grid-row-end: 8;
-    grid-column: 1;
-}
+        /* Mobile Support */
+        .pv-check       { grid-area: 1 / 1 / 8 / 2; }
 
-div#c-post-versions div#a-index .pv-post {
-    grid-row: 2;
-    grid-column: 2;
-    grid-column-start: 2;
-    grid-column-end: 3;
-}
-div#c-post-versions div#a-index .pv-date {
-    grid-row: 2;
-    grid-column: 3;
-    grid-column-start: 3;
-    grid-column-end: 14;
-}
-div#c-post-versions div#a-index .pv-reason {
-    grid-row: 3;
-    grid-column: 2;
-    grid-column-start: 2;
-    grid-column-end: 14;
-}
-div#c-post-versions div#a-index .pv-description {
-    grid-row: 4;
-    grid-column: 2;
-    grid-column-start: 2;
-    grid-column-end: 9;
-}
-div#c-post-versions div#a-index .pv-tags-locked {
-    grid-row: 5;
-    grid-column: 2;
-    grid-column-start: 2;
-    grid-column-end: 14;
-}
-div#c-post-versions div#a-index .pv-actions {
-    grid-row: 4;
-    grid-column: 9;
-    grid-column-start: 9;
-    grid-column-end: 14;
-}
+        .pv-post        { grid-area: 2 / 2 / 2 / 3;  }
+        .pv-date        { grid-area: 2 / 3 / 2 / 10; }
+        .pv-actions     { grid-area: 2 / 10 / 5 / 14;  }
 
-div#c-post-versions div#a-index .pv-tags {
-    grid-row: 6;
-    grid-column: 2;
-    grid-column-start: 2;
-    grid-column-end: 14;
-}
-div#c-post-versions div#a-index .pv-sources {
-    grid-row: 7;
-    grid-column: 2;
-    grid-column-start: 2;
-    grid-column-end: 14;
-}
+        .pv-reason      { grid-area: 3 / 2 / 3 / 14; }
+        .pv-description { grid-area: 4 / 2 / 4 / 14; }
+        .pv-tags-locked { grid-area: 5 / 2 / 5 / 14; }
 
-@include media-breakpoint("tablet") {
-    div#c-post-versions div#a-index .pv-check {
-        grid-row: 1;
-        grid-row-start: 1;
-        grid-row-end: 5;
-        grid-column: 1;
-    }
+        .pv-tags        { grid-area: 6 / 2 / 6 / 14; }
+        .pv-sources     { grid-area: 7 / 2 / 7 / 14; }
 
-    div#c-post-versions div#a-index .pv-post {
-        grid-row: 2;
-        grid-column: 2;
-        grid-column-start: 2;
-        grid-column-end: 3;
-    }
-    div#c-post-versions div#a-index .pv-date {
-        grid-row: 2;
-        grid-column: 3;
-        grid-column-start: 3;
-        grid-column-end: 5;
-    }
-    div#c-post-versions div#a-index .pv-reason {
-        grid-row: 2;
-        grid-column: 5;
-        grid-column-start: 5;
-        grid-column-end: 7;
-    }
-    div#c-post-versions div#a-index .pv-description {
-        grid-row: 2;
-        grid-column: 7;
-        grid-column-start: 7;
-        grid-column-end: 9;
-    }
-    div#c-post-versions div#a-index .pv-tags-locked {
-        grid-row: 2;
-        grid-column: 9;
-        grid-column-start: 9;
-        grid-column-end: 13;
-    }
-    div#c-post-versions div#a-index .pv-actions {
-        grid-row: 2;
-        grid-column: 13;
-    }
+        @include media-breakpoint("tablet") {
+            .pv-check       { grid-area: 1 / 1 / 5 / 2; }
 
-    div#c-post-versions div#a-index .pv-tags {
-        grid-row: 4;
-        grid-column: 2;
-        grid-column-start: 2;
-        grid-column-end: 10;
-    }
-    div#c-post-versions div#a-index .pv-sources {
-        grid-row: 4;
-        grid-column: 10;
-        grid-column-start: 10;
-        grid-column-end: 14;
+            .pv-post        { grid-area: 2 / 2 / 2 / 3;  }
+            .pv-date        { grid-area: 2 / 3 / 2 / 5; }
+            .pv-reason      { grid-area: 2 / 5 / 2 / 7; }
+            .pv-description { grid-area: 2 / 7 / 2 / 9; }
+            .pv-tags-locked { grid-area: 2 / 9 / 2 / 13; }
+            .pv-actions     { grid-area: 2 / 13 / 2 / 14;  }
+
+            .pv-tags        { grid-area: 4 / 2 / 4 / 10; }
+            .pv-sources     { grid-area: 4 / 10 / 4 / 14; }
+        }
     }
 }
