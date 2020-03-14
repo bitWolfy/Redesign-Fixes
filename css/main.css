@@ -1744,6 +1744,12 @@ textarea#forum_post_body {
   max-width: unset;
 }
 
+/* Post History Stuff */
+div#page div#c-post-versions div#a-index {
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+}
+
 /* Simplify the structure, we don't to repeat the label header with every entry */
 /* Just put in the same labels on the very top and slap display: sticky on it */
 div#c-post-versions div#a-index .post-version {
