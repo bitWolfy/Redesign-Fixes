@@ -78,15 +78,15 @@
 
 [data-th-main=hotdog] .border-section { border: 1px solid #c53c38; }
 
-.border-highlight { borer: 1px solid #2b538e; }
+.border-highlight { border: 1px solid #2b538e; }
 
-[data-th-main=pony] .border-highlight { borer: 1px solid #5c428c; }
+[data-th-main=pony] .border-highlight { border: 1px solid #5c428c; }
 
-[data-th-main=bloodlust] .border-highlight { borer: 1px solid #4d4d4d; }
+[data-th-main=bloodlust] .border-highlight { border: 1px solid #4d4d4d; }
 
-[data-th-main=serpent] .border-highlight { borer: 1px solid #fff9be; }
+[data-th-main=serpent] .border-highlight { border: 1px solid #fff9be; }
 
-[data-th-main=hotdog] .border-highlight { borer: 1px solid #d1625f; }
+[data-th-main=hotdog] .border-highlight { border: 1px solid #d1625f; }
 
 .color-text { color: #ffffff; }
 
@@ -332,7 +332,7 @@ div#page div.site-notice { background-color: #1f3c67; border: 1px solid #152f56;
 
 [data-th-main=hotdog] div#page div.site-notice { background-color: #c53c38; border: 1px solid #FF0000; color: #000000; }
 
-div#notice { position: absolute; top: 5rem; left: 25%; z-index: 100; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; width: 50%; padding: 0.25rem 1rem; color: #ffffff; background-color: darkgreen; border: 1px solid #152f56; }
+div#notice { position: absolute; top: 5rem; left: 25%; z-index: 100; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; width: 50%; padding: 0.25rem 1rem; color: #ffffff; background-color: darkgreen; border: 1px solid #152f56; }
 
 [data-th-main=pony] div#notice { color: #ffffff; background-color: darkgreen; border: 1px solid #2f175c; }
 
