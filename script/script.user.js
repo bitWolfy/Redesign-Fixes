@@ -13,6 +13,7 @@
 
 $(function() {
 
+    /* === HTML Changes */
     $("head").append(`
         <style type="text/css">
             #customizer-container {
@@ -42,7 +43,20 @@ $(function() {
         </style>
     `);
 
-    // === Theme Switcher and Customizer ===
+    // Sidebar Changes
+    $("#search-box h1").html(`
+        <span id="search-header">Search</span>
+        <span class="search-help"><a href="/help/cheatsheet" data-ytta-id="-">(syntax help)</a></span>
+    `);
+    $("#blacklist-box h1").html(`
+        <a href="" id="blacklist-toggle">► Blacklisted</a>
+        <span class="blacklist-help"><a href="/help/blacklist" data-ytta-id="-">(filter help)</a></span>
+    `);
+
+    // Disable e6NG Helper's blacklist toggle
+    $("#blacklist-box > div").first().css("display", "none");
+
+    // Style Customizer
     $("header#top").prepend(`
         <div id="customizer-container">
             <a href="" id="customizer-toggle">► Theme</a>
@@ -85,6 +99,7 @@ $(function() {
         </div>
     `);
 
+    // === Theme Switcher and Customizer ===
     // Toggle the theme box
     $("#customizer-toggle").click(function(e) {
         e.preventDefault();
@@ -143,10 +158,6 @@ $(function() {
 
 
     // === Simple blacklist collapsable ===
-    $("#blacklist-box h1").html(`<a href="" id="blacklist-toggle">► Blacklisted</a>`);
-
-    // Disable e6NG Helper's blacklist toggle
-    $("#blacklist-box > div").first().css("display", "none");
 
     // Hide the filters by default, unless they are all disabled
     if($("a#re-enable-all-blacklists").css("display") == "none") {

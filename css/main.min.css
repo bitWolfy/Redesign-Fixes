@@ -379,7 +379,7 @@ header#top menu.main li.current a { background-color: #152f56; }
 [data-th-main=hotdog] header#top menu.main li.current a { background-color: #FF0000; }
 
 /* === SIDEBAR === */
-div#page aside#sidebar h1 span.search-help { float: right; font-size: 80%; }
+div#page aside#sidebar h1 span.search-help, div#page aside#sidebar h1 span.blacklist-help { float: right; font-size: 70%; }
 
 /* Desktop Searchbox */
 div#page aside#sidebar input[type=text] { width: 13em; padding: 0.125rem 0.125rem; border-right: 0; -webkit-box-sizing: border-box; box-sizing: border-box; border-radius: 4px 0 0 4px; }
@@ -443,8 +443,6 @@ a#re-enable-all-blacklists { content: "Enable all filters"; background: #004b00;
 a.blacklist-toggle-link:before { content: "» "; }
 
 #blacklist-box.sidebar-blacklist ul li { /* Bugfix: remove extraneous list dots (favorites page only) */ list-style-type: none; }
-
-div#page aside#sidebar h1 span.blacklist-help { float: right; font-size: 80%; }
 
 /* Tag List */
 div#c-posts aside#sidebar #tag-list h2 { font-family: verdana, sans-serif; }

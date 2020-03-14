@@ -912,9 +912,10 @@ header#top menu.main li.current a {
 }
 
 /* === SIDEBAR === */
-div#page aside#sidebar h1 span.search-help {
+div#page aside#sidebar h1 span.search-help,
+div#page aside#sidebar h1 span.blacklist-help {
   float: right;
-  font-size: 80%;
+  font-size: 70%;
 }
 
 /* Desktop Searchbox */
@@ -1066,11 +1067,6 @@ a.blacklist-toggle-link:before {
 #blacklist-box.sidebar-blacklist ul li {
   /* Bugfix: remove extraneous list dots (favorites page only) */
   list-style-type: none;
-}
-
-div#page aside#sidebar h1 span.blacklist-help {
-  float: right;
-  font-size: 80%;
 }
 
 /* Tag List */
