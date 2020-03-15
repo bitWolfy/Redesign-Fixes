@@ -9,6 +9,11 @@
             "format": "compact",
             "extensionName": ".min.css",
             "savePath": "/css/"
+        },
+        {
+            "format": "compressed",
+            "extensionName": ".xmin.css",
+            "savePath": "/css/"
         }
     ],
     "liveSassCompile.settings.generateMap": false
