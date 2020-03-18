@@ -1839,7 +1839,9 @@ div.list-of-forum-posts article {
 }
 
 #forum_post_body {
-  width: 100%;
+  width: -webkit-fill-available;
+  width: -moz-available;
+  width: stretch;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
@@ -1903,10 +1905,6 @@ div.list-of-forum-posts article[data-is-deleted="true"]::after {
 
 div.list-of-forum-posts article div.content {
   padding: unset;
-}
-
-textarea#forum_post_body {
-  max-width: unset;
 }
 
 /* Simplify the structure, we don't to repeat the label header with every entry */
