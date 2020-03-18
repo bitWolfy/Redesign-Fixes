@@ -672,6 +672,26 @@ table.striped tbody tr {
   border-bottom: 1px solid #FF0000;
 }
 
+table.striped tbody tr:nth-child(2n) {
+  background-color: #1f3c67;
+}
+
+[data-th-main=pony] table.striped tbody tr:nth-child(2n) {
+  background-color: #453269;
+}
+
+[data-th-main=bloodlust] table.striped tbody tr:nth-child(2n) {
+  background-color: #333333;
+}
+
+[data-th-main=serpent] table.striped tbody tr:nth-child(2n) {
+  background-color: #fff48b;
+}
+
+[data-th-main=hotdog] table.striped tbody tr:nth-child(2n) {
+  background-color: #c53c38;
+}
+
 table.striped tbody tr:hover {
   background-color: #2b538e;
 }
