@@ -7,6 +7,7 @@
 // @homepage     https://github.com/bitWolfy/e621-Redesign-Fixes
 // @match        https://e621.net/*
 // @match        https://e926.net/*
+// @require      https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js#sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=
 // @grant GM_setValue
 // @grant GM_getValue
 // ==/UserScript==
