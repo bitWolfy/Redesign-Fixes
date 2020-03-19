@@ -15,9 +15,9 @@ This is a custom stylesheet that patches a number of bugs in the updated site th
 
 ## Releases
 
-**Latest release:** [stylesheet](https://bitwolfy.github.io/e621-Redesign-Fixes/css/main.min.css) | [userscript](https://bitwolfy.github.io/e621-Redesign-Fixes/script/script.user.js)
+**Latest release:** [stylesheet](https://re621.github.io/Redesign-Fixes/build/main.min.css) | [userscript](https://re621.github.io/Redesign-Fixes/build/script.user.js)
 
-**Legacy 1.51:** [stylesheet](https://bitwolfy.github.io/e621-Redesign-Fixes/css/legacy.css)
+**Legacy 1.51:** [stylesheet](https://re621.github.io/Redesign-Fixes/build/legacy.css)
 
 With version 2.0 came some changes that might not be to everyone's tastes. As such, I shall continue maintenance and support of legacy version 1.51. It will receive bug fixes and patches, but no new content.
 
