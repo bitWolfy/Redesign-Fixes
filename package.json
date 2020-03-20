@@ -22,7 +22,6 @@
     "homepage": "https://re621.github.io/",
     "dependencies": {},
     "devDependencies": {
-        "chokidar": "^3.3.1",
         "sass": "^1.26.3"
     }
 }
