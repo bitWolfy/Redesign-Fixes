@@ -1,0 +1,28 @@
+{
+    "name": "e621-redesign-fixes",
+    "displayName": "e621 Redesign Fixes",
+    "namespace": "re621.github.io",
+    "version": "2.0.0",
+    "description": "Restore e621.net back to its classic look",
+    "author": "bitWolfy",
+    "main": "./build/style.min.css",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "userstyle": "node ./bin/userstyle-format.js",
+        "sass": "sass src/style.scss build/style.css --no-source-map --style compressed"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/re621/Redesign-Fixes.git"
+    },
+    "license": "GPLv3",
+    "bugs": {
+        "url": "https://github.com/re621/Redesign-Fixes/issues"
+    },
+    "homepage": "https://re621.github.io/",
+    "dependencies": {},
+    "devDependencies": {
+        "sass": "^1.26.3",
+        "typescript": "^3.8.3"
+    }
+}

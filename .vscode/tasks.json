@@ -1,0 +1,44 @@
+{
+    "version": "2.0.0",
+    "tasks": [{
+            "label": "build",
+            "type": "process",
+            "command": "",
+            "problemMatcher": ["$eslint-stylish"],
+            "dependsOn": ["userstyle-format"],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "clear": false
+            },
+        },
+        {
+            "label": "compile-sass",
+            "type": "shell",
+            "command": "sass src/style.scss build/style.css --sourcemap=none --style compressed",
+            "problemMatcher": [],
+            "group": "build",
+            "presentation": {
+                "showReuseMessage": false
+            },
+        },
+        {
+            "label": "userstyle-format",
+            "type": "shell",
+            "command": "node ./bin/userstyle-format.js",
+            "problemMatcher": [],
+            "dependsOn": ["compile-sass"],
+            "group": "build",
+            "options": {
+                "statusbar": {
+                    "label": "css-build"
+                }
+            },
+            "presentation": {
+                "showReuseMessage": false
+            },
+        }
+    ]
+}

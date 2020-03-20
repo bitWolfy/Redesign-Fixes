@@ -1,0 +1,10 @@
+/* ==UserStyle==
+@name         %NAME%
+@description  %DESCRIPTION%
+@namespace    %NAMESPACE%
+@version      %VERSION%
+@author       %AUTHOR%
+@homepageURL  https://github.com/re621/Redesign-Fixes
+@supportURL   https://github.com/re621/Redesign-Fixes/issues
+@license      CC-BY-SA-4.0
+==/UserStyle== */
