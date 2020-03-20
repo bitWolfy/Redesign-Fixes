@@ -22,7 +22,8 @@
     "homepage": "https://re621.github.io/",
     "dependencies": {},
     "devDependencies": {
+        "sass": "^1.26.3",
         "node-sass": "^4.13.1",
-        "sass": "^1.26.3"
+        "mkdirp": "^1.0.3"
     }
 }
