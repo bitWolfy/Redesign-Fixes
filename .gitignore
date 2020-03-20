@@ -103,8 +103,5 @@ dist
 # TernJS port file
 .tern-port
 
-# Build files
-/build/
-
 # SASS Cache
 .sass-cache/
