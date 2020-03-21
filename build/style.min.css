@@ -417,6 +417,16 @@ div#page aside#sidebar #search-box button[type=submit] { width: 2em; border-left
 
 @media (min-width: 800px) { #search-box { display: block; } }
 
+.ui-autocomplete .autocomplete-arrow { color: #ffffff; }
+
+[data-th-main=pony] .ui-autocomplete .autocomplete-arrow { color: #ffffff; }
+
+[data-th-main=bloodlust] .ui-autocomplete .autocomplete-arrow { color: #ffffff; }
+
+[data-th-main=serpent] .ui-autocomplete .autocomplete-arrow { color: #000000; }
+
+[data-th-main=hotdog] .ui-autocomplete .autocomplete-arrow { color: #000000; }
+
 /* Mobile Searchbox */
 .mobile-search { margin: 0.5rem 0.5rem 1.5rem; }
 

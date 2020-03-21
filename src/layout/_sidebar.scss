@@ -26,6 +26,12 @@ div#page aside#sidebar #search-box button[type=submit] {
     #search-box { display: block; }
 }
 
+.ui-autocomplete .autocomplete-arrow {
+    @include themable {
+        color: themed("color-text");
+    }
+}
+
 /* Mobile Searchbox */
 .mobile-search {                                                // Streamline the mobile search form
     margin: 0.5rem 0.5rem 1.5rem;
