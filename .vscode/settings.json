@@ -8,5 +8,6 @@
         "extensionName": ".min.css",
         "savePath": "/build/"
     }],
-    "liveSassCompile.settings.generateMap": false
+    "liveSassCompile.settings.generateMap": false,
+    "editor.formatOnSave": false,
 }

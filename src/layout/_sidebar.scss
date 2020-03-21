@@ -12,6 +12,8 @@ div#page aside#sidebar input[type=text] {                       // Re-style the 
     border-right: 0;
     box-sizing: border-box;
     border-radius: $border-radius-half 0 0 $border-radius-half;
+    
+    &:focus { outline: 0; }
 }
 div#page aside#sidebar #search-box button[type=submit] {
     width: 2em;
