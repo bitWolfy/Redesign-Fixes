@@ -137,6 +137,7 @@ div.fav-buttons button#remove-fav-button::after { content: "- Unfavorite"; font-
 
 /* Download Button */
 div#image-download-link a {                                     // Recolor the download button to match the Favorite one
+    display: block;
     @include themable {
         background: themed("color-warning");
         color: themed("color-text-white");
