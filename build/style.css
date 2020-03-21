@@ -2783,6 +2783,7 @@ div.fav-buttons button#remove-fav-button::after {
 
 /* Download Button */
 div#image-download-link a {
+  display: block;
   background: sienna;
   color: #ffffff;
   border-radius: 4px;
