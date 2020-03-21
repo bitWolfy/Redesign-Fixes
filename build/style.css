@@ -974,6 +974,10 @@ div#page aside#sidebar input[type=text] {
   border-radius: 4px 0 0 4px;
 }
 
+div#page aside#sidebar input[type=text]:focus {
+  outline: 0;
+}
+
 div#page aside#sidebar #search-box button[type=submit] {
   width: 2em;
   border-left: 1px solid #ccc;

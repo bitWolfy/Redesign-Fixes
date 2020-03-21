@@ -409,6 +409,8 @@ div#page aside#sidebar h1 span.search-help, div#page aside#sidebar h1 span.black
 /* Desktop Searchbox */
 div#page aside#sidebar input[type=text] { width: 13em; padding: 0.125rem 0.125rem; border-right: 0; -webkit-box-sizing: border-box; box-sizing: border-box; border-radius: 4px 0 0 4px; }
 
+div#page aside#sidebar input[type=text]:focus { outline: 0; }
+
 div#page aside#sidebar #search-box button[type=submit] { width: 2em; border-left: 1px solid #ccc; border-radius: 0 4px 4px 0; }
 
 #search-box { display: none; }
