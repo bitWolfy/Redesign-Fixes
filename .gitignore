@@ -105,6 +105,3 @@ dist
 
 # SASS Cache
 .sass-cache/
-
-# Build files
-/build/

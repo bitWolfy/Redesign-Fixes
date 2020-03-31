@@ -1,0 +1,817 @@
+/* ==UserStyle==
+@name         e621 Redesign Fixes
+@description  Restore e621.net back to its classic look
+@namespace    bitwolfy.com
+@version      1.51.3
+@author       bitWolfy
+@homepageURL  https://e621.net/forum_topics/25811
+@license      CC-BY-SA-4.0
+==/UserStyle== */
+
+:root {
+    /* Settings */
+    --conf-font-size:               85%;
+    --conf-page-body-width:         none;
+    --conf-page-inner-width:        1200px;
+    
+    /* Common Colors */
+    --color-base:                   #031131;                  /* Site background (large hexagons) */
+    --color-background:             #152f56;                  /* Generic backdrop (small hexagons) */
+    --color-background-muted:       #152f56aa;
+    --color-foreground:             #294a81aa;                /* Foreground elements - boxes, sections, etc. */
+    --color-foreground-muted:       #294a81ee;
+    --color-foreground-alt:         #2a58a4aa;
+    
+    /* Generic */
+    --color-primary:                #b4c7d9;
+    --color-primary-alt:            #2e76b4;
+    --color-secondary:              #ffe380;
+    --color-secondary-alt:          #e8c446;
+    --color-tertiary:               #17a2b8;
+    --color-tertiary-alt:           #1e7684;
+    
+    --color-success:                darkgreen;
+    --color-success-alt:            #015201;
+    --color-danger:                 maroon;
+    --color-danger-alt:             #630202;
+    --color-danger-muted:           #80000099;
+    --color-warning:                sienna;
+    --color-warning-alt:            #844325;
+    
+    --color-white:                  #fff;
+    --color-white-alt:              #eee;
+    --color-muted:                  #aaa;
+    --color-muted-alt:              #888;
+    
+    /* User Groups */
+    --color-user-member:            #b4c7d9;
+    --color-user-member-alt:        #2e76b4;
+    --color-user-privileged:        #b4c7d9;
+    --color-user-privileged-alt:    #2e76b4;
+    --color-user-contributor:       #b4c7d9;
+    --color-user-contributor-alt:   #2e76b4;
+    
+    --color-user-blocked:           #b4c7d9;
+    --color-user-blocked-alt:       #2e76b4;
+    
+    --color-user-former-staff:      #78dca5;
+    --color-user-former-staff-alt:  #4da073;
+    --color-user-janitor:           #d82828;
+    --color-user-janitor-alt:       #cc5151;
+    --color-user-admin:             #e69500;
+    --color-user-admin-alt:         #9d6703;
+    
+    /* Tag Categories */
+    --color-tag-general:            #b4c7d9;
+    --color-tag-general-alt:        #2e76b4;
+    
+    --color-tag-artist:             #f2ac08;
+    --color-tag-artist-alt:         #fbd67f;
+    
+    --color-tag-copyright:          #d0d;
+    --color-tag-copyright-alt:      #ff5eff;
+    
+    --color-tag-character:          #0a0;
+    --color-tag-character-alt:      #2bff2b;
+    
+    --color-tag-species:            #ed5d1f;
+    --color-tag-species-alt:        #f6b295;
+
+    --color-tag-lore:               #282;
+    --color-tag-lore-alt:           #5fdb5f;
+    
+    --color-tag-pool:               wheat;
+    --color-tag-pool-alt:           #d0b27a;
+    
+    /* DText Element Styles */
+    --color-highlight:              #3e5985;
+}
+
+
+/* === COMMON STYLES === */
+body {
+    background: var(--image-base) var(--color-base);            /* Give the body and header the hex grid back */
+    font-size: var(--conf-font-size);                           /* Smaller font across the site, to match the old theme */
+    
+    margin: 0 auto;
+    max-width: var(--conf-page-body-width);
+}
+
+div#page {
+    background-image: var(--image-background);
+    background-position: left top;
+    background-repeat: repeat-x;
+    border-radius: 6px;
+}
+
+button, input, select, textarea { box-shadow: unset; }          /* Get rid of shadows on inputs */
+
+/* --- Header --- */
+header#top {
+    background: var(--image-base) var(--color-base);            /* Give the header the same hex grid as the main body */
+    font-size: 1.05em;                                          /* Slightly bigger font, for better readability */
+    margin: 0 0 0.8rem;                                         /* Slightly bigger margin, to match the old theme */
+}
+
+body.resp #maintoggle {
+    top: 1vw;                                                   /* Move the hamburger menu to the left */
+    left: 3vw;
+    right: unset;
+}
+
+@media only screen and (min-width: 801px) {
+    header#top h1 {
+        display: inline-block;                                  /* Preparing to move the logo down to where it belongs */
+        margin: 0 0 0 28px;
+        font-size: 1.2em;                                       /* Re-style the logo to match the old theme */
+        font-weight: 400;
+        font-family: Verdana, sans-serif;
+    }
+    header#top nav#nav { display: inline; }                     /* Move the navbars out of the way to fit the logo */
+    header#top menu.main { display: inline-block; }
+}
+
+/* --- Tag Categories --- */
+[class^="category-"]    { font-weight: 700; }
+.category-0 a           { font-weight: 500; }
+
+.category-0 a,                  /* General */
+.category-0 a:link,
+.category-0 a:visited   { color: var(--color-tag-general); }
+.category-0 a:hover     { color: var(--color-tag-general-alt); }
+
+.category-1 a,                  /* Artist */
+.category-1 a:link,
+.category-1 a:visited   { color: var(--color-tag-artist); }
+.category-1 a:hover     { color: var(--color-tag-artist-alt); }
+
+.category-3 a,                  /* Copyright */
+.category-3 a:link,
+.category-3 a:visited   { color: var(--color-tag-copyright); }
+.category-3 a:hover     { color: var(--color-tag-copyright-alt); }
+
+.category-4 a,                  /* Character */
+.category-4 a:link,
+.category-4 a:visited   { color: var(--color-tag-character); }
+.category-4 a:hover     { color: var(--color-tag-character-alt); }
+
+.category-5 a,                  /* Species */
+.category-5 a:link,
+.category-5 a:visited   { color: var(--color-tag-species); }
+.category-5 a:hover     { color: var(--color-tag-species-alt); }
+
+.category-8 a,                  /* Lore */
+.category-8 a:link,
+.category-8 a:visited   { color: var(--color-tag-lore); }
+.category-8 a:hover     { color: var(--color-tag-lore-alt); }
+
+.pool-category-series a,        /* Pool */
+.pool-category-series a:link,
+.pool-category-series a:visited,
+.pool-category-collection a ,
+.pool-category-collection a:link,
+.pool-category-collection a:visited { color: var(--color-tag-pool); }
+.pool-category-collection a:hover,
+.pool-category-series a:hover       { color: var(--color-tag-pool-alt); }
+
+/* --- User Page Links, with Group Styles --- */
+a.user-member.with-style                { color: var(--color-user-member); }
+a.user-member.with-style:hover          { color: var(--color-user-member-alt) }
+a.user-privileged.with-style            { color: var(--color-user-privileged); }
+a.user-privileged.with-style:hover      { color: var(--color-user-privileged-alt); }
+a.user-contributor.with-style           { color: var(--color-user-contributor); }
+a.user-contributor.with-style:hover     { color: var(--color-user-contributor-alt); }
+
+a.user-blocked.with-style               { color: var(--color-user-blocked); text-decoration: line-through; }
+a.user-blocked.with-style:hover         { color: var(--color-user-alt); }
+
+a.user-former.staff.with-style          { color: var(--color-user-former-staff); }
+a.user-former.staff.with-style:hover    { color: var(--color-user-former-staff-alt); }
+a.user-janitor.with-style               { color: var(--color-user-janitor); }
+a.user-janitor.with-style:hover         { color: var(--color-user-janitor-alt); }
+a.user-admin.with-style                 { color: var(--color-user-admin); }
+a.user-admin.with-style:hover           { color: var(--color-user-admin-alt); }
+
+/* --- Common Elements --- */
+.score-negative,                                                /* Scores and rating are bold everywhere now */
+.score-neutral,                                                 /* Except if they don't have the class associated (like 'rating' in posts and comments pages) */
+.score-positive,
+.post-score-rating {
+    font-weight: 700;
+}
+
+div#ad-leaderboard { text-align: center; }                      /* Center the ads, because why not? */
+
+/* --- Comment / Post Features --- */
+.styled-dtext blockquote,                                       /* Re-style the quotes and collapsable blocks */
+.styled-dtext div.expandable,
+.styled-dtext pre,
+div#c-posts div#a-show #artist-commentary {
+    box-shadow: none;
+    border: none;
+    border-radius: 3px;
+    border-left: 4px solid var(--color-danger);
+    background: var(--color-highlight);
+}
+.styled-dtext blockquote        { border-color: var(--color-primary); }
+.styled-dtext div.expandable    { border-color: var(--color-secondary); }
+.styled-dtext pre               { border-color: var(--color-tertiary); }
+div#c-posts div#a-show #artist-commentary {
+    border-color: var(--color-primary);
+    padding: unset;
+}
+
+.styled-dtext div.expandable div.expandable-header { margin: 0 1rem; }
+.styled-dtext div.expandable div.expandable-content { margin: 0 1rem; padding: 0 0 1rem; }
+
+
+/* === SIDEBAR === */
+span.search-help a { font-size: 0; }                            /* Make the help links (quite) a bit smaller */
+span.search-help a:after {
+    content: "search help";
+    font-size: 0.7rem;
+    float: right;
+    margin-top: 10px;
+}
+
+/* Desktop Searchbox */
+div#page aside#sidebar input[type=text] {                       /* Re-style the search bar */
+    width: 13em;                                                /* Spite-filled redesigning initiated */
+    padding: 2px 3px;
+    border-radius: 4px 0 0 4px;
+    border-right: 0;
+    box-sizing: border-box;
+}
+div#page aside#sidebar #search-box button[type=submit] {
+    width: 2em;
+    padding: 2px 6px;
+    border-radius: 0 4px 4px 0;
+    border-left: 1px solid #ccc;
+}
+
+/* Desktop - Mobile Searchbox Switching */
+#search-box { display: none; }
+@media only screen and (min-width: 801px) {
+    #search-box { display: block; }
+}
+
+/* Tag List */
+div#c-posts aside#sidebar #tag-list h2 {                        /* Tags list - smootherer and bolder fonts  */
+    font-family: verdana, sans-serif;
+}
+.post-count {                                                   /* De-emphasize the post count, courtesy of Zermelane */
+    color: var(--color-muted);
+    font-size: 85%;
+    font-weight: 500;
+}
+
+/* Mobile Searchbox */
+.mobile-search { margin: 10px 10px 25px ; }                     /* Streamline the mobile search form */
+.mobile-search a:first-child {                                  /* Screw you, I'll re-style the mobile searchform too */
+    float: right;                                               /* Multi-device styling! https://i.imgur.com/Ong1enY.png */
+    margin-bottom: 10px;
+}
+body.resp .mobile-search>.search-form>form .search-input input {
+    border-radius: 4px 0 0 4px;
+    padding: 1px 3px;
+    box-sizing: border-box;
+}
+body.resp .mobile-search>.search-form>form .search-button>button {
+    border-radius: 0 4px 4px 0;
+    padding: 2px 6px;
+    border-left: 1px solid #ccc;
+}
+
+
+/* === SEARCH PAGE === */
+div#c-posts div#a-index menu#post-sections { display: none; }   /* Hide "posts" header in search page (useless?) */
+
+article picture img { border-radius: 4px 4px 0 0; }             /* Give the thumbnails their rounded corners back */
+div#page aside#sidebar h1 { margin-bottom: 5px; }               /* Minor padding fix for the tag and blacklist */
+
+#mode-box-mode {                                                /* Make the mode box match size with the search bar */
+    width: 15em;
+    border-radius: 4px;
+    box-shadow: none;
+}
+
+div.post-score { font-size: 0.8rem; }                           /* Increase the font size on post preview details */
+
+div#posts div#posts-container {
+    display: flex;
+    flex-flow: wrap;
+    align-items: flex-end;
+    max-width: var(--conf-posts-list-width);
+}
+
+@media only screen and (min-width: 801px) {
+    article.post-preview {                                      /* Space out the thumbnails a bit more */
+        flex: 1 1 auto;
+        margin: 10px;
+        max-width: max-content;
+    }
+    article.post-preview div.desc {
+        width: inherit;
+        margin: 0 auto;
+    }
+}
+
+/* Blacklist */
+#blacklist-list { margin-bottom: 10px; }                        /* Beautify the blacklist filters on the search page */
+a#disable-all-blacklists,
+a#re-enable-all-blacklists { font-size:0; }
+a#disable-all-blacklists::after,
+a#re-enable-all-blacklists::after {
+    border: 0;
+    color: var(--color-white);
+    box-shadow: none;
+    padding: 3px 10px;
+    font-size: 0.8rem;
+    border-radius: 4px;
+}
+a#disable-all-blacklists::after { content: "Disable all filters"; background: var(--color-danger); }
+a#re-enable-all-blacklists::after { content: "Enable all filters"; background: var(--color-success); }
+a.blacklist-toggle-link:before { content: "» "; }
+
+#blacklist-box.sidebar-blacklist ul li {                        /* Bugfix: remove extraneous list dots (favorites page only) */
+    list-style-type: none;
+}
+
+span.blacklist-help a { font-size: 0; }                         /* Replace the giant blacklist help link with a small (?) one */
+span.blacklist-help a:after {
+    content: "(?)";
+    font-size: 0.8rem;
+}
+
+/* Animation Type Badges */
+article.post-preview[data-tags~="animated"]::before { content: "anim"; }
+article.post-preview[data-tags~="mp4"]::before { content: "mp4"; }
+article.post-preview[data-tags~="flash"]::before { content: "swf"; }
+article.post-preview[data-tags~="webm"]::before { content: "webm"; }
+
+article.post-preview[data-tags~="animated"]::before,            /* This is a horrible, hacky way of doing it. */
+article.post-preview[data-tags~="mp4"]::before,
+article.post-preview[data-tags~="flash"]::before,
+article.post-preview[data-tags~="webm"]::before {
+    position: absolute;
+    left: -2px;
+    top: 10px;
+    z-index: 10;
+    
+    background-color: var(--color-foreground-muted);
+    width: unset;
+    height: unset;
+    padding: 1px 5px 1px 5px;
+    border-radius: 5px;
+    border: 1px solid var(--color-white);
+    font-size: 0.6em;
+    font-weight: 700;
+}
+
+
+/* === UPLOAD PAGE === */
+.box-section { box-shadow: unset; }                             /* Clear the shadows on the column sections */
+.toggle-button[data-v-deb50420] { margin-bottom: 5px; }         /* Fix the spacing on the uploads page */
+.tag-textarea[data-v-deb50420],                                 /* Credit goes to Peegus for this one */
+.flex-wrap[data-v-deb50420] { margin: 10px 0 5px; }
+.toggle-button.active[data-v-deb50420] {                        /* Make selected buttons stand out more */
+    background-color: var(--color-secondary);
+}
+
+
+/* === IMAGE PAGE === */
+/* Image Page Navigation Hack */
+div#nav-links { display: table-row-group; }                     /* Re-order the elements on the image page */
+div#nav-links div { margin: 5px; }                                
+section#image-container { display: table-header-group; }        /* Order is as follows: */
+/*div#image-resize-notice { display: table-row-group; }         /* - image */
+div#pending-approval-notice { display: table-row-group; }       /* - pool/search navigation */
+div#ad-leaderboard { display: table-footer-group; }             /* - notifications */
+div#ad-leaderboard-content { margin: 15px auto; }               /* - advertisemen */
+
+div#c-posts div.notice.notice-pending {                         /* Tweak the notices so that they don't interfere with the controls */
+    text-align: center;
+    background: transparent;
+}
+
+/* Search Results Navigation */
+div#nav-links div#search-seq-nav {
+    margin: 0;
+}
+#search-seq-nav ul li {
+    background: var(--color-foreground);
+    padding: 5px;
+}
+div#nav-links div#search-seq-nav span.search-name {
+    padding: 0 15px;
+}
+div#nav-links div#search-seq-nav .prev,
+div#nav-links div#search-seq-nav .next {
+    top: unset;
+}
+
+/* Pool Navigation */
+#pool-nav .first, #pool-nav .last { display: none; }            /* These are straight up unnecessary */
+div#c-posts div#a-show #pool-nav { margin: 5px 0; }
+div#c-posts div#nav-links { background: transparent; }
+
+#pool-nav ul {
+    display: table;
+    table-layout: fixed;
+    width: -webkit-fill-available;
+    width: -moz-available;
+}
+
+div#c-posts div#a-show #pool-nav li.pool-category-series {
+    height: 40px;
+    font-weight: 500;
+    background: var(--color-foreground);
+    padding: 5px 0;
+    border-bottom: 5px solid var(--color-background);
+}
+li.pool-category-series:last-child {
+    border-bottom: 0;
+}
+
+@media only screen and (min-width: 801px) {
+    li.pool-category-series {
+        display: table-cell;
+        border-bottom: 0;
+        border-right: 10px solid var(--color-background);
+    }
+    li.pool-category-series:last-child {
+        border-right: 0;
+    }
+}
+
+#pool-nav .prev, #pool-nav .next {
+    padding: 10px 0;
+    width: 50%;
+    margin-top: 25px;
+    line-height: 1.25em;
+    color: var(--color-white);
+    font-weight: 700;
+}
+div#c-posts div#a-show #pool-nav li .prev { left: 0; font-size: 0; }
+div#c-posts div#a-show #pool-nav li .next { right: 0; font-size: 0; }
+#pool-nav .prev:after { content: "« Prev"; font-size: 1rem; }
+#pool-nav .next:after { content: "Next »"; font-size: 1rem; }
+#pool-nav a.prev:hover,
+#pool-nav a.next:hover { color: var(--color-tag-pool); }
+
+#pool-nav span.prev,
+#pool-nav span.next { color: var(--color-muted); }
+
+span.pool-name {
+    font-weight: 700;
+    padding: 0 15px;
+}
+
+/* Image controls - FAV, Download, Resize */
+#image-extra-controls {
+    margin-top: 10px;
+}
+
+/* Information Section */
+div#c-posts .source-link:hover a {
+    background: var(--color-base);
+}
+
+/* Sidebar Favorites Button */
+a#add-to-favorites,                                             /* Recolor the sidebar favorites button to what it was before */
+a#remove-from-favorites {
+    color: var(--color-white);
+    padding: 2px 4px;
+    border-radius: 3px;
+}
+section#post-options ul li:nth-child(1),                        /* Best way to add margins to the fav/unfav buttons in the sidebar */
+section#post-options ul li:nth-child(2) {                       /* Yes, really. */
+    margin: 5px 0;
+}
+#post-options a#add-to-favorites,
+#post-options a#add-to-favorites:link,
+#post-options a#add-to-favorites:visited        { background: var(--color-success); }
+#post-options a#add-to-favorites:hover          { background: var(--color-success-alt); }
+#post-options a#add-to-favorites:before         { content: "+ "; }
+
+#post-options a#remove-from-favorites,
+#post-options a#remove-from-favorites:link,
+#post-options a#remove-from-favorites:visited   { background: var(--color-danger); }
+#post-options a#remove-from-favorites:hover     { background: var(--color-danger-alt); }
+#post-options a#remove-from-favorites:before    { content: "- "; }
+
+/* +Favorites Button */
+div#c-posts .fav-buttons button.ui-button {                     /* Replace the weird white +FAV button with an old style one */
+    border: 0;
+    color: white;
+    box-shadow: none;
+    padding: 3px 10px;
+    font-size: 0em;
+}
+div.fav-buttons button#add-fav-button           { background: var(--color-success); }
+div.fav-buttons button#add-fav-button:hover     { background: var(--color-success-alt); }
+div.fav-buttons button#add-fav-button:after     { content: "+ Favorite"; font-size: 0.9rem; }
+
+div.fav-buttons button#remove-fav-button        { background: var(--color-danger); }
+div.fav-buttons button#remove-fav-button:hover  { background: var(--color-danger-alt); }
+div.fav-buttons button#remove-fav-button:after  { content: "- Unfavorite"; font-size: 0.9rem; }
+
+/* Download Button */
+div#image-download-link a {                                     /* Recolor the download button to match the Favorite one */
+    background: var(--color-warning);
+    color: var(--color-white);
+    padding: 3px 10px;
+    border: 0;
+    border-radius: 3px;
+}
+div#image-download-link a:hover { background: var(--color-warning-alt); }
+
+/* Comments Style */
+#comments { padding: 0; background: none; box-shadow: none; }   /* Cleaner, sleaker comment section */
+#comments h2:first-of-type { display: none; }                   /* Get rid of the intrusive rule reminder */
+div.comments-for-post div.list-of-comments article.comment {    /* Get rid of the box shadows. It's not the 90s anymore. */
+    box-shadow: none;
+}
+#new_comment .text label { display: none; }                     /* No need to label the comment textbox */
+#comment_body_for_ { width: 100%; box-shadow: none; }           /* Streamline the comment textbox */
+
+@media screen and (max-width: 800px) {                          /* Improved comments on mobile, credit goes to Peegus */
+    div.comments-for-post div.list-of-comments article.comment {
+        flex-flow: row wrap;
+    }
+    div.comments-for-post div.list-of-comments article.comment div.author {
+        flex-basis: 100%;
+        display: flex;
+        flex-shrink: inherit;
+        padding: 0;
+    }
+    div.comments-for-post div.list-of-comments article.comment .author .post-thumbnail a img {
+        max-height: 75px;
+        width: auto;
+    }
+    div.comments-for-post div.list-of-comments article.comment .author .author-info {
+        padding-left: 10px;
+    }
+    div.comments-for-post div.list-of-comments article.comment .author .author-info h1 {
+        margin-top: 10px;
+    }
+}
+
+/* Editing Form */
+section#edit {                                                  /* Strip shadows and padding from the editing form */
+    margin: unset;
+    padding: 0.5rem;
+    box-shadow: unset;
+}
+section#edit form.simple_form {
+    margin: unset;
+    padding: unset;
+}
+section#edit div.input:last-child {                             /* Make the "Save Changes" button scroll with the page */
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0;
+    
+    background: var(--color-foreground-muted);
+    border-radius: 4px 4px 0 0;
+    width: min-content;
+    padding: 15px;
+    margin: 0;
+}
+
+
+/* === POPULAR PAGE === */
+div#c-explore-posts div#a-popular {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+div#c-explore-posts div#a-popular h1,
+div#c-explore-posts div#a-popular #popular-nav-links,
+div#c-explore-posts div#a-popular section#blacklist-box {
+    flex-basis: 100%;
+}
+
+@media screen and (max-width: 800px) {
+    body.resp div#page div#c-explore-posts div#a-popular {
+        flex-flow: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    body.resp div#page div#c-explore-posts div#a-popular article.post-preview img {
+        height: auto;
+        max-height: none;
+        max-width: none;
+        width: 32vw;
+    }
+}
+
+
+/* === POOL PAGE === */
+div#c-pools div#a-show section:not(#blacklist-box) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+div#c-pools div#a-show section div.paginator {
+    flex-basis: 100%;
+}
+div#c-pools div#a-show section#blacklist-box ul {
+    display: inline;
+}
+
+
+/* === FORUMS === */
+.c-forum-topics div#page > div {                                /* Forum minimum width fix, courtesy of ratismal */
+    max-width: var(--conf-page-inner-width);
+    margin: 0px auto;
+}
+.c-forum-topics .forum-post { padding: 15px; }
+.c-forum-topics #a-show { margin-top: 15px; }
+
+div.list-of-forum-posts article {                               /* Re-color the forum posts to look like normal comments */
+    background: var(--color-foreground);
+    box-shadow: none;
+}
+#topic-response .text label { display: none; }                  /* No need to label the forum post textbox */
+#forum_post_body { width: 100%; box-shadow: none; }             /* Streamline the textbox */
+
+table.striped tbody tr.forum-topic-row {                        /* Stripes are out, padding is in! */
+    background-color: var(--color-foreground);
+    border-bottom: 1px solid var(--color-background);
+}
+table.striped tbody tr.forum-topic-row:hover {
+    background-color: var(--color-foreground-alt);
+}
+tr.forum-topic-row td {
+    padding: 15px 5px;
+}
+div.list-of-forum-posts article:nth-child(2n) {                 /* Get rid of the striping on the forum posts as well */
+    background-color: var(--color-foreground);
+}
+div.list-of-forum-posts article[data-is-deleted="true"] {       /* Restore the highlight on the deleted posts */
+    background-color: var(--color-danger-muted);
+}
+div.list-of-forum-posts article div.content {                   /* Get rid of unnecessary padding on the forum posts */
+    padding: unset;
+}
+textarea#forum_post_body { max-width: unset; }                  /* No reason to limit this */
+
+
+/* === COMMENTS INDEX === */
+div#c-comments div#a-index div.post,
+div#c-comments div#a-show div.post {                            /* Straighten out and align comments in the list */
+    margin-bottom: 1em;
+    background-color: var(--color-foreground);
+}
+div#c-comments div#a-index div.preview,
+div#c-comments div#a-show div.preview {
+    text-align: center;
+    width: 200px;
+    display: table;
+    margin-right: unset;
+}
+div#c-comments div#a-index div.comments-for-post { width: 100%; }
+div#c-comments div#a-index div.comments-for-post div.list-of-comments article.comment {
+    width: 100%;
+}
+div#c-comments div#a-index div.post,
+div#c-comments div#a-show div.post {
+    box-shadow: unset;
+}
+
+div#c-comments div#a-index div.post article.comment img {       /* Bugfix: user avatars shouldn't recieve the parent post's status borders */
+    border: 0px;
+}
+
+@media screen and (max-width: 801px) {                          /* Fixes for mobile, by JAKXXX3 */
+    div#c-comments div#a-index div#p-index-by-post div.post-preview {
+        flex-flow: row wrap;
+    }
+
+    div#c-comments div#a-index div.preview a img {
+        max-height: 75px;
+        width: auto;
+    }
+}
+
+
+/* === ACCOUNT PAGE === */
+/* Home: added padding to "Welcome, <you>" because some unicode languages overlaps with the text below it*/
+body.c-users.a-home div#page h2 {
+    padding: 0 0 10px;
+}
+
+
+/* === PROFILE PAGE === */
+/* Shadow below user-name in profile's page, because why not */
+body.c-users.a-show div.profile-stats > h1 {
+    margin: 0.25em 0.5em;
+}
+body.c-users.a-show div.profile-stats > h1 > a {
+    background: var(--color-background-muted);
+    padding: 3px 20px;
+    border-radius: 20px;
+}
+/* Padding for top part (table) of profile's page */
+body.c-users.a-show div#c-users div#a-show div.profile-container {
+    padding: 0 0 1em;
+}
+/* Profile statistics - get rid of striping, add background for clarity */
+div.profile-stats {
+    background: var(--color-foreground);
+    padding: 10px;
+    border-radius: 4px;
+}
+table.user-statistics tr:nth-child(2n) { background-color: unset; }
+table.user-statistics tbody tr { border-bottom: 0; }
+table.user-statistics tbody tr:hover { background-color: unset; }
+
+div#c-users div#a-show table.user-statistics th { width: 1%; white-space: nowrap; }
+div#c-users div#a-show table.user-statistics td { width: auto; }
+
+/* User rating in profile's page (and everywhere) with bold fonts like before */ 
+.user-feedback-positive,
+.user-feedback-neutral,
+.user-feedback-negative {
+    font-weight: 700;
+}
+
+/* Title of 'Favorites' and 'Uploads' boxes with a 'button' like format + alignments */
+body.c-users.a-show div#c-users div#a-show div.box h2, div#c-users div#a-show div.box h3 {
+    border-bottom: 4px solid var(--color-primary);
+    padding: 0 0 2px;
+    margin: 0 0 5px;
+    text-align: center;
+    background: var(--color-foreground);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+/* Removes bottom spaces and adds some between aforementioned boxes */
+body.c-users.a-show div#c-users div#a-show div.box {
+    margin-bottom: unset;
+    margin: 0 5px;
+}
+
+/* Adjust the "About user" and "Artist Information" boxes */
+div#c-users div#a-show .about-section .about-piece {
+    margin: unset;
+    background-color: var(--color-foreground);
+    margin-left: 1em;
+    box-shadow: unset;
+    padding: 0.5rem;
+}
+
+
+/* === WIKI === */
+.wiki-other-name { background-color: unset; }                   /* Make "other name" links a bit more readable */
+
+
+/* === SETTINGS === */
+div#c-maintenance-user-passwords div#a-edit,                    /* Set the minimum width on the settings, to match the forum */
+div#c-users div#a-edit {
+    max-width: 1200px;
+    margin: 0px auto;
+}
+
+div#c-users div#a-edit h2#edit-options .active {                /* Give contrast to the active tabs */
+    color: var(--color-secondary);
+}
+fieldset{ min-width: 0 ;}                                       /* Keep the inputs from extending off the screen*/
+form select, form input{ font-size: inherit; }                  /* Dont bump font on mobile*/
+
+body.resp form.simple_form div.input input[type="email"], 
+body.resp form.simple_form div.input input[type="number"], 
+body.resp form.simple_form div.input input[type="password"], 
+body.resp form.simple_form div.input input[type="text"], 
+body.resp form.simple_form div.input textarea {                 /* Keep the inputs from extending off the screen*/
+    width: calc(100% - 5px);
+}
+
+div#c-users div#a-edit div.input { margin-bottom: 1em; }        /* Settings: less padding, color consistency like the other pages */
+div#c-users div#a-edit h1 { margin: unset; }
+div#c-users div#a-edit h2 { margin-bottom: .5em; }
+
+#user_custom_style { height: 800px; }                           /* Makes editing CSS more convenient */
+#user_blacklisted_tags { height: 300px; }                       /* Same with the blacklist */
+
+.simple_form {                                                  /* This sets the color for all other setting pages (eg: Change Password, Delete account, API etc)*/
+    padding: 0.5em;
+    background-color: var(--color-foreground);
+}
+
+
+/* === NOTICES === */
+div#notice:not(.ui-state-error) {
+    background-color: var(--color-foreground-muted);
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    padding: 4px !important;
+    box-shadow: 0 0 27px rgba(0, 0, 0, 0.2);
+}
+
+
+/* === BACKGROUNDS === */
+:root {
+    --image-base: /* Large hexagons */ url('data:image/png;base64,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');
+    --image-background: /* Small hexagons */ url('data:image/png;base64,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');
+}
