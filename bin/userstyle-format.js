@@ -19,10 +19,10 @@ if (process.argv[2] === undefined) {
     );
 }
 
-fs.writeFileSync("./build/style.min.css", templateReplaced + fs.readFileSync("./build/style.css"));
 fs.writeFileSync("./build/style.user.css",
     templateReplaced +
     `@-moz-document domain("e621.net"), domain("e926.net") { \n` +
-    fs.readFileSync("./build/style.css") +
+    fs.readFileSync("./build/style.min.css") +
     ` } \n`
 );
+fs.writeFileSync("./build/style.min.css", templateReplaced + fs.readFileSync("./build/style.min.css"));
